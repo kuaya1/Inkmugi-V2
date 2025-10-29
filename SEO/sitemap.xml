@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://www.inkmugi.com/</loc>
+      <lastmod>2023-11-20</lastmod> <!-- Update lastmod date -->
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/services.html</loc>
+      <lastmod>2023-11-20</lastmod> <!-- Update lastmod date -->
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/gallery.html</loc>
+      <lastmod>2023-11-20</lastmod> <!-- Update lastmod date -->
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/blog.html</loc>
+      <lastmod>2023-11-20</lastmod> <!-- Update lastmod date -->
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/contact.html</loc>
+      <lastmod>2023-11-20</lastmod> <!-- Update lastmod date -->
+      <changefreq>yearly</changefreq> <!-- Contact info might not change often -->
+      <priority>0.8</priority>
+   </url>
+   <!-- Removed non-existent service sub-pages like /services/microblading.html -->
+   <!-- Add URLs for important blog posts if desired -->
+   <!-- Example:
+   <url>
+      <loc>https://www.inkmugi.com/blog.html#nano-vs-microblading</loc>
+      <lastmod>2023-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   -->
+   <url>
+      <loc>https://www.inkmugi.com/locations/arlington-va.html</loc>
+      <lastmod>2023-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/aftercare-guide.html</loc>
+      <lastmod>2023-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/services.html#our-services</loc>
+      <lastmod>2023-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://www.inkmugi.com/faq.html</loc>
+      <lastmod>2023-11-20</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+</urlset>

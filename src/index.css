@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-neutral-800 bg-neutral-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cormorant font-medium;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition duration-300 inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border border-neutral-300 hover:bg-neutral-100;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-cormorant font-medium mb-4 text-neutral-800;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-neutral-600 max-w-3xl mx-auto;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6;
+  }
+  
+  .fade-in {
+    @apply opacity-0 transition-opacity duration-700 ease-in;
+  }
+  
+  .fade-in.appear {
+    @apply opacity-100;
+  }
+  
+  .slide-up {
+    @apply translate-y-8 opacity-0 transition-all duration-700 ease-out;
+  }
+  
+  .slide-up.appear {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #f8e1e8 0%, #f5d6e0 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #f9f5f6 0%, #f0e6e8 100%);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Gallery image hover effects */
+.gallery-item {
+  @apply relative overflow-hidden rounded-lg transition-all duration-500;
+}
+
+.gallery-item img {
+  @apply transition-all duration-500;
+}
+
+.gallery-item:hover img {
+  @apply scale-105;
+}
+
+.gallery-item .overlay {
+  @apply absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0 transition-all duration-500;
+}
+
+.gallery-item:hover .overlay {
+  @apply bg-opacity-30 opacity-100;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300;
+}
+
+.testimonial-card:hover {
+  @apply shadow-lg transform -translate-y-1;
+}

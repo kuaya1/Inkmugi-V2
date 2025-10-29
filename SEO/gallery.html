@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMU Gallery: Nano Brows, Ombre Brows, Microshading | DMV Results</title>
+    <meta name="description" content="See before & after photos of Nano Brows, Ombre Powder Brows, Microshading, and Microblading by Inkmugi. Real results from clients in Annandale, Arlington, Alexandria, Fairfax, DC & MD.">
+    <link rel="canonical" href="https://www.inkmugi.com/gallery.html" />
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="PMU Before & After Gallery | Microblading & Ombre Brows in DMV Area" />
+    <meta property="og:description" content="See real results from our microblading and ombre powder brow clients in the DMV area." />
+    <meta property="og:url" content="https://www.inkmugi.com/gallery.html" />
+    <meta property="og:image" content="https://www.inkmugi.com/images/gallery-header.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <style>
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        .filters {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: #333;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+        }
+    </style>
+    
+    <!-- Structured data for the gallery -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Inkmugi PMU Before & After Gallery (DMV Clients)",
+        "description": "Gallery showcasing results of Nano Brows, Ombre Powder Brows, Microshading, and Microblading for clients from Annandale, Fairfax County, Arlington, Alexandria, Washington DC, and Maryland.",
+        "url": "https://www.inkmugi.com/gallery.html",
+        "image": "https://www.inkmugi.com/images/gallery-header.jpg",
+        "mainEntityOfPage": "https://www.inkmugi.com/gallery.html",
+        "creator": {
+            "@type": "ProfessionalService",
+            "name": "Inkmugi",
+            "@id": "https://www.inkmugi.com/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "7857 Heritage Dr #330",
+                "addressLocality": "Annandale",
+                "addressRegion": "VA",
+                "postalCode": "22003",
+                "addressCountry": "US"
+            }
+        },
+        "keywords": "pmu gallery, before after pmu, nano brows gallery, ombre brows gallery, microshading photos, microblading results, dmv pmu, annandale va, arlington va, alexandria va, fairfax va",
+        "contentLocation": {
+            "@type": "Place",
+            "name": "DMV Area (DC, Maryland, Virginia)"
+        }
+    }
+    </script>
+    <!-- Add Breadcrumb schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://www.inkmugi.com/gallery.html" }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"LocalBusiness",
+        "name":"Inkmugi",
+        "image":"https://www.inkmugi.com/images/logo.png",
+        "address":{ "@type":"PostalAddress","streetAddress":"7857 Heritage Dr #330","addressLocality":"Annandale","addressRegion":"VA","postalCode":"22003","addressCountry":"US" },
+        "telephone":"+1-571-283-8228",
+        "url":"https://www.inkmugi.com/gallery.html",
+        "areaServed":["Arlington","Fairfax","Bethesda","Washington DC"]
+    }
+    </script>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+<h1>PMU Before & After Gallery | Inkmugi DMV Results</h1>
+<h2>Explore Our Latest PMU Transformations</h2>
+<p><a href="services.html#our-services">Back to Services</a></p>
+<div class="gallery-container">
+  <div class="gallery-item">
+    <img src="images/before-after-ombre.jpg" alt="Before & after Ombre Powder Brows Arlington VA" loading="lazy" class="lazy-load">
+  </div>
+</div>
+</body>
+</html>
