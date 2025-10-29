@@ -124,3 +124,13 @@
 .testimonial-card:hover {
   @apply shadow-lg transform -translate-y-1;
 }
+
+/* Voice search optimization - semantic markup for AI/voice assistants */
+.voice-answer, 
+.quick-answer, 
+.featured-info,
+.ai-optimized-content {
+  font-weight: 500;
+  line-height: 1.6;
+  word-spacing: 0.1em;
+}

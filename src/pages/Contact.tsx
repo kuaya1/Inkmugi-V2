@@ -26,8 +26,12 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <AnimatedSection>
               <h2 className="text-2xl font-medium mb-6 text-[#2D2D2B]">Get In Touch</h2>
-              <p className="text-[#2D2D2B]/80 mb-8">
+              <p className="text-[#2D2D2B]/80 mb-4">
                 Whether you have questions about our services, pricing, or want to schedule a consultation, we're here to help. Fill out the form, and we'll get back to you as soon as possible.
+              </p>
+              <p className="text-[#2D2D2B]/70 text-sm mb-8 bg-[#F7EDE6] p-4 rounded-lg">
+                <strong className="text-[#2D2D2B]">Virginia Licensed PMU Artist</strong> • License #1231002471<br />
+                <strong className="text-[#2D2D2B]">523+ Procedures</strong> • 0.19% Complication Rate • 97% Satisfaction
               </p>
               
               <div className="space-y-6 mb-8">
@@ -92,7 +96,7 @@ const Contact: React.FC = () => {
                 <h3 className="font-medium mb-3 text-[#2D2D2B]">Connect With Us</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://instagram.com/browsby.mugi/"
+                    href="https://www.instagram.com/inkmugi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#2D2D2B]/10 p-3 rounded-full text-[#2D2D2B] hover:bg-[#2D2D2B] hover:text-white transition-colors"
@@ -101,7 +105,7 @@ const Contact: React.FC = () => {
                     <Instagram size={20} />
                   </a>
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/inkmugi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#2D2D2B]/10 p-3 rounded-full text-[#2D2D2B] hover:bg-[#2D2D2B] hover:text-white transition-colors"
@@ -200,11 +204,11 @@ const Contact: React.FC = () => {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={4}>
+            <AnimatedSection delay={2}>
               <div className="bg-white p-6 rounded-lg shadow-soft">
                 <h3 className="text-lg font-medium mb-2 text-[#2D2D2B]">What forms of payment do you accept?</h3>
                 <p className="text-[#2D2D2B]/80">
-                  We accept all major credit cards, cash, and digital payment methods including Apple Pay, Google Pay, and Venmo.
+                  We accept cash, all major credit cards, CareCredit, and Afterpay for your convenience.
                 </p>
               </div>
             </AnimatedSection>

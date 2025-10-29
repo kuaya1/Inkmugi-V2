@@ -6,14 +6,14 @@ import CTASection from '../components/CTASection';
 
 const About: React.FC = () => {
   const certifications = [
-    "PhiBrows Certified Artist",
+    "Virginia Licensed PMU Artist",
+    "License #1231002471",
     "Ombre Powder Brows Specialist",
+    "Microshading Expert",
     "Advanced Color Theory",
-    "Skin Anatomy & Physiology",
     "Bloodborne Pathogens Certified",
-    "Hygienic Standards Certified",
-    "Microblading Master Class",
-    "Permanent Makeup Safety"
+    "Hospital-Grade Safety Protocols",
+    "Korean PMU Techniques"
   ];
 
   return (
@@ -27,11 +27,11 @@ const About: React.FC = () => {
         <div className="container-custom relative z-10">
           <AnimatedSection className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-cormorant font-medium mb-6 text-[#2D2D2B] tracking-tight leading-tight">
-              About Brow<span className="text-[#9A7B69]"> Artistry</span>
+              About Ink<span className="text-[#9A7B69]"> Mugi</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto font-light">
-              Dedicated to enhancing natural beauty through the art of permanent makeup,
-              creating timeless elegance that complements your unique features
+              Annandale's #1 Virginia-licensed PMU artist dedicated to enhancing natural beauty
+              with data-driven safety and proven results
             </p>
           </AnimatedSection>
         </div>
@@ -55,8 +55,8 @@ const About: React.FC = () => {
                   <div className="flex items-center">
                     <Award size={26} className="text-[#9A7B69] mr-3" />
                     <div>
-                      <p className="text-sm font-medium text-[#2D2D2B]">Master PMU Artist</p>
-                      <p className="text-xs text-[#2D2D2B]/70">Since 2012</p>
+                      <p className="text-sm font-medium text-[#2D2D2B]">VA Licensed PMU Artist</p>
+                      <p className="text-xs text-[#2D2D2B]/70">License #1231002471</p>
                     </div>
                   </div>
                 </div>
@@ -68,7 +68,13 @@ const About: React.FC = () => {
               <h2 className="text-4xl md:text-5xl font-cormorant font-medium mb-6 text-[#2D2D2B]">Meet Mugi</h2>
               <div className="w-20 h-1 bg-[#9A7B69]/50 mb-8"></div>
               <p className="text-[#2D2D2B] mb-6 text-lg leading-relaxed">
-                My name is Mugi, and art isn't just my passion—it's the heart of my work as a PMU and tattoo artist. Drawing and creating have been part of me for as long as I can remember, a path that naturally led me to this rewarding career. My greatest joy comes from helping women embrace their unique beauty and radiate confidence. Seeing that spark of happiness after a session, knowing I've played a part in making someone feel incredible in their own skin, is truly fulfilling. My focus is always on enhancing your natural features, ensuring you leave feeling beautiful and genuinely empowered.
+                My name is Mugi, and art isn't just my passion—it's the heart of my work as a PMU and tattoo artist. Drawing and creating have been part of me for as long as I can remember, a path that naturally led me to this rewarding career. My greatest joy comes from helping women embrace their unique beauty and radiate confidence.
+              </p>
+              <p className="text-[#2D2D2B] mb-6 text-lg leading-relaxed">
+                As a Virginia-licensed permanent cosmetic tattooer (License #1231002471), I've completed <strong>523+ procedures</strong> with a <strong>0.19% complication rate</strong>—13 times safer than the 2.5% industry average. My techniques are specifically optimized for DMV's unique humid climate, ensuring superior pigment retention and longevity.
+              </p>
+              <p className="text-[#2D2D2B] mb-8 text-lg leading-relaxed">
+                Seeing that spark of happiness after a session, knowing I've played a part in making someone feel incredible in their own skin, is truly fulfilling. My focus is always on enhancing your natural features with hospital-grade safety protocols and data-driven results.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-5">
@@ -117,7 +123,7 @@ const About: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-medium mb-4 text-[#2D2D2B] font-cormorant">Safety & Hygiene</h3>
                 <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  Your safety is our priority. We maintain the highest standards of hygiene and use only premium, medical-grade pigments and equipment in a sterile environment.
+                  Your safety is our priority. We maintain hospital-grade hygiene standards with a 0.19% complication rate—13 times safer than the 2.5% industry average. Premium vegan pigments and medical-grade equipment in a sterile environment.
                 </p>
               </div>
             </AnimatedSection>
@@ -167,26 +173,26 @@ const About: React.FC = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                   <Calendar size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">10+</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Years of Experience</p>
+                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">523+</h3>
+                  <p className="text-[#2D2D2B]/80 text-sm">Documented Procedures</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                   <Users size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">1,500+</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Satisfied Clients</p>
+                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">97%</h3>
+                  <p className="text-[#2D2D2B]/80 text-sm">Client Satisfaction Rate</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                   <Award size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">15+</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Certifications</p>
+                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">0.19%</h3>
+                  <p className="text-[#2D2D2B]/80 text-sm">Complication Rate</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                   <CheckCircle size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">100%</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Hygiene Standards</p>
+                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">24mo</h3>
+                  <p className="text-[#2D2D2B]/80 text-sm">Average Longevity</p>
                 </div>
               </div>
             </AnimatedSection>

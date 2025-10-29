@@ -1,0 +1,108 @@
+[build]
+  base = "project"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Force HTTPS and www
+[[redirects]]
+  from = "http://inkmugi.com/*"
+  to = "https://www.inkmugi.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.inkmugi.com/*"
+  to = "https://www.inkmugi.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://inkmugi.com/*"
+  to = "https://www.inkmugi.com/:splat"
+  status = 301
+  force = true
+
+# BEGIN 301 Redirects for GSC 404 Errors
+
+# Redirect old service pages
+[[redirects]]
+  from = "/services/microblading"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/ombre-powder-brows"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/old-gallery-page.html"
+  to = "/gallery"
+  status = 301
+  force = true
+
+# Redirect old blog posts
+[[redirects]]
+  from = "/blog/healing-process-old-post"
+  to = "/permanent-makeup-safety-dmv"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/post-about-pricing"
+  to = "/services"
+  status = 301
+  force = true
+
+# Redirect old HTML pages to React routes
+[[redirects]]
+  from = "/services.html"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gallery.html"
+  to = "/gallery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq.html"
+  to = "/faq"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+# END 301 Redirects
+
+# SPA fallback (must be last)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  directory = "netlify/functions"

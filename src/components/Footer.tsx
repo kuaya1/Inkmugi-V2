@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Mail, Phone, MapPin, Star } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-neutral-custom-800 text-white pt-16 pb-8">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand Column */}
           <div className="space-y-4">
             <Link to="/" className="text-2xl font-cormorant font-semibold">
-              Brow Artistry
+              Ink Mugi
             </Link>
             <p className="text-neutral-300 text-sm mt-4 max-w-xs">
-              Elevating natural beauty through the art of permanent makeup. Specializing in ombre powder brows that enhance your features with elegance.
+              Where artistry meets precision in permanent beauty. Transforming lives through bespoke ombre powder brows that enhance your natural elegance and daily confidence.
             </p>
             <div className="flex space-x-4 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/inkmugi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors duration-300"
@@ -26,13 +26,22 @@ const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/inkmugi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
+              </a>
+              <a
+                href="https://maps.app.goo.gl/3GSCY6K3AyzSHmXL8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-primary transition-colors duration-300"
+                aria-label="Google Business Profile"
+              >
+                <Star size={20} />
               </a>
             </div>
           </div>
@@ -62,45 +71,77 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  FAQ
+                <Link to="/blog" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Contact
+                <Link to="/authority" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Authority
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  FAQ
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* PMU Education */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Services</h3>
+            <h3 className="text-lg font-medium mb-4">PMU Education</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Ombre Powder Brows
+                <Link to="/pmu-data-guide" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Safety Data & Statistics
+                </Link>
+              </li>
+              <li>
+                <Link to="/pmu-myths-vs-facts" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  PMU Myths vs Facts
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-safety-dmv" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  PMU Safety in DMV
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  PMU Guides & Tips
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Artistry Services */}
+          <div>
+            <h3 className="text-lg font-medium mb-4">Artistry Services</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/ombre-brows" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Signature Ombre Powder Brows
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Brow Touch-Up
+                  Precision Touch-Up Sessions
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Brow Correction
+                  Transformation Corrections
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Brow Consultation
+                  Private Design Consultation
                 </Link>
               </li>
               <li>
                 <Link to="/booking" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Book Appointment
+                  Reserve Your Session
                 </Link>
               </li>
             </ul>
@@ -126,12 +167,23 @@ const Footer: React.FC = () => {
                   inkmugi@gmail.com
                 </a>
               </li>
+              <li className="flex items-center">
+                <Star size={18} className="mr-2 text-primary" />
+                <a 
+                  href="https://maps.app.goo.gl/3GSCY6K3AyzSHmXL8" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm"
+                >
+                  Google Business Profile
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-neutral-700 text-center text-neutral-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Brow Artistry. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ink Mugi. All rights reserved. Crafted with precision and passion.</p>
           <div className="mt-2 flex justify-center space-x-4">
             <Link to="/privacy-policy" className="hover:text-primary transition-colors duration-300">
               Privacy Policy

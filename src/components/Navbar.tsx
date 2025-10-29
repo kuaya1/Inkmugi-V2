@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Facebook } from 'lucide-react';
+import { Menu, X, Instagram, Facebook, Sparkles } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,9 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
+    { name: 'Authority', path: '/authority' },
     { name: 'Gallery', path: '/gallery' },
+    { name: 'Blog', path: '/blog' },
     { name: 'FAQ', path: '/faq' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -78,11 +80,11 @@ const Navbar: React.FC = () => {
         </nav>
 
         {/* Action Buttons - Desktop */}
-        <div className="hidden md:flex items-center space-x-6 flex-shrink-0">
+        <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
           {/* Social Icons */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/inkmugi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-700 hover:text-primary transition-colors duration-300"
@@ -91,7 +93,7 @@ const Navbar: React.FC = () => {
               <Instagram size={20} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/inkmugi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-700 hover:text-primary transition-colors duration-300"
@@ -101,17 +103,33 @@ const Navbar: React.FC = () => {
             </a>
           </div>
           
+          {/* AI Try-On Button - Featured */}
           <Link
-            to="/booking"
+            to="/virtual-try-on"
+            className="relative group bg-gradient-to-r from-[#2D2D2B] to-[#4A4A47] hover:from-[#3D3D3B] hover:to-[#5A5A57] text-white text-sm py-2 px-5 rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            <Sparkles size={16} className="animate-pulse" />
+            <span>Try AI Brows</span>
+            <span className="absolute -top-1 -right-1 bg-[#E6DAD2] text-[#2D2D2B] text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+              NEW
+            </span>
+          </Link>
+          
+          <a
+            href="https://www.vagaro.com/bortemicroblading/book-now"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary text-sm py-2 px-4"
           >
             Book Now
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-neutral-100 focus:outline-none"
+          className={`md:hidden focus:outline-none ${
+            isScrolled ? 'text-neutral-700' : 'text-neutral-100'
+          }`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -139,17 +157,32 @@ const Navbar: React.FC = () => {
               {link.name}
             </Link>
           ))}
+          
+          {/* AI Try-On Button - Mobile Featured */}
           <Link
-            to="/booking"
+            to="/virtual-try-on"
+            className="relative bg-gradient-to-r from-[#2D2D2B] to-[#4A4A47] text-white text-sm py-3 rounded-lg flex items-center justify-center gap-2 shadow-lg"
+          >
+            <Sparkles size={16} />
+            <span>Try AI Virtual Brows</span>
+            <span className="absolute -top-1 -right-1 bg-[#E6DAD2] text-[#2D2D2B] text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+              NEW
+            </span>
+          </Link>
+          
+          <a
+            href="https://www.vagaro.com/bortemicroblading/book-now"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary text-sm py-2 w-full"
           >
             Book Now
-          </Link>
+          </a>
 
           {/* Social Icons - Mobile */}
           <div className="flex items-center space-x-4 pt-2">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/inkmugi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-700 hover:text-primary transition-colors duration-300"
@@ -158,7 +191,7 @@ const Navbar: React.FC = () => {
               <Instagram size={20} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/inkmugi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-700 hover:text-primary transition-colors duration-300"

@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Award, CheckCircle, Calendar, Users } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
 
@@ -14,37 +14,49 @@ const Services = () => {
     {
       id: 1,
       title: 'Ombre Powder Brows',
-      description: 'Our signature service! Soft, powdered effect that mimics the look of brow makeup with a more natural finish than traditional microblading.',
+      price: '$600',
+      duration: '3 hours',
+      description: 'Soft-to-bold gradient technique for natural-looking brows. Digital machine technique with premium vegan pigments using gradient shading method. Results last 18-36 months in DMV climate.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 2,
-      title: 'Brow Correction',
-      description: 'Specialized technique to correct previous PMU work that has faded unevenly or needs reshaping for a more flattering look.',
+      title: 'Microshading',
+      price: '$500',
+      duration: '2.5 hours',
+      description: 'Delicate dot-work technique creating soft powder effect with medical-grade pigments. Perfect for sensitive skin with 0.19% complication rate. Results last 1-3 years.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 3,
-      title: 'Brow Consultation',
-      description: 'Personalized consultation to determine the perfect brow shape and style for your face shape and personal preference.',
+      title: 'PMU Correction',
+      price: '$700',
+      duration: '3 hours',
+      description: 'Advanced correction techniques including color neutralization and shape refinement. Expert correction of previous permanent makeup work.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 4,
-      title: 'Touch-Up Sessions',
-      description: 'Maintenance sessions to keep your brows looking fresh and vibrant. Recommended every 12-18 months depending on skin type.',
+      title: 'Free Consultation',
+      price: 'Free',
+      duration: '45 minutes',
+      description: 'Complimentary design consultation and skin assessment. Personalized brow mapping to determine the perfect shape for your facial structure and skin type.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 5,
-      title: 'PMU Training',
-      description: 'Professional training courses for aspiring PMU artists looking to master the art of ombre powder brows.',
+      title: 'Touch-Up Sessions',
+      price: 'Included',
+      duration: '1.5 hours',
+      description: '6-week touch-up included with initial procedure. Maintenance sessions keep your brows looking fresh and vibrant. Recommended every 18-36 months.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 6,
       title: 'After-Care Services',
-      description: 'Comprehensive after-care support to ensure optimal healing and long-lasting results following your PMU procedure.',
+      price: 'Included',
+      duration: 'Ongoing',
+      description: 'Comprehensive aftercare support included with every procedure. Detailed instructions and premium aftercare kit to ensure optimal healing and long-lasting results.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
   ];
@@ -56,11 +68,10 @@ const Services = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Brow Transformation Services
+              PMU Services in Annandale, VA
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto">
-              Elevate your natural beauty with our specialized ombre powder brow techniques.
-              Customized solutions for every face shape and skin tone.
+              Virginia-licensed permanent makeup artistry with 523+ procedures, 0.19% complication rate, and 97% client satisfaction. Specialized techniques for DMV's unique climate.
             </p>
           </AnimatedSection>
         </div>
@@ -79,16 +90,20 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <AnimatedSection key={service.id} delay={index + 1}>
-                <div className="bg-white p-6 rounded-lg shadow-soft h-full">
+                <div className="bg-white p-6 rounded-lg shadow-soft h-full border-b-4 border-[#E6DAD2] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <div className="w-12 h-12 bg-[#2D2D2B]/10 rounded-full flex items-center justify-center mb-4">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-medium mb-3 text-[#2D2D2B]">{service.title}</h3>
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-medium text-[#2D2D2B]">{service.title}</h3>
+                    <span className="text-[#2D2D2B] font-bold text-lg">{service.price}</span>
+                  </div>
+                  <p className="text-[#2D2D2B]/60 text-sm mb-4">Duration: {service.duration}</p>
                   <p className="text-[#2D2D2B]/80 mb-6">
                     {service.description}
                   </p>
-                  <Link to="/booking" className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors">
-                    Learn More
+                  <Link to="/booking" className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors inline-flex items-center">
+                    Book Now →
                   </Link>
                 </div>
               </AnimatedSection>
@@ -143,35 +158,38 @@ const Services = () => {
             </AnimatedSection>
 
             <AnimatedSection delay={2}>
-              <h2 className="section-title text-[#2D2D2B]">Why Choose Our Services</h2>
-              <p className="text-[#2D2D2B] mb-6">
-                We pride ourselves on providing exceptional permanent makeup services using the highest quality products and techniques. Our experienced artists are dedicated to enhancing your natural beauty with results that look flawless and natural.
+              <h2 className="section-title text-[#2D2D2B]">Why Choose Ink Mugi</h2>
+              <p className="text-[#2D2D2B] mb-4">
+                Virginia-licensed PMU artist specializing in ombre powder brows and microshading. Our hospital-grade safety protocols and data-driven approach ensure exceptional results with minimal risk.
+              </p>
+              <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg">
+                <strong className="text-[#2D2D2B]">523+ Procedures</strong> • <strong className="text-[#2D2D2B]">0.19% Complication Rate</strong> (vs 2.5% industry avg) • <strong className="text-[#2D2D2B]">97% Satisfaction</strong> • License #1231002471
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Customized approach for each client</span>
+                  <span className="text-[#2D2D2B]">Virginia state licensed & insured</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Premium, medical-grade pigments</span>
+                  <span className="text-[#2D2D2B]">Premium vegan pigments</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Sterile, comfortable environment</span>
+                  <span className="text-[#2D2D2B]">Hospital-grade sterilization</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Detailed consultation process</span>
+                  <span className="text-[#2D2D2B]">DMV climate-optimized techniques</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Comprehensive aftercare support</span>
+                  <span className="text-[#2D2D2B]">Free consultation & aftercare kit</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Certified, experienced artists</span>
+                  <span className="text-[#2D2D2B]">6-week touch-up included</span>
                 </div>
               </div>
               
