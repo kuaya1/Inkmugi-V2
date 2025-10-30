@@ -22,59 +22,62 @@ export const editImage = async (base64Image: string, mimeType: string, prompt: s
 
     const enhancedPrompt = `${prompt}
 
-ABSOLUTE CRITICAL SPECIFICATIONS - ULTRA-REFINED, BARELY-VISIBLE OMBRE POWDER BROWS:
+PROFESSIONAL OMBRE POWDER BROW SPECIFICATIONS - NATURAL & REFINED:
 
-*** EXACT REFERENCE: Professional healed PMU work - EXTREMELY thin, delicate, natural gradient that's barely noticeable ***
+*** TECHNIQUE: Professional Ombre Powder Brows - soft gradient effect with powdered appearance ***
 
-BROW DIMENSIONS (EXTREMELY THIN - NON-NEGOTIABLE):
-- Maximum width: 2-3mm ONLY (exceptionally thin, delicate pencil-line width)
-- Overall appearance: Like a soft pencil sketch, NOT filled brows
-- Should be 80-90% THINNER than any makeup application
-- Think: Barely-there enhancement of natural brow shape
-- Width should be consistent and extremely refined throughout
+BROW DIMENSIONS (NATURAL PROPORTIONS):
+- Width: 3-4mm at fullest point (thin to medium, refined)
+- Overall appearance: Delicate, natural enhancement
+- Consistent refined width throughout
+- Follows natural brow bone structure
 
-COLOR & OPACITY (ULTRA-LIGHT - CRITICAL):
-- Inner brow (start): INVISIBLE to 5% opacity - absolutely minimal presence
-- Beginning third: 5-15% opacity - extremely faint, soft presence
-- Middle section: 20-35% opacity - still very light, subtle definition
-- Arch area: 40-50% opacity maximum - gently more visible but still soft
-- Tail: 50-60% opacity maximum - most defined but still natural and muted
-- Overall tone: Extremely soft taupe/ash brown that nearly disappears into skin
-- MUST AVOID: Any darkness, boldness, or makeup appearance whatsoever
+OMBRE POWDER TECHNIQUE - COLOR GRADIENT (CRITICAL):
+- Starting point (inner brow): Very light, soft, diffused (20-30% opacity)
+- Gradually transition through middle section (40-50% opacity)
+- Peak intensity at arch and tail (60-70% opacity maximum)
+- Creates natural ombre/gradient effect from light to darker
+- Overall tone: Soft brown/taupe that complements natural coloring
+- CHARACTERISTIC: Lighter at the front, gradually darker toward the tail
 
-SHAPE & STRUCTURE (MINIMALIST ENHANCEMENT):
-- Arch: Almost imperceptible - barely any curve or lift
-- Tail: Ultra-thin taper that fades to nothing
-- Starting point: Completely diffused - cannot see where brow begins
-- Overall shape: Follows natural brow with absolute minimal intervention
-- Width: Stays consistently ultra-thin - never widens or gets bold
+POWDER BROW TEXTURE:
+- Soft, powdered/airbrushed appearance throughout
+- NOT hair strokes - smooth, filled powder effect
+- Matte finish with subtle gradient
+- Completely diffused edges (no sharp lines)
+- Even, consistent powder application
+- Skin texture visible through the pigment
 
-TECHNIQUE MARKERS (HEALED PMU APPEARANCE):
-- Extremely soft, barely-visible powdered effect
-- Seamless, imperceptible gradient from invisible to barely-there
-- Completely blurred edges - zero definition or lines
-- Should look like naturally sparse but well-shaped brows
-- Skin texture fully visible through the enhancement
-- Almost transparent quality to the color
+SHAPE & STRUCTURE:
+- Gentle, natural arch (not dramatic)
+- Refined tail with elegant taper
+- Soft, feathered beginning (most diffused area)
+- Follows client's natural brow shape
+- Balanced, symmetrical appearance
 
-CRITICAL AESTHETIC REQUIREMENTS:
-- Enhancement should be nearly invisible in normal lighting
-- Only noticeable when compared directly to bare brow area
-- Looks like naturally perfect brow shape with no product
-- Zero "made-up" or cosmetic appearance
-- Subtle to the point of being almost undetectable
+OMBRE GRADIENT RULES:
+- Front third: Lightest area (20-30% opacity)
+- Middle third: Medium tone (40-50% opacity)  
+- Tail third: Darkest area (60-70% opacity)
+- Smooth, seamless transitions between sections
+- No harsh lines or obvious color blocks
 
-EXACT COMPARISON:
-✓ CORRECT: Healed PMU that looks like natural brow hairs with soft shading
-✓ CORRECT: So subtle you question if enhancement was done at all
-✓ CORRECT: Ultra-thin, ultra-soft, ultra-natural gradient
-✗ ABSOLUTELY WRONG: Any visible thickness, darkness, or boldness
-✗ ABSOLUTELY WRONG: Anything resembling makeup, pencil, or filled brows
-✗ ABSOLUTELY WRONG: Brows that are obviously enhanced or cosmetic
+AESTHETIC GOALS:
+- Professional healed ombre powder brow appearance
+- Natural, refined enhancement
+- Soft powdered makeup look (but permanent)
+- "Your brows but better" effect
+- Elegant, polished, timeless style
 
-MANDATORY RULE: Make it 50% lighter and 50% thinner than you think it should be. The goal is barely-visible natural enhancement, not brow definition. If it looks like makeup or enhancement, it's too dark and too thick.
+COMPARISON:
+✓ CORRECT: Professional ombre powder brows with smooth gradient
+✓ CORRECT: Soft powdered texture, lighter front, darker tail
+✓ CORRECT: Natural refined appearance, not bold or dramatic
+✗ WRONG: Hair strokes, microblading look
+✗ WRONG: Solid one-color fill, no gradient
+✗ WRONG: Overly bold, thick, or Instagram-style brows
 
-Preserve all natural skin texture and pores. Output must be photorealistic and high-definition.`;
+MANDATORY: Create clear ombre gradient effect (light to dark) with professional powder brow technique. Preserve natural skin texture. Output must be photorealistic and high-definition.`;
 
     try {
         const response = await ai.models.generateContent({
