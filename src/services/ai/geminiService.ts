@@ -22,56 +22,59 @@ export const editImage = async (base64Image: string, mimeType: string, prompt: s
 
     const enhancedPrompt = `${prompt}
 
-ULTRA-CRITICAL SPECIFICATIONS FOR ULTRA-NATURAL, REFINED OMBRE POWDER BROWS:
+ABSOLUTE CRITICAL SPECIFICATIONS - ULTRA-REFINED, BARELY-VISIBLE OMBRE POWDER BROWS:
 
-*** REFERENCE STYLE: Professional permanent makeup by licensed PMU artist - EXTREMELY natural, refined, and subtle ***
+*** EXACT REFERENCE: Professional healed PMU work - EXTREMELY thin, delicate, natural gradient that's barely noticeable ***
 
-BROW DIMENSIONS (MUST BE VERY THIN AND DELICATE):
-- Maximum width at fullest point: 3-4mm ONLY (extremely thin, refined line)
-- Overall thickness: THIN - should look like naturally groomed brows, NOT makeup
-- The brows should be approximately 70-80% THINNER than typical makeup brows
-- Think: Natural hair-like appearance, NOT filled-in makeup brows
+BROW DIMENSIONS (EXTREMELY THIN - NON-NEGOTIABLE):
+- Maximum width: 2-3mm ONLY (exceptionally thin, delicate pencil-line width)
+- Overall appearance: Like a soft pencil sketch, NOT filled brows
+- Should be 80-90% THINNER than any makeup application
+- Think: Barely-there enhancement of natural brow shape
+- Width should be consistent and extremely refined throughout
 
-COLOR & OPACITY (EXTREMELY IMPORTANT - MUST BE VERY LIGHT):
-- Starting point (inner brow near nose): BARELY VISIBLE (10-15% opacity maximum)
-- Middle section: Still very light and natural (30-40% opacity maximum)
-- Arch area: Slightly more defined but still subtle (50-60% opacity maximum)  
-- Tail: Most defined area but still natural (60-70% opacity maximum)
-- Overall color: Very soft, muted brown/taupe tones that blend with natural skin and hair
-- ABSOLUTELY AVOID: Bold colors, dark browns, blacks, heavy application, makeup appearance
+COLOR & OPACITY (ULTRA-LIGHT - CRITICAL):
+- Inner brow (start): INVISIBLE to 5% opacity - absolutely minimal presence
+- Beginning third: 5-15% opacity - extremely faint, soft presence
+- Middle section: 20-35% opacity - still very light, subtle definition
+- Arch area: 40-50% opacity maximum - gently more visible but still soft
+- Tail: 50-60% opacity maximum - most defined but still natural and muted
+- Overall tone: Extremely soft taupe/ash brown that nearly disappears into skin
+- MUST AVOID: Any darkness, boldness, or makeup appearance whatsoever
 
-SHAPE CHARACTERISTICS (ULTRA-NATURAL):
-- Arch: VERY gentle and subtle - barely noticeable curve (not dramatic or high)
-- Tail: Thin, delicate taper - should almost fade away naturally
-- Starting point: Extremely soft and diffused - no defined beginning
-- Width consistency: Stays thin throughout - never gets thick or bold
-- Follow natural brow bone with minimal enhancement
+SHAPE & STRUCTURE (MINIMALIST ENHANCEMENT):
+- Arch: Almost imperceptible - barely any curve or lift
+- Tail: Ultra-thin taper that fades to nothing
+- Starting point: Completely diffused - cannot see where brow begins
+- Overall shape: Follows natural brow with absolute minimal intervention
+- Width: Stays consistently ultra-thin - never widens or gets bold
 
-TEXTURE & TECHNIQUE (PROFESSIONAL PMU):
-- Soft powdered/airbrushed appearance (NOT hair strokes, NOT solid fill)
-- Seamless gradient from barely-there to slightly-more-visible
-- Completely diffused edges - NO sharp lines or boundaries
-- Should look like natural brow hair with very subtle enhancement
-- Skin texture should show through the brow color
+TECHNIQUE MARKERS (HEALED PMU APPEARANCE):
+- Extremely soft, barely-visible powdered effect
+- Seamless, imperceptible gradient from invisible to barely-there
+- Completely blurred edges - zero definition or lines
+- Should look like naturally sparse but well-shaped brows
+- Skin texture fully visible through the enhancement
+- Almost transparent quality to the color
 
-CRITICAL AESTHETIC GOALS:
-- "No-makeup makeup" effect - people should think these are natural brows
-- Enhancement so subtle that it's almost imperceptible 
-- Client looks naturally put-together, NOT made-up
-- The work should be virtually undetectable as permanent makeup
-- Think: "I woke up like this" natural beauty
+CRITICAL AESTHETIC REQUIREMENTS:
+- Enhancement should be nearly invisible in normal lighting
+- Only noticeable when compared directly to bare brow area
+- Looks like naturally perfect brow shape with no product
+- Zero "made-up" or cosmetic appearance
+- Subtle to the point of being almost undetectable
 
-SPECIFIC COMPARISON REFERENCES:
-✓ CORRECT: Barely-there, refined, natural brows like professional healed PMU work
-✓ CORRECT: Soft, thin, delicate appearance - looks like naturally beautiful brows
-✓ CORRECT: Color is so subtle you have to look closely to see the enhancement
-✗ WRONG: Bold Instagram brows, makeup brows, thick brows, dark brows
-✗ WRONG: Obvious cosmetic enhancement, dramatic appearance
-✗ WRONG: Anything that looks like filled-in makeup
+EXACT COMPARISON:
+✓ CORRECT: Healed PMU that looks like natural brow hairs with soft shading
+✓ CORRECT: So subtle you question if enhancement was done at all
+✓ CORRECT: Ultra-thin, ultra-soft, ultra-natural gradient
+✗ ABSOLUTELY WRONG: Any visible thickness, darkness, or boldness
+✗ ABSOLUTELY WRONG: Anything resembling makeup, pencil, or filled brows
+✗ ABSOLUTELY WRONG: Brows that are obviously enhanced or cosmetic
 
-THE GOLDEN RULE: When in doubt, make it LIGHTER, THINNER, and MORE SUBTLE. It's better to be too natural than too bold. Professional PMU should be refined enhancement that looks like beautiful natural brows.
+MANDATORY RULE: Make it 50% lighter and 50% thinner than you think it should be. The goal is barely-visible natural enhancement, not brow definition. If it looks like makeup or enhancement, it's too dark and too thick.
 
-Preserve natural skin texture and ensure photorealistic, high-definition output.`;
+Preserve all natural skin texture and pores. Output must be photorealistic and high-definition.`;
 
     try {
         const response = await ai.models.generateContent({
