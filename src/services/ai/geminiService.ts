@@ -22,19 +22,43 @@ export const editImage = async (base64Image: string, mimeType: string, prompt: s
 
     const enhancedPrompt = `${prompt}
 
-CRITICAL SPECIFICATIONS FOR NATURAL OMBRE POWDER BROWS:
-- Brow width: Natural and proportionate (not overly thick or wide)
-- Brow thickness: Medium, refined, elegant (approximately 5-7mm at fullest point)
-- Shape: Tailored to face shape with gentle, natural arch
-- Start: Soft, feathered gradient beginning (lighter)
-- Body: Smooth transition to slightly darker middle
-- Tail: Defined but natural taper, slightly darker than start
-- Placement: Follows natural brow bone, respects facial proportions
-- Technique: Professional ombre powder effect with subtle gradient
-- Overall effect: Natural, refined, enhances features without overpowering
-- Reference style: Elegant, well-balanced brows similar to professional PMU work by licensed artists
+CRITICAL SPECIFICATIONS FOR NATURAL, REFINED OMBRE POWDER BROWS (PROFESSIONAL PMU STYLE):
 
-Keep the brows natural in size - they should enhance, not dominate the face. Ensure high-definition, clear, photorealistic output.`;
+BROW DIMENSIONS (VERY IMPORTANT - KEEP NATURAL):
+- Maximum width at fullest point: 4-6mm (THIN TO MEDIUM, not thick)
+- Length: Proportionate to face, typically ending at outer eye corner angle
+- Overall appearance: Delicate, refined, elegant - NOT bold or dramatic
+
+COLOR & GRADIENT (OMBRE POWDER TECHNIQUE):
+- Starting point (inner brow): Very light, soft, barely visible (20-30% opacity)
+- Middle section: Gradually transition to medium tone (50-60% opacity)
+- Arch & tail: Slightly darker but still natural (70-80% opacity, not solid black)
+- Overall color: Soft brown tones that complement skin tone and hair color
+- AVOID: Harsh lines, solid black, heavy application, Instagram-style bold brows
+
+SHAPE & STRUCTURE:
+- Natural arch: Gentle, subtle curve (not dramatically high or angular)
+- Tail: Tapered, refined ending (not thick or blunt)
+- Starting point: Soft, feathered, diffused (no harsh beginning)
+- Follow natural brow bone structure
+- Symmetry: Balanced but allow for natural facial asymmetry
+
+TECHNIQUE MARKERS (OMBRE POWDER BROWS):
+- Powdered/soft appearance throughout (not hair strokes)
+- Smooth gradient effect from light to slightly darker
+- Diffused edges (no sharp boundaries)
+- Professional, subtle enhancement
+- "Your brows but better" aesthetic
+
+COMPARISON REFERENCE:
+- Style: Similar to professional permanent makeup by licensed PMU artists
+- NOT Instagram bold brows, NOT makeup brows, NOT thick dramatic brows
+- Think: Natural, elegant, refined, barely-there enhancement
+- Client should look like they have beautiful natural brows, not obvious tattoo
+
+CRITICAL: The brows should be SUBTLE and NATURAL - approximately 60% lighter and thinner than typical makeup brows. The goal is refined enhancement that looks like naturally beautiful brows, not an obvious cosmetic procedure.
+
+Ensure high-definition, clear, photorealistic output with proper skin texture preserved.`;
 
     try {
         const response = await ai.models.generateContent({
