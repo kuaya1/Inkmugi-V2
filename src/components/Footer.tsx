@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/pmu-myths-vs-facts" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/pmu-myths-facts" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   PMU Myths vs Facts
                 </Link>
               </li>

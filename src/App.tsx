@@ -18,6 +18,8 @@ import PMUMythsVsFacts from './pages/PMUMythsVsFacts';
 import ClimatePerformanceAnalysis from './pages/ClimatePerformanceAnalysis';
 import VirtualTryOn from './pages/VirtualTryOn';
 import SignatureOmbreBrows from './pages/SignatureOmbreBrows';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
           <Route path="/pmu-data-guide" element={<PMUDataGuide />} />
           <Route path="/pmu-myths-facts" element={<PMUMythsVsFacts />} />
           <Route path="/climate-performance-analysis" element={<ClimatePerformanceAnalysis />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
       </main>
       <Footer />
