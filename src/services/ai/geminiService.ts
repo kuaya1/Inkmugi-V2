@@ -20,7 +20,21 @@ export const editImage = async (base64Image: string, mimeType: string, prompt: s
         throw new Error("AI service is not configured. Please set VITE_GEMINI_API_KEY in your .env.local file.");
     }
 
-    const enhancedPrompt = `${prompt}. Ensure the final output image is high-definition, clear, and photorealistic.`;
+    const enhancedPrompt = `${prompt}
+
+CRITICAL SPECIFICATIONS FOR NATURAL OMBRE POWDER BROWS:
+- Brow width: Natural and proportionate (not overly thick or wide)
+- Brow thickness: Medium, refined, elegant (approximately 5-7mm at fullest point)
+- Shape: Tailored to face shape with gentle, natural arch
+- Start: Soft, feathered gradient beginning (lighter)
+- Body: Smooth transition to slightly darker middle
+- Tail: Defined but natural taper, slightly darker than start
+- Placement: Follows natural brow bone, respects facial proportions
+- Technique: Professional ombre powder effect with subtle gradient
+- Overall effect: Natural, refined, enhances features without overpowering
+- Reference style: Elegant, well-balanced brows similar to professional PMU work by licensed artists
+
+Keep the brows natural in size - they should enhance, not dominate the face. Ensure high-definition, clear, photorealistic output.`;
 
     try {
         const response = await ai.models.generateContent({
