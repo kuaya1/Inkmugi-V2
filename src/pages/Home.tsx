@@ -113,7 +113,7 @@ const Home: React.FC = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a 
-                href="https://www.vagaro.com/bortemicroblading/book-now" 
+                href="https://www.vagaro.com/inkmugi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden bg-gradient-to-r from-[#E6DAD2] to-[#F0E4D8] hover:from-[#F0E4D8] hover:to-[#E6DAD2] text-[#2D2D2B] font-semibold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-2 text-lg"
@@ -812,7 +812,7 @@ const Home: React.FC = () => {
                 Located in Heritage Professional Plaza with ample free parking. We offer evening and weekend appointments to accommodate busy DMV professionals.
               </p>
               <a 
-                href="https://www.vagaro.com/bortemicroblading/book-now" 
+                href="https://www.vagaro.com/inkmugi" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn bg-[#2D2D2B] hover:bg-[#2D2D2B]/80 text-white transition-all duration-300"
@@ -865,7 +865,7 @@ const Home: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
                 <a 
-                  href="https://www.vagaro.com/bortemicroblading/book-now" 
+                  href="https://www.vagaro.com/inkmugi" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn bg-white hover:bg-gray-50 text-[#2D2D2B] font-semibold transition-all duration-500 transform hover:translate-y-[-2px] hover:shadow-2xl text-lg px-12 py-5 rounded-lg border border-white/20"

@@ -327,7 +327,7 @@ const TermsOfService: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="https://www.vagaro.com/bortemicroblading/book-now" 
+                  href="https://www.vagaro.com/inkmugi" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn bg-[#2D2D2B] hover:bg-[#2D2D2B]/80 text-white transition-all duration-300"

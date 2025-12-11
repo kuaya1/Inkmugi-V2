@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 export default function BookingRedirect() {
   useEffect(() => {
     // Redirect to Vagaro booking page
-    window.location.href = 'https://www.vagaro.com/bortemicroblading/book-now';
+    window.location.href = 'https://www.vagaro.com/inkmugi';
   }, []);
 
   return (

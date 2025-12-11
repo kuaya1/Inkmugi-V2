@@ -152,7 +152,7 @@ const SignatureOmbreBrows: React.FC = () => {
               "price": "600",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
-              "url": "https://www.vagaro.com/bortemicroblading/book-now",
+              "url": "https://www.vagaro.com/inkmugi",
               "priceValidUntil": "2026-12-31"
             },
             "areaServed": ["Annandale VA", "Arlington VA", "Alexandria VA", "Washington DC", "Fairfax County VA", "Northern Virginia"],
@@ -228,7 +228,7 @@ const SignatureOmbreBrows: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://www.vagaro.com/bortemicroblading/book-now" 
+                  href="https://www.vagaro.com/inkmugi" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
@@ -403,7 +403,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Every face is unique. Book a complimentary consultation where we'll assess your skin type, discuss your goals, and determine if ombre powder brows are right for you—no pressure, no obligation.
                 </p>
                 <a 
-                  href="https://www.vagaro.com/bortemicroblading/book-now" 
+                  href="https://www.vagaro.com/inkmugi" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-6 py-3 rounded-full transition-all"
@@ -632,7 +632,7 @@ const SignatureOmbreBrows: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a 
-                  href="https://www.vagaro.com/bortemicroblading/book-now" 
+                  href="https://www.vagaro.com/inkmugi" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-bold text-lg px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3"
