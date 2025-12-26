@@ -69,6 +69,18 @@
   background: linear-gradient(135deg, #f9f5f6 0%, #f0e6e8 100%);
 }
 
+/* Radial gradient for decorative elements */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Smooth scroll behavior enhancement */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Custom animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -123,14 +135,4 @@
 
 .testimonial-card:hover {
   @apply shadow-lg transform -translate-y-1;
-}
-
-/* Voice search optimization - semantic markup for AI/voice assistants */
-.voice-answer, 
-.quick-answer, 
-.featured-info,
-.ai-optimized-content {
-  font-weight: 500;
-  line-height: 1.6;
-  word-spacing: 0.1em;
 }
