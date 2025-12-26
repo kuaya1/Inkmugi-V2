@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ArrowDown, Award, Shield, Clock, Heart, Sparkles, CheckCircle2, Quote, Play, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, EffectFade, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
+import { ArrowRight, ArrowDown, Award, Shield, Clock, Heart, Sparkles, CheckCircle2, Quote, Play } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import AnimatedSection from '../components/AnimatedSection';
-import TestimonialCard from '../components/TestimonialCard';
-import ServiceCard from '../components/ServiceCard';
 
 const Home: React.FC = () => {
   const [activeTransformation, setActiveTransformation] = useState(0);
@@ -21,49 +13,44 @@ const Home: React.FC = () => {
     setIsHeroLoaded(true);
   }, []);
 
-  // Testimonials with deeper stories
+  // Home reviews (Google Business Profile)
   const testimonials = [
     {
-      name: 'Sarah J.',
-      location: 'Arlington, VA',
-      story: 'Before Mugi, I spent 25 minutes every morning on my brows. Now I wake up, look in the mirror, and smile.',
-      highlight: '25 minutes saved daily',
+      name: 'Lisa M Bailey-Harper',
+      location: 'Google Reviews',
       rating: 5,
-      testimonial: "I am absolutely thrilled with my ombre brows from Ink Mugi. They transformed my entire face and I get compliments daily. The professionalism and expertise are unmatched in the DMV area.",
-      date: 'October 2024',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150',
+      testimonial:
+        'What a fabulous job she did with my powder brows. I was nervous but they look oh so natural. My husband didn’t even notice. lol Thank you Mugi!!!',
+      date: '2 weeks ago',
     },
     {
-      name: 'Emily R.',
-      location: 'Alexandria, VA',
-      story: 'I have oily skin. Every artist said PMU wouldn\'t work for me. Mugi said "watch this." 8 months later, still perfect.',
-      highlight: 'Oily skin success',
+      name: 'Porsche Huggins',
+      location: 'Google Reviews',
       rating: 5,
-      testimonial: 'As someone with oily skin, I was skeptical about permanent makeup. But Mugi recommended ombre powder brows and they have held perfectly for 8 months even through DMV humidity. Best decision I ever made!',
-      date: 'September 2024',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150',
+      testimonial:
+        'Mugi was very professional, meticulous and patient. She explained the process and made sure I was comfortable.',
+      date: '5 weeks ago',
     },
     {
-      name: 'Michelle L.',
-      location: 'Fairfax, VA',
-      story: 'Another artist ruined my brows. I cried for weeks. Mugi didn\'t just fix them—she gave me my confidence back.',
-      highlight: 'Correction success',
+      name: 'Sheree M',
+      location: 'Google Reviews',
       rating: 5,
-      testimonial: 'My previous PMU artist botched my brows terribly. Mugi corrected them beautifully using advanced color neutralization techniques. I have never been happier with how they look. She is truly an artist.',
-      date: 'August 2024',
-      image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150',
-    },
-    {
-      name: 'Jessica T.',
-      location: 'Washington, DC',
-      story: 'The consultation alone was worth it. She mapped my face, explained the science. I felt safe before she even started.',
-      highlight: 'Thorough process',
-      rating: 5,
-      testimonial: 'The consultation was thorough and professional. Mugi explained the entire healing process for DMV climate and the results are exactly what I wanted. I am recommending her to all my friends in Arlington and Alexandria.',
-      date: 'July 2024',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+      testimonial:
+        "I absolutely love Mugi! I get so many compliments. She's punctual, friendly, and very talented. I wouldn't let anyone else touch my brows. 💯",
+      date: '16 weeks ago',
     },
   ];
+
+  const getInitials = (name: string) => {
+    const letters = name
+      .split(/\s+/)
+      .filter(Boolean)
+      .map((part) => part[0] ?? '')
+      .join('')
+      .replace(/[^A-Za-z]/g, '')
+      .toUpperCase();
+    return (letters || 'G').slice(0, 2);
+  };
 
   // Services with emotional framing
   const services = [
@@ -668,8 +655,13 @@ const Home: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-2">
                     {testimonials.slice(0, 4).map((t, i) => (
-                      <div key={i} className="w-10 h-10 rounded-full border-2 border-white overflow-hidden">
-                        <img src={t.image} alt={t.name} className="w-full h-full object-cover" />
+                      <div
+                        key={i}
+                        className="w-10 h-10 rounded-full border-2 border-white bg-white flex items-center justify-center text-xs font-medium text-[#2D2D2B]"
+                        aria-label={t.name}
+                        title={t.name}
+                      >
+                        {getInitials(t.name)}
                       </div>
                     ))}
                   </div>
@@ -687,11 +679,15 @@ const Home: React.FC = () => {
               <div className="relative grid lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-2">
                   <p className="text-2xl md:text-3xl font-cormorant text-[#2D2D2B] leading-relaxed mb-8">
-                    "I used to spend 25 minutes every morning on my brows. Now I wake up, look in the mirror, and just... smile. That's worth everything."
+                    "{testimonials[0].testimonial}"
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 rounded-full overflow-hidden">
-                      <img src={testimonials[0].image} alt={testimonials[0].name} className="w-full h-full object-cover" />
+                    <div
+                      className="w-16 h-16 rounded-full bg-white flex items-center justify-center font-medium text-[#2D2D2B] border border-[#E6DAD2]/50"
+                      aria-label={testimonials[0].name}
+                      title={testimonials[0].name}
+                    >
+                      {getInitials(testimonials[0].name)}
                     </div>
                     <div>
                       <h4 className="font-medium text-[#2D2D2B]">{testimonials[0].name}</h4>
@@ -708,9 +704,11 @@ const Home: React.FC = () => {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-sm text-[#2D2D2B]/70 mb-2">Time saved</p>
-                    <p className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">25 min<span className="text-lg">/day</span></p>
-                    <p className="text-xs text-[#2D2D2B]/50 mt-1">~152 hours/year</p>
+                    <p className="text-sm text-[#2D2D2B]/70 mb-2">Rating</p>
+                    <p className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">
+                      {testimonials[0].rating}.0<span className="text-lg">/5</span>
+                    </p>
+                    <p className="text-xs text-[#2D2D2B]/50 mt-1">Google Reviews</p>
                   </div>
                 </div>
               </div>
@@ -730,15 +728,19 @@ const Home: React.FC = () => {
                     ))}
                   </div>
                   <p className="text-[#2D2D2B]/80 leading-relaxed flex-grow mb-6">
-                    "{testimonial.story}"
+                    "{testimonial.testimonial}"
                   </p>
                   <div className="flex items-center gap-3 pt-4 border-t border-[#E6DAD2]/30">
-                    <div className="w-10 h-10 rounded-full overflow-hidden">
-                      <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+                    <div
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xs font-medium text-[#2D2D2B] border border-[#E6DAD2]/50"
+                      aria-label={testimonial.name}
+                      title={testimonial.name}
+                    >
+                      {getInitials(testimonial.name)}
                     </div>
                     <div>
                       <h4 className="font-medium text-sm text-[#2D2D2B]">{testimonial.name}</h4>
-                      <p className="text-xs text-[#2D2D2B]/50">{testimonial.location}</p>
+                      <p className="text-xs text-[#2D2D2B]/50">{testimonial.date}</p>
                     </div>
                   </div>
                 </div>
