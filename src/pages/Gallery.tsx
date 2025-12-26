@@ -107,7 +107,6 @@ const EnhancedGalleryItem: React.FC<{
           </span>
         )}
       </div>
-      </div>
       
       <div className="p-4 relative">
         <div className="flex items-center justify-between">

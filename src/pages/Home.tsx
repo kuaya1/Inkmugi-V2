@@ -226,14 +226,27 @@ const Home: React.FC = () => {
           style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }}
         />
         
-        {/* Hero image with parallax-ready positioning */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[2000ms]"
-          style={{ 
-            backgroundImage: "url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')",
-            transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)',
-          }}
-        />
+        {/* Hero image with parallax-ready positioning - using optimized image sizes */}
+        <picture>
+          <source 
+            media="(max-width: 767px)" 
+            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg"
+          />
+          <source 
+            media="(min-width: 768px)" 
+            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
+          />
+          <img
+            src="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
+            alt="Ombre powder brows transformation by Inkmugi"
+            className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[2000ms]"
+            style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)' }}
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
 
         {/* Hero content */}
         <div className="container-custom relative z-20 text-white pt-20">
@@ -383,6 +396,10 @@ const Home: React.FC = () => {
                           src={transformations[activeTransformation].before} 
                           alt="Before transformation"
                           className="absolute inset-0 w-full h-full object-cover"
+                          loading="lazy"
+                          width="400"
+                          height="500"
+                          decoding="async"
                         />
                         <div className="absolute bottom-4 left-4 bg-[#2D2D2B]/80 backdrop-blur-sm text-white text-xs px-4 py-2 rounded-full font-medium tracking-wide">
                           Before
@@ -393,6 +410,10 @@ const Home: React.FC = () => {
                           src={transformations[activeTransformation].after} 
                           alt="After transformation"
                           className="absolute inset-0 w-full h-full object-cover"
+                          loading="lazy"
+                          width="400"
+                          height="500"
+                          decoding="async"
                         />
                         <div className="absolute bottom-4 right-4 bg-[#E6DAD2] text-[#2D2D2B] text-xs px-4 py-2 rounded-full font-medium tracking-wide">
                           After
@@ -657,6 +678,10 @@ const Home: React.FC = () => {
                       src={service.image}
                       alt={service.title}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                      width="400"
+                      height="256"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     

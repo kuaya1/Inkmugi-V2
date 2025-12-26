@@ -1,38 +1,54 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+// Critical routes - loaded immediately
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import Faq from './pages/Faq';
-import BookingRedirect from './pages/BookingRedirect';
-import Blog from './pages/Blog';
-import BlogPost from './components/blogpost';
-import Authority from './pages/Authority';
-import OmbreBrows from './pages/OmbreBrows';
-import PermanentMakeupSafetyDMV from './pages/PermanentMakeupSafetyDMV';
-import PMUDataGuide from './pages/PMUDataGuide';
-import PMUMythsVsFacts from './pages/PMUMythsVsFacts';
-import ClimatePerformanceAnalysis from './pages/ClimatePerformanceAnalysis';
-import VirtualTryOn from './pages/VirtualTryOn';
-import SignatureOmbreBrows from './pages/SignatureOmbreBrows';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+
+// Lazy-loaded routes for better initial load performance
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const Gallery = lazy(() => import('./pages/Gallery'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Faq = lazy(() => import('./pages/Faq'));
+const BookingRedirect = lazy(() => import('./pages/BookingRedirect'));
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPost = lazy(() => import('./components/blogpost'));
+const Authority = lazy(() => import('./pages/Authority'));
+const OmbreBrows = lazy(() => import('./pages/OmbreBrows'));
+const PermanentMakeupSafetyDMV = lazy(() => import('./pages/PermanentMakeupSafetyDMV'));
+const PMUDataGuide = lazy(() => import('./pages/PMUDataGuide'));
+const PMUMythsVsFacts = lazy(() => import('./pages/PMUMythsVsFacts'));
+const ClimatePerformanceAnalysis = lazy(() => import('./pages/ClimatePerformanceAnalysis'));
+const VirtualTryOn = lazy(() => import('./pages/VirtualTryOn'));
+const SignatureOmbreBrows = lazy(() => import('./pages/SignatureOmbreBrows'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./pages/TermsOfService'));
 // City Landing Pages
-import OmbreBrowsArlington from './pages/OmbreBrowsArlington';
-import OmbreBrowsAlexandria from './pages/OmbreBrowsAlexandria';
-import OmbreBrowsFairfax from './pages/OmbreBrowsFairfax';
-import PermanentMakeupDC from './pages/PermanentMakeupDC';
+const OmbreBrowsArlington = lazy(() => import('./pages/OmbreBrowsArlington'));
+const OmbreBrowsAlexandria = lazy(() => import('./pages/OmbreBrowsAlexandria'));
+const OmbreBrowsFairfax = lazy(() => import('./pages/OmbreBrowsFairfax'));
+const PermanentMakeupDC = lazy(() => import('./pages/PermanentMakeupDC'));
+
+// Loading fallback for lazy routes
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center bg-[#F9F7F5]">
+    <div className="text-center">
+      <div className="w-12 h-12 border-4 border-[#E6DAD2] border-t-[#2D2D2B] rounded-full animate-spin mx-auto mb-4"></div>
+      <p className="text-[#2D2D2B]/70 text-sm">Loading...</p>
+    </div>
+  </div>
+);
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col bg-neutral-50">
       <Navbar />
       <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
           <Route path="/virtual-try-on" element={<VirtualTryOn />} />
           <Route path="/signature-ombre-brows" element={<SignatureOmbreBrows />} />
           <Route path="/about" element={<About />} />
@@ -57,6 +73,7 @@ function App() {
           <Route path="/ombre-brows-fairfax-va" element={<OmbreBrowsFairfax />} />
           <Route path="/permanent-makeup-dc" element={<PermanentMakeupDC />} />
         </Routes>
+        </Suspense>
       </main>
       <Footer />
     </div>

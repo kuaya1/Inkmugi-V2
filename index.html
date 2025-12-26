@@ -3,15 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCPGNTS653"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-CCPGNTS653');
-    </script>
-    
     <!-- PRIMARY FAVICON (MOST IMPORTANT FOR GOOGLE) -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -118,17 +109,13 @@
       }
     </style>
     
-    <!-- Enhanced Preload Critical Resources -->
-    <link rel="preload" href="https://live.staticflickr.com/65535/54408135519_738741e705_c_d.jpg" as="image" type="image/jpeg" fetchpriority="high" media="(min-width: 768px)">
-    <link rel="preload" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" as="image" type="image/jpeg" fetchpriority="high" media="(min-width: 768px)">
+    <!-- LCP Hero Image Preload - Critical for performance -->
+    <link rel="preload" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" as="image" type="image/jpeg" fetchpriority="high" media="(max-width: 767px)">
+    <link rel="preload" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg" as="image" type="image/jpeg" fetchpriority="high" media="(min-width: 768px)">
     
-    <!-- Responsive Image Preloads -->
-    <link rel="preload" href="https://live.staticflickr.com/65535/54408135519_738741e705_m_d.jpg" as="image" type="image/jpeg" media="(max-width: 767px)">
-    <link rel="preload" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_m_d.jpg" as="image" type="image/jpeg" media="(max-width: 767px)">
-    
-    <!-- Font Loading Strategy -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"></noscript>
+    <!-- Font Loading Strategy - Non-blocking with swap -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap"></noscript>
     
     <!-- Strategic Prefetch for User Journey -->
     <link rel="prefetch" href="/services" importance="high">
@@ -577,5 +564,25 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Google Analytics - Loaded after main content for performance -->
+    <script>
+      // Defer GA loading until after page load
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var gaScript = document.createElement('script');
+          gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-CCPGNTS653';
+          gaScript.async = true;
+          document.head.appendChild(gaScript);
+          
+          gaScript.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CCPGNTS653');
+          };
+        }, 2000); // 2 second delay for better LCP
+      });
+    </script>
   </body>
 </html>
