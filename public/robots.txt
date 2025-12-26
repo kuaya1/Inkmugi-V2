@@ -7,8 +7,8 @@ Disallow: /drafts/
 # Allow images to be indexed
 Allow: /images/
 
-# Sitemaps
-Sitemap: https://www.inkmugi.com/sitemap.xml
+# Sitemaps - using non-www to match canonical
+Sitemap: https://inkmugi.com/sitemap.xml
 
 # Crawl delay for heavy bots
 User-agent: AhrefsBot

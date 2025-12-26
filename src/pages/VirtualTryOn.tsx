@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Sparkles, Shield, Zap, Lock, CheckCircle, ArrowRight } from 'lucide-react';
 import { ImageUploader } from '../components/ai-tryon/ImageUploader';
@@ -75,6 +76,18 @@ const VirtualTryOn: React.FC = () => {
   }, [originalImage]);
 
   return (
+    <>
+      <Helmet>
+        <title>AI Virtual Try-On for Ombre Brows | Preview Your Look | Inkmugi</title>
+        <meta name="description" content="Try our AI-powered virtual brow try-on tool. See how ombre powder brows will look on your face before your appointment. Free preview with face shape analysis." />
+        <meta name="keywords" content="virtual brow try-on, AI ombre brows preview, PMU visualization, brow shape simulator" />
+        <link rel="canonical" href="https://inkmugi.com/virtual-try-on" />
+        <meta property="og:title" content="AI Virtual Try-On for Ombre Brows | Inkmugi" />
+        <meta property="og:description" content="Try our AI-powered virtual brow try-on tool. See how ombre powder brows will look on your face before your appointment." />
+        <meta property="og:url" content="https://inkmugi.com/virtual-try-on" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      
     <div className="min-h-screen bg-gradient-to-br from-[#F9FAFB] via-white to-[#E6DAD2]/10">
       {/* Hero Section with Tech-Forward Design */}
       <section className="relative pt-32 pb-16 px-4 overflow-hidden">
@@ -293,6 +306,7 @@ const VirtualTryOn: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

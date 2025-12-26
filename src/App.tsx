@@ -20,6 +20,11 @@ import VirtualTryOn from './pages/VirtualTryOn';
 import SignatureOmbreBrows from './pages/SignatureOmbreBrows';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+// City Landing Pages
+import OmbreBrowsArlington from './pages/OmbreBrowsArlington';
+import OmbreBrowsAlexandria from './pages/OmbreBrowsAlexandria';
+import OmbreBrowsFairfax from './pages/OmbreBrowsFairfax';
+import PermanentMakeupDC from './pages/PermanentMakeupDC';
 
 function App() {
   return (
@@ -46,6 +51,11 @@ function App() {
           <Route path="/climate-performance-analysis" element={<ClimatePerformanceAnalysis />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          {/* City Landing Pages */}
+          <Route path="/ombre-brows-arlington-va" element={<OmbreBrowsArlington />} />
+          <Route path="/ombre-brows-alexandria-va" element={<OmbreBrowsAlexandria />} />
+          <Route path="/ombre-brows-fairfax-va" element={<OmbreBrowsFairfax />} />
+          <Route path="/permanent-makeup-dc" element={<PermanentMakeupDC />} />
         </Routes>
       </main>
       <Footer />

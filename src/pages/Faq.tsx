@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, ChevronUp, AlertCircle, CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -117,12 +118,40 @@ const Faq: React.FC = () => {
     },
   ];
 
+  // Generate FAQPage schema for rich snippets
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   const filteredFaqs = activeCategory === 'all' 
     ? faqItems 
     : faqItems.filter(item => item.category === activeCategory);
 
   return (
     <>
+      <Helmet>
+        <title>Ombre Powder Brows FAQ | Inkmugi Annandale VA</title>
+        <meta name="description" content="Common questions about ombre powder brows, microshading, healing process, pricing, and aftercare. Learn everything before your PMU appointment at Inkmugi." />
+        <meta name="keywords" content="ombre brows FAQ, powder brows questions, PMU aftercare, microshading healing, permanent makeup cost" />
+        <link rel="canonical" href="https://inkmugi.com/faq" />
+        <meta property="og:title" content="Ombre Powder Brows FAQ | Inkmugi" />
+        <meta property="og:description" content="Common questions about ombre powder brows, healing process, pricing, and aftercare at Inkmugi." />
+        <meta property="og:url" content="https://inkmugi.com/faq" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">
         <div className="container-custom">

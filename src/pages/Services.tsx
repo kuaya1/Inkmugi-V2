@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -9,6 +10,30 @@ const Services = () => {
     window.scrollTo(0, 0);
     document.title = 'PMU Services | Ombre Powder Brow Specialist';
   }, []);
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Ombre Powder Brows",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Inkmugi",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7857 Heritage Dr #330",
+        "addressLocality": "Annandale",
+        "addressRegion": "VA",
+        "postalCode": "22003",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": ["Annandale", "Alexandria", "Arlington", "Fairfax", "Falls Church", "McLean", "Vienna", "Washington DC"],
+    "description": "Premium ombre powder brows and microshading services. Semi-permanent makeup that creates naturally soft, powdery brows lasting 1-3 years.",
+    "offers": {
+      "@type": "Offer",
+      "priceRange": "$500-$700"
+    }
+  };
 
   const services = [
     {
@@ -63,6 +88,20 @@ const Services = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Ombre Powder Brows & Microshading Services | Inkmugi Alexandria VA</title>
+        <meta name="description" content="Professional ombre powder brows starting at $400. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years. Serving Alexandria, Arlington & Northern Virginia." />
+        <meta name="keywords" content="ombre powder brows, microshading, permanent makeup, PMU services, brow services Alexandria VA" />
+        <link rel="canonical" href="https://inkmugi.com/services" />
+        <meta property="og:title" content="Ombre Powder Brows & Microshading Services | Inkmugi" />
+        <meta property="og:description" content="Professional ombre powder brows starting at $400. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years." />
+        <meta property="og:url" content="https://inkmugi.com/services" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">
         <div className="container-custom">

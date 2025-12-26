@@ -1,11 +1,43 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import ContactForm from '../components/ContactForm';
 
 const Contact: React.FC = () => {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Inkmugi",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7857 Heritage Dr #330",
+      "addressLocality": "Annandale",
+      "addressRegion": "VA",
+      "postalCode": "22003",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-571-283-8228",
+    "email": "inkmugi@gmail.com",
+    "url": "https://inkmugi.com/contact"
+  };
+
   return (
     <>
+      <Helmet>
+        <title>Contact Inkmugi - Book Your PMU Consultation | Annandale VA</title>
+        <meta name="description" content="Contact Inkmugi for ombre powder brows in Annandale, VA. Call (571) 283-8228 or email inkmugi@gmail.com. Located at 7857 Heritage Dr #330. Free consultations available." />
+        <meta name="keywords" content="contact Inkmugi, PMU consultation Annandale, book ombre brows appointment, permanent makeup Northern Virginia" />
+        <link rel="canonical" href="https://inkmugi.com/contact" />
+        <meta property="og:title" content="Contact Inkmugi - Book Your PMU Consultation" />
+        <meta property="og:description" content="Contact Inkmugi for ombre powder brows. Call (571) 283-8228 or visit us in Annandale, VA. Free consultations available." />
+        <meta property="og:url" content="https://inkmugi.com/contact" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify(contactSchema)}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">
         <div className="container-custom">

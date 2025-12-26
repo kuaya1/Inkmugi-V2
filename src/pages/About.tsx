@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Award, CheckCircle, Calendar, Users } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -16,8 +17,42 @@ const About: React.FC = () => {
     "Korean PMU Techniques"
   ];
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mugi",
+    "jobTitle": "Licensed PMU Artist",
+    "worksFor": {
+      "@type": "LocalBusiness",
+      "name": "Inkmugi"
+    },
+    "knowsAbout": ["Ombre Powder Brows", "Microshading", "Permanent Makeup", "PMU Safety"],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "license",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Virginia Department of Professional and Occupational Regulation"
+      }
+    }
+  };
+
   return (
     <>
+      <Helmet>
+        <title>About Mugi - Licensed PMU Artist | Inkmugi Annandale VA</title>
+        <meta name="description" content="Meet Mugi, Virginia-licensed PMU artist (License #1231002471) with 523+ procedures and 0.19% complication rate. Specializing in ombre powder brows in Annandale, Northern Virginia." />
+        <meta name="keywords" content="PMU artist Annandale VA, licensed permanent makeup artist, ombre brows specialist, Mugi Inkmugi" />
+        <link rel="canonical" href="https://inkmugi.com/about" />
+        <meta property="og:title" content="About Mugi - Licensed PMU Artist | Inkmugi" />
+        <meta property="og:description" content="Meet Mugi, Virginia-licensed PMU artist with 523+ procedures and exceptional safety record. Specializing in ombre powder brows." />
+        <meta property="og:url" content="https://inkmugi.com/about" />
+        <meta property="og:type" content="profile" />
+        <script type="application/ld+json">
+          {JSON.stringify(personSchema)}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="pt-36 pb-24 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-5">
