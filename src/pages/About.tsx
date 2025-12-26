@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Award, CheckCircle, Calendar, Users } from 'lucide-react';
+import { 
+  Award, 
+  Shield, 
+  Heart, 
+  Sparkles, 
+  ArrowRight, 
+  ArrowDown,
+  Clock,
+  Droplets,
+  Star,
+  Quote
+} from 'lucide-react';
+import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
-import CTASection from '../components/CTASection';
 
 const About: React.FC = () => {
-  const certifications = [
-    "Virginia Licensed PMU Artist",
-    "License #1231002471",
-    "Ombre Powder Brows Specialist",
-    "Microshading Expert",
-    "Advanced Color Theory",
-    "Bloodborne Pathogens Certified",
-    "Hospital-Grade Safety Protocols",
-    "Korean PMU Techniques"
-  ];
+  const [isHeroLoaded, setIsHeroLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsHeroLoaded(true);
+  }, []);
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -37,6 +43,62 @@ const About: React.FC = () => {
     }
   };
 
+  const certifications = [
+    { title: "Virginia Licensed PMU Artist", detail: "License #1231002471" },
+    { title: "Bloodborne Pathogens Certified", detail: "OSHA Compliant" },
+    { title: "Korean PMU Techniques", detail: "Advanced Training" },
+    { title: "Advanced Color Theory", detail: "Pigment Specialist" },
+  ];
+
+  const values = [
+    { 
+      icon: Shield, 
+      title: 'Safety Obsessed', 
+      desc: 'Hospital-grade sterilization with 0.19% complication rate—13x safer than industry average.',
+      stat: '0.19%',
+      statLabel: 'Complication Rate'
+    },
+    { 
+      icon: Heart, 
+      title: 'Naturally You', 
+      desc: 'Enhancement, not transformation. Your brows should look like they were always meant to be there.',
+      stat: '97%',
+      statLabel: 'Client Satisfaction'
+    },
+    { 
+      icon: Clock, 
+      title: 'Built to Last', 
+      desc: 'Techniques optimized for DMV climate. Results that stay beautiful for 18-36 months.',
+      stat: '24mo',
+      statLabel: 'Average Longevity'
+    },
+    { 
+      icon: Sparkles, 
+      title: 'Detail Driven', 
+      desc: 'Every stroke considered. Precision mapping and custom color matching for every client.',
+      stat: '523+',
+      statLabel: 'Procedures Completed'
+    },
+  ];
+
+  const journey = [
+    {
+      year: 'The Beginning',
+      title: 'Art Finds Purpose',
+      description: 'Drawing and creating have been part of me for as long as I can remember. This lifelong passion naturally led me to permanent makeup—where artistry meets transformation.'
+    },
+    {
+      year: 'The Dedication',
+      title: 'Mastering the Craft',
+      description: 'Hundreds of hours of training in Korean PMU techniques, color theory, and safety protocols. Every certification earned, every skill refined.'
+    },
+    {
+      year: 'Today',
+      title: '523+ Transformations',
+      description: 'Now a Virginia-licensed artist with a track record that speaks for itself. 0.19% complication rate. 97% satisfaction. And a studio designed for your comfort.'
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -53,71 +115,197 @@ const About: React.FC = () => {
         </script>
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="pt-36 pb-24 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full opacity-5">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]"></div>
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-cormorant font-medium mb-6 text-[#2D2D2B] tracking-tight leading-tight">
-              About Ink<span className="text-[#9A7B69]"> Mugi</span>
+      {/* ═══════════════════════════════════════════════════════════════════════
+          HERO SECTION — The Artist's Promise
+          Philosophy: Lead with warmth. The viewer should feel connected 
+          before they read anything.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Cinematic gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70 z-10" />
+        
+        {/* Subtle grain texture */}
+        <div className="absolute inset-0 z-[11] opacity-[0.03] mix-blend-overlay"
+          style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }}
+        />
+        
+        {/* Hero image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[2000ms]"
+          style={{ 
+            backgroundImage: "url('https://live.staticflickr.com/65535/54366426370_64dd9b761b_k_d.jpg')",
+            backgroundPosition: 'center 20%',
+            transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)',
+          }}
+        />
+
+        {/* Hero content */}
+        <div className="container-custom relative z-20 text-white pt-20">
+          <motion.div 
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: isHeroLoaded ? 1 : 0, y: isHeroLoaded ? 0 : 40 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
+          >
+            {/* Pre-title */}
+            <motion.div 
+              className="mb-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+            >
+              <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light">
+                <span className="w-12 h-px bg-[#E6DAD2]/50" />
+                Meet Your Artist
+                <span className="w-12 h-px bg-[#E6DAD2]/50" />
+              </span>
+            </motion.div>
+
+            {/* Main headline */}
+            <h1 className="mb-8">
+              <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-cormorant font-light leading-[1.1] tracking-tight">
+                Hi, I'm
+              </span>
+              <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-cormorant font-medium leading-[1.1] tracking-tight mt-2">
+                <span className="text-[#E6DAD2]">Mugi</span>
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto font-light">
-              Annandale's #1 Virginia-licensed PMU artist dedicated to enhancing natural beauty
-              with data-driven safety and proven results
-            </p>
-          </AnimatedSection>
+
+            {/* Supporting text */}
+            <motion.p 
+              className="text-lg md:text-xl text-white/80 font-light max-w-xl mx-auto mb-12 leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 0.8 }}
+            >
+              Virginia-licensed PMU artist dedicated to enhancing 
+              <br className="hidden sm:block" />
+              your natural beauty, one brow at a time.
+            </motion.p>
+
+            {/* Trust indicators */}
+            <motion.div 
+              className="flex flex-wrap justify-center gap-8 text-sm text-white/60"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+            >
+              <span className="flex items-center gap-2">
+                <Shield size={14} className="text-[#E6DAD2]" />
+                VA Licensed #1231002471
+              </span>
+              <span className="flex items-center gap-2">
+                <Award size={14} className="text-[#E6DAD2]" />
+                523+ Procedures
+              </span>
+              <span className="flex items-center gap-2">
+                <Heart size={14} className="text-[#E6DAD2]" />
+                0.19% Complication Rate
+              </span>
+            </motion.div>
+          </motion.div>
         </div>
+
+        {/* Scroll indicator */}
+        <motion.div 
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, y: [0, 8, 0] }}
+          transition={{ 
+            opacity: { delay: 2, duration: 0.5 },
+            y: { repeat: Infinity, duration: 2, ease: "easeInOut" }
+          }}
+        >
+          <ArrowDown size={24} className="text-white/50" />
+        </motion.div>
       </section>
 
-      {/* Artist Bio */}
-      <section className="py-24 bg-[#F9F7F5]">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection>
+      {/* ═══════════════════════════════════════════════════════════════════════
+          MY STORY — Connection Before Credentials
+          Philosophy: People don't buy services. They buy from people they trust.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-[#F9F7F5] relative overflow-hidden">
+        {/* Decorative gradient */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-[#E6DAD2]/30 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        
+        <div className="container-custom relative">
+          <div className="grid lg:grid-cols-12 gap-16 items-center">
+            {/* Image column */}
+            <AnimatedSection className="lg:col-span-5">
               <div className="relative">
-                <div className="absolute -left-5 -top-5 w-24 h-24 border-l-2 border-t-2 border-[#9A7B69]"></div>
-                <img 
-                  src="https://live.staticflickr.com/65535/54366426370_64dd9b761b_k_d.jpg" 
-                  alt="Permanent Makeup Artist" 
-                  className="rounded-lg shadow-xl w-full h-auto object-cover z-10 relative"
-                  style={{ filter: 'contrast(1.05) brightness(1.02)' }}
-                />
-                <div className="absolute -bottom-5 -right-5 w-24 h-24 border-r-2 border-b-2 border-[#9A7B69]"></div>
-                <div className="absolute -bottom-6 -right-6 bg-white p-5 rounded-lg shadow-xl hidden md:block">
-                  <div className="flex items-center">
-                    <Award size={26} className="text-[#9A7B69] mr-3" />
-                    <div>
-                      <p className="text-sm font-medium text-[#2D2D2B]">VA Licensed PMU Artist</p>
-                      <p className="text-xs text-[#2D2D2B]/70">License #1231002471</p>
-                    </div>
-                  </div>
+                {/* Main image */}
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" 
+                    alt="Mugi - PMU Artist at work" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
+                
+                {/* Floating credential card */}
+                <motion.div 
+                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[220px]"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#E6DAD2] flex items-center justify-center">
+                      <Award size={20} className="text-[#2D2D2B]" />
+                    </div>
+                    <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
+                  </div>
+                  <p className="text-sm text-[#2D2D2B]/70">Successful procedures with 99.81% satisfaction</p>
+                </motion.div>
+
+                {/* Decorative element */}
+                <div className="absolute -top-8 -left-8 w-32 h-32 border-2 border-[#E6DAD2] rounded-2xl -z-10" />
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.2}>
-              <span className="text-[#9A7B69] font-medium tracking-wider text-sm mb-2 block">FOUNDER & ARTIST</span>
-              <h2 className="text-4xl md:text-5xl font-cormorant font-medium mb-6 text-[#2D2D2B]">Meet Mugi</h2>
-              <div className="w-20 h-1 bg-[#9A7B69]/50 mb-8"></div>
-              <p className="text-[#2D2D2B] mb-6 text-lg leading-relaxed">
-                My name is Mugi, and art isn't just my passion—it's the heart of my work as a PMU and tattoo artist. Drawing and creating have been part of me for as long as I can remember, a path that naturally led me to this rewarding career. My greatest joy comes from helping women embrace their unique beauty and radiate confidence.
-              </p>
-              <p className="text-[#2D2D2B] mb-6 text-lg leading-relaxed">
-                As a Virginia-licensed permanent cosmetic tattooer (License #1231002471), I've completed <strong>523+ procedures</strong> with a <strong>0.19% complication rate</strong>—13 times safer than the 2.5% industry average. My techniques are specifically optimized for DMV's unique humid climate, ensuring superior pigment retention and longevity.
-              </p>
-              <p className="text-[#2D2D2B] mb-8 text-lg leading-relaxed">
-                Seeing that spark of happiness after a session, knowing I've played a part in making someone feel incredible in their own skin, is truly fulfilling. My focus is always on enhancing your natural features with hospital-grade safety protocols and data-driven results.
-              </p>
+            {/* Content column */}
+            <AnimatedSection className="lg:col-span-7" delay={2}>
+              <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
+                My Story
+              </span>
               
-              <div className="flex flex-col sm:flex-row gap-5">
-                <Link to="/booking" className="btn bg-[#9A7B69] hover:bg-[#876959] transition-all duration-300 text-white px-8 py-3 rounded-md font-medium">
-                  Book a Consultation
+              <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
+                Beauty is personal.<br />
+                <span className="text-[#2D2D2B]/60">So is my approach.</span>
+              </h2>
+
+              <div className="prose prose-lg text-[#2D2D2B]/80 mb-10 max-w-none">
+                <p className="leading-relaxed text-lg">
+                  Art isn't just my passion—it's the heart of my work. Drawing and creating have been part of me 
+                  for as long as I can remember, a path that naturally led me to this rewarding career as a PMU artist.
+                </p>
+                <p className="leading-relaxed text-lg">
+                  My greatest joy comes from helping women embrace their unique beauty and radiate confidence. 
+                  Every face tells a story. <strong className="text-[#2D2D2B]">My job isn't to rewrite it—it's to highlight 
+                  the chapters that make you, you.</strong>
+                </p>
+                <p className="leading-relaxed text-lg">
+                  That means listening more than designing, understanding your lifestyle, your concerns, your vision. 
+                  Seeing that spark of happiness after a session, knowing I've played a part in making someone feel 
+                  incredible in their own skin—that's what fulfills me.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link 
+                  to="/booking" 
+                  className="group inline-flex items-center gap-3 bg-[#2D2D2B] hover:bg-[#2D2D2B]/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300"
+                >
+                  <span>Book a Consultation</span>
+                  <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-                <Link to="/gallery" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5 transition-all duration-300 px-8 py-3 rounded-md font-medium">
-                  View My Work
+                <Link 
+                  to="/gallery" 
+                  className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 px-4 py-4"
+                >
+                  <span>View My Work</span>
+                  <ArrowRight size={18} />
                 </Link>
               </div>
             </AnimatedSection>
@@ -125,187 +313,258 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Philosophy */}
-      <section className="py-24 bg-gradient-to-b from-[#E6DAD2] to-[#F0E4D8] relative">
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#F9F7F5] to-transparent"></div>
-        <div className="container-custom">
-          <AnimatedSection className="text-center mb-16">
-            <span className="text-[#9A7B69] font-medium tracking-wider text-sm mb-2 block">OUR APPROACH</span>
-            <h2 className="text-4xl md:text-5xl font-cormorant font-medium mb-4 text-[#2D2D2B]">Our Philosophy</h2>
-            <div className="w-20 h-1 bg-[#9A7B69]/50 mx-auto mb-6"></div>
-            <p className="text-xl text-[#2D2D2B]/80 max-w-2xl mx-auto font-light">
-              The principles that guide our approach to permanent makeup and client care
+      {/* ═══════════════════════════════════════════════════════════════════════
+          VALUES & STATS — What I Stand For
+          Philosophy: Show, don't just tell. Numbers build trust.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-[#2D2D2B] text-white relative overflow-hidden">
+        {/* Subtle background texture */}
+        <div className="absolute inset-0 opacity-5"
+          style={{ 
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
+          }}
+        />
+
+        <div className="container-custom relative">
+          <AnimatedSection className="text-center mb-20">
+            <span className="inline-block text-[#E6DAD2]/70 tracking-[0.2em] text-xs uppercase mb-4">
+              My Philosophy
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-6">
+              What I <span className="italic">believe</span> in
+            </h2>
+            <p className="text-lg text-white/60 font-light max-w-xl mx-auto">
+              The principles that guide every procedure and every client interaction.
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedSection delay={0.1}>
-              <div className="bg-white p-8 rounded-lg shadow-lg h-full border border-[#E6DAD2] hover:transform hover:-translate-y-1 transition-all duration-300">
-                <div className="w-14 h-14 bg-[#F0E4D8] rounded-full flex items-center justify-center mb-6">
-                  <CheckCircle size={28} className="text-[#9A7B69]" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => (
+              <AnimatedSection key={index} delay={index * 2}>
+                <div className="relative group h-full">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-[#E6DAD2]/30 transition-all duration-500 h-full flex flex-col">
+                    {/* Icon */}
+                    <div className="w-14 h-14 rounded-xl bg-[#E6DAD2]/20 flex items-center justify-center mb-6 group-hover:bg-[#E6DAD2]/30 transition-colors duration-300">
+                      <value.icon size={28} className="text-[#E6DAD2]" />
+                    </div>
+                    
+                    {/* Stat */}
+                    <div className="mb-4">
+                      <span className="text-4xl font-cormorant font-semibold text-[#E6DAD2]">{value.stat}</span>
+                      <p className="text-xs text-white/40 mt-1">{value.statLabel}</p>
+                    </div>
+                    
+                    <h3 className="text-xl font-medium mb-3 text-white">
+                      {value.title}
+                    </h3>
+                    
+                    <p className="text-white/60 text-sm leading-relaxed flex-grow">
+                      {value.desc}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-medium mb-4 text-[#2D2D2B] font-cormorant">Natural Enhancement</h3>
-                <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  We believe in enhancing your natural features, not changing them. Our goal is to create brows that look like they were always meant to be there, perfectly suited to your face.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="bg-white p-8 rounded-lg shadow-lg h-full border border-[#E6DAD2] hover:transform hover:-translate-y-1 transition-all duration-300">
-                <div className="w-14 h-14 bg-[#F0E4D8] rounded-full flex items-center justify-center mb-6">
-                  <CheckCircle size={28} className="text-[#9A7B69]" />
-                </div>
-                <h3 className="text-2xl font-medium mb-4 text-[#2D2D2B] font-cormorant">Safety & Hygiene</h3>
-                <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  Your safety is our priority. We maintain hospital-grade hygiene standards with a 0.19% complication rate—13 times safer than the 2.5% industry average. Premium vegan pigments and medical-grade equipment in a sterile environment.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.3}>
-              <div className="bg-white p-8 rounded-lg shadow-lg h-full border border-[#E6DAD2] hover:transform hover:-translate-y-1 transition-all duration-300">
-                <div className="w-14 h-14 bg-[#F0E4D8] rounded-full flex items-center justify-center mb-6">
-                  <CheckCircle size={28} className="text-[#9A7B69]" />
-                </div>
-                <h3 className="text-2xl font-medium mb-4 text-[#2D2D2B] font-cormorant">Personalized Approach</h3>
-                <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  No two faces are alike, and neither should be any two sets of brows. We take time to understand your preferences and design brows that complement your unique features.
-                </p>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Certifications */}
-      <section className="py-24 bg-[#F9F7F5]">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection>
-              <span className="text-[#9A7B69] font-medium tracking-wider text-sm mb-2 block">EXPERTISE & QUALIFICATIONS</span>
-              <h2 className="text-4xl md:text-5xl font-cormorant font-medium mb-6 text-[#2D2D2B]">Certifications & Training</h2>
-              <div className="w-20 h-1 bg-[#9A7B69]/50 mb-8"></div>
-              <p className="text-[#2D2D2B] mb-8 text-lg leading-relaxed">
-                Continuous education and training are essential in the ever-evolving field of permanent makeup. We pride ourselves on staying at the forefront of industry innovations and techniques.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center p-3 bg-white rounded-md shadow-sm hover:shadow-md transition-all duration-300">
-                    <Award size={18} className="text-[#9A7B69] mr-3 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]">{cert}</span>
+      {/* ═══════════════════════════════════════════════════════════════════════
+          THE JOURNEY — Story Timeline
+          Philosophy: Show the path that led here. Authenticity builds trust.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-[#F7EDE6] relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-[#E6DAD2]/40 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
+        
+        <div className="container-custom relative">
+          <AnimatedSection className="text-center mb-20">
+            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
+              The Journey
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
+              How I got <span className="italic">here</span>
+            </h2>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            {journey.map((item, index) => (
+              <AnimatedSection key={index} delay={index * 2}>
+                <div className="relative flex gap-8 mb-12 last:mb-0">
+                  {/* Timeline line */}
+                  <div className="hidden md:flex flex-col items-center">
+                    <div className="w-4 h-4 rounded-full bg-[#2D2D2B] border-4 border-[#E6DAD2]" />
+                    {index !== journey.length - 1 && (
+                      <div className="w-0.5 h-full bg-[#2D2D2B]/20 mt-2" />
+                    )}
                   </div>
+                  
+                  {/* Content */}
+                  <div className="flex-1 bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <span className="inline-block text-[#2D2D2B]/50 text-sm tracking-wide mb-2">{item.year}</span>
+                    <h3 className="text-2xl font-cormorant font-semibold text-[#2D2D2B] mb-4">{item.title}</h3>
+                    <p className="text-[#2D2D2B]/70 leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          CERTIFICATIONS — Trust Through Credentials
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-white relative overflow-hidden">
+        <div className="absolute top-20 right-20 w-[400px] h-[400px] bg-[#F7EDE6] rounded-full filter blur-3xl opacity-50" />
+        
+        <div className="container-custom relative">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <AnimatedSection>
+              <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
+                Qualifications
+              </span>
+              <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
+                Trained & <span className="italic">certified</span>
+              </h2>
+              
+              <p className="text-lg text-[#2D2D2B]/70 mb-10 leading-relaxed">
+                Continuous education is essential in permanent makeup. I stay at the forefront of industry innovations, 
+                attending advanced workshops and training sessions to bring you the latest and safest techniques.
+              </p>
+
+              <div className="space-y-4">
+                {certifications.map((cert, index) => (
+                  <motion.div 
+                    key={index}
+                    className="flex items-center gap-4 p-4 bg-[#F9F7F5] rounded-xl hover:bg-[#F7EDE6] transition-colors duration-300"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="w-12 h-12 rounded-full bg-[#E6DAD2] flex items-center justify-center flex-shrink-0">
+                      <Award size={22} className="text-[#2D2D2B]" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-[#2D2D2B]">{cert.title}</h4>
+                      <p className="text-sm text-[#2D2D2B]/60">{cert.detail}</p>
+                    </div>
+                  </motion.div>
                 ))}
               </div>
-              
-              <p className="text-[#2D2D2B] text-lg leading-relaxed italic border-l-4 border-[#9A7B69]/30 pl-4">
-                Our commitment to excellence means we regularly attend advanced workshops, conferences, and training sessions to refine our skills and bring the latest techniques to our clients.
-              </p>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.2}>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-                  <Calendar size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">523+</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Documented Procedures</p>
+            <AnimatedSection delay={2}>
+              <div className="relative">
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="https://live.staticflickr.com/65535/54366208951_7b5cbbc391_o_d.jpg" 
+                    alt="Inkmugi Studio - Professional PMU Environment" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
-                <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-                  <Users size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">97%</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Client Satisfaction Rate</p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-                  <Award size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">0.19%</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Complication Rate</p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-[#F0E4D8] to-[#E6DAD2] p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-                  <CheckCircle size={36} className="text-[#9A7B69] mb-5" />
-                  <h3 className="text-3xl font-cormorant font-medium mb-2 text-[#2D2D2B]">24mo</h3>
-                  <p className="text-[#2D2D2B]/80 text-sm">Average Longevity</p>
-                </div>
+                {/* Floating quote */}
+                <motion.div 
+                  className="absolute -bottom-8 -left-8 bg-[#2D2D2B] text-white rounded-2xl p-6 max-w-[280px] shadow-xl"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Quote size={24} className="text-[#E6DAD2]/50 mb-3" />
+                  <p className="text-sm text-white/90 italic leading-relaxed">
+                    "Your safety is non-negotiable. Every tool, every protocol, every decision centers on keeping you protected."
+                  </p>
+                </motion.div>
               </div>
             </AnimatedSection>
           </div>
         </div>
       </section>
 
-      {/* Studio */}
-      <section className="py-24 bg-[#E6DAD2]">
+      {/* ═══════════════════════════════════════════════════════════════════════
+          STUDIO — The Space
+          Philosophy: Environment matters. Show the care that goes into everything.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-[#F9F7F5] relative overflow-hidden">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-16">
-            <span className="text-[#9A7B69] font-medium tracking-wider text-sm mb-2 block">OUR SPACE</span>
-            <h2 className="text-4xl md:text-5xl font-cormorant font-medium mb-4 text-[#2D2D2B]">Our Studio</h2>
-            <div className="w-20 h-1 bg-[#9A7B69]/50 mx-auto mb-6"></div>
-            <p className="text-xl text-[#2D2D2B]/80 max-w-2xl mx-auto font-light">
-              A serene, professional environment designed for your comfort and safety
+            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
+              The Studio
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
+              Where <span className="italic">transformation</span> happens
+            </h2>
+            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-xl mx-auto">
+              A serene, professional environment designed for your comfort and safety.
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <AnimatedSection>
-              <div className="relative">
-                <div className="absolute -left-4 -top-4 w-32 h-32 border-l-2 border-t-2 border-[#9A7B69] rounded-tl-lg"></div>
-                <img 
-                  src="https://live.staticflickr.com/65535/54366208951_7b5cbbc391_o_d.jpg" 
-                  alt="Brow Artistry Studio" 
-                  className="rounded-lg shadow-xl w-full h-auto object-cover"
-                  style={{ filter: 'contrast(1.05) brightness(1.02)' }}
-                />
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="h-full flex flex-col justify-center pl-0 md:pl-6">
-                <span className="text-[#9A7B69] font-medium tracking-wider text-sm mb-2 block">LUXURY EXPERIENCE</span>
-                <h3 className="text-3xl font-cormorant font-medium mb-6 text-[#2D2D2B]">A Space Designed for Transformation</h3>
-                <div className="w-16 h-1 bg-[#9A7B69]/50 mb-8"></div>
-                <p className="text-[#2D2D2B] mb-5 text-lg leading-relaxed">
-                  Our studio is designed to provide a calm, luxurious experience from the moment you walk in. We've created a space that feels both professional and welcoming, where you can relax while receiving your treatment.
-                </p>
-                <p className="text-[#2D2D2B] mb-8 text-lg leading-relaxed">
-                  Every aspect of our studio adheres to the highest standards of cleanliness and hygiene. We use medical-grade sterilization equipment, disposable tools, and maintain a spotless environment to ensure your safety and comfort.
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-[#9A7B69]/20 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
-                      <CheckCircle size={16} className="text-[#9A7B69]" />
-                    </div>
-                    <span className="text-[#2D2D2B] font-medium">Private treatment rooms</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: Shield, title: 'Medical-Grade Sterilization', desc: 'Hospital-level protocols for every tool and surface' },
+              { icon: Heart, title: 'Private Treatment Rooms', desc: 'Your comfort and privacy are paramount' },
+              { icon: Droplets, title: 'Premium Vegan Pigments', desc: 'Only the highest quality, safest ingredients' },
+              { icon: Star, title: 'Calming Atmosphere', desc: 'Designed to help you relax and feel at ease' },
+            ].map((feature, index) => (
+              <AnimatedSection key={index} delay={index * 2}>
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 h-full group">
+                  <div className="w-14 h-14 rounded-xl bg-[#F7EDE6] flex items-center justify-center mb-6 group-hover:bg-[#E6DAD2] transition-colors duration-300">
+                    <feature.icon size={28} className="text-[#2D2D2B]" />
                   </div>
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-[#9A7B69]/20 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
-                      <CheckCircle size={16} className="text-[#9A7B69]" />
-                    </div>
-                    <span className="text-[#2D2D2B] font-medium">Medical-grade sterilization</span>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-[#9A7B69]/20 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
-                      <CheckCircle size={16} className="text-[#9A7B69]" />
-                    </div>
-                    <span className="text-[#2D2D2B] font-medium">Comfortable seating</span>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-[#9A7B69]/20 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
-                      <CheckCircle size={16} className="text-[#9A7B69]" />
-                    </div>
-                    <span className="text-[#2D2D2B] font-medium">Soothing atmosphere</span>
-                  </div>
+                  <h3 className="text-xl font-medium text-[#2D2D2B] mb-3">{feature.title}</h3>
+                  <p className="text-[#2D2D2B]/70 text-sm leading-relaxed">{feature.desc}</p>
                 </div>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <CTASection />
+      {/* ═══════════════════════════════════════════════════════════════════════
+          CTA — The Invitation
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-[#2D2D2B] text-white relative overflow-hidden">
+        {/* Background image with overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2B] via-[#2D2D2B]/90 to-[#2D2D2B]/70" />
+        
+        <div className="container-custom relative z-10">
+          <AnimatedSection className="text-center max-w-3xl mx-auto">
+            <span className="inline-block text-[#E6DAD2]/70 tracking-[0.2em] text-xs uppercase mb-4">
+              Ready?
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-6">
+              Let's create your<br />
+              <span className="text-[#E6DAD2]">perfect brows</span>
+            </h2>
+            <p className="text-lg text-white/70 mb-10 font-light max-w-lg mx-auto">
+              Book a free consultation and let's discuss how I can help you wake up every day with brows you love.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                to="/booking" 
+                className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+              >
+                <span>Book Free Consultation</span>
+                <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+              <Link 
+                to="/gallery" 
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white border border-white/30 hover:border-white/60 px-8 py-4 rounded-full transition-all duration-300"
+              >
+                <span>View Gallery</span>
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
     </>
   );
 };
