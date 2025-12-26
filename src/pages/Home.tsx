@@ -136,7 +136,7 @@ const Home: React.FC = () => {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Cinematic gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-10" />
         
         {/* Subtle grain texture for depth */}
         <div className="absolute inset-0 z-[11] opacity-[0.03] mix-blend-overlay"
