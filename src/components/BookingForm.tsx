@@ -61,7 +61,7 @@ const BookingForm: React.FC = () => {
     {
       id: 'ombre-brows',
       name: 'Ombre Powder Brows',
-      price: '$400',
+      price: '$600',
       duration: '2-3 hours',
     },
     {

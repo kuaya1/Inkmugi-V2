@@ -88,7 +88,7 @@ const Faq: React.FC = () => {
     },
     {
       question: 'How much does it cost?',
-      answer: 'Ombre powder brows start at $400 for the initial procedure. Microshading starts at $500. We offer free brow consultations. Touch-up pricing varies by time elapsed: 1-3 months ($100), 3-6 months ($150), 6-12 months ($200), and 1-2 years ($250). All initial procedures include one follow-up session within the first 8 weeks. We offer a detailed pricing breakdown during your consultation based on your specific needs.',
+      answer: 'Ombre powder brows start at $500 for the initial procedure (signature service $600). Microshading starts at $500. We offer free brow consultations. Touch-up pricing varies by time elapsed: 1-3 months ($100), 3-6 months ($150), 6-12 months ($200), and 1-2 years ($250). All initial procedures include one follow-up session within the first 8 weeks. We offer a detailed pricing breakdown during your consultation based on your specific needs.',
       category: 'booking',
     },
     {

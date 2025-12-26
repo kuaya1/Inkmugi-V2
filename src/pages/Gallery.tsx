@@ -86,15 +86,27 @@ const EnhancedGalleryItem: React.FC<{
   afterImage: string;
   category: string;
   onClick: () => void;
+  healingStatus?: 'fresh' | 'healed';
   testimonial?: {
     text: string;
     author: string;
   };
-}> = ({ beforeImage, afterImage, category, onClick, testimonial }) => {
+}> = ({ beforeImage, afterImage, category, onClick, healingStatus, testimonial }) => {
   return (
     <div className="relative overflow-hidden group rounded-lg shadow-medium hover:shadow-lg transition-all duration-500 bg-white h-full">
-      <div className="aspect-[4/5]">
+      <div className="aspect-[4/5] relative">
         <BeforeAfterSlider beforeImage={beforeImage} afterImage={afterImage} />
+        {/* Healing Status Badge */}
+        {healingStatus && (
+          <span className={`absolute top-3 right-3 z-10 text-xs font-semibold px-2.5 py-1 rounded-full shadow-lg ${
+            healingStatus === 'healed' 
+              ? 'bg-green-600 text-white' 
+              : 'bg-amber-500 text-white'
+          }`}>
+            {healingStatus === 'healed' ? '✓ Healed' : '◐ Fresh'}
+          </span>
+        )}
+      </div>
       </div>
       
       <div className="p-4 relative">
@@ -155,6 +167,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54366013611_5cc68ab55d_c_d.jpg',
       category: 'ombre-brows',
       label: 'Ombre Powder Brows',
+      healingStatus: 'healed' as const,
       testimonial: {
         text: "Absolutely love my new brows! They frame my face perfectly and look so natural.",
         author: "Sarah K."
@@ -165,6 +178,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54366242388_db37388bbe_c_d.jpg',
       category: 'ombre-brows',
       label: 'Ombre Powder Brows',
+      healingStatus: 'healed' as const,
       testimonial: {
         text: "I'm so happy with the results! I can finally wake up with perfect brows.",
         author: "Michelle T."
@@ -175,6 +189,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
       category: 'corrections',
       label: 'Corrections',
+      healingStatus: 'healed' as const,
       testimonial: {
         text: "Thank you for fixing my botched brows. You're truly an artist!",
         author: "Jessica R."
@@ -185,6 +200,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg',
       category: 'touch-ups',
       label: 'Touch-Ups',
+      healingStatus: 'fresh' as const,
       testimonial: {
         text: "The refresh looks amazing, even better than the first time!",
         author: "Amanda P."
@@ -195,6 +211,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
       category: 'ombre-brows',
       label: 'Ombre Powder Brows',
+      healingStatus: 'healed' as const,
       testimonial: {
         text: "My confidence has soared since getting my brows done here.",
         author: "Kate M."
@@ -205,6 +222,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
       category: 'corrections',
       label: 'Corrections',
+      healingStatus: 'healed' as const,
       testimonial: {
         text: "After three failed attempts elsewhere, I finally have brows I love!",
         author: "Nicole S."
@@ -215,6 +233,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54408670015_5b248eb7d2_c_d.jpg',
       category: 'nano-brows',
       label: 'Nano Brows',
+      healingStatus: 'fresh' as const,
       testimonial: {
         text: "The precision and attention to detail is remarkable. Best brows ever!",
         author: "Rachel L."
@@ -225,6 +244,7 @@ const Gallery: React.FC = () => {
       afterImage: 'https://live.staticflickr.com/65535/54408565368_8a48233c1c_c_d.jpg',
       category: 'nano-brows',
       label: 'Nano Brows',
+      healingStatus: 'healed' as const,
       testimonial: {
         text: "These brows have changed my morning routine completely. So natural!",
         author: "Emily W."
@@ -449,6 +469,7 @@ const Gallery: React.FC = () => {
                     afterImage={item.afterImage}
                     category={item.label}
                     onClick={() => openModal(item, index)}
+                    healingStatus={item.healingStatus}
                     testimonial={item.testimonial}
                   />
                 </AnimatedSection>

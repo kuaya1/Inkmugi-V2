@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Facebook, Sparkles } from 'lucide-react';
+import { Menu, X, Instagram, Facebook, Sparkles, Phone } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,6 +81,16 @@ const Navbar: React.FC = () => {
 
         {/* Action Buttons - Desktop */}
         <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
+          {/* Tap-to-Call */}
+          <a
+            href="tel:+15712838228"
+            className="flex items-center gap-2 text-neutral-700 hover:text-primary transition-colors duration-300 font-medium text-sm"
+            aria-label="Call (571) 283-8228"
+          >
+            <Phone size={18} />
+            <span className="hidden lg:inline">(571) 283-8228</span>
+          </a>
+          
           {/* Social Icons */}
           <div className="flex items-center space-x-4">
             <a
@@ -169,6 +179,16 @@ const Navbar: React.FC = () => {
               NEW
             </span>
           </Link>
+          
+          {/* Tap-to-Call - Mobile */}
+          <a
+            href="tel:+15712838228"
+            className="flex items-center justify-center gap-2 bg-[#E6DAD2] text-[#2D2D2B] text-sm py-3 rounded-lg font-medium"
+            aria-label="Call (571) 283-8228"
+          >
+            <Phone size={18} />
+            <span>Call (571) 283-8228</span>
+          </a>
           
           <a
             href="https://www.vagaro.com/inkmugi"

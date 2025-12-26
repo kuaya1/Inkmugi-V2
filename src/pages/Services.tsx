@@ -90,11 +90,11 @@ const Services = () => {
     <>
       <Helmet>
         <title>Ombre Powder Brows & Microshading Services | Inkmugi Alexandria VA</title>
-        <meta name="description" content="Professional ombre powder brows starting at $400. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years. Serving Alexandria, Arlington & Northern Virginia." />
+        <meta name="description" content="Professional ombre powder brows starting at $500. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years. Serving Annandale, Alexandria, Arlington & Northern Virginia." />
         <meta name="keywords" content="ombre powder brows, microshading, permanent makeup, PMU services, brow services Alexandria VA" />
         <link rel="canonical" href="https://inkmugi.com/services" />
         <meta property="og:title" content="Ombre Powder Brows & Microshading Services | Inkmugi" />
-        <meta property="og:description" content="Professional ombre powder brows starting at $400. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years." />
+        <meta property="og:description" content="Professional ombre powder brows starting at $500. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years." />
         <meta property="og:url" content="https://inkmugi.com/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">

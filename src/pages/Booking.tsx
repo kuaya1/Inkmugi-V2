@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, CreditCard, CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -7,6 +8,16 @@ import BookingForm from '../components/BookingForm';
 const Booking: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Book Ombre Powder Brows | Free Consultation | Inkmugi Annandale VA</title>
+        <meta name="description" content="Book your ombre powder brows appointment at Inkmugi in Annandale, VA. Free consultation included. 523+ successful procedures. $50 deposit secures your spot." />
+        <meta name="keywords" content="book ombre brows, PMU appointment Annandale VA, permanent makeup consultation, brow appointment Northern Virginia" />
+        <link rel="canonical" href="https://inkmugi.com/booking" />
+        <meta property="og:title" content="Book Ombre Powder Brows | Inkmugi Annandale" />
+        <meta property="og:description" content="Book your ombre powder brows appointment. Free consultation included. 523+ successful procedures." />
+        <meta property="og:url" content="https://inkmugi.com/booking" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">
         <div className="container-custom">
@@ -123,6 +134,50 @@ const Booking: React.FC = () => {
                   </p>
                   <Link to="/contact" className="btn border-[#2D2D2B] text-[#2D2D2B] hover:bg-[#2D2D2B]/5 w-full">
                     Contact Us
+                  </Link>
+                </div>
+              </AnimatedSection>
+
+              {/* Mini Gallery - Social Proof */}
+              <AnimatedSection delay={4} className="mt-8">
+                <div className="bg-white rounded-lg shadow-medium p-6">
+                  <h3 className="text-xl font-medium mb-4 text-[#2D2D2B]">Real Results</h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg" 
+                        alt="Ombre powder brows transformation - healed results"
+                        className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute bottom-1 left-1 bg-green-600 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">Healed</span>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg" 
+                        alt="Microshading transformation - healed results"
+                        className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute bottom-1 left-1 bg-green-600 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">Healed</span>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg" 
+                        alt="Ombre powder brows - natural enhancement"
+                        className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute bottom-1 left-1 bg-green-600 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">Healed</span>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://live.staticflickr.com/65535/54408565368_8a48233c1c_c_d.jpg" 
+                        alt="Ombre powder brows - defined results"
+                        className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute bottom-1 left-1 bg-green-600 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">Healed</span>
+                    </div>
+                  </div>
+                  <Link to="/gallery" className="block text-center mt-4 text-sm text-[#2D2D2B]/70 hover:text-[#2D2D2B] transition-colors">
+                    View full gallery →
                   </Link>
                 </div>
               </AnimatedSection>

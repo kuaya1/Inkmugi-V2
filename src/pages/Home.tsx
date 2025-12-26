@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowDown, Award, Shield, Clock, Heart, Sparkles, CheckCircle2, Quote, Play } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -28,7 +29,7 @@ const Home: React.FC = () => {
       location: 'Google Reviews',
       rating: 5,
       testimonial:
-        'What a fabulous job she did with my powder brows. I was nervous but they look oh so natural. My husband didn't even notice. lol Thank you Mugi!!!',
+        "What a fabulous job she did with my powder brows. I was nervous but they look oh so natural. My husband didn't even notice. lol Thank you Mugi!!!",
       date: '2 weeks ago',
     },
     {
@@ -106,12 +107,42 @@ const Home: React.FC = () => {
       after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
       story: 'Sparse, uneven brows transformed into soft, natural ombre',
       technique: 'Ombre Powder Brows',
+      healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
       story: 'Over-plucked brows restored with precise microshading',
       technique: 'Microshading',
+      healingStatus: 'healed',
+    },
+    {
+      before: 'https://live.staticflickr.com/65535/54366216764_db37388bbe_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54366013611_5cc68ab55d_c_d.jpg',
+      story: 'Thin, sparse brows enhanced with soft powder gradient',
+      technique: 'Ombre Powder Brows',
+      healingStatus: 'healed',
+    },
+    {
+      before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
+      story: 'Natural enhancement for fuller, defined brows',
+      technique: 'Ombre Powder Brows',
+      healingStatus: 'healed',
+    },
+    {
+      before: 'https://live.staticflickr.com/65535/54408533403_ffd6a50432_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54408670015_5b248eb7d2_c_d.jpg',
+      story: 'Asymmetric brows corrected for balanced, elegant look',
+      technique: 'Ombre Powder Brows',
+      healingStatus: 'fresh',
+    },
+    {
+      before: 'https://live.staticflickr.com/65535/54408702135_e8d00acc8f_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54408565368_8a48233c1c_c_d.jpg',
+      story: 'Complete brow makeover with soft, natural definition',
+      technique: 'Microshading',
+      healingStatus: 'healed',
     },
   ];
 
@@ -145,6 +176,42 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Ombre Powder Brows Annandale VA | $600 | 523+ Procedures | Inkmugi</title>
+        <meta name="description" content="Natural ombre powder brows in Annandale, VA. 523+ procedures, 0.19% complication rate, 97% satisfaction. Licensed artist Mugi. Book your free consultation today." />
+        <meta name="keywords" content="ombre powder brows Annandale VA, permanent makeup Northern Virginia, microshading DMV, PMU artist Virginia, powder brows near me" />
+        <link rel="canonical" href="https://inkmugi.com" />
+        <meta property="og:title" content="Ombre Powder Brows Annandale VA | Inkmugi" />
+        <meta property="og:description" content="Natural ombre powder brows in Annandale, VA. 523+ procedures, 0.19% complication rate. Licensed artist Mugi." />
+        <meta property="og:url" content="https://inkmugi.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Inkmugi",
+            "image": "https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7857 Heritage Dr #330",
+              "addressLocality": "Annandale",
+              "addressRegion": "VA",
+              "postalCode": "22003",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-571-283-8228",
+            "url": "https://inkmugi.com",
+            "priceRange": "$500-$700",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "47"
+            }
+          })}
+        </script>
+      </Helmet>
+      
       {/* ═══════════════════════════════════════════════════════════════════════
           HERO SECTION — The Promise
           Philosophy: Less is more. One image. One emotion. One call to action.
@@ -185,7 +252,7 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light">
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
-                Arlington, Virginia
+                Annandale, Virginia
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
               </span>
             </motion.div>
