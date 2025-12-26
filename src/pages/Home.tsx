@@ -16,12 +16,28 @@ const Home: React.FC = () => {
   // Home reviews (Google Business Profile)
   const testimonials = [
     {
+      name: 'Alice Dallman',
+      location: 'Google Reviews',
+      rating: 5,
+      testimonial:
+        'I had such an amazing experience at Ink By MUGI in Annandale! The studio is spotless and professional.',
+      date: '1 week ago',
+    },
+    {
       name: 'Lisa M Bailey-Harper',
       location: 'Google Reviews',
       rating: 5,
       testimonial:
-        'What a fabulous job she did with my powder brows. I was nervous but they look oh so natural. My husband didn’t even notice. lol Thank you Mugi!!!',
+        'What a fabulous job she did with my powder brows. I was nervous but they look oh so natural. My husband didn't even notice. lol Thank you Mugi!!!',
       date: '2 weeks ago',
+    },
+    {
+      name: 'Kimberly Henson',
+      location: 'Google Reviews',
+      rating: 5,
+      testimonial:
+        'Mugi has a gentle touch, a great eye for detail, & is friendly. She makes every effort to ensure you have the best experience.',
+      date: '3 weeks ago',
     },
     {
       name: 'Porsche Huggins',
