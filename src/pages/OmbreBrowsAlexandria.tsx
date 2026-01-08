@@ -299,7 +299,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
               Ombre Powder Brows Pricing
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              All-inclusive pricing. Your 6-week touch-up is always included.
+              All-inclusive pricing. Everything you need included.
             </p>
           </AnimatedSection>
 
@@ -318,7 +318,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                     'Premium vegan pigments',
                     'Medical-grade aftercare kit ($75 value)',
                     '24/7 healing text support',
-                    '6-week perfecting touch-up included',
+                    'Professional aftercare support',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-[#9A7B69]" />

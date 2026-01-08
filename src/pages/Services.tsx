@@ -73,7 +73,8 @@ const Services = () => {
       title: 'Touch-Up Sessions',
       price: 'Included',
       duration: '1.5 hours',
-      description: '6-week touch-up included with initial procedure. Maintenance sessions keep your brows looking fresh and vibrant. Recommended every 18-36 months.',
+      description: 'Maintenance sessions keep your brows looking fresh and vibrant. Recommended every 18-36 months.',
+
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
@@ -228,7 +229,7 @@ const Services = () => {
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">6-week touch-up included</span>
+                  <span className="text-[#2D2D2B]">Premium aftercare kit included</span>
                 </div>
               </div>
               

@@ -78,7 +78,7 @@ const Home: React.FC = () => {
       price: '$600',
       duration: '3 hours',
       image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
-      features: ['Natural gradient effect', 'Ideal for oily skin', 'Includes touch-up'],
+      features: ['Natural gradient effect', 'Ideal for oily skin', 'Long-lasting results'],
     },
     {
       title: 'Microshading',
@@ -90,13 +90,13 @@ const Home: React.FC = () => {
       features: ['Ultra-natural finish', 'All skin types', '24-month longevity'],
     },
     {
-      title: 'PMU Correction',
-      tagline: 'A fresh start',
-      description: 'Expert restoration of previous permanent makeup. Color neutralization and shape refinement.',
-      price: '$700',
-      duration: '3 hours',
+      title: 'Fine Line Tattoo',
+      tagline: 'Delicate artistry',
+      description: 'Minimalist, elegant tattoos with precise linework. Perfect for small, meaningful designs.',
+      price: '$150+',
+      duration: '1-2 hours',
       image: 'https://live.staticflickr.com/65535/54408439944_63e225ac5f_c_d.jpg',
-      features: ['Color correction', 'Shape restoration', 'Confidence returned'],
+      features: ['Minimalist design', 'Precise linework', 'Custom artwork'],
     },
   ];
 
@@ -168,9 +168,9 @@ const Home: React.FC = () => {
     },
     {
       number: '04',
-      title: 'Aftercare & Touch-up',
-      duration: '6 weeks',
-      description: 'Detailed aftercare kit included. Free touch-up at 6 weeks to perfect the healed result. We\'re with you every step.',
+      title: 'Aftercare Support',
+      duration: 'Ongoing',
+      description: 'Detailed aftercare kit included. We\'re with you every step of your healing journey with ongoing support.',
     },
   ];
 
@@ -919,7 +919,7 @@ const Home: React.FC = () => {
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  Touch-up included
+                  Comprehensive aftercare
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />

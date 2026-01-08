@@ -360,7 +360,7 @@ const PermanentMakeupDC: React.FC = () => {
                     <ul className="space-y-3">
                       {[
                         'Free parking included',
-                        '6-week touch-up included',
+                        'Professional aftercare support',
                         '523+ verified procedures',
                         '0.19% complication rate',
                         'Premium vegan pigments',

@@ -335,7 +335,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                     'Premium vegan pigments',
                     'Medical-grade aftercare kit ($75 value)',
                     '24/7 healing text support',
-                    '6-week perfecting touch-up included',
+                    'Professional aftercare support',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-[#9A7B69]" />

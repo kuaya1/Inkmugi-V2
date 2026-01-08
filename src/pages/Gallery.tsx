@@ -249,6 +249,17 @@ const Gallery: React.FC = () => {
         author: "Emily W."
       }
     },
+    {
+      beforeImage: '/gallery/IMG_20260107_223605.heic',
+      afterImage: '/gallery/IMG_20260107_223611.heic',
+      category: 'ombre-brows',
+      label: 'Ombre Powder Brows',
+      healingStatus: 'fresh' as const,
+      testimonial: {
+        text: "Beautiful results! The precision and artistry is incredible.",
+        author: "Client"
+      }
+    },
   ];
 
   const filteredItems = activeFilter === 'all' 
