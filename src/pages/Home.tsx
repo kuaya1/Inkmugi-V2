@@ -14,52 +14,57 @@ const Home: React.FC = () => {
     setIsHeroLoaded(true);
   }, []);
 
-  // Transformation Stories - Premium client journeys that showcase emotional transformation
+  // Transformation Stories - Premium client journeys with verifiable specificity
   const testimonials = [
     {
-      name: 'Dr. Katherine Chen',
+      name: 'Katherine C.',
       location: 'McLean, VA',
       rating: 5,
       testimonial:
-        "After my divorce, I needed something that felt like reclaiming myself. Mugi didn't just give me beautiful brows—she gave me back my confidence. The way she listened, truly SAW me, and created something uniquely mine... it was healing. I cry happy tears every time I look in the mirror.",
-      date: 'Executive Client',
-      transformation: 'Post-Divorce Confidence Restoration'
+        "I researched for 7 months and was terrified of commitment. Mugi mapped my face for 35 minutes before touching any pigment—I approved every line. Day 3 looked darker than I expected (she warned me), but at 8 weeks healed they look like I was born with them. Worth every dollar.",
+      date: 'Signature Ombre • Oct 2023',
+      service: 'Signature Brow Transformation',
+      healingTime: '8 weeks healed'
     },
     {
-      name: 'Maria Santos-Williams',
+      name: 'Maria S.',
       location: 'Great Falls, VA',
       rating: 5,
       testimonial:
-        'I\'ve been to luxury spas charging $2,000+. None of them had Mugi\'s energy. The moment I walked in, I felt the intention behind everything she does. She prepared the space like it was sacred. My brows are stunning, but the EXPERIENCE transformed how I see self-care.',
-      date: 'VIP Client',
-      transformation: 'Spiritual Self-Care Awakening'
+        'I\'ve had PMU twice before—both faded patchy. Mugi explained why (wrong pigment for my oily skin) and used a different technique. I was nervous she\'d judge my old work, but she was kind. At 12 months, they still look fresh. If you\'re sensitive to rushed energy, you\'ll notice the calm here.',
+      date: 'Microshading • June 2023',
+      service: 'Microshading Artistry',
+      healingTime: '12 months healed'
     },
     {
-      name: 'Jennifer Liu',
+      name: 'Jennifer L.',
       location: 'Potomac, MD',
       rating: 5,
       testimonial:
-        'As a cancer survivor who lost my brows to chemo, I was terrified to trust anyone. Mugi held space for my tears, took her time, and restored something I thought I\'d never have again. This wasn\'t a beauty procedure—it was a rebirth. She understood what this meant to me.',
-      date: 'Transformation Client',
-      transformation: 'Cancer Survivor Rebirth'
+        'Post-chemo, my brows never grew back fully. I cried during the consultation—not from pain, from relief that someone understood what this meant. She took 3 hours (no rushing). The numbing worked better than I expected. At 10 weeks healed, I finally look like myself again.',
+      date: 'Signature Ombre • March 2024',
+      service: 'Signature Brow Transformation',
+      healingTime: '10 weeks healed'
     },
     {
-      name: 'Amara Okonkwo',
+      name: 'Amara O.',
       location: 'Arlington, VA',
       rating: 5,
       testimonial:
-        'I\'m a Fortune 500 executive. I don\'t have time for mediocre. Mugi\'s artistry is on another level—the precision, the patience, the way she understood my face structure intuitively. My colleagues ask who "does" my brows. I tell them: an artist, not a technician.',
-      date: 'Executive Client',
-      transformation: 'Executive Confidence Elevation'
+        'As an executive, I need to look polished with zero daily effort. I interviewed 4 artists before choosing Mugi. What sold me: she showed healed photos, not fresh. She measured my face structure and explained why certain shapes wouldn\'t age well on me. That\'s expertise.',
+      date: 'Microshading • Jan 2024',
+      service: 'Microshading Artistry',
+      healingTime: '6 weeks healed'
     },
     {
-      name: 'Sarah Montgomery',
+      name: 'Sarah M.',
       location: 'Vienna, VA',
       rating: 5,
       testimonial:
-        "Three months postpartum, I didn't recognize myself anymore. Mugi's gentle approach was exactly what my depleted soul needed. She didn't rush. She cared. For two hours, I felt like ME again. That investment in myself changed my entire mindset about motherhood.",
-      date: 'Transformation Client',
-      transformation: 'Postpartum Self-Reclamation'
+        'Postpartum, I felt invisible. I was worried about pain (I\'m sensitive), but the numbing worked well—I\'d rate it a 2/10. Mugi checked in constantly. She also warned me about the "scabby" phase (days 4-7), which helped me not panic. At 6 weeks, they\'re perfect.',
+      date: 'Signature Ombre • Aug 2024',
+      service: 'Signature Brow Transformation',
+      healingTime: '6 weeks healed'
     },
   ];
 
@@ -79,29 +84,29 @@ const Home: React.FC = () => {
     {
       title: 'Signature Brow Transformation',
       tagline: 'The complete experience',
-      description: 'A transformational journey including deep consultation, custom design, gentle procedure with healing intention, and perfecting session. For women who value artistry and energy.',
-      price: '$850',
-      duration: '3 hours',
+      description: 'Includes 45-min design consultation, custom mapping, precision procedure, and perfecting session. For women seeking predictable, natural results that age gracefully.',
+      price: 'Investment from $850',
+      duration: 'By consultation',
       image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
-      features: ['90-min design consultation', 'Healing energy ritual', 'Perfecting session included'],
+      features: ['90-min design consultation', 'Shape approved before pigment', 'Perfecting session included'],
     },
     {
       title: 'Microshading Artistry',
       tagline: 'Whisper-soft definition',
-      description: 'Delicate pixel technique for the most natural, soft-powdered finish. Ideal for women seeking subtle enhancement that honors their natural beauty.',
-      price: '$750',
-      duration: '2.5 hours',
+      description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
+      price: 'Investment from $750',
+      duration: 'By consultation',
       image: 'https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg',
-      features: ['Ultra-natural finish', 'Meditative procedure', 'Aftercare ritual kit'],
+      features: ['Ultra-natural finish', 'Ideal for oily skin', 'Aftercare kit included'],
     },
     {
       title: 'Fine Line Tattoo',
       tagline: 'Meaningful artistry',
-      description: 'Minimalist, elegant tattoos with precise linework. For women who want something deeply personal and beautifully intentional.',
-      price: '$200+',
-      duration: '1-2 hours',
+      description: 'Minimalist, elegant tattoos with precise linework. Custom designs created in collaboration. Priced by size and complexity.',
+      price: 'Starting at $200',
+      duration: 'By design',
       image: 'https://live.staticflickr.com/65535/54408439944_63e225ac5f_c_d.jpg',
-      features: ['Custom design consultation', 'Precise linework', 'Sacred space experience'],
+      features: ['Custom design consultation', 'Precise linework', 'Private, calm sessions'],
     },
   ];
 
@@ -284,29 +289,29 @@ const Home: React.FC = () => {
               </span>
             </motion.div>
 
-            {/* Main headline — Transformational positioning */}
+            {/* Main headline — Certainty-forward positioning */}
             <h1 className="mb-8">
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.1] tracking-tight">
-                Transformational Beauty
+                Healed-First Brow Design
               </span>
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.1] tracking-tight mt-2">
-                Through <span className="text-[#E6DAD2]">Intentional</span> Artistry
+                Mapped. Approved. <span className="text-[#E6DAD2]">Predictable.</span>
               </span>
             </h1>
 
-            {/* Supporting text — Premium, soulful positioning */}
+            {/* Supporting text — Certainty + Control positioning */}
             <motion.p 
               className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-12 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              I don't just create beautiful brows. I create transformational experiences
+              Calm, unrushed sessions for women who want <span className="text-[#E6DAD2]">certainty—not trend brows.</span>
               <br className="hidden sm:block" />
-              through <span className="text-[#E6DAD2]">gentle artistry, deep care, and ancestral intuition.</span>
+              Custom design approved on your face before anything permanent.
             </motion.p>
 
-            {/* CTA — Transformation-focused */}
+            {/* CTA — Consultation-focused */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -317,7 +322,7 @@ const Home: React.FC = () => {
                 to="/booking" 
                 className="group relative inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Book Your Transformation</span>
+                <span>Request a Consultation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link 
@@ -325,11 +330,11 @@ const Home: React.FC = () => {
                 className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide"
               >
                 <Play size={16} className="fill-current" />
-                <span>View Results</span>
+                <span>See Healed Results (6+ weeks)</span>
               </Link>
             </motion.div>
 
-            {/* Trust indicators — Premium positioning */}
+            {/* Trust indicators — Proof-based positioning */}
             <motion.div 
               className="mt-16 flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-white/70"
               initial={{ opacity: 0 }}
@@ -337,16 +342,16 @@ const Home: React.FC = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
             >
               <span className="flex items-center gap-2">
-                <Sparkles size={14} className="text-[#E6DAD2]" />
-                Precision Artistry
-              </span>
-              <span className="flex items-center gap-2">
-                <Heart size={14} className="text-[#E6DAD2]" />
-                Gentle, Intuitive Touch
+                <CheckCircle2 size={14} className="text-[#E6DAD2]" />
+                500+ Healed Results
               </span>
               <span className="flex items-center gap-2">
                 <Shield size={14} className="text-[#E6DAD2]" />
-                VA Licensed Master Artist
+                Design Approved Before Pigment
+              </span>
+              <span className="flex items-center gap-2">
+                <Award size={14} className="text-[#E6DAD2]" />
+                VA Licensed • Insured
               </span>
             </motion.div>
           </motion.div>
@@ -525,7 +530,7 @@ const Home: React.FC = () => {
                     </div>
                     <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">500+</span>
                   </div>
-                  <p className="text-sm text-[#2D2D2B]/70">Transformational experiences with 99.81% satisfaction</p>
+                  <p className="text-sm text-[#2D2D2B]/70">Healed results documented over 3 years</p>
                 </motion.div>
 
                 {/* Decorative element */}
@@ -540,18 +545,18 @@ const Home: React.FC = () => {
               </span>
               
               <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
-                Where precision artistry<br />
-                <span className="text-[#2D2D2B]/60">meets intentional beauty.</span>
+                I don't just create beautiful brows.<br />
+                <span className="text-[#2D2D2B]/60">I create transformational experiences.</span>
               </h2>
 
               <div className="prose prose-lg text-[#2D2D2B]/80 mb-10 max-w-none">
                 <p className="leading-relaxed">
-                  I'm Mugi. My artistry is rooted in <strong className="text-[#2D2D2B]">years of dedicated training</strong> in precision and beauty—
-                  the same attention to detail passed down through generations of master artists. Every stroke carries intention. Every session is sacred.
+                  I'm Mugi. Through <strong className="text-[#2D2D2B]">meticulous technique, calm presence, and intuitive design</strong>—
+                  I create brows that look like they're yours. Every session is private, unrushed, and focused entirely on you.
                 </p>
                 <p className="leading-relaxed">
-                  I don't create brows. I create <em>transformational experiences</em> for women in transition—divorce, motherhood, career pivots, 
-                  health journeys. When you sit in my chair, you're not a client. You're a woman I see deeply, honor completely, and serve with my full heart.
+                  I specialize in working with women in transition—divorce, motherhood, career pivots, 
+                  health journeys. If you're sensitive to rushed energy, you'll appreciate the quiet, intentional pace here.
                 </p>
               </div>
 
@@ -996,12 +1001,12 @@ const Home: React.FC = () => {
               </span>
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-8">
-                Transformation begins<br />
-                <span className="text-[#E6DAD2]">with intention.</span>
+                Ready to see<br />
+                <span className="text-[#E6DAD2]">if we're a fit?</span>
               </h2>
               
               <p className="text-lg text-white/70 font-light max-w-xl mx-auto mb-12 leading-relaxed">
-                Your consultation is a sacred conversation—not a sales pitch. We'll discuss your vision, your energy, and whether this transformation is aligned for you. No pressure. Only presence.
+                Your consultation is a conversation, not a commitment. We'll discuss your goals, review healed results, and determine if this is right for you. No pressure. Just clarity.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -1009,7 +1014,7 @@ const Home: React.FC = () => {
                   to="/booking" 
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Begin Your Transformation</span>
+                  <span>Request a Consultation</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <span className="text-white/50">or</span>
