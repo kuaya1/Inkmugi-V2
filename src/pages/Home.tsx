@@ -84,18 +84,19 @@ const Home: React.FC = () => {
     {
       title: 'Signature Brow Transformation',
       tagline: 'The complete experience',
-      description: 'Includes 45-min design consultation, custom mapping, precision procedure, and perfecting session. For women seeking predictable, natural results that age gracefully.',
+      description: 'Includes a 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session. For women seeking predictable, natural healed results that age gracefully.',
       price: 'Investment from $850',
-      duration: 'By consultation',
+      duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
-      features: ['90-min design consultation', 'Shape approved before pigment', 'Perfecting session included'],
+      features: ['45-min design + mapping', 'Shape approved before pigment', 'Perfecting session included'],
+      note: 'By consultation only • limited weekly availability'
     },
     {
       title: 'Microshading Artistry',
       tagline: 'Whisper-soft definition',
       description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
       price: 'Investment from $750',
-      duration: 'By consultation',
+      duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg',
       features: ['Ultra-natural finish', 'Ideal for oily skin', 'Aftercare kit included'],
     },
@@ -104,7 +105,7 @@ const Home: React.FC = () => {
       tagline: 'Meaningful artistry',
       description: 'Minimalist, elegant tattoos with precise linework. Custom designs created in collaboration. Priced by size and complexity.',
       price: 'Starting at $200',
-      duration: 'By design',
+      duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54408439944_63e225ac5f_c_d.jpg',
       features: ['Custom design consultation', 'Precise linework', 'Private, calm sessions'],
     },
@@ -221,12 +222,7 @@ const Home: React.FC = () => {
             },
             "telephone": "+1-571-283-8228",
             "url": "https://inkmugi.com",
-            "priceRange": "$500-$700",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5",
-              "reviewCount": "47"
-            }
+            "priceRange": "$750-$1,200+"
           })}
         </script>
       </Helmet>
@@ -306,9 +302,9 @@ const Home: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Calm, unrushed sessions for women who want <span className="text-[#E6DAD2]">certainty—not trend brows.</span>
+              Designed for women who want <span className="text-[#E6DAD2]">natural healed results—without guesswork.</span>
               <br className="hidden sm:block" />
-              Custom design approved on your face before anything permanent.
+              We map, measure, and you approve the shape on your face before anything permanent.
             </motion.p>
 
             {/* CTA — Consultation-focused */}
@@ -666,6 +662,71 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
+          STANDARDS — Non-Negotiable Principles (PATCH 7)
+          Philosophy: Premium buyers want standards more than hype.
+          Quiet luxury trust through clear principles.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-white relative overflow-hidden">
+        <div className="container-custom">
+          <AnimatedSection className="text-center mb-16">
+            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
+              My Principles
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
+              My Standards<br />
+              <span className="text-[#2D2D2B]/60">(Non-Negotiable)</span>
+            </h2>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            <AnimatedSection delay={2}>
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    icon: Shield,
+                    title: 'Healed-first philosophy',
+                    desc: 'I show healed work (6+ weeks), not fresh swelling.'
+                  },
+                  {
+                    icon: CheckCircle2,
+                    title: 'Design approved before pigment',
+                    desc: 'Nothing permanent happens until you approve.'
+                  },
+                  {
+                    icon: Heart,
+                    title: 'Unrushed appointments',
+                    desc: 'Your comfort matters more than speed.'
+                  },
+                  {
+                    icon: Award,
+                    title: 'Natural results that age well',
+                    desc: 'No trend brows that look harsh over time.'
+                  },
+                  {
+                    icon: Sparkles,
+                    title: 'Support through healing',
+                    desc: 'You can message me during healing with questions.'
+                  },
+                ].map((standard, index) => (
+                  <div key={index} className="flex gap-4 p-6 bg-[#F9F7F5] rounded-xl hover:bg-[#F7EDE6] transition-colors duration-300">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                        <standard.icon size={20} className="text-[#2D2D2B]" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-[#2D2D2B] mb-2">{standard.title}</h3>
+                      <p className="text-sm text-[#2D2D2B]/70">{standard.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
           SERVICES — Transformation, Not Transactions  
           Philosophy: Sell the transformation, not the procedure.
           Every service solves a deeper emotional need.
@@ -732,12 +793,21 @@ const Home: React.FC = () => {
                       ))}
                     </ul>
                     
+                    {service.note && (
+                      <p className="text-xs text-[#2D2D2B]/50 italic mb-4 text-center">
+                        {service.note}
+                      </p>
+                    )}
+                    
                     <Link 
                       to="/booking"
                       className="w-full text-center bg-[#2D2D2B] hover:bg-[#2D2D2B]/90 text-white py-3 rounded-full font-medium transition-all duration-300 mt-auto"
                     >
-                      Book Now
+                      Request Consultation
                     </Link>
+                    <p className="text-xs text-[#2D2D2B]/60 text-center mt-2">
+                      2-minute request → we confirm fit → schedule
+                    </p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -818,6 +888,7 @@ const Home: React.FC = () => {
                     <div>
                       <h4 className="font-medium text-[#2D2D2B]">{testimonials[0].name}</h4>
                       <p className="text-sm text-[#2D2D2B]/60">{testimonials[0].location}</p>
+                      <p className="text-xs text-[#2D2D2B]/50 mt-1">Verified Client • {testimonials[0].date}</p>
                     </div>
                   </div>
                 </div>
@@ -866,12 +937,62 @@ const Home: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-sm text-[#2D2D2B]">{testimonial.name}</h4>
-                      <p className="text-xs text-[#2D2D2B]/50">{testimonial.date}</p>
+                      <p className="text-xs text-[#2D2D2B]/50">Verified Client • {testimonial.date}</p>
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          WHO THIS IS BEST FOR — SEO + Pre-qualification (PATCH 9)
+          Philosophy: Help clients self-identify + boost local SEO
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto">
+            <AnimatedSection className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+                Who This Works Best For
+              </h2>
+            </AnimatedSection>
+
+            <AnimatedSection delay={2}>
+              <div className="bg-[#F9F7F5] rounded-2xl p-8 md:p-10">
+                <h3 className="text-xl font-medium text-[#2D2D2B] mb-6">Best for:</h3>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80"><strong>Oily skin</strong> (microshading holds better)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80"><strong>Sparse/overplucked brows</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80"><strong>Busy professionals</strong> who want "wake up polished"</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80"><strong>Previous PMU that faded patchy</strong> (case-by-case)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80"><strong>Anyone who wants soft, natural healed brows</strong></span>
+                  </li>
+                </ul>
+                
+                <div className="pt-6 border-t border-[#E6DAD2]/30">
+                  <p className="text-sm text-[#2D2D2B]/70">
+                    <strong className="text-[#2D2D2B]">Serving:</strong> Annandale, McLean, Arlington, Great Falls, Fairfax, Alexandria, Vienna & Washington DC
+                  </p>
+                </div>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
