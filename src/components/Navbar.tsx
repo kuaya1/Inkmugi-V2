@@ -114,6 +114,7 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* AI Try-On Button - Featured */}
+          {/* DISABLED - Temporarily hidden
           <Link
             to="/virtual-try-on"
             className="relative group bg-gradient-to-r from-[#2D2D2B] to-[#4A4A47] hover:from-[#3D3D3B] hover:to-[#5A5A57] text-white text-sm py-2 px-5 rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -124,6 +125,7 @@ const Navbar: React.FC = () => {
               NEW
             </span>
           </Link>
+          */}
           
           <a
             href="https://www.vagaro.com/inkmugi"
@@ -169,6 +171,7 @@ const Navbar: React.FC = () => {
           ))}
           
           {/* AI Try-On Button - Mobile Featured */}
+          {/* DISABLED - Temporarily hidden
           <Link
             to="/virtual-try-on"
             className="relative bg-gradient-to-r from-[#2D2D2B] to-[#4A4A47] text-white text-sm py-3 rounded-lg flex items-center justify-center gap-2 shadow-lg"
@@ -179,6 +182,7 @@ const Navbar: React.FC = () => {
               NEW
             </span>
           </Link>
+          */}
           
           {/* Tap-to-Call - Mobile */}
           <a

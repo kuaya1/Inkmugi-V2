@@ -236,6 +236,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Book Your Consultation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
+                {/* DISABLED - Temporarily hidden
                 <Link 
                   to="/virtual-try-on"
                   className="group border-2 border-white/40 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2"
@@ -243,6 +244,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   <Sparkles className="w-5 h-5" />
                   Try AI Virtual Preview
                 </Link>
+                */}
               </div>
             </AnimatedSection>
           </div>

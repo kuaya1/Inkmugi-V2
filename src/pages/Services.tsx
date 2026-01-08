@@ -41,8 +41,9 @@ const Services = () => {
       title: 'Ombre Powder Brows',
       price: '$600',
       duration: '3 hours',
-      description: 'Soft-to-bold gradient technique for natural-looking brows. Digital machine technique with premium vegan pigments using gradient shading method. Results last 18-36 months in DMV climate.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      description: 'Signature soft-to-bold gradient technique for natural-looking brows. Digital machine technique with premium vegan pigments using gradient shading method. Results last 18-36 months in DMV climate.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      featured: true
     },
     {
       id: 2,
@@ -50,18 +51,36 @@ const Services = () => {
       price: '$500',
       duration: '2.5 hours',
       description: 'Delicate dot-work technique creating soft powder effect with medical-grade pigments. Perfect for sensitive skin with 0.19% complication rate. Results last 1-3 years.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      featured: true
     },
     {
       id: 3,
-      title: 'PMU Correction',
-      price: '$700',
-      duration: '3 hours',
-      description: 'Advanced correction techniques including color neutralization and shape refinement. Expert correction of previous permanent makeup work.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      title: 'Fine Line Tattoo',
+      price: '$150+',
+      duration: '1-2 hours',
+      description: 'Minimalist, elegant tattoos with precise linework. Perfect for small, meaningful designs. Custom artwork tailored to your vision with delicate artistry.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      featured: true
     },
     {
       id: 4,
+      title: 'PMU Correction',
+      price: '$700',
+      duration: '3 hours',
+      description: 'Advanced correction techniques including color neutralization and shape refinement. Expert restoration of previous permanent makeup work.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+    },
+    {
+      id: 5,
+      title: 'Nano Brows',
+      price: '$550',
+      duration: '2.5 hours',
+      description: 'Ultra-fine hairstrokes using nano-needles for the most natural, realistic brow appearance. Ideal for those seeking hair-like definition.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+    },
+    {
+      id: 6,
       title: 'Free Consultation',
       price: 'Free',
       duration: '45 minutes',
@@ -69,17 +88,16 @@ const Services = () => {
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
-      id: 5,
-      title: 'Touch-Up Sessions',
-      price: 'Included',
+      id: 7,
+      title: 'Maintenance Sessions',
+      price: 'From $200',
       duration: '1.5 hours',
-      description: 'Maintenance sessions keep your brows looking fresh and vibrant. Recommended every 18-36 months.',
-
+      description: 'Professional maintenance sessions keep your brows looking fresh and vibrant. Recommended every 18-36 months for optimal results.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
-      id: 6,
-      title: 'After-Care Services',
+      id: 8,
+      title: 'After-Care Support',
       price: 'Included',
       duration: 'Ongoing',
       description: 'Comprehensive aftercare support included with every procedure. Detailed instructions and premium aftercare kit to ensure optimal healing and long-lasting results.',
@@ -90,9 +108,9 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows & Microshading Services | Inkmugi Alexandria VA</title>
-        <meta name="description" content="Professional ombre powder brows starting at $500. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years. Serving Annandale, Alexandria, Arlington & Northern Virginia." />
-        <meta name="keywords" content="ombre powder brows, microshading, permanent makeup, PMU services, brow services Alexandria VA" />
+        <title>PMU & Fine Line Tattoo Services | Inkmugi Alexandria VA</title>
+        <meta name="description" content="Professional permanent makeup & fine line tattoos. Ombre powder brows $600, Microshading $500, Fine Line Tattoo from $150. Virginia-licensed artist serving DMV area." />
+        <meta name="keywords" content="ombre powder brows, microshading, fine line tattoo, permanent makeup, PMU services, minimalist tattoo Alexandria VA" />
         <link rel="canonical" href="https://inkmugi.com/services" />
         <meta property="og:title" content="Ombre Powder Brows & Microshading Services | Inkmugi" />
         <meta property="og:description" content="Professional ombre powder brows starting at $500. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years." />
@@ -104,14 +122,20 @@ const Services = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-[#F0E4D8]">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-[#F0E4D8] via-[#E6DAD2] to-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              PMU Services in Annandale, VA
+            <div className="inline-block mb-4 px-4 py-2 bg-[#2D2D2B]/10 rounded-full">
+              <span className="text-[#2D2D2B] font-medium text-sm uppercase tracking-wider">Premium Artistry Services</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Permanent Makeup & Fine Line Tattoo
             </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto">
-              Virginia-licensed permanent makeup artistry with 523+ procedures, 0.19% complication rate, and 97% client satisfaction. Specialized techniques for DMV's unique climate.
+            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
+              Where precision meets artistry. Virginia-licensed studio specializing in ombre powder brows, microshading, and minimalist tattoos.
+            </p>
+            <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto">
+              523+ procedures • 0.19% complication rate • 97% satisfaction • DMV climate-optimized
             </p>
           </AnimatedSection>
         </div>
@@ -121,9 +145,9 @@ const Services = () => {
       <section className="py-20 bg-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-title text-[#2D2D2B]">Our Services</h2>
+            <h2 className="section-title text-[#2D2D2B]">Our Artistry Services</h2>
             <p className="section-subtitle text-[#2D2D2B]/80">
-              Professional permanent makeup services tailored to enhance your natural beauty
+              Expert permanent makeup and fine line tattoos designed to enhance your natural beauty with precision and care
             </p>
           </AnimatedSection>
 
@@ -198,9 +222,9 @@ const Services = () => {
             </AnimatedSection>
 
             <AnimatedSection delay={2}>
-              <h2 className="section-title text-[#2D2D2B]">Why Choose Ink Mugi</h2>
+              <h2 className="section-title text-[#2D2D2B]">Why Choose Inkmugi</h2>
               <p className="text-[#2D2D2B] mb-4">
-                Virginia-licensed PMU artist specializing in ombre powder brows and microshading. Our hospital-grade safety protocols and data-driven approach ensure exceptional results with minimal risk.
+                Virginia-licensed artist specializing in permanent makeup and fine line tattoos. Our hospital-grade safety protocols, precision techniques, and data-driven approach ensure exceptional results with minimal risk.
               </p>
               <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg">
                 <strong className="text-[#2D2D2B]">523+ Procedures</strong> • <strong className="text-[#2D2D2B]">0.19% Complication Rate</strong> (vs 2.5% industry avg) • <strong className="text-[#2D2D2B]">97% Satisfaction</strong> • License #1231002471
