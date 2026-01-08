@@ -85,7 +85,7 @@ const Home: React.FC = () => {
       title: 'Signature Brow Transformation',
       tagline: 'The complete experience',
       description: 'Includes a 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session. For women seeking predictable, natural healed results that age gracefully.',
-      price: 'Investment from $850',
+      price: 'Investment: $850–$1,200',
       duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
       features: ['45-min design + mapping', 'Shape approved before pigment', 'Perfecting session included'],
@@ -95,19 +95,10 @@ const Home: React.FC = () => {
       title: 'Microshading Artistry',
       tagline: 'Whisper-soft definition',
       description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
-      price: 'Investment from $750',
+      price: 'Investment: $750–$950',
       duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg',
       features: ['Ultra-natural finish', 'Ideal for oily skin', 'Aftercare kit included'],
-    },
-    {
-      title: 'Fine Line Tattoo',
-      tagline: 'Meaningful artistry',
-      description: 'Minimalist, elegant tattoos with precise linework. Custom designs created in collaboration. Priced by size and complexity.',
-      price: 'Starting at $200',
-      duration: 'Consultation required',
-      image: 'https://live.staticflickr.com/65535/54408439944_63e225ac5f_c_d.jpg',
-      features: ['Custom design consultation', 'Precise linework', 'Private, calm sessions'],
     },
   ];
 
@@ -116,40 +107,40 @@ const Home: React.FC = () => {
     {
       before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
-      story: 'Jennifer\'s Divorce Recovery',
-      subtitle: 'After 18 years of marriage, she needed to see herself with fresh eyes',
+      story: 'Natural Ombre Transformation',
+      subtitle: 'From sparse, uneven brows to soft, defined shape',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
-      story: 'Maria\'s Postpartum Rebirth',
-      subtitle: 'After three children, she was ready to reclaim her femininity',
+      story: 'Soft Powder Microshading',
+      subtitle: 'Delicate enhancement for busy professional',
       technique: 'Microshading Artistry',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366216764_db37388bbe_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366013611_5cc68ab55d_c_d.jpg',
-      story: 'Katherine\'s Executive Presence',
-      subtitle: 'A physician who needed to project confidence without daily effort',
+      story: 'Professional Executive Look',
+      subtitle: 'Polished, natural definition for daily confidence',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
-      story: 'Sarah\'s Cancer Victory',
-      subtitle: 'After chemo took her brows, she was ready to feel whole again',
+      story: 'Natural Brow Restoration',
+      subtitle: 'Gentle enhancement for sparse brows',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54408533403_ffd6a50432_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408670015_5b248eb7d2_c_d.jpg',
-      story: 'Amanda\'s New Chapter',
-      subtitle: 'Turning 50 and ready for the best decade of her life',
+      story: 'Balanced, Elegant Shape',
+      subtitle: 'Soft correction for asymmetric brows',
       technique: 'Microshading Artistry',
       healingStatus: 'fresh',
     },
@@ -222,7 +213,55 @@ const Home: React.FC = () => {
             },
             "telephone": "+1-571-283-8228",
             "url": "https://inkmugi.com",
-            "priceRange": "$750-$1,200+"
+            "priceRange": "$850-$1,200+"
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Does ombre powder brows hurt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most clients rate the pain 2-3 out of 10 with medical-grade numbing. Many clients fall asleep during the procedure. Comfort is prioritized throughout the 2-3 hour session."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long do ombre brows last?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ombre powder brows typically last 1-3 years depending on skin type, lifestyle, and aftercare. Oily skin may fade faster. A perfecting session at 6-8 weeks ensures optimal color retention."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the healing process for ombre brows?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Days 1-3: Brows appear darker and bolder. Days 4-7: Light flaking begins (do not pick). Days 7-14: Color softens significantly. Weeks 2-6: True healed color emerges, typically 30-50% lighter than initial appearance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much do ombre brows cost in Northern Virginia?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Investment ranges from $850-$1,200 and includes design consultation, custom mapping, precision procedure, and perfecting session. Price is determined during consultation based on complexity and desired outcome."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is a good candidate for ombre powder brows?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ideal candidates include those with oily skin, sparse or over-plucked brows, busy professionals seeking low-maintenance beauty, previous PMU clients needing correction, and anyone wanting natural-looking results that age gracefully."
+                }
+              }
+            ]
           })}
         </script>
       </Helmet>
@@ -321,13 +360,15 @@ const Home: React.FC = () => {
                 <span>Request a Consultation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <Link 
-                to="/gallery" 
-                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide"
+              <a 
+                href="#transformations" 
+                className="group inline-flex items-center gap-3 text-white/80 hover:text-white transition-colors duration-300"
               >
-                <Play size={16} className="fill-current" />
-                <span>See Healed Results (6+ weeks)</span>
-              </Link>
+                <span className="relative flex h-12 w-12 items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
+                  <Play size={16} className="fill-current ml-0.5" />
+                </span>
+                <span className="text-sm tracking-wide">Watch 60-second process walkthrough</span>
+              </a>
             </motion.div>
 
             {/* Trust indicators — Proof-based positioning */}
@@ -380,13 +421,14 @@ const Home: React.FC = () => {
           <AnimatedSection className="mb-20">
             <div className="max-w-2xl">
               <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                Transformations • Real Stories
+                <CheckCircle2 size={12} className="inline-block mr-1" />
+                Verified Results • Real Clients
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                More than <span className="italic">beautiful brows</span>
+                Healed results at <span className="italic">6+ weeks</span>
               </h2>
               <p className="text-lg text-[#2D2D2B]/70 font-light">
-                Behind every transformation is a woman's journey—divorce recovery, cancer survival, postpartum rebirth, career confidence. These aren't just before/afters. They're stories of reclamation.
+                Not fresh glamor shots. These are real healed results showing how brows actually look after the healing process is complete.
               </p>
             </div>
           </AnimatedSection>
@@ -747,7 +789,7 @@ const Home: React.FC = () => {
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, index) => (
               <AnimatedSection key={index} delay={index * 2}>
                 <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
@@ -841,7 +883,8 @@ const Home: React.FC = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-end">
               <div>
                 <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                  Real Stories
+                  <CheckCircle2 size={12} className="inline-block mr-1" />
+                  Verified Clients • Real Experiences
                 </span>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight">
                   In their <span className="italic">own</span> words
