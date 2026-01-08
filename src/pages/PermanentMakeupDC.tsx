@@ -43,7 +43,7 @@ const PermanentMakeupDC: React.FC = () => {
         "sameAs": "https://en.wikipedia.org/wiki/Washington,_D.C."
       }
     ],
-    "priceRange": "$500-$700",
+    "priceRange": "$600-$700",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

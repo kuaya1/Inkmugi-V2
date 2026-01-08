@@ -93,7 +93,7 @@ const OmbreBrowsArlington: React.FC = () => {
     },
     {
       question: "Why do Arlington residents choose Inkmugi over DC studios?",
-      answer: "Arlington clients appreciate our combination of quality and value. DC studios charge $750-950 for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 523+ procedure track record and 0.19% complication rate speak for themselves."
+      answer: "Arlington clients appreciate our combination of quality and value. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 500+ procedure track record speaks for itself."
     },
     {
       question: "Do you offer flexible hours for Arlington professionals?",

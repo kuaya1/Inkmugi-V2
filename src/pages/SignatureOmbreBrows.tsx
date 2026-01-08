@@ -87,7 +87,7 @@ const SignatureOmbreBrows: React.FC = () => {
     },
     {
       question: 'What makes this worth $600? What exactly is included?',
-      answer: 'Your $600 investment includes: (1) Complimentary design consultation, (2) The full 3-hour procedure with medical-grade pigments, (3) Hospital-grade aftercare kit (valued at $75), (4) 24/7 text support during healing, and (5) Your 6-week perfecting touch-up session. No hidden fees. Compare this to Arlington ($650-800) or DC ($750-950) with similar quality.'
+      answer: 'Your $600 investment includes: (1) Complimentary design consultation, (2) The full 3-hour procedure with medical-grade pigments, (3) Hospital-grade aftercare kit (valued at $75), (4) 24/7 text support during healing, and (5) Your 6-week perfecting touch-up session. No hidden fees. Compare this to Arlington or DC studios ($800+) with similar quality.'
     },
     {
       question: 'How long will my results last in Northern Virginia?',
@@ -468,8 +468,8 @@ const SignatureOmbreBrows: React.FC = () => {
                     <h4 className="text-lg font-semibold text-[#2D2D2B] mb-3">Price Comparison:</h4>
                     <div className="space-y-2 text-gray-700">
                       <p>• <strong>Annandale (Ink Mugi):</strong> $600</p>
-                      <p>• <strong>Arlington:</strong> $650-800</p>
-                      <p>• <strong>Washington DC:</strong> $750-950</p>
+                      <p>• <strong>Arlington:</strong> $800+</p>
+                      <p>• <strong>Washington DC:</strong> $800+</p>
                     </div>
                   </div>
 

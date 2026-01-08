@@ -110,7 +110,7 @@ const OmbreBrowsFairfax: React.FC = () => {
     },
     {
       question: "How do your prices compare to Tysons Corner studios?",
-      answer: "Tysons and McLean studios typically charge $750-900 for ombre powder brows. Our $600 includes everything: consultation, the full procedure, premium vegan pigments, aftercare kit, and your 6-week touch-up. Same high-end quality, better value, and a more personalized experience."
+      answer: "Tysons and McLean studios typically charge $800+ for ombre powder brows. Our $600 includes everything: consultation, the full procedure, premium vegan pigments, aftercare kit, and your 6-week touch-up. Same high-end quality, better value, and a more personalized experience."
     },
     {
       question: "What makes your technique suitable for Fairfax County's climate?",

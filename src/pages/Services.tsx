@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, CheckCircle2, Shield, Award } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
 
@@ -31,7 +31,7 @@ const Services = () => {
     "description": "Premium transformational brow artistry combining precision techniques with intentional energy. Experience personalized beauty that honors your unique features.",
     "offers": {
       "@type": "Offer",
-      "priceRange": "$750-$1,200"
+      "priceRange": "$850-$1,200"
     }
   };
 
@@ -39,81 +39,70 @@ const Services = () => {
     {
       id: 1,
       title: 'Signature Brow Transformation',
-      price: '$1,200',
-      duration: '3.5 hours',
-      description: 'The complete experience. Precision technique meets intentional artistry. Includes consultation, custom mapping, transformation, and complimentary perfecting session. For women ready to feel like themselves again.',
+      price: '$850–$1,200',
+      duration: 'Consultation required',
+      description: 'Includes 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session. For women seeking predictable, natural healed results that age gracefully.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
-      featured: true
+      featured: true,
+      features: ['45-min design + mapping', 'Shape approved before pigment', 'Perfecting session included', 'By consultation only']
     },
     {
       id: 2,
       title: 'Microshading Artistry',
-      price: '$850',
-      duration: '3 hours',
-      description: 'Delicate, intuitive dot-work creating soft powder effect. Perfect for sensitive souls seeking subtle enhancement. Energy-conscious approach with premium vegan pigments.',
+      price: '$750–$950',
+      duration: 'Consultation required',
+      description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'Fine Line Tattoo',
-      price: '$200+',
-      duration: '1-2 hours',
-      description: 'Intentional, meaningful tattoos with meticulous precision. Minimalist designs that carry significance. Custom artwork created in sacred collaboration.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
-      featured: true
+      featured: true,
+      features: ['Ultra-natural finish', 'Ideal for oily skin', 'Aftercare kit included', 'Premium vegan pigments']
     },
     {
       id: 4,
-      title: 'Restoration Artistry',
-      price: '$950',
-      duration: '3.5 hours',
-      description: 'Compassionate correction of previous work. Advanced color neutralization and shape refinement for women ready to reclaim their brows from past experiences.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
-    },
-    {
-      id: 5,
-      title: 'Nano Brow Artistry',
-      price: '$750',
-      duration: '3 hours',
-      description: 'Ultra-fine hairstrokes for the most natural, realistic appearance. Ideal for women seeking subtle hair-like definition with intentional, gentle technique.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      title: 'Restoration & Correction',
+      price: 'Consultation required',
+      duration: '3-4 hours',
+      description: 'Case-by-case correction of previous PMU work. Advanced color neutralization and shape refinement. Requires consultation to assess feasibility.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      features: ['Color neutralization', 'Shape correction', 'Custom color matching', 'Assessment required']
     },
     {
       id: 6,
-      title: 'Discovery Consultation',
+      title: 'Consultation',
       price: 'Complimentary',
       duration: '45 minutes',
-      description: 'A sacred conversation—not a sales pitch. We explore your vision, your energy, and whether this transformation is aligned. Custom mapping included.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      description: 'Meet me. Ask every question. See healed portfolio in person. We map your face and design together. Zero pressure—this is about your confidence, not my calendar.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      features: ['Face mapping included', 'Review healed results', 'No obligation', 'Design preview']
     },
     {
       id: 7,
-      title: 'Renewal Sessions',
+      title: 'Color Refresh Sessions',
       price: 'From $350',
-      duration: '2 hours',
-      description: 'Maintain the vibrancy of your transformation. Recommended every 18-36 months to refresh and perfect your brows as they naturally evolve.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      duration: '1.5-2 hours',
+      description: 'Maintain vibrancy after initial healing. Recommended every 18-36 months depending on skin type and lifestyle. Keeps brows looking fresh.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      features: ['Color boost only', 'No shape change', 'Quick healing', 'For existing clients']
     },
     {
       id: 8,
-      title: 'Aftercare Partnership',
+      title: 'Aftercare Support',
       price: 'Included',
-      duration: 'Ongoing',
-      description: 'Your healing journey matters. Comprehensive aftercare guidance, premium healing kit, and unlimited support during your transformation. I\'m with you every step.',
-      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
+      duration: 'First 6 weeks',
+      description: 'Comprehensive aftercare kit, detailed healing guide, and text support during the critical healing period. You can reach me with any concern.',
+      icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
+      features: ['Premium healing kit', 'Written instructions', 'Text support access', 'Healing phase guidance']
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Transformational Beauty Services | Precision Artistry | Inkmugi</title>
-        <meta name="description" content="Premium brow transformations for conscious women. Signature services starting at $750. Where precision artistry meets intentional beauty. Serving McLean, Great Falls, Arlington." />
-        <meta name="keywords" content="transformational brow artistry, premium microshading, signature brows McLean, fine line tattoo, intentional beauty, brow artist" />
+        <title>Permanent Makeup Services | Predictable Results | Inkmugi</title>
+        <meta name="description" content="Premium ombre powder brows and microshading. Investment: $600-$700. Design approved before pigment. Healed results shown at consultation. Serving McLean, Great Falls, Arlington." />
+        <meta name="keywords" content="ombre powder brows, microshading Northern Virginia, permanent makeup McLean, healed brow results, licensed PMU artist" />
         <link rel="canonical" href="https://inkmugi.com/services" />
         <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
-        <meta property="og:description" content="Premium brow transformations starting at $750. Precision technique meets intentional beauty for women ready to feel like themselves again." />
+        <meta property="og:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty for women ready to feel like themselves again." />
         <meta property="og:url" content="https://inkmugi.com/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
@@ -126,13 +115,17 @@ const Services = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <div className="inline-block mb-4 px-4 py-2 bg-[#2D2D2B]/10 rounded-full">
-              <span className="text-[#2D2D2B] font-medium text-sm uppercase tracking-wider">Intentional Artistry</span>
+              <span className="text-[#2D2D2B] font-medium text-sm uppercase tracking-wider">
+                <CheckCircle2 size={12} className="inline-block mr-1" />
+                Predictable Results
+              </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
-              Transformations, Not Services
+              Premium PMU Services
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Where precision artistry meets intentional beauty. Every session is a sacred collaboration—designed to honor your unique features and restore your relationship with your reflection.
+              Healed-first brow design with transparent pricing. Every service includes design consultation, 
+              shape approval before pigment, and documented healing support.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto">
               Serving McLean • Great Falls • Arlington • Potomac • Washington DC
@@ -145,29 +138,41 @@ const Services = () => {
       <section className="py-20 bg-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-title text-[#2D2D2B]">The Transformation Menu</h2>
+            <h2 className="section-title text-[#2D2D2B]">Service Menu</h2>
             <p className="section-subtitle text-[#2D2D2B]/80">
-              Each service is a journey, not a transaction. Priced for women who understand the value of artistry, intention, and transformation.
+              Transparent pricing. Clear expectations. Final investment determined during consultation based on complexity.
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <AnimatedSection key={service.id} delay={index + 1}>
-                <div className="bg-white p-6 rounded-lg shadow-soft h-full border-b-4 border-[#E6DAD2] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="bg-white p-6 rounded-lg shadow-soft h-full border-b-4 border-[#E6DAD2] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col">
                   <div className="w-12 h-12 bg-[#2D2D2B]/10 rounded-full flex items-center justify-center mb-4">
                     {service.icon}
                   </div>
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-medium text-[#2D2D2B]">{service.title}</h3>
-                    <span className="text-[#2D2D2B] font-bold text-lg">{service.price}</span>
+                    <span className="text-[#2D2D2B] font-bold text-lg whitespace-nowrap ml-2">{service.price}</span>
                   </div>
-                  <p className="text-[#2D2D2B]/60 text-sm mb-4">Duration: {service.duration}</p>
-                  <p className="text-[#2D2D2B]/80 mb-6">
+                  <p className="text-[#2D2D2B]/60 text-sm mb-4">{service.duration}</p>
+                  <p className="text-[#2D2D2B]/80 mb-6 flex-grow">
                     {service.description}
                   </p>
-                  <Link to="/booking" className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors inline-flex items-center">
-                    Book Now →
+                  
+                  {service.features && (
+                    <ul className="space-y-2 mb-6">
+                      {service.features.map((feature, fIndex) => (
+                        <li key={fIndex} className="flex items-start gap-2 text-sm text-[#2D2D2B]/70">
+                          <CheckCircle2 size={14} className="text-[#E6DAD2] mt-0.5 flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  
+                  <Link to="/booking" className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors inline-flex items-center mt-auto">
+                    Request Consultation →
                   </Link>
                 </div>
               </AnimatedSection>
@@ -180,18 +185,18 @@ const Services = () => {
       <section className="py-20 bg-gradient-to-b from-[#E6DAD2] to-[#F0E4D8]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-title text-[#2D2D2B]">The Transformation Journey</h2>
+            <h2 className="section-title text-[#2D2D2B]">The Process</h2>
             <p className="section-subtitle text-[#2D2D2B]/80">
-              Every transformation follows a sacred process—honoring your energy, your vision, and your healing.
+              Four clear steps designed to address your concerns and deliver predictable results.
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { title: "Sacred Conversation", desc: "We connect, explore your vision, and feel into whether this transformation is aligned for both of us." },
-              { title: "Intuitive Mapping", desc: "Custom design honoring your bone structure, facial harmony, and the brows that belong to you." },
-              { title: "Intentional Artistry", desc: "Precision techniques with gentle, present energy. You'll feel held, not hurried." },
-              { title: "Supported Healing", desc: "Detailed aftercare guidance and a complimentary perfecting session to complete your transformation." }
+              { title: "Consultation", desc: "Meet me. Ask every question. See healed portfolio. We map your face and design together. Zero pressure." },
+              { title: "Design Approval", desc: "You see the exact shape on YOUR face before any pigment. We adjust until you're 100% confident." },
+              { title: "Numbed Procedure", desc: "Medical-grade numbing applied. Most clients rate pain 2-3/10. Sessions are calm and unrushed." },
+              { title: "Healing Support", desc: "Detailed aftercare kit, written guide, and text support during healing. I'll walk you through the 'too dark' phase." }
             ].map((step, index) => (
               <AnimatedSection key={index} delay={index + 1}>
                 <div className="bg-white p-6 rounded-lg shadow-soft h-full">
@@ -222,47 +227,49 @@ const Services = () => {
             </AnimatedSection>
 
             <AnimatedSection delay={2}>
-              <h2 className="section-title text-[#2D2D2B]">Why Conscious Women Choose Inkmugi</h2>
+              <h2 className="section-title text-[#2D2D2B]">Why Choose InkMugi</h2>
               <p className="text-[#2D2D2B] mb-4">
-                This isn't just permanent makeup. It's transformational artistry rooted in precision technique, intentional energy, and a deep commitment to honoring your unique beauty.
+                Premium ombre powder brows and microshading with a focus on predictable, natural healed results. 
+                Every procedure documented with 6+ week healed photos.
               </p>
-              <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg italic">
-                "I don't do brows. I restore women's relationship with their reflection."
+              <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg border-l-4 border-[#2D2D2B]">
+                <strong>My commitment:</strong> You see healed work before booking. You approve the design before pigment. 
+                You have support during healing.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Meticulous precision technique</span>
+                  <CheckCircle2 size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <span className="text-[#2D2D2B]">Healed-first portfolio</span>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Intentional, healing presence</span>
+                  <CheckCircle2 size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <span className="text-[#2D2D2B]">Design approved before pigment</span>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <CheckCircle2 size={18} className="text-[#2D2D2B] mt-1 mr-2" />
                   <span className="text-[#2D2D2B]">Premium vegan pigments</span>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Sacred, unhurried sessions</span>
+                  <CheckCircle2 size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <span className="text-[#2D2D2B]">Unrushed, calm sessions</span>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <CheckCircle2 size={18} className="text-[#2D2D2B] mt-1 mr-2" />
                   <span className="text-[#2D2D2B]">Complimentary consultation</span>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Virginia licensed & insured</span>
+                  <CheckCircle2 size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <span className="text-[#2D2D2B]">VA licensed & insured</span>
                 </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/booking" className="btn bg-[#2D2D2B] hover:bg-[#1a1a19] text-white">
-                  Begin Your Transformation
+                  Request Consultation
                 </Link>
                 <Link to="/gallery" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5">
-                  View Transformations
+                  View Healed Results
                 </Link>
               </div>
             </AnimatedSection>

@@ -40,7 +40,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
       "name": "Alexandria",
       "sameAs": "https://en.wikipedia.org/wiki/Alexandria,_Virginia"
     },
-    "priceRange": "$500-$700",
+    "priceRange": "$600-$700",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -218,7 +218,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Premium Quality, Fair Price</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Old Town studios charge $700-850 for ombre brows. Get the same exceptional quality at $600 with a Virginia-licensed artist who has completed 523+ procedures.
+                  Old Town studios charge $800+ for ombre brows. Get exceptional quality at $600 with a Virginia-licensed artist who has completed 500+ procedures.
                 </p>
               </div>
             </AnimatedSection>
@@ -333,7 +333,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                   Book Your Alexandria Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
-                  Compare: Old Town studios charge $700-850 for similar quality
+                  Compare: Old Town studios charge $800+ for similar quality
                 </p>
               </div>
             </AnimatedSection>

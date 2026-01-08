@@ -85,7 +85,7 @@ const Home: React.FC = () => {
       title: 'Signature Brow Transformation',
       tagline: 'The complete experience',
       description: 'Includes a 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session. For women seeking predictable, natural healed results that age gracefully.',
-      price: 'Investment: $850–$1,200',
+      price: 'Investment: $600',
       duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
       features: ['45-min design + mapping', 'Shape approved before pigment', 'Perfecting session included'],
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
       title: 'Microshading Artistry',
       tagline: 'Whisper-soft definition',
       description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
-      price: 'Investment: $750–$950',
+      price: 'Investment: $700',
       duration: 'Consultation required',
       image: 'https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg',
       features: ['Ultra-natural finish', 'Ideal for oily skin', 'Aftercare kit included'],
@@ -213,7 +213,7 @@ const Home: React.FC = () => {
             },
             "telephone": "+1-571-283-8228",
             "url": "https://inkmugi.com",
-            "priceRange": "$850-$1,200+"
+            "priceRange": "$600-$700"
           })}
         </script>
         <script type="application/ld+json">
@@ -250,7 +250,7 @@ const Home: React.FC = () => {
                 "name": "How much do ombre brows cost in Northern Virginia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Investment ranges from $850-$1,200 and includes design consultation, custom mapping, precision procedure, and perfecting session. Price is determined during consultation based on complexity and desired outcome."
+                  "text": "Investment ranges from $600-$700 depending on technique. Signature Ombre Transformation is $600, Microshading is $700. Both include design consultation, custom mapping, precision procedure, and perfecting session."
                 }
               },
               {

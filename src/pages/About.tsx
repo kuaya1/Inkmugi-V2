@@ -11,7 +11,8 @@ import {
   Clock,
   Droplets,
   Star,
-  Quote
+  Quote,
+  CheckCircle2
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
@@ -44,58 +45,58 @@ const About: React.FC = () => {
   };
 
   const certifications = [
-    { title: "Virginia Licensed PMU Artist", detail: "License #1231002471" },
-    { title: "Bloodborne Pathogens Certified", detail: "OSHA Compliant" },
-    { title: "Korean PMU Techniques", detail: "Advanced Training" },
-    { title: "Advanced Color Theory", detail: "Pigment Specialist" },
+    { title: "Virginia Licensed PMU Artist", detail: "License #1231002471 • Active" },
+    { title: "Bloodborne Pathogens Certified", detail: "OSHA Compliant • Annually Updated" },
+    { title: "Korean PMU Techniques", detail: "Ombre & Microshading Specialist" },
+    { title: "Advanced Skin Analysis", detail: "Custom pigment matching" },
   ];
 
   const values = [
     { 
       icon: Shield, 
-      title: 'Safety Obsessed', 
-      desc: 'Hospital-grade sterilization with 0.19% complication rate—13x safer than industry average.',
-      stat: '0.19%',
-      statLabel: 'Complication Rate'
+      title: 'Safety First', 
+      desc: 'Medical-grade sterilization protocols. Every tool, every surface, every time.',
+      stat: '100%',
+      statLabel: 'Sterile Procedures'
     },
     { 
       icon: Heart, 
-      title: 'Naturally You', 
-      desc: 'Enhancement, not transformation. Your brows should look like they were always meant to be there.',
-      stat: '97%',
-      statLabel: 'Client Satisfaction'
+      title: 'Healed Results Only', 
+      desc: 'I show you what brows actually look like at 6+ weeks, not fresh swelling.',
+      stat: '6+wks',
+      statLabel: 'Healed Photos'
     },
     { 
       icon: Clock, 
-      title: 'Built to Last', 
-      desc: 'Techniques optimized for DMV climate. Results that stay beautiful for 18-36 months.',
-      stat: '24mo',
-      statLabel: 'Average Longevity'
+      title: 'Unrushed Sessions', 
+      desc: 'Your comfort matters more than speed. Sessions are calm, private, and unhurried.',
+      stat: '2-3hrs',
+      statLabel: 'Typical Session'
     },
     { 
       icon: Sparkles, 
-      title: 'Detail Driven', 
-      desc: 'Every stroke considered. Precision mapping and custom color matching for every client.',
-      stat: '523+',
-      statLabel: 'Procedures Completed'
+      title: 'Design Approved First', 
+      desc: 'You see and approve the exact shape on your face before any pigment is applied.',
+      stat: '500+',
+      statLabel: 'Healed Results'
     },
   ];
 
   const journey = [
     {
-      year: 'The Beginning',
-      title: 'Art Finds Purpose',
-      description: 'Drawing and creating have been part of me for as long as I can remember. This lifelong passion naturally led me to permanent makeup—where artistry meets transformation.'
+      year: '2021',
+      title: 'Foundation & Training',
+      description: 'Completed comprehensive PMU training including Korean techniques, color theory, and medical-grade safety protocols. Obtained Virginia state licensure.'
     },
     {
-      year: 'The Dedication',
-      title: 'Mastering the Craft',
-      description: 'Hundreds of hours of training in Korean PMU techniques, color theory, and safety protocols. Every certification earned, every skill refined.'
+      year: '2022-2023',
+      title: 'Building Experience',
+      description: 'Refined technique through hundreds of procedures. Developed healed-first portfolio philosophy. Advanced training in microshading and skin analysis.'
     },
     {
-      year: 'Today',
-      title: '523+ Transformations',
-      description: 'Now a Virginia-licensed artist with a track record that speaks for itself. 0.19% complication rate. 97% satisfaction. And a studio designed for your comfort.'
+      year: '2024-Present',
+      title: '500+ Healed Results',
+      description: 'Now serving McLean, Great Falls, and Arlington clients seeking predictable, natural results. Every procedure documented with 6+ week healed photos.'
     },
   ];
 
@@ -103,8 +104,8 @@ const About: React.FC = () => {
     <>
       <Helmet>
         <title>About Mugi - Licensed PMU Artist | Inkmugi Annandale VA</title>
-        <meta name="description" content="Meet Mugi, Virginia-licensed PMU artist (License #1231002471) with 523+ procedures and 0.19% complication rate. Specializing in ombre powder brows in Annandale, Northern Virginia." />
-        <meta name="keywords" content="PMU artist Annandale VA, licensed permanent makeup artist, ombre brows specialist, Mugi Inkmugi" />
+        <meta name="description" content="Meet Mugi, Virginia-licensed PMU artist (License #1231002471) with 500+ healed results documented. Specializing in predictable, natural ombre powder brows in Northern Virginia." />
+        <meta name="keywords" content="PMU artist Annandale VA, licensed permanent makeup artist, ombre brows specialist, Mugi Inkmugi, healed brow results" />
         <link rel="canonical" href="https://inkmugi.com/about" />
         <meta property="og:title" content="About Mugi - Licensed PMU Artist | Inkmugi" />
         <meta property="og:description" content="Meet Mugi, Virginia-licensed PMU artist with 523+ procedures and exceptional safety record. Specializing in ombre powder brows." />
@@ -178,9 +179,9 @@ const About: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Virginia-licensed PMU artist dedicated to enhancing 
+              Virginia-licensed PMU artist creating predictable,
               <br className="hidden sm:block" />
-              your natural beauty, one brow at a time.
+              natural healed results you can trust.
             </motion.p>
 
             {/* Trust indicators */}
@@ -195,12 +196,12 @@ const About: React.FC = () => {
                 VA Licensed #1231002471
               </span>
               <span className="flex items-center gap-2">
-                <Award size={14} className="text-[#E6DAD2]" />
-                523+ Procedures
+                <CheckCircle2 size={14} className="text-[#E6DAD2]" />
+                500+ Healed Results
               </span>
               <span className="flex items-center gap-2">
                 <Heart size={14} className="text-[#E6DAD2]" />
-                0.19% Complication Rate
+                3+ Years Experience
               </span>
             </motion.div>
           </motion.div>
@@ -254,9 +255,9 @@ const About: React.FC = () => {
                     <div className="w-10 h-10 rounded-full bg-[#E6DAD2] flex items-center justify-center">
                       <Award size={20} className="text-[#2D2D2B]" />
                     </div>
-                    <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
+                    <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">500+</span>
                   </div>
-                  <p className="text-sm text-[#2D2D2B]/70">Successful procedures with 99.81% satisfaction</p>
+                  <p className="text-sm text-[#2D2D2B]/70">Healed results documented over 3 years</p>
                 </motion.div>
 
                 {/* Decorative element */}
@@ -271,24 +272,23 @@ const About: React.FC = () => {
               </span>
               
               <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
-                Beauty is personal.<br />
-                <span className="text-[#2D2D2B]/60">So is my approach.</span>
+                Precision, calm, intention.<br />
+                <span className="text-[#2D2D2B]/60">That's my approach.</span>
               </h2>
 
               <div className="prose prose-lg text-[#2D2D2B]/80 mb-10 max-w-none">
                 <p className="leading-relaxed text-lg">
-                  Art isn't just my passion—it's the heart of my work. Drawing and creating have been part of me 
-                  for as long as I can remember, a path that naturally led me to this rewarding career as a PMU artist.
+                  I've spent years refining my technique to create <strong className="text-[#2D2D2B]">predictable, natural results that age gracefully.</strong> 
+                  Every session is private, unrushed, and designed around your comfort.
                 </p>
                 <p className="leading-relaxed text-lg">
-                  My greatest joy comes from helping women embrace their unique beauty and radiate confidence. 
-                  Every face tells a story. <strong className="text-[#2D2D2B]">My job isn't to rewrite it—it's to highlight 
-                  the chapters that make you, you.</strong>
+                  My process starts with listening. What are your concerns? What do you need to feel confident? 
+                  I map your face structure, explain why certain shapes work better than others, and you approve 
+                  the design before anything permanent happens.
                 </p>
                 <p className="leading-relaxed text-lg">
-                  That means listening more than designing, understanding your lifestyle, your concerns, your vision. 
-                  Seeing that spark of happiness after a session, knowing I've played a part in making someone feel 
-                  incredible in their own skin—that's what fulfills me.
+                  <strong className="text-[#2D2D2B]">No guesswork. No surprises.</strong> Just calm, meticulous artistry 
+                  and results you can trust. That's what I offer every client who sits in my chair.
                 </p>
               </div>
 
@@ -328,13 +328,14 @@ const About: React.FC = () => {
         <div className="container-custom relative">
           <AnimatedSection className="text-center mb-20">
             <span className="inline-block text-[#E6DAD2]/70 tracking-[0.2em] text-xs uppercase mb-4">
-              My Philosophy
+              <CheckCircle2 size={12} className="inline-block mr-1" />
+              My Standards
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-6">
-              What I <span className="italic">believe</span> in
+              What you can <span className="italic">expect</span>
             </h2>
             <p className="text-lg text-white/60 font-light max-w-xl mx-auto">
-              The principles that guide every procedure and every client interaction.
+              Clear standards for every consultation and procedure.
             </p>
           </AnimatedSection>
 
@@ -421,15 +422,16 @@ const About: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
               <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                Qualifications
+                <CheckCircle2 size={12} className="inline-block mr-1" />
+                Credentials
               </span>
               <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
-                Trained & <span className="italic">certified</span>
+                Licensed & <span className="italic">insured</span>
               </h2>
               
               <p className="text-lg text-[#2D2D2B]/70 mb-10 leading-relaxed">
-                Continuous education is essential in permanent makeup. I stay at the forefront of industry innovations, 
-                attending advanced workshops and training sessions to bring you the latest and safest techniques.
+                Virginia state licensure requires ongoing education and safety compliance. I maintain active certifications 
+                and stay current with medical-grade sterilization protocols.
               </p>
 
               <div className="space-y-4">
@@ -539,28 +541,44 @@ const About: React.FC = () => {
               Ready?
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-6">
-              Let's create your<br />
-              <span className="text-[#E6DAD2]">perfect brows</span>
+              Ready to see<br />
+              <span className="text-[#E6DAD2]">if we're a fit?</span>
             </h2>
             <p className="text-lg text-white/70 mb-10 font-light max-w-lg mx-auto">
-              Book a free consultation and let's discuss how I can help you wake up every day with brows you love.
+              Your consultation is a conversation, not a commitment. We'll discuss your goals, review healed results, 
+              and determine if this is right for you. No pressure. Just clarity.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link 
                 to="/booking" 
-                className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+                className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Book Free Consultation</span>
+                <span>Request a Consultation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <Link 
-                to="/gallery" 
-                className="inline-flex items-center gap-2 text-white/80 hover:text-white border border-white/30 hover:border-white/60 px-8 py-4 rounded-full transition-all duration-300"
+              <span className="text-white/50 flex items-center">or</span>
+              <a 
+                href="tel:5712838228"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
               >
-                <span>View Gallery</span>
-                <ArrowRight size={18} />
-              </Link>
+                <span>Call (571) 283-8228</span>
+              </a>
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm text-white/60">
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-[#E6DAD2]" />
+                Serving McLean • Great Falls • Arlington
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-[#E6DAD2]" />
+                Limited availability
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-[#E6DAD2]" />
+                By consultation only
+              </span>
             </div>
           </AnimatedSection>
         </div>
