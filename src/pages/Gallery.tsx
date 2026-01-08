@@ -228,8 +228,8 @@ const Gallery: React.FC = () => {
       }
     },
     {
-      beforeImage: 'https://live.staticflickr.com/65535/54408533403_ffd6a50432_c_d.jpg',
-      afterImage: 'https://live.staticflickr.com/65535/54408670015_5b248eb7d2_c_d.jpg',
+      beforeImage: '/IMG_0818.jpg',
+      afterImage: '/IMG_0819.jpg',
       category: 'nano-brows',
       label: 'Nano Brows',
       healingStatus: 'fresh' as const,
@@ -239,8 +239,8 @@ const Gallery: React.FC = () => {
       }
     },
     {
-      beforeImage: 'https://live.staticflickr.com/65535/54408702135_e8d00acc8f_c_d.jpg',
-      afterImage: 'https://live.staticflickr.com/65535/54408565368_8a48233c1c_c_d.jpg',
+      beforeImage: '/IMG_1148.jpg',
+      afterImage: '/IMG_1149.jpg',
       category: 'nano-brows',
       label: 'Nano Brows',
       healingStatus: 'healed' as const,
@@ -250,8 +250,8 @@ const Gallery: React.FC = () => {
       }
     },
     {
-      beforeImage: '/gallery/IMG_20260107_223605.heic',
-      afterImage: '/gallery/IMG_20260107_223611.heic',
+      beforeImage: '/IMG_1324.jpg',
+      afterImage: '/IMG_1325.jpg',
       category: 'ombre-brows',
       label: 'Ombre Powder Brows',
       healingStatus: 'fresh' as const,
