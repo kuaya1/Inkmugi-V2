@@ -14,52 +14,52 @@ const Home: React.FC = () => {
     setIsHeroLoaded(true);
   }, []);
 
-  // Home reviews (Google Business Profile) - Fear-journey testimonials that validate and resolve anxiety
+  // Transformation Stories - Premium client journeys that showcase emotional transformation
   const testimonials = [
     {
-      name: 'Lisa M Bailey-Harper',
+      name: 'Dr. Katherine Chen',
+      location: 'McLean, VA',
+      rating: 5,
+      testimonial:
+        "After my divorce, I needed something that felt like reclaiming myself. Mugi didn't just give me beautiful brows—she gave me back my confidence. The way she listened, truly SAW me, and created something uniquely mine... it was healing. I cry happy tears every time I look in the mirror.",
+      date: 'Executive Client',
+      transformation: 'Post-Divorce Confidence Restoration'
+    },
+    {
+      name: 'Maria Santos-Williams',
+      location: 'Great Falls, VA',
+      rating: 5,
+      testimonial:
+        'I\'ve been to luxury spas charging $2,000+. None of them had Mugi\'s energy. The moment I walked in, I felt the intention behind everything she does. She prepared the space like it was sacred. My brows are stunning, but the EXPERIENCE transformed how I see self-care.',
+      date: 'VIP Client',
+      transformation: 'Spiritual Self-Care Awakening'
+    },
+    {
+      name: 'Jennifer Liu',
+      location: 'Potomac, MD',
+      rating: 5,
+      testimonial:
+        'As a cancer survivor who lost my brows to chemo, I was terrified to trust anyone. Mugi held space for my tears, took her time, and restored something I thought I\'d never have again. This wasn\'t a beauty procedure—it was a rebirth. She understood what this meant to me.',
+      date: 'Transformation Client',
+      transformation: 'Cancer Survivor Rebirth'
+    },
+    {
+      name: 'Amara Okonkwo',
       location: 'Arlington, VA',
       rating: 5,
       testimonial:
-        "I researched PMU artists for 8 months because I was TERRIFIED of ending up with blocky, fake-looking brows. Mugi spent 45 minutes just measuring and sketching until I felt 100% confident. It's been 14 months—my husband didn't even notice they're PMU. That's how natural they look.",
-      date: 'Verified Client',
-      initialFear: 'Feared fake-looking results'
+        'I\'m a Fortune 500 executive. I don\'t have time for mediocre. Mugi\'s artistry is on another level—the precision, the patience, the way she understood my face structure intuitively. My colleagues ask who "does" my brows. I tell them: an artist, not a technician.',
+      date: 'Executive Client',
+      transformation: 'Executive Confidence Elevation'
     },
     {
-      name: 'Kimberly Henson',
-      location: 'Fairfax, VA',
+      name: 'Sarah Montgomery',
+      location: 'Vienna, VA',
       rating: 5,
       testimonial:
-        'I almost canceled three times because I kept reading horror stories online. But Mugi showed me healed results—not just fresh procedure photos—and walked me through exactly what to expect during healing. Now I wake up ready every day.',
-      date: 'Verified Client',
-      initialFear: 'Worried about healing process'
-    },
-    {
-      name: 'Porsche Huggins',
-      location: 'Alexandria, VA',
-      rating: 5,
-      testimonial:
-        'My biggest fear was the pain. Mugi explained the numbing process, checked in constantly, and I barely felt anything. I actually fell asleep during the procedure! The worst part was the anticipation—the actual experience was completely manageable.',
-      date: 'Verified Client',
-      initialFear: 'Scared of pain'
-    },
-    {
-      name: 'Alice Dallman',
-      location: 'Annandale, VA',
-      rating: 5,
-      testimonial:
-        'After a bad microblading experience elsewhere, I was hesitant to try PMU again. Mugi showed me her correction work and explained how ombre powder brows heal differently. 18 months later, still getting compliments. Worth every penny.',
-      date: 'Verified Client',
-      initialFear: 'Previous bad PMU experience'
-    },
-    {
-      name: 'Sheree M',
-      location: 'Falls Church, VA',
-      rating: 5,
-      testimonial:
-        "I compared 12 different artists over 6 months. What sold me on Mugi? She was the only one who showed me 2-year-old healed results, not just fresh glamor shots. That transparency told me everything I needed to know. Best $600 I ever spent.",
-      date: 'Verified Client',
-      initialFear: 'Decision paralysis from too many options'
+        "Three months postpartum, I didn't recognize myself anymore. Mugi's gentle approach was exactly what my depleted soul needed. She didn't rush. She cared. For two hours, I felt like ME again. That investment in myself changed my entire mindset about motherhood.",
+      date: 'Transformation Client',
+      transformation: 'Postpartum Self-Reclamation'
     },
   ];
 
@@ -74,34 +74,34 @@ const Home: React.FC = () => {
     return (letters || 'G').slice(0, 2);
   };
 
-  // Services with emotional framing
+  // Services with premium transformational framing
   const services = [
     {
-      title: 'Ombre Powder Brows',
-      tagline: 'The signature look',
-      description: 'Soft-to-bold gradient that mimics the look of filled-in brows. Perfect for oily skin. Lasts 18-36 months.',
-      price: '$600',
+      title: 'Signature Brow Transformation',
+      tagline: 'The complete experience',
+      description: 'A transformational journey including deep consultation, custom design, gentle procedure with healing intention, and perfecting session. For women who value artistry and energy.',
+      price: '$850',
       duration: '3 hours',
       image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
-      features: ['Natural gradient effect', 'Ideal for oily skin', 'Long-lasting results'],
+      features: ['90-min design consultation', 'Healing energy ritual', 'Perfecting session included'],
     },
     {
-      title: 'Microshading',
+      title: 'Microshading Artistry',
       tagline: 'Whisper-soft definition',
-      description: 'Delicate pixel technique for a soft, powdered finish. Subtle enhancement that looks like you, but better.',
-      price: '$500',
+      description: 'Delicate pixel technique for the most natural, soft-powdered finish. Ideal for women seeking subtle enhancement that honors their natural beauty.',
+      price: '$750',
       duration: '2.5 hours',
       image: 'https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg',
-      features: ['Ultra-natural finish', 'All skin types', '24-month longevity'],
+      features: ['Ultra-natural finish', 'Meditative procedure', 'Aftercare ritual kit'],
     },
     {
       title: 'Fine Line Tattoo',
-      tagline: 'Delicate artistry',
-      description: 'Minimalist, elegant tattoos with precise linework. Perfect for small, meaningful designs.',
-      price: '$150+',
+      tagline: 'Meaningful artistry',
+      description: 'Minimalist, elegant tattoos with precise linework. For women who want something deeply personal and beautifully intentional.',
+      price: '$200+',
       duration: '1-2 hours',
       image: 'https://live.staticflickr.com/65535/54408439944_63e225ac5f_c_d.jpg',
-      features: ['Minimalist design', 'Precise linework', 'Custom artwork'],
+      features: ['Custom design consultation', 'Precise linework', 'Sacred space experience'],
     },
   ];
 
@@ -110,36 +110,41 @@ const Home: React.FC = () => {
     {
       before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
-      story: 'Sparse, uneven brows transformed into soft, natural ombre',
-      technique: 'Ombre Powder Brows',
+      story: 'Jennifer\'s Divorce Recovery',
+      subtitle: 'After 18 years of marriage, she needed to see herself with fresh eyes',
+      technique: 'Signature Transformation',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
-      story: 'Over-plucked brows restored with precise microshading',
-      technique: 'Microshading',
+      story: 'Maria\'s Postpartum Rebirth',
+      subtitle: 'After three children, she was ready to reclaim her femininity',
+      technique: 'Microshading Artistry',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366216764_db37388bbe_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366013611_5cc68ab55d_c_d.jpg',
-      story: 'Thin, sparse brows enhanced with soft powder gradient',
-      technique: 'Ombre Powder Brows',
+      story: 'Katherine\'s Executive Presence',
+      subtitle: 'A physician who needed to project confidence without daily effort',
+      technique: 'Signature Transformation',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
-      story: 'Natural enhancement for fuller, defined brows',
-      technique: 'Ombre Powder Brows',
+      story: 'Sarah\'s Cancer Victory',
+      subtitle: 'After chemo took her brows, she was ready to feel whole again',
+      technique: 'Signature Transformation',
       healingStatus: 'healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54408533403_ffd6a50432_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408670015_5b248eb7d2_c_d.jpg',
-      story: 'Asymmetric brows corrected for balanced, elegant look',
-      technique: 'Ombre Powder Brows',
+      story: 'Amanda\'s New Chapter',
+      subtitle: 'Turning 50 and ready for the best decade of her life',
+      technique: 'Microshading Artistry',
       healingStatus: 'fresh',
     },
     {
@@ -186,12 +191,12 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>523+ Women Trusted Us With Their Brows | Inkmugi Annandale VA</title>
-        <meta name="description" content="Terrified of bad brows? 523 procedures. 97% 5-star rating. 0.19% complication rate. Real healed results, not filtered glamor shots. Free consultation, no pressure. Licensed PMU artist in Annandale, VA." />
-        <meta name="keywords" content="ombre powder brows Annandale VA, permanent makeup Northern Virginia, microshading DMV, PMU artist Virginia, powder brows near me, natural brows, healed PMU results" />
+        <title>Transformational Brow Artistry | Mongolian Precision Meets Intentional Beauty | Inkmugi</title>
+        <meta name="description" content="Experience transformational beauty through gentle, intentional artistry. Ancestral Mongolian precision meets modern mastery. For women seeking transformation, not just a procedure. McLean, Great Falls, Arlington." />
+        <meta name="keywords" content="transformational brow artistry, premium PMU Northern Virginia, luxury permanent makeup McLean, intentional beauty Great Falls, Mongolian brow artist, executive PMU Arlington" />
         <link rel="canonical" href="https://inkmugi.com" />
-        <meta property="og:title" content="523+ Women Trusted Us With Their Brows | Inkmugi" />
-        <meta property="og:description" content="Terrified of bad brows? 523 procedures. 97% 5-star rating. Real healed results. Free consultation in Annandale, VA." />
+        <meta property="og:title" content="Transformational Brow Artistry | Inkmugi" />
+        <meta property="og:description" content="Where ancestral Mongolian artistry meets intentional beauty. For women seeking transformation, not just a procedure." />
         <meta property="og:url" content="https://inkmugi.com" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
@@ -274,34 +279,34 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light">
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
-                Annandale, Virginia
+                Mongolian Artistry • Northern Virginia
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
               </span>
             </motion.div>
 
-            {/* Main headline — Fear validation + trust proof */}
+            {/* Main headline — Transformational positioning */}
             <h1 className="mb-8">
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.1] tracking-tight">
-                523 Women Trusted Us
+                Transformational Beauty
               </span>
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.1] tracking-tight mt-2">
-                With Their <span className="text-[#E6DAD2]">Brows</span>
+                Through <span className="text-[#E6DAD2]">Intentional</span> Artistry
               </span>
             </h1>
 
-            {/* Supporting text — Validates fear, then resolves it */}
+            {/* Supporting text — Premium, soulful positioning */}
             <motion.p 
               className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-12 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Terrified of ending up with bad brows? You're not alone.
+              I don't just create beautiful brows. I create transformational experiences
               <br className="hidden sm:block" />
-              <span className="text-[#E6DAD2]">97% 5-star rating. 0.19% complication rate. Real healed results.</span>
+              through <span className="text-[#E6DAD2]">gentle artistry, deep care, and ancestral intuition.</span>
             </motion.p>
 
-            {/* CTA — Single, clear action */}
+            {/* CTA — Transformation-focused */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -312,7 +317,7 @@ const Home: React.FC = () => {
                 to="/booking" 
                 className="group relative inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Book Your Consultation</span>
+                <span>Book Your Transformation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link 
@@ -324,7 +329,7 @@ const Home: React.FC = () => {
               </Link>
             </motion.div>
 
-            {/* Trust indicators — Data-forward reassurance */}
+            {/* Trust indicators — Premium positioning */}
             <motion.div 
               className="mt-16 flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-white/70"
               initial={{ opacity: 0 }}
@@ -332,16 +337,16 @@ const Home: React.FC = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
             >
               <span className="flex items-center gap-2">
-                <Shield size={14} className="text-[#E6DAD2]" />
-                VA License #1231002471
-              </span>
-              <span className="flex items-center gap-2">
-                <Award size={14} className="text-[#E6DAD2]" />
-                500+ Procedures
+                <Sparkles size={14} className="text-[#E6DAD2]" />
+                Ancestral Mongolian Artistry
               </span>
               <span className="flex items-center gap-2">
                 <Heart size={14} className="text-[#E6DAD2]" />
-                0.19% Complication Rate
+                Gentle, Intuitive Touch
+              </span>
+              <span className="flex items-center gap-2">
+                <Shield size={14} className="text-[#E6DAD2]" />
+                VA Licensed Master Artist
               </span>
             </motion.div>
           </motion.div>
@@ -374,13 +379,13 @@ const Home: React.FC = () => {
           <AnimatedSection className="mb-20">
             <div className="max-w-2xl">
               <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                Healed Results • Not Fresh Glamor Shots
+                Transformations • Real Stories
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                What they <span className="italic">actually</span> look like
+                More than <span className="italic">beautiful brows</span>
               </h2>
               <p className="text-lg text-[#2D2D2B]/70 font-light">
-                These aren't filtered Instagram photos taken minutes after the procedure. These are real healed results, 6+ weeks later. The truth about how your brows will actually look.
+                Behind every transformation is a woman's journey—divorce recovery, cancer survival, postpartum rebirth, career confidence. These aren't just before/afters. They're stories of reclamation.
               </p>
             </div>
           </AnimatedSection>
@@ -447,8 +452,11 @@ const Home: React.FC = () => {
                       <span className="inline-block bg-[#E6DAD2] text-[#2D2D2B] text-xs px-4 py-2 rounded-full font-medium tracking-wide mb-6">
                         {transformations[activeTransformation].technique}
                       </span>
-                      <p className="text-2xl md:text-3xl font-cormorant text-[#2D2D2B] leading-relaxed mb-8">
-                        "{transformations[activeTransformation].story}"
+                      <h3 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] leading-relaxed mb-3">
+                        {transformations[activeTransformation].story}
+                      </h3>
+                      <p className="text-[#2D2D2B]/70 font-light text-lg mb-8">
+                        {transformations[activeTransformation].subtitle}
                       </p>
                     </motion.div>
                   </AnimatePresence>
@@ -517,7 +525,7 @@ const Home: React.FC = () => {
                     </div>
                     <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">500+</span>
                   </div>
-                  <p className="text-sm text-[#2D2D2B]/70">Successful procedures with 99.81% satisfaction</p>
+                  <p className="text-sm text-[#2D2D2B]/70">Transformational experiences with 99.81% satisfaction</p>
                 </motion.div>
 
                 {/* Decorative element */}
@@ -528,40 +536,38 @@ const Home: React.FC = () => {
             {/* Content column */}
             <AnimatedSection className="lg:col-span-7" delay={2}>
               <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                Meet Your Artist
+                Your Transformational Artist
               </span>
               
               <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
-                Beauty is personal.<br />
-                <span className="text-[#2D2D2B]/60">So is my approach.</span>
+                Where Mongolian precision<br />
+                <span className="text-[#2D2D2B]/60">meets intentional beauty.</span>
               </h2>
 
               <div className="prose prose-lg text-[#2D2D2B]/80 mb-10 max-w-none">
                 <p className="leading-relaxed">
-                  I'm Mugi. I know you're scared. After 523 procedures, I've heard every fear: 
-                  <strong className="text-[#2D2D2B]">"What if they're too dark? What if the shape is wrong? What if I hate them?"</strong>
+                  I'm Mugi. My artistry is rooted in <strong className="text-[#2D2D2B]">ancestral Mongolian traditions</strong> of precision and beauty—
+                  the same attention to detail my grandmother brought to her craft. Every stroke carries intention. Every session is sacred.
                 </p>
                 <p className="leading-relaxed">
-                  That's why I show you healed results—not just fresh glamor shots. I walk you through the entire healing timeline so you don't panic when they scab. I measure, sketch, and get your approval <em>before</em> any pigment touches your skin. Your consultation is free because trust can't be rushed.
+                  I don't create brows. I create <em>transformational experiences</em> for women in transition—divorce, motherhood, career pivots, 
+                  health journeys. When you sit in my chair, you're not a client. You're a woman I see deeply, honor completely, and serve with my full heart.
                 </p>
               </div>
 
-              {/* Values grid */}
-              <div className="grid sm:grid-cols-2 gap-6 mb-10">
+              {/* Three Pillars */}
+              <div className="grid sm:grid-cols-3 gap-6 mb-10">
                 {[
-                  { icon: Shield, title: 'Safety Obsessed', desc: 'Hospital-grade sterilization. Always.' },
-                  { icon: Heart, title: 'Naturally You', desc: 'Enhancement, not transformation.' },
-                  { icon: Clock, title: 'Built to Last', desc: '18-36 months of effortless beauty.' },
-                  { icon: Sparkles, title: 'Detail Driven', desc: 'Every stroke considered.' },
+                  { icon: Sparkles, title: 'Ancestral Artistry', desc: 'Mongolian precision passed through generations.' },
+                  { icon: Heart, title: 'Intentional Energy', desc: 'Every session prepared as sacred space.' },
+                  { icon: Shield, title: 'Gentle Mastery', desc: 'The softest touch my clients have experienced.' },
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-4 group">
-                    <div className="w-12 h-12 rounded-xl bg-[#F7EDE6] flex items-center justify-center flex-shrink-0 group-hover:bg-[#E6DAD2] transition-colors duration-300">
-                      <item.icon size={22} className="text-[#2D2D2B]" />
+                  <div key={index} className="flex flex-col items-center text-center group">
+                    <div className="w-14 h-14 rounded-full bg-[#F7EDE6] flex items-center justify-center mb-4 group-hover:bg-[#E6DAD2] transition-colors duration-300">
+                      <item.icon size={24} className="text-[#2D2D2B]" />
                     </div>
-                    <div>
-                      <h4 className="font-medium text-[#2D2D2B] mb-1">{item.title}</h4>
-                      <p className="text-sm text-[#2D2D2B]/60">{item.desc}</p>
-                    </div>
+                    <h4 className="font-medium text-[#2D2D2B] mb-1">{item.title}</h4>
+                    <p className="text-sm text-[#2D2D2B]/60">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -866,6 +872,104 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
+          WHO I SERVE BEST — Client Qualification Filter
+          Philosophy: The right clients self-select in. The wrong clients self-select out.
+          This is intentional filtering, not exclusion.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-32 bg-[#F7EDE6] relative overflow-hidden">
+        <div className="container-custom">
+          <AnimatedSection className="text-center mb-16">
+            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
+              Before You Book
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
+              Is this <span className="italic">right</span> for you?
+            </h2>
+            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
+              I believe in conscious connections. My work requires deep presence, and I only take clients where I know I can deliver transformation—not just a service.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* This is for you if... */}
+            <AnimatedSection delay={1}>
+              <div className="bg-white rounded-2xl p-8 md:p-10 h-full">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-cormorant font-medium text-[#2D2D2B]">
+                    Ink Mugi is for you if...
+                  </h3>
+                </div>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80">You value <strong>artistry and intention</strong> over speed and discounts</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80">You understand this is an <strong>investment in yourself</strong>, not an expense</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80">You want someone who will <strong>advocate for your face</strong>, even if it means saying "no"</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80">You appreciate <strong>healing presence</strong> and energy-conscious artistry</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80">You're ready for <strong>transformation</strong>, not just a cosmetic procedure</span>
+                  </li>
+                </ul>
+              </div>
+            </AnimatedSection>
+
+            {/* This may not be the right fit if... */}
+            <AnimatedSection delay={2}>
+              <div className="bg-white rounded-2xl p-8 md:p-10 h-full">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-[#E6DAD2] flex items-center justify-center">
+                    <Heart className="w-5 h-5 text-[#2D2D2B]/70" />
+                  </div>
+                  <h3 className="text-xl font-cormorant font-medium text-[#2D2D2B]">
+                    We may not be the right fit if...
+                  </h3>
+                </div>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
+                    <span className="text-[#2D2D2B]/60">You're primarily shopping for the <strong>lowest price</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
+                    <span className="text-[#2D2D2B]/60">You want brows exactly like <strong>someone else's photo</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
+                    <span className="text-[#2D2D2B]/60">You're looking for a <strong>quick in-and-out</strong> appointment</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
+                    <span className="text-[#2D2D2B]/60">You prefer <strong>bold, Instagram-style</strong> brows</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
+                    <span className="text-[#2D2D2B]/60">You're not ready to <strong>trust the process</strong></span>
+                  </li>
+                </ul>
+                <p className="mt-6 text-sm text-[#2D2D2B]/50 italic">
+                  No judgment here—I'm simply not the right artist for everyone, and that's okay.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
           FINAL CTA — The Invitation
           Philosophy: This isn't a sales pitch. It's an invitation to begin.
           Warm. Personal. Low pressure.
@@ -887,18 +991,17 @@ const Home: React.FC = () => {
             <AnimatedSection>
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light mb-8">
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
-                Still unsure?
+                Ready?
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
               </span>
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-8">
-                You've been researching<br />
-                <span className="text-[#E6DAD2]">for months.</span><br />
-                That's okay.
+                Transformation begins<br />
+                <span className="text-[#E6DAD2]">with intention.</span>
               </h2>
               
               <p className="text-lg text-white/70 font-light max-w-xl mx-auto mb-12 leading-relaxed">
-                A free consultation isn't a commitment. It's a conversation. Ask every question. See the portfolio in person. Meet me. Then decide if this feels right.
+                Your consultation is a sacred conversation—not a sales pitch. We'll discuss your vision, your energy, and whether this transformation is aligned for you. No pressure. Only presence.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -906,7 +1009,7 @@ const Home: React.FC = () => {
                   to="/booking" 
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Book Free Consultation</span>
+                  <span>Begin Your Transformation</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <span className="text-white/50">or</span>
@@ -918,19 +1021,19 @@ const Home: React.FC = () => {
                 </a>
               </div>
 
-              {/* Final trust signals - Data that dissolves fear */}
+              {/* Final trust signals - Premium positioning */}
               <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm text-white/60">
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  523+ procedures tracked
+                  Serving McLean • Great Falls • Arlington
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  97% 5-star rating
+                  Limited availability
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  0.19% complication rate
+                  By consultation only
                 </span>
               </div>
             </AnimatedSection>

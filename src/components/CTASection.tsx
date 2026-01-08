@@ -10,17 +10,17 @@ const CTASection: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium mb-6 leading-tight">
-              Ready to Transform Your Brows?
+              Ready for Your Transformation?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-10 max-w-2xl mx-auto">
-              Book your consultation today and take the first step towards effortlessly beautiful brows that enhance your natural features.
+              Your consultation is a sacred conversation—not a sales pitch. Let's explore whether this transformation is aligned for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <Link to="/booking" className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
-                Book Now
+                Begin Your Journey
               </Link>
               <Link to="/contact" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white transition-all duration-300">
-                Contact Us
+                Let's Connect
               </Link>
             </div>
           </AnimatedSection>

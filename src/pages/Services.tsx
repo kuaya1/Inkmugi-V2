@@ -8,13 +8,13 @@ import CTASection from '../components/CTASection';
 const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'PMU Services | Ombre Powder Brow Specialist';
+    document.title = 'Transformational Beauty Services | Inkmugi';
   }, []);
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Ombre Powder Brows",
+    "name": "Signature Brow Transformation",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Inkmugi",
@@ -27,80 +27,80 @@ const Services = () => {
         "addressCountry": "US"
       }
     },
-    "areaServed": ["Annandale", "Alexandria", "Arlington", "Fairfax", "Falls Church", "McLean", "Vienna", "Washington DC"],
-    "description": "Premium ombre powder brows and microshading services. Semi-permanent makeup that creates naturally soft, powdery brows lasting 1-3 years.",
+    "areaServed": ["McLean", "Great Falls", "Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Potomac", "Washington DC"],
+    "description": "Premium transformational brow artistry combining Mongolian precision techniques with intentional energy. Experience personalized beauty that honors your unique features.",
     "offers": {
       "@type": "Offer",
-      "priceRange": "$500-$700"
+      "priceRange": "$750-$1,200"
     }
   };
 
   const services = [
     {
       id: 1,
-      title: 'Ombre Powder Brows',
-      price: '$600',
-      duration: '3 hours',
-      description: 'Signature soft-to-bold gradient technique for natural-looking brows. Digital machine technique with premium vegan pigments using gradient shading method. Results last 18-36 months in DMV climate.',
+      title: 'Signature Brow Transformation',
+      price: '$1,200',
+      duration: '3.5 hours',
+      description: 'The complete experience. Ancestral Mongolian precision meets intentional artistry. Includes consultation, custom mapping, transformation, and complimentary perfecting session. For women ready to feel like themselves again.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
       featured: true
     },
     {
       id: 2,
-      title: 'Microshading',
-      price: '$500',
-      duration: '2.5 hours',
-      description: 'Delicate dot-work technique creating soft powder effect with medical-grade pigments. Perfect for sensitive skin with 0.19% complication rate. Results last 1-3 years.',
+      title: 'Microshading Artistry',
+      price: '$850',
+      duration: '3 hours',
+      description: 'Delicate, intuitive dot-work creating soft powder effect. Perfect for sensitive souls seeking subtle enhancement. Energy-conscious approach with premium vegan pigments.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
       featured: true
     },
     {
       id: 3,
       title: 'Fine Line Tattoo',
-      price: '$150+',
+      price: '$200+',
       duration: '1-2 hours',
-      description: 'Minimalist, elegant tattoos with precise linework. Perfect for small, meaningful designs. Custom artwork tailored to your vision with delicate artistry.',
+      description: 'Intentional, meaningful tattoos with Mongolian-inspired precision. Minimalist designs that carry significance. Custom artwork created in sacred collaboration.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
       featured: true
     },
     {
       id: 4,
-      title: 'PMU Correction',
-      price: '$700',
-      duration: '3 hours',
-      description: 'Advanced correction techniques including color neutralization and shape refinement. Expert restoration of previous permanent makeup work.',
+      title: 'Restoration Artistry',
+      price: '$950',
+      duration: '3.5 hours',
+      description: 'Compassionate correction of previous work. Advanced color neutralization and shape refinement for women ready to reclaim their brows from past experiences.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 5,
-      title: 'Nano Brows',
-      price: '$550',
-      duration: '2.5 hours',
-      description: 'Ultra-fine hairstrokes using nano-needles for the most natural, realistic brow appearance. Ideal for those seeking hair-like definition.',
+      title: 'Nano Brow Artistry',
+      price: '$750',
+      duration: '3 hours',
+      description: 'Ultra-fine hairstrokes for the most natural, realistic appearance. Ideal for women seeking subtle hair-like definition with intentional, gentle technique.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 6,
-      title: 'Free Consultation',
-      price: 'Free',
+      title: 'Discovery Consultation',
+      price: 'Complimentary',
       duration: '45 minutes',
-      description: 'Complimentary design consultation and skin assessment. Personalized brow mapping to determine the perfect shape for your facial structure and skin type.',
+      description: 'A sacred conversation—not a sales pitch. We explore your vision, your energy, and whether this transformation is aligned. Custom mapping included.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 7,
-      title: 'Maintenance Sessions',
-      price: 'From $200',
-      duration: '1.5 hours',
-      description: 'Professional maintenance sessions keep your brows looking fresh and vibrant. Recommended every 18-36 months for optimal results.',
+      title: 'Renewal Sessions',
+      price: 'From $350',
+      duration: '2 hours',
+      description: 'Maintain the vibrancy of your transformation. Recommended every 18-36 months to refresh and perfect your brows as they naturally evolve.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
     {
       id: 8,
-      title: 'After-Care Support',
+      title: 'Aftercare Partnership',
       price: 'Included',
       duration: 'Ongoing',
-      description: 'Comprehensive aftercare support included with every procedure. Detailed instructions and premium aftercare kit to ensure optimal healing and long-lasting results.',
+      description: 'Your healing journey matters. Comprehensive aftercare guidance, premium healing kit, and unlimited support during your transformation. I\'m with you every step.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />
     },
   ];
@@ -108,12 +108,12 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>PMU & Fine Line Tattoo Services | Inkmugi Alexandria VA</title>
-        <meta name="description" content="Professional permanent makeup & fine line tattoos. Ombre powder brows $600, Microshading $500, Fine Line Tattoo from $150. Virginia-licensed artist serving DMV area." />
-        <meta name="keywords" content="ombre powder brows, microshading, fine line tattoo, permanent makeup, PMU services, minimalist tattoo Alexandria VA" />
+        <title>Transformational Beauty Services | Mongolian Precision Artistry | Inkmugi</title>
+        <meta name="description" content="Premium brow transformations for conscious women. Signature services starting at $750. Where Mongolian artistry meets intentional beauty. Serving McLean, Great Falls, Arlington." />
+        <meta name="keywords" content="transformational brow artistry, premium microshading, signature brows McLean, fine line tattoo, intentional beauty, Mongolian brow artist" />
         <link rel="canonical" href="https://inkmugi.com/services" />
-        <meta property="og:title" content="Ombre Powder Brows & Microshading Services | Inkmugi" />
-        <meta property="og:description" content="Professional ombre powder brows starting at $500. Semi-permanent makeup creating soft, natural-looking brows lasting 1-3 years." />
+        <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
+        <meta property="og:description" content="Premium brow transformations starting at $750. Ancestral Mongolian precision meets intentional beauty for women ready to feel like themselves again." />
         <meta property="og:url" content="https://inkmugi.com/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
@@ -126,16 +126,16 @@ const Services = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <div className="inline-block mb-4 px-4 py-2 bg-[#2D2D2B]/10 rounded-full">
-              <span className="text-[#2D2D2B] font-medium text-sm uppercase tracking-wider">Premium Artistry Services</span>
+              <span className="text-[#2D2D2B] font-medium text-sm uppercase tracking-wider">Intentional Artistry</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
-              Permanent Makeup & Fine Line Tattoo
+              Transformations, Not Services
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Where precision meets artistry. Virginia-licensed studio specializing in ombre powder brows, microshading, and minimalist tattoos.
+              Where Mongolian precision meets intentional beauty. Every session is a sacred collaboration—designed to honor your unique features and restore your relationship with your reflection.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto">
-              523+ procedures • 0.19% complication rate • 97% satisfaction • DMV climate-optimized
+              Serving McLean • Great Falls • Arlington • Potomac • Washington DC
             </p>
           </AnimatedSection>
         </div>
@@ -145,9 +145,9 @@ const Services = () => {
       <section className="py-20 bg-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-title text-[#2D2D2B]">Our Artistry Services</h2>
+            <h2 className="section-title text-[#2D2D2B]">The Transformation Menu</h2>
             <p className="section-subtitle text-[#2D2D2B]/80">
-              Expert permanent makeup and fine line tattoos designed to enhance your natural beauty with precision and care
+              Each service is a journey, not a transaction. Priced for women who understand the value of artistry, intention, and transformation.
             </p>
           </AnimatedSection>
 
@@ -180,18 +180,18 @@ const Services = () => {
       <section className="py-20 bg-gradient-to-b from-[#E6DAD2] to-[#F0E4D8]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-title text-[#2D2D2B]">Our Process</h2>
+            <h2 className="section-title text-[#2D2D2B]">The Transformation Journey</h2>
             <p className="section-subtitle text-[#2D2D2B]/80">
-              Our detailed approach ensures beautiful, natural-looking results tailored to your unique features
+              Every transformation follows a sacred process—honoring your energy, your vision, and your healing.
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { title: "Consultation", desc: "We discuss your goals and preferences to create a personalized plan." },
-              { title: "Design", desc: "Custom brow mapping to find the perfect shape for your facial structure." },
-              { title: "Procedure", desc: "Using premium pigments and precise techniques for beautiful results." },
-              { title: "Healing & Follow-up", desc: "Detailed aftercare and a touch-up session for perfect results." }
+              { title: "Sacred Conversation", desc: "We connect, explore your vision, and feel into whether this transformation is aligned for both of us." },
+              { title: "Intuitive Mapping", desc: "Custom design honoring your bone structure, facial harmony, and the brows that belong to you." },
+              { title: "Intentional Artistry", desc: "Ancestral Mongolian techniques with gentle, present energy. You'll feel held, not hurried." },
+              { title: "Supported Healing", desc: "Detailed aftercare guidance and a complimentary perfecting session to complete your transformation." }
             ].map((step, index) => (
               <AnimatedSection key={index} delay={index + 1}>
                 <div className="bg-white p-6 rounded-lg shadow-soft h-full">
@@ -222,18 +222,22 @@ const Services = () => {
             </AnimatedSection>
 
             <AnimatedSection delay={2}>
-              <h2 className="section-title text-[#2D2D2B]">Why Choose Inkmugi</h2>
+              <h2 className="section-title text-[#2D2D2B]">Why Conscious Women Choose Inkmugi</h2>
               <p className="text-[#2D2D2B] mb-4">
-                Virginia-licensed artist specializing in permanent makeup and fine line tattoos. Our hospital-grade safety protocols, precision techniques, and data-driven approach ensure exceptional results with minimal risk.
+                This isn't just permanent makeup. It's transformational artistry rooted in Mongolian precision, intentional energy, and a deep commitment to honoring your unique beauty.
               </p>
-              <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg">
-                <strong className="text-[#2D2D2B]">523+ Procedures</strong> • <strong className="text-[#2D2D2B]">0.19% Complication Rate</strong> (vs 2.5% industry avg) • <strong className="text-[#2D2D2B]">97% Satisfaction</strong> • License #1231002471
+              <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg italic">
+                "I don't do brows. I restore women's relationship with their reflection."
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Virginia state licensed & insured</span>
+                  <span className="text-[#2D2D2B]">Ancestral Mongolian precision</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
+                  <span className="text-[#2D2D2B]">Intentional, healing presence</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
@@ -241,28 +245,24 @@ const Services = () => {
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Hospital-grade sterilization</span>
+                  <span className="text-[#2D2D2B]">Sacred, unhurried sessions</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">DMV climate-optimized techniques</span>
+                  <span className="text-[#2D2D2B]">Complimentary consultation</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Free consultation & aftercare kit</span>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Premium aftercare kit included</span>
+                  <span className="text-[#2D2D2B]">Virginia licensed & insured</span>
                 </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/booking" className="btn bg-[#2D2D2B] hover:bg-[#1a1a19] text-white">
-                  Book a Consultation
+                  Begin Your Transformation
                 </Link>
                 <Link to="/gallery" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5">
-                  View Our Work
+                  View Transformations
                 </Link>
               </div>
             </AnimatedSection>
