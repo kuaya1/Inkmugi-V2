@@ -191,12 +191,12 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Transformational Brow Artistry | Mongolian Precision Meets Intentional Beauty | Inkmugi</title>
-        <meta name="description" content="Experience transformational beauty through gentle, intentional artistry. Ancestral Mongolian precision meets modern mastery. For women seeking transformation, not just a procedure. McLean, Great Falls, Arlington." />
-        <meta name="keywords" content="transformational brow artistry, premium PMU Northern Virginia, luxury permanent makeup McLean, intentional beauty Great Falls, Mongolian brow artist, executive PMU Arlington" />
+        <title>Transformational Brow Artistry | Precision Meets Intentional Beauty | Inkmugi</title>
+        <meta name="description" content="Experience transformational beauty through gentle, intentional artistry. Precision technique meets modern mastery. For women seeking transformation, not just a procedure. McLean, Great Falls, Arlington." />
+        <meta name="keywords" content="transformational brow artistry, premium PMU Northern Virginia, luxury permanent makeup McLean, intentional beauty Great Falls, brow artist, executive PMU Arlington" />
         <link rel="canonical" href="https://inkmugi.com" />
         <meta property="og:title" content="Transformational Brow Artistry | Inkmugi" />
-        <meta property="og:description" content="Where ancestral Mongolian artistry meets intentional beauty. For women seeking transformation, not just a procedure." />
+        <meta property="og:description" content="Where precision artistry meets intentional beauty. For women seeking transformation, not just a procedure." />
         <meta property="og:url" content="https://inkmugi.com" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
@@ -279,7 +279,7 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light">
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
-                Mongolian Artistry • Northern Virginia
+                Intentional Artistry • Northern Virginia
                 <span className="w-12 h-px bg-[#E6DAD2]/50" />
               </span>
             </motion.div>
@@ -338,7 +338,7 @@ const Home: React.FC = () => {
             >
               <span className="flex items-center gap-2">
                 <Sparkles size={14} className="text-[#E6DAD2]" />
-                Ancestral Mongolian Artistry
+                Precision Artistry
               </span>
               <span className="flex items-center gap-2">
                 <Heart size={14} className="text-[#E6DAD2]" />
@@ -540,14 +540,14 @@ const Home: React.FC = () => {
               </span>
               
               <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
-                Where Mongolian precision<br />
+                Where precision artistry<br />
                 <span className="text-[#2D2D2B]/60">meets intentional beauty.</span>
               </h2>
 
               <div className="prose prose-lg text-[#2D2D2B]/80 mb-10 max-w-none">
                 <p className="leading-relaxed">
-                  I'm Mugi. My artistry is rooted in <strong className="text-[#2D2D2B]">ancestral Mongolian traditions</strong> of precision and beauty—
-                  the same attention to detail my grandmother brought to her craft. Every stroke carries intention. Every session is sacred.
+                  I'm Mugi. My artistry is rooted in <strong className="text-[#2D2D2B]">years of dedicated training</strong> in precision and beauty—
+                  the same attention to detail passed down through generations of master artists. Every stroke carries intention. Every session is sacred.
                 </p>
                 <p className="leading-relaxed">
                   I don't create brows. I create <em>transformational experiences</em> for women in transition—divorce, motherhood, career pivots, 
@@ -558,7 +558,7 @@ const Home: React.FC = () => {
               {/* Three Pillars */}
               <div className="grid sm:grid-cols-3 gap-6 mb-10">
                 {[
-                  { icon: Sparkles, title: 'Ancestral Artistry', desc: 'Mongolian precision passed through generations.' },
+                  { icon: Sparkles, title: 'Precision Artistry', desc: 'Meticulous technique refined through years of mastery.' },
                   { icon: Heart, title: 'Intentional Energy', desc: 'Every session prepared as sacred space.' },
                   { icon: Shield, title: 'Gentle Mastery', desc: 'The softest touch my clients have experienced.' },
                 ].map((item, index) => (

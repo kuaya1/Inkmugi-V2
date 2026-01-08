@@ -28,7 +28,7 @@ const Services = () => {
       }
     },
     "areaServed": ["McLean", "Great Falls", "Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Potomac", "Washington DC"],
-    "description": "Premium transformational brow artistry combining Mongolian precision techniques with intentional energy. Experience personalized beauty that honors your unique features.",
+    "description": "Premium transformational brow artistry combining precision techniques with intentional energy. Experience personalized beauty that honors your unique features.",
     "offers": {
       "@type": "Offer",
       "priceRange": "$750-$1,200"
@@ -41,7 +41,7 @@ const Services = () => {
       title: 'Signature Brow Transformation',
       price: '$1,200',
       duration: '3.5 hours',
-      description: 'The complete experience. Ancestral Mongolian precision meets intentional artistry. Includes consultation, custom mapping, transformation, and complimentary perfecting session. For women ready to feel like themselves again.',
+      description: 'The complete experience. Precision technique meets intentional artistry. Includes consultation, custom mapping, transformation, and complimentary perfecting session. For women ready to feel like themselves again.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
       featured: true
     },
@@ -59,7 +59,7 @@ const Services = () => {
       title: 'Fine Line Tattoo',
       price: '$200+',
       duration: '1-2 hours',
-      description: 'Intentional, meaningful tattoos with Mongolian-inspired precision. Minimalist designs that carry significance. Custom artwork created in sacred collaboration.',
+      description: 'Intentional, meaningful tattoos with meticulous precision. Minimalist designs that carry significance. Custom artwork created in sacred collaboration.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
       featured: true
     },
@@ -108,12 +108,12 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Transformational Beauty Services | Mongolian Precision Artistry | Inkmugi</title>
-        <meta name="description" content="Premium brow transformations for conscious women. Signature services starting at $750. Where Mongolian artistry meets intentional beauty. Serving McLean, Great Falls, Arlington." />
-        <meta name="keywords" content="transformational brow artistry, premium microshading, signature brows McLean, fine line tattoo, intentional beauty, Mongolian brow artist" />
+        <title>Transformational Beauty Services | Precision Artistry | Inkmugi</title>
+        <meta name="description" content="Premium brow transformations for conscious women. Signature services starting at $750. Where precision artistry meets intentional beauty. Serving McLean, Great Falls, Arlington." />
+        <meta name="keywords" content="transformational brow artistry, premium microshading, signature brows McLean, fine line tattoo, intentional beauty, brow artist" />
         <link rel="canonical" href="https://inkmugi.com/services" />
         <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
-        <meta property="og:description" content="Premium brow transformations starting at $750. Ancestral Mongolian precision meets intentional beauty for women ready to feel like themselves again." />
+        <meta property="og:description" content="Premium brow transformations starting at $750. Precision technique meets intentional beauty for women ready to feel like themselves again." />
         <meta property="og:url" content="https://inkmugi.com/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
@@ -132,7 +132,7 @@ const Services = () => {
               Transformations, Not Services
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Where Mongolian precision meets intentional beauty. Every session is a sacred collaboration—designed to honor your unique features and restore your relationship with your reflection.
+              Where precision artistry meets intentional beauty. Every session is a sacred collaboration—designed to honor your unique features and restore your relationship with your reflection.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto">
               Serving McLean • Great Falls • Arlington • Potomac • Washington DC
@@ -190,7 +190,7 @@ const Services = () => {
             {[
               { title: "Sacred Conversation", desc: "We connect, explore your vision, and feel into whether this transformation is aligned for both of us." },
               { title: "Intuitive Mapping", desc: "Custom design honoring your bone structure, facial harmony, and the brows that belong to you." },
-              { title: "Intentional Artistry", desc: "Ancestral Mongolian techniques with gentle, present energy. You'll feel held, not hurried." },
+              { title: "Intentional Artistry", desc: "Precision techniques with gentle, present energy. You'll feel held, not hurried." },
               { title: "Supported Healing", desc: "Detailed aftercare guidance and a complimentary perfecting session to complete your transformation." }
             ].map((step, index) => (
               <AnimatedSection key={index} delay={index + 1}>
@@ -224,7 +224,7 @@ const Services = () => {
             <AnimatedSection delay={2}>
               <h2 className="section-title text-[#2D2D2B]">Why Conscious Women Choose Inkmugi</h2>
               <p className="text-[#2D2D2B] mb-4">
-                This isn't just permanent makeup. It's transformational artistry rooted in Mongolian precision, intentional energy, and a deep commitment to honoring your unique beauty.
+                This isn't just permanent makeup. It's transformational artistry rooted in precision technique, intentional energy, and a deep commitment to honoring your unique beauty.
               </p>
               <p className="text-[#2D2D2B]/80 mb-6 text-sm bg-[#F7EDE6] p-4 rounded-lg italic">
                 "I don't do brows. I restore women's relationship with their reflection."
@@ -233,7 +233,7 @@ const Services = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
-                  <span className="text-[#2D2D2B]">Ancestral Mongolian precision</span>
+                  <span className="text-[#2D2D2B]">Meticulous precision technique</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle size={18} className="text-[#2D2D2B] mt-1 mr-2" />
