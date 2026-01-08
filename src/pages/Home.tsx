@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, ArrowDown, Award, Shield, Clock, Heart, Sparkles, CheckCircle2, Quote, Play } from 'lucide-react';
+import { ArrowRight, ArrowDown, Award, Shield, Clock, Heart, Sparkles, CheckCircle2, Quote, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import AnimatedSection from '../components/AnimatedSection';
@@ -361,13 +361,13 @@ const Home: React.FC = () => {
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <a 
-                href="#transformations" 
+                href="tel:+15712838228" 
                 className="group inline-flex items-center gap-3 text-white/80 hover:text-white transition-colors duration-300"
               >
                 <span className="relative flex h-12 w-12 items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
-                  <Play size={16} className="fill-current ml-0.5" />
+                  <Phone size={16} />
                 </span>
-                <span className="text-sm tracking-wide">Watch 60-second process walkthrough</span>
+                <span className="text-sm tracking-wide">Call us at (571) 283-8228</span>
               </a>
             </motion.div>
 
@@ -1054,6 +1054,9 @@ const Home: React.FC = () => {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
               Is this <span className="italic">right</span> for you?
             </h2>
+            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto mb-4">
+              This consultation-based service is designed for women who value predictability, healed results, and professional guidance.
+            </p>
             <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
               I believe in conscious connections. My work requires deep presence, and I only take clients where I know I can deliver transformation—not just a service.
             </p>
@@ -1086,11 +1089,11 @@ const Home: React.FC = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You appreciate <strong>healing presence</strong> and energy-conscious artistry</span>
+                    <span className="text-[#2D2D2B]/80">You value a <strong>calm, unrushed environment</strong> and thoughtful care</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You're ready for <strong>transformation</strong>, not just a cosmetic procedure</span>
+                    <span className="text-[#2D2D2B]/80">You're seeking <strong>long-term results</strong>, not a quick cosmetic fix</span>
                   </li>
                 </ul>
               </div>
@@ -1126,7 +1129,7 @@ const Home: React.FC = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
-                    <span className="text-[#2D2D2B]/60">You're not ready to <strong>trust the process</strong></span>
+                    <span className="text-[#2D2D2B]/60">You need <strong>immediate results</strong> without a healing process</span>
                   </li>
                 </ul>
                 <p className="mt-6 text-sm text-[#2D2D2B]/50 italic">
