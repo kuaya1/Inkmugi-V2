@@ -30,7 +30,7 @@ const App: React.FC = () => {
       </main>
       <footer className="text-center p-4 text-xs text-[#8A817C]">
         <p>InkMugi AI PMU Expert &copy; 2024. All information is for demonstrative purposes.</p>
-        <p>This is an AI-powered assistant. For official bookings and medical advice, please consult <a href="https://inkmugi.com" target="_blank" rel="noopener noreferrer" className="text-[#4F4A45] font-medium hover:underline">inkmugi.com</a>.</p>
+        <p>This is an AI-powered assistant. For official bookings and medical advice, please consult <a href="https://www.inkmugi.com" target="_blank" rel="noopener noreferrer" className="text-[#4F4A45] font-medium hover:underline">inkmugi.com</a>.</p>
       </footer>
     </div>
   );

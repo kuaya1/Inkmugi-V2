@@ -12,10 +12,10 @@ const Booking: React.FC = () => {
         <title>Book Ombre Powder Brows | Free Consultation | Inkmugi Annandale VA</title>
         <meta name="description" content="Book your ombre powder brows appointment at Inkmugi in Annandale, VA. Free consultation included. 523+ successful procedures. $50 deposit secures your spot." />
         <meta name="keywords" content="book ombre brows, PMU appointment Annandale VA, permanent makeup consultation, brow appointment Northern Virginia" />
-        <link rel="canonical" href="https://inkmugi.com/booking" />
+        <link rel="canonical" href="https://www.inkmugi.com/booking" />
         <meta property="og:title" content="Book Ombre Powder Brows | Inkmugi Annandale" />
         <meta property="og:description" content="Book your ombre powder brows appointment. Free consultation included. 523+ successful procedures." />
-        <meta property="og:url" content="https://inkmugi.com/booking" />
+        <meta property="og:url" content="https://www.inkmugi.com/booking" />
         <meta property="og:type" content="website" />
       </Helmet>
       {/* Hero Section */}

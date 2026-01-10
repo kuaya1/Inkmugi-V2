@@ -142,10 +142,10 @@ const Faq: React.FC = () => {
         <title>Ombre Powder Brows FAQ | Inkmugi Annandale VA</title>
         <meta name="description" content="Common questions about ombre powder brows, microshading, healing process, pricing, and aftercare. Learn everything before your PMU appointment at Inkmugi." />
         <meta name="keywords" content="ombre brows FAQ, powder brows questions, PMU aftercare, microshading healing, permanent makeup cost" />
-        <link rel="canonical" href="https://inkmugi.com/faq" />
+        <link rel="canonical" href="https://www.inkmugi.com/faq" />
         <meta property="og:title" content="Ombre Powder Brows FAQ | Inkmugi" />
         <meta property="og:description" content="Common questions about ombre powder brows, healing process, pricing, and aftercare at Inkmugi." />
-        <meta property="og:url" content="https://inkmugi.com/faq" />
+        <meta property="og:url" content="https://www.inkmugi.com/faq" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}

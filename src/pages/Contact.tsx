@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
     },
     "telephone": "+1-571-283-8228",
     "email": "inkmugi@gmail.com",
-    "url": "https://inkmugi.com/contact"
+    "url": "https://www.inkmugi.com/contact"
   };
 
   return (
@@ -28,10 +28,10 @@ const Contact: React.FC = () => {
         <title>Contact Inkmugi - Book Your PMU Consultation | Annandale VA</title>
         <meta name="description" content="Contact Inkmugi for ombre powder brows in Annandale, VA. Call (571) 283-8228 or email inkmugi@gmail.com. Located at 7857 Heritage Dr #330. Free consultations available." />
         <meta name="keywords" content="contact Inkmugi, PMU consultation Annandale, book ombre brows appointment, permanent makeup Northern Virginia" />
-        <link rel="canonical" href="https://inkmugi.com/contact" />
+        <link rel="canonical" href="https://www.inkmugi.com/contact" />
         <meta property="og:title" content="Contact Inkmugi - Book Your PMU Consultation" />
         <meta property="og:description" content="Contact Inkmugi for ombre powder brows. Call (571) 283-8228 or visit us in Annandale, VA. Free consultations available." />
-        <meta property="og:url" content="https://inkmugi.com/contact" />
+        <meta property="og:url" content="https://www.inkmugi.com/contact" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}

@@ -18,9 +18,9 @@ const OmbreBrowsAlexandria: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Inkmugi - Ombre Brows for Alexandria",
-    "@id": "https://inkmugi.com/ombre-brows-alexandria-va",
-    "url": "https://inkmugi.com/ombre-brows-alexandria-va",
+    "name": "Ink Mugi",
+    "@id": "https://www.inkmugi.com/ombre-brows-alexandria-va",
+    "url": "https://www.inkmugi.com/ombre-brows-alexandria-va",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -104,13 +104,12 @@ const OmbreBrowsAlexandria: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows in Alexandria VA | 15 Min from Old Town | Inkmugi</title>
-        <meta name="description" content="Alexandria's trusted choice for ombre powder brows. Just 15 minutes from Old Town & Del Ray. 523+ procedures, exceptional safety record. Free consultations available." />
-        <meta name="keywords" content="ombre brows Alexandria VA, powder brows Alexandria Virginia, microshading Alexandria, permanent makeup Old Town, PMU Del Ray, brow artist Alexandria" />
-        <link rel="canonical" href="https://inkmugi.com/ombre-brows-alexandria-va" />
-        <meta property="og:title" content="Ombre Powder Brows for Alexandria VA Residents | Inkmugi" />
-        <meta property="og:description" content="Alexandria's preferred PMU artist. Just 15 minutes from Old Town. Natural-looking ombre brows that last 18-36 months." />
-        <meta property="og:url" content="https://inkmugi.com/ombre-brows-alexandria-va" />
+        <title>Ombre Brows Alexandria VA | 15 Min Drive | Ink Mugi</title>
+        <meta name="description" content="Ombre powder brows for Alexandria residents. 15-minute drive from Old Town & Del Ray. $600 includes touch-up. Free parking. Book your consultation." />
+        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-alexandria-va" />
+        <meta property="og:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />
+        <meta property="og:description" content="Alexandria's nearby PMU artist. 15 minutes from Old Town. Natural ombre brows." />
+        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-alexandria-va" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(localSchema)}

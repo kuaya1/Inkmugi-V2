@@ -98,12 +98,12 @@ export default function PMUMythsVsFacts() {
         <meta name="data-driven-content" content="12-myths-debunked-clinical-evidence" />
         <meta name="expertise-level" content="licensed-clinical-researcher" />
         
-        <link rel="canonical" href="https://inkmugi.com/pmu-myths-facts" />
+        <link rel="canonical" href="https://www.inkmugi.com/pmu-myths-facts" />
         
         {/* Open Graph */}
         <meta property="og:title" content="PMU Myths Debunked: 12 Clinical Facts | Ink Mugi Research" />
         <meta property="og:description" content="Evidence-based truth about permanent makeup from 523+ procedures. Debunking longevity myths, safety concerns, and technique misconceptions with clinical data." />
-        <meta property="og:url" content="https://inkmugi.com/pmu-myths-facts" />
+        <meta property="og:url" content="https://www.inkmugi.com/pmu-myths-facts" />
         
         {/* Breadcrumb Schema */}
         <script type="application/ld+json">
@@ -115,19 +115,19 @@ export default function PMUMythsVsFacts() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://inkmugi.com"
+                "item": "https://www.inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Authority Hub",
-                "item": "https://inkmugi.com/authority"
+                "item": "https://www.inkmugi.com/authority"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "PMU Myths vs. Clinical Facts",
-                "item": "https://inkmugi.com/pmu-myths-facts"
+                "item": "https://www.inkmugi.com/pmu-myths-facts"
               }
             ]
           })}

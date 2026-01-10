@@ -18,9 +18,9 @@ const OmbreBrowsFairfax: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Inkmugi - Ombre Brows for Fairfax County",
-    "@id": "https://inkmugi.com/ombre-brows-fairfax-va",
-    "url": "https://inkmugi.com/ombre-brows-fairfax-va",
+    "name": "Ink Mugi",
+    "@id": "https://www.inkmugi.com/ombre-brows-fairfax-va",
+    "url": "https://www.inkmugi.com/ombre-brows-fairfax-va",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -121,13 +121,12 @@ const OmbreBrowsFairfax: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows Fairfax County VA | Vienna, McLean, Tysons | Inkmugi</title>
-        <meta name="description" content="Fairfax County's trusted PMU artist for ombre powder brows. Serving Vienna, McLean, Tysons Corner, Burke & Springfield. 523+ procedures, 0.19% complication rate. Book free consultation." />
-        <meta name="keywords" content="ombre brows Fairfax VA, powder brows Vienna Virginia, microshading McLean, permanent makeup Tysons Corner, PMU Fairfax County, brow artist Burke" />
-        <link rel="canonical" href="https://inkmugi.com/ombre-brows-fairfax-va" />
-        <meta property="og:title" content="Ombre Powder Brows for Fairfax County VA | Inkmugi" />
-        <meta property="og:description" content="Fairfax County's preferred PMU artist. Serving Vienna, McLean, Tysons Corner & beyond. Natural-looking ombre brows that last." />
-        <meta property="og:url" content="https://inkmugi.com/ombre-brows-fairfax-va" />
+        <title>Ombre Brows Fairfax County VA | Ink Mugi Studio</title>
+        <meta name="description" content="Ombre powder brows for Fairfax County. Serving Vienna, McLean, Tysons. $600 includes touch-up. Virginia-licensed artist. Free consultation." />
+        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-fairfax-va" />
+        <meta property="og:title" content="Ombre Brows Fairfax County VA | Ink Mugi" />
+        <meta property="og:description" content="Fairfax County's nearby PMU artist. Serving Vienna, McLean, Tysons. Natural ombre brows." />
+        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-fairfax-va" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(localSchema)}

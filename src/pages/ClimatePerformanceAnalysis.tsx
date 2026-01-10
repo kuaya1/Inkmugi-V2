@@ -156,7 +156,7 @@ const ClimatePerformanceAnalysis = () => {
       "name": "Ink Mugi",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://inkmugi.com/logo.png"
+        "url": "https://www.inkmugi.com/logo.png"
       }
     },
     "keywords": "PMU climate performance, DMV humidity, powder brows oily skin, regional PMU study, permanent makeup longevity, Virginia PMU research"
@@ -170,19 +170,19 @@ const ClimatePerformanceAnalysis = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://inkmugi.com"
+        "item": "https://www.inkmugi.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Authority Hub",
-        "item": "https://inkmugi.com/authority"
+        "item": "https://www.inkmugi.com/authority"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Climate Performance Analysis",
-        "item": "https://inkmugi.com/climate-performance-analysis"
+        "item": "https://www.inkmugi.com/climate-performance-analysis"
       }
     ]
   };
@@ -197,7 +197,7 @@ const ClimatePerformanceAnalysis = () => {
         <meta property="og:title" content="Humid Climate Performance Analysis | PMU Longevity in DMV Region" />
         <meta property="og:description" content="Regional study showing 340% advantage for powder brows in high-humidity DMV climate with oily skin." />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://inkmugi.com/climate-performance-analysis" />
+        <link rel="canonical" href="https://www.inkmugi.com/climate-performance-analysis" />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         

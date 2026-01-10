@@ -115,13 +115,13 @@ const SignatureOmbreBrows: React.FC = () => {
           name="keywords" 
           content="ombre powder brows Annandale VA, permanent makeup Northern Virginia, microshading oily skin DMV, PMU artist licensed Virginia, powder brows vs microblading, ombre brows cost Arlington Alexandria, permanent eyebrows Fairfax County" 
         />
-        <link rel="canonical" href="https://inkmugi.com/signature-ombre-brows" />
+        <link rel="canonical" href="https://www.inkmugi.com/signature-ombre-brows" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Signature Ombre Powder Brows | $600 | Licensed PMU Annandale VA" />
         <meta property="og:description" content="18-36 month longevity. 340% better for oily skin. 523+ procedures. Virginia-licensed PMU artist." />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg" />
-        <meta property="og:url" content="https://inkmugi.com/signature-ombre-brows" />
+        <meta property="og:url" content="https://www.inkmugi.com/signature-ombre-brows" />
         <meta property="og:type" content="website" />
 
         {/* Service Schema */}

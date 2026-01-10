@@ -20,8 +20,8 @@ const PermanentMakeupDC: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Inkmugi - Ombre Brows for Washington DC",
-    "@id": "https://inkmugi.com/permanent-makeup-dc",
-    "url": "https://inkmugi.com/permanent-makeup-dc",
+    "@id": "https://www.inkmugi.com/permanent-makeup-dc",
+    "url": "https://www.inkmugi.com/permanent-makeup-dc",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -110,10 +110,10 @@ const PermanentMakeupDC: React.FC = () => {
         <title>Permanent Makeup & Ombre Brows for DC Residents | Inkmugi</title>
         <meta name="description" content="Washington DC's smart choice for ombre powder brows. Save $200-400 vs DC studios. 20 minutes from Georgetown & Capitol Hill. 523+ procedures, free parking. Book free consultation." />
         <meta name="keywords" content="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington" />
-        <link rel="canonical" href="https://inkmugi.com/permanent-makeup-dc" />
+        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-dc" />
         <meta property="og:title" content="Ombre Powder Brows for Washington DC | Inkmugi" />
         <meta property="og:description" content="DC's smart choice for permanent makeup. Premium quality, better price, free parking. 20 minutes from Georgetown." />
-        <meta property="og:url" content="https://inkmugi.com/permanent-makeup-dc" />
+        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-dc" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(localSchema)}

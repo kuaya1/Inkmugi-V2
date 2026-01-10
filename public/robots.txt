@@ -4,11 +4,8 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /drafts/
 
-# Allow images to be indexed
-Allow: /images/
-
-# Sitemaps - using non-www to match canonical
-Sitemap: https://inkmugi.com/sitemap.xml
+# Sitemaps - using www to match canonical
+Sitemap: https://www.inkmugi.com/sitemap.xml
 
 # Crawl delay for heavy bots
 User-agent: AhrefsBot

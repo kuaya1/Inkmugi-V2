@@ -31,7 +31,7 @@ const About: React.FC = () => {
     "jobTitle": "Licensed PMU Artist",
     "worksFor": {
       "@type": "LocalBusiness",
-      "name": "Inkmugi"
+      "name": "Ink Mugi"
     },
     "knowsAbout": ["Ombre Powder Brows", "Microshading", "Permanent Makeup", "PMU Safety"],
     "hasCredential": {
@@ -103,13 +103,12 @@ const About: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Mugi - Licensed PMU Artist | Inkmugi Annandale VA</title>
-        <meta name="description" content="Meet Mugi, Virginia-licensed PMU artist (License #1231002471) with 500+ healed results documented. Specializing in predictable, natural ombre powder brows in Northern Virginia." />
-        <meta name="keywords" content="PMU artist Annandale VA, licensed permanent makeup artist, ombre brows specialist, Mugi Inkmugi, healed brow results" />
-        <link rel="canonical" href="https://inkmugi.com/about" />
-        <meta property="og:title" content="About Mugi - Licensed PMU Artist | Inkmugi" />
-        <meta property="og:description" content="Meet Mugi, Virginia-licensed PMU artist with 523+ procedures and exceptional safety record. Specializing in ombre powder brows." />
-        <meta property="og:url" content="https://inkmugi.com/about" />
+        <title>About Mugi | Licensed PMU Artist | Ink Mugi</title>
+        <meta name="description" content="Meet Mugi, Virginia-licensed PMU artist (License #1231002471). Specializing in natural ombre powder brows in Annandale, serving Northern Virginia." />
+        <link rel="canonical" href="https://www.inkmugi.com/about" />
+        <meta property="og:title" content="About Mugi | Ink Mugi PMU Artist" />
+        <meta property="og:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows." />
+        <meta property="og:url" content="https://www.inkmugi.com/about" />
         <meta property="og:type" content="profile" />
         <script type="application/ld+json">
           {JSON.stringify(personSchema)}

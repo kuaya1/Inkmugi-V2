@@ -188,13 +188,12 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Transformational Brow Artistry | Precision Meets Intentional Beauty | Inkmugi</title>
-        <meta name="description" content="Experience transformational beauty through gentle, intentional artistry. Precision technique meets modern mastery. For women seeking transformation, not just a procedure. McLean, Great Falls, Arlington." />
-        <meta name="keywords" content="transformational brow artistry, premium PMU Northern Virginia, luxury permanent makeup McLean, intentional beauty Great Falls, brow artist, executive PMU Arlington" />
-        <link rel="canonical" href="https://inkmugi.com" />
-        <meta property="og:title" content="Transformational Brow Artistry | Inkmugi" />
-        <meta property="og:description" content="Where precision artistry meets intentional beauty. For women seeking transformation, not just a procedure." />
-        <meta property="og:url" content="https://inkmugi.com" />
+        <title>Ombre Powder Brows Annandale VA | Ink Mugi PMU Studio</title>
+        <meta name="description" content="Virginia-licensed ombre powder brows in Annandale. Natural results, gentle technique. Free consultation. Serving Arlington, Alexandria & Northern Virginia." />
+        <link rel="canonical" href="https://www.inkmugi.com/" />
+        <meta property="og:title" content="Ombre Powder Brows Annandale VA | Ink Mugi" />
+        <meta property="og:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows. Free consultation available." />
+        <meta property="og:url" content="https://www.inkmugi.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
         <script type="application/ld+json">
@@ -212,7 +211,7 @@ const Home: React.FC = () => {
               "addressCountry": "US"
             },
             "telephone": "+1-571-283-8228",
-            "url": "https://inkmugi.com",
+            "url": "https://www.inkmugi.com",
             "priceRange": "$600-$700"
           })}
         </script>

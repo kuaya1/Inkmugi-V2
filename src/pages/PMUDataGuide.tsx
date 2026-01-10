@@ -132,12 +132,12 @@ export default function PMUDataGuide() {
         <meta name="data-driven-content" content="523-procedures-longevity-analysis" />
         <meta name="expertise-level" content="licensed-clinical-researcher" />
         
-        <link rel="canonical" href="https://inkmugi.com/pmu-data-guide" />
+        <link rel="canonical" href="https://www.inkmugi.com/pmu-data-guide" />
         
         {/* Open Graph */}
         <meta property="og:title" content="PMU Longevity Data: 523 Procedures Analysis | Ink Mugi Research" />
         <meta property="og:description" content="Clinical data: Ombre powder brows 24-36 months, 97% retention for dry skin, 89% with full aftercare. Comprehensive permanent makeup longevity study." />
-        <meta property="og:url" content="https://inkmugi.com/pmu-data-guide" />
+        <meta property="og:url" content="https://www.inkmugi.com/pmu-data-guide" />
         
         {/* Breadcrumb Schema */}
         <script type="application/ld+json">
@@ -149,19 +149,19 @@ export default function PMUDataGuide() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://inkmugi.com"
+                "item": "https://www.inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Authority Hub",
-                "item": "https://inkmugi.com/authority"
+                "item": "https://www.inkmugi.com/authority"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "PMU Data & Longevity Guide",
-                "item": "https://inkmugi.com/pmu-data-guide"
+                "item": "https://www.inkmugi.com/pmu-data-guide"
               }
             ]
           })}

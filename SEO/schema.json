@@ -1,8 +1,8 @@
 {
     "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "name": "INK MUGI",
-    "description": "Expert PMU services including microblading, ombre powder brows, and microshading for the DMV area including Annandale, Arlington, Alexandria, and Washington DC.",
+    "@type": "BeautySalon",
+    "name": "Ink Mugi",
+    "description": "Virginia-licensed permanent makeup studio specializing in ombre powder brows and microshading in Annandale, serving Northern Virginia.",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "7857 Heritage Dr #330",

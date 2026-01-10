@@ -72,20 +72,20 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
           name="keywords" 
           content="permanent makeup safety DMV, licensed PMU artist Virginia, hospital-grade PMU studio Northern Virginia, PMU complication rate statistics, sterile PMU procedure Annandale, bloodborne pathogens certified PMU, vegan pigments permanent makeup, hypoallergenic PMU Arlington Alexandria, PMU safety protocols Fairfax County, Virginia licensed cosmetic tattooer" 
         />
-        <link rel="canonical" href="https://inkmugi.com/permanent-makeup-safety-dmv" />
+        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-safety-dmv" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="PMU Safety in Northern Virginia | Licensed & Hospital-Grade | Ink Mugi" />
         <meta property="og:description" content="Virginia-licensed PMU studio with 0.19% complication rate vs 2.5% industry average. Hospital-grade sterilization, premium vegan pigments, 523+ documented procedures." />
-        <meta property="og:url" content="https://inkmugi.com/permanent-makeup-safety-dmv" />
+        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-safety-dmv" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://inkmugi.com/og-safety-trust.jpg" />
+        <meta property="og:image" content="https://www.inkmugi.com/og-safety-trust.jpg" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="PMU Safety in Northern Virginia | Licensed & Hospital-Grade | Ink Mugi" />
         <meta name="twitter:description" content="0.19% complication rate vs 2.5% industry average. Virginia-licensed, hospital-grade protocols, 523+ procedures documented." />
-        <meta name="twitter:image" content="https://inkmugi.com/og-safety-trust.jpg" />
+        <meta name="twitter:image" content="https://www.inkmugi.com/og-safety-trust.jpg" />
 
         {/* Medical Business Schema */}
         <script type="application/ld+json">
@@ -94,8 +94,8 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "@type": "MedicalBusiness",
             "name": "Ink Mugi Permanent Makeup Studio",
             "description": "Virginia-licensed permanent makeup studio with hospital-grade sterilization protocols and documented safety outcomes",
-            "url": "https://inkmugi.com/permanent-makeup-safety-dmv",
-            "image": "https://inkmugi.com/og-safety-trust.jpg",
+            "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
+            "image": "https://www.inkmugi.com/og-safety-trust.jpg",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Annandale",

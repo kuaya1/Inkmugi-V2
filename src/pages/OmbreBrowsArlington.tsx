@@ -18,9 +18,9 @@ const OmbreBrowsArlington: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Inkmugi - Ombre Brows for Arlington",
-    "@id": "https://inkmugi.com/ombre-brows-arlington-va",
-    "url": "https://inkmugi.com/ombre-brows-arlington-va",
+    "name": "Ink Mugi",
+    "@id": "https://www.inkmugi.com/ombre-brows-arlington-va",
+    "url": "https://www.inkmugi.com/ombre-brows-arlington-va",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -104,13 +104,12 @@ const OmbreBrowsArlington: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows for Arlington VA | 12 Min from Clarendon | Inkmugi</title>
-        <meta name="description" content="Arlington's top choice for ombre powder brows. Just 12 minutes from Clarendon & Ballston. 523+ procedures, 0.19% complication rate. Book your free consultation today." />
-        <meta name="keywords" content="ombre brows Arlington VA, powder brows Arlington Virginia, microshading Arlington, permanent makeup Arlington, PMU near Clarendon, brow artist Ballston" />
-        <link rel="canonical" href="https://inkmugi.com/ombre-brows-arlington-va" />
-        <meta property="og:title" content="Ombre Powder Brows for Arlington VA Residents | Inkmugi" />
-        <meta property="og:description" content="Arlington's preferred PMU artist. Just 12 minutes from Clarendon. Natural-looking ombre brows that last 18-36 months." />
-        <meta property="og:url" content="https://inkmugi.com/ombre-brows-arlington-va" />
+        <title>Ombre Brows Arlington VA | 12 Min Drive | Ink Mugi</title>
+        <meta name="description" content="Ombre powder brows for Arlington residents. 12-minute drive from Clarendon & Ballston. $600 includes touch-up. Free parking. Book your consultation." />
+        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-arlington-va" />
+        <meta property="og:title" content="Ombre Brows for Arlington VA | Ink Mugi" />
+        <meta property="og:description" content="Arlington's nearby PMU artist. 12 minutes from Clarendon. Natural ombre brows." />
+        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-arlington-va" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(localSchema)}

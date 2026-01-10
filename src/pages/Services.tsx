@@ -39,7 +39,7 @@ const Services = () => {
     {
       id: 1,
       title: 'Signature Brow Transformation',
-      price: '$850–$1,200',
+      price: '$600',
       duration: 'Consultation required',
       description: 'Includes 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session. For women seeking predictable, natural healed results that age gracefully.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
@@ -49,7 +49,7 @@ const Services = () => {
     {
       id: 2,
       title: 'Microshading Artistry',
-      price: '$750–$950',
+      price: '$700',
       duration: 'Consultation required',
       description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
@@ -97,13 +97,12 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Permanent Makeup Services | Predictable Results | Inkmugi</title>
-        <meta name="description" content="Premium ombre powder brows and microshading. Investment: $600-$700. Design approved before pigment. Healed results shown at consultation. Serving McLean, Great Falls, Arlington." />
-        <meta name="keywords" content="ombre powder brows, microshading Northern Virginia, permanent makeup McLean, healed brow results, licensed PMU artist" />
-        <link rel="canonical" href="https://inkmugi.com/services" />
+        <title>PMU Services & Pricing | Ink Mugi Annandale VA</title>
+        <meta name="description" content="Ombre powder brows $600, microshading $700. Includes consultation, procedure & touch-up. Virginia-licensed PMU artist in Annandale." />
+        <link rel="canonical" href="https://www.inkmugi.com/services" />
         <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
         <meta property="og:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty for women ready to feel like themselves again." />
-        <meta property="og:url" content="https://inkmugi.com/services" />
+        <meta property="og:url" content="https://www.inkmugi.com/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}

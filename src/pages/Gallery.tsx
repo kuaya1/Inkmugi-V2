@@ -388,10 +388,10 @@ const Gallery: React.FC = () => {
         <title>Ombre Brows Before & After Gallery | Inkmugi Annandale VA</title>
         <meta name="description" content="See real ombre powder brows transformations at Inkmugi. Browse before & after photos from 523+ procedures. Serving Annandale, Alexandria, Arlington & Northern Virginia." />
         <meta name="keywords" content="ombre brows before after, powder brows results, PMU gallery Annandale VA, permanent makeup transformations" />
-        <link rel="canonical" href="https://inkmugi.com/gallery" />
+        <link rel="canonical" href="https://www.inkmugi.com/gallery" />
         <meta property="og:title" content="Ombre Brows Before & After Gallery | Inkmugi" />
         <meta property="og:description" content="See real ombre powder brows transformations at Inkmugi. Browse before & after photos from 523+ procedures." />
-        <meta property="og:url" content="https://inkmugi.com/gallery" />
+        <meta property="og:url" content="https://www.inkmugi.com/gallery" />
         <meta property="og:type" content="website" />
       </Helmet>
 

@@ -97,12 +97,12 @@ export default function Authority() {
         <meta name="author" content="Ink Mugi PMU Research Team" />
         
         {/* Canonical */}
-        <link rel="canonical" href="https://inkmugi.com/authority" />
+        <link rel="canonical" href="https://www.inkmugi.com/authority" />
         
         {/* Open Graph */}
         <meta property="og:title" content="PMU Research Authority: 523 Procedures, 0.19% Safety Rate | Ink Mugi Data Hub" />
         <meta property="og:description" content="Explore proprietary PMU research: 340% better powder brow performance in DMV climate, 0.19% complication rate vs 2.5% average. Virginia-licensed clinical data from 523+ procedures. Evidence-based permanent makeup authority." />
-        <meta property="og:url" content="https://inkmugi.com/authority" />
+        <meta property="og:url" content="https://www.inkmugi.com/authority" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta property="og:image:width" content="1200" />
@@ -123,7 +123,7 @@ export default function Authority() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "PMU Research Authority Hub",
-            "url": "https://inkmugi.com/authority",
+            "url": "https://www.inkmugi.com/authority",
             "description": "Comprehensive permanent makeup research hub with clinical data from 523+ procedures",
             "speakable": {
               "@type": "SpeakableSpecification",
@@ -154,7 +154,7 @@ export default function Authority() {
             "@type": "Dataset",
             "name": "PMU Clinical Performance Analysis: DMV Climate Study 2021-2025",
             "description": "Comprehensive analysis of 523+ permanent makeup procedures tracking longevity, healing patterns, and safety metrics in Northern Virginia's variable humidity climate. Includes seasonal retention rates, skin type performance comparisons, and technique efficacy data.",
-            "url": "https://inkmugi.com/authority",
+            "url": "https://www.inkmugi.com/authority",
             "identifier": "INK-MUGI-PMU-AUTHORITY-2025",
             "version": "4.0",
             "datePublished": "2021-03-15",
@@ -232,7 +232,7 @@ export default function Authority() {
             "citation": "Ink Mugi PMU Clinical Research Database",
             "distribution": {
               "@type": "DataDownload",
-              "contentUrl": "https://inkmugi.com/authority",
+              "contentUrl": "https://www.inkmugi.com/authority",
               "encodingFormat": "text/html"
             }
           })}
@@ -298,13 +298,13 @@ export default function Authority() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://inkmugi.com"
+                "item": "https://www.inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Authority Hub",
-                "item": "https://inkmugi.com/authority"
+                "item": "https://www.inkmugi.com/authority"
               }
             ]
           })}
@@ -316,7 +316,7 @@ export default function Authority() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "Ink Mugi PMU Research & Education Hub",
-            "url": "https://inkmugi.com/authority",
+            "url": "https://www.inkmugi.com/authority",
             "description": "Evidence-based permanent makeup authority providing clinical research, safety data, and educational resources for DMV area clients.",
             "address": {
               "@type": "PostalAddress",
