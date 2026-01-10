@@ -87,105 +87,30 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
         <meta name="twitter:description" content="0.19% complication rate vs 2.5% industry average. Virginia-licensed, hospital-grade protocols, 523+ procedures documented." />
         <meta name="twitter:image" content="https://www.inkmugi.com/og-safety-trust.jpg" />
 
-        {/* Medical Business Schema */}
+        {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
-            "name": "Ink Mugi Permanent Makeup Studio",
-            "description": "Virginia-licensed permanent makeup studio with hospital-grade sterilization protocols and documented safety outcomes",
-            "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
             "image": "https://www.inkmugi.com/og-safety-trust.jpg",
+            "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Annandale",
+              "streetAddress": "7857 Heritage Dr #330",
               "addressLocality": "Annandale",
               "addressRegion": "VA",
               "postalCode": "22003",
               "addressCountry": "US"
             },
-            "telephone": "+1-571-283-8228",
-            "priceRange": "$$",
-            "areaServed": [
-              "Annandale",
-              "Arlington",
-              "Alexandria",
-              "Fairfax County",
-              "Washington DC",
-              "Northern Virginia"
-            ],
-            "hasCredential": [
-              {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "license",
-                "name": "Virginia Licensed Permanent Cosmetic Tattooer",
-                "identifier": "1231002471",
-                "issuedBy": {
-                  "@type": "Organization",
-                  "name": "Virginia Board for Barbers and Cosmetology"
-                }
-              },
-              {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "certification",
-                "name": "Bloodborne Pathogens Training",
-                "issuedBy": {
-                  "@type": "Organization",
-                  "name": "OSHA Approved Training Provider"
-                }
-              }
-            ],
-            "additionalProperty": [
-              {
-                "@type": "PropertyValue",
-                "name": "Complication Rate",
-                "value": "0.19%"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Industry Average Complication Rate",
-                "value": "2.5%"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Total Procedures Completed",
-                "value": "523+"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Client Satisfaction Rate",
-                "value": "97%"
-              }
-            ],
-            "medicalSpecialty": "Permanent Makeup / Cosmetic Tattooing",
-            "availableService": [
-              {
-                "@type": "MedicalProcedure",
-                "name": "Ombre Powder Brows",
-                "procedureType": "Permanent Makeup"
-              },
-              {
-                "@type": "MedicalProcedure",
-                "name": "Microshading",
-                "procedureType": "Permanent Makeup"
-              }
-            ]
-          })}
-        </script>
-
-        {/* FAQPage Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": safetyFaqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
+            }
           })}
         </script>
       </Helmet>

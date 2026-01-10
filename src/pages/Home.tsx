@@ -199,9 +199,13 @@ const Home: React.FC = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Inkmugi",
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
             "image": "https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg",
+            "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "7857 Heritage Dr #330",
@@ -210,57 +214,23 @@ const Home: React.FC = () => {
               "postalCode": "22003",
               "addressCountry": "US"
             },
-            "telephone": "+1-571-283-8228",
-            "url": "https://www.inkmugi.com",
-            "priceRange": "$600-$700"
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
+            }
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Does ombre powder brows hurt?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Most clients rate the pain 2-3 out of 10 with medical-grade numbing. Many clients fall asleep during the procedure. Comfort is prioritized throughout the 2-3 hour session."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How long do ombre brows last?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ombre powder brows typically last 1-3 years depending on skin type, lifestyle, and aftercare. Oily skin may fade faster. A perfecting session at 6-8 weeks ensures optimal color retention."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the healing process for ombre brows?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Days 1-3: Brows appear darker and bolder. Days 4-7: Light flaking begins (do not pick). Days 7-14: Color softens significantly. Weeks 2-6: True healed color emerges, typically 30-50% lighter than initial appearance."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How much do ombre brows cost in Northern Virginia?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Investment ranges from $600-$700 depending on technique. Signature Ombre Transformation is $600, Microshading is $700. Both include design consultation, custom mapping, precision procedure, and perfecting session."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Who is a good candidate for ombre powder brows?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ideal candidates include those with oily skin, sparse or over-plucked brows, busy professionals seeking low-maintenance beauty, previous PMU clients needing correction, and anyone wanting natural-looking results that age gracefully."
-                }
-              }
-            ]
+            "@type": "WebSite",
+            "@id": "https://www.inkmugi.com/#website",
+            "url": "https://www.inkmugi.com/",
+            "name": "Ink Mugi",
+            "publisher": {
+              "@id": "https://www.inkmugi.com/#business"
+            }
           })}
         </script>
       </Helmet>

@@ -17,10 +17,12 @@ import AnimatedSection from '../components/AnimatedSection';
 const OmbreBrowsFairfax: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://www.inkmugi.com/#business",
     "name": "Ink Mugi",
-    "@id": "https://www.inkmugi.com/ombre-brows-fairfax-va",
-    "url": "https://www.inkmugi.com/ombre-brows-fairfax-va",
+    "url": "https://www.inkmugi.com/",
+    "logo": "https://www.inkmugi.com/logo.png",
+    "image": "https://www.inkmugi.com/og-image.jpg",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -30,46 +32,10 @@ const OmbreBrowsFairfax: React.FC = () => {
       "postalCode": "22003",
       "addressCountry": "US"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 38.8304,
-      "longitude": -77.1969
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Fairfax"
-      },
-      {
-        "@type": "Place",
-        "name": "Fairfax County"
-      },
-      {
-        "@type": "City",
-        "name": "Vienna"
-      },
-      {
-        "@type": "City",
-        "name": "McLean"
-      },
-      {
-        "@type": "Place",
-        "name": "Tysons Corner"
-      }
-    ],
-    "priceRange": "$500-$700",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "10:00",
-        "closes": "18:00"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "47"
+    "priceRange": "$$$",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Annandale, VA"
     }
   };
 

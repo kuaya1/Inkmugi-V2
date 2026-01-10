@@ -139,6 +139,33 @@ export default function PMUDataGuide() {
         <meta property="og:description" content="Clinical data: Ombre powder brows 24-36 months, 97% retention for dry skin, 89% with full aftercare. Comprehensive permanent makeup longevity study." />
         <meta property="og:url" content="https://www.inkmugi.com/pmu-data-guide" />
         
+        {/* Business Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
+            "image": "https://www.inkmugi.com/og-image.jpg",
+            "telephone": "+1-571-283-8228",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7857 Heritage Dr #330",
+              "addressLocality": "Annandale",
+              "addressRegion": "VA",
+              "postalCode": "22003",
+              "addressCountry": "US"
+            },
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
+            }
+          })}
+        </script>
+
         {/* Breadcrumb Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -164,29 +191,6 @@ export default function PMUDataGuide() {
                 "item": "https://www.inkmugi.com/pmu-data-guide"
               }
             ]
-          })}
-        </script>
-
-        {/* Research Article Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "MedicalScholarlyArticle",
-            "headline": "Permanent Makeup Longevity Analysis: 523 Procedure Study",
-            "description": "Comprehensive analysis of PMU retention rates across techniques, skin types, and seasons in DMV climate",
-            "author": {
-              "@type": "MedicalBusiness",
-              "name": "Ink Mugi PMU Research Team",
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "license",
-                "name": "Virginia Licensed Permanent Cosmetic Tattooer",
-                "identifier": "1231002471"
-              }
-            },
-            "datePublished": "2024-03-15",
-            "dateModified": "2025-10-29",
-            "about": "Permanent Makeup Longevity Research"
           })}
         </script>
       </Helmet>

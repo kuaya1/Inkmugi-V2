@@ -124,61 +124,30 @@ const SignatureOmbreBrows: React.FC = () => {
         <meta property="og:url" content="https://www.inkmugi.com/signature-ombre-brows" />
         <meta property="og:type" content="website" />
 
-        {/* Service Schema */}
+        {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Ombre Powder Brows",
-            "name": "Signature Ombre Powder Brows",
-            "description": "Soft-to-bold gradient permanent makeup technique creating natural-looking brows that last 18-36 months",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Ink Mugi",
-              "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-              "telephone": "(571) 283-8228",
-              "email": "inkmugi@gmail.com",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "7857 Heritage Dr #330",
-                "addressLocality": "Annandale",
-                "addressRegion": "VA",
-                "postalCode": "22003",
-                "addressCountry": "US"
-              }
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+            "telephone": "+1-571-283-8228",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7857 Heritage Dr #330",
+              "addressLocality": "Annandale",
+              "addressRegion": "VA",
+              "postalCode": "22003",
+              "addressCountry": "US"
             },
-            "offers": {
-              "@type": "Offer",
-              "price": "600",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "url": "https://www.vagaro.com/inkmugi",
-              "priceValidUntil": "2026-12-31"
-            },
-            "areaServed": ["Annandale VA", "Arlington VA", "Alexandria VA", "Washington DC", "Fairfax County VA", "Northern Virginia"],
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "523",
-              "bestRating": "5",
-              "worstRating": "1"
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
             }
-          })}
-        </script>
-
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
           })}
         </script>
       </Helmet>

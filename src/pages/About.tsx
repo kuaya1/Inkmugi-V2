@@ -26,21 +26,25 @@ const About: React.FC = () => {
 
   const personSchema = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mugi",
-    "jobTitle": "Licensed PMU Artist",
-    "worksFor": {
-      "@type": "LocalBusiness",
-      "name": "Ink Mugi"
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://www.inkmugi.com/#business",
+    "name": "Ink Mugi",
+    "url": "https://www.inkmugi.com/",
+    "logo": "https://www.inkmugi.com/logo.png",
+    "image": "https://www.inkmugi.com/og-image.jpg",
+    "telephone": "+1-571-283-8228",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7857 Heritage Dr #330",
+      "addressLocality": "Annandale",
+      "addressRegion": "VA",
+      "postalCode": "22003",
+      "addressCountry": "US"
     },
-    "knowsAbout": ["Ombre Powder Brows", "Microshading", "Permanent Makeup", "PMU Safety"],
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "license",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "Virginia Department of Professional and Occupational Regulation"
-      }
+    "priceRange": "$$$",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Annandale, VA"
     }
   };
 

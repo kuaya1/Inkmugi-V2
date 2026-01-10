@@ -7,8 +7,14 @@ import ContactForm from '../components/ContactForm';
 const Contact: React.FC = () => {
   const contactSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Inkmugi",
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://www.inkmugi.com/#business",
+    "name": "Ink Mugi",
+    "url": "https://www.inkmugi.com/",
+    "logo": "https://www.inkmugi.com/logo.png",
+    "image": "https://www.inkmugi.com/og-image.jpg",
+    "telephone": "+1-571-283-8228",
+    "email": "inkmugi@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "7857 Heritage Dr #330",
@@ -17,9 +23,11 @@ const Contact: React.FC = () => {
       "postalCode": "22003",
       "addressCountry": "US"
     },
-    "telephone": "+1-571-283-8228",
-    "email": "inkmugi@gmail.com",
-    "url": "https://www.inkmugi.com/contact"
+    "priceRange": "$$$",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Annandale, VA"
+    }
   };
 
   return (

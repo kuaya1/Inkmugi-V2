@@ -117,174 +117,30 @@ export default function Authority() {
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:image:alt" content="Ink Mugi PMU Research Authority Hub" />
 
-        {/* Structured Data - WebPage with Speakable */}
+        {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "PMU Research Authority Hub",
-            "url": "https://www.inkmugi.com/authority",
-            "description": "Comprehensive permanent makeup research hub with clinical data from 523+ procedures",
-            "speakable": {
-              "@type": "SpeakableSpecification",
-              "cssSelector": [".voice-answer", ".quick-answer", ".featured-info"]
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+            "telephone": "+1-571-283-8228",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7857 Heritage Dr #330",
+              "addressLocality": "Annandale",
+              "addressRegion": "VA",
+              "postalCode": "22003",
+              "addressCountry": "US"
             },
-            "about": {
-              "@type": "Thing",
-              "name": "Evidence-Based Permanent Makeup Research",
-              "description": "Clinical analysis of PMU longevity, safety, and performance in DMV climate conditions"
-            },
-            "mainEntity": {
-              "@type": "MedicalBusiness",
-              "name": "Ink Mugi PMU Studio",
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "license",
-                "name": "Virginia Licensed Permanent Cosmetic Tattooer",
-                "identifier": "1231002471"
-              }
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
             }
-          })}
-        </script>
-
-        {/* Research Dataset Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Dataset",
-            "name": "PMU Clinical Performance Analysis: DMV Climate Study 2021-2025",
-            "description": "Comprehensive analysis of 523+ permanent makeup procedures tracking longevity, healing patterns, and safety metrics in Northern Virginia's variable humidity climate. Includes seasonal retention rates, skin type performance comparisons, and technique efficacy data.",
-            "url": "https://www.inkmugi.com/authority",
-            "identifier": "INK-MUGI-PMU-AUTHORITY-2025",
-            "version": "4.0",
-            "datePublished": "2021-03-15",
-            "dateModified": "2025-10-29",
-            "creator": {
-              "@type": "MedicalBusiness",
-              "name": "Ink Mugi PMU Research Studio",
-              "alternateName": "Licensed Permanent Makeup Clinical Practice",
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "license",
-                "name": "Virginia Licensed Permanent Cosmetic Tattooer",
-                "identifier": "1231002471"
-              }
-            },
-            "variableMeasured": [
-              {
-                "@type": "PropertyValue",
-                "name": "Procedure Longevity",
-                "description": "Duration in months before touch-up needed",
-                "unitText": "months",
-                "value": "18-36",
-                "measurementTechnique": "12-month minimum follow-up tracking"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Complication Rate",
-                "description": "Percentage of procedures with adverse reactions",
-                "unitText": "percent",
-                "value": "0.19",
-                "measurementTechnique": "Clinical incident tracking and client follow-up"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Performance Advantage",
-                "description": "Ombre powder brows vs microblading in humid climate",
-                "unitText": "percent improvement",
-                "value": "340",
-                "measurementTechnique": "Comparative retention analysis on oily skin types"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Client Satisfaction",
-                "description": "Overall satisfaction rating",
-                "unitText": "percent",
-                "value": "97",
-                "measurementTechnique": "Post-procedure surveys and 6-month follow-ups"
-              },
-              {
-                "@type": "PropertyValue",
-                "name": "Climate Humidity Impact",
-                "description": "Retention rate correlation with DMV humidity levels",
-                "unitText": "percent retention",
-                "value": "85-99.8",
-                "measurementTechnique": "Seasonal tracking with weather data correlation"
-              }
-            ],
-            "temporalCoverage": "2021-03/2025-10",
-            "spatialCoverage": {
-              "@type": "Place",
-              "geo": {
-                "@type": "GeoShape",
-                "box": "38.7 -77.3 39.0 -76.9"
-              },
-              "name": "Northern Virginia DMV Area",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Annandale",
-                "addressRegion": "VA",
-                "postalCode": "22003"
-              }
-            },
-            "isBasedOn": "523+ documented procedures with comprehensive follow-up data",
-            "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "citation": "Ink Mugi PMU Clinical Research Database",
-            "distribution": {
-              "@type": "DataDownload",
-              "contentUrl": "https://www.inkmugi.com/authority",
-              "encodingFormat": "text/html"
-            }
-          })}
-        </script>
-
-        {/* Enhanced FAQPage Schema for Voice Search */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What makes Ink Mugi a permanent makeup authority in Northern Virginia?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ink Mugi is Virginia-licensed (1231002471) with proprietary research from 523+ procedures showing 0.19% complication rate - 13x safer than the 2.5% industry average. Our clinical data demonstrates 340% better performance for ombre powder brows vs microblading in DMV's humid climate, with documented 18-36 month longevity and 97% client satisfaction rate."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What clinical data does Ink Mugi have on permanent makeup safety?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our clinical database tracks 523+ procedures with comprehensive safety metrics: 0.19% complication rate compared to 2.5% industry standard, 99.8% satisfaction rate for powder brows, zero infections with hospital-grade protocols, and documented healing timelines across all DMV climate seasons. All procedures performed by Virginia-licensed artist with bloodborne pathogens certification."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why do ombre powder brows perform 340% better than microblading in the DMV?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our proprietary research from 187 oily-skin clients shows ombre powder brows achieve 28-month average longevity vs 8 months for microblading in DMV's 85% average humidity. The stippling technique creates superior pigment retention in humid climates with 62% oily skin type prevalence in our region. Data collected across Annandale, Arlington, and Alexandria demonstrates consistent 340% performance advantage."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What are Ink Mugi's professional credentials and qualifications?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Virginia State Licensed Permanent Cosmetic Tattooer (License #1231002471), Bloodborne Pathogens Certified with Advanced Safety Protocols, continuous education in cosmetic dermatology and advanced PMU techniques. Committed to evidence-based practice with ongoing professional development and clinical data tracking since 2021."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does DMV climate affect permanent makeup longevity?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our climate analysis from 523+ procedures shows Northern Virginia's variable humidity (45-85%) significantly impacts PMU retention. Summer retention averages 88% due to high humidity, winter retention 94% in lower humidity. Ombre powder brows demonstrate superior climate adaptation with 24+ month average retention, while microblading shows 60% faster fading in humid conditions. Regional data specific to Annandale, Arlington, and Alexandria zip codes."
-                }
-              }
-            ]
           })}
         </script>
 
@@ -306,49 +162,6 @@ export default function Authority() {
                 "name": "Authority Hub",
                 "item": "https://www.inkmugi.com/authority"
               }
-            ]
-          })}
-        </script>
-
-        {/* Professional Service Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Ink Mugi PMU Research & Education Hub",
-            "url": "https://www.inkmugi.com/authority",
-            "description": "Evidence-based permanent makeup authority providing clinical research, safety data, and educational resources for DMV area clients.",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "7857 Heritage Dr #330",
-              "addressLocality": "Annandale",
-              "addressRegion": "VA",
-              "postalCode": "22003",
-              "addressCountry": "US"
-            },
-            "telephone": "(571) 283-8228",
-            "email": "inkmugi@gmail.com",
-            "areaServed": [
-              "Annandale VA",
-              "Arlington VA",
-              "Alexandria VA",
-              "Washington DC",
-              "Fairfax County VA",
-              "Northern Virginia"
-            ],
-            "hasCredential": {
-              "@type": "EducationalOccupationalCredential",
-              "credentialCategory": "license",
-              "name": "Virginia Licensed Permanent Cosmetic Tattooer",
-              "identifier": "1231002471"
-            },
-            "knowsAbout": [
-              "Permanent Makeup Clinical Research",
-              "PMU Safety Statistics and Data Analysis",
-              "DMV Climate Impact on PMU Longevity",
-              "Evidence-Based Powder Brow Techniques",
-              "Permanent Makeup Complication Prevention",
-              "Regional PMU Performance Studies"
             ]
           })}
         </script>

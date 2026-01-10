@@ -105,6 +105,33 @@ export default function PMUMythsVsFacts() {
         <meta property="og:description" content="Evidence-based truth about permanent makeup from 523+ procedures. Debunking longevity myths, safety concerns, and technique misconceptions with clinical data." />
         <meta property="og:url" content="https://www.inkmugi.com/pmu-myths-facts" />
         
+        {/* Business Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
+            "image": "https://www.inkmugi.com/og-image.jpg",
+            "telephone": "+1-571-283-8228",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7857 Heritage Dr #330",
+              "addressLocality": "Annandale",
+              "addressRegion": "VA",
+              "postalCode": "22003",
+              "addressCountry": "US"
+            },
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
+            }
+          })}
+        </script>
+
         {/* Breadcrumb Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -130,29 +157,6 @@ export default function PMUMythsVsFacts() {
                 "item": "https://www.inkmugi.com/pmu-myths-facts"
               }
             ]
-          })}
-        </script>
-
-        {/* Research Article Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "MedicalScholarlyArticle",
-            "headline": "Permanent Makeup Myths vs Clinical Facts: Evidence-Based Analysis",
-            "description": "Comprehensive debunking of common PMU misconceptions using clinical data from 523+ procedures",
-            "author": {
-              "@type": "MedicalBusiness",
-              "name": "Ink Mugi PMU Research Team",
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "license",
-                "name": "Virginia Licensed Permanent Cosmetic Tattooer",
-                "identifier": "1231002471"
-              }
-            },
-            "datePublished": "2024-06-10",
-            "dateModified": "2025-10-29",
-            "about": "Permanent Makeup Misconceptions and Clinical Evidence"
           })}
         </script>
       </Helmet>

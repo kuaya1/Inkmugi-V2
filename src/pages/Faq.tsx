@@ -118,20 +118,6 @@ const Faq: React.FC = () => {
     },
   ];
 
-  // Generate FAQPage schema for rich snippets
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  };
-
   const filteredFaqs = activeCategory === 'all' 
     ? faqItems 
     : faqItems.filter(item => item.category === activeCategory);
@@ -148,7 +134,29 @@ const Faq: React.FC = () => {
         <meta property="og:url" content="https://www.inkmugi.com/faq" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.inkmugi.com/#business",
+            "name": "Ink Mugi",
+            "url": "https://www.inkmugi.com/",
+            "logo": "https://www.inkmugi.com/logo.png",
+            "image": "https://www.inkmugi.com/og-image.jpg",
+            "telephone": "+1-571-283-8228",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7857 Heritage Dr #330",
+              "addressLocality": "Annandale",
+              "addressRegion": "VA",
+              "postalCode": "22003",
+              "addressCountry": "US"
+            },
+            "priceRange": "$$$",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Annandale, VA"
+            }
+          })}
         </script>
       </Helmet>
 

@@ -13,25 +13,25 @@ const Services = () => {
 
   const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Signature Brow Transformation",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Inkmugi",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "7857 Heritage Dr #330",
-        "addressLocality": "Annandale",
-        "addressRegion": "VA",
-        "postalCode": "22003",
-        "addressCountry": "US"
-      }
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://www.inkmugi.com/#business",
+    "name": "Ink Mugi",
+    "url": "https://www.inkmugi.com/",
+    "logo": "https://www.inkmugi.com/logo.png",
+    "image": "https://www.inkmugi.com/og-image.jpg",
+    "telephone": "+1-571-283-8228",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7857 Heritage Dr #330",
+      "addressLocality": "Annandale",
+      "addressRegion": "VA",
+      "postalCode": "22003",
+      "addressCountry": "US"
     },
-    "areaServed": ["McLean", "Great Falls", "Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Potomac", "Washington DC"],
-    "description": "Premium transformational brow artistry combining precision techniques with intentional energy. Experience personalized beauty that honors your unique features.",
-    "offers": {
-      "@type": "Offer",
-      "priceRange": "$850-$1,200"
+    "priceRange": "$$$",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Annandale, VA"
     }
   };
 
