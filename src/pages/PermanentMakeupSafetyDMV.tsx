@@ -63,10 +63,10 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>PMU Safety in Northern Virginia | Licensed & Hospital-Grade | Ink Mugi</title>
+        <title>Permanent Makeup Safety Guide | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Virginia-licensed PMU studio with 0.19% complication rate vs 2.5% industry average. Hospital-grade sterilization, premium vegan pigments, 523+ documented procedures. License #1231002471. Annandale serving DMV." 
+          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
         />
         <meta 
           name="keywords" 

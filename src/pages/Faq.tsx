@@ -125,8 +125,8 @@ const Faq: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows FAQ | Inkmugi Annandale VA</title>
-        <meta name="description" content="Common questions about ombre powder brows, microshading, healing process, pricing, and aftercare. Learn everything before your PMU appointment at Inkmugi." />
+        <title>Frequently Asked Questions | Ink Mugi</title>
+        <meta name="description" content="Find answers to common questions about ombre powder brows, the healing process, and what to expect at your appointment with Ink Mugi." />
         <meta name="keywords" content="ombre brows FAQ, powder brows questions, PMU aftercare, microshading healing, permanent makeup cost" />
         <link rel="canonical" href="https://www.inkmugi.com/faq" />
         <meta property="og:title" content="Ombre Powder Brows FAQ | Inkmugi" />

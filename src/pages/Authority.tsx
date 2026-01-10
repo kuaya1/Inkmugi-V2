@@ -57,10 +57,10 @@ export default function Authority() {
     <>
       <Helmet>
         {/* Enhanced Primary SEO Meta Tags */}
-        <title>PMU Research Hub: 523 Procedures Data, 0.19% Safety Rate | Ink Mugi Authority</title>
+        <title>Permanent Makeup Education Hub | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Direct Answer: Ink Mugi's proprietary PMU research shows 340% better performance for powder brows in DMV climate. Clinical data from 523 procedures: 0.19% complication rate (13x safer than 2.5% industry average), 18-36 month longevity, 97% satisfaction. Virginia-licensed #1231002471. Evidence-based permanent makeup education hub." 
+          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
         />
         <meta 
           name="keywords" 

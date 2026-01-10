@@ -107,8 +107,8 @@ const About: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Mugi | Licensed PMU Artist | Ink Mugi</title>
-        <meta name="description" content="Meet Mugi, Virginia-licensed PMU artist (License #1231002471). Specializing in natural ombre powder brows in Annandale, serving Northern Virginia." />
+        <title>About Mugi | Ink Mugi</title>
+        <meta name="description" content="Meet Mugi, the licensed permanent makeup artist behind Ink Mugi. Learn about her approach to natural ombre powder brows in Annandale, VA." />
         <link rel="canonical" href="https://www.inkmugi.com/about" />
         <meta property="og:title" content="About Mugi | Ink Mugi PMU Artist" />
         <meta property="og:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows." />

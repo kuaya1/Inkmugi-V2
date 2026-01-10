@@ -87,8 +87,8 @@ const OmbreBrowsAlexandria: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Brows Alexandria VA | 15 Min Drive | Ink Mugi</title>
-        <meta name="description" content="Ombre powder brows for Alexandria residents. 15-minute drive from Old Town & Del Ray. $600 includes touch-up. Free parking. Book your consultation." />
+        <title>Ombre Powder Brows Near Alexandria, VA | Ink Mugi</title>
+        <meta name="description" content="Ombre powder brows offered near Alexandria, VA at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
         <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-alexandria-va" />
         <meta property="og:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />
         <meta property="og:description" content="Alexandria's nearby PMU artist. 15 minutes from Old Town. Natural ombre brows." />

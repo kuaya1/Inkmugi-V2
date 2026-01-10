@@ -87,8 +87,8 @@ const OmbreBrowsFairfax: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Brows Fairfax County VA | Ink Mugi Studio</title>
-        <meta name="description" content="Ombre powder brows for Fairfax County. Serving Vienna, McLean, Tysons. $600 includes touch-up. Virginia-licensed artist. Free consultation." />
+        <title>Ombre Powder Brows Near Fairfax, VA | Ink Mugi</title>
+        <meta name="description" content="Ombre powder brows offered near Fairfax, VA at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
         <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-fairfax-va" />
         <meta property="og:title" content="Ombre Brows Fairfax County VA | Ink Mugi" />
         <meta property="og:description" content="Fairfax County's nearby PMU artist. Serving Vienna, McLean, Tysons. Natural ombre brows." />

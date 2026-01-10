@@ -97,8 +97,8 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>PMU Services & Pricing | Ink Mugi Annandale VA</title>
-        <meta name="description" content="Ombre powder brows $600, microshading $700. Includes consultation, procedure & touch-up. Virginia-licensed PMU artist in Annandale." />
+        <title>Permanent Makeup Services in Annandale, VA | Ink Mugi</title>
+        <meta name="description" content="Explore permanent makeup services at Ink Mugi in Annandale, VA. Learn about techniques, healed results, and what to expect before booking." />
         <link rel="canonical" href="https://www.inkmugi.com/services" />
         <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
         <meta property="og:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty for women ready to feel like themselves again." />

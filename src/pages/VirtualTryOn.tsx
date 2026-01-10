@@ -78,8 +78,8 @@ const VirtualTryOn: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>AI Virtual Try-On for Ombre Brows | Preview Your Look | Inkmugi</title>
-        <meta name="description" content="Try our AI-powered virtual brow try-on tool. See how ombre powder brows will look on your face before your appointment. Free preview with face shape analysis." />
+        <title>Virtual Brow Try-On | Ink Mugi</title>
+        <meta name="description" content="Preview how ombre powder brows might look on you with our virtual try-on tool. Upload your photo and explore different brow styles." />
         <meta name="keywords" content="virtual brow try-on, AI ombre brows preview, PMU visualization, brow shape simulator" />
         <link rel="canonical" href="https://www.inkmugi.com/virtual-try-on" />
         <meta property="og:title" content="AI Virtual Try-On for Ombre Brows | Inkmugi" />

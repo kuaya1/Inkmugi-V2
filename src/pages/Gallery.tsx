@@ -385,8 +385,8 @@ const Gallery: React.FC = () => {
     <>
       {/* SEO Metadata */}
       <Helmet>
-        <title>Ombre Brows Before & After Gallery | Inkmugi Annandale VA</title>
-        <meta name="description" content="See real ombre powder brows transformations at Inkmugi. Browse before & after photos from 523+ procedures. Serving Annandale, Alexandria, Arlington & Northern Virginia." />
+        <title>Before and After Gallery | Ink Mugi</title>
+        <meta name="description" content="Browse healed ombre powder brows results at Ink Mugi. See real client transformations from our Annandale, VA studio." />
         <meta name="keywords" content="ombre brows before after, powder brows results, PMU gallery Annandale VA, permanent makeup transformations" />
         <link rel="canonical" href="https://www.inkmugi.com/gallery" />
         <meta property="og:title" content="Ombre Brows Before & After Gallery | Inkmugi" />

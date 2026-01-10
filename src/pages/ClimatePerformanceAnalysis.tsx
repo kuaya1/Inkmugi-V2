@@ -192,8 +192,8 @@ const ClimatePerformanceAnalysis = () => {
   return (
     <>
       <Helmet>
-        <title>Humid Climate Performance Analysis | PMU Longevity in DMV Region | Ink Mugi</title>
-        <meta name="description" content="Regional study analyzing permanent makeup performance in high-humidity DMV climate. Data shows 340% advantage for powder brows over microblading in oily skin conditions across 523+ procedures." />
+        <title>Powder Brows in Humid Climates | Ink Mugi</title>
+        <meta name="description" content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." />
         <meta name="keywords" content="PMU climate performance, DMV humidity, powder brows oily skin, Arlington VA PMU, Alexandria VA, Annandale VA, regional PMU study, permanent makeup longevity, Virginia PMU research" />
         <meta name="author" content="Ink Mugi" />
         <meta property="og:title" content="Humid Climate Performance Analysis | PMU Longevity in DMV Region" />

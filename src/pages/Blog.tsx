@@ -243,9 +243,9 @@ Always consult a certified, experienced artist and review their portfolio before
       {/* SEO Metadata */}
       <Helmet>
         <title>{getPageTitle()}</title>
-        <meta name="description" content="Expert insights on permanent makeup techniques, aftercare, and beauty trends from professional PMU artists. Learn about microblading, nano brows, powder brows and more." />
+        <meta name="description" content="Insights on permanent makeup techniques, aftercare, and what to expect from your brow appointment at Ink Mugi." />
         <meta name="keywords" content="permanent makeup, PMU, microblading, nano brows, ombre brows, powder brows, eyebrow tattooing, beauty blog" />
-        <link rel="canonical" href="https://yourdomain.com/blog" />
+        <link rel="canonical" href="https://www.inkmugi.com/blog" />
         <meta property="og:title" content={getPageTitle()} />
         <meta property="og:description" content="Expert insights on permanent makeup techniques, aftercare, and beauty trends from professional PMU artists." />
         <meta property="og:type" content="website" />

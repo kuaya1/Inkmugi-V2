@@ -188,8 +188,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows Annandale VA | Ink Mugi PMU Studio</title>
-        <meta name="description" content="Virginia-licensed ombre powder brows in Annandale. Natural results, gentle technique. Free consultation. Serving Arlington, Alexandria & Northern Virginia." />
+        <title>Ink Mugi | Permanent Makeup Studio in Annandale, VA</title>
+        <meta name="description" content="Ink Mugi is a permanent makeup studio in Annandale, VA specializing in natural-looking powder brows. View healed results and book a consultation." />
         <link rel="canonical" href="https://www.inkmugi.com/" />
         <meta property="og:title" content="Ombre Powder Brows Annandale VA | Ink Mugi" />
         <meta property="og:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows. Free consultation available." />

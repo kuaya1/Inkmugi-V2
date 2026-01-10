@@ -117,10 +117,10 @@ export default function PMUDataGuide() {
     <>
       <Helmet>
         {/* Enhanced SEO */}
-        <title>PMU Longevity Data Guide: 523 Procedures, 18-36 Month Retention Analysis | Ink Mugi</title>
+        <title>How Powder Brows Heal | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Comprehensive permanent makeup longevity study from 523+ procedures: Ombre powder brows 24-36 months, microblading 8-18 months. DMV climate retention data by skin type, season, and aftercare compliance. Virginia-licensed #1231002471 clinical research." 
+          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
         />
         <meta 
           name="keywords" 

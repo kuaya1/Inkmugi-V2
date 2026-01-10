@@ -106,10 +106,10 @@ const SignatureOmbreBrows: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Signature Ombre Powder Brows Annandale VA | $600 | Licensed PMU | Ink Mugi</title>
+        <title>Ombre Powder Brows in Annandale, VA | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Ombre powder brows: $600 includes procedure + touch-up. 18-36 month longevity in DMV climate. 340% better than microblading for oily skin. Data from 523 procedures. Virginia-licensed. Book consultation: (571) 283-8228" 
+          content="Professional ombre powder brows performed in Annandale, VA. See healed results, learn the process, and book a consultation with Ink Mugi." 
         />
         <meta 
           name="keywords" 

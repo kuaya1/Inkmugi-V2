@@ -83,10 +83,10 @@ export default function PMUMythsVsFacts() {
     <>
       <Helmet>
         {/* Enhanced SEO */}
-        <title>PMU Myths vs Clinical Facts: Evidence-Based Permanent Makeup Truth | Ink Mugi</title>
+        <title>Powder Brows vs Microblading | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Debunking 12 permanent makeup myths with clinical evidence from 523+ procedures. Truth about PMU longevity, safety, pain levels, and retention rates. Virginia-licensed research dispels microblading misconceptions with peer-reviewed data." 
+          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
         />
         <meta 
           name="keywords" 
