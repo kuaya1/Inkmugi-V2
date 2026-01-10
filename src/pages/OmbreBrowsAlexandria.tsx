@@ -88,6 +88,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
     <>
       <Helmet>
         <title>Ombre Powder Brows Near Alexandria, VA | Ink Mugi</title>
+        <meta name="robots" content="noindex, follow" />
         <meta name="description" content="Ombre powder brows offered near Alexandria, VA at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
         <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-alexandria-va" />
         <meta property="og:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />

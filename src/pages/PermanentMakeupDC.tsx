@@ -89,6 +89,7 @@ const PermanentMakeupDC: React.FC = () => {
     <>
       <Helmet>
         <title>Ombre Powder Brows Near Washington, DC | Ink Mugi</title>
+        <meta name="robots" content="noindex, follow" />
         <meta name="description" content="Ombre powder brows offered near Washington, DC at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
         <meta name="keywords" content="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington" />
         <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-dc" />

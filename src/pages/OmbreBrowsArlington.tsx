@@ -88,6 +88,7 @@ const OmbreBrowsArlington: React.FC = () => {
     <>
       <Helmet>
         <title>Ombre Powder Brows Near Arlington, VA | Ink Mugi</title>
+        <meta name="robots" content="noindex, follow" />
         <meta name="description" content="Ombre powder brows offered near Arlington, VA at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
         <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-arlington-va" />
         <meta property="og:title" content="Ombre Brows for Arlington VA | Ink Mugi" />
