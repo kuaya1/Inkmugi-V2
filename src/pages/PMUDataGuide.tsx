@@ -120,7 +120,7 @@ export default function PMUDataGuide() {
         <title>How Powder Brows Heal | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
+          content="Comprehensive PMU longevity data from 523+ procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison from Ink Mugi's clinical dataset." 
         />
         <meta 
           name="keywords" 
@@ -138,6 +138,12 @@ export default function PMUDataGuide() {
         <meta property="og:title" content="PMU Longevity Data: 523 Procedures Analysis | Ink Mugi Research" />
         <meta property="og:description" content="Clinical data: Ombre powder brows 24-36 months, 97% retention for dry skin, 89% with full aftercare. Comprehensive permanent makeup longevity study." />
         <meta property="og:url" content="https://www.inkmugi.com/pmu-data-guide" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PMU Longevity Data: 523 Procedures Analysis | Ink Mugi" />
+        <meta name="twitter:description" content="Clinical data: Ombre powder brows 24-36 months, 97% retention for dry skin. Comprehensive permanent makeup longevity study." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -191,6 +197,20 @@ export default function PMUDataGuide() {
                 "item": "https://www.inkmugi.com/pmu-data-guide"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "PMU Longevity Data: 523 Procedures Analysis",
+            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "datePublished": "2024-06-01",
+            "dateModified": "2025-06-13",
+            "mainEntityOfPage": "https://www.inkmugi.com/pmu-data-guide",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+            "description": "Comprehensive PMU longevity data from 523+ procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison."
           })}
         </script>
       </Helmet>
@@ -478,6 +498,17 @@ export default function PMUDataGuide() {
               >
                 <span>More Research</span>
               </Link>
+            </div>
+
+            {/* Related Research Cross-links */}
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <p className="text-white/50 text-sm mb-4">Related Research</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link to="/pmu-myths-facts" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">PMU Myths vs Facts →</Link>
+                <Link to="/climate-performance-analysis" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Climate Performance →</Link>
+                <Link to="/permanent-makeup-safety-dmv" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Safety Protocols →</Link>
+                <Link to="/signature-ombre-brows" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Our Technique →</Link>
+              </div>
             </div>
           </AnimatedSection>
         </div>

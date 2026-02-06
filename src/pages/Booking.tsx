@@ -17,6 +17,21 @@ const Booking: React.FC = () => {
         <meta property="og:description" content="Book your ombre powder brows appointment. Free consultation included. 523+ successful procedures." />
         <meta property="og:url" content="https://www.inkmugi.com/booking" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Book Ombre Powder Brows | Ink Mugi Annandale" />
+        <meta name="twitter:description" content="Book your ombre powder brows appointment. Free consultation included. 523+ successful procedures." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Book Consultation", "item": "https://www.inkmugi.com/booking" }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">

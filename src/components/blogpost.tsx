@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, User, Tag, ArrowLeft } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blogData';
 import ReactMarkdown from 'react-markdown';
 
@@ -27,11 +27,70 @@ const BlogPost: React.FC = () => {
       <Helmet>
         <title>{post.title} | Brow Artistry Blog</title>
         <meta name="description" content={post.metaDescription} />
+        <meta name="keywords" content={post.tags.join(', ')} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:image" content={post.image} />
-        <meta property="og:url" content={`https://yourdomain.com/blog/${post.slug}`} />
-        <link rel="canonical" href={`https://yourdomain.com/blog/${post.slug}`} />
+        <meta property="og:url" content={`https://www.inkmugi.com/blog/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href={`https://www.inkmugi.com/blog/${post.slug}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.metaDescription} />
+        <meta name="twitter:image" content={post.image} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.metaDescription,
+            "image": post.image,
+            "author": {
+              "@type": "Person",
+              "name": post.author
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Ink Mugi",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
+              }
+            },
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://www.inkmugi.com/blog/${post.slug}`
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.inkmugi.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.inkmugi.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": post.title,
+                "item": `https://www.inkmugi.com/blog/${post.slug}`
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

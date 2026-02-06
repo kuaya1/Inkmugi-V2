@@ -109,13 +109,29 @@ const About: React.FC = () => {
       <Helmet>
         <title>About Mugi | Ink Mugi</title>
         <meta name="description" content="Meet Mugi, the licensed permanent makeup artist behind Ink Mugi. Learn about her approach to natural ombre powder brows in Annandale, VA." />
+        <meta name="keywords" content="Mugi PMU artist, licensed permanent makeup artist Virginia, ombre brows artist Annandale, PMU specialist Northern Virginia, about Ink Mugi" />
         <link rel="canonical" href="https://www.inkmugi.com/about" />
         <meta property="og:title" content="About Mugi | Ink Mugi PMU Artist" />
         <meta property="og:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows." />
         <meta property="og:url" content="https://www.inkmugi.com/about" />
         <meta property="og:type" content="profile" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Mugi | Licensed PMU Artist" />
+        <meta name="twitter:description" content="Meet Mugi, the licensed permanent makeup artist behind Ink Mugi in Annandale, VA." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(personSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.inkmugi.com/about" }
+            ]
+          })}
         </script>
       </Helmet>
 

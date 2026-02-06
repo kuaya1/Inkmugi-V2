@@ -86,6 +86,33 @@ const VirtualTryOn: React.FC = () => {
         <meta property="og:description" content="Try our AI-powered virtual brow try-on tool. See how ombre powder brows will look on your face before your appointment." />
         <meta property="og:url" content="https://www.inkmugi.com/virtual-try-on" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI Virtual Brow Try-On | Ink Mugi" />
+        <meta name="twitter:description" content="Preview how ombre powder brows will look on your face with our AI-powered virtual try-on tool." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Ink Mugi Virtual Brow Try-On",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "description": "AI-powered virtual brow try-on tool. Upload your photo and preview ombre powder brows before your appointment.",
+            "url": "https://www.inkmugi.com/virtual-try-on"
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Virtual Try-On", "item": "https://www.inkmugi.com/virtual-try-on" }
+            ]
+          })}
+        </script>
       </Helmet>
       
     <div className="min-h-screen bg-gradient-to-br from-[#F9FAFB] via-white to-[#E6DAD2]/10">

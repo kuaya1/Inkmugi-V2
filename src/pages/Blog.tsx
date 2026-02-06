@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Calendar, Clock, User, Tag } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -249,8 +249,8 @@ Always consult a certified, experienced artist and review their portfolio before
         <meta property="og:title" content={getPageTitle()} />
         <meta property="og:description" content="Expert insights on permanent makeup techniques, aftercare, and beauty trends from professional PMU artists." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/blog" />
-        <meta property="og:image" content="https://yourdomain.com/images/blog-social-share.jpg" />
+        <meta property="og:url" content="https://www.inkmugi.com/blog" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

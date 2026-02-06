@@ -1,17 +1,24 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 export default function OmbreBrows() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate('/signature-ombre-brows', { replace: true });
+  }, [navigate]);
+
   return (
     <>
       <Helmet>
-        <meta name="robots" content="noindex, nofollow" />
-        <title>Ombre Powder Brows | Coming Soon | Ink Mugi</title>
+        <title>Ombre Powder Brows in Annandale, VA | Ink Mugi</title>
+        <meta name="description" content="Professional ombre powder brows at Ink Mugi in Annandale, VA. See healed results, learn the process, and book a consultation." />
+        <link rel="canonical" href="https://www.inkmugi.com/signature-ombre-brows" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
-      <div className="min-h-screen bg-neutral-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-8">Ombre Powder Brows</h1>
-          <p className="text-neutral-600">Full content coming soon. In the meantime, explore our <a href="/signature-ombre-brows" className="text-primary underline">Signature Ombre Brows</a> page.</p>
-        </div>
+      <div className="min-h-screen bg-neutral-50 flex items-center justify-center">
+        <p className="text-neutral-600">Redirecting...</p>
       </div>
     </>
   );

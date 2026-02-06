@@ -86,7 +86,7 @@ export default function PMUMythsVsFacts() {
         <title>Powder Brows vs Microblading | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
+          content="12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results from a Virginia-licensed artist." 
         />
         <meta 
           name="keywords" 
@@ -104,6 +104,12 @@ export default function PMUMythsVsFacts() {
         <meta property="og:title" content="PMU Myths Debunked: 12 Clinical Facts | Ink Mugi Research" />
         <meta property="og:description" content="Evidence-based truth about permanent makeup from 523+ procedures. Debunking longevity myths, safety concerns, and technique misconceptions with clinical data." />
         <meta property="og:url" content="https://www.inkmugi.com/pmu-myths-facts" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PMU Myths Debunked: 12 Clinical Facts | Ink Mugi" />
+        <meta name="twitter:description" content="Evidence-based truth about permanent makeup from 523+ procedures. Debunking longevity myths and safety concerns with clinical data." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -157,6 +163,20 @@ export default function PMUMythsVsFacts() {
                 "item": "https://www.inkmugi.com/pmu-myths-facts"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "12 PMU Myths Debunked with Clinical Data",
+            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "datePublished": "2024-06-01",
+            "dateModified": "2025-06-13",
+            "mainEntityOfPage": "https://www.inkmugi.com/pmu-myths-facts",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+            "description": "12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results."
           })}
         </script>
       </Helmet>
@@ -399,6 +419,17 @@ export default function PMUMythsVsFacts() {
               >
                 <span>More Research</span>
               </Link>
+            </div>
+
+            {/* Related Research Cross-links */}
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <p className="text-white/50 text-sm mb-4">Related Research</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link to="/pmu-data-guide" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">PMU Data Guide →</Link>
+                <Link to="/climate-performance-analysis" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Climate Performance →</Link>
+                <Link to="/permanent-makeup-safety-dmv" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Safety Protocols →</Link>
+                <Link to="/signature-ombre-brows" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Our Technique →</Link>
+              </div>
             </div>
           </AnimatedSection>
         </div>

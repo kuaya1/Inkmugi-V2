@@ -89,7 +89,7 @@ const PermanentMakeupDC: React.FC = () => {
     <>
       <Helmet>
         <title>Ombre Powder Brows Near Washington, DC | Ink Mugi</title>
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow" />
         <meta name="description" content="Ombre powder brows offered near Washington, DC at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
         <meta name="keywords" content="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington" />
         <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-dc" />
@@ -97,8 +97,39 @@ const PermanentMakeupDC: React.FC = () => {
         <meta property="og:description" content="DC's smart choice for permanent makeup. Premium quality, better price, free parking. 20 minutes from Georgetown." />
         <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-dc" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ombre Powder Brows for Washington DC | Ink Mugi" />
+        <meta name="twitter:description" content="DC's smart choice for permanent makeup. Premium quality, better price, free parking. 20 minutes from Georgetown." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
-          {JSON.stringify(localSchema)}
+          {JSON.stringify({
+            ...localSchema,
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "3",
+              "bestRating": "5",
+              "worstRating": "5"
+            },
+            "review": dcTestimonials.map(t => ({
+              "@type": "Review",
+              "author": { "@type": "Person", "name": t.name },
+              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
+              "reviewBody": t.text
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Permanent Makeup DC", "item": "https://www.inkmugi.com/permanent-makeup-dc" }
+            ]
+          })}
         </script>
       </Helmet>
 
@@ -381,6 +412,36 @@ const PermanentMakeupDC: React.FC = () => {
             subtitle="Tap a question to reveal the answer"
             maxVisible={3}
           />
+        </div>
+      </section>
+
+      {/* We Also Serve - Cross-links */}
+      <section className="py-16 bg-[#F9F7F5]">
+        <div className="container-custom">
+          <AnimatedSection className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-3">
+              We Also Serve Nearby Areas
+            </h2>
+            <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
+          </AnimatedSection>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-alexandria-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Alexandria, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-fairfax-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Fairfax, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">10 min drive</p>
+            </Link>
+            <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Our Technique</p>
+              <p className="text-sm text-[#2D2D2B]/50">Learn more →</p>
+            </Link>
+          </div>
         </div>
       </section>
 

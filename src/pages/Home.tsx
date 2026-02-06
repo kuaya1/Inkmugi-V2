@@ -176,6 +176,11 @@ const Home: React.FC = () => {
         <meta property="og:url" content="https://www.inkmugi.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
+        <meta name="keywords" content="permanent makeup Annandale VA, ombre powder brows Northern Virginia, PMU artist Annandale, natural brow enhancement, healed brow results, licensed permanent makeup artist Virginia" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ink Mugi | Permanent Makeup Studio in Annandale, VA" />
+        <meta name="twitter:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows. Free consultation available." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -198,7 +203,21 @@ const Home: React.FC = () => {
             "areaServed": {
               "@type": "AdministrativeArea",
               "name": "Annandale, VA"
-            }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "5",
+              "bestRating": "5",
+              "worstRating": "5"
+            },
+            "review": testimonials.map(t => ({
+              "@type": "Review",
+              "author": { "@type": "Person", "name": t.name },
+              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
+              "reviewBody": t.testimonial,
+              "datePublished": t.date.includes('2024') ? '2024-01-01' : t.date.includes('2023') ? '2023-01-01' : '2024-08-01'
+            }))
           })}
         </script>
         <script type="application/ld+json">

@@ -193,15 +193,34 @@ const ClimatePerformanceAnalysis = () => {
     <>
       <Helmet>
         <title>Powder Brows in Humid Climates | Ink Mugi</title>
-        <meta name="description" content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." />
+        <meta name="description" content="Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax." />
         <meta name="keywords" content="PMU climate performance, DMV humidity, powder brows oily skin, Arlington VA PMU, Alexandria VA, Annandale VA, regional PMU study, permanent makeup longevity, Virginia PMU research" />
         <meta name="author" content="Ink Mugi" />
         <meta property="og:title" content="Humid Climate Performance Analysis | PMU Longevity in DMV Region" />
         <meta property="og:description" content="Regional study showing 340% advantage for powder brows in high-humidity DMV climate with oily skin." />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PMU Climate Performance: DMV Humidity Study | Ink Mugi" />
+        <meta name="twitter:description" content="Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <link rel="canonical" href="https://www.inkmugi.com/climate-performance-analysis" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Humid Climate Performance Analysis: PMU Longevity in DMV Region",
+            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "datePublished": "2024-06-01",
+            "dateModified": "2025-06-13",
+            "mainEntityOfPage": "https://www.inkmugi.com/climate-performance-analysis",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+            "description": "Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-[#2D2D2B] via-[#1a1a18] to-[#2D2D2B]">
@@ -500,6 +519,17 @@ const ClimatePerformanceAnalysis = () => {
               >
                 More Research
               </Link>
+            </div>
+
+            {/* Related Research Cross-links */}
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <p className="text-white/50 text-sm mb-4">Related Research</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link to="/pmu-data-guide" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">PMU Data Guide →</Link>
+                <Link to="/pmu-myths-facts" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">PMU Myths vs Facts →</Link>
+                <Link to="/permanent-makeup-safety-dmv" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Safety Protocols →</Link>
+                <Link to="/signature-ombre-brows" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Our Technique →</Link>
+              </div>
             </div>
           </div>
         </AnimatedSection>

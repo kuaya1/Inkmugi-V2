@@ -2,10 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, AlertCircle, Shield, Scale, Clock } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { Helmet } from 'react-helmet-async';
 
 const TermsOfService: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Terms of Service | Ink Mugi</title>
+        <meta name="description" content="Terms of service for Ink Mugi permanent makeup studio. Review our policies on appointments, cancellations, aftercare responsibilities, and service agreements." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.inkmugi.com/terms-of-service" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-[#F9F7F5] to-white">
         <div className="container-custom">

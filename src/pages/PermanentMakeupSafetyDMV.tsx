@@ -66,7 +66,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
         <title>Permanent Makeup Safety Guide | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
+          content="Hospital-grade PMU safety protocols at Ink Mugi. 0.19% complication rate vs 2.5% industry average. Virginia-licensed, bloodborne pathogens certified, premium vegan pigments." 
         />
         <meta 
           name="keywords" 
@@ -79,13 +79,13 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
         <meta property="og:description" content="Virginia-licensed PMU studio with 0.19% complication rate vs 2.5% industry average. Hospital-grade sterilization, premium vegan pigments, 523+ documented procedures." />
         <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-safety-dmv" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.inkmugi.com/og-safety-trust.jpg" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="PMU Safety in Northern Virginia | Licensed & Hospital-Grade | Ink Mugi" />
         <meta name="twitter:description" content="0.19% complication rate vs 2.5% industry average. Virginia-licensed, hospital-grade protocols, 523+ procedures documented." />
-        <meta name="twitter:image" content="https://www.inkmugi.com/og-safety-trust.jpg" />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
 
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -111,6 +111,31 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
               "@type": "AdministrativeArea",
               "name": "Annandale, VA"
             }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Authority Hub", "item": "https://www.inkmugi.com/authority" },
+              { "@type": "ListItem", "position": 3, "name": "PMU Safety Guide", "item": "https://www.inkmugi.com/permanent-makeup-safety-dmv" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Permanent Makeup Safety Guide: Hospital-Grade PMU Protocols",
+            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "datePublished": "2024-06-01",
+            "dateModified": "2025-06-13",
+            "mainEntityOfPage": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+            "description": "Hospital-grade PMU safety protocols at Ink Mugi. 0.19% complication rate vs 2.5% industry average. Virginia-licensed, bloodborne pathogens certified."
           })}
         </script>
       </Helmet>
@@ -545,7 +570,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                 <p className="text-white/60 text-base mb-4">
                   <strong className="text-white/80">Serving</strong> Annandale, Arlington, Alexandria, Fairfax County, Washington DC, and all of Northern Virginia
                 </p>
-                <div className="flex flex-wrap justify-center gap-8 text-sm text-white/50">
+                <div className="flex flex-wrap justify-center gap-8 text-sm text-white/50 mb-6">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-[#E6DAD2]" />
                     <span>Free Consultation</span>
@@ -557,6 +582,16 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-[#E6DAD2]" />
                     <span>Licensed & Insured</span>
+                  </div>
+                </div>
+                {/* Related Research Cross-links */}
+                <div className="pt-6 border-t border-white/10">
+                  <p className="text-white/50 text-sm mb-4">Related Research</p>
+                  <div className="flex flex-wrap justify-center gap-4">
+                    <Link to="/authority" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Authority Hub →</Link>
+                    <Link to="/pmu-data-guide" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">PMU Data Guide →</Link>
+                    <Link to="/pmu-myths-facts" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">PMU Myths vs Facts →</Link>
+                    <Link to="/climate-performance-analysis" className="text-[#E6DAD2] hover:text-white text-sm transition-colors">Climate Performance →</Link>
                   </div>
                 </div>
               </div>

@@ -123,6 +123,10 @@ const SignatureOmbreBrows: React.FC = () => {
         <meta property="og:image" content="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg" />
         <meta property="og:url" content="https://www.inkmugi.com/signature-ombre-brows" />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Signature Ombre Powder Brows | Ink Mugi Annandale VA" />
+        <meta name="twitter:description" content="18-36 month longevity. 340% better for oily skin. 523+ procedures. Virginia-licensed PMU artist." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg" />
 
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -148,6 +152,47 @@ const SignatureOmbreBrows: React.FC = () => {
               "@type": "AdministrativeArea",
               "name": "Annandale, VA"
             }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Signature Ombre Powder Brows",
+            "description": "Professional ombre powder brows performed in Annandale, VA. Includes consultation, procedure, aftercare kit, and perfecting touch-up.",
+            "provider": { "@id": "https://www.inkmugi.com/#business" },
+            "areaServed": { "@type": "AdministrativeArea", "name": "Northern Virginia" },
+            "offers": {
+              "@type": "Offer",
+              "price": "600",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Signature Ombre Brows", "item": "https://www.inkmugi.com/signature-ombre-brows" }
+            ]
           })}
         </script>
       </Helmet>

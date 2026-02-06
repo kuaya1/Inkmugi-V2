@@ -376,6 +376,34 @@ const Gallery: React.FC = () => {
         <meta property="og:description" content="See real ombre powder brows transformations at Inkmugi. Browse before & after photos from 523+ procedures." />
         <meta property="og:url" content="https://www.inkmugi.com/gallery" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Before & After Gallery | Ink Mugi" />
+        <meta name="twitter:description" content="Browse healed ombre powder brows results. 523+ procedures documented at our Annandale, VA studio." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": "Ink Mugi Before & After Gallery",
+            "description": "Healed ombre powder brows results from 523+ procedures at Ink Mugi in Annandale, VA.",
+            "url": "https://www.inkmugi.com/gallery",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Ink Mugi"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://www.inkmugi.com/gallery" }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section with Enhanced Design */}

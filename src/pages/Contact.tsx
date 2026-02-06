@@ -41,8 +41,23 @@ const Contact: React.FC = () => {
         <meta property="og:description" content="Contact Inkmugi for ombre powder brows. Call (571) 283-8228 or visit us in Annandale, VA. Free consultations available." />
         <meta property="og:url" content="https://www.inkmugi.com/contact" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Ink Mugi - Book Your PMU Consultation" />
+        <meta name="twitter:description" content="Contact Ink Mugi for ombre powder brows. Call (571) 283-8228 or visit us in Annandale, VA." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.inkmugi.com/contact" }
+            ]
+          })}
         </script>
       </Helmet>
 

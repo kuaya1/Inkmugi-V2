@@ -9,7 +9,6 @@ import InlineFaqAccordion from '../components/InlineFaqAccordion';
 const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Transformational Beauty Services | Inkmugi';
   }, []);
 
   const serviceSchema = {
@@ -33,6 +32,52 @@ const Services = () => {
     "areaServed": {
       "@type": "AdministrativeArea",
       "name": "Annandale, VA"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Permanent Makeup Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Signature Brow Transformation",
+            "description": "Includes 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session."
+          },
+          "price": "600",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Microshading Artistry",
+            "description": "Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance."
+          },
+          "price": "700",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Color Refresh Sessions",
+            "description": "Maintain vibrancy after initial healing. Recommended every 18-36 months depending on skin type and lifestyle."
+          },
+          "price": "350",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Complimentary Consultation",
+            "description": "Face mapping, portfolio review, and design preview. Zero pressure."
+          },
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      ]
     }
   };
 
@@ -100,13 +145,29 @@ const Services = () => {
       <Helmet>
         <title>Permanent Makeup Services in Annandale, VA | Ink Mugi</title>
         <meta name="description" content="Explore permanent makeup services at Ink Mugi in Annandale, VA. Learn about techniques, healed results, and what to expect before booking." />
+        <meta name="keywords" content="permanent makeup services Annandale VA, ombre powder brows pricing, microshading Northern Virginia, PMU consultation Annandale, brow transformation services" />
         <link rel="canonical" href="https://www.inkmugi.com/services" />
         <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
         <meta property="og:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty for women ready to feel like themselves again." />
         <meta property="og:url" content="https://www.inkmugi.com/services" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Permanent Makeup Services | Ink Mugi Annandale VA" />
+        <meta name="twitter:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty." />
+        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" }
+            ]
+          })}
         </script>
       </Helmet>
 
