@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { CheckCircle, CheckCircle2, Shield, Award } from 'lucide-react';
+import { CheckCircle, CheckCircle2, Shield, Award, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
+import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const Services = () => {
   useEffect(() => {
@@ -270,6 +271,67 @@ const Services = () => {
                 <Link to="/gallery" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5">
                   View Healed Results
                 </Link>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* Inline FAQ — Reduces exit-to-FAQ leakage */}
+      <section className="py-20 bg-[#F9F7F5]">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+            <AnimatedSection>
+              <InlineFaqAccordion
+                title="Questions Before Booking?"
+                subtitle="Answers from 500+ client experiences"
+                maxVisible={4}
+                faqs={[
+                  {
+                    question: 'Is the procedure painful?',
+                    answer: 'We use medical-grade topical numbing that takes effect in 20 minutes. Most clients rate discomfort at 2-3 out of 10—many fall asleep during the procedure. Your comfort is our priority, and we can apply additional numbing if needed.'
+                  },
+                  {
+                    question: 'How long do results last?',
+                    answer: 'Ombre powder brows typically last 18-36 months depending on skin type, lifestyle, and sun exposure. Oily skin types may see faster fading. We recommend a color refresh every 18-24 months to maintain optimal vibrancy.'
+                  },
+                  {
+                    question: 'What if I don\'t like the shape?',
+                    answer: 'You approve the exact shape on YOUR face before any pigment is applied. We map, measure, and adjust until you say "perfect." Nothing permanent happens until you\'re 100% confident. This is a core part of our process.'
+                  },
+                  {
+                    question: 'How should I prepare for my appointment?',
+                    answer: 'Avoid blood thinners (alcohol, aspirin) for 48 hours before, retinol products for 2 weeks prior, and caffeine on the day of your procedure. Arrive with clean brows and no makeup in the area.'
+                  },
+                ]}
+              />
+            </AnimatedSection>
+            <AnimatedSection delay={2}>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#E6DAD2]/30">
+                <h3 className="text-xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+                  Still have questions?
+                </h3>
+                <p className="text-[#2D2D2B]/70 mb-6">
+                  Our FAQ page covers everything from the healing timeline to pricing details and aftercare instructions.
+                </p>
+                <Link 
+                  to="/faq" 
+                  className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300"
+                >
+                  <span>View complete FAQ</span>
+                  <ArrowRight size={16} />
+                </Link>
+
+                <div className="mt-8 pt-6 border-t border-[#E6DAD2]/30">
+                  <p className="text-sm text-[#2D2D2B]/60 mb-4">Or schedule a free consultation to ask in person:</p>
+                  <Link 
+                    to="/booking" 
+                    className="inline-flex items-center gap-2 bg-[#2D2D2B] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#2D2D2B]/90 transition-colors"
+                  >
+                    Request Consultation
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
               </div>
             </AnimatedSection>
           </div>

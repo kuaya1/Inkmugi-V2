@@ -2,83 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Instagram, Star, Quote, Loader } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { fetchInstagramMedia, getMediaUrl } from '../services/instagramService';
-
-// Component for enhanced image comparison slider
-const BeforeAfterSlider: React.FC<{ beforeImage: string; afterImage: string; beforeLabel?: string; afterLabel?: string }> = ({ 
-  beforeImage, 
-  afterImage,
-  beforeLabel = "Before",
-  afterLabel = "After"
-}) => {
-  const [sliderPosition, setSliderPosition] = useState(50);
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (sliderRef.current) {
-      const rect = sliderRef.current.getBoundingClientRect();
-      let x = ((e.clientX - rect.left) / rect.width) * 100;
-      x = Math.min(Math.max(x, 0), 100);
-      setSliderPosition(x);
-    }
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (sliderRef.current && e.touches[0]) {
-      const rect = sliderRef.current.getBoundingClientRect();
-      let x = ((e.touches[0].clientX - rect.left) / rect.width) * 100;
-      x = Math.min(Math.max(x, 0), 100);
-      setSliderPosition(x);
-    }
-  };
-
-  return (
-    <div 
-      ref={sliderRef}
-      className="relative overflow-hidden w-full h-full rounded-lg cursor-col-resize"
-      onMouseMove={handleMouseMove}
-      onTouchMove={handleTouchMove}
-    >
-      {/* Before image (full width) */}
-      <div className="absolute inset-0">
-        <img src={beforeImage} alt="Before" className="w-full h-full object-cover" />
-        <div className="absolute top-4 left-4 bg-black/50 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm">
-          {beforeLabel}
-        </div>
-      </div>
-      
-      {/* After image (clipped) */}
-      <div 
-        className="absolute inset-0 overflow-hidden" 
-        style={{ width: `${sliderPosition}%` }}
-      >
-        <img 
-          src={afterImage} 
-          alt="After" 
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
-        <div className="absolute top-4 left-4 bg-[#2D2D2B]/80 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm">
-          {afterLabel}
-        </div>
-      </div>
-      
-      {/* Slider handle */}
-      <div 
-        className="absolute top-0 bottom-0 w-1 bg-white cursor-col-resize shadow-lg"
-        style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
-      >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg">
-          <div className="flex space-x-0.5">
-            <ChevronLeft size={12} className="text-[#2D2D2B]" />
-            <ChevronRight size={12} className="text-[#2D2D2B]" />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 // Enhanced Gallery Item component
 const EnhancedGalleryItem: React.FC<{

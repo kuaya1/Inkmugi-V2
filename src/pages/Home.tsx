@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, ArrowDown, Award, Shield, Clock, Heart, Sparkles, CheckCircle2, Quote, Phone } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, ArrowDown, Award, Shield, Heart, Sparkles, CheckCircle2, Quote, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 import AnimatedSection from '../components/AnimatedSection';
+import BeforeAfterSlider from '../components/BeforeAfterSlider';
 
 const Home: React.FC = () => {
-  const [activeTransformation, setActiveTransformation] = useState(0);
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
 
   useEffect(() => {
@@ -111,6 +111,7 @@ const Home: React.FC = () => {
       subtitle: 'From sparse, uneven brows to soft, defined shape',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
+      healingTimeline: '8 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
@@ -119,6 +120,7 @@ const Home: React.FC = () => {
       subtitle: 'Delicate enhancement for busy professional',
       technique: 'Microshading Artistry',
       healingStatus: 'healed',
+      healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366216764_db37388bbe_c_d.jpg',
@@ -127,6 +129,7 @@ const Home: React.FC = () => {
       subtitle: 'Polished, natural definition for daily confidence',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
+      healingTimeline: '10 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
@@ -135,6 +138,7 @@ const Home: React.FC = () => {
       subtitle: 'Gentle enhancement for sparse brows',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
+      healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54408533403_ffd6a50432_c_d.jpg',
@@ -148,8 +152,10 @@ const Home: React.FC = () => {
       before: 'https://live.staticflickr.com/65535/54408702135_e8d00acc8f_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408565368_8a48233c1c_c_d.jpg',
       story: 'Complete brow makeover with soft, natural definition',
+      subtitle: 'Full makeover for thin, undefined brows',
       technique: 'Microshading',
       healingStatus: 'healed',
+      healingTimeline: '8 weeks healed',
     },
   ];
 
@@ -402,103 +408,49 @@ const Home: React.FC = () => {
             </div>
           </AnimatedSection>
 
-          {/* Interactive transformation viewer */}
-          <AnimatedSection delay={2}>
-            <div className="relative">
-              <div className="grid lg:grid-cols-2 gap-8 items-center">
-                {/* Before/After display */}
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={`transformation-${activeTransformation}`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5 }}
-                      className="absolute inset-0 flex"
-                    >
-                      <div className="relative w-1/2 h-full">
-                        <img 
-                          src={transformations[activeTransformation].before} 
-                          alt="Before transformation"
-                          className="absolute inset-0 w-full h-full object-cover"
-                          loading="lazy"
-                          width="400"
-                          height="500"
-                          decoding="async"
-                        />
-                        <div className="absolute bottom-4 left-4 bg-[#2D2D2B]/80 backdrop-blur-sm text-white text-xs px-4 py-2 rounded-full font-medium tracking-wide">
-                          Before
-                        </div>
-                      </div>
-                      <div className="relative w-1/2 h-full">
-                        <img 
-                          src={transformations[activeTransformation].after} 
-                          alt="After transformation"
-                          className="absolute inset-0 w-full h-full object-cover"
-                          loading="lazy"
-                          width="400"
-                          height="500"
-                          decoding="async"
-                        />
-                        <div className="absolute bottom-4 right-4 bg-[#E6DAD2] text-[#2D2D2B] text-xs px-4 py-2 rounded-full font-medium tracking-wide">
-                          After
-                        </div>
-                      </div>
-                      {/* Center divider */}
-                      <div className="absolute inset-y-0 left-1/2 w-1 bg-white shadow-lg -translate-x-1/2" />
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
-
-                {/* Transformation details */}
-                <div className="lg:pl-12">
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={`details-${activeTransformation}`}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -20 }}
-                      transition={{ duration: 0.4 }}
-                    >
-                      <span className="inline-block bg-[#E6DAD2] text-[#2D2D2B] text-xs px-4 py-2 rounded-full font-medium tracking-wide mb-6">
-                        {transformations[activeTransformation].technique}
-                      </span>
-                      <h3 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] leading-relaxed mb-3">
-                        {transformations[activeTransformation].story}
-                      </h3>
-                      <p className="text-[#2D2D2B]/70 font-light text-lg mb-8">
-                        {transformations[activeTransformation].subtitle}
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
-
-                  {/* Navigation dots */}
-                  <div className="flex gap-3 mb-8">
-                    {transformations.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setActiveTransformation(index)}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                          index === activeTransformation 
-                            ? 'bg-[#2D2D2B] w-8' 
-                            : 'bg-[#2D2D2B]/20 hover:bg-[#2D2D2B]/40'
-                        }`}
-                        aria-label={`View transformation ${index + 1}`}
-                      />
-                    ))}
+          {/* Stacked interactive before/after sliders */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {transformations.slice(0, 6).map((t, index) => (
+              <AnimatedSection key={index} delay={index * 1.5}>
+                <div className="group">
+                  <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                    <BeforeAfterSlider
+                      beforeImage={t.before}
+                      afterImage={t.after}
+                      healingLabel={t.healingStatus === 'healed' ? (t.healingTimeline || 'Healed') : undefined}
+                    />
                   </div>
-
-                  <Link 
-                    to="/gallery" 
-                    className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300"
-                  >
-                    <span>View full gallery</span>
-                    <ArrowRight size={18} />
-                  </Link>
+                  <div className="mt-4 px-1">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="inline-block bg-[#E6DAD2] text-[#2D2D2B] text-[11px] px-3 py-1 rounded-full font-medium tracking-wide">
+                        {t.technique}
+                      </span>
+                      {t.healingStatus === 'fresh' && (
+                        <span className="text-[11px] px-3 py-1 rounded-full font-medium bg-amber-100 text-amber-700">
+                          ◐ Fresh
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-lg font-cormorant font-semibold text-[#2D2D2B]">
+                      {t.story}
+                    </h3>
+                    {t.subtitle && (
+                      <p className="text-sm text-[#2D2D2B]/60 font-light">{t.subtitle}</p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection className="text-center mt-12">
+            <Link 
+              to="/gallery" 
+              className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group"
+            >
+              <span>View full gallery with more healed results</span>
+              <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
           </AnimatedSection>
         </div>
       </section>
@@ -518,14 +470,39 @@ const Home: React.FC = () => {
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" 
-                    alt="Mugi - PMU Artist" 
+                    alt="Mugi - PMU Artist performing ombre brow procedure" 
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
+
+                {/* Studio environment mini-gallery */}
+                <div className="grid grid-cols-2 gap-3 mt-4">
+                  <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://live.staticflickr.com/65535/54366208951_7b5cbbc391_o_d.jpg" 
+                      alt="InkMugi private treatment suite — serene, clinical environment" 
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://live.staticflickr.com/65535/54408531279_0e59fb1f6f_o_d.jpg" 
+                      alt="Professional PMU workstation with medical-grade equipment" 
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+                <p className="text-center text-xs text-[#2D2D2B]/50 mt-2">
+                  Private studio • 7857 Heritage Dr #330, Annandale
+                </p>
                 
                 {/* Floating credential card */}
                 <motion.div 
-                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[220px]"
+                  className="absolute top-[calc(75%-32px)] -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[220px] z-10"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.6 }}
@@ -673,95 +650,31 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          STANDARDS — Non-Negotiable Principles (PATCH 7)
-          Philosophy: Premium buyers want standards more than hype.
-          Quiet luxury trust through clear principles.
+          SERVICES & STANDARDS — Combined Section
+          Philosophy: Show what you offer alongside why it's different.
+          Standards become the differentiator within each service card.
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        <div className="container-custom">
-          <AnimatedSection className="text-center mb-16">
-            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-              My Principles
-            </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-              My Standards<br />
-              <span className="text-[#2D2D2B]/60">(Non-Negotiable)</span>
-            </h2>
-          </AnimatedSection>
-
-          <div className="max-w-4xl mx-auto">
-            <AnimatedSection delay={2}>
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: Shield,
-                    title: 'Healed-first philosophy',
-                    desc: 'I show healed work (6+ weeks), not fresh swelling.'
-                  },
-                  {
-                    icon: CheckCircle2,
-                    title: 'Design approved before pigment',
-                    desc: 'Nothing permanent happens until you approve.'
-                  },
-                  {
-                    icon: Heart,
-                    title: 'Unrushed appointments',
-                    desc: 'Your comfort matters more than speed.'
-                  },
-                  {
-                    icon: Award,
-                    title: 'Natural results that age well',
-                    desc: 'No trend brows that look harsh over time.'
-                  },
-                  {
-                    icon: Sparkles,
-                    title: 'Support through healing',
-                    desc: 'You can message me during healing with questions.'
-                  },
-                ].map((standard, index) => (
-                  <div key={index} className="flex gap-4 p-6 bg-[#F9F7F5] rounded-xl hover:bg-[#F7EDE6] transition-colors duration-300">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
-                        <standard.icon size={20} className="text-[#2D2D2B]" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-[#2D2D2B] mb-2">{standard.title}</h3>
-                      <p className="text-sm text-[#2D2D2B]/70">{standard.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════════
-          SERVICES — Transformation, Not Transactions  
-          Philosophy: Sell the transformation, not the procedure.
-          Every service solves a deeper emotional need.
-      ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-[#F7EDE6] relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-[#E6DAD2]/40 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-[#E6DAD2]/20 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
         
         <div className="container-custom relative">
-          <AnimatedSection className="text-center mb-20">
+          <AnimatedSection className="text-center mb-16">
             <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-              Services
+              Services & Standards
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
               Find your <span className="italic">signature</span> look
             </h2>
-            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-xl mx-auto">
-              Three distinct techniques. One perfect match for you.
+            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
+              Two distinct techniques. One perfect match for you. Every service includes our non-negotiable standards.
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Service cards */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
             {services.map((service, index) => (
               <AnimatedSection key={index} delay={index * 2}>
-                <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                <div className="group bg-[#F9F7F5] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative h-64 overflow-hidden">
                     <img 
@@ -825,12 +738,37 @@ const Home: React.FC = () => {
             ))}
           </div>
 
-          <AnimatedSection className="text-center mt-12">
+          {/* Non-negotiable standards — compact strip */}
+          <AnimatedSection>
+            <div className="bg-[#F7EDE6] rounded-2xl p-8 md:p-10 max-w-4xl mx-auto">
+              <h3 className="text-xl font-cormorant font-semibold text-[#2D2D2B] text-center mb-8">
+                Every service includes these <span className="italic">non-negotiables</span>
+              </h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                {[
+                  { icon: Shield, label: 'Healed-first philosophy' },
+                  { icon: CheckCircle2, label: 'Design approved before pigment' },
+                  { icon: Heart, label: 'Unrushed appointments' },
+                  { icon: Award, label: 'Results that age well' },
+                  { icon: Sparkles, label: 'Healing text support' },
+                ].map((standard, index) => (
+                  <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-xl">
+                    <div className="w-9 h-9 rounded-full bg-[#E6DAD2]/50 flex items-center justify-center flex-shrink-0">
+                      <standard.icon size={16} className="text-[#2D2D2B]" />
+                    </div>
+                    <span className="text-sm font-medium text-[#2D2D2B]/80">{standard.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection className="text-center mt-10">
             <Link 
               to="/services" 
               className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300"
             >
-              <span>Explore all services</span>
+              <span>Explore all services & pricing</span>
               <ArrowRight size={18} />
             </Link>
           </AnimatedSection>
@@ -960,59 +898,9 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          WHO THIS IS BEST FOR — SEO + Pre-qualification (PATCH 9)
-          Philosophy: Help clients self-identify + boost local SEO
-      ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <AnimatedSection className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] mb-4">
-                Who This Works Best For
-              </h2>
-            </AnimatedSection>
-
-            <AnimatedSection delay={2}>
-              <div className="bg-[#F9F7F5] rounded-2xl p-8 md:p-10">
-                <h3 className="text-xl font-medium text-[#2D2D2B] mb-6">Best for:</h3>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80"><strong>Oily skin</strong> (microshading holds better)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80"><strong>Sparse/overplucked brows</strong></span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80"><strong>Busy professionals</strong> who want "wake up polished"</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80"><strong>Previous PMU that faded patchy</strong> (case-by-case)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#2D2D2B] mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80"><strong>Anyone who wants soft, natural healed brows</strong></span>
-                  </li>
-                </ul>
-                
-                <div className="pt-6 border-t border-[#E6DAD2]/30">
-                  <p className="text-sm text-[#2D2D2B]/70">
-                    <strong className="text-[#2D2D2B]">Serving:</strong> Annandale, McLean, Arlington, Great Falls, Fairfax, Alexandria, Vienna & Washington DC
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════════
-          WHO I SERVE BEST — Client Qualification Filter
-          Philosophy: The right clients self-select in. The wrong clients self-select out.
-          This is intentional filtering, not exclusion.
+          WHO THIS IS FOR — Combined Best-For + Qualification Filter
+          Philosophy: Help clients self-identify AND self-qualify in one section.
+          Reduces cognitive load, maintains the intentional filtering message.
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="py-16 md:py-24 lg:py-32 bg-[#F7EDE6] relative overflow-hidden">
         <div className="container-custom">
@@ -1023,16 +911,13 @@ const Home: React.FC = () => {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
               Is this <span className="italic">right</span> for you?
             </h2>
-            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto mb-4">
-              This consultation-based service is designed for women who value predictability, healed results, and professional guidance.
-            </p>
             <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
-              I believe in conscious connections. My work requires deep presence, and I only take clients where I know I can deliver transformation—not just a service.
+              This consultation-based service is designed for women who value predictability, healed results, and professional guidance.
             </p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* This is for you if... */}
+            {/* Best for / This is for you if... */}
             <AnimatedSection delay={1}>
               <div className="bg-white rounded-2xl p-8 md:p-10 h-full">
                 <div className="flex items-center gap-3 mb-6">
@@ -1046,11 +931,15 @@ const Home: React.FC = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You value <strong>artistry and intention</strong> over speed and discounts</span>
+                    <span className="text-[#2D2D2B]/80">You have <strong>oily/combo skin</strong> or <strong>sparse brows</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You understand this is an <strong>investment in yourself</strong>, not an expense</span>
+                    <span className="text-[#2D2D2B]/80">You're a <strong>busy professional</strong> who wants "wake up polished"</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-[#2D2D2B]/80">You value <strong>artistry and intention</strong> over speed and discounts</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -1058,11 +947,7 @@ const Home: React.FC = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You value a <strong>calm, unrushed environment</strong> and thoughtful care</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You're seeking <strong>long-term results</strong>, not a quick cosmetic fix</span>
+                    <span className="text-[#2D2D2B]/80">You're seeking <strong>long-term, natural healed results</strong></span>
                   </li>
                 </ul>
               </div>
@@ -1107,6 +992,13 @@ const Home: React.FC = () => {
               </div>
             </AnimatedSection>
           </div>
+
+          {/* Local SEO serving line */}
+          <AnimatedSection className="text-center mt-10">
+            <p className="text-sm text-[#2D2D2B]/60">
+              <strong className="text-[#2D2D2B]/80">Serving:</strong> Annandale, McLean, Arlington, Great Falls, Fairfax, Alexandria, Vienna & Washington DC
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
