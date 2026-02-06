@@ -191,6 +191,9 @@ const Home: React.FC = () => {
             "logo": "https://www.inkmugi.com/logo.png",
             "image": "https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg",
             "telephone": "+1-571-283-8228",
+            "founder": {
+              "@id": "https://www.inkmugi.com/#mugi"
+            },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "7857 Heritage Dr #330",
@@ -229,7 +232,48 @@ const Home: React.FC = () => {
             "name": "Ink Mugi",
             "publisher": {
               "@id": "https://www.inkmugi.com/#business"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.inkmugi.com/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
             }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Get Ombre Powder Brows at Ink Mugi",
+            "description": "The complete process for getting professional ombre powder brows, from free consultation through 6-week healing and perfecting session.",
+            "totalTime": "PT42D",
+            "estimatedCost": {
+              "@type": "MonetaryAmount",
+              "currency": "USD",
+              "value": "600"
+            },
+            "step": processSteps.map((step, i) => ({
+              "@type": "HowToStep",
+              "position": i + 1,
+              "name": step.title,
+              "text": step.description,
+              "url": `https://www.inkmugi.com/#step-${step.number}`
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Ink Mugi | Permanent Makeup Studio in Annandale, VA",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".hero-tagline", ".process-description"]
+            },
+            "url": "https://www.inkmugi.com/"
           })}
         </script>
       </Helmet>

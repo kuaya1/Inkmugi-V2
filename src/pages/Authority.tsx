@@ -121,26 +121,45 @@ export default function Authority() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HealthAndBeautyBusiness",
-            "@id": "https://www.inkmugi.com/#business",
-            "name": "Ink Mugi",
-            "url": "https://www.inkmugi.com/",
-            "logo": "https://www.inkmugi.com/logo.png",
-            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-            "telephone": "+1-571-283-8228",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "7857 Heritage Dr #330",
-              "addressLocality": "Annandale",
-              "addressRegion": "VA",
-              "postalCode": "22003",
-              "addressCountry": "US"
+            "@type": "CollectionPage",
+            "name": "Permanent Makeup Education Hub",
+            "description": "Evidence-based permanent makeup research from 523+ procedures. Data studies, safety reports, myth-busting, and climate performance analysis.",
+            "url": "https://www.inkmugi.com/authority",
+            "isPartOf": {
+              "@id": "https://www.inkmugi.com/#website"
             },
-            "priceRange": "$$$",
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Annandale, VA"
-            }
+            "about": {
+              "@id": "https://www.inkmugi.com/#business"
+            },
+            "author": {
+              "@id": "https://www.inkmugi.com/#mugi"
+            },
+            "hasPart": [
+              {
+                "@type": "Article",
+                "name": "PMU Data & Longevity Guide",
+                "url": "https://www.inkmugi.com/pmu-data-guide",
+                "description": "Comprehensive analysis of retention rates, longevity factors, and performance metrics from 523+ procedures."
+              },
+              {
+                "@type": "Article",
+                "name": "Clinical Safety in the DMV",
+                "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
+                "description": "Evidence-based safety protocols with 0.19% complication rate—13x safer than industry average."
+              },
+              {
+                "@type": "Article",
+                "name": "PMU Myths vs. Clinical Facts",
+                "url": "https://www.inkmugi.com/pmu-myths-facts",
+                "description": "12 common permanent makeup myths debunked with clinical data from 523+ procedures."
+              },
+              {
+                "@type": "Article",
+                "name": "Humid Climate Performance Analysis",
+                "url": "https://www.inkmugi.com/climate-performance-analysis",
+                "description": "Regional study showing 340% advantage for powder brows in high-humidity DMV climate."
+              }
+            ]
           })}
         </script>
 
@@ -163,6 +182,18 @@ export default function Authority() {
                 "item": "https://www.inkmugi.com/authority"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Permanent Makeup Education Hub | Ink Mugi",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".voice-answer", ".quick-answer", ".featured-info"]
+            },
+            "url": "https://www.inkmugi.com/authority"
           })}
         </script>
       </Helmet>

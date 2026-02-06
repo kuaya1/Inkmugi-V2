@@ -204,13 +204,25 @@ export default function PMUDataGuide() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "PMU Longevity Data: 523 Procedures Analysis",
-            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://www.inkmugi.com/pmu-data-guide",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "Comprehensive PMU longevity data from 523+ procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison."
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "PMU Longevity Data: 523 Procedures Analysis",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".voice-answer", "h1", "h2"]
+            },
+            "url": "https://www.inkmugi.com/pmu-data-guide"
           })}
         </script>
       </Helmet>

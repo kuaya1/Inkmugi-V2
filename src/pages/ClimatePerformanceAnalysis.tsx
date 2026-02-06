@@ -212,13 +212,25 @@ const ClimatePerformanceAnalysis = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Humid Climate Performance Analysis: PMU Longevity in DMV Region",
-            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://www.inkmugi.com/climate-performance-analysis",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Humid Climate Performance Analysis: PMU Longevity in DMV Region",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".voice-answer", ".quick-answer", ".featured-info", ".ai-optimized-content"]
+            },
+            "url": "https://www.inkmugi.com/climate-performance-analysis"
           })}
         </script>
       </Helmet>

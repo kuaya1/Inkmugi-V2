@@ -47,22 +47,34 @@ const BlogPost: React.FC = () => {
             "image": post.image,
             "author": {
               "@type": "Person",
-              "name": post.author
+              "@id": "https://www.inkmugi.com/#mugi",
+              "name": post.author,
+              "jobTitle": post.authorTitle,
+              "url": "https://www.inkmugi.com/about"
             },
             "publisher": {
               "@type": "Organization",
+              "@id": "https://www.inkmugi.com/#business",
               "name": "Ink Mugi",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
               }
             },
-            "datePublished": post.date,
-            "dateModified": post.date,
+            "datePublished": (() => {
+              const d = new Date(post.date);
+              return isNaN(d.getTime()) ? post.date : d.toISOString().split('T')[0];
+            })(),
+            "dateModified": (() => {
+              const d = new Date(post.date);
+              return isNaN(d.getTime()) ? post.date : d.toISOString().split('T')[0];
+            })(),
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": `https://www.inkmugi.com/blog/${post.slug}`
-            }
+            },
+            "keywords": post.tags.join(', '),
+            "articleSection": post.category
           })}
         </script>
         <script type="application/ld+json">

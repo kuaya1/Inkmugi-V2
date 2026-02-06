@@ -26,13 +26,66 @@ const About: React.FC = () => {
 
   const personSchema = {
     "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.inkmugi.com/#mugi",
+    "name": "Mugi",
+    "jobTitle": "Licensed Permanent Cosmetic Tattooer",
+    "description": "Virginia-licensed permanent makeup artist specializing in ombre powder brows with 523+ documented procedures and a 0.19% complication rate. Founder of Ink Mugi in Annandale, VA.",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+    "url": "https://www.inkmugi.com/about",
+    "worksFor": {
+      "@id": "https://www.inkmugi.com/#business"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "license",
+        "name": "Virginia Permanent Cosmetic Tattooer License",
+        "identifier": "1231002471",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Virginia Board for Barbers and Cosmetology"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "Bloodborne Pathogens Certification",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "OSHA"
+        }
+      }
+    ],
+    "knowsAbout": [
+      "Ombre Powder Brows",
+      "Microshading",
+      "Permanent Makeup Safety Protocols",
+      "PMU Healing Process",
+      "Oily Skin PMU Techniques",
+      "Korean PMU Techniques",
+      "Color Theory for Permanent Makeup",
+      "Skin Analysis for PMU",
+      "PMU Aftercare",
+      "Humid Climate PMU Performance"
+    ],
+    "sameAs": [
+      "https://www.instagram.com/inkmugi"
+    ]
+  };
+
+  const businessSchema = {
+    "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
     "@id": "https://www.inkmugi.com/#business",
     "name": "Ink Mugi",
     "url": "https://www.inkmugi.com/",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "logo": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "telephone": "+1-571-283-8228",
+    "founder": {
+      "@id": "https://www.inkmugi.com/#mugi"
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "7857 Heritage Dr #330",
@@ -42,10 +95,20 @@ const About: React.FC = () => {
       "addressCountry": "US"
     },
     "priceRange": "$$$",
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Annandale, VA"
-    }
+    "areaServed": [
+      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+    ],
+    "knowsAbout": [
+      "Ombre Powder Brows",
+      "Microshading",
+      "Permanent Makeup",
+      "PMU Safety Protocols",
+      "Cosmetic Tattooing"
+    ]
   };
 
   const certifications = [
@@ -122,6 +185,9 @@ const About: React.FC = () => {
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(personSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(businessSchema)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

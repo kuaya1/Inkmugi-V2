@@ -195,6 +195,45 @@ const SignatureOmbreBrows: React.FC = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How Ombre Powder Brows Are Done: Step-by-Step Process",
+            "description": "Complete step-by-step process for getting ombre powder brows at Ink Mugi, from design consultation to perfected result at 6-week touch-up.",
+            "totalTime": "PT42D",
+            "estimatedCost": {
+              "@type": "MonetaryAmount",
+              "currency": "USD",
+              "value": "600"
+            },
+            "supply": [
+              { "@type": "HowToSupply", "name": "Medical-grade numbing cream" },
+              { "@type": "HowToSupply", "name": "Vegan hypoallergenic pigments" },
+              { "@type": "HowToSupply", "name": "Single-use sterile needles" },
+              { "@type": "HowToSupply", "name": "Hospital-grade aftercare kit" }
+            ],
+            "step": processSteps.map((s) => ({
+              "@type": "HowToStep",
+              "position": s.step,
+              "name": s.title,
+              "text": s.description,
+              "url": `https://www.inkmugi.com/signature-ombre-brows#step-${s.step}`
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Ombre Powder Brows in Annandale, VA | Ink Mugi",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".faq-answer"]
+            },
+            "url": "https://www.inkmugi.com/signature-ombre-brows"
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-white">

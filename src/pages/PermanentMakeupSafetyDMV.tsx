@@ -129,13 +129,39 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Permanent Makeup Safety Guide: Hospital-Grade PMU Protocols",
-            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "Hospital-grade PMU safety protocols at Ink Mugi. 0.19% complication rate vs 2.5% industry average. Virginia-licensed, bloodborne pathogens certified."
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": safetyFaqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Permanent Makeup Safety Guide | Ink Mugi",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".safety-answer"]
+            },
+            "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv"
           })}
         </script>
       </Helmet>

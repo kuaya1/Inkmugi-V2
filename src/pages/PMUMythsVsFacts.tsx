@@ -170,13 +170,39 @@ export default function PMUMythsVsFacts() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "12 PMU Myths Debunked with Clinical Data",
-            "author": { "@type": "Person", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://www.inkmugi.com/pmu-myths-facts",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results."
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": myths.map(m => ({
+              "@type": "Question",
+              "name": `Is it true that ${m.myth.toLowerCase()}?`,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": `${m.fact}. ${m.evidence}`
+              }
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "PMU Myths vs. Clinical Facts | Ink Mugi",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".myth-fact"]
+            },
+            "url": "https://www.inkmugi.com/pmu-myths-facts"
           })}
         </script>
       </Helmet>
