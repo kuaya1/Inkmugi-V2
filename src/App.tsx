@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import StickyMobileBookingBar from './components/StickyMobileBookingBar';
 
 // Critical routes - loaded immediately
 import Home from './pages/Home';
@@ -76,6 +77,7 @@ function App() {
         </Suspense>
       </main>
       <Footer />
+      <StickyMobileBookingBar />
     </div>
   );
 }

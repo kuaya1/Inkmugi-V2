@@ -127,14 +127,12 @@ const Navbar: React.FC = () => {
           </Link>
           */}
           
-          <a
-            href="https://www.vagaro.com/inkmugi"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/booking"
             className="btn btn-primary text-sm py-2 px-4"
           >
-            Book Now
-          </a>
+            Request a Consultation
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -194,14 +192,12 @@ const Navbar: React.FC = () => {
             <span>Call (571) 283-8228</span>
           </a>
           
-          <a
-            href="https://www.vagaro.com/inkmugi"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/booking"
             className="btn btn-primary text-sm py-2 w-full"
           >
-            Book Now
-          </a>
+            Request a Consultation
+          </Link>
 
           {/* Social Icons - Mobile */}
           <div className="flex items-center space-x-4 pt-2">

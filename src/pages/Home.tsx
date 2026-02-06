@@ -241,8 +241,8 @@ const Home: React.FC = () => {
           The viewer should feel something before they read anything.
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Cinematic gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-10" />
+        {/* Cinematic gradient overlay — lightened to show healed result detail */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/60 z-10" />
         
         {/* Subtle grain texture for depth */}
         <div className="absolute inset-0 z-[11] opacity-[0.03] mix-blend-overlay"
@@ -253,15 +253,15 @@ const Home: React.FC = () => {
         <picture>
           <source 
             media="(max-width: 767px)" 
-            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg"
+            srcSet="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
           />
           <source 
             media="(min-width: 768px)" 
-            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
+            srcSet="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
           />
           <img
-            src="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
-            alt="Ombre powder brows transformation by Inkmugi"
+            src="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
+            alt="Healed ombre powder brows result at 8 weeks by Inkmugi - Annandale VA"
             className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[2000ms]"
             style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)' }}
             width="1920"
@@ -382,7 +382,7 @@ const Home: React.FC = () => {
           Philosophy: The strongest argument is visual proof. 
           No description needed when the transformation is undeniable.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-[#F9F7F5] relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#F9F7F5] relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-[#E6DAD2]/30 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         
@@ -508,7 +508,7 @@ const Home: React.FC = () => {
           Philosophy: People don't buy services. They buy from people they trust.
           Lead with warmth, follow with expertise.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="container-custom">
           <div className="grid lg:grid-cols-12 gap-16 items-center">
             {/* Image column */}
@@ -601,7 +601,7 @@ const Home: React.FC = () => {
           Philosophy: Fear comes from the unknown. Illuminate every step.
           Transform anxiety into anticipation.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-[#2D2D2B] text-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#2D2D2B] text-white relative overflow-hidden">
         {/* Subtle background texture */}
         <div className="absolute inset-0 opacity-5"
           style={{ 
@@ -677,7 +677,7 @@ const Home: React.FC = () => {
           Philosophy: Premium buyers want standards more than hype.
           Quiet luxury trust through clear principles.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-16">
             <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
@@ -742,7 +742,7 @@ const Home: React.FC = () => {
           Philosophy: Sell the transformation, not the procedure.
           Every service solves a deeper emotional need.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-[#F7EDE6] relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#F7EDE6] relative overflow-hidden">
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-[#E6DAD2]/40 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
         
         <div className="container-custom relative">
@@ -842,7 +842,7 @@ const Home: React.FC = () => {
           Philosophy: Statistics inform. Stories transform.
           Let real voices paint the picture of transformation.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
         {/* Decorative background */}
         <div className="absolute top-20 left-20 w-[400px] h-[400px] bg-[#F7EDE6] rounded-full filter blur-3xl opacity-50" />
         <div className="absolute bottom-20 right-20 w-[300px] h-[300px] bg-[#E6DAD2] rounded-full filter blur-3xl opacity-30" />
@@ -963,7 +963,7 @@ const Home: React.FC = () => {
           WHO THIS IS BEST FOR — SEO + Pre-qualification (PATCH 9)
           Philosophy: Help clients self-identify + boost local SEO
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-16 lg:py-20 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <AnimatedSection className="text-center mb-12">
@@ -1014,7 +1014,7 @@ const Home: React.FC = () => {
           Philosophy: The right clients self-select in. The wrong clients self-select out.
           This is intentional filtering, not exclusion.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-32 bg-[#F7EDE6] relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#F7EDE6] relative overflow-hidden">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-16">
             <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
@@ -1115,7 +1115,7 @@ const Home: React.FC = () => {
           Philosophy: This isn't a sales pitch. It's an invitation to begin.
           Warm. Personal. Low pressure.
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="relative py-32 overflow-hidden">
+      <section id="final-cta-section" className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
         {/* Background image with overlay */}
         <div className="absolute inset-0">
           <div 
