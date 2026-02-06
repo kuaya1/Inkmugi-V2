@@ -105,55 +105,29 @@ const Home: React.FC = () => {
   // Transformations gallery
   const transformations = [
     {
-      before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
-      after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
-      story: 'Natural Ombre Transformation',
-      subtitle: 'From sparse, uneven brows to soft, defined shape',
+      before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
+      story: 'Natural Brow Restoration',
+      subtitle: 'Nicole S. - After three failed attempts elsewhere, I finally have brows I love!',
       technique: 'Signature Transformation',
       healingStatus: 'healed',
-      healingTimeline: '8 weeks healed',
+      healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
       story: 'Soft Powder Microshading',
-      subtitle: 'Delicate enhancement for busy professional',
+      subtitle: 'Jessica R. - Thank you for fixing my botched brows. You\'re truly an artist!',
       technique: 'Microshading Artistry',
       healingStatus: 'healed',
       healingTimeline: '6 weeks healed',
     },
     {
-      before: 'https://live.staticflickr.com/65535/54366216764_db37388bbe_c_d.jpg',
-      after: 'https://live.staticflickr.com/65535/54366013611_5cc68ab55d_c_d.jpg',
-      story: 'Professional Executive Look',
-      subtitle: 'Polished, natural definition for daily confidence',
+      before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
+      story: 'Natural Ombre Transformation',
+      subtitle: 'Kate M. - My confidence has soared since getting my brows done here.',
       technique: 'Signature Transformation',
-      healingStatus: 'healed',
-      healingTimeline: '10 weeks healed',
-    },
-    {
-      before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
-      after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
-      story: 'Natural Brow Restoration',
-      subtitle: 'Gentle enhancement for sparse brows',
-      technique: 'Signature Transformation',
-      healingStatus: 'healed',
-      healingTimeline: '6 weeks healed',
-    },
-    {
-      before: 'https://live.staticflickr.com/65535/54408533403_ffd6a50432_c_d.jpg',
-      after: 'https://live.staticflickr.com/65535/54408670015_5b248eb7d2_c_d.jpg',
-      story: 'Balanced, Elegant Shape',
-      subtitle: 'Soft correction for asymmetric brows',
-      technique: 'Microshading Artistry',
-      healingStatus: 'fresh',
-    },
-    {
-      before: 'https://live.staticflickr.com/65535/54408702135_e8d00acc8f_c_d.jpg',
-      after: 'https://live.staticflickr.com/65535/54408565368_8a48233c1c_c_d.jpg',
-      story: 'Complete brow makeover with soft, natural definition',
-      subtitle: 'Full makeover for thin, undefined brows',
-      technique: 'Microshading',
       healingStatus: 'healed',
       healingTimeline: '8 weeks healed',
     },
@@ -259,15 +233,15 @@ const Home: React.FC = () => {
         <picture>
           <source 
             media="(max-width: 767px)" 
-            srcSet="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
+            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg"
           />
           <source 
             media="(min-width: 768px)" 
-            srcSet="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
+            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
           />
           <img
-            src="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
-            alt="Healed ombre powder brows result at 8 weeks by Inkmugi - Annandale VA"
+            src="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
+            alt="Ombre powder brows transformation by Inkmugi"
             className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[2000ms]"
             style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)' }}
             width="1920"
@@ -410,7 +384,7 @@ const Home: React.FC = () => {
 
           {/* Stacked interactive before/after sliders */}
           <AnimatedSection stagger staggerInterval={0.15} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {transformations.slice(0, 6).map((t, index) => (
+            {transformations.slice(0, 3).map((t, index) => (
                 <div key={index} className="group">
                   <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                     <BeforeAfterSlider
@@ -479,35 +453,10 @@ const Home: React.FC = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
-
-                {/* Studio environment mini-gallery */}
-                <div className="grid grid-cols-2 gap-3 mt-4">
-                  <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
-                    <img 
-                      src="https://live.staticflickr.com/65535/54366208951_7b5cbbc391_o_d.jpg" 
-                      alt="InkMugi private treatment suite — serene, clinical environment" 
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
-                    <img 
-                      src="https://live.staticflickr.com/65535/54408531279_0e59fb1f6f_o_d.jpg" 
-                      alt="Professional PMU workstation with medical-grade equipment" 
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                </div>
-                <p className="text-center text-xs text-[#2D2D2B]/50 mt-2">
-                  Private studio • 7857 Heritage Dr #330, Annandale
-                </p>
                 
                 {/* Floating credential card */}
                 <motion.div 
-                  className="absolute top-[calc(75%-32px)] -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[220px] z-10"
+                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[220px] z-10"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.6 }}
