@@ -13,6 +13,7 @@ import {
   Phone
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const OmbreBrowsArlington: React.FC = () => {
   const localSchema = {
@@ -327,21 +328,15 @@ const OmbreBrowsArlington: React.FC = () => {
       {/* FAQs */}
       <section className="py-20 bg-white">
         <div className="container-custom">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Questions from Arlington Clients
-            </h2>
-          </AnimatedSection>
-
-          <div className="max-w-3xl mx-auto space-y-4">
-            {faqs.map((faq, index) => (
-              <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="bg-[#F9F7F5] rounded-xl p-6">
-                  <h3 className="font-semibold text-[#2D2D2B] mb-2">{faq.question}</h3>
-                  <p className="text-[#2D2D2B]/70">{faq.answer}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+          <div className="max-w-3xl mx-auto">
+            <AnimatedSection>
+              <InlineFaqAccordion
+                faqs={faqs}
+                title="Questions from Arlington Clients"
+                subtitle="Tap a question to reveal the answer"
+                maxVisible={3}
+              />
+            </AnimatedSection>
           </div>
         </div>
       </section>

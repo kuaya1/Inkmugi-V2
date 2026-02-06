@@ -409,10 +409,9 @@ const Home: React.FC = () => {
           </AnimatedSection>
 
           {/* Stacked interactive before/after sliders */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <AnimatedSection stagger staggerInterval={0.15} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {transformations.slice(0, 6).map((t, index) => (
-              <AnimatedSection key={index} delay={index * 1.5}>
-                <div className="group">
+                <div key={index} className="group">
                   <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                     <BeforeAfterSlider
                       beforeImage={t.before}
@@ -439,18 +438,24 @@ const Home: React.FC = () => {
                     )}
                   </div>
                 </div>
-              </AnimatedSection>
-            ))}
-          </div>
+              ))}
+          </AnimatedSection>
 
           <AnimatedSection className="text-center mt-12">
-            <Link 
-              to="/gallery" 
-              className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group"
-            >
-              <span>View full gallery with more healed results</span>
-              <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link 
+                to="/gallery" 
+                className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group"
+              >
+                <span>View full gallery with more healed results</span>
+                <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+              <span className="hidden sm:inline text-[#2D2D2B]/30">|</span>
+              <div className="flex gap-3 text-sm">
+                <Link to="/gallery?filter=corrections" className="text-[#2D2D2B]/60 hover:text-[#2D2D2B] transition-colors underline underline-offset-4 decoration-[#E6DAD2]">Corrections</Link>
+                <Link to="/gallery?filter=nano-brows" className="text-[#2D2D2B]/60 hover:text-[#2D2D2B] transition-colors underline underline-offset-4 decoration-[#E6DAD2]">Nano Brows</Link>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
       </section>
@@ -464,7 +469,7 @@ const Home: React.FC = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-12 gap-16 items-center">
             {/* Image column */}
-            <AnimatedSection className="lg:col-span-5">
+            <AnimatedSection className="lg:col-span-5" variant="slide-right">
               <div className="relative">
                 {/* Main image */}
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
@@ -523,7 +528,7 @@ const Home: React.FC = () => {
             </AnimatedSection>
 
             {/* Content column */}
-            <AnimatedSection className="lg:col-span-7" delay={2}>
+            <AnimatedSection className="lg:col-span-7" delay={2} variant="slide-left">
               <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
                 Your Transformational Artist
               </span>
@@ -574,6 +579,53 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
+          MANIFESTO TEASER — Philosophy Bridge
+          Philosophy: Seed the brand manifesto on the homepage. Let visitors
+          feel the conviction before they ever click through to the full story.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-20 bg-[#F9F7F5] relative overflow-hidden">
+        {/* Radial ambient glow */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#E6DAD2]/20 blur-3xl" />
+        </div>
+        <div className="container-custom relative z-10">
+          <AnimatedSection variant="fade" className="text-center mb-10">
+            <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-3">
+              What I Believe
+            </span>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] leading-tight">
+              Five promises I make to every client.
+            </h2>
+          </AnimatedSection>
+
+          <AnimatedSection stagger staggerInterval={0.1} className="max-w-3xl mx-auto">
+            {[
+              'Your face is the blueprint — never a template.',
+              'Healed is the only result that matters.',
+              'Calm is not a luxury — it\'s a prerequisite.',
+              'Saying "no" is part of the service.',
+              'Transformation is about more than brows.',
+            ].map((line, i) => (
+              <div key={i} className="flex items-center gap-4 py-3 border-b border-[#E6DAD2]/50 last:border-b-0">
+                <span className="text-sm font-cormorant font-semibold text-[#2D2D2B]/30 w-8 shrink-0">0{i + 1}</span>
+                <p className="text-[#2D2D2B]/80 text-base md:text-lg font-light tracking-wide">{line}</p>
+              </div>
+            ))}
+          </AnimatedSection>
+
+          <AnimatedSection variant="fade" className="text-center mt-10">
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 text-[#2D2D2B]/70 hover:text-[#2D2D2B] text-sm tracking-wide transition-colors duration-300 group"
+            >
+              <span>Read my full manifesto</span>
+              <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
           THE EXPERIENCE — Demystifying The Process
           Philosophy: Fear comes from the unknown. Illuminate every step.
           Transform anxiety into anticipation.
@@ -607,7 +659,7 @@ const Home: React.FC = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
-                <AnimatedSection key={index} delay={index * 2}>
+                <AnimatedSection key={index} delay={index * 2} variant="scale">
                   <div className="relative group">
                     {/* Step card */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-[#E6DAD2]/30 transition-all duration-500 h-full">
@@ -863,10 +915,9 @@ const Home: React.FC = () => {
           </AnimatedSection>
 
           {/* Testimonial grid */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <AnimatedSection stagger staggerInterval={0.12} className="grid md:grid-cols-3 gap-6">
             {testimonials.slice(1).map((testimonial, index) => (
-              <AnimatedSection key={index} delay={index * 2}>
-                <div className="bg-[#F9F7F5] rounded-2xl p-6 h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
+                <div key={index} className="bg-[#F9F7F5] rounded-2xl p-6 h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -891,9 +942,8 @@ const Home: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </AnimatedSection>
             ))}
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 

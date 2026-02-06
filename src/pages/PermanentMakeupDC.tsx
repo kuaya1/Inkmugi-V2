@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { 
-  MapPin, 
   Clock, 
   Star, 
   CheckCircle, 
@@ -14,6 +13,7 @@ import {
   Building
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const PermanentMakeupDC: React.FC = () => {
   const localSchema = {
@@ -375,22 +375,12 @@ const PermanentMakeupDC: React.FC = () => {
       {/* FAQs */}
       <section className="py-20 bg-white">
         <div className="container-custom">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Questions from DC Clients
-            </h2>
-          </AnimatedSection>
-
-          <div className="max-w-3xl mx-auto space-y-4">
-            {faqs.map((faq, index) => (
-              <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="bg-[#F9F7F5] rounded-xl p-6">
-                  <h3 className="font-semibold text-[#2D2D2B] mb-2">{faq.question}</h3>
-                  <p className="text-[#2D2D2B]/70">{faq.answer}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
+          <InlineFaqAccordion
+            faqs={faqs}
+            title="Questions from DC Clients"
+            subtitle="Tap a question to reveal the answer"
+            maxVisible={3}
+          />
         </div>
       </section>
 

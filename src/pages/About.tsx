@@ -528,6 +528,87 @@ const About: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
+          ARTIST MANIFESTO — The Philosophy
+          Philosophy: This is the soul of the brand. Raw, personal, differentiated.
+          It converts the "I'm still deciding" visitor into someone who *needs* to book.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-24 lg:py-32 bg-[#2D2D2B] text-white relative overflow-hidden">
+        {/* Subtle atmospheric gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D2D2B] via-[#2D2D2B] to-[#3a3835]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-[#E6DAD2]/5 to-transparent rounded-full blur-3xl" />
+
+        <div className="container-custom relative z-10">
+          <AnimatedSection variant="fade" className="text-center mb-16">
+            <span className="inline-flex items-center gap-3 text-[#E6DAD2]/70 tracking-[0.3em] text-xs uppercase font-light mb-8">
+              <span className="w-12 h-px bg-[#E6DAD2]/30" />
+              My Manifesto
+              <span className="w-12 h-px bg-[#E6DAD2]/30" />
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-light text-white leading-tight">
+              What I <span className="italic font-medium text-[#E6DAD2]">believe</span>
+            </h2>
+          </AnimatedSection>
+
+          {/* Manifesto pillars */}
+          <div className="max-w-4xl mx-auto">
+            <AnimatedSection stagger staggerInterval={0.2}>
+              {[
+                {
+                  number: '01',
+                  title: 'Your face is the blueprint.',
+                  body: 'I don\'t bring a template. I bring precision tools, years of training, and genuine curiosity about *your* face. The best brow shape already exists in your bone structure, your natural growth pattern, your proportions. My job is to reveal it — not impose something on top of it.',
+                },
+                {
+                  number: '02',
+                  title: 'Healed is the only result that matters.',
+                  body: 'Fresh work flatters every artist. Healed work tells the truth. That\'s why every photo in my portfolio is taken at 6+ weeks — when the pigment has settled, the skin has healed, and the brows look exactly like they will in real life. I don\'t hide behind filters or fresh-day swelling.',
+                },
+                {
+                  number: '03',
+                  title: 'Calm is not a luxury — it\'s a prerequisite.',
+                  body: 'You\'re trusting someone with your face. That deserves an environment of quiet focus — not background music you didn\'t choose, not a rotating door of clients, not an artist who\'s watching the clock. Every session is private, unrushed, and entirely about you.',
+                },
+                {
+                  number: '04',
+                  title: 'Saying "no" is part of the service.',
+                  body: 'If a shape won\'t age well, I\'ll tell you. If a technique isn\'t right for your skin type, I\'ll redirect. If now isn\'t the right time — maybe you\'re on retinol, or recently sunburned, or still undecided — I\'ll ask you to wait. Your long-term confidence matters more than today\'s booking.',
+                },
+                {
+                  number: '05',
+                  title: 'Transformation is about more than brows.',
+                  body: 'The women who sit in my chair are navigating something — divorce, motherhood, career change, health recovery, identity shifts. Brows are the surface. What we\'re really doing here is restoring a piece of yourself that felt lost. I never take that lightly.',
+                },
+              ].map((pillar) => (
+                <div key={pillar.number} className="flex gap-6 md:gap-10 mb-12 last:mb-0 group">
+                  <div className="flex-shrink-0 pt-1">
+                    <span className="text-3xl md:text-4xl font-cormorant font-light text-[#E6DAD2]/30 group-hover:text-[#E6DAD2]/60 transition-colors duration-500">
+                      {pillar.number}
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-cormorant font-medium text-white mb-3 group-hover:text-[#E6DAD2] transition-colors duration-300">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-white/60 leading-relaxed text-[15px]">
+                      {pillar.body}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </AnimatedSection>
+          </div>
+
+          {/* Closing signature */}
+          <AnimatedSection variant="fade" className="text-center mt-16">
+            <p className="text-lg md:text-xl font-cormorant italic text-[#E6DAD2]/80 max-w-xl mx-auto">
+              "Every brow I create is a quiet promise: I will advocate for your face, even when it's hard."
+            </p>
+            <p className="text-sm text-white/40 mt-4 tracking-wider">— Mugi</p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
           CTA — The Invitation
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="py-32 bg-[#2D2D2B] text-white relative overflow-hidden">

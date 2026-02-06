@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Instagram, Star, Quote, Loader } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
@@ -65,7 +65,7 @@ const EnhancedGalleryItem: React.FC<{
 };
 
 const Gallery: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [searchParams, setSearchParams] = useSearchParams();
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -73,11 +73,18 @@ const Gallery: React.FC = () => {
     beforeImage: string;
     afterImage: string;
     category: string;
+    label?: string;
     testimonial?: {
       text: string;
       author: string;
     };
   } | null>(null);
+
+  // URL-synced filter — reads ?filter=xxx from the URL
+  const activeFilter = searchParams.get('filter') || 'all';
+  const setActiveFilter = useCallback((id: string) => {
+    setSearchParams(id === 'all' ? {} : { filter: id }, { replace: true });
+  }, [setSearchParams]);
 
   const filters = [
     { id: 'all', name: 'All Work', icon: '✨' },
@@ -89,6 +96,7 @@ const Gallery: React.FC = () => {
 
   const galleryItems = [
     {
+      id: 'ombre-natural-1',
       beforeImage: 'https://live.staticflickr.com/65535/54366216764_db37388bbe_c_d.jpg',
       afterImage: 'https://live.staticflickr.com/65535/54366013611_5cc68ab55d_c_d.jpg',
       category: 'ombre-brows',
@@ -100,6 +108,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'ombre-wakeup-2',
       beforeImage: 'https://live.staticflickr.com/65535/54366410465_36d16e6c76_c_d.jpg',
       afterImage: 'https://live.staticflickr.com/65535/54366242388_db37388bbe_c_d.jpg',
       category: 'ombre-brows',
@@ -111,6 +120,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'correction-botched-3',
       beforeImage: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       afterImage: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
       category: 'corrections',
@@ -122,6 +132,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'touchup-refresh-4',
       beforeImage: 'https://live.staticflickr.com/65535/54366013656_643067f7b0_c_d.jpg',
       afterImage: 'https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg',
       category: 'touch-ups',
@@ -133,6 +144,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'ombre-confidence-5',
       beforeImage: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
       afterImage: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
       category: 'ombre-brows',
@@ -144,6 +156,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'correction-rescue-6',
       beforeImage: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
       afterImage: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
       category: 'corrections',
@@ -155,6 +168,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'nano-precision-7',
       beforeImage: '/IMG_0818.jpg',
       afterImage: '/IMG_0819.jpg',
       category: 'nano-brows',
@@ -166,6 +180,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'nano-natural-8',
       beforeImage: '/IMG_1148.jpg',
       afterImage: '/IMG_1149.jpg',
       category: 'nano-brows',
@@ -177,6 +192,7 @@ const Gallery: React.FC = () => {
       }
     },
     {
+      id: 'ombre-artistry-9',
       beforeImage: '/IMG_1324.jpg',
       afterImage: '/IMG_1325.jpg',
       category: 'ombre-brows',
@@ -198,6 +214,10 @@ const Gallery: React.FC = () => {
     setCurrentImageIndex(index);
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
+    // Deep-link: add item ID to URL for shareability
+    const params = new URLSearchParams(searchParams);
+    params.set('item', item.id);
+    setSearchParams(params, { replace: true });
   };
 
   const closeModal = () => {
@@ -205,6 +225,10 @@ const Gallery: React.FC = () => {
     setSelectedImage(null);
     setZoomLevel(1);
     document.body.style.overflow = 'auto';
+    // Remove item deep-link from URL
+    const params = new URLSearchParams(searchParams);
+    params.delete('item');
+    setSearchParams(params, { replace: true });
   };
 
   const navigateGallery = (direction: 'next' | 'prev') => {
@@ -221,6 +245,12 @@ const Gallery: React.FC = () => {
     
     setCurrentImageIndex(newIndex);
     setSelectedImage(filteredItems[newIndex]);
+    // Sync deep-link URL
+    if (filteredItems[newIndex]?.id) {
+      const params = new URLSearchParams(searchParams);
+      params.set('item', filteredItems[newIndex].id);
+      setSearchParams(params, { replace: true });
+    }
   };
 
   const toggleZoom = () => {
@@ -249,6 +279,32 @@ const Gallery: React.FC = () => {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [modalOpen, currentImageIndex, filteredItems]);
+
+  // Deep-link: auto-open modal when ?item=xxx is in URL
+  const itemParam = searchParams.get('item');
+  const itemScrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (itemParam) {
+      const idx = galleryItems.findIndex(g => g.id === itemParam);
+      if (idx >= 0) {
+        // Ensure the correct filter is active so the item is visible
+        const item = galleryItems[idx];
+        const effectiveFilter = searchParams.get('filter') || 'all';
+        const items = effectiveFilter === 'all'
+          ? galleryItems
+          : galleryItems.filter(g => g.category === effectiveFilter);
+        const filteredIdx = items.findIndex(g => g.id === itemParam);
+        if (filteredIdx >= 0) {
+          openModal(items[filteredIdx], filteredIdx);
+        } else {
+          // Item exists but not in current filter — switch to 'all' and open
+          setActiveFilter('all');
+          openModal(item, idx);
+        }
+      }
+    }
+  }, []); // Run once on mount
 
   // Get stats for categories
   const getCategoryCount = (categoryId: string) => {
