@@ -47,6 +47,8 @@ const LipBlush = lazy(() => import('./pages/LipBlush'));
 // Content Pages
 const AftercareGuide = lazy(() => import('./pages/AftercareGuide'));
 const PmuCostGuideDmv = lazy(() => import('./pages/PmuCostGuideDmv'));
+const HowToChoosePmuArtist = lazy(() => import('./pages/HowToChoosePmuArtist'));
+const PmuMedicalConditions = lazy(() => import('./pages/PmuMedicalConditions'));
 // 404
 const NotFound = lazy(() => import('./pages/NotFound'));
 
@@ -107,6 +109,8 @@ function App() {
           {/* Content Pages */}
           <Route path="/aftercare-guide" element={<AftercareGuide />} />
           <Route path="/pmu-cost-guide-dmv" element={<PmuCostGuideDmv />} />
+          <Route path="/how-to-choose-pmu-artist" element={<HowToChoosePmuArtist />} />
+          <Route path="/pmu-medical-conditions" element={<PmuMedicalConditions />} />
           {/* 404 Catch-All — MUST be last */}
           <Route path="*" element={<NotFound />} />
         </Routes>

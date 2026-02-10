@@ -148,9 +148,22 @@ const SignatureOmbreBrows: React.FC = () => {
               "addressCountry": "US"
             },
             "priceRange": "$$$",
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Annandale, VA"
+            "areaServed": [
+              { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+            ],
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "38.8305",
+              "longitude": "-77.1980"
             }
           })}
         </script>
@@ -161,13 +174,37 @@ const SignatureOmbreBrows: React.FC = () => {
             "name": "Signature Ombre Powder Brows",
             "description": "Professional ombre powder brows performed in Annandale, VA. Includes consultation, procedure, aftercare kit, and perfecting touch-up.",
             "provider": { "@id": "https://www.inkmugi.com/#business" },
-            "areaServed": { "@type": "AdministrativeArea", "name": "Northern Virginia" },
+            "areaServed": [
+              { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+            ],
             "offers": {
               "@type": "Offer",
               "price": "600",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalProcedure",
+            "name": "Ombre Powder Brows Permanent Makeup",
+            "procedureType": "Cosmetic Tattooing",
+            "bodyLocation": "Eyebrows",
+            "preparation": "Avoid alcohol, caffeine, and blood thinners 24-48 hours before procedure. No brow tinting or waxing for 2 weeks prior.",
+            "followup": "Touch-up appointment at 6-8 weeks included. Annual maintenance recommended every 18-24 months.",
+            "howPerformed": "Precision stippling technique deposits hypoallergenic pigment beneath skin surface to create soft, graduated brow fill.",
+            "status": "Accepted procedure in cosmetic enhancement"
           })}
         </script>
         <script type="application/ld+json">
@@ -298,6 +335,23 @@ const SignatureOmbreBrows: React.FC = () => {
                   Try AI Virtual Preview
                 </Link>
                 */}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* AI Summary Block */}
+        <section className="py-12 bg-[#E6DAD2]/10">
+          <div className="container-custom">
+            <AnimatedSection className="max-w-4xl mx-auto">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-[#E6DAD2]">
+                <h2 className="text-2xl font-bold text-[#2D2D2B] mb-4 flex items-center gap-2">
+                  <Sparkles className="w-6 h-6 text-[#2D2D2B]" />
+                  Ombre Powder Brows at a Glance
+                </h2>
+                <p className="text-lg text-gray-800 leading-relaxed">
+                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on 523+ documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Most clients describe the result as "waking up with perfect brows every day, no maintenance needed."
+                </p>
               </div>
             </AnimatedSection>
           </div>

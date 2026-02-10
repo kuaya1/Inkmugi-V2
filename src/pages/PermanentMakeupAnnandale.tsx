@@ -33,9 +33,22 @@ const PermanentMakeupAnnandale: React.FC = () => {
       "addressCountry": "US"
     },
     "priceRange": "$$$",
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Annandale, VA"
+    "areaServed": [
+      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "38.8305",
+      "longitude": "-77.1964"
     }
   };
 
