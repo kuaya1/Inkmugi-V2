@@ -648,7 +648,7 @@ export default function PmuCostGuideDmv() {
               </Link>
             </div>
             <p className="text-gray-400 mt-6 text-sm">
-              Or call/text: <a href="tel:+15714000996" className="text-amber-400 hover:text-amber-300 font-medium">(571) 400-0996</a>
+              Or call/text: <a href="tel:+15712838228" className="text-amber-400 hover:text-amber-300 font-medium">(571) 283-8228</a>
             </p>
           </AnimatedSection>
         </div>

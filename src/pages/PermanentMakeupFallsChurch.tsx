@@ -14,7 +14,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
     "url": "https://www.inkmugi.com/permanent-makeup-falls-church-va",
     "logo": "https://www.inkmugi.com/logo.png",
     "image": "https://www.inkmugi.com/og-image.jpg",
-    "telephone": "+15714000996",
+    "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "7857 Heritage Dr #330",
@@ -165,11 +165,11 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a
-                href="tel:+15714000996"
+                href="tel:+15712838228"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-amber-700 text-amber-700 rounded-full font-medium hover:bg-amber-700 hover:text-white transition-all"
               >
                 <Phone className="mr-2 w-5 h-5" />
-                (571) 400-0996
+                (571) 283-8228
               </a>
             </div>
           </AnimatedSection>
@@ -389,7 +389,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
             <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <Link to="/permanent-makeup-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-annandale-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Annandale, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
@@ -397,15 +397,15 @@ const PermanentMakeupFallsChurch: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Arlington, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-tysons" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-tysons-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Tysons, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-mclean" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/ombre-brows-mclean-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">McLean, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-vienna" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/ombre-brows-vienna-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Vienna, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
             </Link>

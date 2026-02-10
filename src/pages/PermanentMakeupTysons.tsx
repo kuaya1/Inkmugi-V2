@@ -396,19 +396,19 @@ const PermanentMakeupTysons: React.FC = () => {
             <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <Link to="/permanent-makeup-mclean" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/ombre-brows-mclean-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">McLean, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">5 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-vienna" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/ombre-brows-vienna-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Vienna, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-falls-church" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-falls-church-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Falls Church, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-annandale-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Annandale, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
             </Link>

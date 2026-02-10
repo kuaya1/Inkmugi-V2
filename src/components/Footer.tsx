@@ -135,22 +135,22 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4">Service Areas</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/permanent-makeup-annandale" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/permanent-makeup-annandale-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Annandale, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-arlington" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/ombre-brows-arlington-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Arlington, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-alexandria" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/ombre-brows-alexandria-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Alexandria, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-fairfax" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/ombre-brows-fairfax-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Fairfax, VA
                 </Link>
               </li>
@@ -160,27 +160,27 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-mclean" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/ombre-brows-mclean-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   McLean, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-tysons" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/permanent-makeup-tysons-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Tysons, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-falls-church" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/permanent-makeup-falls-church-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Falls Church, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-springfield" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/permanent-makeup-springfield-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Springfield, VA
                 </Link>
               </li>
               <li>
-                <Link to="/permanent-makeup-vienna" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/ombre-brows-vienna-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Vienna, VA
                 </Link>
               </li>

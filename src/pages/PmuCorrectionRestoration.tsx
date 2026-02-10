@@ -20,7 +20,7 @@ const PmuCorrectionRestoration: React.FC = () => {
       "url": "https://www.inkmugi.com/",
       "logo": "https://www.inkmugi.com/logo.png",
       "image": "https://www.inkmugi.com/og-image.jpg",
-      "telephone": "+1-571-400-0996",
+      "telephone": "+1-571-283-8228",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "7857 Heritage Dr #330",
@@ -582,16 +582,16 @@ const PmuCorrectionRestoration: React.FC = () => {
           <h2 className="text-2xl font-cormorant font-medium text-[#2D2D2B] mb-2">Serving the DMV Region</h2>
           <p className="text-[#2D2D2B]/60 text-sm mb-6">Professional permanent makeup for Northern Virginia, DC & Maryland</p>
           <div className="flex flex-wrap justify-center gap-2">
-            <Link to="/permanent-makeup-annandale" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Annandale</Link>
+            <Link to="/permanent-makeup-annandale-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Annandale</Link>
             <Link to="/ombre-brows-arlington-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Arlington</Link>
             <Link to="/ombre-brows-alexandria-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Alexandria</Link>
             <Link to="/ombre-brows-fairfax-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Fairfax</Link>
             <Link to="/permanent-makeup-dc" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Washington DC</Link>
-            <Link to="/permanent-makeup-mclean" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">McLean</Link>
-            <Link to="/permanent-makeup-tysons" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Tysons</Link>
-            <Link to="/permanent-makeup-falls-church" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Falls Church</Link>
-            <Link to="/permanent-makeup-springfield" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Springfield</Link>
-            <Link to="/permanent-makeup-vienna" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Vienna</Link>
+            <Link to="/ombre-brows-mclean-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">McLean</Link>
+            <Link to="/permanent-makeup-tysons-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Tysons</Link>
+            <Link to="/permanent-makeup-falls-church-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Falls Church</Link>
+            <Link to="/permanent-makeup-springfield-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Springfield</Link>
+            <Link to="/ombre-brows-vienna-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Vienna</Link>
           </div>
         </div>
       </section>
@@ -619,11 +619,11 @@ const PmuCorrectionRestoration: React.FC = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:+15714000996"
+                href="tel:+15712838228"
                 className="inline-flex items-center justify-center space-x-2 bg-transparent text-white border-2 border-white/50 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/10 transition-all duration-300"
               >
                 <Phone className="w-5 h-5" />
-                <span>(571) 400-0996</span>
+                <span>(571) 283-8228</span>
               </a>
             </div>
           </AnimatedSection>

@@ -23,7 +23,7 @@ const OmbreBrowsMcLean: React.FC = () => {
     "url": "https://www.inkmugi.com/ombre-brows-mclean-va",
     "logo": "https://www.inkmugi.com/logo.png",
     "image": "https://www.inkmugi.com/og-image.jpg",
-    "telephone": "+15714000996",
+    "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "7857 Heritage Dr #330",
@@ -395,15 +395,15 @@ const OmbreBrowsMcLean: React.FC = () => {
             <p className="text-[#2D2D2B]/60">Premium ombré powder brows for the entire DMV region</p>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <Link to="/permanent-makeup-tysons" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-tysons-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Tysons, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">5 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-falls-church" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-falls-church-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Falls Church, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-vienna" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/ombre-brows-vienna-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Vienna, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">10 min drive</p>
             </Link>
@@ -411,7 +411,7 @@ const OmbreBrowsMcLean: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+            <Link to="/permanent-makeup-annandale-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Annandale, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
             </Link>
@@ -474,11 +474,11 @@ const OmbreBrowsMcLean: React.FC = () => {
               </Link>
             </div>
             <a
-              href="tel:+15714000996"
+              href="tel:+15712838228"
               className="inline-flex items-center justify-center gap-2 mt-6 text-[#E6DAD2] hover:text-white transition-colors"
             >
               <Phone className="w-5 h-5" />
-              (571) 400-0996
+              (571) 283-8228
             </a>
           </AnimatedSection>
         </div>
