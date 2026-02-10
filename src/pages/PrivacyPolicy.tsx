@@ -170,7 +170,7 @@ const PrivacyPolicy: React.FC = () => {
                         <li>Withdraw consent for specific data processing activities</li>
                       </ul>
                       <p className="mt-4">
-                        To exercise these rights, please contact us at <a href="mailto:inkmugi@gmail.com" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">inkmugi@gmail.com</a> or call <a href="tel:5712838228" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">(571) 283-8228</a>.
+                        To exercise these rights, please contact us at <a href="mailto:inkmugi@gmail.com" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">inkmugi@gmail.com</a> or call <a href="tel:+15712838228" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">(571) 283-8228</a>.
                       </p>
                     </div>
                   </div>
@@ -236,7 +236,7 @@ const PrivacyPolicy: React.FC = () => {
                       <p><strong>Ink Mugi</strong></p>
                       <p>7857 Heritage Dr #330<br />Annandale, VA 22003</p>
                       <p>Email: <a href="mailto:inkmugi@gmail.com" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">inkmugi@gmail.com</a></p>
-                      <p>Phone: <a href="tel:5712838228" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">(571) 283-8228</a></p>
+                      <p>Phone: <a href="tel:+15712838228" className="text-[#2D2D2B] font-medium hover:text-[#E6DAD2]">(571) 283-8228</a></p>
                     </div>
                   </div>
                 </div>

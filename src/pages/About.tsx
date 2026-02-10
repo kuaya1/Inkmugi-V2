@@ -70,7 +70,7 @@ const About: React.FC = () => {
       "Humid Climate PMU Performance"
     ],
     "sameAs": [
-      "https://www.instagram.com/inkmugi"
+      "https://www.instagram.com/browsby.mugi/"
     ]
   };
 
@@ -725,7 +725,7 @@ const About: React.FC = () => {
               </Link>
               <span className="text-white/50 flex items-center">or</span>
               <a 
-                href="tel:5712838228"
+                href="tel:+15712838228"
                 className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
               >
                 <span>Call (571) 283-8228</span>

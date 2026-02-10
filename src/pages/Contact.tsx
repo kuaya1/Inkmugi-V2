@@ -151,7 +151,7 @@ const Contact: React.FC = () => {
                 <h3 className="font-medium mb-3 text-[#2D2D2B]">Connect With Us</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.instagram.com/inkmugi"
+                    href="https://www.instagram.com/browsby.mugi/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#2D2D2B]/10 p-3 rounded-full text-[#2D2D2B] hover:bg-[#2D2D2B] hover:text-white transition-colors"

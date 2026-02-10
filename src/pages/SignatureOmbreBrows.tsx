@@ -741,7 +741,7 @@ const SignatureOmbreBrows: React.FC = () => {
               </div>
 
               <p className="text-white/70 text-sm">
-                📞 <a href="tel:5712838228" className="hover:text-[#E6DAD2] transition-colors">(571) 283-8228</a> • 
+                📞 <a href="tel:+15712838228" className="hover:text-[#E6DAD2] transition-colors">(571) 283-8228</a> • 
                 ✉️ <a href="mailto:inkmugi@gmail.com" className="hover:text-[#E6DAD2] transition-colors">inkmugi@gmail.com</a>
               </p>
             </AnimatedSection>

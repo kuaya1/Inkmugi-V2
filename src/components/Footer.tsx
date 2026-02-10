@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-neutral-custom-800 text-white pt-16 pb-8">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-12">
           {/* Brand Column */}
           <div className="space-y-4">
             <Link to="/" className="text-2xl font-cormorant font-semibold">
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4 pt-2">
               <a
-                href="https://www.instagram.com/inkmugi"
+                href="https://www.instagram.com/browsby.mugi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors duration-300"
@@ -61,11 +61,6 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Services
-                </Link>
-              </li>
-              <li>
                 <Link to="/gallery" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Gallery
                 </Link>
@@ -85,63 +80,108 @@ const Footer: React.FC = () => {
                   FAQ
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          {/* PMU Education */}
-          <div>
-            <h3 className="text-lg font-medium mb-4">PMU Education</h3>
-            <ul className="space-y-2">
               <li>
-                <Link to="/pmu-data-guide" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Safety Data & Statistics
-                </Link>
-              </li>
-              <li>
-                <Link to="/pmu-myths-facts" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  PMU Myths vs Facts
-                </Link>
-              </li>
-              <li>
-                <Link to="/permanent-makeup-safety-dmv" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  PMU Safety in DMV
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  PMU Guides & Tips
+                <Link to="/booking" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Book Now
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Artistry Services */}
+          {/* Our Services */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Artistry Services</h3>
+            <h3 className="text-lg font-medium mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/ombre-brows" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Signature Ombre Powder Brows
+                  Ombre Powder Brows
+                </Link>
+              </li>
+              <li>
+                <Link to="/microshading-artistry" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Microshading Artistry
+                </Link>
+              </li>
+              <li>
+                <Link to="/nano-brows" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Nano Brows
+                </Link>
+              </li>
+              <li>
+                <Link to="/lip-blush" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Lip Blush
+                </Link>
+              </li>
+              <li>
+                <Link to="/pmu-correction-restoration" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  PMU Correction
+                </Link>
+              </li>
+              <li>
+                <Link to="/saline-tattoo-removal" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Saline Tattoo Removal
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Precision Touch-Up Sessions
+                  All Services →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="text-lg font-medium mb-4">Service Areas</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/permanent-makeup-annandale" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Annandale, VA
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Transformation Corrections
+                <Link to="/permanent-makeup-arlington" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Arlington, VA
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Private Design Consultation
+                <Link to="/permanent-makeup-alexandria" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Alexandria, VA
                 </Link>
               </li>
               <li>
-                <Link to="/booking" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Reserve Your Session
+                <Link to="/permanent-makeup-fairfax" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Fairfax, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-dc" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Washington, DC
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-mclean" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  McLean, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-tysons" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Tysons, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-falls-church" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Falls Church, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-springfield" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Springfield, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/permanent-makeup-vienna" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Vienna, VA
                 </Link>
               </li>
             </ul>

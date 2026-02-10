@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
           {/* Social Icons */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://www.instagram.com/inkmugi"
+              href="https://www.instagram.com/browsby.mugi/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-700 hover:text-primary transition-colors duration-300"
@@ -202,7 +202,7 @@ const Navbar: React.FC = () => {
           {/* Social Icons - Mobile */}
           <div className="flex items-center space-x-4 pt-2">
             <a
-              href="https://www.instagram.com/inkmugi"
+              href="https://www.instagram.com/browsby.mugi/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-700 hover:text-primary transition-colors duration-300"

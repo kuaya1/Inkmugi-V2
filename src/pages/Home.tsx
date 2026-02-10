@@ -203,10 +203,18 @@ const Home: React.FC = () => {
               "addressCountry": "US"
             },
             "priceRange": "$$$",
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Annandale, VA"
-            },
+            "areaServed": [
+              { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+              { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+            ],
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5",
@@ -1109,7 +1117,7 @@ const Home: React.FC = () => {
                 </Link>
                 <span className="text-white/50">or</span>
                 <a 
-                  href="tel:5712838228"
+                  href="tel:+15712838228"
                   className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
                 >
                   <span>Call (571) 283-8228</span>
