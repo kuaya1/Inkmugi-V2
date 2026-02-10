@@ -9,6 +9,9 @@
 /faq.html /faq 301!
 /about.html /about 301!
 
+# Redirect old location page URL to new SEO-optimized URL
+/permanent-makeup-annandale-va /licensed-pmu-artist-annandale 301!
+
 # Force HTTPS
 http://inkmugi.com/* https://www.inkmugi.com/:splat 301!
 http://www.inkmugi.com/* https://www.inkmugi.com/:splat 301!

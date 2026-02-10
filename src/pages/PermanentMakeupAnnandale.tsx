@@ -104,10 +104,10 @@ const PermanentMakeupAnnandale: React.FC = () => {
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 523+ procedures, $600 all-inclusive. Free parking, free consultation. Book today." />
         <meta name="keywords" content="permanent makeup Annandale VA, ombre brows Annandale, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA" />
-        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-annandale-va" />
+        <link rel="canonical" href="https://www.inkmugi.com/licensed-pmu-artist-annandale" />
         <meta property="og:title" content="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio" />
         <meta property="og:description" content="Annandale's own PMU studio. Walk-in convenience at Heritage Center. 523+ procedures, $600 all-inclusive." />
-        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-annandale-va" />
+        <meta property="og:url" content="https://www.inkmugi.com/licensed-pmu-artist-annandale" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -153,7 +153,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
               { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Permanent Makeup Annandale VA", "item": "https://www.inkmugi.com/permanent-makeup-annandale-va" }
+              { "@type": "ListItem", "position": 3, "name": "Permanent Makeup Annandale VA", "item": "https://www.inkmugi.com/licensed-pmu-artist-annandale" }
             ]
           })}
         </script>

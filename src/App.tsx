@@ -95,6 +95,7 @@ function App() {
           <Route path="/permanent-makeup-dc" element={<PermanentMakeupDC />} />
           {/* Month 2 — Geographic Expansion */}
           <Route path="/permanent-makeup-annandale-va" element={<PermanentMakeupAnnandale />} />
+          <Route path="/licensed-pmu-artist-annandale" element={<PermanentMakeupAnnandale />} />
           <Route path="/ombre-brows-mclean-va" element={<OmbreBrowsMcLean />} />
           <Route path="/permanent-makeup-tysons-va" element={<PermanentMakeupTysons />} />
           <Route path="/permanent-makeup-falls-church-va" element={<PermanentMakeupFallsChurch />} />

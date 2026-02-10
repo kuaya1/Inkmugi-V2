@@ -823,33 +823,7 @@ DAY 365:
 
 # SIGNAL GAP BREAKDOWN — EXECUTIVE PRIORITY MATRIX
 
-## Priority 0: Fix Before Anything Else (Day 1)
-
-| Fix | Impact | Effort |
-|---|---|---|
-| Fix phone number on 4 pages (571-400-0996 → 571-283-8228) | Entity confidence +15% | 15 min |
-| Harmonize reviewCount across all schema blocks | Data trust recovery | 30 min |
-| Deploy site with corrected city page links | Stop 404 signals | Deploy |
-
-## Priority 1: High Impact, Low Effort (Week 1-2)
-
-| Fix | Impact | Effort |
-|---|---|---|
-| Add "At a Glance" summary blocks to service pages | AI quotability +20% | 2 hrs |
-| Add MedicalProcedure schema to service pages | Medical AI authority | 2 hrs |
-| Add full areaServed to all business schemas | Geo-coverage signal | 1 hr |
-| Add GeoCoordinates to city page schemas | Local AI signal | 1 hr |
-| Create Apple Maps + Bing Places listings | Voice search coverage | 1 hr |
-
-## Priority 2: High Impact, Moderate Effort (Month 1)
-
-| Fix | Impact | Effort |
-|---|---|---|
-| Create "How to Choose a PMU Artist" page | Decision query capture | 4 hrs |
-| Create "PMU & Medical Conditions" page | Missing query coverage | 4 hrs |
-| Write "Lip Blush Complete Guide" blog post | Service content gap | 3 hrs |
-| Expand FAQ page to 25-30 questions | Long-tail coverage | 2 hrs |
-| Complete Yelp profile + request Yelp reviews | Siri/Alexa discovery | 2 hrs |
+transfer current annandale location page to https://inkmugi.com/licensed-pmu-artist-annandale
 
 ## Priority 3: Critical External Authority (Month 2-3)
 

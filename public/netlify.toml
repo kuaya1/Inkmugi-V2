@@ -96,6 +96,13 @@
   status = 301
   force = true
 
+# Redirect old location page URL to new SEO-optimized URL
+[[redirects]]
+  from = "/permanent-makeup-annandale-va"
+  to = "/licensed-pmu-artist-annandale"
+  status = 301
+  force = true
+
 # END 301 Redirects
 
 # SPA fallback (must be last)
