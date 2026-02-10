@@ -388,22 +388,38 @@ const PermanentMakeupSpringfield: React.FC = () => {
             </h2>
             <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
           </AnimatedSection>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Arlington, VA</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <Link to="/ombre-brows-fairfax-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Fairfax, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">10 min drive</p>
+            </Link>
+            <Link to="/permanent-makeup-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Annandale, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
             </Link>
             <Link to="/ombre-brows-alexandria-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Alexandria, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
             </Link>
-            <Link to="/ombre-brows-fairfax-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Fairfax, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">10 min drive</p>
+            <Link to="/permanent-makeup-falls-church" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Falls Church, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
             </Link>
-            <Link to="/permanent-makeup-dc" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Washington, DC</p>
-              <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
+            <Link to="/permanent-makeup-tysons" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Tysons, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">18 min drive</p>
+            </Link>
+            <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Ombre Powder Brows</p>
+              <p className="text-sm text-[#2D2D2B]/50">Our signature service</p>
+            </Link>
+            <Link to="/nano-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Nano Brows</p>
+              <p className="text-sm text-[#2D2D2B]/50">Hair-stroke precision</p>
+            </Link>
+            <Link to="/lip-blush" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Lip Blush</p>
+              <p className="text-sm text-[#2D2D2B]/50">Natural lip enhancement</p>
             </Link>
             <Link to="/services" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">All Services</p>
