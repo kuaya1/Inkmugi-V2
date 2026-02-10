@@ -43,6 +43,7 @@ const MicroshadingArtistry = lazy(() => import('./pages/MicroshadingArtistry'));
 const PmuCorrectionRestoration = lazy(() => import('./pages/PmuCorrectionRestoration'));
 // Content Pages
 const AftercareGuide = lazy(() => import('./pages/AftercareGuide'));
+const PmuCostGuideDmv = lazy(() => import('./pages/PmuCostGuideDmv'));
 // 404
 const NotFound = lazy(() => import('./pages/NotFound'));
 
@@ -99,6 +100,7 @@ function App() {
           <Route path="/pmu-correction-restoration" element={<PmuCorrectionRestoration />} />
           {/* Content Pages */}
           <Route path="/aftercare-guide" element={<AftercareGuide />} />
+          <Route path="/pmu-cost-guide-dmv" element={<PmuCostGuideDmv />} />
           {/* 404 Catch-All — MUST be last */}
           <Route path="*" element={<NotFound />} />
         </Routes>
