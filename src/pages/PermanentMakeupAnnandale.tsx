@@ -437,10 +437,6 @@ const PermanentMakeupAnnandale: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Nano Brows</p>
               <p className="text-sm text-[#2D2D2B]/50">Hair-stroke precision</p>
             </Link>
-            <Link to="/lip-blush" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Lip Blush</p>
-              <p className="text-sm text-[#2D2D2B]/50">Natural lip enhancement</p>
-            </Link>
             <Link to="/services" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">All Services</p>
               <p className="text-sm text-[#2D2D2B]/50">Pricing & details</p>

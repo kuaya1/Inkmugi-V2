@@ -583,7 +583,6 @@ const Services = () => {
                 { title: 'Microshading Artistry', desc: 'Soft dot-work technique ideal for oily & sensitive skin', href: '/microshading-artistry' },
                 { title: 'PMU Correction & Restoration', desc: 'Fix botched microblading, color corrections & cover-ups', href: '/pmu-correction-restoration' },
                 { title: 'Nano Brows', desc: 'Ultra-fine hair-stroke technique for natural results', href: '/nano-brows' },
-                { title: 'Saline Tattoo Removal', desc: 'Non-laser PMU removal using Li-FT® saline solution', href: '/saline-tattoo-removal' },
                 { title: 'Aftercare Guide', desc: 'Complete healing instructions for all PMU procedures', href: '/aftercare-guide' },
               ].map((link, i) => (
                 <Link
@@ -610,7 +609,7 @@ const Services = () => {
               <strong className="text-[#2D2D2B]/50">Ink Mugi Permanent Makeup Services</strong> — Professional ombre powder brows, microshading, nano brows, and PMU correction services in Annandale, VA. Serving Northern Virginia including Arlington, Alexandria, Fairfax, McLean, Tysons Corner, Falls Church, Springfield, Vienna, Great Falls, and Washington DC. Virginia licensed (#1231002471) and fully insured PMU artist specializing in semi-permanent eyebrow tattooing, cosmetic tattooing, and brow restoration.
             </p>
             <p>
-              Related services: permanent makeup near me, eyebrow tattoo Annandale VA, ombre brows Northern Virginia, powder brows Fairfax County, microblading alternative DMV, semi permanent brows Arlington, cosmetic tattooing Alexandria, brow lamination alternative, eyebrow embroidery Virginia, PMU artist near me, permanent eyebrows DC metro, lip blushing Northern Virginia, saline tattoo removal Virginia, beauty enhancement Annandale.
+              Related services: permanent makeup near me, eyebrow tattoo Annandale VA, ombre brows Northern Virginia, powder brows Fairfax County, microblading alternative DMV, semi permanent brows Arlington, cosmetic tattooing Alexandria, brow lamination alternative, eyebrow embroidery Virginia, PMU artist near me, permanent eyebrows DC metro, beauty enhancement Annandale.
             </p>
             <p>
               Neighborhoods served from 7857 Heritage Dr #330, Annandale VA 22003: Ravensworth, Woodburn, Pinecrest, Barcroft, Lake Barcroft, Kings Park, Mantua, Wakefield, North Springfield, West Springfield, Burke, Annandale Terrace, Columbia Pike corridor, Baileys Crossroads, Seven Corners.

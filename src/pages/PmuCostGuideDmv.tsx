@@ -42,15 +42,6 @@ const pricingData = [
     notes: 'Machine hair strokes, better retention than blade',
   },
   {
-    technique: 'Lip Blush',
-    inkMugi: 'Coming soon',
-    dcAvg: '$800–1,400',
-    tysonsAvg: '$800–1,200',
-    arlingtonAvg: '$700–1,100',
-    nationalAvg: '$400–1,000',
-    notes: 'Semi-permanent lip color',
-  },
-  {
     technique: 'PMU Correction',
     inkMugi: '$400–900',
     dcAvg: '$600–1,500',

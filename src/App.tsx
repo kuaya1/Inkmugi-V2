@@ -42,8 +42,6 @@ const OmbreBrowsVienna = lazy(() => import('./pages/OmbreBrowsVienna'));
 const MicroshadingArtistry = lazy(() => import('./pages/MicroshadingArtistry'));
 const PmuCorrectionRestoration = lazy(() => import('./pages/PmuCorrectionRestoration'));
 const NanoBrows = lazy(() => import('./pages/NanoBrows'));
-const SalineTattooRemoval = lazy(() => import('./pages/SalineTattooRemoval'));
-const LipBlush = lazy(() => import('./pages/LipBlush'));
 // Content Pages
 const AftercareGuide = lazy(() => import('./pages/AftercareGuide'));
 const PmuCostGuideDmv = lazy(() => import('./pages/PmuCostGuideDmv'));
@@ -106,8 +104,6 @@ function App() {
           <Route path="/microshading-artistry" element={<MicroshadingArtistry />} />
           <Route path="/pmu-correction-restoration" element={<PmuCorrectionRestoration />} />
           <Route path="/nano-brows" element={<NanoBrows />} />
-          <Route path="/saline-tattoo-removal" element={<SalineTattooRemoval />} />
-          <Route path="/lip-blush" element={<LipBlush />} />
           {/* Content Pages */}
           <Route path="/aftercare-guide" element={<AftercareGuide />} />
           <Route path="/pmu-cost-guide-dmv" element={<PmuCostGuideDmv />} />

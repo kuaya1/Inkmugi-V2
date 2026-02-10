@@ -73,16 +73,6 @@ const UltimateGuidePmu: React.FC = () => {
       price: '$650+',
       link: '/nano-brows',
     },
-    {
-      name: 'Lip Blush',
-      icon: <Heart className="w-8 h-8 text-[#E6DAD2]" />,
-      description: 'Semi-permanent lip tint creating natural, flushed lip color.',
-      bestFor: 'Pale lips, asymmetry correction, color enhancement',
-      longevity: '2-5 years',
-      painLevel: '3-4/10',
-      price: '$650',
-      link: '/lip-blush',
-    },
   ];
 
   const benefits = [
@@ -135,7 +125,6 @@ const UltimateGuidePmu: React.FC = () => {
     { service: 'Ombre Powder Brows', range: '$500-$900', inkMugi: '$600', typical: '$750' },
     { service: 'Microshading', range: '$600-$1,200', inkMugi: '$700', typical: '$900' },
     { service: 'Nano Brows', range: '$600-$1,000', inkMugi: '$650', typical: '$800' },
-    { service: 'Lip Blush', range: '$600-$1,500', inkMugi: '$650', typical: '$1,000' },
     { service: 'PMU Correction', range: '$400-$900', inkMugi: '$400-$900', typical: '$700' },
   ];
 
