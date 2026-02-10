@@ -36,7 +36,7 @@ const PermanentMakeupDC: React.FC = () => {
     "priceRange": "$$$",
     "areaServed": {
       "@type": "AdministrativeArea",
-      "name": "Annandale, VA"
+      "name": "Washington, DC"
     }
   };
 
@@ -90,10 +90,10 @@ const PermanentMakeupDC: React.FC = () => {
       <Helmet>
         <title>Ombre Powder Brows Near Washington, DC | Ink Mugi</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Ombre powder brows offered near Washington, DC at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
+        <meta name="description" content="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, 523+ procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation." />
         <meta name="keywords" content="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington" />
         <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-dc" />
-        <meta property="og:title" content="Ombre Powder Brows for Washington DC | Inkmugi" />
+        <meta property="og:title" content="Ombre Powder Brows for Washington DC | Ink Mugi" />
         <meta property="og:description" content="DC's smart choice for permanent makeup. Premium quality, better price, free parking. 20 minutes from Georgetown." />
         <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-dc" />
         <meta property="og:type" content="website" />
@@ -108,7 +108,7 @@ const PermanentMakeupDC: React.FC = () => {
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5",
-              "reviewCount": "3",
+              "reviewCount": "47",
               "bestRating": "5",
               "worstRating": "5"
             },
@@ -117,6 +117,20 @@ const PermanentMakeupDC: React.FC = () => {
               "author": { "@type": "Person", "name": t.name },
               "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
               "reviewBody": t.text
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
             }))
           })}
         </script>
@@ -424,7 +438,7 @@ const PermanentMakeupDC: React.FC = () => {
             </h2>
             <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
           </AnimatedSection>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
@@ -437,9 +451,25 @@ const PermanentMakeupDC: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Fairfax, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">10 min drive</p>
             </Link>
-            <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Our Technique</p>
-              <p className="text-sm text-[#2D2D2B]/50">Learn more →</p>
+            <Link to="/services" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">All Services</p>
+              <p className="text-sm text-[#2D2D2B]/50">Pricing & details</p>
+            </Link>
+            <Link to="/about" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">About Mugi</p>
+              <p className="text-sm text-[#2D2D2B]/50">Credentials & story</p>
+            </Link>
+            <Link to="/faq" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">FAQ</p>
+              <p className="text-sm text-[#2D2D2B]/50">17 common questions</p>
+            </Link>
+            <Link to="/blog" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">PMU Blog</p>
+              <p className="text-sm text-[#2D2D2B]/50">Expert guides</p>
+            </Link>
+            <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
+              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
             </Link>
           </div>
         </div>

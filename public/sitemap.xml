@@ -147,58 +147,98 @@
   </url>
   <url>
     <loc>https://www.inkmugi.com/blog/pmu-pigment-science-quality-importance</loc>
-    <lastmod>2025-01-28</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.inkmugi.com/blog/pmu-healing-timeline-week-by-week</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.inkmugi.com/blog/perfect-brow-shape-face-mapping-guide</loc>
-    <lastmod>2024-12-20</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.inkmugi.com/blog/pmu-myths-versus-facts-expert-guide</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
-  <!-- Additional Pages -->
+  <!-- Legal Pages -->
   <url>
-    <loc>https://www.inkmugi.com/reviews</loc>
+    <loc>https://www.inkmugi.com/privacy-policy</loc>
     <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.inkmugi.com/licensed-pmu-artist-annandale</loc>
+    <loc>https://www.inkmugi.com/terms-of-service</loc>
     <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
+  
+  <!-- Service Pages -->
   <url>
     <loc>https://www.inkmugi.com/aftercare-guide</loc>
     <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.inkmugi.com/pmu-safety-statistics</loc>
+    <loc>https://www.inkmugi.com/microshading-artistry</loc>
     <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.inkmugi.com/blog/choosing-right-brow-shape</loc>
+    <loc>https://www.inkmugi.com/pmu-correction-restoration</loc>
     <lastmod>2026-02-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- New City Landing Pages -->
+  <url>
+    <loc>https://www.inkmugi.com/permanent-makeup-annandale-va</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.inkmugi.com/ombre-brows-mclean-va</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.inkmugi.com/permanent-makeup-tysons-va</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.inkmugi.com/permanent-makeup-falls-church-va</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.inkmugi.com/permanent-makeup-springfield-va</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.inkmugi.com/ombre-brows-vienna-va</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

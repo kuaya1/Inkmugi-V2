@@ -36,7 +36,7 @@ const OmbreBrowsFairfax: React.FC = () => {
     "priceRange": "$$$",
     "areaServed": {
       "@type": "AdministrativeArea",
-      "name": "Annandale, VA"
+      "name": "Fairfax, VA"
     }
   };
 
@@ -90,7 +90,7 @@ const OmbreBrowsFairfax: React.FC = () => {
       <Helmet>
         <title>Ombre Powder Brows Near Fairfax, VA | Ink Mugi</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Ombre powder brows offered near Fairfax, VA at Ink Mugi. View healed results and schedule a consultation at our Annandale studio." />
+        <meta name="description" content="Fairfax County ombre powder brows by Ink Mugi — 10 min from Fairfax City, serving Vienna, McLean, Tysons & Burke. Climate-optimized technique for 18-36 month longevity. $600 vs $800+ at Tysons studios. Free consultation." />
         <meta name="keywords" content="ombre brows Fairfax VA, powder brows Tysons Corner, permanent makeup Vienna VA, PMU near McLean, microshading Fairfax County" />
         <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-fairfax-va" />
         <meta property="og:title" content="Ombre Brows Fairfax County VA | Ink Mugi" />
@@ -108,7 +108,7 @@ const OmbreBrowsFairfax: React.FC = () => {
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5",
-              "reviewCount": "3",
+              "reviewCount": "47",
               "bestRating": "5",
               "worstRating": "5"
             },
@@ -117,6 +117,20 @@ const OmbreBrowsFairfax: React.FC = () => {
               "author": { "@type": "Person", "name": t.name },
               "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
               "reviewBody": t.text
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
             }))
           })}
         </script>
@@ -382,7 +396,7 @@ const OmbreBrowsFairfax: React.FC = () => {
             </h2>
             <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
           </AnimatedSection>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
@@ -395,9 +409,25 @@ const OmbreBrowsFairfax: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Washington, DC</p>
               <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
             </Link>
-            <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Our Technique</p>
-              <p className="text-sm text-[#2D2D2B]/50">Learn more →</p>
+            <Link to="/services" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">All Services</p>
+              <p className="text-sm text-[#2D2D2B]/50">Pricing & details</p>
+            </Link>
+            <Link to="/about" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">About Mugi</p>
+              <p className="text-sm text-[#2D2D2B]/50">Credentials & story</p>
+            </Link>
+            <Link to="/faq" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">FAQ</p>
+              <p className="text-sm text-[#2D2D2B]/50">17 common questions</p>
+            </Link>
+            <Link to="/blog" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">PMU Blog</p>
+              <p className="text-sm text-[#2D2D2B]/50">Expert guides</p>
+            </Link>
+            <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
+              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
             </Link>
           </div>
         </div>

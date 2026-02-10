@@ -31,6 +31,20 @@ const OmbreBrowsArlington = lazy(() => import('./pages/OmbreBrowsArlington'));
 const OmbreBrowsAlexandria = lazy(() => import('./pages/OmbreBrowsAlexandria'));
 const OmbreBrowsFairfax = lazy(() => import('./pages/OmbreBrowsFairfax'));
 const PermanentMakeupDC = lazy(() => import('./pages/PermanentMakeupDC'));
+// Month 2 — Geographic Expansion City Pages
+const PermanentMakeupAnnandale = lazy(() => import('./pages/PermanentMakeupAnnandale'));
+const OmbreBrowsMcLean = lazy(() => import('./pages/OmbreBrowsMcLean'));
+const PermanentMakeupTysons = lazy(() => import('./pages/PermanentMakeupTysons'));
+const PermanentMakeupFallsChurch = lazy(() => import('./pages/PermanentMakeupFallsChurch'));
+const PermanentMakeupSpringfield = lazy(() => import('./pages/PermanentMakeupSpringfield'));
+const OmbreBrowsVienna = lazy(() => import('./pages/OmbreBrowsVienna'));
+// New Service Pages
+const MicroshadingArtistry = lazy(() => import('./pages/MicroshadingArtistry'));
+const PmuCorrectionRestoration = lazy(() => import('./pages/PmuCorrectionRestoration'));
+// Content Pages
+const AftercareGuide = lazy(() => import('./pages/AftercareGuide'));
+// 404
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading fallback for lazy routes
 const PageLoader = () => (
@@ -73,6 +87,20 @@ function App() {
           <Route path="/ombre-brows-alexandria-va" element={<OmbreBrowsAlexandria />} />
           <Route path="/ombre-brows-fairfax-va" element={<OmbreBrowsFairfax />} />
           <Route path="/permanent-makeup-dc" element={<PermanentMakeupDC />} />
+          {/* Month 2 — Geographic Expansion */}
+          <Route path="/permanent-makeup-annandale-va" element={<PermanentMakeupAnnandale />} />
+          <Route path="/ombre-brows-mclean-va" element={<OmbreBrowsMcLean />} />
+          <Route path="/permanent-makeup-tysons-va" element={<PermanentMakeupTysons />} />
+          <Route path="/permanent-makeup-falls-church-va" element={<PermanentMakeupFallsChurch />} />
+          <Route path="/permanent-makeup-springfield-va" element={<PermanentMakeupSpringfield />} />
+          <Route path="/ombre-brows-vienna-va" element={<OmbreBrowsVienna />} />
+          {/* New Service Pages */}
+          <Route path="/microshading-artistry" element={<MicroshadingArtistry />} />
+          <Route path="/pmu-correction-restoration" element={<PmuCorrectionRestoration />} />
+          {/* Content Pages */}
+          <Route path="/aftercare-guide" element={<AftercareGuide />} />
+          {/* 404 Catch-All — MUST be last */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>
       </main>

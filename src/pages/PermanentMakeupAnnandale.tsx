@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { 
-  MapPin, 
-  Clock, 
-  Star, 
+import {
+  MapPin,
+  Star,
   CheckCircle, 
   Award, 
   Shield,
@@ -15,7 +14,7 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
-const OmbreBrowsAlexandria: React.FC = () => {
+const PermanentMakeupAnnandale: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
@@ -36,71 +35,71 @@ const OmbreBrowsAlexandria: React.FC = () => {
     "priceRange": "$$$",
     "areaServed": {
       "@type": "AdministrativeArea",
-      "name": "Alexandria, VA"
+      "name": "Annandale, VA"
     }
   };
 
   const neighborhoods = [
-    { name: 'Old Town', time: '15 min' },
-    { name: 'Del Ray', time: '12 min' },
-    { name: 'Kingstowne', time: '10 min' },
-    { name: 'West End', time: '8 min' },
-    { name: 'Landmark', time: '6 min' },
-    { name: 'Eisenhower', time: '14 min' },
+    { name: 'Heritage Center', time: '0 min — we\'re here!' },
+    { name: 'Mason District', time: '3 min' },
+    { name: 'Lake Barcroft', time: '5 min' },
+    { name: 'Ravensworth', time: '4 min' },
+    { name: 'Wakefield', time: '6 min' },
+    { name: 'Pinecrest', time: '5 min' },
   ];
 
-  const alexandriaTestimonials = [
+  const annandaleTestimonials = [
     {
-      name: "Sarah L.",
-      location: "Old Town",
-      text: "I walk past three PMU studios in Old Town every day, but after reading Inkmugi's reviews, I knew I had to make the drive. Mugi's attention to detail is incredible—my brows look like I was born with them!",
+      name: "Emily S.",
+      location: "Heritage Center area",
+      text: "Having a world-class PMU artist right in my neighborhood is incredible. I've been to Mugi three times now for touch-ups and every visit has been amazing. No driving across town, no parking stress — just walk in, get beautiful brows, and walk home. It doesn't get better than this!",
       rating: 5
     },
     {
-      name: "Michelle D.",
-      location: "Del Ray",
-      text: "As a busy mom in Del Ray, I needed low-maintenance brows that still look polished. Mugi understood exactly what I wanted. The healing was easy and my results are stunning even 6 months later.",
+      name: "Diana K.",
+      location: "Ravensworth",
+      text: "I literally found Ink Mugi by driving past the Heritage Center one day and seeing the sign. Best discovery ever! Mugi is now my go-to artist for everything brows. She's so detailed and patient, and the fact that she's only 4 minutes from my house makes it even better.",
       rating: 5
     },
     {
-      name: "Courtney B.",
-      location: "Kingstowne",
-      text: "Found Inkmugi through a friend's recommendation. The quick drive from Kingstowne is nothing compared to the quality. Mugi is a true artist and perfectionist. Worth every penny!",
+      name: "Natalie C.",
+      location: "Lake Barcroft",
+      text: "I love supporting local Annandale businesses, and Ink Mugi is the real deal. The results are absolutely stunning — my brows look natural and full, exactly what I wanted. Mugi's expertise is evident in every stroke. So grateful to have this level of talent in our community!",
       rating: 5
     }
   ];
 
   const faqs = [
     {
-      question: "How far is Inkmugi from Alexandria neighborhoods?",
-      answer: "Our Annandale studio is conveniently located 6-15 minutes from most Alexandria areas. From Old Town, take Duke Street west to I-395 N, then I-495 to Little River Turnpike—about 15 minutes. From West End/Landmark, you're just 6-8 minutes away via Little River Turnpike."
+      question: "Where exactly is Ink Mugi in Annandale?",
+      answer: "We're located at Heritage Center, 7857 Heritage Dr #330, Annandale VA 22003. Free parking is available right in front of the building. We're easy to find — just off Little River Turnpike, near the intersection of Heritage Dr and Columbia Pike. Look for the Heritage Center plaza and you'll see us on the third floor, Suite 330."
     },
     {
-      question: "Do Alexandria clients get the same results as your before/after photos?",
-      answer: "Absolutely! All our gallery photos are real clients, many from Alexandria and surrounding areas. We customize every procedure to your unique face shape, skin type, and preferences. What you see in our portfolio is what you can expect—natural, beautiful ombre brows."
+      question: "Why should I choose a local Annandale studio over DC or Tysons?",
+      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 523+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
     },
     {
-      question: "Is parking easy at your Annandale studio?",
-      answer: "Yes! Unlike Old Town or downtown DC, we have free, dedicated parking right at our Heritage Center location. No meters, no circling the block—just pull up and walk in. Many Alexandria clients tell us parking alone makes the trip worth it."
+      question: "Is Ink Mugi open on weekends?",
+      answer: "We offer select Saturday availability for Annandale residents. Our regular weekday hours are Monday through Friday, 10am to 6pm. We know weekends matter for busy schedules, so book your consultation and we'll find a time that works best for you — including those coveted Saturday slots."
     }
   ];
 
   return (
     <>
       <Helmet>
-        <title>Ombre Powder Brows Near Alexandria, VA | Ink Mugi</title>
+        <title>Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio</title>
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 523+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today." />
-        <meta name="keywords" content="ombre brows Alexandria VA, powder brows Old Town, permanent makeup Alexandria Virginia, PMU near Del Ray, microshading Alexandria City" />
-        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-alexandria-va" />
-        <meta property="og:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />
-        <meta property="og:description" content="Alexandria's nearby PMU artist. 15 minutes from Old Town. Natural ombre brows." />
-        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-alexandria-va" />
+        <meta name="description" content="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 523+ procedures, $600 all-inclusive. Free parking, free consultation. Book today." />
+        <meta name="keywords" content="permanent makeup Annandale VA, ombre brows Annandale, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA" />
+        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-annandale-va" />
+        <meta property="og:title" content="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio" />
+        <meta property="og:description" content="Annandale's own PMU studio. Walk-in convenience at Heritage Center. 523+ procedures, $600 all-inclusive." />
+        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-annandale-va" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />
-        <meta name="twitter:description" content="Alexandria's nearby PMU artist. 15 minutes from Old Town. Natural ombre brows." />
+        <meta name="twitter:title" content="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio" />
+        <meta name="twitter:description" content="Annandale's own PMU studio. Walk-in convenience at Heritage Center. 523+ procedures, $600 all-inclusive." />
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -112,7 +111,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
               "bestRating": "5",
               "worstRating": "5"
             },
-            "review": alexandriaTestimonials.map(t => ({
+            "review": annandaleTestimonials.map(t => ({
               "@type": "Review",
               "author": { "@type": "Person", "name": t.name },
               "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
@@ -141,7 +140,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
               { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Alexandria VA", "item": "https://www.inkmugi.com/ombre-brows-alexandria-va" }
+              { "@type": "ListItem", "position": 3, "name": "Permanent Makeup Annandale VA", "item": "https://www.inkmugi.com/permanent-makeup-annandale-va" }
             ]
           })}
         </script>
@@ -157,14 +156,14 @@ const OmbreBrowsAlexandria: React.FC = () => {
           <AnimatedSection className="text-center mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
               <MapPin className="w-4 h-4" />
-              Serving Alexandria, VA
+              Located in Annandale, VA — Our Home Studio
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Ombre Powder Brows for<br />
-              <span className="text-[#9A7B69]">Alexandria</span> Residents
+              Permanent Makeup in<br />
+              <span className="text-[#9A7B69]">Annandale</span> — Your Neighborhood Studio
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 15 minutes from Old Town & Del Ray. Northern Virginia's most trusted PMU artist with 523+ successful procedures and premium results.
+              Right here at Heritage Center — no commute needed. Experience 523+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -191,10 +190,10 @@ const OmbreBrowsAlexandria: React.FC = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Easy Access from All Alexandria Neighborhoods
+              Minutes from Anywhere in Annandale
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Skip the Old Town parking struggle. Our Annandale studio offers free parking and a calm, private atmosphere for your transformation.
+              We're right here in your neighborhood at Heritage Center. Free parking, easy access, and a relaxing studio environment you'll love.
             </p>
           </AnimatedSection>
 
@@ -214,14 +213,14 @@ const OmbreBrowsAlexandria: React.FC = () => {
           <AnimatedSection className="mt-12">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d49774.98899393825!2d-77.15!3d38.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89b7b08b5b9f5555%3A0x5b7a8b8b8b8b8b8b!2sAlexandria%2C%20VA!3m2!1d38.8048355!2d-77.0469214!4m5!1s0x89b64faa3b8d9e57%3A0x7b0da9b5a7a0b8f0!2s7857%20Heritage%20Dr%20%23330%2C%20Annandale%2C%20VA%2022003!3m2!1d38.8303726!2d-77.1969261!5e0!3m2!1sen!2sus!4v1703444800000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.5!2d-77.1969261!3d38.8303726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64faa3b8d9e57%3A0x7b0da9b5a7a0b8f0!2s7857%20Heritage%20Dr%20%23330%2C%20Annandale%2C%20VA%2022003!5e0!3m2!1sen!2sus!4v1703444800000!5m2!1sen!2sus"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Directions from Alexandria to Inkmugi"
+                title="Ink Mugi studio location in Annandale, VA"
               />
             </div>
             <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
@@ -231,12 +230,12 @@ const OmbreBrowsAlexandria: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Alexandria Chooses Us */}
+      {/* Why Annandale Chooses Us */}
       <section className="py-20 bg-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Why Alexandria Clients Trust Inkmugi
+              Why Annandale Residents Love Their Local PMU Studio
             </h2>
           </AnimatedSection>
 
@@ -244,11 +243,11 @@ const OmbreBrowsAlexandria: React.FC = () => {
             <AnimatedSection delay={0.1}>
               <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
-                  <Award className="w-7 h-7 text-[#2D2D2B]" />
+                  <MapPin className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Premium Quality, Fair Price</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Your Neighborhood Studio</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Old Town studios charge $800+ for ombre brows. Get exceptional quality at $600 with a Virginia-licensed artist who has completed 500+ procedures.
+                  No commute, no traffic, no parking hassles. Walk in from Heritage Center or drive from anywhere in Annandale in under 5 minutes. Your brow artist lives and works right here.
                 </p>
               </div>
             </AnimatedSection>
@@ -256,11 +255,11 @@ const OmbreBrowsAlexandria: React.FC = () => {
             <AnimatedSection delay={0.2}>
               <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
-                  <Shield className="w-7 h-7 text-[#2D2D2B]" />
+                  <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Data-Driven Safety</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Results</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Our 0.19% complication rate is 13x better than the 2.5% industry average. Hospital-grade sterilization and premium vegan pigments for your peace of mind.
+                  Every procedure is documented with 6+ week healed photos. See our track record right here in your community. Real results from real clients — verifiable and transparent.
                 </p>
               </div>
             </AnimatedSection>
@@ -268,11 +267,11 @@ const OmbreBrowsAlexandria: React.FC = () => {
             <AnimatedSection delay={0.3}>
               <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
-                  <Clock className="w-7 h-7 text-[#2D2D2B]" />
+                  <Shield className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">DMV Climate Expertise</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">The Personal Touch</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Our technique is optimized for Northern Virginia's humid summers and dry winters. Results last 18-36 months—longer than traditional methods in our climate.
+                  As your local artist, I'm here for you long-term. Touch-ups, questions, aftercare check-ins — your brow expert is 5 minutes away. That's the advantage of choosing your neighborhood studio.
                 </p>
               </div>
             </AnimatedSection>
@@ -280,12 +279,12 @@ const OmbreBrowsAlexandria: React.FC = () => {
         </div>
       </section>
 
-      {/* Alexandria Testimonials */}
+      {/* Annandale Testimonials */}
       <section className="py-20 bg-white">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              What Alexandria Clients Say
+              What Annandale Clients Say
             </h2>
             <div className="flex items-center justify-center gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
@@ -296,7 +295,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {alexandriaTestimonials.map((testimonial, index) => (
+            {annandaleTestimonials.map((testimonial, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div className="bg-[#F9F7F5] rounded-2xl p-8 h-full">
                   <div className="flex items-center gap-1 mb-4">
@@ -311,7 +310,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium text-[#2D2D2B]">{testimonial.name}</p>
-                      <p className="text-sm text-[#9A7B69]">{testimonial.location}, Alexandria</p>
+                      <p className="text-sm text-[#9A7B69]">{testimonial.location}, Annandale</p>
                     </div>
                   </div>
                 </div>
@@ -329,7 +328,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
               Ombre Powder Brows Pricing
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              All-inclusive pricing. Everything you need included.
+              Transparent pricing with everything included. No hidden fees.
             </p>
           </AnimatedSection>
 
@@ -360,10 +359,10 @@ const OmbreBrowsAlexandria: React.FC = () => {
                   to="/booking"
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
-                  Book Your Alexandria Consultation
+                  Book Your Annandale Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
-                  Compare: Old Town studios charge $800+ for similar quality
+                  Compare: DC & Tysons studios charge $750-950 for similar quality
                 </p>
               </div>
             </AnimatedSection>
@@ -378,7 +377,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
             <AnimatedSection>
               <InlineFaqAccordion
                 faqs={faqs}
-                title="Questions from Alexandria Clients"
+                title="Questions from Annandale Clients"
                 subtitle="Tap a question to reveal the answer"
                 maxVisible={3}
               />
@@ -400,6 +399,10 @@ const OmbreBrowsAlexandria: React.FC = () => {
             <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-alexandria-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Alexandria, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
             </Link>
             <Link to="/ombre-brows-fairfax-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Fairfax, VA</p>
@@ -425,10 +428,6 @@ const OmbreBrowsAlexandria: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">PMU Blog</p>
               <p className="text-sm text-[#2D2D2B]/50">Expert guides</p>
             </Link>
-            <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
-              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
-            </Link>
           </div>
         </div>
       </section>
@@ -439,10 +438,10 @@ const OmbreBrowsAlexandria: React.FC = () => {
         <div className="container-custom relative z-10">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium mb-6">
-              Ready for Your Alexandria Transformation?
+              Ready for Effortless Brows?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
-              Join Alexandria residents from Old Town to Kingstowne who've discovered their perfect brows. Book your free consultation today.
+              Your neighborhood PMU studio is right here in Annandale. Book your free consultation and see why hundreds of local clients trust Ink Mugi for their brows.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -466,4 +465,4 @@ const OmbreBrowsAlexandria: React.FC = () => {
   );
 };
 
-export default OmbreBrowsAlexandria;
+export default PermanentMakeupAnnandale;
