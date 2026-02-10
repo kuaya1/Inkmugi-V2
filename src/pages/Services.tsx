@@ -143,18 +143,18 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Permanent Makeup Services in Annandale, VA | Ink Mugi</title>
-        <meta name="description" content="Explore permanent makeup services at Ink Mugi in Annandale, VA. Learn about techniques, healed results, and what to expect before booking." />
-        <meta name="keywords" content="permanent makeup services Annandale VA, ombre powder brows pricing, microshading Northern Virginia, PMU consultation Annandale, brow transformation services" />
+        <title>Ombre Powder Brows & PMU Services | Pricing & Process | Ink Mugi VA</title>
+        <meta name="description" content="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from 523+ clients. Licensed & insured." />
+        <meta name="keywords" content="permanent makeup services Annandale VA, ombre powder brows pricing, powder brows cost Northern Virginia, PMU services near me, brow transformation Annandale" />
         <link rel="canonical" href="https://www.inkmugi.com/services" />
-        <meta property="og:title" content="Transformational Beauty Services | Inkmugi" />
-        <meta property="og:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty for women ready to feel like themselves again." />
+        <meta property="og:title" content="Ombre Powder Brows & PMU Services | Ink Mugi Annandale VA" />
+        <meta property="og:description" content="Premium ombre powder brows starting at $600. Includes consultation, procedure & touch-up. Licensed PMU artist in Annandale, VA." />
         <meta property="og:url" content="https://www.inkmugi.com/services" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Permanent Makeup Services | Ink Mugi Annandale VA" />
-        <meta name="twitter:description" content="Premium brow transformations starting at $600. Precision technique meets intentional beauty." />
+        <meta name="twitter:title" content="Ombre Brows & PMU Services | Pricing | Ink Mugi VA" />
+        <meta name="twitter:description" content="Ombre powder brows from $600. Consultation + procedure + touch-up included. Licensed artist, Annandale VA." />
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}

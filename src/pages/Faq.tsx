@@ -125,18 +125,18 @@ const Faq: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Frequently Asked Questions | Ink Mugi</title>
-        <meta name="description" content="Find answers to common questions about ombre powder brows, the healing process, and what to expect at your appointment with Ink Mugi." />
-        <meta name="keywords" content="ombre brows FAQ, powder brows questions, PMU aftercare, microshading healing, permanent makeup cost" />
+        <title>Permanent Makeup FAQ: Cost, Pain, Healing & More | Ink Mugi</title>
+        <meta name="description" content="Answers to your top questions about ombre powder brows: How much does it cost? Does it hurt? How long does healing take? What's the difference vs microblading? From a licensed VA artist with 523+ procedures." />
+        <meta name="keywords" content="permanent makeup FAQ, ombre brows cost, powder brows pain level, PMU healing process, microblading vs powder brows, permanent makeup questions Annandale VA" />
         <link rel="canonical" href="https://www.inkmugi.com/faq" />
-        <meta property="og:title" content="Ombre Powder Brows FAQ | Inkmugi" />
-        <meta property="og:description" content="Common questions about ombre powder brows, healing process, pricing, and aftercare at Inkmugi." />
+        <meta property="og:title" content="Permanent Makeup FAQ: Cost, Pain & Healing | Ink Mugi" />
+        <meta property="og:description" content="Expert answers about permanent makeup cost, pain, healing, and aftercare from a licensed artist in Annandale, VA." />
         <meta property="og:url" content="https://www.inkmugi.com/faq" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Powder Brows FAQ | Ink Mugi" />
-        <meta name="twitter:description" content="Common questions about ombre powder brows, healing, pricing, and aftercare at Ink Mugi." />
+        <meta name="twitter:title" content="Permanent Makeup FAQ: Cost, Pain & Healing | Ink Mugi" />
+        <meta name="twitter:description" content="How much do ombre brows cost? Does PMU hurt? How long is healing? Expert answers from a VA-licensed artist." />
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({

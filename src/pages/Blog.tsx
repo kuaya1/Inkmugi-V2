@@ -243,8 +243,8 @@ Always consult a certified, experienced artist and review their portfolio before
       {/* SEO Metadata */}
       <Helmet>
         <title>{getPageTitle()}</title>
-        <meta name="description" content="Insights on permanent makeup techniques, aftercare, and what to expect from your brow appointment at Ink Mugi." />
-        <meta name="keywords" content="permanent makeup, PMU, microblading, nano brows, ombre brows, powder brows, eyebrow tattooing, beauty blog" />
+        <meta name="description" content="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with 523+ procedures." />
+        <meta name="keywords" content="permanent makeup blog, ombre brows vs microblading, nano brows cost, PMU healing timeline, powder brows aftercare, permanent makeup guide DMV" />
         <link rel="canonical" href="https://www.inkmugi.com/blog" />
         <meta property="og:title" content={getPageTitle()} />
         <meta property="og:description" content="Expert insights on permanent makeup techniques, aftercare, and beauty trends from professional PMU artists." />

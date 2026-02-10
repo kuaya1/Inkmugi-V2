@@ -33,18 +33,18 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Ink Mugi</title>
-        <meta name="description" content="Get in touch with Ink Mugi for ombre powder brows in Annandale, VA. Visit our studio or reach out to schedule your consultation." />
-        <meta name="keywords" content="contact Inkmugi, PMU consultation Annandale, book ombre brows appointment, permanent makeup Northern Virginia" />
+        <title>Book Your Ombre Brows Consultation | Ink Mugi Annandale, VA</title>
+        <meta name="description" content="Schedule a free consultation at Ink Mugi. Located at 7857 Heritage Dr, Annandale, VA 22003. Call (571) 283-8228 or book online. Walk-ins welcome. Licensed PMU artist serving the DMV area." />
+        <meta name="keywords" content="book permanent makeup Annandale VA, PMU consultation near me, ombre brows appointment Northern Virginia, contact Ink Mugi, permanent makeup DMV" />
         <link rel="canonical" href="https://www.inkmugi.com/contact" />
-        <meta property="og:title" content="Contact Inkmugi - Book Your PMU Consultation" />
-        <meta property="og:description" content="Contact Inkmugi for ombre powder brows. Call (571) 283-8228 or visit us in Annandale, VA. Free consultations available." />
+        <meta property="og:title" content="Book Ombre Brows Consultation | Ink Mugi Annandale VA" />
+        <meta property="og:description" content="Schedule your free PMU consultation. Call (571) 283-8228 or book online. 7857 Heritage Dr, Annandale, VA." />
         <meta property="og:url" content="https://www.inkmugi.com/contact" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Ink Mugi - Book Your PMU Consultation" />
-        <meta name="twitter:description" content="Contact Ink Mugi for ombre powder brows. Call (571) 283-8228 or visit us in Annandale, VA." />
+        <meta name="twitter:title" content="Book Ombre Brows Consultation | Ink Mugi VA" />
+        <meta name="twitter:description" content="Free PMU consultation. Call (571) 283-8228 or book online. 7857 Heritage Dr, Annandale, VA 22003." />
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}

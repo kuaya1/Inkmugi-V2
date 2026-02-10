@@ -368,18 +368,18 @@ const Gallery: React.FC = () => {
     <>
       {/* SEO Metadata */}
       <Helmet>
-        <title>Before and After Gallery | Ink Mugi</title>
-        <meta name="description" content="Browse healed ombre powder brows results at Ink Mugi. See real client transformations from our Annandale, VA studio." />
-        <meta name="keywords" content="ombre brows before after, powder brows results, PMU gallery Annandale VA, permanent makeup transformations" />
+        <title>Healed Ombre Brows Before & After | Real Client Results | Ink Mugi VA</title>
+        <meta name="description" content="See 100+ healed powder brow transformations at Ink Mugi. Real client before-and-after photos from our Annandale, VA studio. No filters, no touch-ups — just real healed results from a licensed PMU artist." />
+        <meta name="keywords" content="ombre brows before after, healed powder brows results, PMU gallery Annandale VA, permanent makeup transformations, healed brow photos Northern Virginia" />
         <link rel="canonical" href="https://www.inkmugi.com/gallery" />
-        <meta property="og:title" content="Ombre Brows Before & After Gallery | Inkmugi" />
-        <meta property="og:description" content="See real ombre powder brows transformations at Inkmugi. Browse before & after photos from 523+ procedures." />
+        <meta property="og:title" content="Healed Ombre Brows Before & After | Real Results | Ink Mugi" />
+        <meta property="og:description" content="See real healed ombre powder brows transformations. Before & after photos from 523+ procedures at our Annandale, VA studio." />
         <meta property="og:url" content="https://www.inkmugi.com/gallery" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Before & After Gallery | Ink Mugi" />
-        <meta name="twitter:description" content="Browse healed ombre powder brows results. 523+ procedures documented at our Annandale, VA studio." />
+        <meta name="twitter:title" content="Healed Ombre Brows Before & After | Ink Mugi VA" />
+        <meta name="twitter:description" content="100+ healed powder brow transformations. Real before & after photos — no filters, just results. Annandale, VA." />
         <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({

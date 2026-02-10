@@ -63,10 +63,10 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Permanent Makeup Safety Guide | Ink Mugi</title>
+        <title>Is Permanent Makeup Safe? 0.19% Complication Rate | Ink Mugi DMV</title>
         <meta 
           name="description" 
-          content="Hospital-grade PMU safety protocols at Ink Mugi. 0.19% complication rate vs 2.5% industry average. Virginia-licensed, bloodborne pathogens certified, premium vegan pigments." 
+          content="Hospital-grade safety protocols with a 0.19% complication rate (vs 2.5% industry average). Virginia-licensed, BBP certified, premium vegan pigments. See our transparent safety data from 523+ procedures." 
         />
         <meta 
           name="keywords" 

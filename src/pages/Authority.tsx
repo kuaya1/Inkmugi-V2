@@ -57,10 +57,10 @@ export default function Authority() {
     <>
       <Helmet>
         {/* Enhanced Primary SEO Meta Tags */}
-        <title>Permanent Makeup Education Hub | Ink Mugi</title>
+        <title>PMU Research Hub: 523+ Procedures Data & Safety Studies | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Learn about permanent makeup from a licensed artist at Ink Mugi. Understand the process, healing, and what to expect before treatment." 
+          content="Explore proprietary PMU research from 523+ clinical procedures. 340% better powder brow performance in humid DMV climate, 0.19% complication rate. Virginia-licensed evidence-based permanent makeup authority." 
         />
         <meta 
           name="keywords" 

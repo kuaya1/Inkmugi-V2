@@ -117,10 +117,10 @@ export default function PMUDataGuide() {
     <>
       <Helmet>
         {/* Enhanced SEO */}
-        <title>How Powder Brows Heal | Ink Mugi</title>
+        <title>Powder Brows Healing Data: 523+ Procedures Analyzed | Ink Mugi</title>
         <meta 
           name="description" 
-          content="Comprehensive PMU longevity data from 523+ procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison from Ink Mugi's clinical dataset." 
+          content="See real healing data from 523+ ombre brow procedures. Retention rates by skin type, age & season. The only studio in VA sharing transparent clinical longevity data. Evidence-based PMU results." 
         />
         <meta 
           name="keywords" 
