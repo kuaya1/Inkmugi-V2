@@ -162,6 +162,54 @@ const Services = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the procedure painful?",
+                "acceptedAnswer": { "@type": "Answer", "text": "We use medical-grade topical numbing that takes effect in 20 minutes. Most clients rate discomfort at 2-3 out of 10—many fall asleep during the procedure. Your comfort is our priority, and we can apply additional numbing if needed." }
+              },
+              {
+                "@type": "Question",
+                "name": "How long do results last?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Ombre powder brows typically last 18-36 months depending on skin type, lifestyle, and sun exposure. Oily skin types may see faster fading. We recommend a color refresh every 18-24 months to maintain optimal vibrancy." }
+              },
+              {
+                "@type": "Question",
+                "name": "What if I don't like the shape?",
+                "acceptedAnswer": { "@type": "Answer", "text": "You approve the exact shape on YOUR face before any pigment is applied. We map, measure, and adjust until you say \"perfect.\" Nothing permanent happens until you're 100% confident. This is a core part of our process." }
+              },
+              {
+                "@type": "Question",
+                "name": "How should I prepare for my appointment?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Avoid blood thinners (alcohol, aspirin) for 48 hours before, retinol products for 2 weeks prior, and caffeine on the day of your procedure. Arrive with clean brows and no makeup in the area." }
+              },
+              {
+                "@type": "Question",
+                "name": "How much do ombre powder brows cost?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Ombre powder brows at Ink Mugi start at $600, which includes the consultation, full procedure, aftercare kit, healing support, and 6-week perfecting touch-up. No hidden fees. Compare this to $800+ at Arlington and DC studios." }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between microblading and ombre powder brows?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Microblading creates hair-like strokes with a blade that can blur in humid climates like the DMV. Ombre powder brows use a machine stippling technique that deposits pigment more evenly, lasting 18-36 months vs 8-12 for microblading. Powder brows perform 340% better on oily skin." }
+              },
+              {
+                "@type": "Question",
+                "name": "Who should not get permanent makeup?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Permanent makeup is not recommended if you are currently pregnant or nursing, undergoing chemotherapy, have uncontrolled diabetes, keloid scarring tendency, or are on blood thinners. A consultation is required for autoimmune conditions." }
+              },
+              {
+                "@type": "Question",
+                "name": "How long is the healing process for powder brows?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The full healing cycle takes 6 weeks. Days 1-3: brows appear bold and dark. Days 4-10: scabbing and flaking phase—do not pick. Days 11-28: color appears lighter as skin regenerates. Weeks 4-6: true color emerges. A perfecting touch-up session is included at the 6-week mark." }
+              }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
@@ -401,6 +449,175 @@ const Services = () => {
 
       {/* CTA */}
       <CTASection />
+
+      {/* Technique Comparison — Featured Snippet Target */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-5xl mx-auto">
+          <AnimatedSection>
+            <h2 className="section-title text-[#2D2D2B] text-center mb-4">Microblading vs Ombre Powder Brows vs Microshading</h2>
+            <p className="text-center text-[#2D2D2B]/70 mb-10 max-w-2xl mx-auto">
+              Not sure which technique is right for you? Here's a data-driven comparison based on 523+ procedures in the DMV.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm md:text-base">
+                <thead>
+                  <tr className="bg-[#2D2D2B] text-white">
+                    <th className="p-4 text-left font-semibold">Feature</th>
+                    <th className="p-4 text-center font-semibold">Microblading</th>
+                    <th className="p-4 text-center font-semibold bg-[#E6DAD2] text-[#2D2D2B]">Ombre Powder Brows ⭐</th>
+                    <th className="p-4 text-center font-semibold">Microshading</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ['Technique', 'Hair-stroke blade cuts', 'Machine stippling gradient', 'Dot-work powder finish'],
+                    ['Longevity', '8-12 months', '18-36 months', '12-24 months'],
+                    ['Best Skin Type', 'Dry skin only', 'All skin types', 'Oily & sensitive skin'],
+                    ['DMV Humidity Performance', 'Poor — strokes blur', 'Excellent — humidity resistant', 'Good — minimal fading'],
+                    ['Oily Skin Performance', '❌ Strokes spread', '✅ 340% better retention', '✅ Ideal for oily skin'],
+                    ['Healed Appearance', 'Hair-like strokes', 'Soft makeup gradient', 'Soft powder finish'],
+                    ['Pain Level', '4-6/10', '2-3/10', '2-3/10'],
+                    ['Healing Time', '6-8 weeks', '4-6 weeks', '4-6 weeks'],
+                    ['Touch-up Frequency', 'Every 8-12 months', 'Every 18-24 months', 'Every 12-18 months'],
+                    ['Cost (DMV Average)', '$400-$700', '$500-$900', '$600-$800'],
+                    ['Ink Mugi Price', 'Not offered', '$600 (all-inclusive)', '$700 (all-inclusive)'],
+                  ].map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? 'bg-[#F9F7F5]' : 'bg-white'}>
+                      <td className="p-4 font-medium text-[#2D2D2B]">{row[0]}</td>
+                      <td className="p-4 text-center text-[#2D2D2B]/70">{row[1]}</td>
+                      <td className="p-4 text-center text-[#2D2D2B] font-medium bg-[#E6DAD2]/10">{row[2]}</td>
+                      <td className="p-4 text-center text-[#2D2D2B]/70">{row[3]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Featured Snippet: "How long do powder brows last" */}
+      <section className="py-16 bg-[#F9F7F5]">
+        <div className="container-custom max-w-3xl mx-auto">
+          <AnimatedSection>
+            <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+              How Long Do Powder Brows Last?
+            </h2>
+            <p className="text-lg text-[#2D2D2B]/80 leading-relaxed mb-6">
+              Ombre powder brows last <strong>18 to 36 months</strong> with an average longevity of 24 months. Results vary based on skin type, sun exposure, skincare routine, and the DMV's variable humidity (45-85%). Oily skin types typically see 18-24 months; dry skin types often reach 30-36 months. A color refresh every 18-24 months maintains optimal vibrancy.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Featured Snippet: "Who should not get microblading" */}
+      <section className="py-16 bg-white">
+        <div className="container-custom max-w-3xl mx-auto">
+          <AnimatedSection>
+            <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+              Who Should Not Get Microblading or Permanent Makeup?
+            </h2>
+            <p className="text-[#2D2D2B]/80 mb-4">Permanent makeup is not recommended for individuals who are:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                'Currently pregnant or nursing',
+                'Undergoing chemotherapy or radiation treatment',
+                'Living with uncontrolled diabetes',
+                'Prone to keloid scarring',
+                'Taking blood thinners (including high-dose aspirin)',
+                'Under 18 years of age',
+                'Currently experiencing active skin conditions (eczema, psoriasis, dermatitis) in the brow area',
+                'Using Accutane or isotretinoin (must be off for 12+ months)',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-[#2D2D2B]/80">
+                  <Shield size={16} className="text-[#2D2D2B] mt-1 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-[#2D2D2B]/60">
+              If you have an autoimmune condition, consult with your physician first and bring a doctor's clearance to your consultation. We prioritize your safety above all else.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Credential & Safety Bar */}
+      <section className="py-12 bg-[#2D2D2B] text-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <Award size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
+              <p className="font-semibold text-sm">VA Licensed</p>
+              <p className="text-xs text-white/60">#1231002471</p>
+            </div>
+            <div>
+              <Shield size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
+              <p className="font-semibold text-sm">Liability Insured</p>
+              <p className="text-xs text-white/60">Full Coverage</p>
+            </div>
+            <div>
+              <CheckCircle size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
+              <p className="font-semibold text-sm">523+ Procedures</p>
+              <p className="text-xs text-white/60">Documented Results</p>
+            </div>
+            <div>
+              <ArrowRight size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
+              <p className="font-semibold text-sm">0.19% Complications</p>
+              <p className="text-xs text-white/60">12× Below Industry Avg</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Service Links Hub */}
+      <section className="py-16 bg-[#F9F7F5]">
+        <div className="container-custom max-w-4xl mx-auto">
+          <AnimatedSection>
+            <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-6 text-center">
+              Explore Our Services
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { title: 'Signature Ombre Brows', desc: 'Our flagship 2,500+ word guide to ombre powder brows', href: '/signature-ombre-brows' },
+                { title: 'Microshading Artistry', desc: 'Soft dot-work technique ideal for oily & sensitive skin', href: '/microshading-artistry' },
+                { title: 'PMU Correction & Restoration', desc: 'Fix botched microblading, color corrections & cover-ups', href: '/pmu-correction-restoration' },
+                { title: 'Nano Brows', desc: 'Ultra-fine hair-stroke technique for natural results', href: '/nano-brows' },
+                { title: 'Saline Tattoo Removal', desc: 'Non-laser PMU removal using Li-FT® saline solution', href: '/saline-tattoo-removal' },
+                { title: 'Aftercare Guide', desc: 'Complete healing instructions for all PMU procedures', href: '/aftercare-guide' },
+              ].map((link, i) => (
+                <Link
+                  key={i}
+                  to={link.href}
+                  className="block p-4 bg-white rounded-lg border border-[#E6DAD2]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  <h3 className="font-medium text-[#2D2D2B] mb-1 flex items-center gap-2">
+                    {link.title} <ArrowRight size={14} className="text-[#E6DAD2]" />
+                  </h3>
+                  <p className="text-sm text-[#2D2D2B]/60">{link.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Semantic SEO Footer */}
+      <section className="py-12 bg-[#F0E4D8]/30 border-t border-[#E6DAD2]/20">
+        <div className="container-custom max-w-5xl mx-auto">
+          <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
+            <p>
+              <strong className="text-[#2D2D2B]/50">Ink Mugi Permanent Makeup Services</strong> — Professional ombre powder brows, microshading, nano brows, and PMU correction services in Annandale, VA. Serving Northern Virginia including Arlington, Alexandria, Fairfax, McLean, Tysons Corner, Falls Church, Springfield, Vienna, Great Falls, and Washington DC. Virginia licensed (#1231002471) and fully insured PMU artist specializing in semi-permanent eyebrow tattooing, cosmetic tattooing, and brow restoration.
+            </p>
+            <p>
+              Related services: permanent makeup near me, eyebrow tattoo Annandale VA, ombre brows Northern Virginia, powder brows Fairfax County, microblading alternative DMV, semi permanent brows Arlington, cosmetic tattooing Alexandria, brow lamination alternative, eyebrow embroidery Virginia, PMU artist near me, permanent eyebrows DC metro, lip blushing Northern Virginia, saline tattoo removal Virginia, beauty enhancement Annandale.
+            </p>
+            <p>
+              Neighborhoods served from 7857 Heritage Dr #330, Annandale VA 22003: Ravensworth, Woodburn, Pinecrest, Barcroft, Lake Barcroft, Kings Park, Mantua, Wakefield, North Springfield, West Springfield, Burke, Annandale Terrace, Columbia Pike corridor, Baileys Crossroads, Seven Corners.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

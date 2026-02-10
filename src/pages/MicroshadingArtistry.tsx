@@ -770,6 +770,23 @@ const MicroshadingArtistry: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+
+        {/* Semantic SEO Footer */}
+        <section className="py-10 bg-[#F0E4D8]/30 border-t border-[#E6DAD2]/20">
+          <div className="container-custom max-w-5xl mx-auto">
+            <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
+              <p>
+                <strong className="text-[#2D2D2B]/50">Microshading Artistry at Ink Mugi — Annandale, VA</strong> — Professional microshading, dot-work permanent makeup, and soft powder brow technique in Annandale, Virginia. Ideal for oily, sensitive, and mature skin types. Virginia licensed (#1231002471) and fully insured PMU artist specializing in natural, low-maintenance beauty enhancement.
+              </p>
+              <p>
+                Related searches: microshading near me, microshading Annandale VA, microshading vs microblading, microshading oily skin, powder brows dot technique, semi permanent brows Northern Virginia, microshading cost DMV, microshading healing process, microshading Arlington VA, microshading Alexandria VA, microshading Fairfax, soft fill brows, pixelated brows, cosmetic brow tattooing Virginia.
+              </p>
+              <p>
+                Serving: Annandale, Arlington, Alexandria, Fairfax, McLean, Tysons Corner, Falls Church, Springfield, Vienna, Great Falls, Washington DC, and the greater DMV metro area.
+              </p>
+            </div>
+          </div>
+        </section>
     </>
   );
 };

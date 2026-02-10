@@ -607,6 +607,43 @@ const SignatureOmbreBrows: React.FC = () => {
 
         {/* Data-Driven FAQs */}
         <section className="py-20 bg-gradient-to-b from-[#F9F7F5] to-white">
+
+          {/* Featured Snippet Block: "how long do powder brows last" */}
+          <div className="container-custom max-w-3xl mx-auto mb-16">
+            <AnimatedSection>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#E6DAD2]/30">
+                <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+                  How Long Do Powder Brows Last?
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Ombre powder brows last <strong>18 to 36 months</strong>, with an average longevity of 24 months based on 523 tracked procedures. Results vary by skin type — oily skin averages 18-24 months; dry skin often reaches 30-36 months. Northern Virginia's variable humidity (45-85%) supports 88-94% pigment retention. A color refresh every 18-24 months maintains optimal vibrancy.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Featured Snippet Block: "permanent makeup aftercare" */}
+          <div className="container-custom max-w-3xl mx-auto mb-16">
+            <AnimatedSection>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#E6DAD2]/30">
+                <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+                  Permanent Makeup Aftercare: Essential Steps
+                </h2>
+                <ol className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">1.</span> Avoid getting the brow area wet for 10 days — no direct water in the shower, swimming, or sweating.</li>
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">2.</span> Apply the provided aftercare ointment with a clean cotton swab 2-3 times daily for the first 7 days.</li>
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">3.</span> Do NOT pick, scratch, or peel any flaking skin — let scabs separate naturally to preserve pigment.</li>
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">4.</span> Avoid makeup, skincare acids, retinol, and exfoliants on the brow area for 14 days minimum.</li>
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">5.</span> Stay out of direct sunlight, tanning beds, and saunas for at least 2 weeks post-procedure.</li>
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">6.</span> Sleep on your back for the first 3-5 nights to avoid smudging or friction on healing brows.</li>
+                  <li className="flex items-start gap-3"><span className="font-bold text-[#2D2D2B] min-w-[24px]">7.</span> Attend your 6-week perfecting touch-up to lock in color and address any areas that healed lighter.</li>
+                </ol>
+                <p className="mt-4 text-sm text-gray-500">
+                  <Link to="/aftercare-guide" className="text-[#2D2D2B] font-medium underline">Read our complete aftercare guide →</Link>
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
           <div className="container-custom">
             <AnimatedSection className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
@@ -708,6 +745,23 @@ const SignatureOmbreBrows: React.FC = () => {
                 ✉️ <a href="mailto:inkmugi@gmail.com" className="hover:text-[#E6DAD2] transition-colors">inkmugi@gmail.com</a>
               </p>
             </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Semantic SEO Footer */}
+        <section className="py-10 bg-[#F0E4D8]/30 border-t border-[#E6DAD2]/20">
+          <div className="container-custom max-w-5xl mx-auto">
+            <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
+              <p>
+                <strong className="text-[#2D2D2B]/50">Signature Ombre Powder Brows at Ink Mugi — Annandale, VA</strong> — Professional ombre powder brows, microshading, and semi-permanent eyebrow tattooing in Annandale, Virginia. Data-driven results from 523+ tracked procedures with 97% client satisfaction and 0.19% complication rate. Virginia licensed (#1231002471) and fully insured PMU artist.
+              </p>
+              <p>
+                Related searches: ombre powder brows near me, ombre brows Annandale VA, powder brows Northern Virginia, ombre brows cost, ombre brows vs microblading, permanent eyebrows DMV, semi permanent brows Arlington, ombre brows oily skin, powder brows Fairfax Virginia, eyebrow tattoo Alexandria, ombre brows McLean, powder brows Tysons, ombre brows healing process, how long do powder brows last, ombre brows for oily skin, permanent makeup near me, brow tattoo Northern Virginia.
+              </p>
+              <p>
+                Serving clients from: Annandale, Arlington, Alexandria, Fairfax, McLean, Tysons Corner, Falls Church, Springfield, Vienna, Great Falls, Reston, Centreville, Burke, Woodbridge, Manassas, Herndon, Chantilly, and Washington DC metro area. Located at 7857 Heritage Dr #330, Annandale, VA 22003.
+              </p>
+            </div>
           </div>
         </section>
       </div>

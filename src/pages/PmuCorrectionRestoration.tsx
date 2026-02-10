@@ -609,6 +609,23 @@ const PmuCorrectionRestoration: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+
+        {/* Semantic SEO Footer */}
+        <section className="py-10 bg-[#F0E4D8]/30 border-t border-[#E6DAD2]/20">
+          <div className="container-custom max-w-5xl mx-auto">
+            <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
+              <p>
+                <strong className="text-[#2D2D2B]/50">PMU Correction & Restoration at Ink Mugi — Annandale, VA</strong> — Professional permanent makeup correction, color neutralization, shape refinement, and brow restoration in Annandale, Virginia. Fix botched microblading, faded PMU, or previous cosmetic tattoo work. Virginia licensed (#1231002471) and fully insured PMU artist.
+              </p>
+              <p>
+                Related searches: fix botched microblading near me, PMU correction Northern Virginia, eyebrow tattoo correction Annandale, microblading correction Arlington VA, permanent makeup fix DMV, color correction PMU, brow tattoo cover up, bad microblading fix, PMU restoration Alexandria, eyebrow tattoo shape correction, cosmetic tattoo repair Fairfax, brow color neutralization Virginia.
+              </p>
+              <p>
+                Serving: Annandale, Arlington, Alexandria, Fairfax, McLean, Tysons Corner, Falls Church, Springfield, Vienna, Great Falls, Washington DC, and the greater Northern Virginia / DMV metro area.
+              </p>
+            </div>
+          </div>
+        </section>
     </>
   );
 };
