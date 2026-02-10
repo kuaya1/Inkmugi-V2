@@ -56,13 +56,13 @@ const BlogPost: React.FC = () => {
     let url = '';
     switch (platform) {
       case 'facebook':
-        url = \`https://www.facebook.com/sharer/sharer.php?u=\${encodeURIComponent(shareUrl)}\`;
+        url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
         break;
       case 'twitter':
-        url = \`https://twitter.com/intent/tweet?text=\${encodeURIComponent(shareTitle)}&url=\${encodeURIComponent(shareUrl)}\`;
+        url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareTitle)}&url=${encodeURIComponent(shareUrl)}`;
         break;
       case 'pinterest':
-        url = \`https://pinterest.com/pin/create/button/?url=\${encodeURIComponent(shareUrl)}&description=\${encodeURIComponent(shareTitle)}\`;
+        url = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}&description=${encodeURIComponent(shareTitle)}`;
         break;
       case 'copy':
         navigator.clipboard.writeText(shareUrl);
