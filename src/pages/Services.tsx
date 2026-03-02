@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { CheckCircle, CheckCircle2, Shield, Award, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -142,20 +142,12 @@ const Services = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Powder Brows & PMU Services | Pricing & Process | Ink Mugi VA</title>
-        <meta name="description" content="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from 523+ clients. Licensed & insured." />
-        <meta name="keywords" content="permanent makeup services Annandale VA, ombre powder brows pricing, powder brows cost Northern Virginia, PMU services near me, brow transformation Annandale" />
-        <link rel="canonical" href="https://www.inkmugi.com/services" />
-        <meta property="og:title" content="Ombre Powder Brows & PMU Services | Ink Mugi Annandale VA" />
-        <meta property="og:description" content="Premium ombre powder brows starting at $600. Includes consultation, procedure & touch-up. Licensed PMU artist in Annandale, VA." />
-        <meta property="og:url" content="https://www.inkmugi.com/services" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Brows & PMU Services | Pricing | Ink Mugi VA" />
-        <meta name="twitter:description" content="Ombre powder brows from $600. Consultation + procedure + touch-up included. Licensed artist, Annandale VA." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombre Powder Brows & PMU Services | Pricing & Process | Ink Mugi VA"
+        description="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from 523+ clients. Licensed & insured."
+        path="/services"
+        keywords="permanent makeup services Annandale VA, ombre powder brows pricing, powder brows cost Northern Virginia, PMU services near me, brow transformation Annandale"
+      >
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>
@@ -217,7 +209,7 @@ const Services = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-[#F0E4D8] via-[#E6DAD2] to-[#F9F7F5]">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { 
   CheckCircle, 
   Award, 
@@ -105,28 +105,13 @@ const SignatureOmbreBrows: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Powder Brows in Annandale, VA | Ink Mugi</title>
-        <meta 
-          name="description" 
-          content="Professional ombre powder brows performed in Annandale, VA. See healed results, learn the process, and book a consultation with Ink Mugi." 
-        />
-        <meta 
-          name="keywords" 
-          content="ombre powder brows Annandale VA, permanent makeup Northern Virginia, microshading oily skin DMV, PMU artist licensed Virginia, powder brows vs microblading, ombre brows cost Arlington Alexandria, permanent eyebrows Fairfax County" 
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/signature-ombre-brows" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Signature Ombre Powder Brows | $600 | Licensed PMU Annandale VA" />
-        <meta property="og:description" content="18-36 month longevity. 340% better for oily skin. 523+ procedures. Virginia-licensed PMU artist." />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg" />
-        <meta property="og:url" content="https://www.inkmugi.com/signature-ombre-brows" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Signature Ombre Powder Brows | Ink Mugi Annandale VA" />
-        <meta name="twitter:description" content="18-36 month longevity. 340% better for oily skin. 523+ procedures. Virginia-licensed PMU artist." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg" />
+      <SEO
+        title="Ombre Powder Brows in Annandale, VA | Ink Mugi"
+        description="Professional ombre powder brows performed in Annandale, VA. See healed results, learn the process, and book a consultation with Ink Mugi."
+        path="/signature-ombre-brows"
+        image="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
+        keywords="ombre powder brows Annandale VA, permanent makeup Northern Virginia, microshading oily skin DMV, PMU artist licensed Virginia, powder brows vs microblading, ombre brows cost Arlington Alexandria, permanent eyebrows Fairfax County"
+      >
 
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -271,7 +256,7 @@ const SignatureOmbreBrows: React.FC = () => {
             "url": "https://www.inkmugi.com/signature-ombre-brows"
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}

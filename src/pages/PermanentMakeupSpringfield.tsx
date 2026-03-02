@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { MapPin, Star, CheckCircle, Award, Shield, Car, ArrowRight, Phone } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
@@ -97,21 +97,12 @@ const PermanentMakeupSpringfield: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Permanent Makeup Near Springfield, VA | Ink Mugi — 12 Min from Town Center</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. 523+ procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome." />
-        <meta name="keywords" content="permanent makeup Springfield VA, ombre brows Springfield, powder brows Springfield Virginia, PMU near Springfield Town Center, microshading Springfield VA" />
-        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-springfield-va" />
-        <meta property="og:title" content="Permanent Makeup Near Springfield VA | Ink Mugi — 12 Min Drive" />
-        <meta property="og:description" content="Springfield's nearby PMU artist. 12 minutes from Town Center. 523+ procedures, $600 all-inclusive ombre powder brows." />
-        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-springfield-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Permanent Makeup Near Springfield VA | Ink Mugi — 12 Min Drive" />
-        <meta name="twitter:description" content="Springfield's nearby PMU artist. 12 minutes from Town Center. 523+ procedures, $600 all-inclusive ombre powder brows." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Permanent Makeup Near Springfield, VA | Ink Mugi — 12 Min from Town Center"
+        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. 523+ procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
+        path="/permanent-makeup-springfield-va"
+        keywords="permanent makeup Springfield VA, ombre brows Springfield, powder brows Springfield Virginia, PMU near Springfield Town Center, microshading Springfield VA"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -148,7 +139,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

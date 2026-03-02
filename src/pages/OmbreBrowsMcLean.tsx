@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   MapPin,
   Star,
@@ -99,21 +99,12 @@ const OmbreBrowsMcLean: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombré Brows for McLean, VA Residents | Ink Mugi — 15 Min from McLean Village</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="McLean VA ombre powder brows — save $200-400 vs Tysons & Georgetown studios. 15-minute drive to Ink Mugi's Annandale studio. 523+ procedures, VA-licensed, $600 all-inclusive. Book your free consultation." />
-        <meta name="keywords" content="ombre brows McLean VA, powder brows Tysons Corner, permanent makeup McLean Virginia, PMU near Great Falls, microshading McLean VA" />
-        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-mclean-va" />
-        <meta property="og:title" content="Ombré Brows for McLean VA | Ink Mugi" />
-        <meta property="og:description" content="McLean VA ombre powder brows — save $200-400 vs Tysons & Georgetown studios. 15-minute drive, 523+ procedures, $600 all-inclusive." />
-        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-mclean-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombré Brows for McLean VA | Ink Mugi" />
-        <meta name="twitter:description" content="McLean VA ombre powder brows — save $200-400 vs Tysons & Georgetown studios. 15-minute drive, 523+ procedures, $600 all-inclusive." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombré Brows for McLean, VA Residents | Ink Mugi — 15 Min from McLean Village"
+        description="McLean VA ombre powder brows — save $200-400 vs Tysons & Georgetown studios. 15-minute drive to Ink Mugi's Annandale studio. 523+ procedures, VA-licensed, $600 all-inclusive. Book your free consultation."
+        path="/ombre-brows-mclean-va"
+        keywords="ombre brows McLean VA, powder brows Tysons Corner, permanent makeup McLean Virginia, PMU near Great Falls, microshading McLean VA"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -157,7 +148,7 @@ const OmbreBrowsMcLean: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

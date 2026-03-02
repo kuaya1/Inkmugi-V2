@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Home, Search, ArrowRight, Phone, BookOpen, MapPin } from 'lucide-react';
 
 const NotFound: React.FC = () => {
   return (
     <>
-      <Helmet>
-        <title>Page Not Found | Ink Mugi</title>
-        <meta name="robots" content="noindex, follow" />
-        <meta name="description" content="This page doesn't exist. Find ombre powder brows services, pricing, gallery, and booking at Ink Mugi in Annandale, VA." />
-      </Helmet>
+      <SEO
+        title="Page Not Found | Ink Mugi"
+        description="This page doesn't exist. Find ombre powder brows services, pricing, gallery, and booking at Ink Mugi in Annandale, VA."
+        path="/404"
+        noindex
+      />
 
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] min-h-screen">
         <div className="container-custom">

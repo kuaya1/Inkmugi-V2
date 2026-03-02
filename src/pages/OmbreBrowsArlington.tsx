@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { 
   MapPin, 
   Clock, 
@@ -100,21 +100,12 @@ const OmbreBrowsArlington: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Powder Brows Near Arlington, VA | Ink Mugi</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 523+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters." />
-        <meta name="keywords" content="ombre brows Arlington VA, powder brows Clarendon, permanent makeup Arlington County, PMU near Ballston, microshading Arlington Virginia" />
-        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-arlington-va" />
-        <meta property="og:title" content="Ombre Brows for Arlington VA | Ink Mugi" />
-        <meta property="og:description" content="Arlington's nearby PMU artist. 12 minutes from Clarendon. Natural ombre brows." />
-        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-arlington-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Brows for Arlington VA | Ink Mugi" />
-        <meta name="twitter:description" content="Arlington's nearby PMU artist. 12 minutes from Clarendon. Natural ombre brows." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombre Powder Brows Near Arlington, VA | Ink Mugi"
+        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 523+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
+        path="/ombre-brows-arlington-va"
+        keywords="ombre brows Arlington VA, powder brows Clarendon, permanent makeup Arlington County, PMU near Ballston, microshading Arlington Virginia"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -158,7 +149,7 @@ const OmbreBrowsArlington: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

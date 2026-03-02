@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   MapPin,
   Star,
@@ -99,21 +99,12 @@ const PermanentMakeupTysons: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Permanent Makeup Near Tysons Corner, VA | Ink Mugi — 10 Min Drive, $200+ Savings</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 523+ procedures, 5.0★ reviews. Free consultation." />
-        <meta name="keywords" content="permanent makeup Tysons Corner VA, ombre brows Tysons, powder brows Tysons Virginia, PMU near Tysons Galleria, microshading Tysons Corner" />
-        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-tysons-va" />
-        <meta property="og:title" content="Permanent Makeup Near Tysons Corner, VA | Ink Mugi — $200+ Savings" />
-        <meta property="og:description" content="Tysons-quality PMU without the Tysons markup. 10 minutes away, $600 all-inclusive. 523+ procedures, 5.0★ reviews." />
-        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-tysons-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Permanent Makeup Near Tysons Corner, VA | Ink Mugi — $200+ Savings" />
-        <meta name="twitter:description" content="Tysons-quality PMU without the Tysons markup. 10 minutes away, $600 all-inclusive. 523+ procedures, 5.0★ reviews." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Permanent Makeup Near Tysons Corner, VA | Ink Mugi — 10 Min Drive, $200+ Savings"
+        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 523+ procedures, 5.0★ reviews. Free consultation."
+        path="/permanent-makeup-tysons-va"
+        keywords="permanent makeup Tysons Corner VA, ombre brows Tysons, powder brows Tysons Virginia, PMU near Tysons Galleria, microshading Tysons Corner"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -157,7 +148,7 @@ const PermanentMakeupTysons: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

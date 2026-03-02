@@ -1,6 +1,6 @@
 import React, {useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   CheckCircle,
   AlertTriangle,
@@ -40,8 +40,8 @@ const HowToChoosePmuArtist: React.FC = () => {
     {
       icon: <MessageCircle className="w-8 h-8 text-green-700" />,
       title: 'Says "No" to Clients',
-      description: 'A responsible artist will turn away clients who aren't good candidates (wrong skin type, unrealistic expectations, health contraindications). If they accept everyone, they're prioritizing money over results.',
-      check: 'Do they discuss who they DON'T work with?',
+      description: "A responsible artist will turn away clients who aren't good candidates (wrong skin type, unrealistic expectations, health contraindications). If they accept everyone, they're prioritizing money over results.",
+      check: "Do they discuss who they DON'T work with?",
     },
     {
       icon: <FileText className="w-8 h-8 text-green-700" />,
@@ -52,7 +52,7 @@ const HowToChoosePmuArtist: React.FC = () => {
     {
       icon: <Eye className="w-8 h-8 text-green-700" />,
       title: 'Realistic Expectations Set',
-      description: 'Quality artists discuss limitations, healing phases, and potential complications upfront. They don't promise permanent perfection.',
+      description: "Quality artists discuss limitations, healing phases, and potential complications upfront. They don't promise permanent perfection.",
       check: 'Do they explain what can go wrong?',
     },
     {
@@ -79,14 +79,14 @@ const HowToChoosePmuArtist: React.FC = () => {
     {
       icon: <XCircle className="w-8 h-8 text-red-700" />,
       title: 'No License Number Displayed',
-      description: 'If they don't display a state-issued license number, they're either unlicensed or hiding it. Many operate out of home studios without proper credentials.',
+      description: "If they don't display a state-issued license number, they're either unlicensed or hiding it. Many operate out of home studios without proper credentials.",
       danger: 'This is illegal in Virginia and most states.',
     },
     {
       icon: <XCircle className="w-8 h-8 text-red-700" />,
       title: 'Only Shows Fresh Work (No Healed Photos)',
       description: 'Fresh PMU always looks bold and impressive. Artists who only show day-of photos are hiding poor retention or color issues that appear during healing.',
-      danger: 'You're seeing the best-case scenario, not the final result.',
+      danger: "You're seeing the best-case scenario, not the final result.",
     },
     {
       icon: <XCircle className="w-8 h-8 text-red-700" />,
@@ -97,13 +97,13 @@ const HowToChoosePmuArtist: React.FC = () => {
     {
       icon: <XCircle className="w-8 h-8 text-red-700" />,
       title: 'Promises Permanent Results',
-      description: 'Semi-permanent makeup fades over 1-4 years. Anyone promising "permanent" or "lifetime" results doesn't understand pigment chemistry or is being dishonest.',
+      description: "Semi-permanent makeup fades over 1-4 years. Anyone promising \"permanent\" or \"lifetime\" results doesn't understand pigment chemistry or is being dishonest.",
       danger: 'Overpromising indicates inexperience or dishonesty.',
     },
     {
       icon: <XCircle className="w-8 h-8 text-red-700" />,
       title: 'No Consultation Required',
-      description: 'If you can book and pay online without meeting the artist, they're not assessing your suitability. This leads to poor matches and disappointed clients.',
+      description: "If you can book and pay online without meeting the artist, they're not assessing your suitability. This leads to poor matches and disappointed clients.",
       danger: 'Cookie-cutter approach ignores your unique needs.',
     },
     {
@@ -115,7 +115,7 @@ const HowToChoosePmuArtist: React.FC = () => {
     {
       icon: <XCircle className="w-8 h-8 text-red-700" />,
       title: 'Overly Aggressive Marketing',
-      description: 'Be wary of artists who use high-pressure sales tactics, limited-time offers, or "act now" urgency. Quality work doesn't need to be pushed.',
+      description: "Be wary of artists who use high-pressure sales tactics, limited-time offers, or \"act now\" urgency. Quality work doesn't need to be pushed.",
       danger: 'Desperation marketing suggests lack of repeat clients.',
     },
     {
@@ -129,7 +129,7 @@ const HowToChoosePmuArtist: React.FC = () => {
   const questionsToAsk = [
     {
       question: 'What is your state license number, and can I verify it?',
-      why: 'Ensures they're legally allowed to perform PMU in your state.',
+      why: "Ensures they're legally allowed to perform PMU in your state.",
     },
     {
       question: 'What technique do you recommend for my skin type and goals?',
@@ -144,7 +144,7 @@ const HowToChoosePmuArtist: React.FC = () => {
       why: 'Quality pigments = better retention and safety. Cheap pigments cause discoloration.',
     },
     {
-      question: 'What happens if I'm not happy with the result after healing?',
+      question: "What happens if I'm not happy with the result after healing?",
       why: 'Reveals whether they stand behind their work and offer corrections.',
     },
     {
@@ -157,7 +157,7 @@ const HowToChoosePmuArtist: React.FC = () => {
     },
     {
       question: 'Do you have professional liability insurance?',
-      why: 'Protects you in case of complications. Many home-based artists don't carry insurance.',
+      why: "Protects you in case of complications. Many home-based artists don't carry insurance.",
     },
     {
       question: 'Can I see your studio and sterilization process?',
@@ -185,23 +185,13 @@ const HowToChoosePmuArtist: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>How to Choose a PMU Artist | 10 Green Flags & 8 Red Flags | Ink Mugi</title>
-        <meta
-          name="description"
-          content="Expert guide to choosing a permanent makeup artist. Learn the 10 essential green flags and 8 red flags to avoid botched PMU. Questions to ask, what to look for, and how to protect yourself."
-        />
-        <meta
-          name="keywords"
-          content="how to choose PMU artist, permanent makeup artist red flags, how to find good microblading artist, PMU artist questions to ask, choosing eyebrow tattoo artist, permanent makeup safety, PMU artist green flags, how to avoid bad microblading, PMU artist checklist"
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/how-to-choose-pmu-artist" />
-
-        <meta property="og:title" content="How to Choose a PMU Artist | 10 Green Flags & 8 Red Flags" />
-        <meta property="og:description" content="Expert guide to choosing a permanent makeup artist. Learn what to look for and what to avoid." />
-        <meta property="og:image" content="https://www.inkmugi.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.inkmugi.com/how-to-choose-pmu-artist" />
-
+      <SEO
+        title="How to Choose a PMU Artist | 10 Green Flags & 8 Red Flags | Ink Mugi"
+        description="Expert guide to choosing a permanent makeup artist. Learn the 10 essential green flags and 8 red flags to avoid botched PMU. Questions to ask, what to look for, and how to protect yourself."
+        path="/how-to-choose-pmu-artist"
+        keywords="how to choose PMU artist, permanent makeup artist red flags, how to find good microblading artist, PMU artist questions to ask, choosing eyebrow tattoo artist, permanent makeup safety, PMU artist green flags, how to avoid bad microblading, PMU artist checklist"
+        image="https://www.inkmugi.com/og-image.jpg"
+      >
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -281,7 +271,7 @@ const HowToChoosePmuArtist: React.FC = () => {
                 '@type': 'HowToStep',
                 position: 4,
                 name: 'Ask Key Questions',
-                text: 'Ask about experience level, pigment brands, insurance, who they turn away, and what's included in pricing.',
+                text: "Ask about experience level, pigment brands, insurance, who they turn away, and what's included in pricing.",
               },
               {
                 '@type': 'HowToStep',
@@ -306,7 +296,7 @@ const HowToChoosePmuArtist: React.FC = () => {
             },
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero */}

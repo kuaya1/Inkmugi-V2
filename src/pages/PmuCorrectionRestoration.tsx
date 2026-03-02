@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { MapPin, Star, CheckCircle, Award, Shield, ArrowRight, Phone, AlertTriangle, RefreshCw, Sparkles, Heart } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
@@ -201,18 +201,15 @@ const PmuCorrectionRestoration: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>PMU Correction & Restoration in Northern Virginia | Ink Mugi — Fix Botched Brows</title>
-        <meta name="description" content="Fix botched microblading, faded brows & uneven permanent makeup. Ink Mugi's PMU correction service in Annandale, VA — 523+ procedures, VA-licensed. Correction consultations start at $150. Book today." />
-        <link rel="canonical" href="https://www.inkmugi.com/pmu-correction-restoration" />
-        <meta property="og:title" content="PMU Correction & Restoration in Northern Virginia | Ink Mugi" />
-        <meta property="og:description" content="Fix botched microblading, faded brows & uneven permanent makeup. Expert PMU correction by Mugi in Annandale, VA. Consultations start at $150." />
-        <meta property="og:url" content="https://www.inkmugi.com/pmu-correction-restoration" />
-        <meta property="og:type" content="website" />
+      <SEO
+        title="PMU Correction & Restoration in Northern Virginia | Ink Mugi — Fix Botched Brows"
+        description="Fix botched microblading, faded brows & uneven permanent makeup. Ink Mugi's PMU correction service in Annandale, VA — 523+ procedures, VA-licensed. Correction consultations start at $150. Book today."
+        path="/pmu-correction-restoration"
+      >
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-amber-50 via-white to-orange-50 pt-28 pb-20 overflow-hidden">

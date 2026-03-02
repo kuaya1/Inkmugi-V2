@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, ChevronUp, AlertCircle, CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -124,20 +124,12 @@ const Faq: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Permanent Makeup FAQ: Cost, Pain, Healing & More | Ink Mugi</title>
-        <meta name="description" content="Answers to your top questions about ombre powder brows: How much does it cost? Does it hurt? How long does healing take? What's the difference vs microblading? From a licensed VA artist with 523+ procedures." />
-        <meta name="keywords" content="permanent makeup FAQ, ombre brows cost, powder brows pain level, PMU healing process, microblading vs powder brows, permanent makeup questions Annandale VA" />
-        <link rel="canonical" href="https://www.inkmugi.com/faq" />
-        <meta property="og:title" content="Permanent Makeup FAQ: Cost, Pain & Healing | Ink Mugi" />
-        <meta property="og:description" content="Expert answers about permanent makeup cost, pain, healing, and aftercare from a licensed artist in Annandale, VA." />
-        <meta property="og:url" content="https://www.inkmugi.com/faq" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Permanent Makeup FAQ: Cost, Pain & Healing | Ink Mugi" />
-        <meta name="twitter:description" content="How much do ombre brows cost? Does PMU hurt? How long is healing? Expert answers from a VA-licensed artist." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Permanent Makeup FAQ: Cost, Pain, Healing & More | Ink Mugi"
+        description="Answers to your top questions about ombre powder brows: How much does it cost? Does it hurt? How long does healing take? What's the difference vs microblading? From a licensed VA artist with 523+ procedures."
+        path="/faq"
+        keywords="permanent makeup FAQ, ombre brows cost, powder brows pain level, PMU healing process, microblading vs powder brows, permanent makeup questions Annandale VA"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -187,7 +179,7 @@ const Faq: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">

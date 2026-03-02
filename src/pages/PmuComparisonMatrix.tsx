@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   CheckCircle,
   X,
@@ -249,26 +249,13 @@ const PmuComparisonMatrix: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>PMU Comparison Matrix: Ombre vs Microshading vs Nano vs Microblading</title>
-        <meta
-          name="description"
-          content="Complete side-by-side comparison of permanent makeup techniques. Ombre powder brows vs microshading vs nano brows vs microblading — longevity, costs, skin types, and which to choose."
-        />
-        <meta
-          name="keywords"
-          content="PMU comparison, ombre vs microblading, powder brows vs microblading, microshading vs ombre, nano brows vs microblading, permanent makeup techniques comparison, best PMU technique, which PMU technique"
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/pmu-comparison-matrix" />
-
-        <meta property="og:title" content="PMU Comparison Matrix: Which Technique Is Right for You?" />
-        <meta
-          property="og:description"
-          content="Compare all permanent makeup techniques side-by-side to make an informed decision."
-        />
-        <meta property="og:image" content="https://www.inkmugi.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.inkmugi.com/pmu-comparison-matrix" />
-
+      <SEO
+        title="PMU Comparison Matrix: Ombre vs Microshading vs Nano vs Microblading"
+        description="Complete side-by-side comparison of permanent makeup techniques. Ombre powder brows vs microshading vs nano brows vs microblading — longevity, costs, skin types, and which to choose."
+        path="/pmu-comparison-matrix"
+        keywords="PMU comparison, ombre vs microblading, powder brows vs microblading, microshading vs ombre, nano brows vs microblading, permanent makeup techniques comparison, best PMU technique, which PMU technique"
+        image="https://www.inkmugi.com/og-image.jpg"
+      >
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -359,7 +346,7 @@ const PmuComparisonMatrix: React.FC = () => {
             speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.summary-box', '.key-stat'] },
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero */}

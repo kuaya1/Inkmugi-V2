@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { 
   MapPin, 
   Clock, 
@@ -100,21 +100,12 @@ const OmbreBrowsFairfax: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Powder Brows Near Fairfax, VA | Ink Mugi</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Fairfax County ombre powder brows by Ink Mugi — 10 min from Fairfax City, serving Vienna, McLean, Tysons & Burke. Climate-optimized technique for 18-36 month longevity. $600 vs $800+ at Tysons studios. Free consultation." />
-        <meta name="keywords" content="ombre brows Fairfax VA, powder brows Tysons Corner, permanent makeup Vienna VA, PMU near McLean, microshading Fairfax County" />
-        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-fairfax-va" />
-        <meta property="og:title" content="Ombre Brows Fairfax County VA | Ink Mugi" />
-        <meta property="og:description" content="Fairfax County's nearby PMU artist. Serving Vienna, McLean, Tysons. Natural ombre brows." />
-        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-fairfax-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Brows Fairfax County VA | Ink Mugi" />
-        <meta name="twitter:description" content="Fairfax County's nearby PMU artist. Serving Vienna, McLean, Tysons. Natural ombre brows." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombre Powder Brows Near Fairfax, VA | Ink Mugi"
+        description="Fairfax County ombre powder brows by Ink Mugi — 10 min from Fairfax City, serving Vienna, McLean, Tysons & Burke. Climate-optimized technique for 18-36 month longevity. $600 vs $800+ at Tysons studios. Free consultation."
+        path="/ombre-brows-fairfax-va"
+        keywords="ombre brows Fairfax VA, powder brows Tysons Corner, permanent makeup Vienna VA, PMU near McLean, microshading Fairfax County"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -158,7 +149,7 @@ const OmbreBrowsFairfax: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

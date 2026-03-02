@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { 
   MapPin, 
   Clock, 
@@ -100,21 +100,12 @@ const OmbreBrowsAlexandria: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Powder Brows Near Alexandria, VA | Ink Mugi</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 523+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today." />
-        <meta name="keywords" content="ombre brows Alexandria VA, powder brows Old Town, permanent makeup Alexandria Virginia, PMU near Del Ray, microshading Alexandria City" />
-        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-alexandria-va" />
-        <meta property="og:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />
-        <meta property="og:description" content="Alexandria's nearby PMU artist. 15 minutes from Old Town. Natural ombre brows." />
-        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-alexandria-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Brows for Alexandria VA | Ink Mugi" />
-        <meta name="twitter:description" content="Alexandria's nearby PMU artist. 15 minutes from Old Town. Natural ombre brows." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombre Powder Brows Near Alexandria, VA | Ink Mugi"
+        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 523+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
+        path="/ombre-brows-alexandria-va"
+        keywords="ombre brows Alexandria VA, powder brows Old Town, permanent makeup Alexandria Virginia, PMU near Del Ray, microshading Alexandria City"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -158,7 +149,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

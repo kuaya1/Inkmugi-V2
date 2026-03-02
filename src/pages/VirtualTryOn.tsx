@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { Sparkles, Shield, Zap, Lock, CheckCircle, ArrowRight } from 'lucide-react';
 import { ImageUploader } from '../components/ai-tryon/ImageUploader';
@@ -77,20 +77,12 @@ const VirtualTryOn: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Virtual Brow Try-On | Ink Mugi</title>
-        <meta name="description" content="Preview how ombre powder brows might look on you with our virtual try-on tool. Upload your photo and explore different brow styles." />
-        <meta name="keywords" content="virtual brow try-on, AI ombre brows preview, PMU visualization, brow shape simulator" />
-        <link rel="canonical" href="https://www.inkmugi.com/virtual-try-on" />
-        <meta property="og:title" content="AI Virtual Try-On for Ombre Brows | Inkmugi" />
-        <meta property="og:description" content="Try our AI-powered virtual brow try-on tool. See how ombre powder brows will look on your face before your appointment." />
-        <meta property="og:url" content="https://www.inkmugi.com/virtual-try-on" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Virtual Brow Try-On | Ink Mugi" />
-        <meta name="twitter:description" content="Preview how ombre powder brows will look on your face with our AI-powered virtual try-on tool." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Virtual Brow Try-On | Ink Mugi"
+        description="Preview how ombre powder brows might look on you with our virtual try-on tool. Upload your photo and explore different brow styles."
+        path="/virtual-try-on"
+        keywords="virtual brow try-on, AI ombre brows preview, PMU visualization, brow shape simulator"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -113,7 +105,7 @@ const VirtualTryOn: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
       
     <div className="min-h-screen bg-gradient-to-br from-[#F9FAFB] via-white to-[#E6DAD2]/10">
       {/* Hero Section with Tech-Forward Design */}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { 
   Award, 
@@ -169,20 +169,13 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Meet Mugi | Licensed PMU Artist in Annandale, VA | Ink Mugi</title>
-        <meta name="description" content="Meet Mugi — Virginia-licensed permanent makeup artist (License #1231002471) with 523+ ombre powder brow procedures. Korean technique specialist in Annandale, VA. See her story and credentials." />
-        <meta name="keywords" content="Mugi PMU artist, licensed permanent makeup artist Virginia, ombre brows artist Annandale, Korean PMU technique, about Ink Mugi, PMU artist near me" />
-        <link rel="canonical" href="https://www.inkmugi.com/about" />
-        <meta property="og:title" content="Meet Mugi | Licensed PMU Artist | Ink Mugi" />
-        <meta property="og:description" content="Virginia-licensed PMU artist with 523+ procedures. Korean technique specialist in Annandale, VA." />
-        <meta property="og:url" content="https://www.inkmugi.com/about" />
-        <meta property="og:type" content="profile" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Meet Mugi | Licensed PMU Artist Annandale VA" />
-        <meta name="twitter:description" content="Virginia-licensed PMU artist with 523+ procedures. Korean ombre brow technique specialist." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Meet Mugi | Licensed PMU Artist in Annandale, VA | Ink Mugi"
+        description="Meet Mugi — Virginia-licensed permanent makeup artist (License #1231002471) with 523+ ombre powder brow procedures. Korean technique specialist in Annandale, VA. See her story and credentials."
+        path="/about"
+        ogType="profile"
+        keywords="Mugi PMU artist, licensed permanent makeup artist Virginia, ombre brows artist Annandale, Korean PMU technique, about Ink Mugi, PMU artist near me"
+      >
         <script type="application/ld+json">
           {JSON.stringify(personSchema)}
         </script>
@@ -199,7 +192,7 @@ const About: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* ═══════════════════════════════════════════════════════════════════════
           HERO SECTION — The Artist's Promise

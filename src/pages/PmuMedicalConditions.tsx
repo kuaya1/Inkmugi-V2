@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   CheckCircle,
   AlertTriangle,
@@ -79,7 +79,7 @@ const PmuMedicalConditions: React.FC = () => {
       condition: 'Autoimmune Conditions',
       icon: <AlertTriangle className="w-8 h-8 text-amber-600" />,
       description:
-        'Lupus, Crohn's disease, rheumatoid arthritis, or other autoimmune conditions evaluated case-by-case. Depends on medications and disease activity.',
+        "Lupus, Crohn's disease, rheumatoid arthritis, or other autoimmune conditions evaluated case-by-case. Depends on medications and disease activity.",
       requirements:
         'Doctor clearance required. If on immunosuppressants, healing may be affected. Must not be in active flare during procedure.',
     },
@@ -97,7 +97,7 @@ const PmuMedicalConditions: React.FC = () => {
       description:
         'History of keloid scars (especially on face) is a significant risk factor. PMU involves micro-wounds that could trigger keloid formation.',
       requirements:
-        'If you've had keloids on your face, PMU is not recommended. If keloids occurred only on body (ear piercings), case-by-case evaluation.',
+        "If you've had keloids on your face, PMU is not recommended. If keloids occurred only on body (ear piercings), case-by-case evaluation.",
     },
     {
       condition: 'Accutane (Isotretinoin)',
@@ -211,7 +211,7 @@ const PmuMedicalConditions: React.FC = () => {
     {
       question: 'Can I get PMU while pregnant?',
       answer:
-        'No reputable PMU artist will perform procedures on pregnant clients. While there's no definitive research showing harm, the numbing agents used and the body's stress response are not worth the risk. Most professional organizations and insurance policies prohibit PMU during pregnancy.',
+        "No reputable PMU artist will perform procedures on pregnant clients. While there's no definitive research showing harm, the numbing agents used and the body's stress response are not worth the risk. Most professional organizations and insurance policies prohibit PMU during pregnancy.",
     },
     {
       question: 'Can I get PMU while breastfeeding?',
@@ -233,23 +233,13 @@ const PmuMedicalConditions: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>PMU & Medical Conditions | Safety Guide | Ink Mugi</title>
-        <meta
-          name="description"
-          content="Complete guide to permanent makeup and medical conditions. Learn about contraindications, medications that affect PMU, pregnancy, diabetes, autoimmune conditions, and when PMU is safe."
-        />
-        <meta
-          name="keywords"
-          content="permanent makeup medical conditions, PMU contraindications, microblading pregnancy, PMU diabetes, PMU autoimmune disease, permanent makeup safety, PMU medications, can I get PMU with, permanent makeup health conditions"
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/pmu-medical-conditions" />
-
-        <meta property="og:title" content="PMU & Medical Conditions | Complete Safety Guide" />
-        <meta property="og:description" content="Learn about medical conditions, medications, and health factors that affect permanent makeup eligibility and safety." />
-        <meta property="og:image" content="https://www.inkmugi.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.inkmugi.com/pmu-medical-conditions" />
-
+      <SEO
+        title="PMU & Medical Conditions | Safety Guide | Ink Mugi"
+        description="Complete guide to permanent makeup and medical conditions. Learn about contraindications, medications that affect PMU, pregnancy, diabetes, autoimmune conditions, and when PMU is safe."
+        path="/pmu-medical-conditions"
+        keywords="permanent makeup medical conditions, PMU contraindications, microblading pregnancy, PMU diabetes, PMU autoimmune disease, permanent makeup safety, PMU medications, can I get PMU with, permanent makeup health conditions"
+        image="https://www.inkmugi.com/og-image.jpg"
+      >
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -323,7 +313,7 @@ const PmuMedicalConditions: React.FC = () => {
             speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.summary-box'] },
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero */}

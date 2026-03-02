@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { MapPin, Star, CheckCircle, Award, Shield, Car, ArrowRight, Phone } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
@@ -90,21 +90,12 @@ const PermanentMakeupFallsChurch: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Permanent Makeup in Falls Church, VA | Ink Mugi — 8 Minutes Away</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Falls Church VA permanent makeup by Ink Mugi — just 8 minutes from Falls Church City, 4 min from Seven Corners. VA-licensed, 523+ procedures, $600 all-inclusive ombre brows. Free consultation." />
-        <meta name="keywords" content="permanent makeup Falls Church VA, ombre brows Falls Church, powder brows Falls Church Virginia, PMU near Falls Church, microshading Falls Church VA" />
-        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-falls-church-va" />
-        <meta property="og:title" content="Permanent Makeup in Falls Church, VA | Ink Mugi — 8 Minutes Away" />
-        <meta property="og:description" content="Falls Church VA permanent makeup — 8 min from Falls Church City. 523+ procedures, $600 all-inclusive ombre brows." />
-        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-falls-church-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Permanent Makeup in Falls Church, VA | Ink Mugi — 8 Minutes Away" />
-        <meta name="twitter:description" content="Falls Church VA permanent makeup — 8 min from Falls Church City. 523+ procedures, $600 all-inclusive ombre brows." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Permanent Makeup in Falls Church, VA | Ink Mugi — 8 Minutes Away"
+        description="Falls Church VA permanent makeup by Ink Mugi — just 8 minutes from Falls Church City, 4 min from Seven Corners. VA-licensed, 523+ procedures, $600 all-inclusive ombre brows. Free consultation."
+        path="/permanent-makeup-falls-church-va"
+        keywords="permanent makeup Falls Church VA, ombre brows Falls Church, powder brows Falls Church Virginia, PMU near Falls Church, microshading Falls Church VA"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -148,7 +139,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#FFF3E0] to-[#FFFAF5] relative overflow-hidden">

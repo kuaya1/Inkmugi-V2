@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   MapPin,
   Star,
@@ -99,21 +99,12 @@ const OmbreBrowsVienna: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombré Brows for Vienna, VA Residents | Ink Mugi — 12 Min from Town Center</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 523+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation." />
-        <meta name="keywords" content="ombre brows vienna va, powder brows vienna virginia, permanent makeup vienna va, PMU near oakton, microshading vienna town center" />
-        <link rel="canonical" href="https://www.inkmugi.com/ombre-brows-vienna-va" />
-        <meta property="og:title" content="Ombré Brows for Vienna VA | Ink Mugi — 12 Min Away" />
-        <meta property="og:description" content="Vienna's nearby PMU artist. 12 minutes from Town Center. Natural ombre brows, $600 all-inclusive." />
-        <meta property="og:url" content="https://www.inkmugi.com/ombre-brows-vienna-va" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombré Brows for Vienna VA | Ink Mugi — 12 Min Away" />
-        <meta name="twitter:description" content="Vienna's nearby PMU artist. 12 minutes from Town Center. Natural ombre brows, $600 all-inclusive." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombré Brows for Vienna, VA Residents | Ink Mugi — 12 Min from Town Center"
+        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 523+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
+        path="/ombre-brows-vienna-va"
+        keywords="ombre brows vienna va, powder brows vienna virginia, permanent makeup vienna va, PMU near oakton, microshading vienna town center"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -157,7 +148,7 @@ const OmbreBrowsVienna: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

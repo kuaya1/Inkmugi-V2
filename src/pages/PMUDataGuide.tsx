@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { BarChart3, TrendingUp, Calendar, Droplets, ThermometerSun, Wind, ArrowRight, Award, Clock, Users } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -115,36 +115,18 @@ export default function PMUDataGuide() {
 
   return (
     <>
-      <Helmet>
-        {/* Enhanced SEO */}
-        <title>Powder Brows Healing Data: 523+ Procedures Analyzed | Ink Mugi</title>
-        <meta 
-          name="description" 
-          content="See real healing data from 523+ ombre brow procedures. Retention rates by skin type, age & season. The only studio in VA sharing transparent clinical longevity data. Evidence-based PMU results." 
-        />
-        <meta 
-          name="keywords" 
-          content="permanent makeup longevity data, PMU retention rates by skin type, ombre brows last how long, microblading vs powder brows durability, seasonal PMU performance DMV, aftercare impact on longevity, permanent makeup fade timeline, Virginia licensed PMU data" 
-        />
-        
+      <SEO
+        title="Powder Brows Healing Data: 523+ Procedures Analyzed | Ink Mugi"
+        description="See real healing data from 523+ ombre brow procedures. Retention rates by skin type, age & season. The only studio in VA sharing transparent clinical longevity data. Evidence-based PMU results."
+        path="/pmu-data-guide"
+        keywords="permanent makeup longevity data, PMU retention rates by skin type, ombre brows last how long, microblading vs powder brows durability, seasonal PMU performance DMV, aftercare impact on longevity, permanent makeup fade timeline, Virginia licensed PMU data"
+        ogType="article"
+      >
         {/* AI Optimization */}
         <meta name="ai-content-type" content="clinical-research-study" />
         <meta name="data-driven-content" content="523-procedures-longevity-analysis" />
         <meta name="expertise-level" content="licensed-clinical-researcher" />
-        
-        <link rel="canonical" href="https://www.inkmugi.com/pmu-data-guide" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="PMU Longevity Data: 523 Procedures Analysis | Ink Mugi Research" />
-        <meta property="og:description" content="Clinical data: Ombre powder brows 24-36 months, 97% retention for dry skin, 89% with full aftercare. Comprehensive permanent makeup longevity study." />
-        <meta property="og:url" content="https://www.inkmugi.com/pmu-data-guide" />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PMU Longevity Data: 523 Procedures Analysis | Ink Mugi" />
-        <meta name="twitter:description" content="Clinical data: Ombre powder brows 24-36 months, 97% retention for dry skin. Comprehensive permanent makeup longevity study." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        
+
         {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -225,7 +207,7 @@ export default function PMUDataGuide() {
             "url": "https://www.inkmugi.com/pmu-data-guide"
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2D2D2B] via-[#3a3a37] to-[#2D2D2B]">

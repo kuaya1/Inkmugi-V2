@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { 
   CheckCircle, 
   AlertTriangle, 
@@ -224,21 +224,13 @@ const AftercareGuide: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Brows Aftercare Guide: Complete Healing Timeline | Ink Mugi</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Complete ombre powder brows aftercare guide from a VA-licensed artist with 523+ procedures. Day-by-day healing timeline, what to avoid, DMV humidity tips, and when to schedule your touch-up." />
-        <meta name="keywords" content="ombre brows aftercare, powder brows healing, PMU aftercare guide, ombre brows healing timeline, permanent makeup aftercare, brow tattoo aftercare" />
-        <link rel="canonical" href="https://www.inkmugi.com/aftercare-guide" />
-        <meta property="og:title" content="Ombre Brows Aftercare Guide: Complete Healing Timeline | Ink Mugi" />
-        <meta property="og:description" content="Day-by-day aftercare guide from a licensed PMU artist. 523+ procedures, DMV climate-optimized healing tips." />
-        <meta property="og:url" content="https://www.inkmugi.com/aftercare-guide" />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Brows Aftercare Guide | Ink Mugi" />
-        <meta name="twitter:description" content="Complete healing timeline from a VA-licensed PMU artist with 523+ procedures." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombre Brows Aftercare Guide: Complete Healing Timeline | Ink Mugi"
+        description="Complete ombre powder brows aftercare guide from a VA-licensed artist with 523+ procedures. Day-by-day healing timeline, what to avoid, DMV humidity tips, and when to schedule your touch-up."
+        path="/aftercare-guide"
+        keywords="ombre brows aftercare, powder brows healing, PMU aftercare guide, ombre brows healing timeline, permanent makeup aftercare, brow tattoo aftercare"
+        ogType="article"
+      >
         <script type="application/ld+json">{JSON.stringify(aftercareSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">
@@ -252,7 +244,7 @@ const AftercareGuide: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5]">

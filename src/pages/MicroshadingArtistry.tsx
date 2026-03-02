@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { MapPin, Clock, Star, CheckCircle, Award, Shield, ArrowRight, Phone, Sparkles, Heart, Eye, Palette } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
@@ -159,32 +159,17 @@ const MicroshadingArtistry: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Microshading Eyebrows in Northern Virginia | Ink Mugi — $700 All-Inclusive</title>
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="description"
-          content="Microshading eyebrows by Ink Mugi in Annandale, VA — pixelated powder finish for the most natural results. 523+ procedures, VA-licensed. $700 includes consultation, procedure & touch-up. Serving all DMV."
-        />
-        <meta
-          name="keywords"
-          content="microshading near me, microshading eyebrows, microshading vs microblading, microshading brows, permanent makeup Annandale VA, PMU near me, microshading Northern Virginia, microshading DMV"
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/microshading-artistry" />
-        <meta property="og:title" content="Microshading Eyebrows in Northern Virginia | Ink Mugi — $700 All-Inclusive" />
-        <meta property="og:description" content="Microshading eyebrows — pixelated powder finish for the most natural results. 523+ procedures, VA-licensed. $700 all-inclusive." />
-        <meta property="og:url" content="https://www.inkmugi.com/microshading-artistry" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Microshading Eyebrows | Ink Mugi — $700 All-Inclusive" />
-        <meta name="twitter:description" content="Pixelated powder finish for the most natural brows. 523+ procedures, VA-licensed. Serving all DMV." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Microshading Eyebrows in Northern Virginia | Ink Mugi — $700 All-Inclusive"
+        description="Microshading eyebrows by Ink Mugi in Annandale, VA — pixelated powder finish for the most natural results. 523+ procedures, VA-licensed. $700 includes consultation, procedure & touch-up. Serving all DMV."
+        path="/microshading-artistry"
+        keywords="microshading near me, microshading eyebrows, microshading vs microblading, microshading brows, permanent makeup Annandale VA, PMU near me, microshading Northern Virginia, microshading DMV"
+      >
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
-      </Helmet>
+      </SEO>
 
       {/* ───────────── HERO SECTION ───────────── */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F5EDE4] to-[#F9F7F5] relative overflow-hidden">

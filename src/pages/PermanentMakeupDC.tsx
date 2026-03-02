@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { 
   Clock, 
   Star, 
@@ -100,21 +100,12 @@ const PermanentMakeupDC: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ombre Powder Brows Near Washington, DC | Ink Mugi</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, 523+ procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation." />
-        <meta name="keywords" content="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington" />
-        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-dc" />
-        <meta property="og:title" content="Ombre Powder Brows for Washington DC | Ink Mugi" />
-        <meta property="og:description" content="DC's smart choice for permanent makeup. Premium quality, better price, free parking. 20 minutes from Georgetown." />
-        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-dc" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ombre Powder Brows for Washington DC | Ink Mugi" />
-        <meta name="twitter:description" content="DC's smart choice for permanent makeup. Premium quality, better price, free parking. 20 minutes from Georgetown." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Ombre Powder Brows Near Washington, DC | Ink Mugi"
+        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, 523+ procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation."
+        path="/permanent-makeup-dc"
+        keywords="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -158,7 +149,7 @@ const PermanentMakeupDC: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

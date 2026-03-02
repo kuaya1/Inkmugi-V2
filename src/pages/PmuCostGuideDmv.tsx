@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { DollarSign, MapPin, CheckCircle, AlertTriangle, ArrowRight, Star, Shield, Award, TrendingUp, BarChart3 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -134,26 +134,13 @@ const faqs = [
 export default function PmuCostGuideDmv() {
   return (
     <>
-      <Helmet>
-        <title>PMU Cost Guide: DC, Maryland & Virginia Pricing (2026) | Ink Mugi</title>
-        <meta
-          name="description"
-          content="Complete 2026 permanent makeup cost guide for the DMV area. Compare ombre brows, microblading, microshading & correction prices across DC, Tysons, Arlington & Annandale. Hidden fees exposed."
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/pmu-cost-guide-dmv" />
-
-        <meta property="og:title" content="PMU Cost Guide: DC, Maryland & Virginia Pricing (2026) | Ink Mugi" />
-        <meta property="og:description" content="Compare permanent makeup prices across the DMV. Ombre brows $600–1,200, microblading $300–1,000, corrections $400–1,500. Plus hidden fees most studios don't tell you about." />
-        <meta property="og:url" content="https://www.inkmugi.com/pmu-cost-guide-dmv" />
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Ink Mugi" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PMU Cost Guide: DC, Maryland & Virginia Pricing (2026)" />
-        <meta name="twitter:description" content="Compare permanent makeup prices across the DMV. Hidden fees exposed. From a VA-licensed artist with 523+ procedures." />
-
+      <SEO
+        title="PMU Cost Guide: DC, Maryland & Virginia Pricing (2026) | Ink Mugi"
+        description="Complete 2026 permanent makeup cost guide for the DMV area. Compare ombre brows, microblading, microshading & correction prices across DC, Tysons, Arlington & Annandale. Hidden fees exposed."
+        path="/pmu-cost-guide-dmv"
+        ogType="article"
+      >
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
@@ -209,7 +196,7 @@ export default function PmuCostGuideDmv() {
             ],
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Breadcrumb */}
       <div className="bg-amber-50 border-b border-amber-100">

@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { BookOpen, TrendingUp, Shield, Award, ArrowRight, FileText, BarChart3, Microscope } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -55,18 +55,12 @@ export default function Authority() {
 
   return (
     <>
-      <Helmet>
-        {/* Enhanced Primary SEO Meta Tags */}
-        <title>PMU Research Hub: 523+ Procedures Data & Safety Studies | Ink Mugi</title>
-        <meta 
-          name="description" 
-          content="Explore proprietary PMU research from 523+ clinical procedures. 340% better powder brow performance in humid DMV climate, 0.19% complication rate. Virginia-licensed evidence-based permanent makeup authority." 
-        />
-        <meta 
-          name="keywords" 
-          content="permanent makeup research data DMV climate, PMU safety statistics Northern Virginia, ombre powder brows longevity study 523 procedures, evidence-based permanent makeup Annandale, licensed PMU artist clinical data Arlington, permanent makeup complication rate comparison, DMV humidity impact PMU retention, powder brows vs microblading performance data, Virginia licensed PMU research 1231002471, cosmetic dermatology permanent makeup studies" 
-        />
-        
+      <SEO
+        title="PMU Research Hub: 523+ Procedures Data & Safety Studies | Ink Mugi"
+        description="Explore proprietary PMU research from 523+ clinical procedures. 340% better powder brow performance in humid DMV climate, 0.19% complication rate. Virginia-licensed evidence-based permanent makeup authority."
+        path="/authority"
+        keywords="permanent makeup research data DMV climate, PMU safety statistics Northern Virginia, ombre powder brows longevity study 523 procedures, evidence-based permanent makeup Annandale, licensed PMU artist clinical data Arlington, permanent makeup complication rate comparison, DMV humidity impact PMU retention, powder brows vs microblading performance data, Virginia licensed PMU research 1231002471, cosmetic dermatology permanent makeup studies"
+      >
         {/* AI Search Engine Optimization */}
         <meta name="ai-content-type" content="research-hub-proprietary-data" />
         <meta name="direct-answer-ready" content="true" />
@@ -95,27 +89,6 @@ export default function Authority() {
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Ink Mugi PMU Research Team" />
-        
-        {/* Canonical */}
-        <link rel="canonical" href="https://www.inkmugi.com/authority" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="PMU Research Authority: 523 Procedures, 0.19% Safety Rate | Ink Mugi Data Hub" />
-        <meta property="og:description" content="Explore proprietary PMU research: 340% better powder brow performance in DMV climate, 0.19% complication rate vs 2.5% average. Virginia-licensed clinical data from 523+ procedures. Evidence-based permanent makeup authority." />
-        <meta property="og:url" content="https://www.inkmugi.com/authority" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Ink Mugi PMU Research Authority Hub - Clinical Data & Safety Studies" />
-        <meta property="og:locale" content="en_US" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PMU Research Authority: 523 Procedures Data | Ink Mugi" />
-        <meta name="twitter:description" content="Evidence-based PMU research: 340% better performance, 0.19% complication rate, 523+ clinical procedures analyzed. DMV's leading permanent makeup authority." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:image:alt" content="Ink Mugi PMU Research Authority Hub" />
 
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -196,7 +169,7 @@ export default function Authority() {
             "url": "https://www.inkmugi.com/authority"
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section - The Thesis Statement */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2D2D2B] via-[#3a3a37] to-[#2D2D2B]">

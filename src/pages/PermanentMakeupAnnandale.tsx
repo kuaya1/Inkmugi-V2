@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   MapPin,
   Star,
@@ -99,21 +99,12 @@ const PermanentMakeupAnnandale: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 523+ procedures, $600 all-inclusive. Free parking, free consultation. Book today." />
-        <meta name="keywords" content="permanent makeup Annandale VA, ombre brows Annandale, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA" />
-        <link rel="canonical" href="https://www.inkmugi.com/licensed-pmu-artist-annandale" />
-        <meta property="og:title" content="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio" />
-        <meta property="og:description" content="Annandale's own PMU studio. Walk-in convenience at Heritage Center. 523+ procedures, $600 all-inclusive." />
-        <meta property="og:url" content="https://www.inkmugi.com/licensed-pmu-artist-annandale" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio" />
-        <meta name="twitter:description" content="Annandale's own PMU studio. Walk-in convenience at Heritage Center. 523+ procedures, $600 all-inclusive." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio"
+        description="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 523+ procedures, $600 all-inclusive. Free parking, free consultation. Book today."
+        path="/licensed-pmu-artist-annandale"
+        keywords="permanent makeup Annandale VA, ombre brows Annandale, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             ...localSchema,
@@ -157,7 +148,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">

@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Cloud, Droplets, ThermometerSun, TrendingUp, MapPin, BarChart3, Users, CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -191,20 +191,13 @@ const ClimatePerformanceAnalysis = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Powder Brows in Humid Climates | Ink Mugi</title>
-        <meta name="description" content="Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax." />
-        <meta name="keywords" content="PMU climate performance, DMV humidity, powder brows oily skin, Arlington VA PMU, Alexandria VA, Annandale VA, regional PMU study, permanent makeup longevity, Virginia PMU research" />
-        <meta name="author" content="Ink Mugi" />
-        <meta property="og:title" content="Humid Climate Performance Analysis | PMU Longevity in DMV Region" />
-        <meta property="og:description" content="Regional study showing 340% advantage for powder brows in high-humidity DMV climate with oily skin." />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PMU Climate Performance: DMV Humidity Study | Ink Mugi" />
-        <meta name="twitter:description" content="Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <link rel="canonical" href="https://www.inkmugi.com/climate-performance-analysis" />
+      <SEO
+        title="Powder Brows in Humid Climates | Ink Mugi"
+        description="Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+        path="/climate-performance-analysis"
+        keywords="PMU climate performance, DMV humidity, powder brows oily skin, Arlington VA PMU, Alexandria VA, Annandale VA, regional PMU study, permanent makeup longevity, Virginia PMU research"
+        ogType="article"
+      >
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">
@@ -233,7 +226,7 @@ const ClimatePerformanceAnalysis = () => {
             "url": "https://www.inkmugi.com/climate-performance-analysis"
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-gradient-to-b from-[#2D2D2B] via-[#1a1a18] to-[#2D2D2B]">
         {/* Hero Section */}

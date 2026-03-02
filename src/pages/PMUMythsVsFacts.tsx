@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { Microscope, X, Check, ArrowRight, AlertCircle, Shield, TrendingUp } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -81,36 +81,18 @@ export default function PMUMythsVsFacts() {
 
   return (
     <>
-      <Helmet>
-        {/* Enhanced SEO */}
-        <title>Powder Brows vs Microblading | Ink Mugi</title>
-        <meta 
-          name="description" 
-          content="12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results from a Virginia-licensed artist." 
-        />
-        <meta 
-          name="keywords" 
-          content="permanent makeup myths debunked, PMU facts vs fiction, microblading misconceptions, ombre brows truth, permanent makeup safety evidence, PMU longevity facts, clinical permanent makeup research, peer-reviewed PMU studies" 
-        />
-        
+      <SEO
+        title="Powder Brows vs Microblading | Ink Mugi"
+        description="12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results from a Virginia-licensed artist."
+        path="/pmu-myths-facts"
+        keywords="permanent makeup myths debunked, PMU facts vs fiction, microblading misconceptions, ombre brows truth, permanent makeup safety evidence, PMU longevity facts, clinical permanent makeup research, peer-reviewed PMU studies"
+        ogType="article"
+      >
         {/* AI Optimization */}
         <meta name="ai-content-type" content="myth-busting-clinical-research" />
         <meta name="data-driven-content" content="12-myths-debunked-clinical-evidence" />
         <meta name="expertise-level" content="licensed-clinical-researcher" />
-        
-        <link rel="canonical" href="https://www.inkmugi.com/pmu-myths-facts" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="PMU Myths Debunked: 12 Clinical Facts | Ink Mugi Research" />
-        <meta property="og:description" content="Evidence-based truth about permanent makeup from 523+ procedures. Debunking longevity myths, safety concerns, and technique misconceptions with clinical data." />
-        <meta property="og:url" content="https://www.inkmugi.com/pmu-myths-facts" />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PMU Myths Debunked: 12 Clinical Facts | Ink Mugi" />
-        <meta name="twitter:description" content="Evidence-based truth about permanent makeup from 523+ procedures. Debunking longevity myths and safety concerns with clinical data." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        
+
         {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -205,7 +187,7 @@ export default function PMUMythsVsFacts() {
             "url": "https://www.inkmugi.com/pmu-myths-facts"
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2D2D2B] via-[#3a3a37] to-[#2D2D2B]">

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   CheckCircle,
   Award,
@@ -104,27 +104,12 @@ const NanoBrows: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Nano Brows in Annandale VA | Ultra-Fine Hair Strokes | Ink Mugi</title>
-        <meta
-          name="description"
-          content="Nano brows in Annandale, VA starting at $650. Ultra-fine digital hair strokes that last 12-24 months. Better than microblading for all skin types. Virginia-licensed PMU artist. Free consultation."
-        />
-        <meta
-          name="keywords"
-          content="nano brows Northern Virginia, nano brows Annandale VA, nano brows near me, nano brows vs microblading, digital hair strokes PMU, nano needle eyebrows, permanent eyebrow hair strokes, nano brows oily skin, nano brows cost, nano brows healing"
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/nano-brows" />
-
-        <meta property="og:title" content="Nano Brows | Ultra-Fine Hair Strokes | $650 | Ink Mugi Annandale VA" />
-        <meta property="og:description" content="Ultra-fine digital hair strokes. 12-24 month longevity. Better than microblading. Virginia-licensed PMU artist in Annandale, VA." />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta property="og:url" content="https://www.inkmugi.com/nano-brows" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Nano Brows | Ultra-Fine Hair Strokes | Ink Mugi VA" />
-        <meta name="twitter:description" content="Digital nano needle precision. 12-24 month longevity. Gentler than microblading. Licensed PMU artist, Annandale VA." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
+      <SEO
+        title="Nano Brows in Annandale VA | Ultra-Fine Hair Strokes | Ink Mugi"
+        description="Nano brows in Annandale, VA starting at $650. Ultra-fine digital hair strokes that last 12-24 months. Better than microblading for all skin types. Virginia-licensed PMU artist. Free consultation."
+        path="/nano-brows"
+        keywords="nano brows Northern Virginia, nano brows Annandale VA, nano brows near me, nano brows vs microblading, digital hair strokes PMU, nano needle eyebrows, permanent eyebrow hair strokes, nano brows oily skin, nano brows cost, nano brows healing"
+      >
 
         {/* Service Schema */}
         <script type="application/ld+json">
@@ -210,7 +195,7 @@ const NanoBrows: React.FC = () => {
             })),
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}

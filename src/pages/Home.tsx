@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { ArrowRight, ArrowDown, Award, Shield, Heart, Sparkles, CheckCircle2, Quote, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -167,20 +167,13 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ink Mugi | Ombre Powder Brows in Annandale, VA | Licensed PMU Artist</title>
-        <meta name="description" content="Licensed permanent makeup artist in Annandale, VA specializing in natural ombre powder brows. 523+ procedures, 0.19% complication rate. View healed results and book a free consultation." />
-        <link rel="canonical" href="https://www.inkmugi.com/" />
-        <meta property="og:title" content="Ombre Powder Brows Annandale VA | Licensed PMU Artist | Ink Mugi" />
-        <meta property="og:description" content="Virginia-licensed PMU artist specializing in natural ombre powder brows. 523+ procedures. Free consultation available." />
-        <meta property="og:url" content="https://www.inkmugi.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
-        <meta name="keywords" content="permanent makeup Annandale VA, ombre powder brows Northern Virginia, PMU artist Annandale, natural brow enhancement, healed brow results, licensed permanent makeup artist Virginia" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ink Mugi | Ombre Powder Brows Annandale VA | Licensed PMU Artist" />
-        <meta name="twitter:description" content="Licensed PMU artist in Annandale, VA. 523+ procedures, natural ombre powder brows. Free consultation." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg" />
+      <SEO
+        title="Ink Mugi | Ombre Powder Brows in Annandale, VA | Licensed PMU Artist"
+        description="Licensed permanent makeup artist in Annandale, VA specializing in natural ombre powder brows. 523+ procedures, 0.19% complication rate. View healed results and book a free consultation."
+        path="/"
+        image="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg"
+        keywords="permanent makeup Annandale VA, ombre powder brows Northern Virginia, PMU artist Annandale, natural brow enhancement, healed brow results, licensed permanent makeup artist Virginia"
+      >
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -284,7 +277,7 @@ const Home: React.FC = () => {
             "url": "https://www.inkmugi.com/"
           })}
         </script>
-      </Helmet>
+      </SEO>
       
       {/* ═══════════════════════════════════════════════════════════════════════
           HERO SECTION — The Promise

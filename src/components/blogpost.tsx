@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, User, Tag, ArrowLeft, ArrowRight, Phone, MapPin, Shield, Share2, ChevronRight, RefreshCw, List } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
-import { Helmet } from 'react-helmet-async';
+import SEO from './SEO';
 import { blogPosts } from '../data/blogData';
 import ReactMarkdown from 'react-markdown';
 
@@ -87,26 +87,19 @@ const BlogPost: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{post.title} | Ink Mugi PMU Blog</title>
-        <meta name="description" content={post.metaDescription} />
-        <meta name="keywords" content={post.tags.join(', ')} />
+      <SEO
+        title={`${post.title} | Ink Mugi PMU Blog`}
+        description={post.metaDescription}
+        path={`/blog/${post.slug}`}
+        keywords={post.tags.join(', ')}
+        image={post.image}
+        ogType="article"
+      >
         <meta name="author" content={post.author} />
         <meta property="article:published_time" content={(() => { const d = new Date(post.date); return isNaN(d.getTime()) ? post.date : d.toISOString(); })()} />
         {post.lastUpdated && <meta property="article:modified_time" content={(() => { const d = new Date(post.lastUpdated); return isNaN(d.getTime()) ? post.lastUpdated : d.toISOString(); })()} />}
         <meta property="article:section" content={post.category} />
         {post.tags.map((tag, i) => <meta key={i} property="article:tag" content={tag} />)}
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.metaDescription} />
-        <meta property="og:image" content={post.image} />
-        <meta property="og:url" content={`https://www.inkmugi.com/blog/${post.slug}`} />
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Ink Mugi" />
-        <link rel="canonical" href={`https://www.inkmugi.com/blog/${post.slug}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.metaDescription} />
-        <meta name="twitter:image" content={post.image} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -190,7 +183,7 @@ const BlogPost: React.FC = () => {
             ]
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       {/* Reading Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 z-50 bg-transparent">

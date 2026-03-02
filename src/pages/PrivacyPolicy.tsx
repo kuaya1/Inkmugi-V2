@@ -2,17 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Lock, Eye, FileText, Mail } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const PrivacyPolicy: React.FC = () => {
   return (
     <>
-      <Helmet>
-        <title>Privacy Policy | Ink Mugi</title>
-        <meta name="description" content="Ink Mugi's privacy policy. Learn how we collect, use, and protect your personal information when you visit our site or book permanent makeup services." />
-        <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://www.inkmugi.com/privacy-policy" />
-      </Helmet>
+      <SEO
+        title="Privacy Policy | Ink Mugi"
+        description="Ink Mugi's privacy policy. Learn how we collect, use, and protect your personal information when you visit our site or book permanent makeup services."
+        path="/privacy-policy"
+        noindex
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-[#F9F7F5] to-white">

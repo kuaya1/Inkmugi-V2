@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Calendar, Clock, User, Tag } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -207,19 +207,12 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
 
   return (
     <>
-      {/* SEO Metadata */}
-      <Helmet>
-        <title>{getPageTitle()}</title>
-        <meta name="description" content="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with 523+ procedures." />
-        <meta name="keywords" content="permanent makeup blog, ombre brows vs microblading, nano brows cost, PMU healing timeline, powder brows aftercare, permanent makeup guide DMV" />
-        <link rel="canonical" href="https://www.inkmugi.com/blog" />
-        <meta property="og:title" content={getPageTitle()} />
-        <meta property="og:description" content="Expert insights on permanent makeup techniques, aftercare, and beauty trends from professional PMU artists." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.inkmugi.com/blog" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
+      <SEO
+        title={getPageTitle()}
+        description="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with 523+ procedures."
+        path="/blog"
+        keywords="permanent makeup blog, ombre brows vs microblading, nano brows cost, PMU healing timeline, powder brows aftercare, permanent makeup guide DMV"
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#F0E4D8]">

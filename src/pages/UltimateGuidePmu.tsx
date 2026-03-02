@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import {
   CheckCircle,
   Award,
@@ -165,23 +165,13 @@ const UltimateGuidePmu: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ultimate Guide to Permanent Makeup 2026 | Complete PMU Resource</title>
-        <meta
-          name="description"
-          content="Complete guide to permanent makeup covering techniques, safety, costs, healing, choosing an artist, and everything you need to know before getting PMU. 5,000+ word expert resource."
-        />
-        <meta
-          name="keywords"
-          content="permanent makeup guide, PMU complete guide, what is permanent makeup, permanent makeup techniques, PMU safety, permanent makeup cost, how to choose PMU artist, permanent makeup healing, ombre brows guide, microblading guide"
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/ultimate-guide-permanent-makeup" />
-
-        <meta property="og:title" content="Ultimate Guide to Permanent Makeup 2026 | Complete Expert Resource" />
-        <meta property="og:description" content="Everything you need to know about permanent makeup in one comprehensive guide. Techniques, safety, costs, healing, and more." />
-        <meta property="og:image" content="https://www.inkmugi.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.inkmugi.com/ultimate-guide-permanent-makeup" />
-
+      <SEO
+        title="Ultimate Guide to Permanent Makeup 2026 | Complete PMU Resource"
+        description="Complete guide to permanent makeup covering techniques, safety, costs, healing, choosing an artist, and everything you need to know before getting PMU. 5,000+ word expert resource."
+        path="/ultimate-guide-permanent-makeup"
+        keywords="permanent makeup guide, PMU complete guide, what is permanent makeup, permanent makeup techniques, PMU safety, permanent makeup cost, how to choose PMU artist, permanent makeup healing, ombre brows guide, microblading guide"
+        image="https://www.inkmugi.com/og-image.jpg"
+      >
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -231,7 +221,7 @@ const UltimateGuidePmu: React.FC = () => {
             speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.summary-box', '.key-stat'] },
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero */}

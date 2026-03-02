@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { Shield, Award, Droplets, TrendingUp, CheckCircle, Phone, Calendar, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -62,31 +62,12 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Is Permanent Makeup Safe? 0.19% Complication Rate | Ink Mugi DMV</title>
-        <meta 
-          name="description" 
-          content="Hospital-grade safety protocols with a 0.19% complication rate (vs 2.5% industry average). Virginia-licensed, BBP certified, premium vegan pigments. See our transparent safety data from 523+ procedures." 
-        />
-        <meta 
-          name="keywords" 
-          content="permanent makeup safety DMV, licensed PMU artist Virginia, hospital-grade PMU studio Northern Virginia, PMU complication rate statistics, sterile PMU procedure Annandale, bloodborne pathogens certified PMU, vegan pigments permanent makeup, hypoallergenic PMU Arlington Alexandria, PMU safety protocols Fairfax County, Virginia licensed cosmetic tattooer" 
-        />
-        <link rel="canonical" href="https://www.inkmugi.com/permanent-makeup-safety-dmv" />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="PMU Safety in Northern Virginia | Licensed & Hospital-Grade | Ink Mugi" />
-        <meta property="og:description" content="Virginia-licensed PMU studio with 0.19% complication rate vs 2.5% industry average. Hospital-grade sterilization, premium vegan pigments, 523+ documented procedures." />
-        <meta property="og:url" content="https://www.inkmugi.com/permanent-makeup-safety-dmv" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PMU Safety in Northern Virginia | Licensed & Hospital-Grade | Ink Mugi" />
-        <meta name="twitter:description" content="0.19% complication rate vs 2.5% industry average. Virginia-licensed, hospital-grade protocols, 523+ procedures documented." />
-        <meta name="twitter:image" content="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" />
-
+      <SEO
+        title="Is Permanent Makeup Safe? 0.19% Complication Rate | Ink Mugi DMV"
+        description="Hospital-grade safety protocols with a 0.19% complication rate (vs 2.5% industry average). Virginia-licensed, BBP certified, premium vegan pigments. See our transparent safety data from 523+ procedures."
+        path="/permanent-makeup-safety-dmv"
+        keywords="permanent makeup safety DMV, licensed PMU artist Virginia, hospital-grade PMU studio Northern Virginia, PMU complication rate statistics, sterile PMU procedure Annandale, bloodborne pathogens certified PMU, vegan pigments permanent makeup, hypoallergenic PMU Arlington Alexandria, PMU safety protocols Fairfax County, Virginia licensed cosmetic tattooer"
+      >
         {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -164,7 +145,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv"
           })}
         </script>
-      </Helmet>
+      </SEO>
 
       <div className="min-h-screen bg-white">
         {/* Hero Section - Professional Standard with Visual Impact */}
