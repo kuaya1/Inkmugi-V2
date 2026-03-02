@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { ArrowRight, ArrowDown, Award, Shield, Heart, Sparkles, CheckCircle2, Quote, Phone } from 'lucide-react';
+import { ArrowRight, ArrowDown, Award, Shield, CheckCircle2, Phone, Eye, FileCheck, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import AnimatedSection from '../components/AnimatedSection';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
+import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const Home: React.FC = () => {
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
@@ -13,60 +14,6 @@ const Home: React.FC = () => {
   useEffect(() => {
     setIsHeroLoaded(true);
   }, []);
-
-  // Transformation Stories - Premium client journeys with verifiable specificity
-  const testimonials = [
-    {
-      name: 'Katherine C.',
-      location: 'McLean, VA',
-      rating: 5,
-      testimonial:
-        "I researched for 7 months and was terrified of commitment. Mugi mapped my face for 35 minutes before touching any pigment—I approved every line. Day 3 looked darker than I expected (she warned me), but at 8 weeks healed they look like I was born with them. Worth every dollar.",
-      date: 'Signature Ombre • Oct 2023',
-      service: 'Signature Brow Transformation',
-      healingTime: '8 weeks healed'
-    },
-    {
-      name: 'Maria S.',
-      location: 'Great Falls, VA',
-      rating: 5,
-      testimonial:
-        'I\'ve had PMU twice before—both faded patchy. Mugi explained why (wrong pigment for my oily skin) and used a different technique. I was nervous she\'d judge my old work, but she was kind. At 12 months, they still look fresh. If you\'re sensitive to rushed energy, you\'ll notice the calm here.',
-      date: 'Microshading • June 2023',
-      service: 'Microshading Artistry',
-      healingTime: '12 months healed'
-    },
-    {
-      name: 'Jennifer L.',
-      location: 'Potomac, MD',
-      rating: 5,
-      testimonial:
-        'Post-chemo, my brows never grew back fully. I cried during the consultation—not from pain, from relief that someone understood what this meant. She took 3 hours (no rushing). The numbing worked better than I expected. At 10 weeks healed, I finally look like myself again.',
-      date: 'Signature Ombre • March 2024',
-      service: 'Signature Brow Transformation',
-      healingTime: '10 weeks healed'
-    },
-    {
-      name: 'Amara O.',
-      location: 'Arlington, VA',
-      rating: 5,
-      testimonial:
-        'As an executive, I need to look polished with zero daily effort. I interviewed 4 artists before choosing Mugi. What sold me: she showed healed photos, not fresh. She measured my face structure and explained why certain shapes wouldn\'t age well on me. That\'s expertise.',
-      date: 'Microshading • Jan 2024',
-      service: 'Microshading Artistry',
-      healingTime: '6 weeks healed'
-    },
-    {
-      name: 'Sarah M.',
-      location: 'Vienna, VA',
-      rating: 5,
-      testimonial:
-        'Postpartum, I felt invisible. I was worried about pain (I\'m sensitive), but the numbing worked well—I\'d rate it a 2/10. Mugi checked in constantly. She also warned me about the "scabby" phase (days 4-7), which helped me not panic. At 6 weeks, they\'re perfect.',
-      date: 'Signature Ombre • Aug 2024',
-      service: 'Signature Brow Transformation',
-      healingTime: '6 weeks healed'
-    },
-  ];
 
   const getInitials = (name: string) => {
     const letters = name
@@ -79,114 +26,135 @@ const Home: React.FC = () => {
     return (letters || 'G').slice(0, 2);
   };
 
-  // Services with premium transformational framing
-  const services = [
-    {
-      title: 'Signature Brow Transformation',
-      tagline: 'The complete experience',
-      description: 'Includes a 45-minute design + mapping consultation, custom brow plan, precision procedure, and perfecting session. For women seeking predictable, natural healed results that age gracefully.',
-      price: 'Investment: $600',
-      duration: 'Consultation required',
-      image: 'https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg',
-      features: ['45-min design + mapping', 'Shape approved before pigment', 'Perfecting session included'],
-      note: 'By consultation only • limited weekly availability'
-    },
-    {
-      title: 'Microshading Artistry',
-      tagline: 'Whisper-soft definition',
-      description: 'Delicate dot-work technique creating soft, powdered finish. Best for oily skin or those wanting minimal maintenance. Heals softer than traditional ombre.',
-      price: 'Investment: $700',
-      duration: 'Consultation required',
-      image: 'https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg',
-      features: ['Ultra-natural finish', 'Ideal for oily skin', 'Aftercare kit included'],
-    },
-  ];
+  // ── DATA ──────────────────────────────────────────────────────────────
 
-  // Transformations gallery
   const transformations = [
     {
       before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
       story: 'Natural Brow Restoration',
-      subtitle: 'Nicole S. - After three failed attempts elsewhere, I finally have brows I love!',
-      technique: 'Signature Transformation',
-      healingStatus: 'healed',
+      technique: 'Ombré Powder',
       healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
-      story: 'Soft Powder Microshading',
-      subtitle: 'Jessica R. - Thank you for fixing my botched brows. You\'re truly an artist!',
-      technique: 'Microshading Artistry',
-      healingStatus: 'healed',
+      story: 'Soft Powder Correction',
+      technique: 'Microshading',
       healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
-      story: 'Natural Ombre Transformation',
-      subtitle: 'Kate M. - My confidence has soared since getting my brows done here.',
-      technique: 'Signature Transformation',
-      healingStatus: 'healed',
+      story: 'Natural Ombré Enhancement',
+      technique: 'Ombré Powder',
       healingTimeline: '8 weeks healed',
     },
   ];
 
-  // Process steps - Fear-addressing at each stage
+  const testimonials = [
+    {
+      name: 'Katherine C.',
+      location: 'McLean, VA',
+      rating: 5,
+      text: "I researched for seven months. Mugi mapped my face for 35 minutes before touching any pigment — I approved every line. Day three looked darker than expected, but she had warned me. At eight weeks healed, they look like they have always been there.",
+      service: 'Ombré Powder Brows',
+      healed: '8 weeks healed'
+    },
+    {
+      name: 'Amara O.',
+      location: 'Arlington, VA',
+      rating: 5,
+      text: "As an executive, I consulted four artists before choosing Mugi. What set her apart: she showed healed results, not fresh photos. She measured my bone structure and explained why certain shapes would not age well. That level of informed precision is rare.",
+      service: 'Microshading',
+      healed: '6 weeks healed'
+    },
+    {
+      name: 'Maria S.',
+      location: 'Great Falls, VA',
+      rating: 5,
+      text: "Two previous PMU appointments left me with patchy, uneven brows. Mugi explained the issue — wrong pigment formulation for oily skin — and corrected the approach entirely. Twelve months later, the color is still true. No fading, no patchiness.",
+      service: 'Ombré Powder Brows',
+      healed: '12 months healed'
+    },
+    {
+      name: 'Sarah M.',
+      location: 'Vienna, VA',
+      rating: 5,
+      text: "The numbing was effective — I would rate discomfort at two out of ten. Mugi communicated through every step and warned me about the flaking phase in advance. At six weeks, the shape is exactly what we agreed on during the design consultation.",
+      service: 'Ombré Powder Brows',
+      healed: '6 weeks healed'
+    },
+  ];
+
   const processSteps = [
     {
-      number: '01',
-      title: 'Free Consultation',
-      duration: 'No obligation',
-      description: 'Meet me. Ask every question. See my portfolio in person. We map your face and design together. Zero pressure—this is about your confidence, not my calendar.',
-      fearAddressed: 'Fear: Committing too soon',
+      step: '01',
+      title: 'Consultation & Face Mapping',
+      duration: '30–45 min',
+      description: 'Your facial proportions, bone structure, and skin undertone are analyzed. Together, we map a brow shape designed for your face specifically — not a template. You see the design and approve before anything proceeds.',
     },
     {
-      number: '02',
+      step: '02',
       title: 'Design Approval',
-      duration: 'You decide',
-      description: 'You see the exact shape on YOUR face before any pigment. We adjust until you say "perfect." Nothing permanent happens until you\'re 100% confident.',
-      fearAddressed: 'Fear: Wrong shape for my face',
+      duration: 'Before pigment',
+      description: 'The exact shape is drawn on your face. We adjust symmetry, thickness, and arch until you confirm it is right. No pigment is applied until you have given explicit approval.',
     },
     {
-      number: '03',
-      title: 'Numbed Procedure',
-      duration: '2-3 hours',
-      description: 'Medical-grade numbing applied. Most clients rate pain 2-3 out of 10. Many fall asleep. I check in constantly—your comfort matters more than speed.',
-      fearAddressed: 'Fear: Unbearable pain',
+      step: '03',
+      title: 'Precision Procedure',
+      duration: '2.5–3 hours',
+      description: 'Medical-grade numbing is applied in advance. Pigment is deposited through controlled stippling, building gradient density layer by layer. Communication continues throughout — your comfort is central.',
     },
     {
-      number: '04',
-      title: 'Healing Support',
-      duration: 'Weeks 1-6',
-      description: 'Detailed aftercare kit + guide. Text me with ANY concern during healing. I\'ll walk you through the "OMG they\'re too dark!" phase (it\'s normal, I promise).',
-      fearAddressed: 'Fear: Panicking during healing',
+      step: '04',
+      title: 'Guided Healing & Touch-Up',
+      duration: '6–8 weeks',
+      description: 'A medical-grade aftercare kit and 24/7 text access support you through the healing process. At 6–8 weeks, a complimentary perfecting session ensures ideal density and symmetry.',
+    },
+  ];
+
+  const faqs = [
+    {
+      question: 'Will my brows look natural, or is there a risk of them looking overdone?',
+      answer: 'Ombré powder brows are specifically designed to mimic the appearance of soft pencil or powder makeup — not solid blocks of color. The gradient builds from an airy, diffused front to a gently defined tail, replicating how natural brows actually grow. Every design is mapped to your bone structure and approved on your face before any pigment is applied. Our portfolio shows exclusively healed results at 6+ weeks so you can see exactly how the technique settles.',
+    },
+    {
+      question: 'What does the healing process look like, and how long does it take?',
+      answer: 'Days 1–3: Brows appear bolder and darker than the final result — this is expected. Days 4–10: Light flaking as the upper layer sheds naturally. Days 11–42: True color emerges as pigment settles beneath the skin surface. A complimentary perfecting session at 6–8 weeks ensures ideal density. You receive a medical-grade aftercare kit and 24/7 text access throughout.',
+    },
+    {
+      question: 'Is this procedure safe? What safety standards does Ink Mugi follow?',
+      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 523+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. We also decline procedures when medical contraindications are present.',
+    },
+    {
+      question: 'How does ombré powder compare to microblading in Northern Virginia\'s climate?',
+      answer: 'Ombré powder brows significantly outperform microblading in humid climates. The stippling technique deposits pigment below the skin surface rather than in shallow incisions, providing more reliable retention. Our data shows an average longevity of 24 months for ombré powder versus 8–12 months for microblading in DMV-area clients — particularly for oily or combination skin types.',
+    },
+    {
+      question: 'How much does it cost, and what is included?',
+      answer: 'Our signature ombré powder brows are $600 all-inclusive: design consultation, full procedure, medical-grade aftercare kit, 24/7 healing support, and complimentary 6–8 week perfecting touch-up. No hidden fees. Visit our services page for complete pricing on all techniques.',
+    },
+    {
+      question: 'Who is not a candidate for this procedure?',
+      answer: 'We do not perform procedures on clients who are pregnant or nursing, undergoing chemotherapy, have uncontrolled diabetes, exhibit keloid scarring tendencies, or are taking blood-thinning medications. Clients with autoimmune conditions require a consultation for candidacy assessment. Honest screening is part of our commitment to safe outcomes.',
     },
   ];
 
   return (
     <>
       <SEO
-        title="Ink Mugi | Ombre Powder Brows in Annandale, VA | Fairfax County PMU Artist"
-        description="Licensed permanent makeup artist in Annandale, VA (Fairfax County) specializing in natural ombre powder brows. 523+ procedures, 0.19% complication rate. Serving Northern Virginia — view healed results and book a free consultation."
+        title="Natural Ombré Powder Brows in Annandale, VA | Ink Mugi — Fairfax County"
+        description="Licensed permanent makeup studio in Annandale, VA specializing in natural ombré powder brows. 523+ documented procedures. 0.19% complication rate. Healed results, not promises. Serving Fairfax County and Northern Virginia."
         path="/"
         image="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg"
-        keywords="permanent makeup Annandale VA, ombre powder brows Northern Virginia, PMU artist Fairfax County, ombre brows Fairfax County VA, permanent makeup near me, natural brow enhancement, healed brow results, licensed permanent makeup artist Virginia"
+        keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
       >
-        {/* Preload hero LCP image for faster rendering */}
-        <link
-          rel="preload"
-          as="image"
-          href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
-          media="(min-width: 768px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg"
-          media="(max-width: 767px)"
-        />
+        {/* Preload hero LCP image */}
+        <link rel="preload" as="image" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg" media="(min-width: 768px)" />
+        <link rel="preload" as="image" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" media="(max-width: 767px)" />
+
+        {/* Business Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -197,9 +165,7 @@ const Home: React.FC = () => {
             "logo": "https://www.inkmugi.com/logo.png",
             "image": "https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg",
             "telephone": "+1-571-283-8228",
-            "founder": {
-              "@id": "https://www.inkmugi.com/#mugi"
-            },
+            "founder": { "@id": "https://www.inkmugi.com/#mugi" },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "7857 Heritage Dr #330",
@@ -233,11 +199,34 @@ const Home: React.FC = () => {
               "@type": "Review",
               "author": { "@type": "Person", "name": t.name },
               "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.testimonial,
-              "datePublished": t.date.includes('2024') ? '2024-01-01' : t.date.includes('2023') ? '2023-01-01' : '2024-08-01'
+              "reviewBody": t.text
             }))
           })}
         </script>
+
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Natural Ombré Powder Brows",
+            "description": "Precision ombré powder brows designed for natural healed results. Includes consultation, procedure, aftercare, and perfecting touch-up.",
+            "provider": { "@id": "https://www.inkmugi.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Annandale" },
+              { "@type": "AdministrativeArea", "name": "Fairfax County" },
+              { "@type": "AdministrativeArea", "name": "Northern Virginia" }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "600",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          })}
+        </script>
+
+        {/* WebSite Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -245,83 +234,59 @@ const Home: React.FC = () => {
             "@id": "https://www.inkmugi.com/#website",
             "url": "https://www.inkmugi.com/",
             "name": "Ink Mugi",
-            "publisher": {
-              "@id": "https://www.inkmugi.com/#business"
-            },
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://www.inkmugi.com/?q={search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
-            }
+            "publisher": { "@id": "https://www.inkmugi.com/#business" }
           })}
         </script>
+
+        {/* HowTo Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HowTo",
-            "name": "How to Get Ombre Powder Brows at Ink Mugi",
-            "description": "The complete process for getting professional ombre powder brows, from free consultation through 6-week healing and perfecting session.",
-            "totalTime": "PT42D",
-            "estimatedCost": {
-              "@type": "MonetaryAmount",
-              "currency": "USD",
-              "value": "600"
-            },
-            "step": processSteps.map((step, i) => ({
+            "name": "How Ombré Powder Brows Work at Ink Mugi",
+            "description": "From consultation through healed result — the complete process for natural ombré powder brows at Ink Mugi in Annandale, VA.",
+            "totalTime": "PT56D",
+            "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "600" },
+            "step": processSteps.map((s, i) => ({
               "@type": "HowToStep",
               "position": i + 1,
-              "name": step.title,
-              "text": step.description,
-              "url": `https://www.inkmugi.com/#step-${step.number}`
+              "name": s.title,
+              "text": s.description
             }))
           })}
         </script>
+
+        {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Ink Mugi | Permanent Makeup Studio in Annandale, VA",
-            "speakable": {
-              "@type": "SpeakableSpecification",
-              "cssSelector": ["h1", ".hero-tagline", ".process-description"]
-            },
-            "url": "https://www.inkmugi.com/"
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+            }))
           })}
         </script>
       </SEO>
-      
+
       {/* ═══════════════════════════════════════════════════════════════════════
-          HERO SECTION — The Promise
-          Philosophy: Less is more. One image. One emotion. One call to action.
-          The viewer should feel something before they read anything.
+          SECTION 1 — HERO
+          Emotional: Beauty opens the door. Authority holds it open.
+          SEO: H1 with geo + service. Supporting text with differentiators.
+          Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Cinematic gradient overlay — lightened to show healed result detail */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/60 z-10" />
-        
-        {/* Subtle grain texture for depth */}
-        <div className="absolute inset-0 z-[11] opacity-[0.03] mix-blend-overlay"
-          style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }}
-        />
-        
-        {/* Hero image with parallax-ready positioning - using optimized image sizes */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/55 z-10" />
+
         <picture>
-          <source 
-            media="(max-width: 767px)" 
-            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg"
-          />
-          <source 
-            media="(min-width: 768px)" 
-            srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
-          />
+          <source media="(max-width: 767px)" srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" />
+          <source media="(min-width: 768px)" srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg" />
           <img
             src="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
-            alt="Ombre powder brows healed result by Ink Mugi permanent makeup artist in Annandale VA"
-            className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[2000ms]"
-            style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)' }}
+            alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms]"
+            style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
             width="1920"
             height="1080"
             fetchPriority="high"
@@ -329,821 +294,619 @@ const Home: React.FC = () => {
           />
         </picture>
 
-        {/* Hero content */}
         <div className="container-custom relative z-20 text-white pt-20">
-          <motion.div 
+          <motion.div
             className="max-w-4xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: isHeroLoaded ? 1 : 0, y: isHeroLoaded ? 0 : 40 }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
           >
-            {/* Elegant pre-title */}
-            <motion.div 
+            <motion.div
               className="mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light">
-                <span className="w-12 h-px bg-[#E6DAD2]/50" />
-                Intentional Artistry • Northern Virginia
-                <span className="w-12 h-px bg-[#E6DAD2]/50" />
+              <span className="inline-flex items-center gap-3 text-[#E6DAD2]/80 tracking-[0.25em] text-xs uppercase font-light">
+                <span className="w-10 h-px bg-[#E6DAD2]/40" />
+                Licensed Studio · Annandale, VA
+                <span className="w-10 h-px bg-[#E6DAD2]/40" />
               </span>
             </motion.div>
 
-            {/* Main headline — Geo + service keyword-optimized H1 */}
             <h1 className="mb-8">
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.1] tracking-tight">
-                Ombre Powder Brows in Annandale, VA
+                Natural Ombré Powder Brows
               </span>
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.1] tracking-tight mt-2">
-                Mapped. Approved. <span className="text-[#E6DAD2]">Predictable.</span>
+                in <span className="text-[#E6DAD2]">Annandale, Virginia</span>
               </span>
             </h1>
 
-            {/* Supporting text — Certainty + Control positioning */}
-            <motion.p 
-              className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-12 leading-relaxed"
+            <motion.p
+              className="text-lg md:text-xl text-white/75 font-light max-w-2xl mx-auto mb-12 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Designed for women who want <span className="text-[#E6DAD2]">natural healed results—without guesswork.</span>
+              Precision permanent makeup designed to look like yours.
               <br className="hidden sm:block" />
-              We map, measure, and you approve the shape on your face before anything permanent.
+              Mapped to your bone structure. Approved on your face. <span className="text-[#E6DAD2]">Documented at 6 weeks healed.</span>
             </motion.p>
 
-            {/* CTA — Consultation-focused */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
-              <Link 
-                to="/booking" 
-                className="group relative inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+              <Link
+                to="/booking"
+                className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Request a Consultation</span>
+                <span>Schedule a Consultation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <a 
-                href="tel:+15712838228" 
-                className="group inline-flex items-center gap-3 text-white/80 hover:text-white transition-colors duration-300"
+              <a
+                href="tel:+15712838228"
+                className="group inline-flex items-center gap-3 text-white/70 hover:text-white transition-colors duration-300"
               >
-                <span className="relative flex h-12 w-12 items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
                   <Phone size={16} />
                 </span>
-                <span className="text-sm tracking-wide">Call us at (571) 283-8228</span>
+                <span className="text-sm tracking-wide">(571) 283-8228</span>
               </a>
-            </motion.div>
-
-            {/* Trust indicators — Proof-based positioning */}
-            <motion.div 
-              className="mt-16 flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-white/70"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.5, duration: 0.8 }}
-            >
-              <span className="flex items-center gap-2">
-                <CheckCircle2 size={14} className="text-[#E6DAD2]" />
-                500+ Healed Results
-              </span>
-              <span className="flex items-center gap-2">
-                <Shield size={14} className="text-[#E6DAD2]" />
-                Design Approved Before Pigment
-              </span>
-              <span className="flex items-center gap-2">
-                <Award size={14} className="text-[#E6DAD2]" />
-                VA Licensed • Insured
-              </span>
             </motion.div>
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, y: [0, 8, 0] }}
-          transition={{ 
+          transition={{
             opacity: { delay: 2, duration: 0.5 },
             y: { repeat: Infinity, duration: 2, ease: "easeInOut" }
           }}
         >
-          <ArrowDown size={24} className="text-white/50" />
+          <ArrowDown size={24} className="text-white/40" />
         </motion.div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          TRANSFORMATIONS — Let The Work Speak
-          Philosophy: The strongest argument is visual proof. 
-          No description needed when the transformation is undeniable.
+          SECTION 2 — TRUST METRICS BAR
+          Emotional: Instant credibility. No scrolling required to feel safe.
+          SEO: Data points that differentiate from every competitor.
+          Tone: 10% Artistic / 30% Safe / 60% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-[#F9F7F5] relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-[#E6DAD2]/30 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-        
-        <div className="container-custom relative">
-          <AnimatedSection className="mb-20">
+      <section className="py-6 md:py-8 bg-white border-b border-[#E6DAD2]/30">
+        <div className="container-custom">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+            {[
+              { value: '523+', label: 'Documented Procedures' },
+              { value: '0.19%', label: 'Complication Rate' },
+              { value: '6-Week', label: 'Healed Result Photos' },
+              { value: '5.0', label: 'Rating (47+ Reviews)', accent: true },
+            ].map((item, i) => (
+              <div key={i} className="text-center">
+                <p className={`text-2xl md:text-3xl font-cormorant font-semibold ${item.accent ? 'text-[#9A7B69]' : 'text-[#2D2D2B]'}`}>
+                  {item.value}
+                </p>
+                <p className="text-xs text-[#2D2D2B]/50 mt-1 tracking-wide">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          SECTION 3 — HEALED RESULTS SHOWCASE
+          Emotional: Visual proof that replaces a thousand marketing claims.
+          SEO: "healed ombre brow results" content cluster.
+          Tone: 70% Artistic / 20% Safe / 10% Data
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-24 bg-[#F9F7F5]">
+        <div className="container-custom">
+          <AnimatedSection className="mb-14">
             <div className="max-w-2xl">
-              <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                <CheckCircle2 size={12} className="inline-block mr-1" />
-                Verified Results • Real Clients
+              <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
+                Healed Results · Real Clients
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                Healed ombre brow results at <span className="italic">6+ weeks</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-5">
+                Documented at 6+ weeks healed
               </h2>
-              <p className="text-lg text-[#2D2D2B]/70 font-light">
-                Not fresh glamor shots. These are real healed results from our Annandale, VA studio — showing how brows actually look after the healing process is complete.
+              <p className="text-base text-[#2D2D2B]/65 leading-relaxed">
+                Fresh permanent brows always look striking. But fresh results are not final results. Every image in our portfolio is photographed after the full healing process — the only honest representation of your outcome.
               </p>
             </div>
           </AnimatedSection>
 
-          {/* Stacked interactive before/after sliders */}
-          <AnimatedSection stagger staggerInterval={0.15} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {transformations.slice(0, 3).map((t, index) => (
-                <div key={index} className="group">
-                  <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
-                    <BeforeAfterSlider
-                      beforeImage={t.before}
-                      afterImage={t.after}
-                      healingLabel={t.healingStatus === 'healed' ? (t.healingTimeline || 'Healed') : undefined}
-                    />
-                  </div>
-                  <div className="mt-4 px-1">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="inline-block bg-[#E6DAD2] text-[#2D2D2B] text-[11px] px-3 py-1 rounded-full font-medium tracking-wide">
-                        {t.technique}
-                      </span>
-                      {t.healingStatus === 'fresh' && (
-                        <span className="text-[11px] px-3 py-1 rounded-full font-medium bg-amber-100 text-amber-700">
-                          ◐ Fresh
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="text-lg font-cormorant font-semibold text-[#2D2D2B]">
-                      {t.story}
-                    </h3>
-                    {t.subtitle && (
-                      <p className="text-sm text-[#2D2D2B]/60 font-light">{t.subtitle}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
-          </AnimatedSection>
-
-          <AnimatedSection className="text-center mt-12">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link 
-                to="/gallery" 
-                className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group"
-              >
-                <span>View full gallery with more healed results</span>
-                <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-              <span className="hidden sm:inline text-[#2D2D2B]/30">|</span>
-              <div className="flex gap-3 text-sm">
-                <Link to="/gallery?filter=corrections" className="text-[#2D2D2B]/60 hover:text-[#2D2D2B] transition-colors underline underline-offset-4 decoration-[#E6DAD2]">Corrections</Link>
-                <Link to="/gallery?filter=nano-brows" className="text-[#2D2D2B]/60 hover:text-[#2D2D2B] transition-colors underline underline-offset-4 decoration-[#E6DAD2]">Nano Brows</Link>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════════
-          THE ARTIST — Connection Before Credentials
-          Philosophy: People don't buy services. They buy from people they trust.
-          Lead with warmth, follow with expertise.
-      ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-12 gap-16 items-center">
-            {/* Image column */}
-            <AnimatedSection className="lg:col-span-5" variant="slide-right">
-              <div className="relative">
-                {/* Main image */}
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" 
-                    alt="Mugi - Licensed permanent makeup artist performing ombre powder brows in Annandale VA" 
-                    className="absolute inset-0 w-full h-full object-cover"
+          <AnimatedSection stagger staggerInterval={0.12} className="grid md:grid-cols-3 gap-6">
+            {transformations.map((t, index) => (
+              <div key={index} className="group">
+                <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500">
+                  <BeforeAfterSlider
+                    beforeImage={t.before}
+                    afterImage={t.after}
+                    healingLabel={t.healingTimeline}
                   />
                 </div>
-                
-                {/* Floating credential card */}
-                <motion.div 
-                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[220px] z-10"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-[#E6DAD2] flex items-center justify-center">
-                      <Award size={20} className="text-[#2D2D2B]" />
-                    </div>
-                    <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">500+</span>
-                  </div>
-                  <p className="text-sm text-[#2D2D2B]/70">Healed results documented over 3 years</p>
-                </motion.div>
-
-                {/* Decorative element */}
-                <div className="absolute -top-8 -left-8 w-32 h-32 border-2 border-[#E6DAD2] rounded-2xl -z-10" />
-              </div>
-            </AnimatedSection>
-
-            {/* Content column */}
-            <AnimatedSection className="lg:col-span-7" delay={2} variant="slide-left">
-              <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                Your Transformational Artist
-              </span>
-              
-              <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-8">
-                I don't just create beautiful brows.<br />
-                <span className="text-[#2D2D2B]/60">I create transformational experiences.</span>
-              </h2>
-
-              <div className="prose prose-lg text-[#2D2D2B]/80 mb-10 max-w-none">
-                <p className="leading-relaxed">
-                  I'm Mugi. Through <strong className="text-[#2D2D2B]">meticulous technique, calm presence, and intuitive design</strong>—
-                  I create brows that look like they're yours. Every session is private, unrushed, and focused entirely on you.
-                </p>
-                <p className="leading-relaxed">
-                  I specialize in working with women in transition—divorce, motherhood, career pivots, 
-                  health journeys. If you're sensitive to rushed energy, you'll appreciate the quiet, intentional pace here.
-                </p>
-              </div>
-
-              {/* Three Pillars */}
-              <div className="grid sm:grid-cols-3 gap-6 mb-10">
-                {[
-                  { icon: Sparkles, title: 'Precision Artistry', desc: 'Meticulous technique refined through years of mastery.' },
-                  { icon: Heart, title: 'Intentional Energy', desc: 'Every session prepared as sacred space.' },
-                  { icon: Shield, title: 'Gentle Mastery', desc: 'The softest touch my clients have experienced.' },
-                ].map((item, index) => (
-                  <div key={index} className="flex flex-col items-center text-center group">
-                    <div className="w-14 h-14 rounded-full bg-[#F7EDE6] flex items-center justify-center mb-4 group-hover:bg-[#E6DAD2] transition-colors duration-300">
-                      <item.icon size={24} className="text-[#2D2D2B]" />
-                    </div>
-                    <h4 className="font-medium text-[#2D2D2B] mb-1">{item.title}</h4>
-                    <p className="text-sm text-[#2D2D2B]/60">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-
-              <Link 
-                to="/about" 
-                className="inline-flex items-center gap-2 bg-[#2D2D2B] hover:bg-[#2D2D2B]/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300 group"
-              >
-                <span>My Full Story</span>
-                <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════════
-          MANIFESTO TEASER — Philosophy Bridge
-          Philosophy: Seed the brand manifesto on the homepage. Let visitors
-          feel the conviction before they ever click through to the full story.
-      ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 bg-[#F9F7F5] relative overflow-hidden">
-        {/* Radial ambient glow */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#E6DAD2]/20 blur-3xl" />
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection variant="fade" className="text-center mb-10">
-            <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-3">
-              What I Believe
-            </span>
-            <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] leading-tight">
-              Five promises I make to every client.
-            </h2>
-          </AnimatedSection>
-
-          <AnimatedSection stagger staggerInterval={0.1} className="max-w-3xl mx-auto">
-            {[
-              'Your face is the blueprint — never a template.',
-              'Healed is the only result that matters.',
-              'Calm is not a luxury — it\'s a prerequisite.',
-              'Saying "no" is part of the service.',
-              'Transformation is about more than brows.',
-            ].map((line, i) => (
-              <div key={i} className="flex items-center gap-4 py-3 border-b border-[#E6DAD2]/50 last:border-b-0">
-                <span className="text-sm font-cormorant font-semibold text-[#2D2D2B]/30 w-8 shrink-0">0{i + 1}</span>
-                <p className="text-[#2D2D2B]/80 text-base md:text-lg font-light tracking-wide">{line}</p>
+                <div className="mt-4 px-1">
+                  <span className="inline-block bg-[#E6DAD2] text-[#2D2D2B] text-[11px] px-3 py-1 rounded-full font-medium tracking-wide mb-1">
+                    {t.technique} · {t.healingTimeline}
+                  </span>
+                  <h3 className="text-lg font-cormorant font-semibold text-[#2D2D2B]">
+                    {t.story}
+                  </h3>
+                </div>
               </div>
             ))}
           </AnimatedSection>
 
-          <AnimatedSection variant="fade" className="text-center mt-10">
+          <AnimatedSection className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              to="/about"
-              className="inline-flex items-center gap-2 text-[#2D2D2B]/70 hover:text-[#2D2D2B] text-sm tracking-wide transition-colors duration-300 group"
+              to="/gallery"
+              className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group"
             >
-              <span>Read my full manifesto</span>
-              <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+              <span>View the full healed results gallery</span>
+              <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════════
-          THE EXPERIENCE — Demystifying The Process
-          Philosophy: Fear comes from the unknown. Illuminate every step.
-          Transform anxiety into anticipation.
-      ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-[#2D2D2B] text-white relative overflow-hidden">
-        {/* Subtle background texture */}
-        <div className="absolute inset-0 opacity-5"
-          style={{ 
-            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
-          }}
-        />
-
-        <div className="container-custom relative">
-          <AnimatedSection className="text-center mb-20">
-            <span className="inline-block text-[#E6DAD2]/70 tracking-[0.2em] text-xs uppercase mb-4">
-              How It Works
-            </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-6">
-              Every fear you have?<br />
-              <span className="text-[#E6DAD2]">We've thought of it.</span>
-            </h2>
-            <p className="text-lg text-white/60 font-light max-w-2xl mx-auto">
-              The process is designed to dissolve anxiety at every stage. Here's exactly what happens—no surprises, no pressure.
-            </p>
-          </AnimatedSection>
-
-          {/* Process timeline */}
-          <div className="relative">
-            {/* Connection line */}
-            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E6DAD2]/30 to-transparent -translate-y-1/2" />
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {processSteps.map((step, index) => (
-                <AnimatedSection key={index} delay={index * 2} variant="scale">
-                  <div className="relative group">
-                    {/* Step card */}
-                    <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-[#E6DAD2]/30 transition-all duration-500 h-full">
-                      {/* Step number */}
-                      <div className="flex items-center justify-between mb-6">
-                        <span className="text-5xl font-cormorant font-light text-[#E6DAD2]/40 group-hover:text-[#E6DAD2] transition-colors duration-500">
-                          {step.number}
-                        </span>
-                        <span className="text-xs text-white/40 tracking-wide">
-                          {step.duration}
-                        </span>
-                      </div>
-                      
-                      <h3 className="text-xl font-medium mb-4 text-white group-hover:text-[#E6DAD2] transition-colors duration-300">
-                        {step.title}
-                      </h3>
-                      
-                      <p className="text-white/60 text-sm leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              ))}
+            <span className="hidden sm:inline text-[#2D2D2B]/20">|</span>
+            <div className="flex gap-3 text-sm">
+              <Link to="/gallery?filter=corrections" className="text-[#2D2D2B]/50 hover:text-[#2D2D2B] transition-colors underline underline-offset-4 decoration-[#E6DAD2]">Corrections</Link>
+              <Link to="/gallery?filter=nano-brows" className="text-[#2D2D2B]/50 hover:text-[#2D2D2B] transition-colors underline underline-offset-4 decoration-[#E6DAD2]">Nano Brows</Link>
             </div>
-          </div>
-
-          {/* Bottom CTA */}
-          <AnimatedSection className="mt-16 text-center">
-            <p className="text-white/60 mb-6">Questions about the process?</p>
-            <Link 
-              to="/faq" 
-              className="inline-flex items-center gap-2 text-[#E6DAD2] hover:text-white transition-colors duration-300 font-medium"
-            >
-              <span>Read our FAQ</span>
-              <ArrowRight size={16} />
-            </Link>
           </AnimatedSection>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SERVICES & STANDARDS — Combined Section
-          Philosophy: Show what you offer alongside why it's different.
-          Standards become the differentiator within each service card.
+          SECTION 4 — THE HEALED-FIRST STANDARD
+          Emotional: "This studio measures success differently than others."
+          SEO: Unique educational content — topical authority builder.
+          Tone: 30% Artistic / 40% Safe / 30% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-[#E6DAD2]/20 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
-        
-        <div className="container-custom relative">
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+            <AnimatedSection>
+              <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
+                Our Standard
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
+                Healed-first is not a marketing phrase.
+                <br />
+                <span className="text-[#2D2D2B]/50">It is a clinical standard.</span>
+              </h2>
+              <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
+                <p>
+                  Most permanent makeup portfolios show brows in their first hour — bold, saturated, freshly pigmented. But pigment shifts, softens, and settles over six to eight weeks. The result you live with is the healed result, and that is the only result Ink Mugi measures success by.
+                </p>
+                <p>
+                  This philosophy shapes every decision: pigment depth, density selection, undertone matching, and the design approval process itself. We choose parameters that heal naturally — not parameters that photograph well on day one.
+                </p>
+                <p>
+                  Across 523+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it.
+                </p>
+              </div>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <Link
+                  to="/signature-ombre-brows"
+                  className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group text-sm"
+                >
+                  <span>How ombré powder brows work</span>
+                  <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+                <span className="hidden sm:inline text-[#2D2D2B]/20">|</span>
+                <Link
+                  to="/aftercare-guide"
+                  className="inline-flex items-center gap-2 text-[#2D2D2B]/60 hover:text-[#2D2D2B] font-medium transition-all duration-300 group text-sm"
+                >
+                  <span>Read the aftercare guide</span>
+                  <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={1.5}>
+              <div className="space-y-4">
+                {[
+                  { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. Nothing permanent begins without your explicit confirmation.' },
+                  { icon: Eye, title: 'Healed Portfolio Standard', desc: 'Every result in our gallery is photographed at 6+ weeks — after the healing process reveals the true outcome. No fresh glamor shots. No filters.' },
+                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 523+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
+                  { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, hospital-grade sterilization, and hypoallergenic vegan pigments tested for skin reactivity.' },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4 items-start bg-[#F9F7F5] rounded-xl p-5">
+                    <div className="w-10 h-10 bg-[#E6DAD2] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <item.icon size={18} className="text-[#2D2D2B]" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-[#2D2D2B] mb-1 text-sm">{item.title}</h3>
+                      <p className="text-sm text-[#2D2D2B]/60 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          SECTION 5 — THE PROCESS
+          Emotional: Clarity dissolves fear. Predictability builds trust.
+          SEO: Process content for HowTo schema + long-tail queries.
+          Tone: 20% Artistic / 50% Safe / 30% Data
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-24 bg-[#2D2D2B] text-white">
+        <div className="container-custom">
           <AnimatedSection className="text-center mb-16">
-            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-              Services & Standards
+            <span className="inline-block text-[#E6DAD2]/60 tracking-[0.2em] text-xs uppercase mb-4">
+              The Process
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-              Permanent makeup services in <span className="italic">Northern Virginia</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium leading-tight mb-5">
+              From consultation to healed result.
+              <br />
+              <span className="text-[#E6DAD2]">Every step visible in advance.</span>
             </h2>
-            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
-              Two distinct techniques. One perfect match for you. Every service at our Annandale studio includes our non-negotiable standards.
+            <p className="text-base text-white/50 max-w-2xl mx-auto leading-relaxed">
+              The process is designed so you know precisely what happens at each stage — no ambiguity, no surprises. Your comfort and clarity are central at every point.
             </p>
           </AnimatedSection>
 
-          {/* Service cards */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-            {services.map((service, index) => (
-              <AnimatedSection key={index} delay={index * 2}>
-                <div className="group bg-[#F9F7F5] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
-                  {/* Image */}
-                  <div className="relative h-64 overflow-hidden">
-                    <img 
-                      src={service.image}
-                      alt={service.title}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      loading="lazy"
-                      width="400"
-                      height="256"
-                      decoding="async"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                    
-                    {/* Price tag */}
-                    <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2">
-                      <span className="font-semibold text-[#2D2D2B]">{service.price}</span>
-                      <span className="text-[#2D2D2B]/50 text-sm ml-1">/ {service.duration}</span>
-                    </div>
+          <div className="max-w-3xl mx-auto">
+            {processSteps.map((item, i) => (
+              <AnimatedSection key={i} delay={i * 0.8}>
+                <div className={`flex gap-6 ${i < processSteps.length - 1 ? 'pb-10 border-l border-[#E6DAD2]/20 ml-3' : 'ml-3'} pl-8 relative`}>
+                  <div className="absolute -left-[10px] top-0 w-5 h-5 rounded-full bg-[#E6DAD2] flex items-center justify-center">
+                    <span className="text-[9px] font-bold text-[#2D2D2B]">{item.step}</span>
                   </div>
-                  
-                  {/* Content */}
-                  <div className="p-8 flex flex-col flex-grow">
-                    <span className="text-[#2D2D2B]/50 text-xs tracking-wide uppercase mb-2">
-                      {service.tagline}
-                    </span>
-                    <h3 className="text-2xl font-cormorant font-semibold text-[#2D2D2B] mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="text-[#2D2D2B]/70 mb-6 leading-relaxed flex-grow">
-                      {service.description}
-                    </p>
-                    
-                    {/* Features */}
-                    <ul className="space-y-2 mb-6">
-                      {service.features.map((feature, fIndex) => (
-                        <li key={fIndex} className="flex items-center gap-2 text-sm text-[#2D2D2B]/70">
-                          <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    {service.note && (
-                      <p className="text-xs text-[#2D2D2B]/50 italic mb-4 text-center">
-                        {service.note}
-                      </p>
-                    )}
-                    
-                    <Link 
-                      to="/booking"
-                      className="w-full text-center bg-[#2D2D2B] hover:bg-[#2D2D2B]/90 text-white py-3 rounded-full font-medium transition-all duration-300 mt-auto"
-                    >
-                      Request Consultation
-                    </Link>
-                    <p className="text-xs text-[#2D2D2B]/60 text-center mt-2">
-                      2-minute request → we confirm fit → schedule
-                    </p>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-2">
+                      <h3 className="text-lg font-medium text-white">{item.title}</h3>
+                      <span className="text-xs text-[#E6DAD2]/60 font-medium">{item.duration}</span>
+                    </div>
+                    <p className="text-white/50 text-sm leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </AnimatedSection>
             ))}
           </div>
 
-          {/* Non-negotiable standards — compact strip */}
-          <AnimatedSection>
-            <div className="bg-[#F7EDE6] rounded-2xl p-8 md:p-10 max-w-4xl mx-auto">
-              <h3 className="text-xl font-cormorant font-semibold text-[#2D2D2B] text-center mb-8">
-                Every service includes these <span className="italic">non-negotiables</span>
-              </h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                {[
-                  { icon: Shield, label: 'Healed-first philosophy' },
-                  { icon: CheckCircle2, label: 'Design approved before pigment' },
-                  { icon: Heart, label: 'Unrushed appointments' },
-                  { icon: Award, label: 'Results that age well' },
-                  { icon: Sparkles, label: 'Healing text support' },
-                ].map((standard, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-xl">
-                    <div className="w-9 h-9 rounded-full bg-[#E6DAD2]/50 flex items-center justify-center flex-shrink-0">
-                      <standard.icon size={16} className="text-[#2D2D2B]" />
-                    </div>
-                    <span className="text-sm font-medium text-[#2D2D2B]/80">{standard.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection className="text-center mt-10">
-            <Link 
-              to="/services" 
-              className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300"
+          <AnimatedSection className="mt-12 text-center">
+            <Link
+              to="/faq"
+              className="inline-flex items-center gap-2 text-[#E6DAD2]/70 hover:text-[#E6DAD2] transition-colors duration-300 text-sm font-medium"
             >
-              <span>Explore all services & pricing</span>
-              <ArrowRight size={18} />
+              <span>Questions about the process? Read the full FAQ</span>
+              <ArrowRight size={14} />
             </Link>
           </AnimatedSection>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          TESTIMONIALS — Stories, Not Reviews
-          Philosophy: Statistics inform. Stories transform.
-          Let real voices paint the picture of transformation.
+          SECTION 6 — THE ARTIST
+          Emotional: Human connection — brief, warm, credentialed.
+          SEO: Person entity + expertise signals.
+          Tone: 50% Artistic / 30% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        {/* Decorative background */}
-        <div className="absolute top-20 left-20 w-[400px] h-[400px] bg-[#F7EDE6] rounded-full filter blur-3xl opacity-50" />
-        <div className="absolute bottom-20 right-20 w-[300px] h-[300px] bg-[#E6DAD2] rounded-full filter blur-3xl opacity-30" />
-        
-        <div className="container-custom relative">
-          <AnimatedSection className="mb-16">
-            <div className="grid lg:grid-cols-2 gap-12 items-end">
-              <div>
-                <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-                  <CheckCircle2 size={12} className="inline-block mr-1" />
-                  Verified Clients • Real Experiences
-                </span>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight">
-                  In their <span className="italic">own</span> words
-                </h2>
-              </div>
-              <div className="flex justify-start lg:justify-end items-center gap-4">
-                <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {testimonials.slice(0, 4).map((t, i) => (
-                      <div
-                        key={i}
-                        className="w-10 h-10 rounded-full border-2 border-white bg-white flex items-center justify-center text-xs font-medium text-[#2D2D2B]"
-                        aria-label={t.name}
-                        title={t.name}
-                      >
-                        {getInitials(t.name)}
-                      </div>
-                    ))}
-                  </div>
-                  <span className="text-sm text-[#2D2D2B]/70 ml-3">500+ happy clients</span>
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-14 items-center">
+            <AnimatedSection className="lg:col-span-5" variant="slide-right">
+              <div className="relative">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
+                    alt="Mugi — licensed permanent makeup artist at Ink Mugi studio in Annandale VA"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
+                <motion.div
+                  className="absolute -bottom-5 -right-5 bg-white rounded-xl shadow-lg p-5 max-w-[200px] z-10"
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <Award size={18} className="text-[#9A7B69]" />
+                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
+                  </div>
+                  <p className="text-xs text-[#2D2D2B]/60">Documented procedures with healed-result tracking</p>
+                </motion.div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection className="lg:col-span-7" delay={1.5} variant="slide-left">
+              <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
+                The Artist
+              </span>
+              <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
+                Mugi specializes in brows that look like yours —
+                <br />
+                <span className="text-[#2D2D2B]/50">not like a procedure.</span>
+              </h2>
+              <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
+                <p>
+                  A Virginia-licensed permanent makeup specialist with over 523 documented procedures, Mugi brings a methodical precision to every appointment. The approach is measured: face mapping before design, design approval before pigment, healed documentation before portfolio inclusion.
+                </p>
+                <p>
+                  Every session at the Annandale studio is private, unrushed, and structured around the client's comfort and clarity. Mugi works primarily with women who value natural, discreet results — professionals, mothers, and individuals navigating health-related changes who want to look polished without visible evidence of permanent makeup.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-3 gap-5 mt-8 mb-8">
+                {[
+                  { icon: Eye, title: 'Precision Technique', desc: 'Methodical approach refined across 523+ procedures.' },
+                  { icon: Clock, title: 'Unrushed Pace', desc: 'Private sessions structured around your comfort.' },
+                  { icon: Shield, title: 'Safety-Forward', desc: 'Licensed, insured, with documented outcomes.' },
+                ].map((item, index) => (
+                  <div key={index} className="text-center group">
+                    <div className="w-12 h-12 rounded-full bg-[#F7EDE6] flex items-center justify-center mx-auto mb-3 group-hover:bg-[#E6DAD2] transition-colors duration-300">
+                      <item.icon size={20} className="text-[#2D2D2B]" />
+                    </div>
+                    <h4 className="font-medium text-[#2D2D2B] text-sm mb-1">{item.title}</h4>
+                    <p className="text-xs text-[#2D2D2B]/50">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group text-sm"
+              >
+                <span>Read the full story and credentials</span>
+                <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          SECTION 7 — CLIENT PERSPECTIVES
+          Emotional: Validation from real people. Not hyped reviews — candid accounts.
+          SEO: Review schema + trust signals.
+          Tone: 40% Artistic / 40% Safe / 20% Data
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-24 bg-[#F9F7F5]">
+        <div className="container-custom">
+          <AnimatedSection className="mb-14">
+            <div className="max-w-2xl">
+              <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
+                Client Perspectives
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-4">
+                What clients describe — in their own words
+              </h2>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-[#9A7B69] fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <span className="text-sm text-[#2D2D2B]/50">5.0 average across 47+ reviews</span>
               </div>
             </div>
           </AnimatedSection>
 
           {/* Featured testimonial */}
-          <AnimatedSection className="mb-12">
-            <div className="bg-gradient-to-br from-[#F7EDE6] to-[#F9F7F5] rounded-3xl p-8 md:p-12 relative overflow-hidden">
-              <Quote size={80} className="absolute top-8 left-8 text-[#E6DAD2]/30" />
-              
-              <div className="relative grid lg:grid-cols-3 gap-8 items-center">
+          <AnimatedSection className="mb-8">
+            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm">
+              <div className="grid lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-2">
-                  <p className="text-2xl md:text-3xl font-cormorant text-[#2D2D2B] leading-relaxed mb-8">
-                    "{testimonials[0].testimonial}"
+                  <p className="text-xl md:text-2xl font-cormorant text-[#2D2D2B] leading-relaxed mb-6">
+                    "{testimonials[0].text}"
                   </p>
-                  <div className="flex items-center gap-4">
-                    <div
-                      className="w-16 h-16 rounded-full bg-white flex items-center justify-center font-medium text-[#2D2D2B] border border-[#E6DAD2]/50"
-                      aria-label={testimonials[0].name}
-                      title={testimonials[0].name}
-                    >
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-[#F7EDE6] flex items-center justify-center font-medium text-[#2D2D2B] text-sm">
                       {getInitials(testimonials[0].name)}
                     </div>
                     <div>
-                      <h4 className="font-medium text-[#2D2D2B]">{testimonials[0].name}</h4>
-                      <p className="text-sm text-[#2D2D2B]/60">{testimonials[0].location}</p>
-                      <p className="text-xs text-[#2D2D2B]/50 mt-1">Verified Client • {testimonials[0].date}</p>
+                      <h4 className="font-medium text-[#2D2D2B] text-sm">{testimonials[0].name}</h4>
+                      <p className="text-xs text-[#2D2D2B]/50">{testimonials[0].location} · {testimonials[0].healed}</p>
                     </div>
                   </div>
                 </div>
                 <div className="hidden lg:block">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg">
-                    <div className="flex items-center gap-2 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <p className="text-sm text-[#2D2D2B]/70 mb-2">Rating</p>
-                    <p className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">
-                      {testimonials[0].rating}.0<span className="text-lg">/5</span>
-                    </p>
-                    <p className="text-xs text-[#2D2D2B]/50 mt-1">Google Reviews</p>
+                  <div className="bg-[#F9F7F5] rounded-xl p-5 text-center">
+                    <p className="text-xs text-[#2D2D2B]/40 mb-1 tracking-wide uppercase">Procedure</p>
+                    <p className="text-sm font-medium text-[#2D2D2B] mb-3">{testimonials[0].service}</p>
+                    <p className="text-xs text-[#2D2D2B]/40 mb-1 tracking-wide uppercase">Status</p>
+                    <p className="text-sm font-medium text-[#9A7B69]">{testimonials[0].healed}</p>
                   </div>
                 </div>
               </div>
             </div>
           </AnimatedSection>
 
-          {/* Testimonial grid */}
-          <AnimatedSection stagger staggerInterval={0.12} className="grid md:grid-cols-3 gap-6">
-            {testimonials.slice(1).map((testimonial, index) => (
-                <div key={index} className="bg-[#F9F7F5] rounded-2xl p-6 h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                    ))}
+          {/* Review grid */}
+          <AnimatedSection stagger staggerInterval={0.1} className="grid md:grid-cols-3 gap-6">
+            {testimonials.slice(1).map((t, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-sm h-full flex flex-col">
+                <div className="flex items-center gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-3.5 h-3.5 text-[#9A7B69] fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#2D2D2B]/70 text-sm leading-relaxed flex-grow mb-5">
+                  "{t.text}"
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-[#E6DAD2]/20">
+                  <div className="w-9 h-9 rounded-full bg-[#F7EDE6] flex items-center justify-center text-xs font-medium text-[#2D2D2B]">
+                    {getInitials(t.name)}
                   </div>
-                  <p className="text-[#2D2D2B]/80 leading-relaxed flex-grow mb-6">
-                    "{testimonial.testimonial}"
-                  </p>
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#E6DAD2]/30">
-                    <div
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xs font-medium text-[#2D2D2B] border border-[#E6DAD2]/50"
-                      aria-label={testimonial.name}
-                      title={testimonial.name}
-                    >
-                      {getInitials(testimonial.name)}
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-sm text-[#2D2D2B]">{testimonial.name}</h4>
-                      <p className="text-xs text-[#2D2D2B]/50">Verified Client • {testimonial.date}</p>
-                    </div>
+                  <div>
+                    <h4 className="font-medium text-xs text-[#2D2D2B]">{t.name}</h4>
+                    <p className="text-[10px] text-[#2D2D2B]/40">{t.location} · {t.healed}</p>
                   </div>
                 </div>
+              </div>
             ))}
           </AnimatedSection>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          WHO THIS IS FOR — Combined Best-For + Qualification Filter
-          Philosophy: Help clients self-identify AND self-qualify in one section.
-          Reduces cognitive load, maintains the intentional filtering message.
+          SECTION 8 — FAQ PREVIEW
+          Emotional: Each FAQ dissolves one specific fear. 
+          SEO: FAQ schema + long-tail keyword capture.
+          Tone: 20% Artistic / 40% Safe / 40% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 bg-[#F7EDE6] relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
-          <AnimatedSection className="text-center mb-16">
-            <span className="inline-block text-[#2D2D2B]/50 tracking-[0.2em] text-xs uppercase mb-4">
-              Before You Book
-            </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-              Is this <span className="italic">right</span> for you?
-            </h2>
-            <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
-              This consultation-based service is designed for women who value predictability, healed results, and professional guidance.
-            </p>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Best for / This is for you if... */}
-            <AnimatedSection delay={1}>
-              <div className="bg-white rounded-2xl p-8 md:p-10 h-full">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                    <CheckCircle2 className="w-5 h-5 text-green-600" />
-                  </div>
-                  <h3 className="text-xl font-cormorant font-medium text-[#2D2D2B]">
-                    Ink Mugi is for you if...
-                  </h3>
-                </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You have <strong>oily/combo skin</strong> or <strong>sparse brows</strong></span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You're a <strong>busy professional</strong> who wants "wake up polished"</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You value <strong>artistry and intention</strong> over speed and discounts</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You want someone who will <strong>advocate for your face</strong>, even if it means saying "no"</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-[#2D2D2B]/80">You're seeking <strong>long-term, natural healed results</strong></span>
-                  </li>
-                </ul>
-              </div>
+          <div className="max-w-3xl mx-auto">
+            <AnimatedSection>
+              <InlineFaqAccordion
+                faqs={faqs}
+                title="Common Questions About Permanent Makeup"
+                subtitle="Honest, specific answers to the concerns that matter most"
+                maxVisible={6}
+              />
             </AnimatedSection>
 
-            {/* This may not be the right fit if... */}
-            <AnimatedSection delay={2}>
-              <div className="bg-white rounded-2xl p-8 md:p-10 h-full">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-[#E6DAD2] flex items-center justify-center">
-                    <Heart className="w-5 h-5 text-[#2D2D2B]/70" />
-                  </div>
-                  <h3 className="text-xl font-cormorant font-medium text-[#2D2D2B]">
-                    We may not be the right fit if...
-                  </h3>
-                </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
-                    <span className="text-[#2D2D2B]/60">You're primarily shopping for the <strong>lowest price</strong></span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
-                    <span className="text-[#2D2D2B]/60">You want brows exactly like <strong>someone else's photo</strong></span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
-                    <span className="text-[#2D2D2B]/60">You're looking for a <strong>quick in-and-out</strong> appointment</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
-                    <span className="text-[#2D2D2B]/60">You prefer <strong>bold, Instagram-style</strong> brows</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 flex items-center justify-center text-[#2D2D2B]/40 flex-shrink-0">—</span>
-                    <span className="text-[#2D2D2B]/60">You need <strong>immediate results</strong> without a healing process</span>
-                  </li>
-                </ul>
-                <p className="mt-6 text-sm text-[#2D2D2B]/50 italic">
-                  No judgment here—I'm simply not the right artist for everyone, and that's okay.
-                </p>
-              </div>
+            <AnimatedSection className="text-center mt-8">
+              <Link
+                to="/faq"
+                className="inline-flex items-center gap-2 text-[#2D2D2B]/60 hover:text-[#2D2D2B] transition-colors duration-300 text-sm font-medium group"
+              >
+                <span>View all 17 questions in the full FAQ</span>
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
             </AnimatedSection>
           </div>
-
-          {/* Local SEO serving line */}
-          <AnimatedSection className="text-center mt-10">
-            <p className="text-sm text-[#2D2D2B]/60">
-              <strong className="text-[#2D2D2B]/80">Serving Fairfax County & Northern Virginia:</strong> Annandale, McLean, Arlington, Great Falls, Fairfax, Alexandria, Vienna, Springfield, Tysons & Washington DC
-            </p>
-          </AnimatedSection>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          FINAL CTA — The Invitation
-          Philosophy: This isn't a sales pitch. It's an invitation to begin.
-          Warm. Personal. Low pressure.
+          SECTION 9 — SERVING NORTHERN VIRGINIA
+          Emotional: "This studio is nearby and built for my community."
+          SEO: Internal linking hub + geo-signal distribution.
+          Tone: 10% Artistic / 20% Safe / 70% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section id="final-cta-section" className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
-        {/* Background image with overlay */}
+      <section className="py-14 md:py-16 bg-[#F9F7F5]">
+        <div className="container-custom">
+          <AnimatedSection className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-2">
+              Serving Fairfax County &amp; Northern Virginia
+            </h2>
+            <p className="text-sm text-[#2D2D2B]/50 max-w-xl mx-auto">
+              Our Annandale studio serves communities across the region. Explore ombré powder brows near you.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-5xl mx-auto mb-8">
+            {[
+              { label: 'McLean, VA', to: '/ombre-brows-mclean-va' },
+              { label: 'Arlington, VA', to: '/ombre-brows-arlington-va' },
+              { label: 'Vienna, VA', to: '/ombre-brows-vienna-va' },
+              { label: 'Fairfax, VA', to: '/ombre-brows-fairfax-va' },
+              { label: 'Alexandria, VA', to: '/ombre-brows-alexandria-va' },
+              { label: 'Tysons, VA', to: '/permanent-makeup-tysons-va' },
+              { label: 'Falls Church, VA', to: '/permanent-makeup-falls-church-va' },
+              { label: 'Reston, VA', to: '/ombre-brows-reston-va' },
+              { label: 'Centreville, VA', to: '/ombre-brows-centreville-va' },
+              { label: 'Chantilly, VA', to: '/ombre-brows-chantilly-va' },
+            ].map((city) => (
+              <Link
+                key={city.label}
+                to={city.to}
+                className="bg-white rounded-lg px-4 py-3 text-center hover:shadow-md transition-shadow group text-sm"
+              >
+                <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">{city.label}</p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+            {[
+              { label: 'Ombré Powder Brows', to: '/signature-ombre-brows', sub: 'Signature service' },
+              { label: 'Nano Brows', to: '/nano-brows', sub: 'Hair-stroke precision' },
+              { label: 'All Services', to: '/services', sub: 'Complete menu' },
+              { label: 'Aftercare Guide', to: '/aftercare-guide', sub: 'Healing protocol' },
+              { label: 'Gallery', to: '/gallery', sub: 'Healed results' },
+              { label: 'About Mugi', to: '/about', sub: 'Credentials' },
+              { label: 'PMU Knowledge Base', to: '/blog', sub: 'Guides & insights' },
+              { label: 'Full FAQ', to: '/faq', sub: '17 questions answered' },
+            ].map((link) => (
+              <Link
+                key={link.label}
+                to={link.to}
+                className="bg-white rounded-lg px-4 py-3 text-center hover:shadow-md transition-shadow group"
+              >
+                <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm">{link.label}</p>
+                <p className="text-[10px] text-[#2D2D2B]/40 mt-0.5">{link.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
+          SECTION 10 — FINAL CTA
+          Emotional: Calm invitation. Not urgency. Not sales pressure.
+          Tone: 40% Artistic / 40% Safe / 20% Data
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ 
-              backgroundImage: "url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')" 
-            }}
+            style={{ backgroundImage: "url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')" }}
           />
-          <div className="absolute inset-0 bg-[#2D2D2B]/85" />
+          <div className="absolute inset-0 bg-[#2D2D2B]/88" />
         </div>
 
         <div className="container-custom relative">
           <div className="max-w-3xl mx-auto text-center text-white">
             <AnimatedSection>
-              <span className="inline-flex items-center gap-3 text-[#E6DAD2]/90 tracking-[0.3em] text-xs uppercase font-light mb-8">
-                <span className="w-12 h-px bg-[#E6DAD2]/50" />
-                Ready?
-                <span className="w-12 h-px bg-[#E6DAD2]/50" />
-              </span>
-              
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium leading-tight mb-8">
-                Ready to see<br />
-                <span className="text-[#E6DAD2]">if we're a fit?</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium leading-tight mb-6">
+                When you are ready,
+                <br />
+                <span className="text-[#E6DAD2]">we are here.</span>
               </h2>
-              
-              <p className="text-lg text-white/70 font-light max-w-xl mx-auto mb-12 leading-relaxed">
-                Your consultation is a conversation, not a commitment. We'll discuss your goals, review healed results, and determine if this is right for you. No pressure. Just clarity.
+
+              <p className="text-base text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
+                A consultation is a conversation — not a commitment. We discuss your goals, review healed results together, and determine whether this is the right fit. If it is not, we will tell you honestly. If it is, we will plan with precision.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <Link 
-                  to="/booking" 
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+                <Link
+                  to="/booking"
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Request a Consultation</span>
+                  <span>Schedule a Consultation</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-                <span className="text-white/50">or</span>
-                <a 
+                <span className="text-white/30">or</span>
+                <a
                   href="tel:+15712838228"
-                  className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
+                  className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors duration-300 text-sm"
                 >
-                  <span>Call (571) 283-8228</span>
+                  <Phone size={14} />
+                  <span>(571) 283-8228</span>
                 </a>
               </div>
 
-              {/* Final trust signals - Premium positioning */}
-              <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm text-white/60">
-                <span className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  Serving Fairfax County & Northern Virginia
+              <div className="flex flex-wrap justify-center gap-6 text-xs text-white/40">
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 size={12} className="text-[#E6DAD2]/50" />
+                  Fairfax County &amp; Northern Virginia
                 </span>
-                <span className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  Limited availability
-                </span>
-                <span className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#E6DAD2]" />
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 size={12} className="text-[#E6DAD2]/50" />
                   By consultation only
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 size={12} className="text-[#E6DAD2]/50" />
+                  VA Licensed &amp; Insured
                 </span>
               </div>
             </AnimatedSection>
