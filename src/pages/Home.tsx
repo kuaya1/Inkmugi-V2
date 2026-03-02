@@ -168,12 +168,25 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ink Mugi | Ombre Powder Brows in Annandale, VA | Licensed PMU Artist"
-        description="Licensed permanent makeup artist in Annandale, VA specializing in natural ombre powder brows. 523+ procedures, 0.19% complication rate. View healed results and book a free consultation."
+        title="Ink Mugi | Ombre Powder Brows in Annandale, VA | Fairfax County PMU Artist"
+        description="Licensed permanent makeup artist in Annandale, VA (Fairfax County) specializing in natural ombre powder brows. 523+ procedures, 0.19% complication rate. Serving Northern Virginia — view healed results and book a free consultation."
         path="/"
         image="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg"
-        keywords="permanent makeup Annandale VA, ombre powder brows Northern Virginia, PMU artist Annandale, natural brow enhancement, healed brow results, licensed permanent makeup artist Virginia"
+        keywords="permanent makeup Annandale VA, ombre powder brows Northern Virginia, PMU artist Fairfax County, ombre brows Fairfax County VA, permanent makeup near me, natural brow enhancement, healed brow results, licensed permanent makeup artist Virginia"
       >
+        {/* Preload hero LCP image for faster rendering */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
+          media="(min-width: 768px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg"
+          media="(max-width: 767px)"
+        />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -206,7 +219,8 @@ const Home: React.FC = () => {
               { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
               { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
               { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-              { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+              { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } },
+              { "@type": "AdministrativeArea", "name": "Fairfax County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -305,7 +319,7 @@ const Home: React.FC = () => {
           />
           <img
             src="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
-            alt="Ombre powder brows transformation by Inkmugi"
+            alt="Ombre powder brows healed result by Ink Mugi permanent makeup artist in Annandale VA"
             className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[2000ms]"
             style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.1)' }}
             width="1920"
@@ -337,10 +351,10 @@ const Home: React.FC = () => {
               </span>
             </motion.div>
 
-            {/* Main headline — Certainty-forward positioning */}
+            {/* Main headline — Geo + service keyword-optimized H1 */}
             <h1 className="mb-8">
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.1] tracking-tight">
-                Healed-First Brow Design
+                Ombre Powder Brows in Annandale, VA
               </span>
               <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.1] tracking-tight mt-2">
                 Mapped. Approved. <span className="text-[#E6DAD2]">Predictable.</span>
@@ -438,10 +452,10 @@ const Home: React.FC = () => {
                 Verified Results • Real Clients
               </span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                Healed results at <span className="italic">6+ weeks</span>
+                Healed ombre brow results at <span className="italic">6+ weeks</span>
               </h2>
               <p className="text-lg text-[#2D2D2B]/70 font-light">
-                Not fresh glamor shots. These are real healed results showing how brows actually look after the healing process is complete.
+                Not fresh glamor shots. These are real healed results from our Annandale, VA studio — showing how brows actually look after the healing process is complete.
               </p>
             </div>
           </AnimatedSection>
@@ -513,7 +527,7 @@ const Home: React.FC = () => {
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg" 
-                    alt="Mugi - PMU Artist performing ombre brow procedure" 
+                    alt="Mugi - Licensed permanent makeup artist performing ombre powder brows in Annandale VA" 
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
@@ -728,10 +742,10 @@ const Home: React.FC = () => {
               Services & Standards
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-              Find your <span className="italic">signature</span> look
+              Permanent makeup services in <span className="italic">Northern Virginia</span>
             </h2>
             <p className="text-lg text-[#2D2D2B]/70 font-light max-w-2xl mx-auto">
-              Two distinct techniques. One perfect match for you. Every service includes our non-negotiable standards.
+              Two distinct techniques. One perfect match for you. Every service at our Annandale studio includes our non-negotiable standards.
             </p>
           </AnimatedSection>
 
@@ -1059,7 +1073,7 @@ const Home: React.FC = () => {
           {/* Local SEO serving line */}
           <AnimatedSection className="text-center mt-10">
             <p className="text-sm text-[#2D2D2B]/60">
-              <strong className="text-[#2D2D2B]/80">Serving:</strong> Annandale, McLean, Arlington, Great Falls, Fairfax, Alexandria, Vienna & Washington DC
+              <strong className="text-[#2D2D2B]/80">Serving Fairfax County & Northern Virginia:</strong> Annandale, McLean, Arlington, Great Falls, Fairfax, Alexandria, Vienna, Springfield, Tysons & Washington DC
             </p>
           </AnimatedSection>
         </div>
@@ -1121,7 +1135,7 @@ const Home: React.FC = () => {
               <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm text-white/60">
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                  Serving McLean • Great Falls • Arlington
+                  Serving Fairfax County & Northern Virginia
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-[#E6DAD2]" />

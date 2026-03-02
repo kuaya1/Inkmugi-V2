@@ -44,7 +44,7 @@ In my [523+ procedure dataset](/authority), I've tracked retention rates across 
 
 ## What Are Nano Brows?
 
-Nano brows use a digital PMU machine with a single ultra-fine needle to implant pigment into the mid-dermis. I use this technique for clients who want crisp, defined hair strokes that hold up in humidity.
+Nano brows use a digital PMU machine with a single ultra-fine needle to implant pigment into the mid-dermis. I use this technique for clients who want crisp, defined hair strokes that hold up in humidity. Learn more about [our nano brow service](/nano-brows).
 
 **What I've seen in my practice:**
 - 92% of my nano brow clients retain strong color at their 6-week check-in
@@ -74,7 +74,7 @@ Microblading uses a manual handheld blade to create shallow cuts in the epidermi
 
 ## Why I Don't Offer Microblading
 
-After years of experience and analyzing my outcomes data, I made the decision to focus exclusively on [machine-based techniques](/services). Here's why:
+After years of experience and analyzing my outcomes data, I made the decision to focus exclusively on [machine-based techniques](/services) including [ombre powder brows](/signature-ombre-brows), [microshading](/microshading-artistry), and [nano brows](/nano-brows). Here's why:
 
 1. **Better retention in our climate** — DMV humidity is hard on manual blade work
 2. **Lower complication rate** — my 0.19% rate is 13x safer than the industry average of 2.5% ([see the full safety data](/permanent-makeup-safety-dmv))
@@ -154,7 +154,7 @@ Ombre powder brows are a semi-permanent makeup technique that creates a soft, gr
 
 Unlike microblading (which creates individual hair strokes), ombre powder brows deposit thousands of tiny dots of pigment to create a soft, diffused effect. The result? Brows that look polished but never drawn-on.
 
-**Why I specialize in this technique:** After analyzing outcomes across all my procedures, ombre powder brows consistently deliver the highest client satisfaction rates — especially in [our DMV climate](/blog/nano-brows-vs-microblading-comparison) where humidity can cause microblading strokes to blur.
+**Why I specialize in this technique:** After analyzing outcomes across all my procedures, ombre powder brows consistently deliver the highest client satisfaction rates — especially in [our DMV climate](/blog/nano-brows-vs-microblading-comparison) where humidity can cause microblading strokes to blur. See detailed info on my [signature ombre brows service](/signature-ombre-brows).
 
 ## Who's a Good Candidate?
 
@@ -336,7 +336,7 @@ But how do you know what shape is *right* for you? That's where professional bro
 
 Most people focus on brow color or thickness, but **shape is the foundation**. The wrong arch position can make your eyes look droopy. Too-thin tails can age you. Brows that start too close together can make your nose look wider.
 
-In [my practice](/services), I spend 30 minutes on mapping alone before any pigment touches skin. It's the most important step of any [ombre powder brow procedure](/blog/ombre-powder-brows-complete-guide).
+In [my practice](/services), I spend 30 minutes on mapping alone before any pigment touches skin. It's the most important step of any [ombre powder brow procedure](/signature-ombre-brows).
 
 ## The Golden Ratio Method
 
