@@ -277,7 +277,7 @@ const Home: React.FC = () => {
           Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/55 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
 
         <picture>
           <source media="(max-width: 767px)" srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" />
@@ -861,7 +861,7 @@ const Home: React.FC = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')" }}
           />
-          <div className="absolute inset-0 bg-[#2D2D2B]/88" />
+          <div className="absolute inset-0 bg-black/65" />
         </div>
 
         <div className="container-custom relative">
