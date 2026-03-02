@@ -212,7 +212,7 @@ const OmbreBrowsMcLean: React.FC = () => {
               <span className="text-[#9A7B69]">Near McLean, Virginia</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/75 max-w-3xl mx-auto mb-4 leading-relaxed">
-              Considering permanent brows? Here is what matters before you commit: technique that heals naturally, a documented safety record, and a studio that shows you healed results — not just fresh ones.
+              What matters before you commit: technique assessed for healed outcomes, a documented safety record, and a studio that evaluates results at six weeks — not photographs taken on day one.
             </p>
             <p className="text-base text-[#2D2D2B]/60 max-w-2xl mx-auto mb-10">
               Ink Mugi serves McLean, Tysons Corner, Great Falls, and surrounding Fairfax County communities from our Annandale studio — 15 minutes from McLean Village.
@@ -248,15 +248,15 @@ const OmbreBrowsMcLean: React.FC = () => {
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">0.19%</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Complication Rate</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#9A7B69]">0.19%</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Complication Rate</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">6-Week</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Healed Result Photos</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Healed-Result Verification</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#9A7B69]">5.0</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">5.0</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Client Rating (47+ Reviews)</p>
             </div>
           </div>
@@ -275,7 +275,7 @@ const OmbreBrowsMcLean: React.FC = () => {
             </h2>
             <div className="space-y-5 text-[#2D2D2B]/75 leading-relaxed">
               <p>
-                Most permanent makeup conversations start with aesthetics. At Ink Mugi, we start with skin science and climate — because technique selection should be informed by how pigment behaves in <em>your</em> skin under <em>your</em> conditions, not by what trends well on social media.
+                Technique selection should be informed by how pigment behaves in <em>your</em> skin type under <em>your</em> regional conditions — not by aesthetic trends. At Ink Mugi, every recommendation begins with skin science and climate assessment.
               </p>
               <p>
                 Ombré powder brows use a precision stippling technique that deposits pigment beneath the skin surface in fine, layered dots. Unlike microblading — which creates shallow incisions that blur and fade quickly in humid climates — the powder method produces a soft, graduated density that holds its form through Northern Virginia's seasonal shifts. Our data from 523+ procedures shows an average retention of 24 months, compared to 8–12 months for microblading in similar DMV-area clients.
@@ -292,9 +292,9 @@ const OmbreBrowsMcLean: React.FC = () => {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 shadow-sm">
                   <Eye className="w-6 h-6 text-[#9A7B69]" />
                 </div>
-                <h3 className="text-lg font-semibold mb-3 text-[#2D2D2B]">Naturally Undetectable</h3>
+                <h3 className="text-lg font-semibold mb-3 text-[#2D2D2B]">Designed to Be Undetectable</h3>
                 <p className="text-[#2D2D2B]/65 text-sm leading-relaxed">
-                  The gradient builds from a soft, airy front to a defined tail — mimicking how natural brows actually grow. No harsh front lines. No blocky shapes. Colleagues notice you look polished, not that you had a procedure.
+                  The gradient builds from a soft, airy front to a defined tail — replicating how natural brows actually grow. No harsh front lines. No blocky shapes. The result reads as natural — not as a procedure.
                 </p>
               </div>
             </AnimatedSection>
@@ -339,13 +339,13 @@ const OmbreBrowsMcLean: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/75 leading-relaxed">
                 <p>
-                  Fresh permanent brows always look striking. But fresh results are not final results. Pigment shifts, softens, and settles over 6–8 weeks — and many studios never show you what that process looks like.
+                  Pigment shifts, softens, and settles over 6–8 weeks. Fresh results are not final results. This studio documents what matters: the healed outcome.
                 </p>
                 <p>
-                  At Ink Mugi, we photograph every procedure at the healed stage. Our portfolio, our consultations, and our expectations are built around what your brows will look like <em>after</em> the healing process — not during the first flattering hour.
+                  Every procedure is photographed at the healed stage. Our portfolio, consultations, and clinical expectations are built around what your brows look like <em>after</em> the healing process — not during the first hour.
                 </p>
                 <p>
-                  This philosophy shapes how we choose pigment depth, density, and undertone. It is why our clients report that their brows continue to look natural months and years after their appointment. Predictability is not a selling point. It is a clinical standard.
+                  This standard shapes every protocol: pigment depth, density calibration, and undertone selection. Predictability is not a selling point. It is a clinical standard.
                 </p>
               </div>
             </AnimatedSection>
@@ -395,13 +395,13 @@ const OmbreBrowsMcLean: React.FC = () => {
                 step: '01',
                 title: 'Consultation & Face Mapping',
                 duration: '30–45 minutes',
-                detail: 'We analyze your facial proportions, skin undertone, and brow goals. Using precise measurements, we design a shape that complements your bone structure. You approve the design before any pigment is prepared.'
+                detail: 'We assess your facial proportions, skin undertone, and brow goals. Using precise measurements, a shape is designed to complement your bone structure. You review and approve the design before any pigment is prepared.'
               },
               {
                 step: '02',
                 title: 'The Procedure',
                 duration: '2.5–3 hours',
-                detail: 'After medical-grade numbing takes full effect, we apply pigment through controlled stippling — building the gradient layer by layer. Communication continues throughout so you remain comfortable and informed.'
+                detail: 'After medical-grade numbing takes full effect, pigment is applied through controlled stippling — building the gradient layer by layer. Communication is maintained throughout so you remain comfortable and informed.'
               },
               {
                 step: '03',
@@ -446,7 +446,7 @@ const OmbreBrowsMcLean: React.FC = () => {
               Safety Is Not a Feature. It Is the Foundation.
             </h2>
             <p className="text-[#F9F7F5]/70 leading-relaxed">
-              Permanent makeup introduces pigment beneath the skin. That is a responsibility we take seriously — not a service we rush through. Every protocol at Ink Mugi exists to protect the outcome and the person.
+              Permanent makeup introduces pigment beneath the skin. That is a clinical responsibility we take seriously — not a service we rush through. Every protocol exists to protect both the outcome and the client.
             </p>
           </AnimatedSection>
 
@@ -638,9 +638,9 @@ const OmbreBrowsMcLean: React.FC = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-3">
-              Explore More
+              Resources &amp; Service Areas
             </h2>
-            <p className="text-[#2D2D2B]/50 text-sm">Learn more about our approach, services, and the communities we serve</p>
+            <p className="text-[#2D2D2B]/50 text-sm">Our approach, documented services, and the communities we serve</p>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-md transition-shadow group">
@@ -707,7 +707,7 @@ const OmbreBrowsMcLean: React.FC = () => {
               When You Are Ready, We Are Here.
             </h2>
             <p className="text-base text-[#F9F7F5]/75 mb-8 leading-relaxed max-w-2xl mx-auto">
-              A consultation is not a commitment. It is an opportunity to see the design on your face, ask every question, and decide with clarity — not pressure. Most McLean-area clients book their consultation weeks before their procedure, and that patience is part of the process.
+              A consultation is an assessment — not a commitment. We evaluate your candidacy, review the design on your face, and determine whether this procedure is appropriate for you. Most McLean-area clients schedule their consultation weeks in advance. That measured approach is part of the process.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

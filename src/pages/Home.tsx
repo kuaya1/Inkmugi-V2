@@ -32,21 +32,21 @@ const Home: React.FC = () => {
     {
       before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
-      story: 'Natural Brow Restoration',
+      story: 'Brow Restoration',
       technique: 'Ombré Powder',
       healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg',
-      story: 'Soft Powder Correction',
+      story: 'Powder Correction',
       technique: 'Microshading',
       healingTimeline: '6 weeks healed',
     },
     {
       before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
-      story: 'Natural Ombré Enhancement',
+      story: 'Ombré Enhancement',
       technique: 'Ombré Powder',
       healingTimeline: '8 weeks healed',
     },
@@ -92,25 +92,25 @@ const Home: React.FC = () => {
       step: '01',
       title: 'Consultation & Face Mapping',
       duration: '30–45 min',
-      description: 'Your facial proportions, bone structure, and skin undertone are analyzed. Together, we map a brow shape designed for your face specifically — not a template. You see the design and approve before anything proceeds.',
+      description: 'Your facial proportions, bone structure, and skin undertone are assessed. A brow shape is designed for your specific anatomy — not a template. You review the design and approve before anything proceeds.',
     },
     {
       step: '02',
       title: 'Design Approval',
       duration: 'Before pigment',
-      description: 'The exact shape is drawn on your face. We adjust symmetry, thickness, and arch until you confirm it is right. No pigment is applied until you have given explicit approval.',
+      description: 'The exact shape is drawn on your face. Symmetry, thickness, and arch are adjusted until you confirm approval. No pigment is applied until you have given explicit consent.',
     },
     {
       step: '03',
       title: 'Precision Procedure',
       duration: '2.5–3 hours',
-      description: 'Medical-grade numbing is applied in advance. Pigment is deposited through controlled stippling, building gradient density layer by layer. Communication continues throughout — your comfort is central.',
+      description: 'Medical-grade numbing is applied in advance. Pigment is deposited through controlled stippling, building gradient density layer by layer. Communication is maintained throughout the procedure.',
     },
     {
       step: '04',
       title: 'Guided Healing & Touch-Up',
       duration: '6–8 weeks',
-      description: 'A medical-grade aftercare kit and 24/7 text access support you through the healing process. At 6–8 weeks, a complimentary perfecting session ensures ideal density and symmetry.',
+      description: 'A medical-grade aftercare protocol and 24/7 text access guide you through each healing phase. At 6–8 weeks, a complimentary perfecting session is conducted to ensure ideal density and symmetry.',
     },
   ];
 
@@ -309,7 +309,7 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/80 tracking-[0.25em] text-xs uppercase font-light">
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
-                Licensed Studio · Annandale, VA
+                VA-Licensed · Annandale, Virginia
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
               </span>
             </motion.div>
@@ -329,9 +329,9 @@ const Home: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Precision permanent makeup designed to look like yours.
+              Precision-mapped to your facial structure. Approved before pigment.
               <br className="hidden sm:block" />
-              Mapped to your bone structure. Approved on your face. <span className="text-[#E6DAD2]">Documented at 6 weeks healed.</span>
+              Evaluated and documented at 6 weeks healed. <span className="text-[#E6DAD2]">523 procedures. 0.19% complication rate.</span>
             </motion.p>
 
             <motion.div
@@ -384,9 +384,9 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
             {[
               { value: '523+', label: 'Documented Procedures' },
-              { value: '0.19%', label: 'Complication Rate' },
-              { value: '6-Week', label: 'Healed Result Photos' },
-              { value: '5.0', label: 'Rating (47+ Reviews)', accent: true },
+              { value: '0.19%', label: 'Documented Complication Rate', accent: true },
+              { value: '6-Week', label: 'Healed-Result Verification' },
+              { value: '5.0', label: 'Rating (47+ Reviews)' },
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <p className={`text-2xl md:text-3xl font-cormorant font-semibold ${item.accent ? 'text-[#9A7B69]' : 'text-[#2D2D2B]'}`}>
@@ -410,13 +410,13 @@ const Home: React.FC = () => {
           <AnimatedSection className="mb-14">
             <div className="max-w-2xl">
               <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
-                Healed Results · Real Clients
+                Healed Outcomes · Documented
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-5">
                 Documented at 6+ weeks healed
               </h2>
               <p className="text-base text-[#2D2D2B]/65 leading-relaxed">
-                Fresh permanent brows always look striking. But fresh results are not final results. Every image in our portfolio is photographed after the full healing process — the only honest representation of your outcome.
+                Every result in this portfolio is evaluated and photographed after the full healing process — six weeks minimum. Fresh-day images are excluded from our documentation. This is the standard.
               </p>
             </div>
           </AnimatedSection>
@@ -480,10 +480,10 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  Most permanent makeup portfolios show brows in their first hour — bold, saturated, freshly pigmented. But pigment shifts, softens, and settles over six to eight weeks. The result you live with is the healed result, and that is the only result Ink Mugi measures success by.
+                  Pigment shifts, softens, and settles over six to eight weeks. The result you live with is the healed result. That is the only result this studio evaluates, documents, and measures success by.
                 </p>
                 <p>
-                  This philosophy shapes every decision: pigment depth, density selection, undertone matching, and the design approval process itself. We choose parameters that heal naturally — not parameters that photograph well on day one.
+                  This standard shapes every protocol: pigment depth, density selection, undertone calibration, and the design approval process. Parameters are chosen for healed outcomes — not for how they photograph on day one.
                 </p>
                 <p>
                   Across 523+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it.
@@ -545,12 +545,12 @@ const Home: React.FC = () => {
               The Process
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium leading-tight mb-5">
-              From consultation to healed result.
+              From assessment to healed outcome.
               <br />
-              <span className="text-[#E6DAD2]">Every step visible in advance.</span>
+              <span className="text-[#E6DAD2]">Every step documented in advance.</span>
             </h2>
             <p className="text-base text-white/50 max-w-2xl mx-auto leading-relaxed">
-              The process is designed so you know precisely what happens at each stage — no ambiguity, no surprises. Your comfort and clarity are central at every point.
+              The protocol is designed so you understand precisely what occurs at each stage — no ambiguity, no surprises. Clarity and informed consent are maintained throughout.
             </p>
           </AnimatedSection>
 
@@ -623,27 +623,27 @@ const Home: React.FC = () => {
 
             <AnimatedSection className="lg:col-span-7" delay={1.5} variant="slide-left">
               <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
-                The Artist
+                The Specialist
               </span>
               <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                Mugi specializes in brows that look like yours —
+                Measured precision. Documented outcomes.
                 <br />
-                <span className="text-[#2D2D2B]/50">not like a procedure.</span>
+                <span className="text-[#2D2D2B]/50">Designed to be undetectable.</span>
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  A Virginia-licensed permanent makeup specialist with over 523 documented procedures, Mugi brings a methodical precision to every appointment. The approach is measured: face mapping before design, design approval before pigment, healed documentation before portfolio inclusion.
+                  A Virginia-licensed permanent makeup specialist with 523+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed.
                 </p>
                 <p>
-                  Every session at the Annandale studio is private, unrushed, and structured around the client's comfort and clarity. Mugi works primarily with women who value natural, discreet results — professionals, mothers, and individuals navigating health-related changes who want to look polished without visible evidence of permanent makeup.
+                  Every session at the Annandale studio is private, unrushed, and structured for clinical clarity. Mugi works primarily with women who value discretion and predictability — professionals and individuals who require natural results without visible evidence of a procedure.
                 </p>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-5 mt-8 mb-8">
                 {[
-                  { icon: Eye, title: 'Precision Technique', desc: 'Methodical approach refined across 523+ procedures.' },
-                  { icon: Clock, title: 'Unrushed Pace', desc: 'Private sessions structured around your comfort.' },
-                  { icon: Shield, title: 'Safety-Forward', desc: 'Licensed, insured, with documented outcomes.' },
+                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 523+ documented procedures.' },
+                  { icon: Clock, title: 'Private Sessions', desc: 'Unrushed appointments structured for comfort and clarity.' },
+                  { icon: Shield, title: 'Documented Safety', desc: 'VA-licensed, insured, with verified healed outcomes.' },
                 ].map((item, index) => (
                   <div key={index} className="text-center group">
                     <div className="w-12 h-12 rounded-full bg-[#F7EDE6] flex items-center justify-center mx-auto mb-3 group-hover:bg-[#E6DAD2] transition-colors duration-300">
@@ -768,7 +768,7 @@ const Home: React.FC = () => {
               <InlineFaqAccordion
                 faqs={faqs}
                 title="Common Questions About Permanent Makeup"
-                subtitle="Honest, specific answers to the concerns that matter most"
+                subtitle="Specific, informed answers to the questions that matter most"
                 maxVisible={6}
               />
             </AnimatedSection>
@@ -799,7 +799,7 @@ const Home: React.FC = () => {
               Serving Fairfax County &amp; Northern Virginia
             </h2>
             <p className="text-sm text-[#2D2D2B]/50 max-w-xl mx-auto">
-              Our Annandale studio serves communities across the region. Explore ombré powder brows near you.
+              Our Annandale studio serves communities throughout Fairfax County and Northern Virginia.
             </p>
           </AnimatedSection>
 
@@ -874,7 +874,7 @@ const Home: React.FC = () => {
               </h2>
 
               <p className="text-base text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
-                A consultation is a conversation — not a commitment. We discuss your goals, review healed results together, and determine whether this is the right fit. If it is not, we will tell you honestly. If it is, we will plan with precision.
+                A consultation is an assessment — not a commitment. We evaluate your goals, review documented outcomes, and determine whether this procedure is appropriate for you. If it is not, we will tell you directly. If it is, we proceed with precision.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
