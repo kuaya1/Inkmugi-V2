@@ -38,6 +38,10 @@ const PermanentMakeupTysons = lazy(() => import('./pages/PermanentMakeupTysons')
 const PermanentMakeupFallsChurch = lazy(() => import('./pages/PermanentMakeupFallsChurch'));
 const PermanentMakeupSpringfield = lazy(() => import('./pages/PermanentMakeupSpringfield'));
 const OmbreBrowsVienna = lazy(() => import('./pages/OmbreBrowsVienna'));
+// Month 3 — Western Fairfax County Expansion
+const OmbreBrowsReston = lazy(() => import('./pages/OmbreBrowsReston'));
+const OmbreBrowsChantilly = lazy(() => import('./pages/OmbreBrowsChantilly'));
+const OmbreBrowsCentreville = lazy(() => import('./pages/OmbreBrowsCentreville'));
 // New Service Pages
 const MicroshadingArtistry = lazy(() => import('./pages/MicroshadingArtistry'));
 const PmuCorrectionRestoration = lazy(() => import('./pages/PmuCorrectionRestoration'));
@@ -101,6 +105,10 @@ function App() {
           <Route path="/permanent-makeup-falls-church-va" element={<PermanentMakeupFallsChurch />} />
           <Route path="/permanent-makeup-springfield-va" element={<PermanentMakeupSpringfield />} />
           <Route path="/ombre-brows-vienna-va" element={<OmbreBrowsVienna />} />
+          {/* Month 3 — Western Fairfax County */}
+          <Route path="/ombre-brows-reston-va" element={<OmbreBrowsReston />} />
+          <Route path="/ombre-brows-chantilly-va" element={<OmbreBrowsChantilly />} />
+          <Route path="/ombre-brows-centreville-va" element={<OmbreBrowsCentreville />} />
           {/* New Service Pages */}
           <Route path="/microshading-artistry" element={<MicroshadingArtistry />} />
           <Route path="/pmu-correction-restoration" element={<PmuCorrectionRestoration />} />
