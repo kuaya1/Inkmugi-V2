@@ -144,8 +144,8 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Natural Ombré Powder Brows in Annandale, VA | Ink Mugi — Fairfax County"
-        description="Licensed permanent makeup studio in Annandale, VA specializing in natural ombré powder brows. 523+ documented procedures. 0.19% complication rate. Healed results, not promises. Serving Fairfax County and Northern Virginia."
+        title="Natural Ombré Powder Brows in Annandale, VA | Fairfax County — Ink Mugi"
+        description="Licensed permanent makeup studio in Annandale, Virginia — Fairfax County's documented-outcomes standard for natural ombré powder brows. 523+ procedures. 0.19% complication rate. Healed results verified at 6 weeks. Northern Virginia."
         path="/"
         image="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
@@ -309,7 +309,7 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/80 tracking-[0.25em] text-xs uppercase font-light">
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
-                VA-Licensed · Annandale, Virginia
+                VA-Licensed · Fairfax County, Virginia
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
               </span>
             </motion.div>
@@ -805,6 +805,7 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-5xl mx-auto mb-8">
             {[
+              { label: 'Fairfax County Guide', to: '/permanent-makeup-fairfax-county' },
               { label: 'McLean, VA', to: '/ombre-brows-mclean-va' },
               { label: 'Arlington, VA', to: '/ombre-brows-arlington-va' },
               { label: 'Vienna, VA', to: '/ombre-brows-vienna-va' },
@@ -813,8 +814,7 @@ const Home: React.FC = () => {
               { label: 'Tysons, VA', to: '/permanent-makeup-tysons-va' },
               { label: 'Falls Church, VA', to: '/permanent-makeup-falls-church-va' },
               { label: 'Reston, VA', to: '/ombre-brows-reston-va' },
-              { label: 'Centreville, VA', to: '/ombre-brows-centreville-va' },
-              { label: 'Chantilly, VA', to: '/ombre-brows-chantilly-va' },
+              { label: 'Loudoun County', to: '/ombre-brows-loudoun-county-va' },
             ].map((city) => (
               <Link
                 key={city.label}
