@@ -147,12 +147,11 @@ const Home: React.FC = () => {
         title="Natural Ombré Powder Brows in Annandale, VA | Fairfax County — Ink Mugi"
         description="Licensed permanent makeup studio in Annandale, Virginia — Fairfax County's documented-outcomes standard for natural ombré powder brows. 523+ procedures. 0.19% complication rate. Healed results verified at 6 weeks. Northern Virginia."
         path="/"
-        image="https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg"
+        image="https://www.inkmugi.com/2315.png"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
       >
         {/* Preload hero LCP image */}
-        <link rel="preload" as="image" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg" media="(min-width: 768px)" />
-        <link rel="preload" as="image" href="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" media="(max-width: 767px)" />
+        <link rel="preload" as="image" href="/2315.png" />
 
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -163,7 +162,7 @@ const Home: React.FC = () => {
             "name": "Ink Mugi",
             "url": "https://www.inkmugi.com/",
             "logo": "https://www.inkmugi.com/logo.png",
-            "image": "https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg",
+            "image": "https://www.inkmugi.com/2315.png",
             "telephone": "+1-571-283-8228",
             "founder": { "@id": "https://www.inkmugi.com/#mugi" },
             "address": {
@@ -280,10 +279,8 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
 
         <picture>
-          <source media="(max-width: 767px)" srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_c_d.jpg" />
-          <source media="(min-width: 768px)" srcSet="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg" />
           <img
-            src="https://live.staticflickr.com/65535/54363160242_7975c4f42c_b_d.jpg"
+            src="/2315.png"
             alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms]"
             style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
@@ -859,7 +856,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')" }}
+            style={{ backgroundImage: "url('/2315.png')" }}
           />
           <div className="absolute inset-0 bg-black/65" />
         </div>
