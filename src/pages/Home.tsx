@@ -277,7 +277,8 @@ const Home: React.FC = () => {
           Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1410]/50 via-[#1a1410]/45 to-[#1a1410]/65 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
+        <div className="absolute inset-0 z-10" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
         <picture>
           <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
