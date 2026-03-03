@@ -151,7 +151,8 @@ const Home: React.FC = () => {
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
       >
         {/* Preload hero LCP image */}
-        <link rel="preload" as="image" href="/2315.png" />
+        <link rel="preload" as="image" href="/2315%20(1).png" media="(max-width: 767px)" />
+        <link rel="preload" as="image" href="/2315.png" media="(min-width: 768px)" />
 
         {/* Business Schema */}
         <script type="application/ld+json">
@@ -279,6 +280,8 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
 
         <picture>
+          <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
+          <source media="(min-width: 768px)" srcSet="/2315.png" />
           <img
             src="/2315.png"
             alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
