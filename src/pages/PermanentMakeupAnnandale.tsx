@@ -89,7 +89,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
     },
     {
       question: "Why should I choose a local Annandale studio over DC or Tysons?",
-      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 523+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
+      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 330+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
     },
     {
       question: "Is Ink Mugi open on weekends?",
@@ -101,7 +101,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio"
-        description="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 523+ procedures, $600 all-inclusive. Free parking, free consultation. Book today."
+        description="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 330+ procedures, $600 all-inclusive. Free parking, free consultation. Book today."
         path="/licensed-pmu-artist-annandale"
         keywords="permanent makeup Annandale VA, ombre brows Annandale, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA"
       >
@@ -167,7 +167,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
               <span className="text-[#9A7B69]">Annandale</span> — Your Neighborhood Studio
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Right here at Heritage Center — no commute needed. Experience 523+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves.
+              Right here at Heritage Center — no commute needed. Experience 330+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -261,7 +261,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Results</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ Documented Results</h3>
                 <p className="text-[#2D2D2B]/70">
                   Every procedure is documented with 6+ week healed photos. See our track record right here in your community. Real results from real clients — verifiable and transparent.
                 </p>

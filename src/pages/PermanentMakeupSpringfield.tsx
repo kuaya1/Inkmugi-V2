@@ -99,7 +99,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Near Springfield, VA | Ink Mugi — 12 Min from Town Center"
-        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. 523+ procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
+        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. 330+ procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
         path="/permanent-makeup-springfield-va"
         keywords="permanent makeup Springfield VA, ombre brows Springfield, powder brows Springfield Virginia, PMU near Springfield Town Center, microshading Springfield VA"
       >
@@ -158,7 +158,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
               <span className="text-amber-700">Springfield, VA</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 12 minutes from Springfield Town Center via I-495. Northern Virginia's most trusted PMU artist — 523+ successful procedures, VA-licensed, and $600 all-inclusive ombre powder brows with results that speak for themselves.
+              Just 12 minutes from Springfield Town Center via I-495. Northern Virginia's most trusted PMU artist — 330+ successful procedures, VA-licensed, and $600 all-inclusive ombre powder brows with results that speak for themselves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -252,7 +252,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Procedures, Real Results</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ procedures, Real Results</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not stock photos — real before-and-after documentation of every client at 6+ weeks healed. See your future brows in our extensive portfolio.
                 </p>

@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
               </p>
               <p className="text-[#2D2D2B]/70 text-sm mb-8 bg-[#F7EDE6] p-4 rounded-lg">
                 <strong className="text-[#2D2D2B]">Virginia Licensed PMU Artist</strong> • License #1231002471<br />
-                <strong className="text-[#2D2D2B]">523+ Procedures</strong> • 0.19% Complication Rate • 97% Satisfaction
+                <strong className="text-[#2D2D2B]">330+ procedures</strong> • 0.19% Complication Rate • 97% Satisfaction
               </p>
               
               <div className="space-y-6 mb-8">

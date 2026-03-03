@@ -168,7 +168,7 @@ const OmbreBrowsFairfax: React.FC = () => {
               <span className="text-[#9A7B69]">Fairfax County</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 523+ procedures and exceptional results.
+              Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 330+ procedures and exceptional results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -252,7 +252,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Tysons Quality, Better Value</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Tysons and McLean studios charge $750-900. Get premium results at $600 with a Virginia-licensed artist who has completed 523+ successful procedures.
+                  Tysons and McLean studios charge $750-900. Get premium results at $600 with a Virginia-licensed artist who has completed 330+ successful procedures.
                 </p>
               </div>
             </AnimatedSection>
@@ -431,7 +431,7 @@ const OmbreBrowsFairfax: React.FC = () => {
             </Link>
             <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
-              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
+              <p className="text-sm text-[#2D2D2B]/50">330+ procedure data</p>
             </Link>
           </div>
         </div>

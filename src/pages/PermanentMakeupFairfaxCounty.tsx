@@ -64,7 +64,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
   const faqs = [
     {
       question: "What is the difference between ombré powder brows and microblading?",
-      answer: "Microblading uses a manual blade to create shallow, hair-like incisions in the skin. Ombré powder brows use a machine-based stippling technique that deposits pigment in fine dots beneath the skin surface. The stippled method produces a softer, graduated result that resembles pencil or powder makeup — and it retains significantly better in humid climates like Northern Virginia's. At Ink Mugi, our data across 523+ procedures shows ombré powder averaging 24 months of retention versus 8–12 months for microblading in DMV-area clients."
+      answer: "Microblading uses a manual blade to create shallow, hair-like incisions in the skin. Ombré powder brows use a machine-based stippling technique that deposits pigment in fine dots beneath the skin surface. The stippled method produces a softer, graduated result that resembles pencil or powder makeup — and it retains significantly better in humid climates like Northern Virginia's. At Ink Mugi, our data across 330+ procedures shows ombré powder averaging 24 months of retention versus 8–12 months for microblading in DMV-area clients."
     },
     {
       question: "What should I verify before choosing a permanent makeup artist in Fairfax County?",
@@ -96,7 +96,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
     },
     {
       question: "What does 'healed-first' documentation mean?",
-      answer: "Healed-first documentation means that results are evaluated and photographed after the full healing process — at minimum 6 weeks post-procedure. Fresh permanent makeup always appears bolder and more saturated than the final outcome. Documenting at the healed stage provides an accurate representation of what clients can expect. Ink Mugi's portfolio consists exclusively of healed results, and the studio's documented complication rate of 0.19% is calculated from healed outcomes across 523+ procedures."
+      answer: "Healed-first documentation means that results are evaluated and photographed after the full healing process — at minimum 6 weeks post-procedure. Fresh permanent makeup always appears bolder and more saturated than the final outcome. Documenting at the healed stage provides an accurate representation of what clients can expect. Ink Mugi's portfolio consists exclusively of healed results, and the studio's documented complication rate of 0.19% is calculated from healed outcomes across 330+ procedures."
     },
     {
       question: "How do I schedule a consultation at Ink Mugi?",
@@ -108,7 +108,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup in Fairfax County, Virginia | Licensed Studio — Ink Mugi"
-        description="Comprehensive guide to permanent makeup in Fairfax County, VA. Virginia-licensed studio with 523+ documented procedures, 0.19% complication rate, and healed-first verification. Serving McLean, Vienna, Reston, Arlington, Great Falls, and all of Northern Virginia."
+        description="Comprehensive guide to permanent makeup in Fairfax County, VA. Virginia-licensed studio with 330+ documented procedures, 0.19% complication rate, and healed-first verification. Serving McLean, Vienna, Reston, Arlington, Great Falls, and all of Northern Virginia."
         path="/permanent-makeup-fairfax-county"
         keywords="permanent makeup Fairfax County VA, ombre powder brows Fairfax County, licensed PMU artist Northern Virginia, permanent makeup near me Virginia, healed brow results Fairfax County, permanent makeup safety Virginia"
       >
@@ -215,7 +215,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">330+</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
@@ -281,7 +281,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
                 In Fairfax County and the broader Northern Virginia region, humidity levels range from 65% to 85% during summer months, with UV index values regularly exceeding 8 from May through September. These environmental factors directly influence pigment retention. Techniques that rely on shallow incisions — such as microblading — are more susceptible to accelerated fading and blurring in high-humidity conditions. The stippled deposit method used in ombré powder brows anchors pigment more reliably beneath the epidermis, producing more consistent retention across seasonal shifts.
               </p>
               <p>
-                Data from Ink Mugi's 523+ documented procedures indicates an average retention of 24 months for ombré powder brows compared to 8–12 months for microblading among DMV-area clients. The difference is particularly pronounced in clients with oily or combination skin — a common skin type in the mid-Atlantic region — where the stippled pigment maintains cleaner healed edges and more predictable color stability.
+                Data from Ink Mugi's 330+ documented procedures indicates an average retention of 24 months for ombré powder brows compared to 8–12 months for microblading among DMV-area clients. The difference is particularly pronounced in clients with oily or combination skin — a common skin type in the mid-Atlantic region — where the stippled pigment maintains cleaner healed edges and more predictable color stability.
               </p>
             </div>
           </AnimatedSection>
@@ -394,7 +394,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
                   At Ink Mugi, every procedure is photographed at the healed stage — a minimum of six weeks post-appointment. Our portfolio, consultations, and clinical expectations are structured around healed outcomes. Fresh-day aesthetics are excluded from our documentation.
                 </p>
                 <p>
-                  This standard governs every protocol decision: pigment deposit depth, gradient density calibration, and undertone selection. Across 523+ documented procedures, this approach has produced a complication rate of 0.19% — a figure calculated from healed outcomes, not procedural volume alone.
+                  This standard governs every protocol decision: pigment deposit depth, gradient density calibration, and undertone selection. Across 330+ documented procedures, this approach has produced a complication rate of 0.19% — a figure calculated from healed outcomes, not procedural volume alone.
                 </p>
               </div>
             </AnimatedSection>
@@ -404,7 +404,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
                 {[
                   { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'Brow shape is mapped to bone structure and reviewed on the face. Nothing permanent begins without explicit client approval.' },
                   { icon: Eye, title: 'Healed Portfolio Verification', desc: 'Every result in our gallery is photographed at 6+ weeks. The portfolio reflects healed outcomes exclusively.' },
-                  { icon: Shield, title: '0.19% Documented Complication Rate', desc: 'Across 523+ procedures. Rigorous technique, candidacy screening, and comprehensive aftercare protocol.' },
+                  { icon: Shield, title: '0.19% Documented Complication Rate', desc: 'Across 330+ procedures. Rigorous technique, candidacy screening, and comprehensive aftercare protocol.' },
                   { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, and hospital-grade sterilization for every appointment.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-white/[0.06] border border-white/10 rounded-xl p-5">

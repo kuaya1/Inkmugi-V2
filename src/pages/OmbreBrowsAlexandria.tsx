@@ -102,7 +102,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Alexandria, VA | Ink Mugi"
-        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 523+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
+        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 330+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
         path="/ombre-brows-alexandria-va"
         keywords="ombre brows Alexandria VA, powder brows Old Town, permanent makeup Alexandria Virginia, PMU near Del Ray, microshading Alexandria City"
       >
@@ -168,7 +168,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
               <span className="text-[#9A7B69]">Alexandria</span> Residents
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 15 minutes from Old Town & Del Ray. Northern Virginia's most trusted PMU artist with 523+ successful procedures and premium results.
+              Just 15 minutes from Old Town & Del Ray. Northern Virginia's most trusted PMU artist with 330+ successful procedures and premium results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -431,7 +431,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
             </Link>
             <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
-              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
+              <p className="text-sm text-[#2D2D2B]/50">330+ procedure data</p>
             </Link>
           </div>
         </div>

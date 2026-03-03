@@ -86,7 +86,7 @@ const PermanentMakeupDC: React.FC = () => {
   const faqs = [
     {
       question: "Is it worth traveling from DC to Annandale for PMU?",
-      answer: "Many DC clients tell us the 20-minute drive (reverse commute!) is the best decision they made. You'll save $200-400 compared to Georgetown or downtown DC studios, enjoy free parking, and get the same premium quality with a more personalized experience. Plus, our 523+ procedure track record and 0.19% complication rate speak for themselves."
+      answer: "Many DC clients tell us the 20-minute drive (reverse commute!) is the best decision they made. You'll save $200-400 compared to Georgetown or downtown DC studios, enjoy free parking, and get the same premium quality with a more personalized experience. Plus, our 330+ procedure track record and 0.19% complication rate speak for themselves."
     },
     {
       question: "How do you compare to DC permanent makeup studios?",
@@ -102,7 +102,7 @@ const PermanentMakeupDC: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Washington, DC | Ink Mugi"
-        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, 523+ procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation."
+        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, 330+ procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation."
         path="/permanent-makeup-dc"
         keywords="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington"
       >
@@ -168,7 +168,7 @@ const PermanentMakeupDC: React.FC = () => {
               <span className="text-[#9A7B69]">Washington DC</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 523+ procedures, exceptional results.
+              Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 330+ procedures, exceptional results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -284,7 +284,7 @@ const PermanentMakeupDC: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Verifiable Track Record</h3>
                 <p className="text-[#2D2D2B]/70">
-                  523+ procedures documented. 0.19% complication rate (13x better than industry). Virginia-licensed with hospital-grade protocols you can trust.
+                  330+ procedures documented. 0.19% complication rate (13x better than industry). Virginia-licensed with hospital-grade protocols you can trust.
                 </p>
               </div>
             </AnimatedSection>
@@ -392,7 +392,7 @@ const PermanentMakeupDC: React.FC = () => {
                       {[
                         'Free parking included',
                         'Professional aftercare support',
-                        '523+ verified procedures',
+                        '330+ verified procedures',
                         '0.19% complication rate',
                         'Premium vegan pigments',
                         'Aftercare kit included',
@@ -473,7 +473,7 @@ const PermanentMakeupDC: React.FC = () => {
             </Link>
             <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
-              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
+              <p className="text-sm text-[#2D2D2B]/50">330+ procedure data</p>
             </Link>
           </div>
         </div>

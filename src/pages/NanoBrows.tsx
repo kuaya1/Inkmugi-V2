@@ -537,7 +537,7 @@ const NanoBrows: React.FC = () => {
               </div>
               <div>
                 <CheckCircle size={24} className="mx-auto mb-2 text-[#E6DAD2]" />
-                <p className="font-semibold text-sm">523+ Procedures</p>
+                <p className="font-semibold text-sm">330+ procedures</p>
                 <p className="text-xs text-white/60">Documented Results</p>
               </div>
               <div>

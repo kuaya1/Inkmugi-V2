@@ -239,7 +239,7 @@ const VirtualTryOn: React.FC = () => {
               Let's Make Them Real
             </p>
             <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
-              Your AI preview shows what's possible. Now experience the precision artistry of medical-grade permanent makeup with 523+ successful transformations behind us.
+              Your AI preview shows what's possible. Now experience the precision artistry of medical-grade permanent makeup with 330+ successful transformations behind us.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -264,7 +264,7 @@ const VirtualTryOn: React.FC = () => {
             {/* Trust Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-12 border-t border-white/20">
               <div>
-                <div className="text-3xl font-bold mb-1">523+</div>
+                <div className="text-3xl font-bold mb-1">330+</div>
                 <div className="text-sm text-white/80">Happy Clients</div>
               </div>
               <div>

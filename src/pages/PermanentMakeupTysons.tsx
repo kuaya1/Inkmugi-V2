@@ -89,7 +89,7 @@ const PermanentMakeupTysons: React.FC = () => {
     },
     {
       question: "Why not go to a Tysons Corner PMU studio?",
-      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. Our $600 all-inclusive pricing, 523+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
+      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. Our $600 all-inclusive pricing, 330+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
     },
     {
       question: "Can I book a lunchtime consultation from Tysons?",
@@ -101,7 +101,7 @@ const PermanentMakeupTysons: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Near Tysons Corner, VA | Ink Mugi — 10 Min Drive, $200+ Savings"
-        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 523+ procedures, 5.0★ reviews. Free consultation."
+        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 330+ procedures, 5.0★ reviews. Free consultation."
         path="/permanent-makeup-tysons-va"
         keywords="permanent makeup Tysons Corner VA, ombre brows Tysons, powder brows Tysons Virginia, PMU near Tysons Galleria, microshading Tysons Corner"
       >
@@ -167,7 +167,7 @@ const PermanentMakeupTysons: React.FC = () => {
               <span className="text-amber-700">Tysons Corner</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. 523+ successful procedures, 5.0-star reviews, and premium results without the premium markup.
+              Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. 330+ successful procedures, 5.0-star reviews, and premium results without the premium markup.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -273,7 +273,7 @@ const PermanentMakeupTysons: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                   <Shield className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Happy Clients & Counting</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ Happy Clients & Counting</h3>
                 <p className="text-[#2D2D2B]/70">
                   More documented procedures than most Tysons studios combined. Every result photographed at 6+ weeks healed.
                 </p>

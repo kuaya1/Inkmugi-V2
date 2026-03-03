@@ -72,7 +72,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
     },
     {
       question: "Why do Loudoun County residents choose a Fairfax County studio?",
-      answer: "Clients from Ashburn, Leesburg, and surrounding Loudoun communities select Ink Mugi for the documented safety record (0.19% complication rate across 523+ procedures), the healed-first portfolio standard, and the design approval protocol. For a procedure with permanent results, the caliber of the practitioner and the verifiability of outcomes carry more weight than proximity."
+      answer: "Clients from Ashburn, Leesburg, and surrounding Loudoun communities select Ink Mugi for the documented safety record (0.19% complication rate across 330+ procedures), the healed-first portfolio standard, and the design approval protocol. For a procedure with permanent results, the caliber of the practitioner and the verifiability of outcomes carry more weight than proximity."
     },
     {
       question: "Is ombré powder the right technique for this region's climate?",
@@ -100,7 +100,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
     <>
       <SEO
         title="Ombré Powder Brows in Loudoun County, VA | Licensed Studio — Ink Mugi"
-        description="Precision ombré powder brows for Loudoun County residents — Ashburn, Leesburg, Sterling, South Riding. 523+ documented procedures. 0.19% complication rate. VA-licensed studio with healed-first verification. Schedule an assessment."
+        description="Precision ombré powder brows for Loudoun County residents — Ashburn, Leesburg, Sterling, South Riding. 330+ documented procedures. 0.19% complication rate. VA-licensed studio with healed-first verification. Schedule an assessment."
         path="/ombre-brows-loudoun-county-va"
         keywords="ombre powder brows Loudoun County VA, permanent makeup Ashburn Virginia, powder brows Leesburg VA, licensed PMU artist Northern Virginia, permanent makeup Sterling VA, healed brow results Loudoun County"
       >
@@ -177,7 +177,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
               <span className="text-[#9A7B69]">Loudoun County, Virginia</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/75 max-w-3xl mx-auto mb-4 leading-relaxed">
-              Precision permanent makeup for Ashburn, Leesburg, Sterling, and South Riding residents — performed at our VA-licensed Annandale studio with 523+ documented procedures and healed-result verification at six weeks.
+              Precision permanent makeup for Ashburn, Leesburg, Sterling, and South Riding residents — performed at our VA-licensed Annandale studio with 330+ documented procedures and healed-result verification at six weeks.
             </p>
             <p className="text-base text-[#2D2D2B]/55 max-w-2xl mx-auto mb-10">
               22–40 minutes from most Loudoun communities. A measured distance for a measured outcome.
@@ -208,7 +208,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">330+</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
@@ -282,7 +282,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-[#2D2D2B]">Documented Safety Record</h3>
                 <p className="text-[#2D2D2B]/65 text-sm leading-relaxed">
-                  A 0.19% complication rate across 523+ procedures. Virginia body art licensure, professional liability insurance, and hospital-grade sterilization protocols verified before every appointment.
+                  A 0.19% complication rate across 330+ procedures. Virginia body art licensure, professional liability insurance, and hospital-grade sterilization protocols verified before every appointment.
                 </p>
               </div>
             </AnimatedSection>
@@ -332,7 +332,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
                 Permanent makeup results shift and settle over six to eight weeks. The healed result — not the day-one appearance — is what a client lives with. At Ink Mugi, that is the only result we document, evaluate, and build our practice around.
               </p>
               <p>
-                Every procedure in our portfolio is photographed at the healed stage. Pigment depth, gradient density, and undertone calibration are all selected for healed-outcome predictability. Across 523+ documented procedures, this approach has produced a complication rate of 0.19% — a figure derived from verified healed outcomes, not procedural volume alone.
+                Every procedure in our portfolio is photographed at the healed stage. Pigment depth, gradient density, and undertone calibration are all selected for healed-outcome predictability. Across 330+ documented procedures, this approach has produced a complication rate of 0.19% — a figure derived from verified healed outcomes, not procedural volume alone.
               </p>
             </div>
           </AnimatedSection>
@@ -341,7 +341,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
             {[
               { icon: FileCheck, title: 'Design Approval Before Pigment', desc: 'Shape mapped, reviewed on your face, and approved before any permanent step begins.' },
               { icon: Eye, title: 'Healed Portfolio Only', desc: 'Every result photographed at 6+ weeks. No fresh-day images in our documentation.' },
-              { icon: Shield, title: '0.19% Complication Rate', desc: '523+ documented procedures. Rigorous technique and candidacy screening.' },
+              { icon: Shield, title: '0.19% Complication Rate', desc: '330+ documented procedures. Rigorous technique and candidacy screening.' },
               { icon: Award, title: 'VA Licensed & Insured', desc: 'Body art licensure, liability insurance, hospital-grade sterilization.' },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>

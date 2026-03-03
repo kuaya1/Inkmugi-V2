@@ -89,7 +89,7 @@ const OmbreBrowsVienna: React.FC = () => {
     },
     {
       question: "What style of brows does Mugi specialize in?",
-      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. Perfect for Vienna clients who want a soft, polished look that's undetectable as permanent makeup. 523+ procedures refined this technique to perfection."
+      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. Perfect for Vienna clients who want a soft, polished look that's undetectable as permanent makeup. 330+ procedures refined this technique to perfection."
     },
     {
       question: "Is there a consultation before the procedure?",
@@ -101,7 +101,7 @@ const OmbreBrowsVienna: React.FC = () => {
     <>
       <SEO
         title="Ombré Brows for Vienna, VA Residents | Ink Mugi — 12 Min from Town Center"
-        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 523+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
+        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 330+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
         path="/ombre-brows-vienna-va"
         keywords="ombre brows vienna va, powder brows vienna virginia, permanent makeup vienna va, PMU near oakton, microshading vienna town center"
       >
@@ -167,7 +167,7 @@ const OmbreBrowsVienna: React.FC = () => {
               <span className="text-amber-700">Vienna, VA</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 12 minutes from Vienna Town Center. Northern Virginia's most trusted PMU artist — 523+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever.
+              Just 12 minutes from Vienna Town Center. Northern Virginia's most trusted PMU artist — 330+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -263,7 +263,7 @@ const OmbreBrowsVienna: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Natural Results Vienna Clients Love</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Ombré powder brows that look like perfectly filled-in brows, not stamped-on tattoos. 523+ clients can't be wrong — see healed photos in our gallery.
+                  Ombré powder brows that look like perfectly filled-in brows, not stamped-on tattoos. 330+ clients can't be wrong — see healed photos in our gallery.
                 </p>
               </div>
             </AnimatedSection>

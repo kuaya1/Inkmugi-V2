@@ -102,7 +102,7 @@ const OmbreBrowsArlington: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Arlington, VA | Ink Mugi"
-        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 523+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
+        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 330+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
         path="/ombre-brows-arlington-va"
         keywords="ombre brows Arlington VA, powder brows Clarendon, permanent makeup Arlington County, PMU near Ballston, microshading Arlington Virginia"
       >
@@ -168,7 +168,7 @@ const OmbreBrowsArlington: React.FC = () => {
               <span className="text-[#9A7B69]">Arlington</span> Residents
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with 523+ procedures and a 0.19% complication rate.
+              Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with 330+ procedures and a 0.19% complication rate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -252,7 +252,7 @@ const OmbreBrowsArlington: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">DC Quality, Better Value</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Get the same premium technique as $800+ DC studios for $600. Virginia-licensed artist with 523+ procedures and verifiable results.
+                  Get the same premium technique as $800+ DC studios for $600. Virginia-licensed artist with 330+ procedures and verifiable results.
                 </p>
               </div>
             </AnimatedSection>
@@ -431,7 +431,7 @@ const OmbreBrowsArlington: React.FC = () => {
             </Link>
             <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
-              <p className="text-sm text-[#2D2D2B]/50">523+ procedure data</p>
+              <p className="text-sm text-[#2D2D2B]/50">330+ procedure data</p>
             </Link>
           </div>
         </div>

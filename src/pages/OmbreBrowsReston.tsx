@@ -55,7 +55,7 @@ const OmbreBrowsReston: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Reston VA Clients",
-    "description": "Professional ombre powder brows service for Reston, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 25 minutes from Reston Town Center.",
+    "description": "Professional ombre powder brows service for Reston, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 25 minutes from Reston Town Center.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://www.inkmugi.com/#business"
@@ -111,7 +111,7 @@ const OmbreBrowsReston: React.FC = () => {
     },
     {
       question: "Why do Reston residents choose Ink Mugi over closer studios?",
-      answer: "Reston clients often tell us they chose Ink Mugi after comparing healed results. With 523+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment, our approach gives the certainty and quality that Reston professionals demand."
+      answer: "Reston clients often tell us they chose Ink Mugi after comparing healed results. With 330+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment, our approach gives the certainty and quality that Reston professionals demand."
     },
     {
       question: "How long do ombre powder brows last for Reston area clients?",
@@ -135,7 +135,7 @@ const OmbreBrowsReston: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Reston VA | Ink Mugi — Healed-First PMU"
-        description="Ombre powder brows for Reston VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 25 min from Reston Town Center. Free consultation — see healed results first."
+        description="Ombre powder brows for Reston VA residents. 330+ procedures, 0.19% complication rate, VA licensed. 25 min from Reston Town Center. Free consultation — see healed results first."
         path="/ombre-brows-reston-va"
         keywords="ombre powder brows Reston VA, permanent makeup Reston Virginia, PMU near Reston Town Center, powder brows Fairfax County, microshading Reston VA, nano brows Reston"
       >
@@ -204,7 +204,7 @@ const OmbreBrowsReston: React.FC = () => {
               <span className="text-[#9A7B69]">Reston, VA</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Healed-first permanent makeup trusted by Reston professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment.
+              Healed-first permanent makeup trusted by Reston professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment.
             </p>
             <p className="text-base text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
               25 minutes from Reston Town Center to our private Annandale studio. Free parking. Consultation-first approach.
@@ -315,7 +315,7 @@ const OmbreBrowsReston: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not a claim — a tracked dataset. Every procedure is documented from consultation through healed result. This depth of experience means fewer surprises and better outcomes for our Reston clients.
                 </p>

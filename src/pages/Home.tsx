@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ArrowRight, ArrowDown, Award, Shield, CheckCircle2, Phone, Eye, FileCheck, Clock } from 'lucide-react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import AnimatedSection from '../components/AnimatedSection';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
@@ -10,9 +10,6 @@ import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const Home: React.FC = () => {
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
-  const heroRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
-  const parallaxY = useTransform(scrollYProgress, [0, 1], ['0%', '18%']);
 
   useEffect(() => {
     setIsHeroLoaded(true);
@@ -128,7 +125,7 @@ const Home: React.FC = () => {
     },
     {
       question: 'Is this procedure safe? What safety standards does Ink Mugi follow?',
-      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 523+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. We also decline procedures when medical contraindications are present.',
+      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 330+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. We also decline procedures when medical contraindications are present.',
     },
     {
       question: 'How does ombré powder compare to microblading in Northern Virginia\'s climate?',
@@ -148,7 +145,7 @@ const Home: React.FC = () => {
     <>
       <SEO
         title="Natural Ombré Powder Brows in Annandale, VA | Fairfax County — Ink Mugi"
-        description="Licensed permanent makeup studio in Annandale, Virginia — Fairfax County's documented-outcomes standard for natural ombré powder brows. 523+ procedures. 0.19% complication rate. Healed results verified at 6 weeks. Northern Virginia."
+        description="Licensed permanent makeup studio in Annandale, Virginia — Fairfax County's documented-outcomes standard for natural ombré powder brows. 330+ procedures. 0.19% complication rate. Healed results verified at 6 weeks. Northern Virginia."
         path="/"
         image="https://www.inkmugi.com/2315.png"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
@@ -279,29 +276,24 @@ const Home: React.FC = () => {
           SEO: H1 with geo + service. Supporting text with differentiators.
           Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section ref={heroRef} className="relative min-h-screen flex items-start md:items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-start md:items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
         <div className="absolute inset-0 z-10" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
-        <motion.div
-          className="absolute -top-[10%] bottom-[-10%] left-0 right-0"
-          style={{ y: parallaxY }}
-        >
-          <picture>
-            <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
-            <source media="(min-width: 768px)" srcSet="/2315.png" />
-            <img
-              src="/2315.png"
-              alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
-              className="w-full h-full object-cover object-[50%_60%] md:object-center transition-transform duration-[2000ms]"
-              style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
-              width="1920"
-              height="1080"
-              fetchPriority="high"
-              decoding="async"
-            />
-          </picture>
-        </motion.div>
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
+          <source media="(min-width: 768px)" srcSet="/2315.png" />
+          <img
+            src="/2315.png"
+            alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_70%] md:object-center transition-transform duration-[2000ms]"
+            style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
 
         <div className="container-custom relative z-20 text-white pt-[24vh] pb-16 md:pt-20 md:pb-0">
           <motion.div
@@ -344,7 +336,7 @@ const Home: React.FC = () => {
                 Evaluated and documented at 6 weeks healed.
               </p>
               <p className="mt-3 text-[0.8rem] tracking-[0.15em] uppercase text-[#E6DAD2]/90 font-normal">
-                523 Documented Procedures · 0.19% Complication Rate
+                330+ documented procedures · 0.19% Complication Rate
               </p>
             </motion.div>
 
@@ -397,7 +389,7 @@ const Home: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
             {[
-              { value: '523+', label: 'Documented Procedures' },
+              { value: '330+', label: 'Documented Procedures' },
               { value: '0.19%', label: 'Documented Complication Rate', accent: true },
               { value: '6-Week', label: 'Healed-Result Verification' },
               { value: '5.0', label: 'Rating (47+ Reviews)' },
@@ -500,7 +492,7 @@ const Home: React.FC = () => {
                   This standard shapes every protocol: pigment depth, density selection, undertone calibration, and the design approval process. Parameters are chosen for healed outcomes — not for how they photograph on day one.
                 </p>
                 <p>
-                  Across 523+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it.
+                  Across 330+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it.
                 </p>
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -527,7 +519,7 @@ const Home: React.FC = () => {
                 {[
                   { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. Nothing permanent begins without your explicit confirmation.' },
                   { icon: Eye, title: 'Healed Portfolio Standard', desc: 'Every result in our gallery is photographed at 6+ weeks — after the healing process reveals the true outcome. No fresh glamor shots. No filters.' },
-                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 523+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
+                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 330+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
                   { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, hospital-grade sterilization, and hypoallergenic vegan pigments tested for skin reactivity.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-[#F9F7F5] rounded-xl p-5">
@@ -628,7 +620,7 @@ const Home: React.FC = () => {
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <Award size={18} className="text-[#9A7B69]" />
-                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
+                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">330+</span>
                   </div>
                   <p className="text-xs text-[#2D2D2B]/60">Documented procedures with healed-result tracking</p>
                 </motion.div>
@@ -646,7 +638,7 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  A Virginia-licensed permanent makeup specialist with 523+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed.
+                  A Virginia-licensed permanent makeup specialist with 330+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed.
                 </p>
                 <p>
                   Every session at the Annandale studio is private, unrushed, and structured for clinical clarity. Mugi works primarily with women who value discretion and predictability — professionals and individuals who require natural results without visible evidence of a procedure.
@@ -655,7 +647,7 @@ const Home: React.FC = () => {
 
               <div className="grid sm:grid-cols-3 gap-5 mt-8 mb-8">
                 {[
-                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 523+ documented procedures.' },
+                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 330+ documented procedures.' },
                   { icon: Clock, title: 'Private Sessions', desc: 'Unrushed appointments structured for comfort and clarity.' },
                   { icon: Shield, title: 'Documented Safety', desc: 'VA-licensed, insured, with verified healed outcomes.' },
                 ].map((item, index) => (

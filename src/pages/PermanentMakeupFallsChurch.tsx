@@ -62,7 +62,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
     {
       name: "Anh N.",
       location: "Seven Corners",
-      text: "I literally drive past 3 other beauty places to get to Mugi. None of them have 523+ procedures or her attention to detail. Seven Corners to Heritage Center in 4 minutes.",
+      text: "I literally drive past 3 other beauty places to get to Mugi. None of them have 330+ procedures or her attention to detail. Seven Corners to Heritage Center in 4 minutes.",
       rating: 5
     },
     {
@@ -92,7 +92,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup in Falls Church, VA | Ink Mugi — 8 Minutes Away"
-        description="Falls Church VA permanent makeup by Ink Mugi — just 8 minutes from Falls Church City, 4 min from Seven Corners. VA-licensed, 523+ procedures, $600 all-inclusive ombre brows. Free consultation."
+        description="Falls Church VA permanent makeup by Ink Mugi — just 8 minutes from Falls Church City, 4 min from Seven Corners. VA-licensed, 330+ procedures, $600 all-inclusive ombre brows. Free consultation."
         path="/permanent-makeup-falls-church-va"
         keywords="permanent makeup Falls Church VA, ombre brows Falls Church, powder brows Falls Church Virginia, PMU near Falls Church, microshading Falls Church VA"
       >
@@ -158,7 +158,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
               <span className="text-amber-700">Falls Church, VA</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 523+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking at Heritage Center.
+              Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 330+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking at Heritage Center.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -252,7 +252,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Every single procedure photographed at 6+ weeks healed. See exactly what your results will look like before you commit.
                 </p>

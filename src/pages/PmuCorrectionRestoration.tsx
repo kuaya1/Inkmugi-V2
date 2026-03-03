@@ -203,7 +203,7 @@ const PmuCorrectionRestoration: React.FC = () => {
     <>
       <SEO
         title="PMU Correction & Restoration in Northern Virginia | Ink Mugi — Fix Botched Brows"
-        description="Fix botched microblading, faded brows & uneven permanent makeup. Ink Mugi's PMU correction service in Annandale, VA — 523+ procedures, VA-licensed. Correction consultations start at $150. Book today."
+        description="Fix botched microblading, faded brows & uneven permanent makeup. Ink Mugi's PMU correction service in Annandale, VA — 330+ procedures, VA-licensed. Correction consultations start at $150. Book today."
         path="/pmu-correction-restoration"
       >
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
@@ -281,7 +281,7 @@ const PmuCorrectionRestoration: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Award className="w-4 h-4 text-amber-700" />
-                  <span>523+ Procedures Completed</span>
+                  <span>330+ procedures Completed</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Shield className="w-4 h-4 text-amber-700" />
@@ -462,7 +462,7 @@ const PmuCorrectionRestoration: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-700 rounded-xl flex items-center justify-center mb-5">
                   <Award className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-stone-900 mb-3">523+ Procedures, Including Corrections</h3>
+                <h3 className="text-xl font-bold text-stone-900 mb-3">330+ procedures, Including Corrections</h3>
                 <p className="text-stone-600 leading-relaxed">
                   Extensive experience with both fresh brows and corrective work. Understanding what went wrong with previous work is the key to getting it right the second time.
                 </p>
