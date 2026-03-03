@@ -276,8 +276,8 @@ const Home: React.FC = () => {
           SEO: H1 with geo + service. Supporting text with differentiators.
           Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
+      <section className="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1410]/50 via-[#1a1410]/45 to-[#1a1410]/65 z-10" />
 
         <picture>
           <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
@@ -285,7 +285,7 @@ const Home: React.FC = () => {
           <img
             src="/2315.png"
             alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms]"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_70%] md:object-center transition-transform duration-[2000ms]"
             style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
             width="1920"
             height="1080"
@@ -294,7 +294,7 @@ const Home: React.FC = () => {
           />
         </picture>
 
-        <div className="container-custom relative z-20 text-white pt-20">
+        <div className="container-custom relative z-20 text-white pt-32 pb-20 md:pt-20 md:pb-0">
           <motion.div
             className="max-w-4xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
@@ -302,7 +302,7 @@ const Home: React.FC = () => {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
           >
             <motion.div
-              className="mb-8"
+              className="mb-5 md:mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
@@ -314,31 +314,36 @@ const Home: React.FC = () => {
               </span>
             </motion.div>
 
-            <h1 className="mb-8">
-              <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.1] tracking-tight">
+            <h1 className="mb-6 md:mb-8">
+              <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
                 Natural Ombré Powder Brows
               </span>
-              <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.1] tracking-tight mt-2">
+              <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
                 in <span className="text-[#E6DAD2]">Annandale, Virginia</span>
               </span>
             </h1>
 
-            <motion.p
-              className="text-lg md:text-xl text-white/75 font-light max-w-2xl mx-auto mb-12 leading-relaxed"
+            <motion.div
+              className="max-w-2xl mx-auto mb-10 md:mb-12"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Precision-mapped to your facial structure. Approved before pigment.
-              <br className="hidden sm:block" />
-              Evaluated and documented at 6 weeks healed. <span className="text-[#E6DAD2]">523 procedures. 0.19% complication rate.</span>
-            </motion.p>
+              <p className="text-lg md:text-xl text-white/75 font-light leading-relaxed">
+                Precision-mapped to your facial structure. Approved before pigment.
+                <br className="hidden sm:block" />
+                Evaluated and documented at 6 weeks healed.
+              </p>
+              <p className="mt-3 text-[0.8rem] tracking-[0.15em] uppercase text-[#E6DAD2]/90 font-normal">
+                523 Documented Procedures · 0.19% Complication Rate
+              </p>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-5 sm:gap-4 justify-center items-center"
             >
               <Link
                 to="/booking"
