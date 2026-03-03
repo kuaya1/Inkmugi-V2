@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ArrowRight, ArrowDown, Award, Shield, CheckCircle2, Phone, Eye, FileCheck, Clock } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 import AnimatedSection from '../components/AnimatedSection';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
@@ -10,6 +10,9 @@ import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const Home: React.FC = () => {
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
+  const heroRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ['0%', '18%']);
 
   useEffect(() => {
     setIsHeroLoaded(true);
@@ -276,24 +279,29 @@ const Home: React.FC = () => {
           SEO: H1 with geo + service. Supporting text with differentiators.
           Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-start md:items-center justify-center overflow-hidden">
+      <section ref={heroRef} className="relative min-h-screen flex items-start md:items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
         <div className="absolute inset-0 z-10" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
-        <picture>
-          <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
-          <source media="(min-width: 768px)" srcSet="/2315.png" />
-          <img
-            src="/2315.png"
-            alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
-            className="absolute inset-0 w-full h-full object-cover object-[50%_70%] md:object-center transition-transform duration-[2000ms]"
-            style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
-            width="1920"
-            height="1080"
-            fetchPriority="high"
-            decoding="async"
-          />
-        </picture>
+        <motion.div
+          className="absolute -top-[10%] bottom-[-10%] left-0 right-0"
+          style={{ y: parallaxY }}
+        >
+          <picture>
+            <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
+            <source media="(min-width: 768px)" srcSet="/2315.png" />
+            <img
+              src="/2315.png"
+              alt="Natural healed ombre powder brows by Ink Mugi — permanent makeup studio in Annandale VA Fairfax County"
+              className="w-full h-full object-cover object-[50%_60%] md:object-center transition-transform duration-[2000ms]"
+              style={{ transform: isHeroLoaded ? 'scale(1)' : 'scale(1.05)' }}
+              width="1920"
+              height="1080"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
+        </motion.div>
 
         <div className="container-custom relative z-20 text-white pt-[24vh] pb-16 md:pt-20 md:pb-0">
           <motion.div
