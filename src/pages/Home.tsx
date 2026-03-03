@@ -276,7 +276,7 @@ const Home: React.FC = () => {
           SEO: H1 with geo + service. Supporting text with differentiators.
           Tone: 60% Artistic / 20% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-start md:items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60 z-10" />
         <div className="absolute inset-0 z-10" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
@@ -295,7 +295,7 @@ const Home: React.FC = () => {
           />
         </picture>
 
-        <div className="container-custom relative z-20 text-white pt-32 pb-20 md:pt-20 md:pb-0">
+        <div className="container-custom relative z-20 text-white pt-[38vh] pb-16 md:pt-20 md:pb-0">
           <motion.div
             className="max-w-4xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
