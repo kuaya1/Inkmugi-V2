@@ -344,7 +344,7 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-5 sm:gap-4 justify-center items-center"
+              className="mt-4 flex flex-col sm:flex-row gap-5 sm:gap-4 justify-center items-center"
             >
               <Link
                 to="/booking"
