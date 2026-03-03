@@ -295,7 +295,7 @@ const Home: React.FC = () => {
           />
         </picture>
 
-        <div className="container-custom relative z-20 text-white pt-[33vh] pb-16 md:pt-20 md:pb-0">
+        <div className="container-custom relative z-20 text-white pt-[29vh] pb-16 md:pt-20 md:pb-0">
           <motion.div
             className="max-w-4xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
