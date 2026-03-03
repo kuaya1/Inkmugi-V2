@@ -151,7 +151,7 @@ const Home: React.FC = () => {
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
       >
         {/* Preload hero LCP image */}
-        <link rel="preload" as="image" href="/2325%20(1).png" media="(max-width: 767px)" />
+        <link rel="preload" as="image" href="/2315%20(1).png" media="(max-width: 767px)" />
         <link rel="preload" as="image" href="/2315.png" media="(min-width: 768px)" />
 
         {/* Business Schema */}
@@ -281,7 +281,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 z-10" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
         <picture>
-          <source media="(max-width: 767px)" srcSet="/2325%20(1).png" />
+          <source media="(max-width: 767px)" srcSet="/2315%20(1).png" />
           <source media="(min-width: 768px)" srcSet="/2315.png" />
           <img
             src="/2315.png"
