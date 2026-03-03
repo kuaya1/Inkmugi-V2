@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Shield, ArrowRight, Phone, AlertTriangle, Eye, CheckCircle, Clock, Layers, Target, FileText, MapPin, ChevronRight } from 'lucide-react';
+import { Shield, ArrowRight, Phone, AlertTriangle, Eye, CheckCircle, Clock, Layers, Target, FileText, MapPin, ChevronRight, Camera } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
@@ -29,7 +29,7 @@ const PmuCorrectionRestoration: React.FC = () => {
     },
     {
       question: 'How much does pigment correction cost?',
-      answer: 'Structured correction at Ink Mugi ranges from $900 to $1,200 depending on case complexity. This investment reflects the advanced technique, extended procedure time (3–4 hours), specialized corrective pigments, and multi-session protocol required for lasting results. The $200 assessment fee is credited toward the procedure. All correction pricing includes one follow-up refinement appointment.',
+      answer: 'Structured correction at Ink Mugi is $600. This investment reflects the advanced technique, extended procedure time (3–4 hours), specialized corrective pigments, and multi-session protocol required for lasting results. The $200 assessment fee is credited toward the procedure. Correction pricing includes one follow-up refinement appointment.',
     },
     {
       question: 'Will you decline cases that are not suitable for correction?',
@@ -56,7 +56,7 @@ const PmuCorrectionRestoration: React.FC = () => {
   return (
     <>
       <SEO
-        title="PMU Correction & Pigment Recalibration | Microblading Fix — Ink Mugi, Annandale VA"
+        title="Microblading Correction Fairfax County | PMU Correction & Pigment Fix — Ink Mugi, Annandale VA"
         description="Advanced permanent makeup correction in Annandale, Virginia. Undertone neutralization, structural redesign, and pigment recalibration for botched microblading, grey brows, and faded PMU. 330+ documented procedures. 0.19% complication rate. VA-licensed. Fairfax County."
         path="/pmu-correction-restoration"
         keywords="microblading correction near me, PMU correction Fairfax County, fix grey microblading Virginia, ombre brow correction Annandale, eyebrow tattoo correction Northern Virginia, botched microblading fix, over-saturated brows correction, brow pigment neutralization, permanent makeup correction McLean, PMU fix Arlington VA"
@@ -92,11 +92,9 @@ const PmuCorrectionRestoration: React.FC = () => {
             },
             "serviceType": "Permanent Makeup Correction & Pigment Recalibration",
             "offers": {
-              "@type": "AggregateOffer",
-              "lowPrice": "900",
-              "highPrice": "1200",
-              "priceCurrency": "USD",
-              "offerCount": "3"
+              "@type": "Offer",
+              "price": "600",
+              "priceCurrency": "USD"
             },
             "areaServed": [
               { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "AdministrativeArea", "name": "Fairfax County, Virginia" } },
@@ -585,6 +583,40 @@ const PmuCorrectionRestoration: React.FC = () => {
 
 
       {/* ═══════════════════════════════════════════════════════════════════════
+          PHOTO SUBMISSION — MICRO-CONVERSION
+          Soft CTA. Preliminary evaluation before full assessment commitment.
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-12 md:py-16 bg-[#E6DAD2]/20">
+        <div className="container-custom max-w-3xl mx-auto text-center">
+          <AnimatedSection>
+            <div className="bg-white rounded-2xl p-8 md:p-12 border border-[#E6DAD2]/30 shadow-sm">
+              <div className="w-14 h-14 bg-[#2D2D2B] rounded-xl flex items-center justify-center mx-auto mb-6">
+                <Camera size={24} className="text-[#E6DAD2]" />
+              </div>
+              <h2 className="text-xl md:text-2xl font-cormorant font-medium text-[#2D2D2B] mb-3">
+                Not Sure If Correction or Lightening Is Required?
+              </h2>
+              <p className="text-[#2D2D2B]/60 leading-relaxed mb-6 max-w-lg mx-auto">
+                Submit a clear brow photo for preliminary evaluation before scheduling an in-person assessment. We'll provide an honest initial determination of whether your case is likely suitable for direct correction, or whether lightening may be recommended first.
+              </p>
+              <p className="text-xs text-[#2D2D2B]/40 mb-6 tracking-wide">
+                Photo evaluation is complimentary · Response within 48 hours · Not a substitute for in-person assessment
+              </p>
+              <a
+                href="mailto:info@inkmugi.com?subject=Correction%20Photo%20Evaluation&body=Please%20attach%20a%20clear%2C%20well-lit%20photo%20of%20your%20current%20brows%20(no%20makeup).%20Include%20any%20details%20about%20when%20your%20previous%20procedure%20was%20performed%20and%20what%20concerns%20you%20most."
+                className="group inline-flex items-center gap-3 bg-[#2D2D2B] hover:bg-[#1a1a19] text-[#E6DAD2] px-8 py-4 rounded-full font-medium transition-all duration-500"
+              >
+                <Camera size={18} />
+                <span>Submit Photo for Preliminary Evaluation</span>
+                <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+
+      {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 8 — WHEN LASER / LIGHTENING IS REQUIRED
           Radical transparency. This section alone builds enormous trust.
       ═══════════════════════════════════════════════════════════════════════ */}
@@ -657,42 +689,64 @@ const PmuCorrectionRestoration: React.FC = () => {
             </p>
           </AnimatedSection>
 
-          <div className="space-y-6">
+          <div className="space-y-8">
             {[
               {
                 label: 'Case A — Grey Migration Correction',
+                image: '/gallery/correction-grey-migration-healed.jpg',
+                imageAlt: 'Healed grey migration correction — before and after microblading fix showing warm-toned natural gradient, Ink Mugi Annandale VA Fairfax County',
+                imageCaption: 'Grey migration correction · Healed result documented at 6 weeks · Warm-toned natural gradient restored',
                 presentation: 'Client presented with microblading performed 14 months prior. Strokes had blurred into a diffuse grey band across both brows. Cool-shifted pigment visible under clinical lighting. Moderate density — workable without lightening.',
                 protocol: 'Warm-spectrum corrective pigment selected to neutralize blue-grey undertone. Structural redesign aligned arch to zygomatic bone position. Ombré powder applied with controlled gradient density. Single session + 8-week follow-up refinement.',
                 outcome: 'Healed result documented at 6 weeks: warm-toned, natural gradient, grey migration fully neutralized. Follow-up refinement addressed two areas of lower retention in the tail. Client verified satisfied at 12-week final review.',
               },
               {
                 label: 'Case B — Over-Saturated Brow Reconstruction',
+                image: '/gallery/correction-over-saturated-healed.jpg',
+                imageAlt: 'Healed over-saturated brow correction — density reduction and arch recalibration, permanent makeup fix Ink Mugi Fairfax County Virginia',
+                imageCaption: 'Over-saturation correction · Healed result documented at 6 weeks · 60% density reduction, arch repositioned',
                 presentation: 'Client presented with brows approximately 40% darker than intended from previous ombré powder procedure elsewhere. Shape was approximately symmetrical but arch position was medially displaced, creating a perpetually surprised expression.',
                 protocol: 'Partial lightening was NOT required — existing density was heavy but shallow enough for corrective overlay. Arch position recalibrated laterally by 4mm to align with iris center. Corrective pigment selected 2 shades lighter than existing to soften overall density while maintaining warmth.',
                 outcome: 'Healed result documented at 6 weeks: approximately 60% reduction in perceived heaviness. Natural gradient restored. Arch position anatomically correct. Two sessions required — initial correction + 8-week density balancing.',
               },
               {
                 label: 'Case C — Faded Microblading with Warm Shift',
+                image: '/gallery/correction-warm-shift-healed.jpg',
+                imageAlt: 'Healed warm shift correction — orange microblading neutralized to natural brown tone, PMU correction Northern Virginia',
+                imageCaption: 'Warm shift correction · Healed result documented at 6 weeks · Orange migration fully neutralized',
                 presentation: 'Client presented with microblading performed 22 months prior. Original strokes had dissolved into faint orange-terracotta tint concentrated at brow heads with near-complete drop-out at tails. Skin type: oily-combination.',
                 protocol: 'Ash-toned corrective pigment introduced to neutralize warm migration at heads. Full ombré powder overlay to establish consistent density across entire brow. Technique adjusted for oily skin — increased stippling density and slightly deeper deposit depth to improve long-term retention.',
                 outcome: 'Healed result documented at 6 weeks: warm shift fully corrected. Consistent density from head to tail. Client reported significantly reduced daily makeup application time. Single session achieved target outcome.',
               },
             ].map((item, i) => (
               <AnimatedSection key={i}>
-                <div className="bg-[#F9F7F5] rounded-xl p-6 md:p-8 border border-[#E6DAD2]/20">
-                  <h3 className="text-base font-semibold text-[#9A7B69] mb-4">{item.label}</h3>
-                  <div className="space-y-4 text-[0.92rem]">
-                    <div>
-                      <p className="text-xs uppercase tracking-wide text-[#2D2D2B]/40 mb-1 font-medium">Presentation</p>
-                      <p className="text-[#2D2D2B]/65 leading-relaxed">{item.presentation}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-wide text-[#2D2D2B]/40 mb-1 font-medium">Protocol</p>
-                      <p className="text-[#2D2D2B]/65 leading-relaxed">{item.protocol}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-wide text-[#2D2D2B]/40 mb-1 font-medium">Documented Outcome</p>
-                      <p className="text-[#2D2D2B]/65 leading-relaxed">{item.outcome}</p>
+                <div className="bg-[#F9F7F5] rounded-xl overflow-hidden border border-[#E6DAD2]/20">
+                  <figure>
+                    <img
+                      src={item.image}
+                      alt={item.imageAlt}
+                      className="w-full object-cover aspect-[3/2]"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs text-[#2D2D2B]/40 px-6 pt-3 text-center italic tracking-wide">
+                      {item.imageCaption}
+                    </figcaption>
+                  </figure>
+                  <div className="p-6 md:p-8">
+                    <h3 className="text-base font-semibold text-[#9A7B69] mb-4">{item.label}</h3>
+                    <div className="space-y-4 text-[0.92rem]">
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-[#2D2D2B]/40 mb-1 font-medium">Presentation</p>
+                        <p className="text-[#2D2D2B]/65 leading-relaxed">{item.presentation}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-[#2D2D2B]/40 mb-1 font-medium">Protocol</p>
+                        <p className="text-[#2D2D2B]/65 leading-relaxed">{item.protocol}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-[#2D2D2B]/40 mb-1 font-medium">Documented Outcome</p>
+                        <p className="text-[#2D2D2B]/65 leading-relaxed">{item.outcome}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
