@@ -89,7 +89,7 @@ const OmbreBrowsVienna: React.FC = () => {
     },
     {
       question: "What style of brows does Mugi specialize in?",
-      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. Perfect for Vienna clients who want a soft, polished look that's undetectable as permanent makeup. 330+ procedures refined this technique to perfection."
+      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. In our consultations with Vienna clients, the most common request is a soft, polished look that still feels understated up close and in daylight. Perfect for Vienna clients who want a result that's undetectable as permanent makeup. 330+ procedures refined this technique to perfection."
     },
     {
       question: "Is there a consultation before the procedure?",
@@ -167,7 +167,7 @@ const OmbreBrowsVienna: React.FC = () => {
               <span className="text-amber-700">Vienna, VA</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 12 minutes from Vienna Town Center. Northern Virginia's most trusted PMU artist — 330+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever.
+              Just 12 minutes from Vienna Town Center. Many clients from Vienna, Oakton, and Mantua come in wanting brows that look quietly polished rather than heavily made up, and that softer finish is exactly where ombré powder brows excel. Northern Virginia's most trusted PMU artist — 330+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -263,7 +263,7 @@ const OmbreBrowsVienna: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Natural Results Vienna Clients Love</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Ombré powder brows that look like perfectly filled-in brows, not stamped-on tattoos. 330+ clients can't be wrong — see healed photos in our gallery.
+                  Ombré powder brows that look like perfectly filled-in brows, not stamped-on tattoos. A common conversation we have with Vienna clients is how to add definition without losing softness, especially for clients who wear very minimal makeup day to day. 330+ clients can't be wrong — see healed photos in our gallery.
                 </p>
               </div>
             </AnimatedSection>
@@ -398,7 +398,7 @@ const OmbreBrowsVienna: React.FC = () => {
               Considering Microblading in Vienna, VA?
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
-              Many Vienna clients come to us after experiencing premature microblading fading. The combination of Northern Virginia's humid summers and the active, outdoor-oriented lifestyle common in the Vienna–Tysons–McLean corridor creates conditions that significantly shorten microblading longevity. Our data shows microblading lasting an average of 8–12 months for Vienna-area clients — compared to 18–36 months for ombré powder brows.
+              Many Vienna clients come to us after experiencing premature microblading fading. The combination of Northern Virginia's humid summers and the active, outdoor-oriented lifestyle common in the Vienna–Tysons–McLean corridor creates conditions that significantly shorten microblading longevity. We frequently see this with clients who were initially told hair strokes would stay crisp for years, only to notice softening much sooner once healed. Our data shows microblading lasting an average of 8–12 months for Vienna-area clients — compared to 18–36 months for ombré powder brows.
             </p>
             <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
               If you're researching brow procedures, understanding why microblading may underperform in our climate is essential before investing. We've published detailed, data-backed comparisons to help you make an informed decision.

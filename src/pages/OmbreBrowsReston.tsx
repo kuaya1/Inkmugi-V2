@@ -111,7 +111,7 @@ const OmbreBrowsReston: React.FC = () => {
     },
     {
       question: "Why do Reston residents choose Ink Mugi over closer studios?",
-      answer: "Reston clients often tell us they chose Ink Mugi after comparing healed results. With 330+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment, our approach gives the certainty and quality that Reston professionals demand."
+      answer: "Reston clients often tell us they chose Ink Mugi after comparing healed results. In our consultations with Reston professionals, one of the biggest concerns we hear is not wanting to gamble on a shape that only looks good fresh. With 330+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment, our approach gives the certainty and quality that Reston professionals demand."
     },
     {
       question: "How long do ombre powder brows last for Reston area clients?",
@@ -240,7 +240,7 @@ const OmbreBrowsReston: React.FC = () => {
                 Reston is a community that values precision, quality, and professionalism — whether it's the planning that shaped Reston Town Center or the standards expected along the Dulles Corridor. That same attention to detail is exactly what defines our approach to ombre powder brows.
               </p>
               <p>
-                Many of our Reston clients are busy professionals, tech executives working along the Dulles Toll Road, or mothers managing hectic schedules between South Lakes, Lake Anne, and weekend activities at the Reston Association pools. They don't have 20 minutes every morning for brow makeup — and they shouldn't have to.
+                Many of our Reston clients are busy professionals, tech executives working along the Dulles Toll Road, or mothers managing hectic schedules between South Lakes, Lake Anne, and weekend activities at the Reston Association pools. In our experience, they usually are not looking for dramatic brows — they want structure, symmetry, and color that still feels appropriate in a polished professional setting. They don't have 20 minutes every morning for brow makeup — and they shouldn't have to.
               </p>
               <p>
                 Our Annandale studio is a straight 25-minute drive from the Wiehle-Reston East Metro area via the Fairfax County Parkway. Several clients from the Lake Anne neighborhood and Reston Town Center tell us the drive is easier than dealing with Tysons Corner traffic. Free parking and a private, unhurried environment make the visit effortless.
@@ -393,7 +393,7 @@ const OmbreBrowsReston: React.FC = () => {
                   <h3 className="text-xl font-semibold">Northern Virginia Humidity Factor</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
-                  Reston's proximity to the Potomac basin means consistent 70–80% humidity through summer. Microblading strokes — created by manual blade cuts in the epidermis — tend to blur and migrate faster in these conditions. Ombre powder brows deposit pigment deeper using a digital machine, creating results that hold their clarity through every Northern Virginia summer.
+                  Reston's proximity to the Potomac basin means consistent 70–80% humidity through summer. Microblading strokes — created by manual blade cuts in the epidermis — tend to blur and migrate faster in these conditions. We regularly see Reston-area clients who loved the idea of crisp hair strokes but were frustrated by how softly they healed once summer oil and humidity kicked in. Ombre powder brows deposit pigment deeper using a digital machine, creating results that hold their clarity through every Northern Virginia summer.
                 </p>
               </div>
 
@@ -403,7 +403,7 @@ const OmbreBrowsReston: React.FC = () => {
                   <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
-                  Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Reston professionals who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work.
+                  Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Reston professionals who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work. It is also why so many of our consultations focus on realistic healed expectations rather than only the immediate before-and-after.
                 </p>
               </div>
             </div>

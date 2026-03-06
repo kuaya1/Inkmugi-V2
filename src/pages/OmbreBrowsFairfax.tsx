@@ -94,7 +94,7 @@ const OmbreBrowsFairfax: React.FC = () => {
     },
     {
       question: "What makes your technique suitable for Fairfax County's climate?",
-      answer: "Our technique is specifically optimized for Northern Virginia's climate—humid summers (70-85% humidity) and drier winters. We adjust pigment saturation and depth based on seasonal conditions, which is why our clients see 18-36 month longevity compared to 8-12 months with traditional methods."
+      answer: "Our technique is specifically optimized for Northern Virginia's climate—humid summers (70-85% humidity) and drier winters. In our consultations with Fairfax County clients, we frequently talk through how oil production, outdoor commuting, and seasonal humidity can change how brows heal from Fairfax City to Tysons. We adjust pigment saturation and depth based on seasonal conditions, which is why our clients see 18-36 month longevity compared to 8-12 months with traditional methods."
     }
   ];
 
@@ -168,7 +168,7 @@ const OmbreBrowsFairfax: React.FC = () => {
               <span className="text-[#9A7B69]">Fairfax County</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 330+ procedures and exceptional results.
+              Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Many Fairfax County clients come in wanting polished brows that still read as natural in bright office lighting and everyday life, and that is exactly the kind of result we design for. Northern Virginia's most trusted PMU artist with 330+ procedures and exceptional results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -276,7 +276,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Personalized Experience</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Escape the busy commercial districts. Our private studio offers a calm, focused environment where your transformation gets undivided attention.
+                  Escape the busy commercial districts. Our private studio offers a calm, focused environment where your transformation gets undivided attention. We often hear from Fairfax clients that this one-on-one setting feels very different from high-volume studios where appointments can feel rushed.
                 </p>
               </div>
             </AnimatedSection>
@@ -399,7 +399,7 @@ const OmbreBrowsFairfax: React.FC = () => {
               Considering Microblading in Fairfax, VA?
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
-              Fairfax City and surrounding communities experience the full intensity of Northern Virginia's humid subtropical climate — hot, humid summers that drive increased oil production in every skin type. This environmental factor is the primary reason microblading underperforms in our region compared to national averages. Our data shows Fairfax-area clients experiencing 30–40% faster fading than what's typically advertised.
+              Fairfax City and surrounding communities experience the full intensity of Northern Virginia's humid subtropical climate — hot, humid summers that drive increased oil production in every skin type. This environmental factor is the primary reason microblading underperforms in our region compared to national averages. In our experience working with Fairfax-area clients, this becomes especially noticeable on skin that already trends combination or oily through the brow zone. Our data shows Fairfax-area clients experiencing 30–40% faster fading than what's typically advertised.
             </p>
             <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
               Before investing $400–$600 in microblading that may need frequent touch-ups, understand the science behind technique longevity in our specific climate.

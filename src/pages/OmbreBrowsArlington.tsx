@@ -90,7 +90,7 @@ const OmbreBrowsArlington: React.FC = () => {
     },
     {
       question: "Why do Arlington residents choose Inkmugi over DC studios?",
-      answer: "Arlington clients appreciate our combination of quality and value. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 500+ procedure track record speaks for itself."
+      answer: "Arlington clients appreciate our combination of quality and value. In our consultations with clients from Clarendon, Ballston, and Pentagon City, we often hear that they want a polished result without the hassle of downtown pricing, parking, and rushed appointments. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 330+ documented procedure track record speaks for itself."
     },
     {
       question: "Do you offer flexible hours for Arlington professionals?",
@@ -168,7 +168,7 @@ const OmbreBrowsArlington: React.FC = () => {
               <span className="text-[#9A7B69]">Arlington</span> Residents
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with 330+ procedures and a 0.19% complication rate.
+              Just 12 minutes from Clarendon & Ballston. Many Arlington clients come in looking for brows that stay polished through early meetings, workouts, and long commutes without reading as overdone in natural light. Experience Northern Virginia's most trusted PMU artist with 330+ procedures and a 0.19% complication rate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -276,7 +276,7 @@ const OmbreBrowsArlington: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Effortless Experience</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Quick 12-minute drive, free parking, relaxing studio. No fighting for street parking or dealing with downtown traffic.
+                  Quick 12-minute drive, free parking, relaxing studio. No fighting for street parking or dealing with downtown traffic. We also find Arlington clients appreciate having enough appointment time to talk through shape, balance, and healed expectations without feeling rushed.
                 </p>
               </div>
             </AnimatedSection>
@@ -399,7 +399,7 @@ const OmbreBrowsArlington: React.FC = () => {
               Considering Microblading in Arlington, VA?
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
-              Arlington's fitness-focused, active community — runners along the Potomac trails, CrossFit enthusiasts, outdoor-lifestyle professionals — creates a lifestyle profile that's particularly challenging for microblading. Frequent perspiration, combined with the DMV's 65–85% summer humidity, accelerates pigment displacement from microblading's shallow incisions. We consistently see Arlington clients needing touch-ups within 6–10 months.
+              Arlington's fitness-focused, active community — runners along the Potomac trails, CrossFit enthusiasts, outdoor-lifestyle professionals — creates a lifestyle profile that's particularly challenging for microblading. Frequent perspiration, combined with the DMV's 65–85% summer humidity, accelerates pigment displacement from microblading's shallow incisions. We consistently see Arlington clients needing touch-ups within 6–10 months, especially when they were initially sold on hair strokes without a realistic discussion of how they heal in this climate.
             </p>
             <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
               Ombré powder brows offer 2–3x the longevity under the same conditions. Before committing to microblading, explore the science behind why it may not be the best fit for your lifestyle and climate.

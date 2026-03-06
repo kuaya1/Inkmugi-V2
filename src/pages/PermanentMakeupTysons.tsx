@@ -89,7 +89,7 @@ const PermanentMakeupTysons: React.FC = () => {
     },
     {
       question: "Why not go to a Tysons Corner PMU studio?",
-      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. Our $600 all-inclusive pricing, 330+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
+      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. In our consultations with Tysons clients, we often hear that they want a more private, one-on-one experience instead of a high-traffic commercial setting where appointments can feel transactional. Our $600 all-inclusive pricing, 330+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
     },
     {
       question: "Can I book a lunchtime consultation from Tysons?",
@@ -167,7 +167,7 @@ const PermanentMakeupTysons: React.FC = () => {
               <span className="text-amber-700">Tysons Corner</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. 330+ successful procedures, 5.0-star reviews, and premium results without the premium markup.
+              Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. Many Tysons professionals come in wanting brows that hold up through long office days, client-facing meetings, and post-work workouts without needing daily pencil touch-ups. 330+ successful procedures, 5.0-star reviews, and premium results without the premium markup.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -251,7 +251,7 @@ const PermanentMakeupTysons: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Tysons Results, Honest Pricing</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Premium permanent makeup without the Tysons markup. Save $200-400 and get results that speak louder than any price tag.
+                  Premium permanent makeup without the Tysons markup. A common situation we see with Tysons clients is that they are less concerned with chasing trends and more focused on clean shape, reliable healing, and a result that looks expensive without being obvious. Save $200-400 and get results that speak louder than any price tag.
                 </p>
               </div>
             </AnimatedSection>
@@ -398,7 +398,7 @@ const PermanentMakeupTysons: React.FC = () => {
               Considering Microblading in Tysons, VA?
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
-              The Tysons professional community values efficiency and long-lasting results. Microblading, unfortunately, delivers neither in this region — requiring touch-ups every 8–12 months due to our humid subtropical climate and the active lifestyles common among Tysons–McLean–Vienna residents. The cost-per-year of maintaining microblading frequently exceeds the upfront investment in powder brows.
+              The Tysons professional community values efficiency and long-lasting results. Microblading, unfortunately, delivers neither in this region — requiring touch-ups every 8–12 months due to our humid subtropical climate and the active lifestyles common among Tysons–McLean–Vienna residents. In our experience working with clients from Tysons and nearby McLean, this usually becomes clear only after the first healed cycle, when crisp strokes no longer look as defined as they did on day one. The cost-per-year of maintaining microblading frequently exceeds the upfront investment in powder brows.
             </p>
             <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
               For Tysons professionals who need their brows to look polished through long workdays and workout sessions, understanding which technique performs best in our conditions is critical.

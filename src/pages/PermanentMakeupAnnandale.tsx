@@ -89,7 +89,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
     },
     {
       question: "Why should I choose a local Annandale studio over DC or Tysons?",
-      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 330+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
+      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. In our consultations with Annandale clients, we hear over and over that being able to stay local for design appointments, follow-up questions, and touch-ups makes the entire process feel less stressful. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 330+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
     },
     {
       question: "Is Ink Mugi open on weekends?",
@@ -167,7 +167,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
               <span className="text-[#9A7B69]">Annandale</span> — Your Neighborhood Studio
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Right here at Heritage Center — no commute needed. Experience 330+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves.
+              Right here at Heritage Center — no commute needed. Many Annandale clients tell us they had been putting off permanent makeup simply because they did not want to deal with DC traffic or Tysons parking for a consultation. Experience 330+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -251,7 +251,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Your Neighborhood Studio</h3>
                 <p className="text-[#2D2D2B]/70">
-                  No commute, no traffic, no parking hassles. Walk in from Heritage Center or drive from anywhere in Annandale in under 5 minutes. Your brow artist lives and works right here.
+                  No commute, no traffic, no parking hassles. Walk in from Heritage Center or drive from anywhere in Annandale in under 5 minutes. In our experience, that local convenience also makes clients feel more comfortable reaching out during healing because their brow artist lives and works right here.
                 </p>
               </div>
             </AnimatedSection>
@@ -398,7 +398,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
               Considering Microblading in Annandale, VA?
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
-              As Annandale's local PMU studio, we see firsthand how Northern Virginia's climate affects brow procedures. Many clients come to us after unsatisfying microblading experiences — often from other providers in the Annandale–Fairfax corridor — seeking correction or transition to a more durable technique. The pattern is consistent: microblading's shallow incisions can't withstand our humid summers.
+              As Annandale's local PMU studio, we see firsthand how Northern Virginia's climate affects brow procedures. Many clients come to us after unsatisfying microblading experiences — often from other providers in the Annandale–Fairfax corridor — seeking correction or transition to a more durable technique. A common pattern we see with Annandale clients is that brows may look fine initially, then soften unevenly once summer humidity, sweat, and daily skincare routines start affecting retention. The pattern is consistent: microblading's shallow incisions can't withstand our humid summers.
             </p>
             <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
               We specialize in ombré powder brows precisely because they deliver 2–3x longer results in our climate. If you're comparing techniques, our evidence-based guides will help you make the right choice.
