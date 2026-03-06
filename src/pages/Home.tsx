@@ -92,7 +92,7 @@ const Home: React.FC = () => {
       step: '01',
       title: 'Consultation & Face Mapping',
       duration: '30–45 min',
-      description: 'Your facial proportions, bone structure, and skin undertone are assessed. A brow shape is designed for your specific anatomy — not a template. You review the design and approve before anything proceeds.',
+      description: 'Your facial proportions, bone structure, and skin undertone are assessed. In our consultations with clients across Northern Virginia, this step is where we often identify why a previous brow shape or PMU design did not feel balanced. A brow shape is designed for your specific anatomy — not a template. You review the design and approve before anything proceeds.',
     },
     {
       step: '02',
@@ -104,32 +104,32 @@ const Home: React.FC = () => {
       step: '03',
       title: 'Precision Procedure',
       duration: '2.5–3 hours',
-      description: 'Medical-grade numbing is applied in advance. Pigment is deposited through controlled stippling, building gradient density layer by layer. Communication is maintained throughout the procedure.',
+      description: 'Medical-grade numbing is applied in advance. Pigment is deposited through controlled stippling, building gradient density layer by layer. In our practice, this controlled build is what allows healed brows to stay soft rather than harsh. Communication is maintained throughout the procedure.',
     },
     {
       step: '04',
       title: 'Guided Healing & Touch-Up',
       duration: '6–8 weeks',
-      description: 'A medical-grade aftercare protocol and 24/7 text access guide you through each healing phase. At 6–8 weeks, a complimentary perfecting session is conducted to ensure ideal density and symmetry.',
+      description: 'A medical-grade aftercare protocol and 24/7 text access guide you through each healing phase. Many clients who visit us after previous microblading tell us this is the stage where they previously felt unsure or unsupported, so healing guidance is treated as part of the procedure itself. At 6–8 weeks, a complimentary perfecting session is conducted to ensure ideal density and symmetry.',
     },
   ];
 
   const faqs = [
     {
       question: 'Will my brows look natural, or is there a risk of them looking overdone?',
-      answer: 'Ombré powder brows are specifically designed to mimic the appearance of soft pencil or powder makeup — not solid blocks of color. The gradient builds from an airy, diffused front to a gently defined tail, replicating how natural brows actually grow. Every design is mapped to your bone structure and approved on your face before any pigment is applied. Our portfolio shows exclusively healed results at 6+ weeks so you can see exactly how the technique settles.',
+      answer: 'Ombré powder brows are specifically designed to mimic the appearance of soft pencil or powder makeup — not solid blocks of color. In our practice, many clients are specifically asking for brows that still look believable in everyday lighting and close conversation, not overly stamped or makeup-heavy. The gradient builds from an airy, diffused front to a gently defined tail, replicating how natural brows actually grow. Every design is mapped to your bone structure and approved on your face before any pigment is applied. Our portfolio shows exclusively healed results at 6+ weeks so you can see exactly how the technique settles.',
     },
     {
       question: 'What does the healing process look like, and how long does it take?',
-      answer: 'Days 1–3: Brows appear bolder and darker than the final result — this is expected. Days 4–10: Light flaking as the upper layer sheds naturally. Days 11–42: True color emerges as pigment settles beneath the skin surface. A complimentary perfecting session at 6–8 weeks ensures ideal density. You receive a medical-grade aftercare kit and 24/7 text access throughout.',
+      answer: 'Days 1–3: Brows appear bolder and darker than the final result — this is expected. Days 4–10: Light flaking as the upper layer sheds naturally. Days 11–42: True color emerges as pigment settles beneath the skin surface. In our healing check-ins, this is often the point where clients realize why fresh photos can be misleading compared with healed results. A complimentary perfecting session at 6–8 weeks ensures ideal density. You receive a medical-grade aftercare kit and 24/7 text access throughout.',
     },
     {
       question: 'Is this procedure safe? What safety standards does Ink Mugi follow?',
-      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 330+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. We also decline procedures when medical contraindications are present.',
+      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 330+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
     },
     {
       question: 'How does ombré powder compare to microblading in Northern Virginia\'s climate?',
-      answer: 'Ombré powder brows significantly outperform microblading in humid climates. The stippling technique deposits pigment below the skin surface rather than in shallow incisions, providing more reliable retention. Our data shows an average longevity of 24 months for ombré powder versus 8–12 months for microblading in DMV-area clients — particularly for oily or combination skin types.',
+      answer: 'Ombré powder brows significantly outperform microblading in humid climates. The stippling technique deposits pigment below the skin surface rather than in shallow incisions, providing more reliable retention. Working with clients across Northern Virginia and the Washington DC metro area, we frequently see previous microblading soften or fade early once humidity, oil production, and daily skincare are factored in. Our data shows an average longevity of 24 months for ombré powder versus 8–12 months for microblading in DMV-area clients — particularly for oily or combination skin types.',
     },
     {
       question: 'How much does it cost, and what is included?',
@@ -422,7 +422,7 @@ const Home: React.FC = () => {
                 Documented at 6+ weeks healed
               </h2>
               <p className="text-base text-[#2D2D2B]/65 leading-relaxed">
-                Every result in this portfolio is evaluated and photographed after the full healing process — six weeks minimum. Fresh-day images are excluded from our documentation. This is the standard.
+                Every result in this portfolio is evaluated and photographed after the full healing process — six weeks minimum. In our practice, healed documentation matters more than same-day beauty shots because healed brows are the outcome clients actually live with. Fresh-day images are excluded from our documentation. This is the standard.
               </p>
             </div>
           </AnimatedSection>
@@ -486,13 +486,13 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  Pigment shifts, softens, and settles over six to eight weeks. The result you live with is the healed result. That is the only result this studio evaluates, documents, and measures success by.
+                  Pigment shifts, softens, and settles over six to eight weeks. The result you live with is the healed result. That is the only result this studio evaluates, documents, and measures success by. A common situation we see is that clients arrive expecting day-one intensity to last, when in reality good permanent makeup should soften into the skin more naturally as healing completes.
                 </p>
                 <p>
-                  This standard shapes every protocol: pigment depth, density selection, undertone calibration, and the design approval process. Parameters are chosen for healed outcomes — not for how they photograph on day one.
+                  This standard shapes every protocol: pigment depth, density selection, undertone calibration, and the design approval process. Working with clients across Northern Virginia, parameters are chosen for healed outcomes — not for how they photograph on day one.
                 </p>
                 <p>
-                  Across 330+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it.
+                  Across 330+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it. Many clients who visit us after previous microblading are surprised by how much emphasis we place on screening and healed expectations before booking.
                 </p>
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -517,10 +517,10 @@ const Home: React.FC = () => {
             <AnimatedSection delay={1.5}>
               <div className="space-y-4">
                 {[
-                  { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. Nothing permanent begins without your explicit confirmation.' },
+                  { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. In our consultations, that design stage is where trust is built.' },
                   { icon: Eye, title: 'Healed Portfolio Standard', desc: 'Every result in our gallery is photographed at 6+ weeks — after the healing process reveals the true outcome. No fresh glamor shots. No filters.' },
                   { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 330+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
-                  { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, hospital-grade sterilization, and hypoallergenic vegan pigments tested for skin reactivity.' },
+                  { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, hospital-grade sterilization, and hypoallergenic vegan pigments selected for predictable healed performance.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-[#F9F7F5] rounded-xl p-5">
                     <div className="w-10 h-10 bg-[#E6DAD2] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -556,7 +556,7 @@ const Home: React.FC = () => {
               <span className="text-[#E6DAD2]">Every step documented in advance.</span>
             </h2>
             <p className="text-base text-white/50 max-w-2xl mx-auto leading-relaxed">
-              The protocol is designed so you understand precisely what occurs at each stage — no ambiguity, no surprises. Clarity and informed consent are maintained throughout.
+              The protocol is designed so you understand precisely what occurs at each stage — no ambiguity, no surprises. In our experience, a calm procedure starts with clear expectations long before pigment is placed. Clarity and informed consent are maintained throughout.
             </p>
           </AnimatedSection>
 
@@ -638,18 +638,18 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  A Virginia-licensed permanent makeup specialist with 330+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed.
+                  A Virginia-licensed permanent makeup specialist with 330+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed. Over hundreds of procedures, that consistency is what allows results to stay refined rather than overly formulaic.
                 </p>
                 <p>
-                  Every session at the Annandale studio is private, unrushed, and structured for clinical clarity. Mugi works primarily with women who value discretion and predictability — professionals and individuals who require natural results without visible evidence of a procedure.
+                  Every session at the Annandale studio is private, unrushed, and structured for clinical clarity. Many clients who visit us from Northern Virginia and the Washington DC metro area value discretion and predictability — professionals and individuals who want natural results without visible evidence of a procedure.
                 </p>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-5 mt-8 mb-8">
                 {[
                   { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 330+ documented procedures.' },
-                  { icon: Clock, title: 'Private Sessions', desc: 'Unrushed appointments structured for comfort and clarity.' },
-                  { icon: Shield, title: 'Documented Safety', desc: 'VA-licensed, insured, with verified healed outcomes.' },
+                  { icon: Clock, title: 'Private Sessions', desc: 'Unrushed appointments structured for comfort, clarity, and thoughtful design approval.' },
+                  { icon: Shield, title: 'Documented Safety', desc: 'VA-licensed, insured, with verified healed outcomes and conservative screening.' },
                 ].map((item, index) => (
                   <div key={index} className="text-center group">
                     <div className="w-12 h-12 rounded-full bg-[#F7EDE6] flex items-center justify-center mx-auto mb-3 group-hover:bg-[#E6DAD2] transition-colors duration-300">
@@ -805,7 +805,7 @@ const Home: React.FC = () => {
               Serving Fairfax County &amp; Northern Virginia
             </h2>
             <p className="text-sm text-[#2D2D2B]/50 max-w-xl mx-auto">
-              Our Annandale studio serves communities throughout Fairfax County and Northern Virginia.
+              Our Annandale studio serves communities throughout Fairfax County and Northern Virginia, including many clients who prefer a local practitioner familiar with DMV climate and healed brow retention.
             </p>
           </AnimatedSection>
 
@@ -880,7 +880,7 @@ const Home: React.FC = () => {
               </h2>
 
               <p className="text-base text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
-                A consultation is an assessment — not a commitment. We evaluate your goals, review documented outcomes, and determine whether this procedure is appropriate for you. If it is not, we will tell you directly. If it is, we proceed with precision.
+                A consultation is an assessment — not a commitment. We evaluate your goals, review documented outcomes, and determine whether this procedure is appropriate for you. In our consultations, that may also include explaining why a previous microblading result healed the way it did or why another technique may suit your skin better. If it is not the right procedure, we will tell you directly. If it is, we proceed with precision.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
