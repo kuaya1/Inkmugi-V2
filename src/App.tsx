@@ -59,6 +59,8 @@ const MicrobladingTurningGrey = lazy(() => import('./pages/MicrobladingTurningGr
 const BotchedMicrobladingFix = lazy(() => import('./pages/BotchedMicrobladingFix'));
 const PatchyMicroblading = lazy(() => import('./pages/PatchyMicroblading'));
 const MicrobladingFadingTooFast = lazy(() => import('./pages/MicrobladingFadingTooFast'));
+const MicrobladingGoneWrong = lazy(() => import('./pages/MicrobladingGoneWrong'));
+const MicrobladingProblems = lazy(() => import('./pages/MicrobladingProblems'));
 // Microblading Authority Layer (Phase 3)
 const PowderBrowsOverMicroblading = lazy(() => import('./pages/PowderBrowsOverMicroblading'));
 const MicrobladingRemovalVsCorrection = lazy(() => import('./pages/MicrobladingRemovalVsCorrection'));
@@ -143,6 +145,8 @@ function App() {
           <Route path="/botched-microblading-fix" element={<BotchedMicrobladingFix />} />
           <Route path="/patchy-microblading" element={<PatchyMicroblading />} />
           <Route path="/microblading-fading-too-fast" element={<MicrobladingFadingTooFast />} />
+          <Route path="/microblading-gone-wrong" element={<MicrobladingGoneWrong />} />
+          <Route path="/microblading-problems" element={<MicrobladingProblems />} />
           {/* Microblading Authority Layer (Phase 3) */}
           <Route path="/powder-brows-over-microblading" element={<PowderBrowsOverMicroblading />} />
           <Route path="/microblading-removal-vs-correction" element={<MicrobladingRemovalVsCorrection />} />

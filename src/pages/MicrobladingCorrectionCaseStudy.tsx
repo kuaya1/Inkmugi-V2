@@ -17,6 +17,7 @@ import {
   Star
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
 
 const MicrobladingCorrectionCaseStudy: React.FC = () => {
 
@@ -355,53 +356,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
       </section>
 
       {/* Hub Links */}
-      <section className="py-20 bg-[#F9F7F5]">
-        <div className="container-custom max-w-4xl">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Explore Related Correction Resources
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { to: '/microblading-correction-northern-virginia', icon: Shield, title: 'Correction in Northern VA', desc: 'Full details on our correction services — process, pricing, and what to expect.' },
-              { to: '/microblading-removal-vs-correction', icon: RefreshCw, title: 'Removal vs Correction', desc: 'When does correction make sense vs removal? A detailed comparison guide.' },
-              { to: '/powder-brows-over-microblading', icon: Layers, title: 'Powder Brows Over Microblading', desc: 'Complete guide to transitioning from microblading to powder brows.' },
-            ].map((link, idx) => (
-              <AnimatedSection key={link.to} delay={idx + 1}>
-                <Link to={link.to} className="block bg-white p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
-                  <link.icon className="w-8 h-8 text-[#2D2D2B] mb-4" />
-                  <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">{link.title}</h3>
-                  <p className="text-[#2D2D2B]/60 text-sm">{link.desc}</p>
-                  <span className="inline-flex items-center text-amber-700 text-sm font-medium mt-3">
-                    Read guide <ArrowRight className="ml-1 w-4 h-4" />
-                  </span>
-                </Link>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection className="mt-8 grid md:grid-cols-2 gap-6" delay={4}>
-            <Link to="/why-microblading-fades" className="flex items-center gap-4 bg-white p-5 px-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow">
-              <Droplets className="w-6 h-6 text-amber-700 flex-shrink-0" />
-              <div>
-                <h4 className="text-sm font-medium text-[#2D2D2B]">Why Microblading Fades</h4>
-                <p className="text-xs text-[#2D2D2B]/50">The science behind pigment degradation</p>
-              </div>
-              <ArrowRight className="w-4 h-4 text-[#2D2D2B]/40 ml-auto" />
-            </Link>
-            <Link to="/microblading-for-oily-skin" className="flex items-center gap-4 bg-white p-5 px-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow">
-              <Droplets className="w-6 h-6 text-amber-700 flex-shrink-0" />
-              <div>
-                <h4 className="text-sm font-medium text-[#2D2D2B]">Microblading & Oily Skin</h4>
-                <p className="text-xs text-[#2D2D2B]/50">Why oily skin defeats microblading</p>
-              </div>
-              <ArrowRight className="w-4 h-4 text-[#2D2D2B]/40 ml-auto" />
-            </Link>
-          </AnimatedSection>
-        </div>
-      </section>
+      <RelatedMicrobladingProblems currentPath="/microblading-correction-case-study" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#2D2D2B] to-[#1a1a18]">

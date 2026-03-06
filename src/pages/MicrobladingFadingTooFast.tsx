@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
 
 const MicrobladingFadingTooFast: React.FC = () => {
 
@@ -149,7 +150,7 @@ const MicrobladingFadingTooFast: React.FC = () => {
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Why Microblading Fades", "item": "https://www.inkmugi.com/why-microblading-fades" },
+              { "@type": "ListItem", "position": 2, "name": "Microblading Correction", "item": "https://www.inkmugi.com/microblading-correction-northern-virginia" },
               { "@type": "ListItem", "position": 3, "name": "Microblading Fading Too Fast", "item": "https://www.inkmugi.com/microblading-fading-too-fast" }
             ]
           })}
@@ -498,34 +499,7 @@ const MicrobladingFadingTooFast: React.FC = () => {
       </section>
 
       {/* Hub Links */}
-      <section className="py-20 bg-[#F9F7F5]">
-        <div className="container-custom max-w-4xl">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Related Microblading Guides
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { to: '/microblading-for-oily-skin', icon: Droplets, title: 'Microblading & Oily Skin', desc: 'Why oily skin is the #1 reason microblading fades fast — and the technique with 340% better retention.' },
-              { to: '/microblading-turning-grey', icon: Layers, title: 'Microblading Turning Grey', desc: 'When fading includes color shift — why pigment turns grey and how to correct it.' },
-              { to: '/microblading-correction-northern-virginia', icon: Shield, title: 'Microblading Correction', desc: 'Full details on correcting faded or failed microblading at Ink Mugi in Annandale, VA.' },
-            ].map((link, idx) => (
-              <AnimatedSection key={link.to} delay={idx + 1}>
-                <Link to={link.to} className="block bg-white p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
-                  <link.icon className="w-8 h-8 text-[#2D2D2B] mb-4" />
-                  <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">{link.title}</h3>
-                  <p className="text-[#2D2D2B]/60 text-sm">{link.desc}</p>
-                  <span className="inline-flex items-center text-amber-700 text-sm font-medium mt-3">
-                    Read guide <ArrowRight className="ml-1 w-4 h-4" />
-                  </span>
-                </Link>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
+      <RelatedMicrobladingProblems currentPath="/microblading-fading-too-fast" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">

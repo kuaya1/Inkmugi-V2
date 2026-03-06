@@ -85,6 +85,11 @@ const Footer: React.FC = () => {
                   Book Now
                 </Link>
               </li>
+              <li>
+                <Link to="/microblading-problems" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Microblading Problems
+                </Link>
+              </li>
             </ul>
           </div>
 
