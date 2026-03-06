@@ -6,7 +6,6 @@ import {
   Phone,
   CheckCircle,
   AlertTriangle,
-  Shield,
   Target,
   Layers,
   Clock,
@@ -25,7 +24,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
   const faqs = [
     {
       question: "Is it better to remove or correct bad microblading?",
-      answer: "In the majority of cases, correction is the better option. Correction takes fewer sessions (2–3 vs 4–8+), costs less overall, has a shorter total timeline (3–5 months vs 12–24 months), and you leave with beautiful brows rather than bare skin. Removal is only preferred when: (1) the old pigment has shifted to a color that neutralization cannot adequately counter, (2) the old shape is dramatically wrong and extends well beyond any workable boundary, or (3) the client specifically wants all pigment removed with no new procedure. At Ink Mugi, approximately 80% of our correction consultations proceed with correction rather than removal."
+      answer: "In the majority of cases, correction is the better option. Correction takes fewer sessions (2–3 vs 4–8+), costs less overall, has a shorter total timeline (3–5 months vs 12–24 months), and you leave with beautiful brows rather than bare skin. Removal is only preferred when: (1) the old pigment has shifted to a color that neutralization cannot adequately counter, (2) the old shape is dramatically wrong and extends well beyond any workable boundary, or (3) the client specifically wants all pigment removed with no new procedure. In our correction consultations, approximately 80% of clients proceed with correction rather than removal."
     },
     {
       question: "Can grey microblading be corrected without removal?",
@@ -195,7 +194,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
               Understanding what went wrong helps determine whether
-              correction or removal is the best path forward. These are the most common scenarios we see.
+              correction or removal is the best path forward. These are the most common scenarios we see in correction consultations.
             </p>
           </AnimatedSection>
 
@@ -497,7 +496,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
                 followed by correction and powder brow overlay on the full area.
               </p>
               <p className="text-[#2D2D2B]/70 leading-relaxed mb-4">
-                This approach is ideal when: the old shape needs minor boundary adjustment, specific areas are too saturated for direct overlay,
+                A common situation we see is a brow that is mostly correctable, but has one tail or front section that sits outside the new design. This approach is ideal when: the old shape needs minor boundary adjustment, specific areas are too saturated for direct overlay,
                 or one portion of the brow has a stubborn color shift that needs extra preparation.
               </p>
               <p className="text-[#2D2D2B]/70 leading-relaxed">

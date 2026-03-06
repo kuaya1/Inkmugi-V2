@@ -8,7 +8,6 @@ import {
   AlertTriangle,
   Droplets,
   Sun,
-  Shield,
   Layers,
   Activity,
   ThermometerSun,
@@ -24,7 +23,7 @@ const MicrobladingFadingTooFast: React.FC = () => {
   const faqs = [
     {
       question: "Why did my microblading fade so fast?",
-      answer: "Microblading fades faster than expected due to a combination of technique limitations, skin type, and environmental factors. The most common causes are: (1) oily skin — excess sebum pushes pigment out of open incisions during healing and continues to accelerate fading afterward, (2) shallow pigment placement — pigment deposited too high in the epidermis is shed during normal 28-day skin turnover, (3) aggressive skincare products — retinol, glycolic acid, vitamin C, and AHA/BHA exfoliants actively dissolve pigment molecules, (4) UV exposure — photodegradation breaks down iron oxide pigment particles, and (5) humid climate — the DMV's 65–85% summer humidity accelerates both oxidation and sebum-driven pigment displacement. Most clients who experience premature fading are affected by multiple factors simultaneously."
+      answer: "Microblading fades faster than expected due to a combination of technique limitations, skin type, and environmental factors. The most common causes are: (1) oily skin — excess sebum pushes pigment out of open incisions during healing and continues to accelerate fading afterward, (2) shallow pigment placement — pigment deposited too high in the epidermis is shed during normal 28-day skin turnover, (3) aggressive skincare products — retinol, glycolic acid, vitamin C, and AHA/BHA exfoliants actively dissolve pigment molecules, (4) UV exposure — photodegradation breaks down iron oxide pigment particles, and (5) humid climate — the DMV's 65–85% summer humidity accelerates both oxidation and sebum-driven pigment displacement. We frequently see this combination in oily or combination skin during Northern Virginia summers, where several of these factors overlap at once."
     },
     {
       question: "Is it normal for microblading to fade after 2 weeks?",
@@ -281,7 +280,7 @@ const MicrobladingFadingTooFast: React.FC = () => {
           <AnimatedSection className="mt-6" delay={3}>
             <div className="bg-amber-50 border border-amber-100 p-6 rounded-xl">
               <p className="text-[#2D2D2B]/80 text-sm">
-                <strong>Key distinction:</strong> Normal ghost-phase fading at weeks 2–4 is temporary and recovers. Premature fading doesn't recover — what you see at 8 weeks is the permanent result. If you're past the 8-week mark and your brows are significantly faded, the technique is not compatible with your skin type. See our <Link to="/why-microblading-fades" className="text-amber-700 font-medium hover:underline">complete guide to why microblading fades</Link> for the full mechanism analysis.
+                <strong>Key distinction:</strong> Normal ghost-phase fading at weeks 2–4 is temporary and recovers. Premature fading doesn't recover — what you see at 8 weeks is the permanent result. In practice, clients who return at the 8-week mark with very little visible retention rarely get a meaningfully different outcome from another blading session alone. If you're past the 8-week mark and your brows are significantly faded, the technique is not compatible with your skin type. See our <Link to="/why-microblading-fades" className="text-amber-700 font-medium hover:underline">complete guide to why microblading fades</Link> for the full mechanism analysis.
               </p>
             </div>
           </AnimatedSection>

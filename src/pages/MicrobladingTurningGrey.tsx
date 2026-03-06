@@ -22,7 +22,7 @@ const MicrobladingTurningGrey: React.FC = () => {
   const faqs = [
     {
       question: "Why is my microblading turning grey?",
-      answer: "Grey or blue-grey color shift in microblading is caused by pigment oxidation — a chemical process where iron oxide particles in the pigment change their molecular structure over time. Three primary factors drive this: (1) pigment deposited too deep into the dermis where it refracts differently through skin layers, (2) use of pigments with a cool-dominant base that shifts further cool as warm undertones oxidize out, and (3) UV exposure and moisture (both abundant in the DMV climate) accelerating the oxidation rate. The result is that what started as a warm brown appears grey, blue, or ashy."
+      answer: "In many correction consultations we see grey or blue-grey color shift caused by pigment oxidation — a chemical process where iron oxide particles in the pigment change their molecular structure over time. Three primary factors drive this: (1) pigment deposited too deep into the dermis where it refracts differently through skin layers, (2) use of pigments with a cool-dominant base that shifts further cool as warm undertones oxidize out, and (3) UV exposure and moisture (both abundant in the DMV climate) accelerating the oxidation rate. The result is that what started as a warm brown appears grey, blue, or ashy."
     },
     {
       question: "Can grey microblading be corrected?",
@@ -322,7 +322,7 @@ const MicrobladingTurningGrey: React.FC = () => {
               How We Correct Grey Microblading
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              Grey microblading correction is a structured process. The approach depends on the severity of the color shift, the depth of existing pigment, and your skin characteristics. Here's the standard protocol at Ink Mugi.
+              Grey microblading correction is a structured process. In our experience working with previously microbladed brows, earlier intervention usually makes the neutralization step more predictable because the old pigment has not had as much time to deepen into a stubborn blue-grey cast. The approach depends on the severity of the color shift, the depth of existing pigment, and your skin characteristics. Here's the standard protocol at Ink Mugi.
             </p>
           </AnimatedSection>
 

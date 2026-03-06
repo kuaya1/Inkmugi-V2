@@ -201,7 +201,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
                 old microblading has shifted grey, blue, or orange, a preliminary undertone neutralization session is performed before the overlay.
               </p>
               <p className="text-[#2D2D2B]/70">
-                Approximately <strong>35% of Ink Mugi's powder brow clients</strong> are transitioning from previous microblading — making this
+                In our practice, approximately <strong>35% of Ink Mugi's powder brow clients</strong> are transitioning from previous microblading — making this
                 one of our most-performed procedures. Most transitions require 1–2 sessions and deliver results lasting 18–36 months.
               </p>
             </div>
@@ -376,7 +376,8 @@ const PowderBrowsOverMicroblading: React.FC = () => {
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
               Powder brows over microblading follow the same general healing timeline as a fresh application, with a
-              few nuances specific to previously-treated skin.
+              few nuances specific to previously-treated skin. In our experience working with previously microbladed brows,
+              areas with older incision lines can heal a little more unevenly in the first week, but that rarely changes the final settled result.
             </p>
           </AnimatedSection>
 
