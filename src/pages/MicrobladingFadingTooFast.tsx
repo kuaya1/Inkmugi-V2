@@ -17,6 +17,7 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
 
 const MicrobladingFadingTooFast: React.FC = () => {
 
@@ -496,6 +497,9 @@ const MicrobladingFadingTooFast: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/microblading-fading-too-fast" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />

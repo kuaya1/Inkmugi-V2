@@ -16,6 +16,7 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
 
 const MicrobladingTurningGrey: React.FC = () => {
 
@@ -423,6 +424,9 @@ const MicrobladingTurningGrey: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/microblading-turning-grey" bgClass="bg-white" cardBgClass="bg-[#F9F7F5]" />

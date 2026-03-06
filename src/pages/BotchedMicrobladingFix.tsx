@@ -18,6 +18,7 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
 
 const BotchedMicrobladingFix: React.FC = () => {
 
@@ -454,6 +455,9 @@ const BotchedMicrobladingFix: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/botched-microblading-fix" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />

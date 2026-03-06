@@ -18,6 +18,9 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
+import BeforeAfterCase from '../components/BeforeAfterCase';
+import type { CasePhoto } from '../components/BeforeAfterCase';
 
 const MicrobladingRemovalVsCorrection: React.FC = () => {
 
@@ -509,6 +512,24 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Before/After Correction Cases */}
+      <BeforeAfterCase
+        title="Correction vs. Removal — Visual Comparison"
+        subtitle="See how powder brow correction compares to removal outcomes. Real client photos will be added as cases are completed."
+        cases={[
+          {
+            before: '',
+            after: '',
+            beforeAlt: 'Botched microblading before correction vs removal assessment in Northern Virginia',
+            afterAlt: 'Microblading corrected with powder brows instead of removal at Ink Mugi Annandale VA',
+            caption: 'Client chose powder brow correction over saline removal — faster recovery, immediate aesthetic improvement. Shown at 8 weeks healed.',
+          },
+        ] as CasePhoto[]}
+      />
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/microblading-removal-vs-correction" bgClass="bg-white" cardBgClass="bg-[#F9F7F5]" />

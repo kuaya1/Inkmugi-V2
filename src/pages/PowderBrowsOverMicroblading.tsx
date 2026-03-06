@@ -18,6 +18,9 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
+import BeforeAfterCase from '../components/BeforeAfterCase';
+import type { CasePhoto } from '../components/BeforeAfterCase';
 
 const PowderBrowsOverMicroblading: React.FC = () => {
 
@@ -464,6 +467,31 @@ const PowderBrowsOverMicroblading: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Before/After Correction Cases */}
+      <BeforeAfterCase
+        title="Powder Brows Over Microblading — Real Cases"
+        subtitle="Documented correction results from our Annandale studio. Real client photos will be added as cases are completed and healed."
+        cases={[
+          {
+            before: '',
+            after: '',
+            beforeAlt: 'Faded microblading before powder brow correction in Northern Virginia',
+            afterAlt: 'Powder brows over old microblading healed result at Ink Mugi Annandale VA',
+            caption: 'Faded, patchy microblading corrected with ombré powder brows. Client from Arlington, VA — shown at 8 weeks healed.',
+          },
+          {
+            before: '',
+            after: '',
+            beforeAlt: 'Grey microblading before correction with powder brows in Annandale VA',
+            afterAlt: 'Microblading correction before and after powder brows in Northern Virginia',
+            caption: 'Grey-shifted microblading neutralized with warm-spectrum corrector and powder overlay. Client from Fairfax — shown at 6 weeks healed.',
+          },
+        ] as CasePhoto[]}
+      />
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/powder-brows-over-microblading" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />

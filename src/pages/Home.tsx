@@ -793,6 +793,77 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
+          SECTION 8b — COMMON MICROBLADING PROBLEMS
+          Purpose: Internal-link hub distributing homepage authority into
+          problem-intent content cluster.
+          Tone: 20% Artistic / 30% Safe / 50% Data
+      ═══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-14 md:py-16 bg-white">
+        <div className="container-custom max-w-4xl">
+          <AnimatedSection className="text-center mb-8">
+            <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
+              Microblading Issues We Correct
+            </span>
+            <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-2">
+              Common Microblading Problems
+            </h2>
+            <p className="text-sm text-[#2D2D2B]/50 max-w-xl mx-auto">
+              Many clients come to us after experiencing issues with previous microblading. These guides explain what went wrong and how we correct it.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              {
+                to: '/microblading-turning-grey',
+                title: 'Microblading Turning Grey',
+                desc: 'Why pigment shifts to grey or ashy tones — and how correction restores natural warmth.',
+              },
+              {
+                to: '/patchy-microblading',
+                title: 'Patchy Microblading',
+                desc: 'Causes of uneven healing and how powder brows create consistent, lasting coverage.',
+              },
+              {
+                to: '/microblading-fading-too-fast',
+                title: 'Microblading Fading Too Fast',
+                desc: 'Skin type, climate, and technique factors that accelerate fading in the DMV.',
+              },
+              {
+                to: '/botched-microblading-fix',
+                title: 'Botched Microblading Fix',
+                desc: 'How we correct asymmetry, blurred strokes, color shift, and textural damage.',
+              },
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="bg-[#F9F7F5] rounded-xl p-5 hover:shadow-md transition-shadow group border border-[#E6DAD2]/30"
+              >
+                <h3 className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm mb-1">
+                  {item.title}
+                </h3>
+                <p className="text-xs text-[#2D2D2B]/50 leading-relaxed">{item.desc}</p>
+                <span className="inline-flex items-center text-xs text-[#9A7B69] font-medium mt-2 group-hover:gap-2 transition-all">
+                  Read guide <ArrowRight size={12} className="ml-1" />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <AnimatedSection className="text-center mt-6">
+            <Link
+              to="/microblading-problems"
+              className="inline-flex items-center gap-2 text-[#2D2D2B]/60 hover:text-[#2D2D2B] transition-colors duration-300 text-sm font-medium group"
+            >
+              <span>View all microblading problem guides</span>
+              <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 9 — SERVING NORTHERN VIRGINIA
           Emotional: "This studio is nearby and built for my community."
           SEO: Internal linking hub + geo-signal distribution.

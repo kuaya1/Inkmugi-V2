@@ -17,6 +17,7 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
 
 const PatchyMicroblading: React.FC = () => {
 
@@ -453,6 +454,9 @@ const PatchyMicroblading: React.FC = () => {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/patchy-microblading" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />

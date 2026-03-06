@@ -17,6 +17,9 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
+import AuthorBlock from '../components/AuthorBlock';
+import BeforeAfterCase from '../components/BeforeAfterCase';
+import type { CasePhoto } from '../components/BeforeAfterCase';
 
 const MicrobladingCorrectionCaseStudy: React.FC = () => {
 
@@ -353,6 +356,38 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Before/After Correction Cases */}
+      <BeforeAfterCase
+        title="Case Study Visual Evidence"
+        subtitle="Documented before-and-after results from real microblading correction cases at Ink Mugi. Photos will be added as cases complete healing."
+        cases={[
+          {
+            before: '',
+            after: '',
+            beforeAlt: 'Grey microblading correction case study before photo Northern Virginia',
+            afterAlt: 'Microblading correction case study healed result powder brows Annandale VA',
+            caption: 'Case 1: Grey-shifted microblading corrected with warm-spectrum neutralization and ombré powder overlay. 8 weeks healed.',
+          },
+          {
+            before: '',
+            after: '',
+            beforeAlt: 'Patchy microblading correction before photo at Ink Mugi studio',
+            afterAlt: 'Patchy microblading corrected with powder brows healed result Northern Virginia',
+            caption: 'Case 2: Patchy, uneven microblading restored with full-coverage powder brows. 6 weeks healed.',
+          },
+          {
+            before: '',
+            after: '',
+            beforeAlt: 'Color-shifted microblading before correction at Ink Mugi Annandale',
+            afterAlt: 'Microblading color correction healed result powder brows Northern Virginia',
+            caption: 'Case 3: Orange-shifted microblading neutralized and restored to natural warm brown. 10 weeks healed.',
+          },
+        ] as CasePhoto[]}
+      />
+
+      {/* Author Authority Block */}
+      <AuthorBlock variant="full" />
 
       {/* Hub Links */}
       <RelatedMicrobladingProblems currentPath="/microblading-correction-case-study" bgClass="bg-[#F9F7F5]" cardBgClass="bg-white" />
