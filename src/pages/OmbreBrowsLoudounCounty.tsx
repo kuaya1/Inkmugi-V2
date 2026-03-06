@@ -529,6 +529,33 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Loudoun County?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              With Loudoun County's growth and increasing demand for premium beauty services, many new residents are exploring brow procedures for the first time. If you're comparing microblading to powder brows, it's essential to understand how Northern Virginia's humid climate impacts technique longevity. The data is consistent: microblading fades 30–40% faster in our region than in arid climates, while powder brows maintain their gradient structure significantly longer.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              Whether you're in Ashburn, Leesburg, Sterling, or South Riding — the climate factor applies equally. Make an informed choice.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/why-microblading-fades" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Why Microblading Fades in the DMV</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ═══════════════════════════════════════════
           FINAL CTA — Assessment, Not Booking
       ═══════════════════════════════════════════ */}

@@ -391,6 +391,33 @@ const OmbreBrowsAlexandria: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Alexandria, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Alexandria's proximity to the Potomac waterfront means elevated humidity year-round — conditions that compound microblading's vulnerability to moisture-driven pigment displacement. Whether you're in Old Town, Del Ray, or the West End, the hyper-local climate conditions create faster fading than most microblading providers acknowledge. Our correction clients from Alexandria consistently report their microblading lasting only 6–10 months.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              Ombré powder brows use a sealed-dot deposit technique that anchors pigment 2–3x longer under the same conditions. See the data behind the difference.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/microblading-correction-northern-virginia" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading Correction in Northern Virginia</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* We Also Serve - Cross-links */}
       <section className="py-16 bg-[#F9F7F5]">
         <div className="container-custom">

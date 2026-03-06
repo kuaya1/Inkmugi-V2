@@ -570,6 +570,33 @@ const OmbreBrowsCentreville: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Centreville, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Centreville families and professionals deserve accurate information about brow procedures before investing. Microblading's shallow, blade-based technique fades significantly faster in Northern Virginia's humid climate than what's typically advertised — often lasting less than a year. Our data from Centreville-area correction clients confirms the same patterns we see across western Fairfax County.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              Ombré powder brows offer a more sustainable solution, with 18–36 month retention even in our challenging climate. Compare the techniques and costs before you decide.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/microblading-correction-northern-virginia" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading Correction in Northern Virginia</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 bg-[#2D2D2B] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://live.staticflickr.com/65535/54363160242_7975c4f42c_o_d.jpg')] bg-cover bg-center opacity-10" />

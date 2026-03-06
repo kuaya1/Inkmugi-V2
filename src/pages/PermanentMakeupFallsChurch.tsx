@@ -383,6 +383,33 @@ const PermanentMakeupFallsChurch: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Falls Church, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Falls Church clients — just minutes from our Annandale studio — frequently ask about microblading vs powder brows. Our honest recommendation: in the DMV's humid climate, microblading simply doesn't deliver the longevity that most providers advertise. Falls Church's location between DC and the NoVA suburbs means exposure to the region's full humidity profile, which actively pushes shallow microblading pigment out of the skin.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              We'd rather explain the science upfront than have you return disappointed in 6 months. Read the evidence before choosing your technique.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/microblading-correction-northern-virginia" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading Correction in Northern Virginia</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* We Also Serve - Cross-links */}
       <section className="py-16 bg-[#FFFAF5]">
         <div className="container-custom">

@@ -695,6 +695,33 @@ const OmbreBrowsMcLean: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in McLean, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              McLean clients expect premium results that match their investment. Unfortunately, microblading in the DMV's humid climate often delivers the opposite — premature fading, color shift to grey/ashy tones, and the need for costly annual touch-ups. Our McLean clientele consistently report microblading lasting only 8–12 months, while ombré powder brows deliver 18–36 months of clean, gradient structure under the same conditions.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              For the discerning McLean professional who values both aesthetics and efficiency, see the data on why technique selection matters more than most providers acknowledge.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/why-microblading-fades" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Why Microblading Fades in the DMV</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ═══════════════════════════════════════════
           CTA — Calm, non-aggressive
           Emotional goal: "I'm ready because I feel informed."

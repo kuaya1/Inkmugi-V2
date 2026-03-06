@@ -390,6 +390,33 @@ const PermanentMakeupAnnandale: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Annandale, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              As Annandale's local PMU studio, we see firsthand how Northern Virginia's climate affects brow procedures. Many clients come to us after unsatisfying microblading experiences — often from other providers in the Annandale–Fairfax corridor — seeking correction or transition to a more durable technique. The pattern is consistent: microblading's shallow incisions can't withstand our humid summers.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              We specialize in ombré powder brows precisely because they deliver 2–3x longer results in our climate. If you're comparing techniques, our evidence-based guides will help you make the right choice.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/microblading-for-oily-skin" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading & Oily Skin: What to Know</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* We Also Serve - Cross-links */}
       <section className="py-16 bg-[#F9F7F5]">
         <div className="container-custom">

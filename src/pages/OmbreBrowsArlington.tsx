@@ -391,6 +391,33 @@ const OmbreBrowsArlington: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Arlington, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Arlington's fitness-focused, active community — runners along the Potomac trails, CrossFit enthusiasts, outdoor-lifestyle professionals — creates a lifestyle profile that's particularly challenging for microblading. Frequent perspiration, combined with the DMV's 65–85% summer humidity, accelerates pigment displacement from microblading's shallow incisions. We consistently see Arlington clients needing touch-ups within 6–10 months.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              Ombré powder brows offer 2–3x the longevity under the same conditions. Before committing to microblading, explore the science behind why it may not be the best fit for your lifestyle and climate.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/why-microblading-fades" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Why Microblading Fades in the DMV</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* We Also Serve - Cross-links */}
       <section className="py-16 bg-[#F9F7F5]">
         <div className="container-custom">

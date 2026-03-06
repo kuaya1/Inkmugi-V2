@@ -383,6 +383,33 @@ const PermanentMakeupSpringfield: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Springfield, VA?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Springfield's location in southern Fairfax County puts it squarely in the DMV's humidity corridor. Clients from Springfield, Burke, and the surrounding communities experience the same climate-driven microblading challenges as the rest of NoVA — premature fading, color shift, and patchy retention. Our correction data shows this is especially pronounced for clients with combination or oily skin.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              If you're comparing brow procedures, explore what the evidence says about technique performance in our specific climate and skin conditions.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/microblading-for-oily-skin" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading & Oily Skin: What to Know</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* We Also Serve - Cross-links */}
       <section className="py-16 bg-[#F9F7F5]">
         <div className="container-custom">

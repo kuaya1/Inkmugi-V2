@@ -433,6 +433,33 @@ const PermanentMakeupDC: React.FC = () => {
         </div>
       </section>
 
+      {/* Microblading vs Powder Brows — Local Comparison */}
+      <section className="py-20 bg-white">
+        <div className="container-custom max-w-3xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
+              Considering Microblading in Washington, DC?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              DC's combination of urban heat island effect, Potomac Basin humidity (65–85% in summer), and the active, commuter-heavy lifestyle of its residents creates some of the most challenging conditions for microblading longevity in the mid-Atlantic. Our DC correction clients frequently report microblading fading within 6–8 months — well short of the 12–18 months typically promised.
+            </p>
+            <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
+              Whether you're in Capitol Hill, Georgetown, Dupont Circle, or the H Street Corridor — the climate pressure is consistent. Before investing in microblading, see the data on how different brow techniques perform in our specific environment.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
+              </Link>
+              <Link to="/why-microblading-fades" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+                <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                <span className="text-[#2D2D2B] text-sm font-medium">Why Microblading Fades in the DMV</span>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* We Also Serve - Cross-links */}
       <section className="py-16 bg-[#F9F7F5]">
         <div className="container-custom">
