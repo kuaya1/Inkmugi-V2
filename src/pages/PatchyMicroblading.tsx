@@ -23,7 +23,7 @@ const PatchyMicroblading: React.FC = () => {
   const faqs = [
     {
       question: "Why is my microblading patchy after healing?",
-      answer: "Patchy microblading after healing is caused by uneven pigment retention across the brow area. The top five causes are: (1) inconsistent blade depth during application — some strokes penetrate the ideal dermal-epidermal junction while others sit too shallow or too deep, (2) oily skin overproducing sebum that pushes pigment out of shallow incisions during healing, (3) the normal 'ghost phase' at weeks 2–4 where surface pigment exfoliates and the healed result looks lighter or patchy before the deeper pigment settles, (4) picking, scratching, or premature scab removal during healing pulling pigment out of specific areas, and (5) uneven aftercare product application where some areas received proper ointment coverage and others dried out or were exposed to moisture. We frequently see the gaps follow the oiliest sections of the brow rather than appearing at random."
+      answer: "Patchy microblading after healing is caused by uneven pigment retention across the brow area. The top five causes are: (1) inconsistent blade depth during application — some strokes penetrate the ideal dermal-epidermal junction while others sit too shallow or too deep, (2) oily skin overproducing sebum that pushes pigment out of shallow incisions during healing, (3) the normal 'ghost phase' at weeks 2–4 where surface pigment exfoliates and the healed result looks lighter or patchy before the deeper pigment settles, (4) picking, scratching, or premature scab removal during healing pulling pigment out of specific areas, and (5) uneven aftercare product application where some areas received proper ointment coverage and others dried out or were exposed to moisture. We frequently see the gaps follow the oiliest sections of the brow rather than appearing at random, which is one of the first clues we use when evaluating whether this is a skin-type issue or a technique issue."
     },
     {
       question: "Is it normal for microblading to look patchy at first?",
@@ -196,7 +196,7 @@ const PatchyMicroblading: React.FC = () => {
                 Microblading heals patchy when <strong>pigment retention is uneven across the brow</strong> — some areas hold pigment well while others lose it partially or completely during healing. The five primary causes are: inconsistent blade depth, oily skin sebum interference, aftercare inconsistencies, normal ghost-phase healing (temporary), and scar tissue from previous work.
               </p>
               <p className="text-[#2D2D2B]/70">
-                If your microblading is still within 4–6 weeks, wait — the "ghost phase" may resolve. If patchiness persists past 8 weeks, <strong>powder brow correction</strong> provides the most reliable fix because it delivers consistent coverage independent of the individual variables that caused microblading to fail.
+                If your microblading is still within 4–6 weeks, wait — the "ghost phase" may resolve. If patchiness persists past 8 weeks, <strong>powder brow correction</strong> provides the most reliable fix because it delivers consistent coverage independent of the individual variables that caused microblading to fail. By that point, what we are seeing in consultation is usually true retention pattern — not temporary healing drama.
               </p>
             </div>
           </AnimatedSection>
@@ -211,7 +211,7 @@ const PatchyMicroblading: React.FC = () => {
               Ghost Phase vs. Permanent Patchiness
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              Before diagnosing your microblading as patchy, you need to know where you are in the healing timeline. Not all patchiness is permanent — but not all of it resolves, either.
+              Before diagnosing your microblading as patchy, you need to know where you are in the healing timeline. This timing question is one of the first things we sort out in follow-up assessments because not all patchiness is permanent — but not all of it resolves, either.
             </p>
           </AnimatedSection>
 
@@ -360,7 +360,7 @@ const PatchyMicroblading: React.FC = () => {
               How We Fix Patchy Microblading
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              The powder brow technique is specifically engineered to solve the retention problems that cause patchy microblading. In our experience working with previously microbladed brows, the most natural corrections come from evening out the entire brow rather than chasing each individual gap. Here's why it works where microblading failed.
+              The powder brow technique is specifically engineered to solve the retention problems that cause patchy microblading. In our experience working with previously microbladed brows, the most natural corrections come from evening out the entire brow rather than chasing each individual gap. That wider reset is usually what makes the healed result look polished again. Here's why it works where microblading failed.
             </p>
           </AnimatedSection>
 

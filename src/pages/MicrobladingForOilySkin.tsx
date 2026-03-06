@@ -21,7 +21,7 @@ const MicrobladingForOilySkin: React.FC = () => {
   const faqs = [
     {
       question: "Why doesn't microblading work well on oily skin?",
-      answer: "Microblading deposits pigment into shallow incisions cut into the epidermis. On oily skin, the continuous production of sebum (skin oil) pushes pigment out of these shallow cuts during the healing process and beyond. The result: strokes blur, fade unevenly, and lose definition rapidly. Oil production also prevents the incisions from forming the crisp, defined edges that make microblading look realistic. This isn't a technique error — it's a fundamental limitation of blade-based pigment delivery on active oil-producing skin."
+      answer: "Microblading deposits pigment into shallow incisions cut into the epidermis. On oily skin, the continuous production of sebum (skin oil) pushes pigment out of these shallow cuts during the healing process and beyond. In correction consultations, this is one of the clearest patterns we see: the client loved the fresh strokes, but the healed result softened and spread far faster than expected. The result: strokes blur, fade unevenly, and lose definition rapidly. Oil production also prevents the incisions from forming the crisp, defined edges that make microblading look realistic. This isn't a technique error — it's a fundamental limitation of blade-based pigment delivery on active oil-producing skin."
     },
     {
       question: "How long does microblading last on oily skin?",
@@ -133,7 +133,7 @@ const MicrobladingForOilySkin: React.FC = () => {
               <span className="text-amber-700">Why It Fails & What Works</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Data from 187 oily-skin clients shows powder brows last 340% longer than microblading. Here's the science behind the difference — and what it means for your results.
+              Data from 187 oily-skin clients shows powder brows last 340% longer than microblading. Here's the science behind the difference — and what it means for your results if your brow area gets shiny by midday or your makeup never stays put.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
               By a Virginia-licensed PMU artist with 330+ procedures in the humid DMV climate
@@ -170,7 +170,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 <strong>Microblading on oily skin lasts an average of 8 months.</strong> Ombré powder brows on the same skin type last an average of <strong>28 months</strong> — a 340% improvement in retention. This data is from 187 oily-skin clients tracked since 2021 at our Annandale, Virginia studio.
               </p>
               <p className="text-[#2D2D2B]/70">
-                In the DMV's humid climate (65–85% summer humidity), the difference is even more pronounced. If you have oily skin and are considering permanent brows, this is the most important factor in your decision.
+                In the DMV's humid climate (65–85% summer humidity), the difference is even more pronounced. Working with clients across Northern Virginia, we see many people identify as "combination" skin overall but still behave like classic oily-skin brow candidates once humidity hits. If you have oily skin and are considering permanent brows, this is the most important factor in your decision.
               </p>
             </div>
           </AnimatedSection>
@@ -185,7 +185,7 @@ const MicrobladingForOilySkin: React.FC = () => {
               The Science: Why Microblading Fails on Oily Skin
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              This isn't opinion — it's dermatology. Understanding why microblading struggles with oily skin requires knowing how the technique deposits pigment and how sebum production interferes with that process.
+              This isn't opinion — it's dermatology. In practice, the healed brows usually confirm the science: the oiliest areas blur first, fade first, and are the areas clients keep penciling in. Understanding why microblading struggles with oily skin requires knowing how the technique deposits pigment and how sebum production interferes with that process.
             </p>
           </AnimatedSection>
 
@@ -416,7 +416,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 <div>
                   <h4 className="font-medium text-[#2D2D2B] mb-2">Not Sure? Get a Professional Assessment</h4>
                   <p className="text-[#2D2D2B]/80 text-sm">
-                    During your free consultation at Ink Mugi, we assess oil production specifically in your brow area — not just your overall skin type. We use this assessment alongside your lifestyle, climate exposure, and aesthetic goals to recommend the technique that will produce the best long-term result. <Link to="/booking" className="text-amber-700 font-medium hover:underline">Book your free consultation →</Link>
+                    During your free consultation at Ink Mugi, we assess oil production specifically in your brow area — not just your overall skin type. That brow-specific assessment matters because many clients have normal cheeks and oily foreheads, which changes the recommendation completely. We use this assessment alongside your lifestyle, climate exposure, and aesthetic goals to recommend the technique that will produce the best long-term result. <Link to="/booking" className="text-amber-700 font-medium hover:underline">Book your free consultation →</Link>
                   </p>
                 </div>
               </div>

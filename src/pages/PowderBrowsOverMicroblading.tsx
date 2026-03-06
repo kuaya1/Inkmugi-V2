@@ -24,7 +24,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
   const faqs = [
     {
       question: "Can powder brows cover old microblading?",
-      answer: "Yes, in most cases. Powder brows can be applied over old, faded, or partially retained microblading. The stippled dot technique creates an even surface layer that conceals the underlying hairstrokes. Before application, we evaluate the existing pigment — if there's significant color shift (grey, blue, or orange), we perform an undertone neutralization session first to ensure the old color doesn't interfere with the new overlay. At Ink Mugi, approximately 35% of our powder brow clients are transitioning from previous microblading."
+      answer: "Yes, in most cases. Powder brows can be applied over old, faded, or partially retained microblading. The stippled dot technique creates an even surface layer that conceals the underlying hairstrokes. Before application, we evaluate the existing pigment — if there's significant color shift (grey, blue, or orange), we perform an undertone neutralization session first to ensure the old color doesn't interfere with the new overlay. At Ink Mugi, approximately 35% of our powder brow clients are transitioning from previous microblading, so this is a treatment plan we build around regularly rather than occasionally."
     },
     {
       question: "Do I need removal before getting powder brows over microblading?",
@@ -217,7 +217,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               Why People Move From Microblading to Powder Brows
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              The transition from microblading to powder brows isn't a failure — it's an upgrade. Here are the most common reasons
+              The transition from microblading to powder brows isn't a failure — it's an upgrade. Many of the clients we see here are not looking for something trendy; they simply want healed brows that behave more predictably than their previous microblading. Here are the most common reasons
               our clients make the switch.
             </p>
           </AnimatedSection>
@@ -321,7 +321,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               The Process: Powder Brows Over Microblading
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Here's exactly what to expect when transitioning from microblading to powder brows at Ink Mugi.
+              Here's exactly what to expect when transitioning from microblading to powder brows at Ink Mugi. The process is deliberate because previously treated brows require more planning than fresh skin.
             </p>
           </AnimatedSection>
 

@@ -24,7 +24,7 @@ const BotchedMicrobladingFix: React.FC = () => {
   const faqs = [
     {
       question: "What counts as botched microblading?",
-      answer: "Botched microblading refers to any result that significantly deviates from the desired outcome in shape, symmetry, color, or texture. Common presentations include: (1) severe asymmetry where one brow is noticeably different in height, length, or arch position, (2) unnatural or harsh shape that doesn't complement the client's bone structure, (3) color shift to grey, blue, orange, or red, (4) blurred or 'blown-out' strokes where individual hairstrokes have bled together into smudges, (5) scarring from excessive pressure during application, and (6) uneven pigment density with patchy or over-saturated areas. If looking at your brows causes frustration or embarrassment, that's a meaningful signal regardless of the technical classification, and many clients come in feeling that way even when the issue is a very specific, correctable problem like undertone shift or asymmetry."
+      answer: "Botched microblading refers to any result that significantly deviates from the desired outcome in shape, symmetry, color, or texture. Common presentations include: (1) severe asymmetry where one brow is noticeably different in height, length, or arch position, (2) unnatural or harsh shape that doesn't complement the client's bone structure, (3) color shift to grey, blue, orange, or red, (4) blurred or 'blown-out' strokes where individual hairstrokes have bled together into smudges, (5) scarring from excessive pressure during application, and (6) uneven pigment density with patchy or over-saturated areas. If looking at your brows causes frustration or embarrassment, that's a meaningful signal regardless of the technical classification, and many clients come in feeling that way even when the issue is a very specific, correctable problem like undertone shift or asymmetry. Part of experienced correction work is separating the emotional frustration from the technical issue so the fix can be planned properly."
     },
     {
       question: "Can botched microblading be fixed?",
@@ -202,7 +202,7 @@ const BotchedMicrobladingFix: React.FC = () => {
                 Botched microblading is fixed through a <strong>multi-step correction protocol</strong>: first, the specific problem is diagnosed (color shift, shape error, blurred strokes, or over-saturation). Then, targeted correction is applied — undertone neutralization for color issues, saline lightening for shape/density problems — followed by a powder brow overlay that provides natural, stable coverage over the original work.
               </p>
               <p className="text-[#2D2D2B]/70">
-                Most corrections take <strong>2–3 sessions</strong> spaced 6–8 weeks apart and result in natural-looking powder brows that last 2–3x longer than the original microblading.
+                Most corrections take <strong>2–3 sessions</strong> spaced 6–8 weeks apart and result in natural-looking powder brows that last 2–3x longer than the original microblading. In practice, the timeline is less about rushing to cover the old work and more about letting each correction step heal cleanly so the next one is predictable.
               </p>
             </div>
           </AnimatedSection>
@@ -261,7 +261,7 @@ const BotchedMicrobladingFix: React.FC = () => {
               Why Does Microblading Go Wrong?
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Understanding the root causes helps you make informed decisions about correction and future procedures.
+              Understanding the root causes helps you make informed decisions about correction and future procedures. This diagnostic step matters because two bad-looking brows can require completely different correction plans.
             </p>
           </AnimatedSection>
 
@@ -337,7 +337,7 @@ const BotchedMicrobladingFix: React.FC = () => {
               The Ink Mugi Correction Process
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              Correcting botched microblading is more complex than a new procedure — it requires diagnostic skill, color theory expertise, and experience working with previously treated skin. A common situation we see is a client assuming she needs full removal when the real issue is isolated shape drift or grey shift, so the first step is always diagnosis. Here's exactly how we approach each correction case.
+              Correcting botched microblading is more complex than a new procedure — it requires diagnostic skill, color theory expertise, and experience working with previously treated skin. A common situation we see is a client assuming she needs full removal when the real issue is isolated shape drift or grey shift, so the first step is always diagnosis. This is where practitioner experience matters most, because the wrong first move can cost months. Here's exactly how we approach each correction case.
             </p>
           </AnimatedSection>
 

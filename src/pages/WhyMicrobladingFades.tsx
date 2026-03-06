@@ -23,7 +23,7 @@ const WhyMicrobladingFades: React.FC = () => {
   const faqs = [
     {
       question: "How long does microblading last before fading?",
-      answer: "Microblading typically begins showing visible fading between 6–18 months after the procedure, depending on skin type, climate, and lifestyle. In the DMV area's humid climate, we observe microblading fading faster than national averages — typically 8–12 months for normal skin and as few as 6–8 months for oily skin. Powder brows, by comparison, maintain their appearance for 18–36 months under the same conditions."
+      answer: "Microblading typically begins showing visible fading between 6–18 months after the procedure, depending on skin type, climate, and lifestyle. In the DMV area's humid climate, we observe microblading fading faster than national averages — typically 8–12 months for normal skin and as few as 6–8 months for oily skin. In correction work, those shorter timelines are often what bring clients back through the door. Powder brows, by comparison, maintain their appearance for 18–36 months under the same conditions."
     },
     {
       question: "Why is my microblading turning grey?",
@@ -174,7 +174,7 @@ const WhyMicrobladingFades: React.FC = () => {
               <span className="text-amber-700">The Science Behind Pigment Loss</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Six biological, chemical, and environmental factors explain why microblading fades — and why some climates and skin types make it fade dramatically faster.
+              Six biological, chemical, and environmental factors explain why microblading fades — and why some climates and skin types make it fade dramatically faster. This is the same framework we use when a client asks us to assess whether fading is normal, preventable, or a sign the technique was never a good match.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
               By a Virginia-licensed PMU artist with 330+ procedures • Includes DMV-specific climate data
@@ -211,7 +211,7 @@ const WhyMicrobladingFades: React.FC = () => {
                 Microblading fades because pigment deposited in shallow skin incisions is gradually displaced by six factors: <strong>natural skin cell turnover</strong>, <strong>pigment oxidation</strong> (causing grey/ashy color shift), <strong>sebum production</strong> (oily skin pushes pigment out), <strong>UV radiation</strong>, <strong>humidity and climate</strong>, and your body's <strong>immune response</strong>.
               </p>
               <p className="text-[#2D2D2B]/70">
-                In the DMV's humid climate, these factors compound — causing microblading to fade 30–40% faster than in arid environments. The technique's shallow, incision-based deposit method makes it inherently more vulnerable to these forces than stippled techniques like powder brows.
+                In the DMV's humid climate, these factors compound — causing microblading to fade 30–40% faster than in arid environments. In our experience, clients usually do not notice just one fading mechanism; they notice a combination of oil, sun, workouts, skincare, and seasonal humidity all stacking together. The technique's shallow, incision-based deposit method makes it inherently more vulnerable to these forces than stippled techniques like powder brows.
               </p>
             </div>
           </AnimatedSection>
@@ -329,7 +329,7 @@ const WhyMicrobladingFades: React.FC = () => {
               Typical Microblading Fading Timeline (DMV Climate)
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              Here's what most DMV-area clients experience with microblading over time — based on cases we've assessed for correction.
+              Here's what most DMV-area clients experience with microblading over time — based on cases we've assessed for correction. The timeline matters because it helps separate normal healing from the early signs that the brows are heading toward a correction case.
             </p>
           </AnimatedSection>
 
@@ -373,7 +373,7 @@ const WhyMicrobladingFades: React.FC = () => {
           <AnimatedSection className="mt-8" delay={7}>
             <div className="bg-[#F9F7F5] p-6 rounded-xl border border-[#E6DAD2]">
               <p className="text-[#2D2D2B]/80 text-sm">
-                <strong>Compare: Ombré powder brows</strong> typically maintain their gradient structure and color through Month 18–36 before requiring a refresh. The fading that does occur is uniform — getting gradually lighter rather than patchy or color-shifted. Learn more in our{' '}
+                <strong>Compare: Ombré powder brows</strong> typically maintain their gradient structure and color through Month 18–36 before requiring a refresh. That more uniform fade pattern is one of the main reasons we recommend them for clients who want predictable healed results rather than repeated troubleshooting. Learn more in our{' '}
                 <Link to="/microblading-vs-powder-brows" className="text-amber-700 font-medium hover:underline">complete technique comparison</Link>.
               </p>
             </div>

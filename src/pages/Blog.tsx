@@ -222,7 +222,7 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
               Permanent Makeup Insights
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto">
-              Expert guides, tutorials, and industry knowledge to help you understand the world of PMU
+              Expert guides, tutorials, and practitioner insights shaped by real client consultations, healed results, and correction work across Northern Virginia.
             </p>
           </AnimatedSection>
 

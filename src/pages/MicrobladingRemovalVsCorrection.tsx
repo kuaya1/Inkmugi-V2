@@ -24,7 +24,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
   const faqs = [
     {
       question: "Is it better to remove or correct bad microblading?",
-      answer: "In the majority of cases, correction is the better option. Correction takes fewer sessions (2–3 vs 4–8+), costs less overall, has a shorter total timeline (3–5 months vs 12–24 months), and you leave with beautiful brows rather than bare skin. Removal is only preferred when: (1) the old pigment has shifted to a color that neutralization cannot adequately counter, (2) the old shape is dramatically wrong and extends well beyond any workable boundary, or (3) the client specifically wants all pigment removed with no new procedure. In our correction consultations, approximately 80% of clients proceed with correction rather than removal."
+      answer: "In the majority of cases, correction is the better option. Correction takes fewer sessions (2–3 vs 4–8+), costs less overall, has a shorter total timeline (3–5 months vs 12–24 months), and you leave with beautiful brows rather than bare skin. Removal is only preferred when: (1) the old pigment has shifted to a color that neutralization cannot adequately counter, (2) the old shape is dramatically wrong and extends well beyond any workable boundary, or (3) the client specifically wants all pigment removed with no new procedure. In our correction consultations, approximately 80% of clients proceed with correction rather than removal because, once we map the options clearly, the tradeoffs are usually obvious."
     },
     {
       question: "Can grey microblading be corrected without removal?",
@@ -232,6 +232,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
               Correction transforms problematic microblading into beautiful powder brows without removing the old pigment. This is the
               preferred approach for most cases because it's faster, cheaper, and leaves you with finished results.
+              In practice, it also lets us preserve workable structure instead of erasing everything indiscriminately.
             </p>
           </AnimatedSection>
 
@@ -301,6 +302,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
             <p className="text-white/70 text-lg leading-relaxed mb-8">
               When correction isn't possible or the client wants all pigment removed, two removal methods are available. Each has
               significant limitations that correction avoids.
+              This is why we treat removal as a strategic tool, not the automatic first recommendation.
             </p>
           </AnimatedSection>
 

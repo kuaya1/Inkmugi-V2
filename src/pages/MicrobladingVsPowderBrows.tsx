@@ -24,7 +24,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
   const faqs = [
     {
       question: "What is the main difference between microblading and powder brows?",
-      answer: "Microblading uses a handheld blade to create hair-like incisions in the skin, depositing pigment into shallow cuts. Powder brows (also called ombré powder brows) use a digital machine to stipple thousands of tiny dots beneath the skin surface, creating a soft, makeup-like gradient. The key difference is depth and technique: microblading cuts into the epidermis while powder brows deposit pigment through controlled dot-work beneath it. This fundamental distinction drives the differences in longevity, skin type compatibility, and healed appearance."
+      answer: "Microblading uses a handheld blade to create hair-like incisions in the skin, depositing pigment into shallow cuts. Powder brows (also called ombré powder brows) use a digital machine to stipple thousands of tiny dots beneath the skin surface, creating a soft, makeup-like gradient. In consultations, this is usually the first distinction we explain because it predicts how the brows will heal months later — not just how they look on day one. The key difference is depth and technique: microblading cuts into the epidermis while powder brows deposit pigment through controlled dot-work beneath it. This fundamental distinction drives the differences in longevity, skin type compatibility, and healed appearance."
     },
     {
       question: "Which lasts longer — microblading or powder brows?",
@@ -182,7 +182,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
                 <strong> Powder brows</strong> (ombré brows) use a machine to deposit thousands of tiny pigment dots beneath the skin, creating a soft, gradient makeup effect.
               </p>
               <p className="text-[#2D2D2B]/80 text-lg">
-                The bottom line: Powder brows last 2–3x longer, perform significantly better on oily skin, and maintain their appearance more reliably in the humid DMV climate. Microblading can look beautiful initially but is more prone to fading, blurring, and color shifting over time.
+                The bottom line: Powder brows last 2–3x longer, perform significantly better on oily skin, and maintain their appearance more reliably in the humid DMV climate. In our studio, this is exactly why so many correction clients eventually transition away from manual hairstrokes. Microblading can look beautiful initially but is more prone to fading, blurring, and color shifting over time.
               </p>
             </div>
           </AnimatedSection>
@@ -296,7 +296,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
               Why Powder Brows Outperform Microblading in Northern Virginia's Climate
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-6">
-              The Washington DC metropolitan area presents specific challenges for permanent makeup longevity. Understanding these factors is essential before choosing between microblading and powder brows.
+              The Washington DC metropolitan area presents specific challenges for permanent makeup longevity. After years of seeing how brows heal through DMV summers, winters, workouts, and commuting, we treat climate as a real design factor — not an afterthought. Understanding these factors is essential before choosing between microblading and powder brows.
             </p>
           </AnimatedSection>
 
@@ -412,7 +412,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
                 <div>
                   <h4 className="font-medium text-[#2D2D2B] mb-2">Honest Perspective</h4>
                   <p className="text-[#2D2D2B]/80">
-                    We specialize in ombré powder brows — not microblading — because our data consistently shows superior outcomes for DMV-area clients across all skin types. If after reading this comparison you believe microblading is right for you, we respect that choice. Our goal is informed decision-making, not pressure.
+                    We specialize in ombré powder brows — not microblading — because our data consistently shows superior outcomes for DMV-area clients across all skin types. Many clients only realize this after living with blurred or short-lived microblading, which is why we prefer to explain the tradeoffs upfront. If after reading this comparison you believe microblading is right for you, we respect that choice. Our goal is informed decision-making, not pressure.
                   </p>
                 </div>
               </div>

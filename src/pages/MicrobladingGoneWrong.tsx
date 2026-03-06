@@ -22,7 +22,7 @@ const MicrobladingGoneWrong: React.FC = () => {
   const faqs = [
     {
       question: "What should I do immediately if my microblading looks wrong?",
-      answer: "First, don't panic. Many clients come in convinced something is wrong during the first 3–7 days, but most microblading looks significantly darker and more intense at that stage and this is completely normal. Do not touch, pick, scratch, or apply any products not included in your aftercare kit. Do not attempt DIY removal with saline, hydrogen peroxide, or any other substance. Follow your aftercare instructions exactly. Wait a minimum of 4–6 weeks for the full healing cycle before evaluating the result. If the result still looks wrong after full healing, schedule a consultation with a correction specialist."
+      answer: "First, don't panic. Many clients come in convinced something is wrong during the first 3–7 days, but most microblading looks significantly darker and more intense at that stage and this is completely normal. In follow-up conversations, we spend a lot of time separating normal healing from true failure because those two situations feel very similar emotionally in the first week. Do not touch, pick, scratch, or apply any products not included in your aftercare kit. Do not attempt DIY removal with saline, hydrogen peroxide, or any other substance. Follow your aftercare instructions exactly. Wait a minimum of 4–6 weeks for the full healing cycle before evaluating the result. If the result still looks wrong after full healing, schedule a consultation with a correction specialist."
     },
     {
       question: "How long should I wait before trying to fix bad microblading?",
@@ -205,7 +205,7 @@ const MicrobladingGoneWrong: React.FC = () => {
                 <strong>If you're still in the healing phase (0–6 weeks):</strong> Don't panic. Microblading looks significantly darker and more intense in the first week, then goes through a patchy "ugly duckling" phase before settling. Wait for full healing before evaluating.
               </p>
               <p className="text-[#2D2D2B]/70">
-                <strong>If you're fully healed and the result is wrong:</strong> Most microblading problems — grey color, blurred strokes, asymmetry, and rapid fading — are correctable through professional powder brow correction. In our correction consultations, once the skin is truly healed, the pattern of the problem is usually very clear and so is the next step. Wait 8–12 weeks post-procedure, then consult a correction specialist.
+                <strong>If you're fully healed and the result is wrong:</strong> Most microblading problems — grey color, blurred strokes, asymmetry, and rapid fading — are correctable through professional powder brow correction. In our correction consultations, once the skin is truly healed, the pattern of the problem is usually very clear and so is the next step. That clarity is why we advise waiting rather than reacting too early. Wait 8–12 weeks post-procedure, then consult a correction specialist.
               </p>
             </div>
           </AnimatedSection>
@@ -220,7 +220,7 @@ const MicrobladingGoneWrong: React.FC = () => {
               Immediate Steps After Bad Microblading
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mb-8 text-lg">
-              Whether you're still healing or fully healed and unhappy — follow this checklist before taking any action.
+              Whether you're still healing or fully healed and unhappy — follow this checklist before taking any action. These are the same steps we walk through when someone sends us worried photos after a recent appointment.
             </p>
           </AnimatedSection>
 
@@ -306,7 +306,7 @@ const MicrobladingGoneWrong: React.FC = () => {
               How Microblading Can Be Corrected
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Powder brow correction is the gold-standard solution for failed microblading. The digital machine technique provides the consistency, depth control, and color stability that manual blade microblading lacks.
+              Powder brow correction is the gold-standard solution for failed microblading. The digital machine technique provides the consistency, depth control, and color stability that manual blade microblading lacks. In practical terms, that means fewer surprises at the healed stage and a more controllable correction process.
             </p>
           </AnimatedSection>
 

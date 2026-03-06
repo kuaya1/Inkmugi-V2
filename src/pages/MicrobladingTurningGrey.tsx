@@ -22,7 +22,7 @@ const MicrobladingTurningGrey: React.FC = () => {
   const faqs = [
     {
       question: "Why is my microblading turning grey?",
-      answer: "In many correction consultations we see grey or blue-grey color shift caused by pigment oxidation — a chemical process where iron oxide particles in the pigment change their molecular structure over time. Three primary factors drive this: (1) pigment deposited too deep into the dermis where it refracts differently through skin layers, (2) use of pigments with a cool-dominant base that shifts further cool as warm undertones oxidize out, and (3) UV exposure and moisture (both abundant in the DMV climate) accelerating the oxidation rate. The result is that what started as a warm brown appears grey, blue, or ashy."
+      answer: "In many correction consultations we see grey or blue-grey color shift caused by pigment oxidation — a chemical process where iron oxide particles in the pigment change their molecular structure over time. Three primary factors drive this: (1) pigment deposited too deep into the dermis where it refracts differently through skin layers, (2) use of pigments with a cool-dominant base that shifts further cool as warm undertones oxidize out, and (3) UV exposure and moisture (both abundant in the DMV climate) accelerating the oxidation rate. The result is that what started as a warm brown appears grey, blue, or ashy, which is why clients often tell us their brows suddenly started looking \"cold\" in photos before they looked obviously grey in the mirror."
     },
     {
       question: "Can grey microblading be corrected?",
@@ -199,7 +199,7 @@ const MicrobladingTurningGrey: React.FC = () => {
                 Microblading turns grey because of <strong>pigment oxidation</strong> — a chemical process where iron oxide particles in the pigment lose their warm-toned components and reveal cool undertones. The five factors that drive this shift are: iron oxide chemistry, excessive placement depth, cool-base pigment formulation, UV radiation, and humidity-driven moisture infiltration.
               </p>
               <p className="text-[#2D2D2B]/70">
-                In the DMV's humid climate, grey color shift occurs 40–50% faster than in arid environments. The good news: <strong>grey microblading is correctable</strong> through undertone neutralization and powder brow overlay — typically in 1–2 sessions.
+                In the DMV's humid climate, grey color shift occurs 40–50% faster than in arid environments. In practice, earlier correction is usually simpler because we are working against a lighter, less stubborn cast. The good news: <strong>grey microblading is correctable</strong> through undertone neutralization and powder brow overlay — typically in 1–2 sessions.
               </p>
             </div>
           </AnimatedSection>
@@ -274,7 +274,7 @@ const MicrobladingTurningGrey: React.FC = () => {
               The Chemistry Behind Grey Microblading
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Understanding the science helps you evaluate whether your grey shift is correctable and what approach to expect.
+              Understanding the science helps you evaluate whether your grey shift is correctable and what approach to expect. This is the same color-theory analysis we use before choosing a corrector family for any grey or blue-grey brow.
             </p>
           </AnimatedSection>
 
@@ -379,7 +379,7 @@ const MicrobladingTurningGrey: React.FC = () => {
               Why Powder Brows Resist Grey Shifting
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-8">
-              If your grey microblading has you questioning permanent makeup entirely, understand that the technique — not the concept — is the problem. Here's why <Link to="/signature-ombre-brows" className="text-amber-700 font-medium hover:underline">ombré powder brows</Link> maintain their color stability.
+              If your grey microblading has you questioning permanent makeup entirely, understand that the technique — not the concept — is the problem. Many of our correction clients feel hesitant at first for exactly this reason, until they understand why the original color failed. Here's why <Link to="/signature-ombre-brows" className="text-amber-700 font-medium hover:underline">ombré powder brows</Link> maintain their color stability.
             </p>
           </AnimatedSection>
 

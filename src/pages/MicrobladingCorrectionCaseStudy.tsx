@@ -10,7 +10,6 @@ import {
   Palette,
   Layers,
   Clock,
-  Droplets,
   Eye,
   RefreshCw,
   AlertTriangle,
@@ -27,7 +26,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
       icon: Palette,
       title: 'Case Study 1: Grey-Shifted Microblading Correction',
       subtitle: 'Reversing Cool-Tone Oxidation After 18 Months',
-      initialConcern: 'Client contacted Ink Mugi after her 18-month-old microblading shifted from warm brown to a visible blue-grey tone. The shift was noticeable in natural light and she was covering her brows with makeup daily — exactly the problem microblading was supposed to solve.',
+      initialConcern: 'Client contacted Ink Mugi after her 18-month-old microblading shifted from warm brown to a visible blue-grey tone. The shift was noticeable in natural light and she was covering her brows with makeup daily — exactly the problem microblading was supposed to solve. In consultation, her main concern was not just the color itself but how cold and unnatural it looked against her skin tone.',
       originalCondition: [
         'Microblading applied 18 months prior at another studio',
         'Warm brown pigment had oxidized to blue-grey (iron oxide cool-shift)',
@@ -42,15 +41,15 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
         'Step 4: Session 2 — Applied powder brow technique in the client\'s target shade (warm brunette) over the neutralized canvas. Full powder overlay provided even coverage and natural-looking, soft-shaded result.',
         'Step 5: Touch-up session at 6 weeks to refine density and adjust any uneven retention areas.'
       ],
-      healingOutcome: 'The blue-grey tone was completely eliminated. Final result was a warm, natural brunette powder brow that complemented the client\'s skin tone and hair color. Brows appeared soft and natural with no visible evidence of the previous grey microblading. Client discontinued daily brow makeup. Total process: 3 sessions over 4 months.',
-      keyTakeaway: 'Blue-grey color shift is one of the most common microblading complaints — and one of the most reliably correctable. Neutralization + overlay produces predictable, excellent outcomes when the skin is undamaged.'
+      healingOutcome: 'The blue-grey tone was completely eliminated. Final result was a warm, natural brunette powder brow that complemented the client\'s skin tone and hair color. Brows appeared soft and natural with no visible evidence of the previous grey microblading. Client discontinued daily brow makeup. Total process: 3 sessions over 4 months. Her healed result followed the same pattern we typically expect when the old pigment is cool-shifted but the underlying skin remains healthy.',
+      keyTakeaway: 'Blue-grey color shift is one of the most common microblading complaints — and one of the most reliably correctable. Neutralization + overlay produces predictable, excellent outcomes when the skin is undamaged, which is why early assessment matters.'
     },
     {
       id: 'patchy-restoration',
       icon: Layers,
       title: 'Case Study 2: Patchy Microblading Restoration',
       subtitle: 'Restoring Even Coverage to Spotted, Faded Brows',
-      initialConcern: 'Client had microblading done 2 years prior that faded unevenly — holding strongly in some areas while completely disappearing in others. The result was a "spotted" appearance with visible gaps that looked obvious without makeup coverage.',
+      initialConcern: 'Client had microblading done 2 years prior that faded unevenly — holding strongly in some areas while completely disappearing in others. The result was a "spotted" appearance with visible gaps that looked obvious without makeup coverage. She wanted to know whether the issue was poor aftercare or simply a bad match for her skin type.',
       originalCondition: [
         'Microblading applied 2 years prior, touch-up done at 6 weeks',
         'Pigment retained in approximately 40% of strokes, absent in 60%',
@@ -64,15 +63,15 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
         'Step 3: 6-week healing. Pigment retention was strong and even across the full brow, including the previously patchy outer tails.',
         'Step 4: Touch-up session at 6 weeks — minor density adjustment in the outer tails where oily skin was most prominent. Applied slightly deeper saturation to anticipate the 10-15% fade typical in oily-skin clients.'
       ],
-      healingOutcome: 'Brows went from visibly patchy and inconsistent to fully even, naturally shaded powder brows. The machine technique\'s superior pigment delivery in oily-skin areas solved the underlying cause of the patchiness. No evidence of the original uneven microblading was visible. Client reported the powder brows lasted significantly longer than her original microblading at her 12-month check-in.',
-      keyTakeaway: 'Patchy microblading is a retention problem, not a pigment problem. Switching from manual blade to digital machine technique addresses the root cause — especially in oily-skin clients.'
+      healingOutcome: 'Brows went from visibly patchy and inconsistent to fully even, naturally shaded powder brows. The machine technique\'s superior pigment delivery in oily-skin areas solved the underlying cause of the patchiness. No evidence of the original uneven microblading was visible. Client reported the powder brows lasted significantly longer than her original microblading at her 12-month check-in. This is a pattern we see often when the original issue is retention instability rather than severe color distortion.',
+      keyTakeaway: 'Patchy microblading is a retention problem, not a pigment problem. Switching from manual blade to digital machine technique addresses the root cause — especially in oily-skin clients, where the healed pattern is usually the real clue.'
     },
     {
       id: 'color-shift-correction',
       icon: RefreshCw,
       title: 'Case Study 3: Orange Color-Shift Correction',
       subtitle: 'Correcting Warm-Shifted Microblading That Turned Orange-Red',
-      initialConcern: 'Client\'s microblading had shifted from the original dark brown to a warm orange-red tone over 14 months. The brows appeared unnaturally warm and reddish, especially noticeable against her cool-toned skin.',
+      initialConcern: 'Client\'s microblading had shifted from the original dark brown to a warm orange-red tone over 14 months. The brows appeared unnaturally warm and reddish, especially noticeable against her cool-toned skin. She described them as looking "brassy" in daylight, which is a common way clients phrase this type of warm shift in consultation.',
       originalCondition: [
         'Microblading applied 14 months prior with a dark brown pigment',
         'Pigment shifted to orange-red due to warm undertone dominance during fading',
@@ -87,15 +86,15 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
         'Step 4: Session 2 — Applied powder brow overlay in a cool-neutral brunette shade calibrated to the client\'s skin undertone. The overlay concealed any remaining warmth and achieved the desired ash-brown final color.',
         'Step 5: Touch-up at 6 weeks to refine the color depth in thinner areas and confirm the cool undertone held through the healing cycle.'
       ],
-      healingOutcome: 'The orange-red shift was completely corrected. Final result was a cool-neutral brunette that matched the client\'s natural coloring. The powder brow overlay produced a soft, polished gradient that looked intentional rather than corrective. The cool pigment formulation was specifically chosen for long-term stability in this client\'s skin type. Total: 3 sessions over approximately 4.5 months.',
-      keyTakeaway: 'Orange color shifts respond excellently to correction when the right cool-spectrum corrector is used. The key is matching the corrector intensity to the shift severity — under-correcting leaves residual warmth, while over-correcting can push into ashy territory.'
+      healingOutcome: 'The orange-red shift was completely corrected. Final result was a cool-neutral brunette that matched the client\'s natural coloring. The powder brow overlay produced a soft, polished gradient that looked intentional rather than corrective. The cool pigment formulation was specifically chosen for long-term stability in this client\'s skin type. Total: 3 sessions over approximately 4.5 months. The final healed tone sat much closer to her natural brow family instead of fighting against it.',
+      keyTakeaway: 'Orange color shifts respond excellently to correction when the right cool-spectrum corrector is used. The key is matching the corrector intensity to the shift severity — under-correcting leaves residual warmth, while over-correcting can push into ashy territory, so color judgment matters.'
     },
     {
       id: 'powder-brows-upgrade',
       icon: Star,
       title: 'Case Study 4: Microblading-to-Powder Brows Upgrade',
       subtitle: 'Transitioning From Faded Microblading to Long-Lasting Powder Brows',
-      initialConcern: 'Client had received microblading 3 times over 4 years. Each application faded within 6–8 months. She wanted a technique with longer-lasting results and was tired of the repeated touch-up cycle. No color shift or significant issues — just premature fading.',
+      initialConcern: 'Client had received microblading 3 times over 4 years. Each application faded within 6–8 months. She wanted a technique with longer-lasting results and was tired of the repeated touch-up cycle. No color shift or significant issues — just premature fading. In consultation, her question was whether her skin simply "doesn\'t hold brow work," which is a concern we hear often from oily-skin clients.',
       originalCondition: [
         'Three microblading sessions over 4 years (initial + 2 redo applications)',
         'Most recent application had faded approximately 80% over 8 months',
@@ -109,8 +108,8 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
         'Step 3: 6-week healing. Pigment retention was significantly stronger than her microblading history — estimated 85% retention vs her typical 50-60%.',
         'Step 4: Touch-up at 6 weeks — density perfection and slight deepening of the tail color for definition. Pigment saturation was calibrated to account for long-term fading on oily skin.'
       ],
-      healingOutcome: 'At her 12-month check-in, the powder brows were still holding at approximately 70% density — her microblading had typically faded to under 25% at the same point. The client described it as "the first time my brow work actually lasted." The soft powder finish also provided a more polished look than the hairstroke pattern she previously had. No further touch-ups were needed until the standard annual refresh.',
-      keyTakeaway: 'Not every "correction" involves fixing a problem — sometimes the correction is switching from a technique that doesn\'t work for your skin type to one that does. Powder brows offer 340% better retention than microblading in oily-skin clients.'
+      healingOutcome: 'At her 12-month check-in, the powder brows were still holding at approximately 70% density — her microblading had typically faded to under 25% at the same point. The client described it as "the first time my brow work actually lasted." The soft powder finish also provided a more polished look than the hairstroke pattern she previously had. No further touch-ups were needed until the standard annual refresh. Cases like this are a reminder that longevity problems are often technique-fit problems, not client-failure problems.',
+      keyTakeaway: 'Not every "correction" involves fixing a problem — sometimes the correction is switching from a technique that doesn\'t work for your skin type to one that does. Powder brows offer 340% better retention than microblading in oily-skin clients, and that difference is obvious in long-term follow-up.'
     }
   ];
 
@@ -368,7 +367,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
             <p className="text-white/80 max-w-2xl mx-auto text-lg mb-8">
               Every case study on this page started exactly where you are now — looking at disappointing brows
               and wondering if they can be fixed. The answer, in the vast majority of cases, is yes. Book your
-              assessment and let's map out the correction plan for your specific situation.
+              assessment and let's map out the correction plan for your specific situation based on what your skin, pigment, and healed result are actually doing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
