@@ -54,6 +54,11 @@ const MicrobladingVsPowderBrows = lazy(() => import('./pages/MicrobladingVsPowde
 const MicrobladingCorrectionNorthernVirginia = lazy(() => import('./pages/MicrobladingCorrectionNorthernVirginia'));
 const MicrobladingForOilySkin = lazy(() => import('./pages/MicrobladingForOilySkin'));
 const WhyMicrobladingFades = lazy(() => import('./pages/WhyMicrobladingFades'));
+// Microblading Problem-Intent Pages (Phase 2)
+const MicrobladingTurningGrey = lazy(() => import('./pages/MicrobladingTurningGrey'));
+const BotchedMicrobladingFix = lazy(() => import('./pages/BotchedMicrobladingFix'));
+const PatchyMicroblading = lazy(() => import('./pages/PatchyMicroblading'));
+const MicrobladingFadingTooFast = lazy(() => import('./pages/MicrobladingFadingTooFast'));
 // Content Pages
 const AftercareGuide = lazy(() => import('./pages/AftercareGuide'));
 const PmuCostGuideDmv = lazy(() => import('./pages/PmuCostGuideDmv'));
@@ -129,6 +134,11 @@ function App() {
           <Route path="/microblading-correction-northern-virginia" element={<MicrobladingCorrectionNorthernVirginia />} />
           <Route path="/microblading-for-oily-skin" element={<MicrobladingForOilySkin />} />
           <Route path="/why-microblading-fades" element={<WhyMicrobladingFades />} />
+          {/* Microblading Problem-Intent Pages (Phase 2) */}
+          <Route path="/microblading-turning-grey" element={<MicrobladingTurningGrey />} />
+          <Route path="/botched-microblading-fix" element={<BotchedMicrobladingFix />} />
+          <Route path="/patchy-microblading" element={<PatchyMicroblading />} />
+          <Route path="/microblading-fading-too-fast" element={<MicrobladingFadingTooFast />} />
           {/* Content Pages */}
           <Route path="/aftercare-guide" element={<AftercareGuide />} />
           <Route path="/pmu-cost-guide-dmv" element={<PmuCostGuideDmv />} />
