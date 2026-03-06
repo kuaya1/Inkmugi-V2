@@ -17,7 +17,7 @@ const MicroshadingArtistry: React.FC = () => {
     },
     {
       question: "Microshading vs microblading — which is better?",
-      answer: "It depends on your skin type and desired look. Microshading works for ALL skin types, including oily and combination skin, because the stippling technique holds pigment better than blade cuts. Microblading creates hair-like strokes but can blur or fade quickly on oily skin. At your free consultation, Mugi will analyze your skin and recommend the best technique for your goals."
+      answer: "It depends on your skin type and desired look. Microshading works for ALL skin types, including oily and combination skin, because the stippling technique holds pigment better than blade cuts. In our consultations, clients who want softness and natural definition without the risk of blurred strokes are often better candidates for microshading. Microblading creates hair-like strokes but can blur or fade quickly on oily skin. At your free consultation, Mugi will analyze your skin and recommend the best technique for your goals."
     },
     {
       question: "How long is the microshading healing process?",
@@ -257,7 +257,7 @@ const MicroshadingArtistry: React.FC = () => {
                   microshading the ideal choice for clients whose microblading has faded or blurred.
                 </p>
                 <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  At Ink Mugi, Mugi has performed <strong>330+ PMU procedures</strong> and offers both
+                  Many clients come in with decent natural brow hair but very uneven density, and microshading tends to blend especially well in those cases. At Ink Mugi, Mugi has performed <strong>330+ PMU procedures</strong> and offers both
                   microshading ($700) and machine ombre powder brows ($600). During your free consultation,
                   she'll analyze your skin type, lifestyle, and brow goals to recommend the best technique for you.
                 </p>

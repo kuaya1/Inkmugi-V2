@@ -5,7 +5,6 @@ import {
   CheckCircle,
   Award,
   Shield,
-  Clock,
   Heart,
   Droplets,
   Sun,
@@ -58,7 +57,7 @@ const NanoBrows: React.FC = () => {
   const faqs = [
     {
       question: 'What is the difference between nano brows and microblading?',
-      answer: 'Microblading uses a manual handheld blade to create hair strokes by cutting into the skin. Nano brows use a single ultra-fine needle (0.18mm) on a digital PMU machine, which deposits pigment with greater precision and less trauma. Nano brows cause less skin damage, heal faster, and last significantly longer—especially on oily or combination skin common in the DMV climate.',
+      answer: 'Microblading uses a manual handheld blade to create hair strokes by cutting into the skin. Nano brows use a single ultra-fine needle (0.18mm) on a digital PMU machine, which deposits pigment with greater precision and less trauma. In our experience working with previously microbladed brows, clients usually notice the difference most in how much cleaner the healed strokes stay over time. Nano brows cause less skin damage, heal faster, and last significantly longer—especially on oily or combination skin common in the DMV climate.',
     },
     {
       question: 'Are nano brows better than microblading for oily skin?',
@@ -281,7 +280,7 @@ const NanoBrows: React.FC = () => {
                     <Eye className="w-5 h-5" /> Why Nano Brows Are the Future of Brow PMU
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    The beauty industry is shifting away from microblading toward nano needle techniques. The reason is simple: nano brows offer the same natural hair-stroke look with <strong>50% less skin trauma, 2× longer retention, and compatibility with all skin types</strong> — including the oily and combination skin that makes up 65% of our Northern Virginia clientele.
+                    A common situation we see is a client who loves the idea of hair strokes but does not want the long-term blurring risk associated with blade work. The beauty industry is shifting away from microblading toward nano needle techniques. The reason is simple: nano brows offer the same natural hair-stroke look with <strong>50% less skin trauma, 2× longer retention, and compatibility with all skin types</strong> — including the oily and combination skin that makes up 65% of our Northern Virginia clientele.
                   </p>
                 </div>
               </div>

@@ -83,7 +83,7 @@ const SignatureOmbreBrows: React.FC = () => {
     },
     {
       question: 'Why is ombre powder better for oily skin and DMV climate?',
-      answer: 'Ombre powder brows perform 340% better than microblading for oily skin in our humid climate. The stippling technique deposits pigment beneath the skin surface, creating superior retention. Our data from 187 oily-skin clients shows 28-month average longevity vs just 8 months for microblading in the same conditions.'
+      answer: 'Ombre powder brows perform 340% better than microblading for oily skin in our humid climate. In our experience with Northern Virginia clients, this is especially noticeable through summer, when humidity and skin oil tend to break down bladed strokes much faster. The stippling technique deposits pigment beneath the skin surface, creating superior retention. Our data from 187 oily-skin clients shows 28-month average longevity vs just 8 months for microblading in the same conditions.'
     },
     {
       question: 'What makes this worth $600? What exactly is included?',
@@ -335,7 +335,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Ombre Powder Brows at a Glance
                 </h2>
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on 330+ documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Most clients describe the result as "waking up with perfect brows every day, no maintenance needed."
+                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on 330+ documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Many clients come in wanting something polished but not overly drawn on, and this is the technique we most often recommend for that balance.
                 </p>
               </div>
             </AnimatedSection>
@@ -366,7 +366,7 @@ const SignatureOmbreBrows: React.FC = () => {
                     The DMV Climate Advantage
                   </h3>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Northern Virginia's variable humidity (45-85% throughout the year) is notoriously challenging for microblading. The hair strokes blur and fade rapidly, especially on oily skin.
+                    Northern Virginia's variable humidity (45-85% throughout the year) is notoriously challenging for microblading. We frequently see hair strokes blur and fade rapidly here, especially on oily skin and during the most humid stretch of the DMV summer.
                   </p>
                   <p className="text-gray-700 leading-relaxed font-semibold">
                     <strong>Our Data:</strong> Ombre powder brows perform <span className="text-[#2D2D2B] text-xl">340% better</span> than microblading for oily skin in DMV climate. Average longevity: 28 months vs 8 months for microblading (based on 187 oily-skin clients tracked since 2021).
