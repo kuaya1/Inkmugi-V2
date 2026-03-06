@@ -8,28 +8,28 @@ export default function Authority() {
     {
       icon: BarChart3,
       title: "PMU Data & Longevity Guide",
-      description: "Comprehensive analysis of retention rates, longevity factors, and performance metrics across 330+ procedures. Learn what makes permanent makeup last 18-36 months.",
+      description: "Comprehensive analysis of retention rates, longevity factors, and performance metrics across 330+ procedures. In our practice, this is the data we rely on when explaining why some brows hold beautifully for 18-36 months while others need earlier refreshes.",
       link: "/pmu-data-guide",
       tag: "Data Study"
     },
     {
       icon: Shield,
       title: "Clinical Safety in the DMV",
-      description: "Evidence-based safety protocols backed by a 0.19% complication rate—13x safer than industry average. Our proprietary approach to risk mitigation.",
+      description: "Evidence-based safety protocols backed by a 0.19% complication rate—13x safer than industry average. These are the same studio protocols we follow every day to reduce avoidable risk before, during, and after each procedure.",
       link: "/permanent-makeup-safety-dmv",
       tag: "Safety Report"
     },
     {
       icon: Microscope,
       title: "PMU Myths vs. Clinical Facts",
-      description: "Debunking common misconceptions with peer-reviewed research and clinical data. Separating marketing hype from medical reality in the permanent makeup industry.",
+      description: "Debunking common misconceptions with peer-reviewed research and clinical data. Many clients who visit us after previous PMU or microblading have been given advice that sounds confident but does not match how brows actually heal.",
       link: "/pmu-myths-facts",
       tag: "Research Paper"
     },
     {
       icon: TrendingUp,
       title: "Humid Climate Performance Analysis",
-      description: "Why Ombre Powder Brows outperform microblading by 340% in the DMV's unique climate. Regional insights based on local demographic and environmental data.",
+      description: "Why Ombre Powder Brows outperform microblading by 340% in the DMV's unique climate. Working with clients across Northern Virginia, we repeatedly see humidity, oil production, and lifestyle habits change how different techniques heal.",
       link: "/climate-performance-analysis",
       tag: "Regional Study"
     }
@@ -196,7 +196,7 @@ export default function Authority() {
             {/* Mission Statement */}
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-4xl mx-auto mb-12 voice-answer quick-answer">
               At Ink Mugi, we believe artistry must be backed by evidence. Explore our proprietary research, 
-              clinical safety data, and expert insights that have guided over <span className="text-[#E6DAD2] font-semibold">330+ successful transformations</span> in the DMV.
+              clinical safety data, and expert insights shaped through over <span className="text-[#E6DAD2] font-semibold">330+ successful transformations</span> in the DMV. In our practice, every technique decision is informed not just by aesthetics, but by how brows actually heal on real clients over time.
             </p>
 
             {/* Quick Stats */}
@@ -230,7 +230,7 @@ export default function Authority() {
               Our Research Pillars
             </h2>
             <p className="text-lg text-[#2D2D2B]/60 max-w-2xl mx-auto">
-              Peer-reviewed insights, clinical data, and proprietary studies that establish the foundation of our practice.
+              Peer-reviewed insights, clinical data, and proprietary studies that reflect how we evaluate retention, safety, and healed results in everyday PMU practice.
             </p>
           </AnimatedSection>
 
@@ -306,7 +306,7 @@ export default function Authority() {
             </h2>
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-4xl mx-auto mb-12 voice-answer ai-optimized-content">
               Our proprietary data shows <span className="text-[#E6DAD2] font-semibold">Ombre Powder Brows perform 340% better on oily skin</span> in 
-              the DMV's humid climate compared to microblading. We don't guess; we measure. This regional insight comes from 
+              the DMV's humid climate compared to microblading. We don't guess; we measure. In our correction consultations, this pattern comes up repeatedly with clients whose previous hair-stroke work softened, blurred, or faded unevenly. This regional insight comes from 
               tracking 330+ procedures across Arlington, Annandale, and Alexandria—accounting for local demographics, 
               seasonal variations, and skin-type distributions unique to the mid-Atlantic.
             </p>
@@ -346,7 +346,7 @@ export default function Authority() {
               Credentials That Underpin Authority
             </h2>
             <p className="text-lg text-[#2D2D2B]/60 max-w-2xl mx-auto">
-              Formal qualifications, continuous education, and unwavering commitment to the highest standards of safety and excellence.
+              Formal qualifications, continuous education, and the practical standards we rely on every day when performing brow PMU and corrective work.
             </p>
           </AnimatedSection>
 
@@ -384,7 +384,7 @@ export default function Authority() {
                 </h3>
                 <p className="text-xl text-white/80 leading-relaxed">
                   Ongoing professional development in cosmetic dermatology, advanced PMU techniques, 
-                  and emerging safety protocols. Because excellence is not a destination—it's a commitment.
+                  and emerging safety protocols. Over hundreds of procedures, continuing education has remained essential to refining mapping, pigment choices, and correction strategy as real client patterns emerge.
                 </p>
               </div>
             </div>
@@ -409,7 +409,7 @@ export default function Authority() {
             </h2>
             <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed">
               Now that you understand the research, the data, and the dedication behind every procedure—
-              it's time to experience the Ink Mugi difference firsthand.
+              it's time to experience a consultation grounded in real practitioner judgment, careful mapping, and healed-result expectations rather than guesswork.
             </p>
 
             {/* CTA Buttons */}
