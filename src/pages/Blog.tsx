@@ -3,12 +3,26 @@ import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Calendar, Clock, User, Tag } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import SEO from '../components/SEO';
+import { blogPosts as allBlogPosts } from '../data/blogData';
+
+const DEFAULT_BLOG_IMAGE = '/images/blog-default.jpg';
+
+/** Auto-compute read time from content word count when not specified */
+const getReadTime = (post: typeof allBlogPosts[0]): string => {
+  if (post.readTime) return post.readTime;
+  const words = (post.content || '')
+    .replace(/[#*|\-\[\]()]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 0).length;
+  return `${Math.ceil(words / 200)} min read`;
+};
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('');
 
-  const blogPosts = [
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const _legacyPosts = [
     {
       id: 1,
       title: "Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity? (330+ procedures Analyzed)",
@@ -146,35 +160,52 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
       featured: false
     }
   ];
-  
-  // Enhanced categories with count information
-  const categories = [
-    { name: "Techniques", count: blogPosts.filter(post => post.category === "Techniques").length },
-    { name: "Guides", count: blogPosts.filter(post => post.category === "Guides").length },
-    { name: "Aftercare", count: blogPosts.filter(post => post.category === "Aftercare").length },
-    { name: "Education", count: blogPosts.filter(post => post.category === "Education").length },
-    { name: "Design", count: blogPosts.filter(post => post.category === "Design").length },
-    { name: "Industry News", count: blogPosts.filter(post => post.category === "Industry News").length }
-  ];
-  
+
+  // ── Data-driven blog system (single source of truth: blogData.ts) ──
+
+  // Sort all posts newest-first; apply image fallback + auto read-time
+  const sortedPosts = [...allBlogPosts]
+    .map(post => ({
+      ...post,
+      readTime: getReadTime(post),
+      image: post.image || DEFAULT_BLOG_IMAGE,
+    }))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Dynamic categories derived from data (auto-updates when new posts are added)
+  const categories = [...new Set(sortedPosts.map(p => p.category))]
+    .map(name => ({ name, count: sortedPosts.filter(p => p.category === name).length }))
+    .sort((a, b) => b.count - a.count);
+
   // All tags for tag cloud
-  const allTags = [...new Set(blogPosts.flatMap(post => post.tags))];
-  
-  const featuredPosts = blogPosts.filter(post => post.featured);
-  
+  const allTags = [...new Set(sortedPosts.flatMap(post => post.tags))];
+
+  // Featured: flagged posts first, then fill with newest if fewer than 2
+  const featuredPosts = (() => {
+    const flagged = sortedPosts.filter(p => p.featured);
+    if (flagged.length >= 2) return flagged.slice(0, 2);
+    const result = [...flagged];
+    for (const post of sortedPosts) {
+      if (result.length >= 2) break;
+      if (!result.find(p => p.id === post.id)) result.push(post);
+    }
+    return result;
+  })();
+
   // Enhanced filtering with category and search query
-  const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = !searchQuery || 
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+  const filteredPosts = sortedPosts.filter(post => {
+    const matchesSearch = !searchQuery ||
+      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase())) ||
       post.category.toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     const matchesCategory = !activeCategory || post.category === activeCategory;
-    
+
     return matchesSearch && matchesCategory;
   });
 
+  // Exclude featured from Latest Articles when no filters active
   const regularFilteredPosts = filteredPosts.filter(post => !post.featured || searchQuery || activeCategory);
 
   // For SEO purposes - dynamic page title based on active category or search
@@ -193,7 +224,7 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
     setSearchQuery('');
     setActiveCategory(category === activeCategory ? '' : category);
   };
-  
+
   // Clear filters function
   const clearFilters = () => {
     setSearchQuery('');

@@ -1409,5 +1409,28 @@ Come in for a [$150 correction consultation](/pmu-correction-restoration) (credi
 
 *Ink Mugi · Annandale, VA · Virginia License #1231002471*
     `
+  },
+  {
+    id: 9,
+    slug: "ombre-brows-dark-skin-guide",
+    title: "Ombre Powder Brows for Dark Skin: Techniques, Pigment Science & Healing for Fitzpatrick IV–VI",
+    excerpt: "A deep-dive expert guide on why ombre powder brows require specialized technique for melanin-rich skin — covering pigment chemistry, the Tyndall effect, healing differences, and aftercare modifications for Fitzpatrick IV–VI skin types.",
+    metaDescription: "Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection for dark skin, healing differences, keloid considerations, and real healed results from 330+ procedures.",
+    image: "https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg",
+    alt: "Healed ombre powder brows on melanin-rich dark skin at Ink Mugi Annandale VA",
+    category: "Skin Science",
+    tags: ["ombre brows dark skin", "powder brows dark skin", "permanent makeup dark skin", "PMU Fitzpatrick IV V VI", "melanin rich skin PMU", "dark skin PMU pigment"],
+    author: "Mugi",
+    authorTitle: "Licensed Permanent Cosmetic Tattooer",
+    date: "March 8, 2026",
+    lastUpdated: "March 9, 2026",
+    readTime: "16 min read",
+    featured: false,
+    content: `
+# Ombre Powder Brows for Dark Skin: Techniques, Pigment Science & Healing
+
+This article is rendered by a dedicated page component with interactive elements.
+Visit [the full guide](/blog/ombre-brows-dark-skin-guide) for the complete experience including FAQ accordions, before/after galleries, and pigment science diagrams.
+    `
   }
 ];
