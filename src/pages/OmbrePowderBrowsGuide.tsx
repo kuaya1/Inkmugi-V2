@@ -19,6 +19,7 @@ import {
   MapPin,
   CheckCircle,
   Phone,
+  AlertTriangle,
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
@@ -276,6 +277,37 @@ const OmbrePowderBrowsGuide: React.FC = () => {
         </div>
       </section>
 
+      {/* ─── Table of Contents ─── */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <AnimatedSection>
+            <nav aria-label="Table of contents" className="bg-[#F9F7F5] rounded-2xl border border-[#E6DAD2]/40 p-6 md:p-8">
+              <h2 className="text-xl md:text-2xl font-bold text-[#2D2D2B] mb-5 font-cormorant">Explore This Guide</h2>
+              <ul className="grid md:grid-cols-2 gap-3">
+                {[
+                  { id: 'healing-timeline', label: 'Healing Timeline' },
+                  { id: 'skin-types', label: 'Skin Type Considerations' },
+                  { id: 'technique-comparisons', label: 'Technique Comparisons' },
+                  { id: 'common-problems', label: 'Common Powder Brow Problems' },
+                  { id: 'aftercare', label: 'Aftercare Guide' },
+                  { id: 'locations', label: 'Service Areas' },
+                ].map((item) => (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      className="flex items-center gap-2 text-sm text-[#2D2D2B]/75 hover:text-[#9A7B69] transition-colors py-1.5 px-3 rounded-lg hover:bg-[#E6DAD2]/30"
+                    >
+                      <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ─── Why Ombré Powder Brows? ─── */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
@@ -309,6 +341,11 @@ const OmbrePowderBrowsGuide: React.FC = () => {
 
       {/* ─── Guide Cards Grid ─── */}
       <section id="guides" className="py-20 bg-[#F9F7F5]">
+        {/* Hidden anchors for TOC jump links that map to guide cards */}
+        <div id="healing-timeline" className="scroll-mt-24" />
+        <div id="skin-types" className="scroll-mt-24" />
+        <div id="technique-comparisons" className="scroll-mt-24" />
+        <div id="aftercare" className="scroll-mt-24" />
         <div className="max-w-6xl mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-14">
@@ -389,8 +426,79 @@ const OmbrePowderBrowsGuide: React.FC = () => {
         </div>
       </section>
 
+      {/* ─── Common Powder Brow Problems ─── */}
+      <section id="common-problems" className="py-20 bg-[#F9F7F5] scroll-mt-24">
+        <div className="max-w-5xl mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-14">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2B] mb-4 font-cormorant">
+                Common Powder Brow Problems
+              </h2>
+              <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
+                Most ombré powder brow issues stem from incorrect pigment depth, poor color theory, or
+                skin-type mismatches. Understanding these problems helps you make informed decisions — and
+                know when professional correction is the right path.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Powder Brows Turning Grey',
+                description: 'Why warm pigments cool-shift over time, and how color-correction restores natural warmth.',
+                link: '/powder-brows-turned-grey',
+                icon: <Palette className="w-6 h-6" />,
+              },
+              {
+                title: 'Fixing Botched Microblading',
+                description: 'Correction options for old work that has faded, blurred, or developed an unnatural shape.',
+                link: '/blog/fix-botched-microblading-guide',
+                icon: <Shield className="w-6 h-6" />,
+              },
+              {
+                title: 'Why Microblading Turns Grey',
+                description: 'The pigment science behind grey/blue color shifts and how to prevent them from the start.',
+                link: '/microblading-turning-grey',
+                icon: <AlertTriangle className="w-6 h-6" />,
+              },
+            ].map((card, idx) => (
+              <AnimatedSection key={idx} delay={idx * 0.1}>
+                <Link
+                  to={card.link}
+                  className="group block bg-white rounded-2xl p-6 border border-[#E6DAD2]/40 hover:shadow-lg hover:border-[#9A7B69]/30 transition-all h-full"
+                >
+                  <div className="w-11 h-11 bg-red-50 rounded-xl flex items-center justify-center text-red-400 mb-4 group-hover:bg-red-100 transition-colors">
+                    {card.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-[#2D2D2B] mb-2 font-cormorant group-hover:text-[#9A7B69] transition-colors">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-[#2D2D2B]/65 leading-relaxed mb-4">{card.description}</p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-[#9A7B69] group-hover:gap-2 transition-all">
+                    Read more <ArrowRight className="w-4 h-4" />
+                  </span>
+                </Link>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection delay={0.3}>
+            <div className="mt-10 text-center">
+              <Link
+                to="/pmu-correction-restoration"
+                className="inline-flex items-center gap-2 bg-[#2D2D2B] text-white px-7 py-3 rounded-full font-medium hover:bg-[#2D2D2B]/90 transition-colors text-sm"
+              >
+                Explore PMU Correction Services
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ─── Service Locations ─── */}
-      <section className="py-20 bg-[#F9F7F5]">
+      <section id="locations" className="py-20 bg-white scroll-mt-24">
         <div className="max-w-5xl mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-14">
@@ -412,7 +520,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
                   className={`group flex items-center gap-3 rounded-xl px-5 py-4 border transition-all ${
                     loc.primary
                       ? 'bg-[#2D2D2B] text-white border-transparent hover:bg-[#2D2D2B]/90'
-                      : 'bg-white text-[#2D2D2B] border-[#E6DAD2]/50 hover:border-[#9A7B69]/40 hover:shadow-md'
+                      : 'bg-[#F9F7F5] text-[#2D2D2B] border-[#E6DAD2]/50 hover:border-[#9A7B69]/40 hover:shadow-md'
                   }`}
                 >
                   <MapPin className={`w-4 h-4 flex-shrink-0 ${loc.primary ? 'text-[#E6DAD2]' : 'text-[#9A7B69]'}`} />

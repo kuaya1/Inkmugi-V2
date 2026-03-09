@@ -361,6 +361,41 @@ const BlogPost: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Knowledge Hub Backlink — shown for powder-brow cluster posts */}
+                {[
+                  'ombre-powder-brows-complete-guide',
+                  'pmu-healing-timeline-week-by-week',
+                  'ombre-brows-dark-skin-guide',
+                  'ombre-brows-oily-skin-guide',
+                  'nano-brows-vs-microblading-comparison',
+                  'fix-botched-microblading-guide',
+                ].includes(post.slug) && (
+                  <div className="mt-12 bg-[#F9F7F5] border border-[#E6DAD2]/50 rounded-xl p-6 md:p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 bg-[#9A7B69]/15 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#9A7B69]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                      </div>
+                      <div>
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-[#9A7B69] mb-1 block">Knowledge Hub</span>
+                        <h3 className="text-lg font-semibold text-[#2D2D2B] mb-2 font-cormorant">
+                          Part of the Ombré Powder Brows Knowledge Hub
+                        </h3>
+                        <p className="text-sm text-[#2D2D2B]/70 leading-relaxed mb-3">
+                          This guide is part of the complete Ink Mugi knowledge hub covering ombré powder brows
+                          techniques, healing stages, skin-type suitability, and real results.
+                        </p>
+                        <Link
+                          to="/ombre-powder-brows-guide"
+                          className="inline-flex items-center gap-1.5 text-sm font-medium text-[#9A7B69] hover:text-[#2D2D2B] transition-colors"
+                        >
+                          Explore the Complete Powder Brows Guide
+                          <ArrowRight size={14} />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 {/* Post-Article CTA */}
                 <div className="mt-12 bg-gradient-to-br from-[#2D2D2B] to-[#3D3D3B] rounded-xl p-8 text-white">
                   <h3 className="text-2xl font-cormorant font-medium mb-3">Ready to See What's Possible?</h3>
