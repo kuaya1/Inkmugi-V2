@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import {
@@ -14,12 +14,16 @@ import {
   ChevronRight,
   Layers,
   ThermometerSun,
-  Eye
+  Eye,
+  BookOpen,
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
 const MicrobladingVsPowderBrows: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const faqs = [
     {
@@ -67,8 +71,9 @@ const MicrobladingVsPowderBrows: React.FC = () => {
   return (
     <>
       <SEO
-        title="Microblading vs Powder Brows: Which Lasts Longer in the DMV? | Ink Mugi"
-        description="Expert comparison of microblading vs ombré powder brows for Northern Virginia, DC & Maryland clients. Data from 330+ procedures: longevity, oily skin performance, cost analysis, and healed results. Annandale, VA."
+        title="Microblading vs Powder Brows: Which Is Better? | Ink Mugi"
+        description="Compare microblading and ombré powder brows including longevity, healing, skin types, and long-term results. Data from 330+ procedures in Northern Virginia."
+        canonical="https://www.inkmugi.com/microblading-vs-powder-brows"
         path="/microblading-vs-powder-brows"
         keywords="microblading vs powder brows, microblading vs ombre brows, powder brows vs microblading oily skin, microblading alternative DMV, permanent eyebrows comparison, microblading vs ombre brows cost, which is better microblading or powder brows, microblading or powder brows for oily skin"
       >
@@ -77,8 +82,8 @@ const MicrobladingVsPowderBrows: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Microblading vs Powder Brows: A Data-Driven Comparison for DMV Clients",
-            "description": "Expert analysis comparing microblading and ombré powder brows techniques. Based on 330+ procedures and 5 years of client data in Northern Virginia's humid climate.",
+            "headline": "Microblading vs Powder Brows: Which Is Better?",
+            "description": "Compare microblading and ombré powder brows including longevity, healing, skin types, and long-term results. Data from 330+ procedures in Northern Virginia.",
             "author": {
               "@type": "Person",
               "name": "Mugi",
@@ -123,7 +128,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
+              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.inkmugi.com/ombre-powder-brows-guide" },
               { "@type": "ListItem", "position": 3, "name": "Microblading vs Powder Brows", "item": "https://www.inkmugi.com/microblading-vs-powder-brows" }
             ]
           })}
@@ -134,13 +139,23 @@ const MicrobladingVsPowderBrows: React.FC = () => {
       <section className="pt-32 pb-20 bg-gradient-to-br from-[#F0E4D8] via-[#E6DAD2] to-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
+            {/* Breadcrumb */}
+            <nav aria-label="Breadcrumb" className="mb-6">
+              <ol className="flex items-center justify-center gap-2 text-sm text-[#2D2D2B]/60">
+                <li><Link to="/" className="hover:text-[#2D2D2B] transition-colors">Home</Link></li>
+                <li>/</li>
+                <li><Link to="/ombre-powder-brows-guide" className="hover:text-[#2D2D2B] transition-colors">Guides</Link></li>
+                <li>/</li>
+                <li className="text-[#2D2D2B] font-medium">Microblading vs Powder Brows</li>
+              </ol>
+            </nav>
+
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
               <Target className="w-4 h-4" />
               Data-Driven Comparison
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Microblading vs Powder Brows:<br />
-              <span className="text-amber-700">Which Is Right for You?</span>
+              Microblading vs Powder Brows
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
               An honest, evidence-based comparison from a Virginia-licensed PMU artist with 330+ documented procedures.
@@ -151,20 +166,88 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to="/signature-ombre-brows"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
-                Book Free Consultation
+                View Powder Brows Service
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
-              <a
-                href="tel:+15712838228"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all"
               >
                 <Phone className="mr-2 w-5 h-5" />
-                (571) 283-8228
-              </a>
+                Book Consultation
+              </Link>
             </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Table of Contents */}
+      <section className="py-10 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <AnimatedSection>
+            <nav aria-label="Table of contents" className="bg-[#F9F7F5] rounded-2xl border border-[#E6DAD2]/40 p-6 md:p-8">
+              <h2 className="text-xl md:text-2xl font-bold text-[#2D2D2B] mb-5 font-cormorant">Explore This Guide</h2>
+              <ul className="grid md:grid-cols-2 gap-3">
+                {[
+                  { id: 'what-is-microblading', label: 'What Is Microblading?' },
+                  { id: 'what-are-powder-brows', label: 'What Are Powder Brows?' },
+                  { id: 'comparison-table', label: 'Head-to-Head Comparison' },
+                  { id: 'which-lasts-longer', label: 'Which Lasts Longer?' },
+                  { id: 'best-for-skin-types', label: 'Best for Your Skin Type' },
+                  { id: 'why-clients-switch', label: 'Why Clients Switch' },
+                  { id: 'faq', label: 'FAQ' },
+                ].map((item) => (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      className="flex items-center gap-2 text-sm text-[#2D2D2B]/75 hover:text-[#9A7B69] transition-colors py-1.5 px-3 rounded-lg hover:bg-[#E6DAD2]/30"
+                    >
+                      <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* What Is Microblading? */}
+      <section id="what-is-microblading" className="py-16 bg-white scroll-mt-24">
+        <div className="container-custom max-w-4xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
+              What Is Microblading?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Microblading is a semi-permanent brow technique that uses a handheld blade to create fine incisions in the skin, depositing pigment into each cut to mimic individual hair strokes. It became popular for producing a natural, hair-like look — but the shallow incision method has notable limitations, especially in humid climates like Northern Virginia.
+            </p>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed">
+              Because the blade cuts into the epidermis (upper skin layer), microblading strokes can blur, fade unevenly, or shift to grey/ashy tones over time. These effects are accelerated by oily skin, UV exposure, and the high humidity typical of the DC metro area.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* What Are Powder Brows? */}
+      <section id="what-are-powder-brows" className="py-16 bg-[#F9F7F5] scroll-mt-24">
+        <div className="container-custom max-w-4xl">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
+              What Are Powder Brows?
+            </h2>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
+              Powder brows — also called ombré powder brows — use a digital PMU machine to deposit thousands of tiny pigment dots beneath the skin surface. The result is a soft, gradient effect that looks like professionally applied brow makeup. The technique creates a lighter front that transitions to a slightly darker tail, producing the signature ombré look.
+            </p>
+            <p className="text-[#2D2D2B]/80 text-lg leading-relaxed">
+              Unlike microblading, this stippled dot-work method causes less skin trauma, anchors pigment more securely, and works beautifully on all skin types — including oily and mature skin. At Ink Mugi, our{' '}
+              <Link to="/signature-ombre-brows" className="text-[#9A7B69] font-medium hover:underline">signature ombré powder brows</Link>{' '}
+              are the foundation of our practice, refined through 330+ procedures in the DMV area.
+            </p>
           </AnimatedSection>
         </div>
       </section>
@@ -190,7 +273,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
       </section>
 
       {/* Side-by-Side Comparison Table */}
-      <section className="py-20 bg-[#F9F7F5]">
+      <section id="comparison-table" className="py-20 bg-[#F9F7F5] scroll-mt-24">
         <div className="container-custom max-w-5xl">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
@@ -288,8 +371,9 @@ const MicrobladingVsPowderBrows: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Powder Brows Outperform Microblading in the DMV */}
-      <section className="py-20 bg-white">
+      {/* Which Lasts Longer + Best for Skin Types */}
+      <section id="which-lasts-longer" className="py-20 bg-white scroll-mt-24">
+        <div id="best-for-skin-types" className="scroll-mt-24" />
         <div className="container-custom max-w-4xl">
           <AnimatedSection className="mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
@@ -421,15 +505,23 @@ const MicrobladingVsPowderBrows: React.FC = () => {
         </div>
       </section>
 
-      {/* Common Issues After Microblading */}
-      <section className="py-20 bg-white">
+      {/* Why Many Clients Transition to Powder Brows */}
+      <section id="why-clients-switch" className="py-20 bg-white scroll-mt-24">
         <div className="container-custom max-w-4xl">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
-              Common Issues After Microblading — and How Powder Brows Solve Them
+              Why Many Clients Transition to Powder Brows
             </h2>
+            <p className="text-[#2D2D2B]/80 text-lg mb-4">
+              Many clients come to Ink Mugi after experiencing microblading aging issues — pigment fading, color shift, or oily-skin incompatibility. These are the most common reasons former microblading clients choose{' '}
+              <Link to="/signature-ombre-brows" className="text-[#9A7B69] font-medium hover:underline">ombré powder brows</Link>{' '}
+              as their next step.
+            </p>
             <p className="text-[#2D2D2B]/80 text-lg mb-8">
-              Many clients come to Ink Mugi after experiencing microblading problems. Here are the most common issues and how they're addressed through corrective powder brow work.
+              If you're considering correction, our{' '}
+              <Link to="/pmu-correction-restoration" className="text-[#9A7B69] font-medium hover:underline">powder brows correction services</Link>{' '}
+              can restore natural warmth and symmetry. For a broader look at permanent brow techniques, explore our{' '}
+              <Link to="/ombre-powder-brows-guide" className="text-[#9A7B69] font-medium hover:underline">powder brows guide</Link>.
             </p>
           </AnimatedSection>
 
@@ -565,7 +657,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
 
       {/* Internal Hub Links */}
       <section className="py-20 bg-[#F9F7F5]">
-        <div className="container-custom max-w-4xl">
+        <div className="container-custom max-w-5xl">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
               Related Guides
@@ -575,33 +667,43 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <AnimatedSection delay={1}>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <AnimatedSection delay={0.1}>
               <Link to="/microblading-correction-northern-virginia" className="block bg-white p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
                 <Shield className="w-8 h-8 text-[#2D2D2B] mb-4" />
                 <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">Microblading Correction</h3>
-                <p className="text-[#2D2D2B]/60 text-sm">Fix grey microblading, uneven fading, and botched previous work with advanced corrective powder brow techniques.</p>
-                <span className="inline-flex items-center text-amber-700 text-sm font-medium mt-3">
+                <p className="text-[#2D2D2B]/60 text-sm">Fix grey microblading, uneven fading, and botched previous work.</p>
+                <span className="inline-flex items-center text-[#9A7B69] text-sm font-medium mt-3">
                   Read guide <ArrowRight className="ml-1 w-4 h-4" />
                 </span>
               </Link>
             </AnimatedSection>
-            <AnimatedSection delay={2}>
+            <AnimatedSection delay={0.15}>
               <Link to="/microblading-for-oily-skin" className="block bg-white p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
                 <Droplets className="w-8 h-8 text-[#2D2D2B] mb-4" />
                 <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">Microblading & Oily Skin</h3>
-                <p className="text-[#2D2D2B]/60 text-sm">Why microblading fails on oily skin and what the data says about superior alternatives for the DMV's humid climate.</p>
-                <span className="inline-flex items-center text-amber-700 text-sm font-medium mt-3">
+                <p className="text-[#2D2D2B]/60 text-sm">Why microblading fails on oily skin and better alternatives.</p>
+                <span className="inline-flex items-center text-[#9A7B69] text-sm font-medium mt-3">
                   Read guide <ArrowRight className="ml-1 w-4 h-4" />
                 </span>
               </Link>
             </AnimatedSection>
-            <AnimatedSection delay={3}>
+            <AnimatedSection delay={0.2}>
               <Link to="/why-microblading-fades" className="block bg-white p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
                 <Clock className="w-8 h-8 text-[#2D2D2B] mb-4" />
                 <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">Why Microblading Fades</h3>
-                <p className="text-[#2D2D2B]/60 text-sm">The science behind pigment migration, oxidation, and the environmental factors that cause rapid microblading fading.</p>
-                <span className="inline-flex items-center text-amber-700 text-sm font-medium mt-3">
+                <p className="text-[#2D2D2B]/60 text-sm">Pigment migration, oxidation, and rapid-fading science.</p>
+                <span className="inline-flex items-center text-[#9A7B69] text-sm font-medium mt-3">
+                  Read guide <ArrowRight className="ml-1 w-4 h-4" />
+                </span>
+              </Link>
+            </AnimatedSection>
+            <AnimatedSection delay={0.25}>
+              <Link to="/blog/nano-brows-vs-microblading-comparison" className="block bg-white p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
+                <Target className="w-8 h-8 text-[#2D2D2B] mb-4" />
+                <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">Nano Brows vs Microblading</h3>
+                <p className="text-[#2D2D2B]/60 text-sm">Hair-stroke showdown: machine nano brows versus manual blade.</p>
+                <span className="inline-flex items-center text-[#9A7B69] text-sm font-medium mt-3">
                   Read guide <ArrowRight className="ml-1 w-4 h-4" />
                 </span>
               </Link>
@@ -610,8 +712,38 @@ const MicrobladingVsPowderBrows: React.FC = () => {
         </div>
       </section>
 
+      {/* Knowledge Hub Banner */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <AnimatedSection>
+            <Link
+              to="/ombre-powder-brows-guide"
+              className="group block bg-[#F9F7F5] border border-[#E6DAD2]/50 rounded-2xl p-6 md:p-8 hover:shadow-lg transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 bg-[#9A7B69]/15 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <BookOpen className="w-5 h-5 text-[#9A7B69]" />
+                </div>
+                <div className="flex-1">
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-[#9A7B69] mb-1 block">Knowledge Hub</span>
+                  <h3 className="text-xl font-semibold text-[#2D2D2B] mb-2 font-cormorant group-hover:text-[#9A7B69] transition-colors">
+                    Part of the Ink Mugi Powder Brows Knowledge Hub
+                  </h3>
+                  <p className="text-sm text-[#2D2D2B]/70 leading-relaxed">
+                    This comparison guide is part of our comprehensive ombré powder brows knowledge hub — covering healing timelines, skin-type suitability, correction options, and expert aftercare advice.
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#9A7B69] mt-3 group-hover:gap-2.5 transition-all">
+                    Explore the Complete Powder Brows Guide <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section id="faq" className="py-20 bg-white scroll-mt-24">
         <div className="container-custom max-w-4xl">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
@@ -634,19 +766,19 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Book a Powder Brows Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
-              <a
-                href="tel:+15712838228"
+              <Link
+                to="/signature-ombre-brows"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-[#2D2D2B] transition-all"
               >
-                <Phone className="mr-2 w-5 h-5" />
-                (571) 283-8228
-              </a>
+                View Signature Ombré Powder Brows
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </div>
             <p className="text-white/50 text-sm mt-6">
               Ink Mugi • 7857 Heritage Dr #330, Annandale, VA 22003 • Serving Northern Virginia, DC & Maryland
@@ -655,16 +787,6 @@ const MicrobladingVsPowderBrows: React.FC = () => {
         </div>
       </section>
 
-      {/* Hidden SEO Text */}
-      <div className="sr-only" aria-hidden="true">
-        <p>
-          Related searches: microblading vs powder brows, ombre brows vs microblading, which is better microblading or powder brows,
-          microblading alternative Northern Virginia, powder brows vs microblading for oily skin, microblading fading fast,
-          microblading vs ombre brows cost comparison, microblading or powder brows DMV area, permanent eyebrows comparison,
-          microblading turning grey fix, best brow technique for humid climate, microblading correction near me Annandale VA,
-          powder brows Fairfax, ombre brows Arlington, permanent makeup DC vs microblading, brow tattoo comparison
-        </p>
-      </div>
     </>
   );
 };
