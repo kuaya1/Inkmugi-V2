@@ -113,18 +113,8 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/lip-blush" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Lip Blush
-                </Link>
-              </li>
-              <li>
                 <Link to="/pmu-correction-restoration" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   PMU Correction
-                </Link>
-              </li>
-              <li>
-                <Link to="/saline-tattoo-removal" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Saline Tattoo Removal
                 </Link>
               </li>
               <li>
