@@ -110,8 +110,8 @@ const MicrobladingCorrectionNorthernVirginia: React.FC = () => {
   return (
     <>
       <SEO
-        title="Microblading Correction Northern Virginia | Fix Grey, Faded & Botched Brows — Ink Mugi"
-        description="Expert microblading correction in Northern Virginia. Fix grey microblading, blurred strokes, uneven fading & color shift with advanced powder brow techniques. 330+ procedures, VA-licensed studio in Annandale. Serving Fairfax, Arlington, Alexandria, DC & Maryland."
+        title="Microblading Correction Northern Virginia | Fix Grey & Faded Brows | Ink Mugi"
+        description="Expert microblading correction in Northern Virginia. Fix grey microblading, blurred strokes & color shift with advanced powder brow techniques. 330+ procedures, VA-licensed. Serving Fairfax County, Arlington, Reston, Tysons & DC."
         path="/microblading-correction-northern-virginia"
         keywords="microblading correction Northern Virginia, fix grey microblading near me, microblading correction Fairfax County, botched microblading fix Virginia, microblading color correction Annandale, grey microblading correction DC, microblading fading fix, microblading to powder brows conversion, eyebrow correction Arlington VA, PMU correction McLean Vienna"
       >

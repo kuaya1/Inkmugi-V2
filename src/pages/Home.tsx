@@ -144,11 +144,11 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Natural Ombré Powder Brows in Annandale, VA | Fairfax County — Ink Mugi"
-        description="Licensed permanent makeup studio in Annandale, Virginia — Fairfax County's documented-outcomes standard for natural ombré powder brows. 330+ procedures. 0.19% complication rate. Healed results verified at 6 weeks. Northern Virginia."
+        title="Ombré Powder Brows in Annandale, VA | Fairfax County | Ink Mugi"
+        description="Licensed permanent makeup studio in Annandale, Virginia. Ombré powder brows, nano brows & microblading correction for Northern Virginia. 330+ procedures, 0.19% complication rate. Serving Fairfax County, Arlington, Reston & DC."
         path="/"
         image="https://www.inkmugi.com/2315.png"
-        keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, natural brows Northern Virginia, licensed PMU artist Virginia, healed brow results, powder brows near me"
+        keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, powder brows near me, ombre brows near me, licensed PMU artist Virginia, healed brow results, permanent makeup Northern Virginia"
       >
         {/* Preload hero LCP image */}
         <link rel="preload" as="image" href="/2315%20(1).png" media="(max-width: 767px)" />
@@ -907,6 +907,8 @@ const Home: React.FC = () => {
             {[
               { label: 'Ombré Powder Brows', to: '/signature-ombre-brows', sub: 'Signature service' },
               { label: 'Nano Brows', to: '/nano-brows', sub: 'Hair-stroke precision' },
+              { label: 'Microblading Correction', to: '/microblading-correction-northern-virginia', sub: 'Fix botched brows' },
+              { label: 'Nano vs Microblading', to: '/nano-brows-vs-microblading', sub: 'Cost comparison' },
               { label: 'All Services', to: '/services', sub: 'Complete menu' },
               { label: 'Aftercare Guide', to: '/aftercare-guide', sub: 'Healing protocol' },
               { label: 'Gallery', to: '/gallery', sub: 'Healed results' },

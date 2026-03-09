@@ -106,11 +106,11 @@ const SignatureOmbreBrows: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows in Annandale, VA | Ink Mugi"
-        description="Professional ombre powder brows performed in Annandale, VA. See healed results, learn the process, and book a consultation with Ink Mugi."
+        title="Ombré Powder Brows Near Me | Annandale VA | $600 All-Inclusive | Ink Mugi"
+        description="Ombré powder brows near you in Northern Virginia. $600 all-inclusive — consultation, procedure, aftercare kit & 6-week touch-up. 330+ documented results. Serving Arlington, Reston, Herndon, Tysons & Fairfax County."
         path="/signature-ombre-brows"
         image="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
-        keywords="ombre powder brows Annandale VA, permanent makeup Northern Virginia, microshading oily skin DMV, PMU artist licensed Virginia, powder brows vs microblading, ombre brows cost Arlington Alexandria, permanent eyebrows Fairfax County"
+        keywords="ombre brows near me, ombre powder brows near me, powder brows Northern Virginia, ombre powder brows Annandale VA, permanent makeup near me, powder brows Fairfax County, ombre brows cost, permanent eyebrows Arlington Reston"
       >
 
         {/* Business Schema */}
@@ -725,6 +725,46 @@ const SignatureOmbreBrows: React.FC = () => {
           </div>
         </section>
 
+        {/* Ombré Powder Brows Near Me — Local SEO Section */}
+        <section className="py-20 bg-white">
+          <div className="container-custom">
+            <AnimatedSection className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] mb-6 text-center">
+                Ombré Powder Brows Near Me in Northern Virginia
+              </h2>
+              <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+                <p>
+                  Searching for <strong>ombre brows near me</strong> or <strong>powder brows near me</strong> in the Northern Virginia and DMV area? Ink Mugi's studio in Annandale, VA is centrally located in Fairfax County — just minutes from Arlington, Falls Church, Springfield, and the Beltway. Clients from across Northern Virginia choose us for documented, outcome-verified permanent makeup with 330+ successful procedures.
+                </p>
+                <p>
+                  Unlike high-overhead studios in Tysons Corner, Georgetown, or downtown DC that charge $800–$1,500, our <strong>ombré powder brows near me</strong> service is $600 all-inclusive — covering your initial consultation, the full procedure, an aftercare kit, and your 6-week perfecting touch-up. No surprise fees, no add-ons.
+                </p>
+                <p>
+                  Our clients drive from <Link to="/ombre-brows-reston-va" className="text-[#2D2D2B] font-semibold underline hover:text-[#4A4A47]">Reston</Link>, <Link to="/ombre-brows-herndon-va" className="text-[#2D2D2B] font-semibold underline hover:text-[#4A4A47]">Herndon</Link>, <Link to="/ombre-brows-arlington-va" className="text-[#2D2D2B] font-semibold underline hover:text-[#4A4A47]">Arlington</Link>, <Link to="/permanent-makeup-tysons-va" className="text-[#2D2D2B] font-semibold underline hover:text-[#4A4A47]">Tysons</Link>, and <Link to="/ombre-brows-vienna-va" className="text-[#2D2D2B] font-semibold underline hover:text-[#4A4A47]">Vienna</Link> because our combination of clinical-grade results and transparent pricing is unmatched in the region. Every result is documented with healed photos at 6 weeks — so you see exactly what your brows will look like, not just freshly pigmented.
+                </p>
+              </div>
+
+              {/* Drive Time Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10">
+                {[
+                  { city: 'Arlington', time: '15 min', route: 'via I-395' },
+                  { city: 'Reston', time: '22 min', route: 'via I-66 W' },
+                  { city: 'Tysons Corner', time: '18 min', route: 'via I-495' },
+                  { city: 'Herndon / Dulles', time: '25 min', route: 'via I-66 W' },
+                  { city: 'Fairfax City', time: '12 min', route: 'via Little River Tpk' },
+                  { city: 'Washington DC', time: '20 min', route: 'via I-395 N' },
+                ].map((item) => (
+                  <div key={item.city} className="bg-[#F9F7F5] rounded-xl p-4 text-center border border-[#E6DAD2]/30">
+                    <p className="font-semibold text-[#2D2D2B]">{item.city}</p>
+                    <p className="text-[#9A7B69] font-bold text-lg">{item.time}</p>
+                    <p className="text-xs text-gray-500">{item.route}</p>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* Service Areas */}
         <section className="py-12 bg-[#F9F7F5]">
           <div className="container-custom max-w-5xl mx-auto text-center">
@@ -741,6 +781,10 @@ const SignatureOmbreBrows: React.FC = () => {
               <Link to="/permanent-makeup-falls-church-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Falls Church</Link>
               <Link to="/permanent-makeup-springfield-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Springfield</Link>
               <Link to="/ombre-brows-vienna-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Vienna</Link>
+              <Link to="/ombre-brows-reston-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Reston</Link>
+              <Link to="/ombre-brows-herndon-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Herndon</Link>
+              <Link to="/ombre-brows-centreville-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Centreville</Link>
+              <Link to="/ombre-brows-chantilly-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Chantilly</Link>
               <Link to="/ombre-brows-manassas-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Manassas</Link>
               <Link to="/ombre-brows-woodbridge-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Woodbridge</Link>
             </div>

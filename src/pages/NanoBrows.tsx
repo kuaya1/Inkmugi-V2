@@ -87,6 +87,14 @@ const NanoBrows: React.FC = () => {
       question: 'What is the nano brow healing process like day by day?',
       answer: 'Days 1-2: Strokes look crisp and slightly bold. Days 3-5: Slight tenderness, minor swelling subsides. Days 5-10: Light flaking—DO NOT pick or scratch. Days 10-21: Strokes appear lighter as skin regenerates. Days 21-42: True color and stroke definition emerge. Your complimentary touch-up at week 6-8 perfects any areas that healed lighter.',
     },
+    {
+      question: 'How does the cost of nano brows compare to microblading in Northern Virginia?',
+      answer: 'Nano brows at Ink Mugi cost $650 all-inclusive — that covers consultation, the full procedure, a hospital-grade aftercare kit ($75 value), 24/7 text support, and your 6-week perfecting touch-up. Microblading in the DC area typically costs $400-$800 but only lasts 8-12 months before needing a redo, making it more expensive long-term. Arlington and Tysons studios charge $800-$1,500 for nano brows without included touch-ups. Our nano brows last 12-24 months, giving you significantly better value per month of wear.',
+    },
+    {
+      question: 'Are nano brows worth the price compared to microblading?',
+      answer: 'When you compare the cost per month of wear, nano brows at $650 lasting 12-24 months cost roughly $27-$54/month. Microblading at $500 lasting only 8-12 months costs $42-$63/month — and you\'ll need touch-ups sooner. Nano brows also cause less skin scarring, so you won\'t face expensive correction work down the road. For a detailed breakdown, see our complete nano brows vs microblading cost comparison.',
+    },
   ];
 
   const comparisonData = [
@@ -104,10 +112,10 @@ const NanoBrows: React.FC = () => {
   return (
     <>
       <SEO
-        title="Nano Brows in Annandale VA | Ultra-Fine Hair Strokes | Ink Mugi"
-        description="Nano brows in Annandale, VA starting at $650. Ultra-fine digital hair strokes that last 12-24 months. Better than microblading for all skin types. Virginia-licensed PMU artist. Free consultation."
+        title="Nano Brows Northern Virginia | Cost Comparison vs Microblading | Ink Mugi"
+        description="Nano brows in Annandale VA starting at $650 — compare nano brows vs microblading cost, longevity & results. Ultra-fine digital hair strokes for all skin types. Arlington/DC studios charge $800–$1,200. Free consultation."
         path="/nano-brows"
-        keywords="nano brows Northern Virginia, nano brows Annandale VA, nano brows near me, nano brows vs microblading, digital hair strokes PMU, nano needle eyebrows, permanent eyebrow hair strokes, nano brows oily skin, nano brows cost, nano brows healing"
+        keywords="nano brows cost comparison, nano brows vs microblading cost, nano brows vs microblading price, nano brows Northern Virginia, nano brows near me, nano brows Annandale VA, digital hair strokes PMU, nano needle eyebrows, nano brows oily skin"
       >
 
         {/* Service Schema */}
@@ -476,6 +484,84 @@ const NanoBrows: React.FC = () => {
 
         {/* FAQs */}
         <section className="py-20 bg-[#F9F7F5]">
+
+          {/* Nano Brows Cost Comparison — Dedicated H2 SEO Section */}
+          <div className="container-custom max-w-4xl mx-auto mb-16">
+            <AnimatedSection>
+              <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] text-center mb-4">
+                Nano Brows Cost Comparison in Northern Virginia
+              </h2>
+              <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+                How does the price of nano brows compare to microblading and ombré powder brows across the DMV?
+              </p>
+
+              <div className="overflow-x-auto">
+                <table className="w-full bg-white rounded-2xl shadow-lg overflow-hidden border border-[#E6DAD2]/30">
+                  <thead>
+                    <tr className="bg-[#2D2D2B] text-white">
+                      <th className="px-6 py-4 text-left font-semibold">Factor</th>
+                      <th className="px-6 py-4 text-center font-semibold">Nano Brows<br /><span className="text-[#E6DAD2] text-sm">(Ink Mugi)</span></th>
+                      <th className="px-6 py-4 text-center font-semibold">Microblading<br /><span className="text-white/60 text-sm">(DC/Arlington)</span></th>
+                      <th className="px-6 py-4 text-center font-semibold">Nano Brows<br /><span className="text-white/60 text-sm">(Tysons/McLean)</span></th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr className="hover:bg-[#F9F7F5]">
+                      <td className="px-6 py-4 font-medium text-[#2D2D2B]">Initial Cost</td>
+                      <td className="px-6 py-4 text-center font-bold text-[#2D2D2B]">$650</td>
+                      <td className="px-6 py-4 text-center text-gray-600">$400–$800</td>
+                      <td className="px-6 py-4 text-center text-gray-600">$900–$1,500</td>
+                    </tr>
+                    <tr className="hover:bg-[#F9F7F5]">
+                      <td className="px-6 py-4 font-medium text-[#2D2D2B]">Touch-Up Included?</td>
+                      <td className="px-6 py-4 text-center text-green-700 font-semibold">✓ Yes</td>
+                      <td className="px-6 py-4 text-center text-red-600">Often extra $100-$300</td>
+                      <td className="px-6 py-4 text-center text-red-600">Varies — $150-$400</td>
+                    </tr>
+                    <tr className="hover:bg-[#F9F7F5]">
+                      <td className="px-6 py-4 font-medium text-[#2D2D2B]">Average Longevity</td>
+                      <td className="px-6 py-4 text-center font-semibold text-[#2D2D2B]">12–24 months</td>
+                      <td className="px-6 py-4 text-center text-gray-600">8–12 months</td>
+                      <td className="px-6 py-4 text-center text-gray-600">12–24 months</td>
+                    </tr>
+                    <tr className="hover:bg-[#F9F7F5]">
+                      <td className="px-6 py-4 font-medium text-[#2D2D2B]">Cost Per Month</td>
+                      <td className="px-6 py-4 text-center font-bold text-[#2D2D2B]">~$27–$54</td>
+                      <td className="px-6 py-4 text-center text-gray-600">~$42–$100</td>
+                      <td className="px-6 py-4 text-center text-gray-600">~$38–$125</td>
+                    </tr>
+                    <tr className="hover:bg-[#F9F7F5]">
+                      <td className="px-6 py-4 font-medium text-[#2D2D2B]">2-Year Total Cost*</td>
+                      <td className="px-6 py-4 text-center font-bold text-[#2D2D2B]">$650</td>
+                      <td className="px-6 py-4 text-center text-gray-600">$800–$1,600</td>
+                      <td className="px-6 py-4 text-center text-gray-600">$900–$1,900</td>
+                    </tr>
+                    <tr className="hover:bg-[#F9F7F5]">
+                      <td className="px-6 py-4 font-medium text-[#2D2D2B]">Aftercare Kit</td>
+                      <td className="px-6 py-4 text-center text-green-700 font-semibold">✓ Included ($75 value)</td>
+                      <td className="px-6 py-4 text-center text-gray-600">Sometimes extra</td>
+                      <td className="px-6 py-4 text-center text-gray-600">Usually included</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p className="text-xs text-gray-400 mt-3 text-center">
+                *Estimated 2-year cost includes touch-up/redo fees where applicable. Microblading typically needs 1-2 redos in 24 months.
+              </p>
+
+              <div className="mt-8 text-center">
+                <Link
+                  to="/nano-brows-vs-microblading"
+                  className="inline-flex items-center gap-2 text-[#2D2D2B] font-semibold hover:text-[#4A4A47] transition-colors underline"
+                >
+                  Read our complete Nano Brows vs Microblading guide
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </AnimatedSection>
+          </div>
+
           <div className="container-custom max-w-4xl mx-auto">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] text-center mb-4">
@@ -564,6 +650,12 @@ const NanoBrows: React.FC = () => {
               <Link to="/permanent-makeup-falls-church-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Falls Church</Link>
               <Link to="/permanent-makeup-springfield-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Springfield</Link>
               <Link to="/ombre-brows-vienna-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Vienna</Link>
+              <Link to="/ombre-brows-reston-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Reston</Link>
+              <Link to="/ombre-brows-herndon-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Herndon</Link>
+              <Link to="/ombre-brows-centreville-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Centreville</Link>
+              <Link to="/ombre-brows-chantilly-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Chantilly</Link>
+              <Link to="/ombre-brows-manassas-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Manassas</Link>
+              <Link to="/ombre-brows-woodbridge-va" className="px-4 py-2 bg-white rounded-full text-sm text-[#2D2D2B] hover:bg-[#E6DAD2] transition-colors border border-gray-200">Woodbridge</Link>
             </div>
           </div>
         </section>

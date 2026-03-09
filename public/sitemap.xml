@@ -221,7 +221,12 @@
   <!-- Competitive Quick Win Service Pages -->
   <url>
     <loc>https://www.inkmugi.com/nano-brows</loc>
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2025-06-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.inkmugi.com/nano-brows-vs-microblading</loc>
+    <lastmod>2025-06-15</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Microblading Hub Pages (Phase 1) -->

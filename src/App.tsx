@@ -55,6 +55,7 @@ const OmbreBrowsDarkSkinGuide = lazy(() => import('./pages/blog/OmbreBrowsDarkSk
 const MicroshadingArtistry = lazy(() => import('./pages/MicroshadingArtistry'));
 const PmuCorrectionRestoration = lazy(() => import('./pages/PmuCorrectionRestoration'));
 const NanoBrows = lazy(() => import('./pages/NanoBrows'));
+const NanoBrowsVsMicroblading = lazy(() => import('./pages/NanoBrowsVsMicroblading'));
 // Microblading Hub Pages
 const MicrobladingVsPowderBrows = lazy(() => import('./pages/MicrobladingVsPowderBrows'));
 const MicrobladingCorrectionNorthernVirginia = lazy(() => import('./pages/MicrobladingCorrectionNorthernVirginia'));
@@ -148,6 +149,7 @@ function App() {
           <Route path="/microshading-artistry" element={<MicroshadingArtistry />} />
           <Route path="/pmu-correction-restoration" element={<PmuCorrectionRestoration />} />
           <Route path="/nano-brows" element={<NanoBrows />} />
+          <Route path="/nano-brows-vs-microblading" element={<NanoBrowsVsMicroblading />} />
           {/* Microblading Hub Pages */}
           <Route path="/microblading-vs-powder-brows" element={<MicrobladingVsPowderBrows />} />
           <Route path="/microblading-correction-northern-virginia" element={<MicrobladingCorrectionNorthernVirginia />} />
