@@ -16,6 +16,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const OmbreBrowsMcLean: React.FC = () => {
   const localSchema = {
@@ -192,49 +194,17 @@ const OmbreBrowsMcLean: React.FC = () => {
         </script>
       </SEO>
 
-      {/* ═══════════════════════════════════════════
-          HERO — Authority-first, not price-first
-          Emotional goal: "This studio understands precision."
-      ═══════════════════════════════════════════ */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]"></div>
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B]/90 text-white rounded-full text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              VA-Licensed · Fairfax County
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Natural Ombré Powder Brows<br />
-              <span className="text-[#9A7B69]">Near McLean, Virginia</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/75 max-w-3xl mx-auto mb-4 leading-relaxed">
-              What matters before you commit: technique assessed for healed outcomes, a documented safety record, and a studio that evaluates results at six weeks — not photographs taken on day one.
-            </p>
-            <p className="text-base text-[#2D2D2B]/60 max-w-2xl mx-auto mb-10">
-              Ink Mugi serves McLean, Tysons Corner, Great Falls, and surrounding Fairfax County communities from our Annandale studio — 15 minutes from McLean Village.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
-              >
-                Schedule a Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/gallery"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B]/20 text-[#2D2D2B] rounded-full font-medium hover:border-[#2D2D2B] transition-all"
-              >
-                View Healed Results
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="McLean"
+        badgeText="VA-Licensed · Fairfax County"
+        headline={<>Natural Ombré Powder Brows<br /><span className="text-[#9A7B69]">Near McLean, Virginia</span></>}
+        subtext="What matters before you commit: technique assessed for healed outcomes, a documented safety record, and a studio that evaluates results at six weeks — not photographs taken on day one."
+        secondaryText="Ink Mugi serves McLean, Tysons Corner, Great Falls, and surrounding Fairfax County communities from our Annandale studio — 15 minutes from McLean Village."
+        heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
+        heroImageAlt="Natural ombré powder brows for McLean, Virginia clients at Ink Mugi"
+        primaryCTA={{ text: 'Schedule a Consultation', to: '/booking' }}
+        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+      />
 
       {/* ═══════════════════════════════════════════
           TRUST CREDENTIALS — Immediate proof points
@@ -610,6 +580,10 @@ const OmbreBrowsMcLean: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <LocationMidCTA
+        subtext="McLean and Great Falls clients trust Ink Mugi for precision ombré brows — VA-licensed, 330+ documented procedures, just 15 minutes away."
+      />
 
       {/* ═══════════════════════════════════════════
           FAQs — Fear-addressing, comprehensive

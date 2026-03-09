@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const OmbreBrowsManassas: React.FC = () => {
   const localSchema = {
@@ -187,46 +189,17 @@ const OmbreBrowsManassas: React.FC = () => {
         </script>
       </SEO>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]" />
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]" />
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
-              <MapPin className="w-4 h-4" />
-              Serving Manassas, VA
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Ombre Powder Brows for<br />
-              <span className="text-[#9A7B69]">Manassas, VA</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Healed-first permanent makeup trusted by Prince William County professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment.
-            </p>
-            <p className="text-base text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              30 minutes from Historic Downtown Manassas to our private Annandale studio. Free parking. Consultation-first approach.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
-              >
-                Request a Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/gallery"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all"
-              >
-                View Healed Results
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="Manassas"
+        badgeText="Serving Manassas, VA"
+        headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Manassas, VA</span></>}
+        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        secondaryText="30 minutes from Historic Downtown Manassas to our private Annandale studio. Free parking. Consultation-first approach."
+        heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
+        heroImageAlt="Ombre powder brows for Manassas, VA clients at Ink Mugi studio"
+        primaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
+        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+      />
 
       {/* Why Manassas Clients Choose Ink Mugi */}
       <section className="py-20 bg-white">
@@ -508,6 +481,10 @@ const OmbreBrowsManassas: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <LocationMidCTA
+        subtext="Manassas and Prince William County residents trust Ink Mugi for precision ombré brows — just 30 minutes via I-66."
+      />
 
       {/* FAQs */}
       <section className="py-20 bg-white">

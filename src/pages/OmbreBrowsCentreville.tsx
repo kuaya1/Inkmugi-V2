@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const OmbreBrowsCentreville: React.FC = () => {
   const localSchema = {
@@ -186,46 +188,17 @@ const OmbreBrowsCentreville: React.FC = () => {
         </script>
       </SEO>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]" />
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]" />
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
-              <MapPin className="w-4 h-4" />
-              Serving Centreville, VA
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Ombre Powder Brows for<br />
-              <span className="text-[#9A7B69]">Centreville, VA</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Permanent makeup grounded in evidence, not trends. 330+ procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable.
-            </p>
-            <p className="text-base text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
-              >
-                Request a Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/gallery"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all"
-              >
-                View Healed Results
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="Centreville"
+        badgeText="Serving Centreville, VA"
+        headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Centreville, VA</span></>}
+        subtext="Permanent makeup grounded in evidence, not trends. 330+ procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable."
+        secondaryText="25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model."
+        heroImage="https://live.staticflickr.com/65535/54408135519_1e5eadff7c_c_d.jpg"
+        heroImageAlt="Ombre powder brows for Centreville, VA clients at Ink Mugi studio"
+        primaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
+        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+      />
 
       {/* Why Centreville Clients Choose Ink Mugi */}
       <section className="py-20 bg-white">
@@ -507,6 +480,10 @@ const OmbreBrowsCentreville: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <LocationMidCTA
+        subtext="Centreville and Virginia Run residents trust Ink Mugi for precision ombré brows — just 25 minutes via I-66."
+      />
 
       {/* FAQs */}
       <section className="py-20 bg-white">

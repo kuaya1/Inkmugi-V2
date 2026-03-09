@@ -4,6 +4,8 @@ import SEO from '../components/SEO';
 import { MapPin, Star, CheckCircle, Award, Shield, Car, ArrowRight, Phone } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const PermanentMakeupFallsChurch: React.FC = () => {
   const localSchema = {
@@ -142,43 +144,16 @@ const PermanentMakeupFallsChurch: React.FC = () => {
       </SEO>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#FFF3E0] to-[#FFFAF5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-amber-700"></div>
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-amber-700"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-700 text-white rounded-full text-sm font-medium mb-6">
-              <MapPin className="w-4 h-4" />
-              Just 8 Minutes from Falls Church, VA
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Permanent Makeup for<br />
-              <span className="text-amber-700">Falls Church, VA</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 330+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking at Heritage Center.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all"
-              >
-                Book Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <a
-                href="tel:+15712838228"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-amber-700 text-amber-700 rounded-full font-medium hover:bg-amber-700 hover:text-white transition-all"
-              >
-                <Phone className="mr-2 w-5 h-5" />
-                (571) 283-8228
-              </a>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="Falls Church"
+        badgeText="Just 8 Minutes from Falls Church, VA"
+        headline={<>Permanent Makeup for<br /><span className="text-[#9A7B69]">Falls Church, VA</span></>}
+        subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 330+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
+        heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
+        heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Falls Church, Virginia"
+        primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
+        secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
+      />
 
       {/* Drive Time Section */}
       <section className="py-16 bg-white">
@@ -366,6 +341,12 @@ const PermanentMakeupFallsChurch: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Mid-Page CTA */}
+      <LocationMidCTA
+        headline="Ready to wake up with perfect brows?"
+        subtext="Falls Church residents love the 8-minute drive to premium results. Book your free consultation today."
+      />
 
       {/* FAQs */}
       <section className="py-20 bg-white">

@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const PermanentMakeupFairfaxCounty: React.FC = () => {
   const businessSchema = {
@@ -164,49 +166,17 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
         </script>
       </SEO>
 
-      {/* ═══════════════════════════════════════════
-          HERO — County-Level Authority Declaration
-          Tone: Institutional. Not a city page. Not a landing page.
-      ═══════════════════════════════════════════ */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]"></div>
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B]/90 text-white rounded-full text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              VA-Licensed · Fairfax County
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Permanent Makeup in<br />
-              <span className="text-[#9A7B69]">Fairfax County, Virginia</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/75 max-w-3xl mx-auto mb-4 leading-relaxed">
-              A county-level resource for residents evaluating permanent makeup. Technique selection, Virginia licensing requirements, safety standards, and what to expect from the healing process — assessed with clinical precision.
-            </p>
-            <p className="text-base text-[#2D2D2B]/55 max-w-2xl mx-auto mb-10">
-              Ink Mugi operates from Annandale, VA — serving McLean, Vienna, Reston, Great Falls, Arlington, Tysons, Falls Church, and communities throughout Fairfax County.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
-              >
-                Schedule an Assessment
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/gallery"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B]/20 text-[#2D2D2B] rounded-full font-medium hover:border-[#2D2D2B] transition-all"
-              >
-                View Healed Results
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="Fairfax County"
+        badgeText="VA-Licensed · Fairfax County"
+        headline={<>Permanent Makeup in<br /><span className="text-[#9A7B69]">Fairfax County, Virginia</span></>}
+        subtext="A county-level resource for residents evaluating permanent makeup. Technique selection, Virginia licensing requirements, safety standards, and what to expect from the healing process — assessed with clinical precision."
+        secondaryText="Ink Mugi operates from Annandale, VA — serving McLean, Vienna, Reston, Great Falls, Arlington, Tysons, Falls Church, and communities throughout Fairfax County."
+        heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
+        heroImageAlt="Permanent makeup services for Fairfax County, Virginia at Ink Mugi studio"
+        primaryCTA={{ text: 'Schedule an Assessment', to: '/booking' }}
+        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+      />
 
       {/* ═══════════════════════════════════════════
           TRUST CREDENTIALS — Immediate proof points
@@ -662,6 +632,10 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <LocationMidCTA
+        subtext="Fairfax County residents from McLean to Springfield trust Ink Mugi for precision permanent makeup — VA-licensed, 330+ documented procedures."
+      />
 
       {/* ═══════════════════════════════════════════
           SECTION 9 — FAQ

@@ -13,6 +13,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const OmbreBrowsLoudounCounty: React.FC = () => {
   const businessSchema = {
@@ -157,49 +159,17 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
         </script>
       </SEO>
 
-      {/* ═══════════════════════════════════════════
-          HERO — Expansion Foothold, Not City Page
-          Tone: Quiet authority extended to a new geography.
-      ═══════════════════════════════════════════ */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]"></div>
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B]/90 text-white rounded-full text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              VA-Licensed · Serving Loudoun County
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Ombré Powder Brows in<br />
-              <span className="text-[#9A7B69]">Loudoun County, Virginia</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/75 max-w-3xl mx-auto mb-4 leading-relaxed">
-              Precision permanent makeup for Ashburn, Leesburg, Sterling, and South Riding residents — performed at our VA-licensed Annandale studio with 330+ documented procedures and healed-result verification at six weeks.
-            </p>
-            <p className="text-base text-[#2D2D2B]/55 max-w-2xl mx-auto mb-10">
-              22–40 minutes from most Loudoun communities. A measured distance for a measured outcome.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
-              >
-                Schedule an Assessment
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/gallery"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B]/20 text-[#2D2D2B] rounded-full font-medium hover:border-[#2D2D2B] transition-all"
-              >
-                View Healed Results
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="Loudoun County"
+        badgeText="VA-Licensed · Serving Loudoun County"
+        headline={<>Ombré Powder Brows in<br /><span className="text-[#9A7B69]">Loudoun County, Virginia</span></>}
+        subtext="Precision permanent makeup for Ashburn, Leesburg, Sterling, and South Riding residents — performed at our VA-licensed Annandale studio with 330+ documented procedures and healed-result verification at six weeks."
+        secondaryText="22–40 minutes from most Loudoun communities. A measured distance for a measured outcome."
+        heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
+        heroImageAlt="Ombré powder brows for Loudoun County, Virginia clients at Ink Mugi"
+        primaryCTA={{ text: 'Schedule an Assessment', to: '/booking' }}
+        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+      />
 
       {/* ═══════════════════════════════════════════
           TRUST CREDENTIALS
@@ -510,6 +480,10 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <LocationMidCTA
+        subtext="Ashburn, Leesburg, and Sterling residents trust Ink Mugi for precision ombré brows — VA-licensed with 330+ documented procedures."
+      />
 
       {/* ═══════════════════════════════════════════
           FAQ

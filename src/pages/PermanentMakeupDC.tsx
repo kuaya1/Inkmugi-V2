@@ -14,6 +14,8 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import LocationHero from '../components/LocationHero';
+import LocationMidCTA from '../components/LocationMidCTA';
 
 const PermanentMakeupDC: React.FC = () => {
   const localSchema = {
@@ -151,44 +153,15 @@ const PermanentMakeupDC: React.FC = () => {
         </script>
       </SEO>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-[#F0E4D8] to-[#F9F7F5] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-[#2D2D2B]"></div>
-          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-[#2D2D2B]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <AnimatedSection className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
-              <Building className="w-4 h-4" />
-              Serving Washington, D.C.
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
-              Premium Ombre Brows for<br />
-              <span className="text-[#9A7B69]">Washington DC</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-8">
-              Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 330+ procedures, exceptional results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
-              >
-                Book Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <a
-                href="tel:+15712838228"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all"
-              >
-                <Phone className="mr-2 w-5 h-5" />
-                (571) 283-8228
-              </a>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      <LocationHero
+        city="Washington DC"
+        badgeText="Serving Washington, D.C."
+        headline={<>Premium Ombre Brows for<br /><span className="text-[#9A7B69]">Washington DC</span></>}
+        subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 330+ procedures, exceptional results."
+        heroImage="https://live.staticflickr.com/65535/54366013611_8f4f6a8f8c_c_d.jpg"
+        heroImageAlt="Premium ombre brows for Washington DC clients at Ink Mugi studio"
+        secondaryCTA={{ type: 'phone' }}
+      />
 
       {/* Value Proposition */}
       <section className="py-12 bg-[#2D2D2B] text-white">
@@ -420,6 +393,10 @@ const PermanentMakeupDC: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <LocationMidCTA
+        subtext="Join DC professionals from Georgetown to Capitol Hill who make the 20-minute drive for premium ombré brows at honest pricing."
+      />
 
       {/* FAQs */}
       <section className="py-20 bg-white">
