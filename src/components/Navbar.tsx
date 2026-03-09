@@ -135,13 +135,16 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button — always visible regardless of hero colour */}
         <button
-          className={`md:hidden focus:outline-none ${
-            isScrolled ? 'text-neutral-700' : 'text-neutral-100'
+          className={`md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9A7B69] rounded-lg p-1.5 transition-colors duration-300 ${
+            isScrolled
+              ? 'text-neutral-700'
+              : 'bg-white/85 backdrop-blur-sm text-[#2D2D2B] shadow-sm'
           }`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
+          aria-expanded={isOpen}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
