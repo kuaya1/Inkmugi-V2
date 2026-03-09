@@ -1,23 +1,27 @@
-# SPA fallback for all routes
-/* /index.html 200
+# ──────────────────────────────────────────────────────────────────
+# Netlify _redirects
+# Rules are processed TOP → BOTTOM; first match wins.
+# The SPA fallback (/* /index.html 200) MUST be the last rule.
+# HTTPS / www canonicalisation is handled in the root netlify.toml.
+# ──────────────────────────────────────────────────────────────────
 
-# Redirect old .html extensions to clean URLs
-/services.html /services 301!
-/gallery.html /gallery 301!
-/contact.html /contact 301!
-/blog.html /blog 301!
-/faq.html /faq 301!
-/about.html /about 301!
+# Legacy HTML extensions → clean React routes
+/services.html  /services  301!
+/gallery.html   /gallery   301!
+/contact.html   /contact   301!
+/blog.html      /blog      301!
+/faq.html       /faq       301!
+/about.html     /about     301!
 
-# Redirect old location page URL to new SEO-optimized URL
-/permanent-makeup-annandale-va /licensed-pmu-artist-annandale 301!
+# Short / legacy service URL → canonical
+/ombre-brows  /signature-ombre-brows  301!
 
-# Consolidate ombre-brows to canonical service page (server-side 301)
-/ombre-brows /signature-ombre-brows 301!
+# Old location page → SEO-optimised URL
+/permanent-makeup-annandale-va  /licensed-pmu-artist-annandale  301!
 
-# Force HTTPS
-http://inkmugi.com/* https://www.inkmugi.com/:splat 301!
-http://www.inkmugi.com/* https://www.inkmugi.com/:splat 301!
-
-# Redirect non-www to www
-https://inkmugi.com/* https://www.inkmugi.com/:splat 301!
+# ──────────────────────────────────────────────────────────────────
+# SPA fallback — MUST be last.
+# Netlify serves index.html for every unmatched path; React Router
+# handles the actual routing client-side.
+# ──────────────────────────────────────────────────────────────────
+/*  /index.html  200
