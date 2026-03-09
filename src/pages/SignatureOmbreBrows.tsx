@@ -30,8 +30,8 @@ const SignatureOmbreBrows: React.FC = () => {
       description: 'Bold arch definition'
     },
     {
-      before: 'https://live.staticflickr.com/65535/54365981796_1a1d01e0b1_c_d.jpg',
-      after: 'https://live.staticflickr.com/65535/54366236469_b7cbd30b55_c_d.jpg',
+      before: 'https://live.staticflickr.com/65535/54408289026_3826bdb05b_c_d.jpg',
+      after: 'https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg',
       description: 'Soft gradient perfection'
     },
   ];
