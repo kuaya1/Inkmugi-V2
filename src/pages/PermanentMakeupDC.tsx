@@ -158,7 +158,7 @@ const PermanentMakeupDC: React.FC = () => {
         badgeText="Serving Washington, D.C."
         headline={<>Premium Ombre Brows for<br /><span className="text-[#9A7B69]">Washington DC</span></>}
         subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 330+ procedures, exceptional results."
-        heroImage="https://live.staticflickr.com/65535/54366013611_8f4f6a8f8c_c_d.jpg"
+        heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Premium ombre brows for Washington DC clients at Ink Mugi studio"
         secondaryCTA={{ type: 'phone' }}
       />

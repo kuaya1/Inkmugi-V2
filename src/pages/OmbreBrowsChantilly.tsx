@@ -194,7 +194,7 @@ const OmbreBrowsChantilly: React.FC = () => {
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Chantilly, VA</span></>}
         subtext="Precision permanent makeup built on a healed-first philosophy. 330+ procedures with documented outcomes — your brow shape is mapped, approved by you, and designed to age gracefully."
         secondaryText="22 minutes from the Route 50 corridor to our private Annandale studio. Free parking. Consultation-first."
-        heroImage="https://live.staticflickr.com/65535/54366013611_8f4f6a8f8c_c_d.jpg"
+        heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Ombre powder brows for Chantilly, VA clients at Ink Mugi studio"
         primaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
         secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}

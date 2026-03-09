@@ -194,7 +194,7 @@ const OmbreBrowsCentreville: React.FC = () => {
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Centreville, VA</span></>}
         subtext="Permanent makeup grounded in evidence, not trends. 330+ procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable."
         secondaryText="25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model."
-        heroImage="https://live.staticflickr.com/65535/54408135519_1e5eadff7c_c_d.jpg"
+        heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows for Centreville, VA clients at Ink Mugi studio"
         primaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
         secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}

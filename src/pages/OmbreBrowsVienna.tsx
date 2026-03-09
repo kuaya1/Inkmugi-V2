@@ -157,7 +157,7 @@ const OmbreBrowsVienna: React.FC = () => {
         badgeText="Serving Vienna, VA — 12 Min from Town Center"
         headline={<>Ombré Powder Brows for<br /><span className="text-[#9A7B69]">Vienna, VA</span></>}
         subtext="Just 12 minutes from Vienna Town Center. Many clients from Vienna, Oakton, and Mantua come in wanting brows that look quietly polished rather than heavily made up, and that softer finish is exactly where ombré powder brows excel. Northern Virginia's most trusted PMU artist — 330+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever."
-        heroImage="https://live.staticflickr.com/65535/54408135519_1e5eadff7c_c_d.jpg"
+        heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows client from Vienna, VA at Ink Mugi studio"
         secondaryCTA={{ type: 'phone' }}
       />
