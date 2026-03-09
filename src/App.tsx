@@ -43,6 +43,7 @@ const PermanentMakeupFairfaxCounty = lazy(() => import('./pages/PermanentMakeupF
 const OmbreBrowsLoudounCounty = lazy(() => import('./pages/OmbreBrowsLoudounCounty'));
 // Month 3 — Western Fairfax County Expansion
 const OmbreBrowsReston = lazy(() => import('./pages/OmbreBrowsReston'));
+const OmbreBrowsHerndon = lazy(() => import('./pages/OmbreBrowsHerndon'));
 const OmbreBrowsChantilly = lazy(() => import('./pages/OmbreBrowsChantilly'));
 const OmbreBrowsCentreville = lazy(() => import('./pages/OmbreBrowsCentreville'));
 // Prince William County Expansion
@@ -135,6 +136,7 @@ function App() {
           <Route path="/ombre-brows-loudoun-county-va" element={<OmbreBrowsLoudounCounty />} />
           {/* Month 3 — Western Fairfax County */}
           <Route path="/ombre-brows-reston-va" element={<OmbreBrowsReston />} />
+          <Route path="/ombre-brows-herndon-va" element={<OmbreBrowsHerndon />} />
           <Route path="/ombre-brows-chantilly-va" element={<OmbreBrowsChantilly />} />
           <Route path="/ombre-brows-centreville-va" element={<OmbreBrowsCentreville />} />
           {/* Prince William County Expansion */}
