@@ -754,6 +754,48 @@ const MicrobladingVsPowderBrows: React.FC = () => {
         </div>
       </section>
 
+      {/* Serving Clients Across Northern Virginia */}
+      <section className="py-20 bg-[#F9F7F5]">
+        <div className="container-custom">
+          <AnimatedSection className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] mb-4">
+              Serving Clients Across Northern Virginia
+            </h2>
+            <p className="text-[#2D2D2B]/70 max-w-3xl mx-auto text-lg">
+              Clients from across Northern Virginia visit our Annandale studio when deciding between microblading and{' '}
+              <Link to="/signature-ombre-brows" className="text-[#9A7B69] underline hover:text-[#2D2D2B] transition-colors">
+                ombré powder brows
+              </Link>
+              . Many clients from Arlington, Reston, and Herndon choose powder brows because the healed results look softer and last longer in humid climates.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            {[
+              { label: 'Ombre Brows Arlington VA', to: '/ombre-brows-arlington-va' },
+              { label: 'Ombre Brows Reston VA', to: '/ombre-brows-reston-va' },
+              { label: 'Ombre Brows Herndon VA', to: '/ombre-brows-herndon-va' },
+              { label: 'Ombre Brows Vienna VA', to: '/ombre-brows-vienna-va' },
+              { label: 'Permanent Makeup Tysons VA', to: '/permanent-makeup-tysons-va' },
+              { label: 'Ombre Brows Centreville VA', to: '/ombre-brows-centreville-va' },
+              { label: 'Ombre Brows Chantilly VA', to: '/ombre-brows-chantilly-va' },
+              { label: 'Permanent Makeup Annandale VA', to: '/licensed-pmu-artist-annandale' },
+            ].map((city) => (
+              <Link
+                key={city.to}
+                to={city.to}
+                className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group flex flex-col items-center justify-center gap-2"
+              >
+                <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm md:text-base">
+                  {city.label}
+                </p>
+                <ArrowRight className="w-4 h-4 text-[#9A7B69] opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#2D2D2B] to-[#1a1a18]">
         <div className="container-custom text-center">
