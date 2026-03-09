@@ -9,7 +9,9 @@ import {
   Shield,
   Car,
   ArrowRight,
-  Phone
+  Phone,
+  Droplets,
+  Clock
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
@@ -39,13 +41,15 @@ const PermanentMakeupAnnandale: React.FC = () => {
       { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Burke", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
+      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } },
+      { "@type": "AdministrativeArea", "name": "Fairfax County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
     ],
     "geo": {
       "@type": "GeoCoordinates",
@@ -96,16 +100,28 @@ const PermanentMakeupAnnandale: React.FC = () => {
     {
       question: "Is Ink Mugi open on weekends?",
       answer: "We offer select Saturday availability for Annandale residents. Our regular weekday hours are Monday through Friday, 10am to 6pm. We know weekends matter for busy schedules, so book your consultation and we'll find a time that works best for you — including those coveted Saturday slots."
+    },
+    {
+      question: "How much does permanent makeup cost in Annandale?",
+      answer: "Our ombre powder brows are $600 all-inclusive — that covers your design consultation, the full procedure (2–3 hours), premium EU-compliant vegan pigments, a medical-grade aftercare kit, 24/7 healing text support, and your included perfecting session at 6 weeks. No hidden fees. Compare this to $750–950 at DC and Tysons studios for similar quality."
+    },
+    {
+      question: "What's the difference between eyebrow tattoo and ombre powder brows?",
+      answer: "Traditional eyebrow tattoos use body tattoo ink that can turn blue or grey over time. Ombre powder brows use specialized PMU pigments designed to fade naturally and hold true color. The technique creates a soft, powdered makeup look — like perfectly filled brows — rather than the harsh, blocky appearance of old-style eyebrow tattooing. As an Annandale PMU artist, Mugi uses only premium EU-compliant vegan pigments that are specifically formulated for the brow area."
+    },
+    {
+      question: "Do you offer nano brows or microshading in Annandale?",
+      answer: "Yes! In addition to our signature ombre powder brows, we offer nano brows (crisp hair-stroke technique using a digital machine) and microshading (soft dot-work finish). During your free consultation at our Annandale studio, Mugi will evaluate your skin type, lifestyle, and goals to recommend the technique that will heal best for you."
     }
   ];
 
   return (
     <>
       <SEO
-        title="Permanent Makeup in Annandale, VA | Ink Mugi — Your Neighborhood PMU Studio"
-        description="Annandale's own ombre powder brows studio — walk-in convenience at Heritage Center, 7857 Heritage Dr #330. VA-licensed artist, 330+ procedures, $600 all-inclusive. Free parking, free consultation. Book today."
+        title="Permanent Makeup Annandale VA | PMU Artist & Ombre Powder Brows — Ink Mugi"
+        description="Licensed PMU artist in Annandale, VA — ombre powder brows, eyebrow tattoo & microshading at Heritage Center. 330+ procedures, 0.19% complication rate, $600 all-inclusive. Free parking & consultation."
         path="/licensed-pmu-artist-annandale"
-        keywords="permanent makeup Annandale VA, ombre brows Annandale, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA"
+        keywords="permanent makeup Annandale VA, pmu artist Annandale, ombre powder brows Annandale, eyebrow tattoo Annandale VA, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA, nano brows Annandale"
       >
         <script type="application/ld+json">
           {JSON.stringify({
@@ -123,6 +139,18 @@ const PermanentMakeupAnnandale: React.FC = () => {
               "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
               "reviewBody": t.text
             }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Permanent Makeup in Annandale, VA",
+            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. 330+ documented procedures, healed-first approach. Located at Heritage Center, 7857 Heritage Dr #330.",
+            "provider": { "@type": "HealthAndBeautyBusiness", "@id": "https://www.inkmugi.com/#business" },
+            "areaServed": { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+            "serviceType": "Permanent Makeup",
+            "offers": { "@type": "Offer", "price": "600", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
           })}
         </script>
         <script type="application/ld+json">
@@ -255,6 +283,78 @@ const PermanentMakeupAnnandale: React.FC = () => {
               </div>
             </AnimatedSection>
           </div>
+
+          {/* Service link cards */}
+          <AnimatedSection className="mt-12">
+            <div className="bg-[#F7EDE6] rounded-2xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-xl font-cormorant font-semibold text-[#2D2D2B] text-center mb-6">
+                Explore Our Permanent Makeup Services in Annandale
+              </h3>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group">
+                  <p className="font-semibold text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Signature Ombre Brows</p>
+                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Our flagship technique</p>
+                </Link>
+                <Link to="/nano-brows" className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group">
+                  <p className="font-semibold text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Nano Brows</p>
+                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Crisp hair-stroke precision</p>
+                </Link>
+                <Link to="/microshading-artistry" className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group">
+                  <p className="font-semibold text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Microshading</p>
+                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Whisper-soft definition</p>
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Ombre Brows vs Microblading — Climate Section */}
+      <section className="py-20 bg-[#2D2D2B] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
+          }}
+        />
+        <div className="container-custom relative">
+          <AnimatedSection className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-8 text-center">
+              Ombre Brows vs Microblading —<br />
+              <span className="text-[#E6DAD2]">Why Annandale Clients Choose Powder Brows</span>
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-10">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-4">
+                  <Droplets className="w-6 h-6 text-[#E6DAD2]" />
+                  <h3 className="text-xl font-semibold">Northern Virginia Humidity Factor</h3>
+                </div>
+                <p className="text-white/80 leading-relaxed">
+                  Annandale sits right in the Potomac basin's humidity zone, with summers consistently reaching 70–80% humidity. Microblading strokes — created by manual blade cuts in the epidermis — tend to blur and migrate faster in these conditions. Ombre powder brows deposit pigment deeper using a digital machine, creating results that hold their clarity through every Northern Virginia season.
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-4">
+                  <Clock className="w-6 h-6 text-[#E6DAD2]" />
+                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
+                </div>
+                <p className="text-white/80 leading-relaxed">
+                  Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Annandale residents making a considered investment, this distinction is exactly why they choose our studio over artists who only show fresh work.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link
+                to="/microblading-vs-powder-brows"
+                className="inline-flex items-center gap-2 text-[#E6DAD2] hover:text-white transition-colors font-medium"
+              >
+                Read the full microblading vs powder brows comparison
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -425,33 +525,37 @@ const PermanentMakeupAnnandale: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Springfield, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
             </Link>
+            <Link to="/permanent-makeup-burke-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Burke, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
+            </Link>
             <Link to="/permanent-makeup-tysons-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Tysons, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-vienna-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Vienna, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">14 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-mclean-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">McLean, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-alexandria-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Alexandria, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
+            </Link>
+            <Link to="/permanent-makeup-dc" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Washington, DC</p>
+              <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
             </Link>
             <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Ombre Powder Brows</p>
               <p className="text-sm text-[#2D2D2B]/50">Our signature service</p>
             </Link>
-            <Link to="/nano-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Nano Brows</p>
-              <p className="text-sm text-[#2D2D2B]/50">Hair-stroke precision</p>
-            </Link>
-            <Link to="/services" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">All Services</p>
-              <p className="text-sm text-[#2D2D2B]/50">Pricing & details</p>
-            </Link>
-            <Link to="/about" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">About Mugi</p>
-              <p className="text-sm text-[#2D2D2B]/50">Credentials & story</p>
-            </Link>
             <Link to="/faq" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">FAQ</p>
-              <p className="text-sm text-[#2D2D2B]/50">17 common questions</p>
-            </Link>
-            <Link to="/blog" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">PMU Blog</p>
-              <p className="text-sm text-[#2D2D2B]/50">Expert guides</p>
+              <p className="text-sm text-[#2D2D2B]/50">Common questions</p>
             </Link>
           </div>
         </div>

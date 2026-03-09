@@ -46,6 +46,8 @@ const OmbreBrowsReston = lazy(() => import('./pages/OmbreBrowsReston'));
 const OmbreBrowsHerndon = lazy(() => import('./pages/OmbreBrowsHerndon'));
 const OmbreBrowsChantilly = lazy(() => import('./pages/OmbreBrowsChantilly'));
 const OmbreBrowsCentreville = lazy(() => import('./pages/OmbreBrowsCentreville'));
+// Burke — Fairfax County Expansion
+const PermanentMakeupBurke = lazy(() => import('./pages/PermanentMakeupBurke'));
 // Prince William County Expansion
 const OmbreBrowsManassas = lazy(() => import('./pages/OmbreBrowsManassas'));
 const OmbreBrowsWoodbridge = lazy(() => import('./pages/OmbreBrowsWoodbridge'));
@@ -140,6 +142,8 @@ function App() {
           <Route path="/ombre-brows-herndon-va" element={<OmbreBrowsHerndon />} />
           <Route path="/ombre-brows-chantilly-va" element={<OmbreBrowsChantilly />} />
           <Route path="/ombre-brows-centreville-va" element={<OmbreBrowsCentreville />} />
+          {/* Burke — Fairfax County Expansion */}
+          <Route path="/permanent-makeup-burke-va" element={<PermanentMakeupBurke />} />
           {/* Prince William County Expansion */}
           <Route path="/ombre-brows-manassas-va" element={<OmbreBrowsManassas />} />
           <Route path="/ombre-brows-woodbridge-va" element={<OmbreBrowsWoodbridge />} />

@@ -477,6 +477,10 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm">PMU Knowledge Base</p>
               <p className="text-xs text-[#2D2D2B]/50 mt-1">Guides &amp; insights</p>
             </Link>
+            <Link to="/licensed-pmu-artist-annandale" className="bg-[#F9F7F5] rounded-xl p-4 text-center hover:shadow-md transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm">Annandale Studio</p>
+              <p className="text-xs text-[#2D2D2B]/50 mt-1">Our home location</p>
+            </Link>
           </div>
         </div>
       </section>

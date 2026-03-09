@@ -543,6 +543,10 @@ const OmbreBrowsChantilly: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">FAQ</p>
               <p className="text-sm text-[#2D2D2B]/50">Common questions</p>
             </Link>
+            <Link to="/licensed-pmu-artist-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Annandale Studio</p>
+              <p className="text-sm text-[#2D2D2B]/50">Our home location</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -592,7 +592,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
               { label: 'Falls Church, VA', to: '/permanent-makeup-falls-church-va', time: '8 min' },
               { label: 'Tysons, VA', to: '/permanent-makeup-tysons-va', time: '8 min' },
               { label: 'Fairfax City', to: '/ombre-brows-fairfax-va', time: '15 min' },
-              { label: 'Annandale, VA', to: '/permanent-makeup-annandale-va', time: 'Studio' },
+              { label: 'Annandale, VA', to: '/licensed-pmu-artist-annandale', time: 'Studio' },
               { label: 'Springfield, VA', to: '/permanent-makeup-springfield-va', time: '12 min' },
               { label: 'Centreville, VA', to: '/ombre-brows-centreville-va', time: '22 min' },
               { label: 'Chantilly, VA', to: '/ombre-brows-chantilly-va', time: '25 min' },
@@ -619,6 +619,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
               { label: 'Aftercare Protocol', to: '/aftercare-guide', sub: 'Complete healing guide' },
               { label: 'PMU Knowledge Base', to: '/blog', sub: 'Guides & clinical insights' },
               { label: 'Full FAQ', to: '/faq', sub: 'Detailed answers' },
+              { label: 'Annandale Studio', to: '/licensed-pmu-artist-annandale', sub: 'Our home location' },
             ].map((link) => (
               <Link
                 key={link.label}

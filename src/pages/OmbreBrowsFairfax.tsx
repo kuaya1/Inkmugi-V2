@@ -408,7 +408,7 @@ const OmbreBrowsFairfax: React.FC = () => {
             </h2>
             <p className="text-[#2D2D2B]/60">Premium ombre powder brows for the entire DMV region</p>
           </AnimatedSection>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
@@ -421,25 +421,29 @@ const OmbreBrowsFairfax: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Washington, DC</p>
               <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
             </Link>
-            <Link to="/services" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">All Services</p>
-              <p className="text-sm text-[#2D2D2B]/50">Pricing & details</p>
+            <Link to="/permanent-makeup-falls-church-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Falls Church, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">8 min drive</p>
             </Link>
-            <Link to="/about" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">About Mugi</p>
-              <p className="text-sm text-[#2D2D2B]/50">Credentials & story</p>
+            <Link to="/ombre-brows-vienna-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Vienna, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">14 min drive</p>
+            </Link>
+            <Link to="/permanent-makeup-springfield-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Springfield, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">12 min drive</p>
+            </Link>
+            <Link to="/licensed-pmu-artist-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Annandale, VA (Our Studio)</p>
+              <p className="text-sm text-[#2D2D2B]/50">Home studio</p>
+            </Link>
+            <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Ombre Powder Brows</p>
+              <p className="text-sm text-[#2D2D2B]/50">Our signature service</p>
             </Link>
             <Link to="/faq" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">FAQ</p>
-              <p className="text-sm text-[#2D2D2B]/50">17 common questions</p>
-            </Link>
-            <Link to="/blog" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">PMU Blog</p>
-              <p className="text-sm text-[#2D2D2B]/50">Expert guides</p>
-            </Link>
-            <Link to="/authority" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Research Hub</p>
-              <p className="text-sm text-[#2D2D2B]/50">330+ procedure data</p>
+              <p className="text-sm text-[#2D2D2B]/50">Common questions</p>
             </Link>
           </div>
         </div>
