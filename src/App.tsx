@@ -45,6 +45,11 @@ const OmbreBrowsLoudounCounty = lazy(() => import('./pages/OmbreBrowsLoudounCoun
 const OmbreBrowsReston = lazy(() => import('./pages/OmbreBrowsReston'));
 const OmbreBrowsChantilly = lazy(() => import('./pages/OmbreBrowsChantilly'));
 const OmbreBrowsCentreville = lazy(() => import('./pages/OmbreBrowsCentreville'));
+// Prince William County Expansion
+const OmbreBrowsManassas = lazy(() => import('./pages/OmbreBrowsManassas'));
+const OmbreBrowsWoodbridge = lazy(() => import('./pages/OmbreBrowsWoodbridge'));
+// Blog Pages
+const OmbreBrowsDarkSkinGuide = lazy(() => import('./pages/blog/OmbreBrowsDarkSkinGuide'));
 // New Service Pages
 const MicroshadingArtistry = lazy(() => import('./pages/MicroshadingArtistry'));
 const PmuCorrectionRestoration = lazy(() => import('./pages/PmuCorrectionRestoration'));
@@ -130,6 +135,11 @@ function App() {
           <Route path="/ombre-brows-reston-va" element={<OmbreBrowsReston />} />
           <Route path="/ombre-brows-chantilly-va" element={<OmbreBrowsChantilly />} />
           <Route path="/ombre-brows-centreville-va" element={<OmbreBrowsCentreville />} />
+          {/* Prince William County Expansion */}
+          <Route path="/ombre-brows-manassas-va" element={<OmbreBrowsManassas />} />
+          <Route path="/ombre-brows-woodbridge-va" element={<OmbreBrowsWoodbridge />} />
+          {/* Blog Pages */}
+          <Route path="/blog/ombre-brows-dark-skin-guide" element={<OmbreBrowsDarkSkinGuide />} />
           {/* New Service Pages */}
           <Route path="/microshading-artistry" element={<MicroshadingArtistry />} />
           <Route path="/pmu-correction-restoration" element={<PmuCorrectionRestoration />} />

@@ -559,6 +559,14 @@ const OmbreBrowsReston: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">McLean, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
             </Link>
+            <Link to="/ombre-brows-manassas-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Manassas, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">30 min drive</p>
+            </Link>
+            <Link to="/ombre-brows-woodbridge-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Woodbridge, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">35 min drive</p>
+            </Link>
             <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Ombre Powder Brows</p>
               <p className="text-sm text-[#2D2D2B]/50">Our signature service</p>

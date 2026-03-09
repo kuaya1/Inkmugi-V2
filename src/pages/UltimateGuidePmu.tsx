@@ -966,6 +966,20 @@ const UltimateGuidePmu: React.FC = () => {
                   <h4 className="font-bold text-[#2D2D2B] mb-2 group-hover:text-[#2D2D2B]">View Gallery</h4>
                   <p className="text-sm text-gray-600">Before & after results</p>
                 </Link>
+                <Link
+                  to="/ombre-brows-manassas-va"
+                  className="p-6 bg-white hover:bg-[#E6DAD2]/10 rounded-xl border-2 border-[#E6DAD2]/30 hover:border-[#E6DAD2] transition-all group"
+                >
+                  <h4 className="font-bold text-[#2D2D2B] mb-2 group-hover:text-[#2D2D2B]">Manassas, VA</h4>
+                  <p className="text-sm text-gray-600">Prince William County PMU</p>
+                </Link>
+                <Link
+                  to="/ombre-brows-woodbridge-va"
+                  className="p-6 bg-white hover:bg-[#E6DAD2]/10 rounded-xl border-2 border-[#E6DAD2]/30 hover:border-[#E6DAD2] transition-all group"
+                >
+                  <h4 className="font-bold text-[#2D2D2B] mb-2 group-hover:text-[#2D2D2B]">Woodbridge, VA</h4>
+                  <p className="text-sm text-gray-600">Eastern Prince William PMU</p>
+                </Link>
               </div>
             </AnimatedSection>
           </div>

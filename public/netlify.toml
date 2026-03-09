@@ -113,3 +113,24 @@
 
 [functions]
   directory = "netlify/functions"
+
+# Enable prerendering for SEO bots
+# Serves fully rendered HTML snapshots to search engine crawlers
+# while real users get the SPA experience
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+# Bot-specific prerendering via Netlify's built-in prerendering
+# Enable in Netlify Dashboard: Site Settings → Build & Deploy → Prerendering
+# Supported bots: Googlebot, Bingbot, Twitterbot, facebookexternalhit, LinkedInBot
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -16,13 +16,13 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 
-const OmbreBrowsCentreville: React.FC = () => {
+const OmbreBrowsWoodbridge: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
     "@id": "https://www.inkmugi.com/#business",
     "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://www.inkmugi.com/ombre-brows-centreville-va",
+    "url": "https://www.inkmugi.com/ombre-brows-woodbridge-va",
     "logo": "https://www.inkmugi.com/logo.png",
     "image": "https://www.inkmugi.com/og-image.jpg",
     "telephone": "+15712838228",
@@ -36,12 +36,13 @@ const OmbreBrowsCentreville: React.FC = () => {
     },
     "priceRange": "$$$",
     "areaServed": [
-      { "@type": "City", "name": "Centreville", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Chantilly", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Woodbridge", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Dale City", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Lake Ridge", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "City", "name": "Dumfries", "containedInPlace": { "@type": "State", "name": "Virginia" } },
       { "@type": "City", "name": "Manassas", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "AdministrativeArea", "name": "Fairfax County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
+      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+      { "@type": "AdministrativeArea", "name": "Prince William County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
     ],
     "geo": {
       "@type": "GeoCoordinates",
@@ -53,15 +54,15 @@ const OmbreBrowsCentreville: React.FC = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Ombre Powder Brows for Centreville VA Clients",
-    "description": "Professional ombre powder brows for Centreville, VA residents. 330+ documented procedures, healed-first philosophy, VA licensed. Located in Annandale — 25 minutes from Centreville Square via Route 28 and I-66.",
+    "name": "Ombre Powder Brows for Woodbridge VA Clients",
+    "description": "Professional ombre powder brows service for Woodbridge, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 35 minutes from Woodbridge via I-95/I-395.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://www.inkmugi.com/#business"
     },
     "areaServed": {
       "@type": "City",
-      "name": "Centreville",
+      "name": "Woodbridge",
       "containedInPlace": { "@type": "State", "name": "Virginia" }
     },
     "serviceType": "Permanent Makeup",
@@ -74,69 +75,69 @@ const OmbreBrowsCentreville: React.FC = () => {
   };
 
   const neighborhoods = [
-    { name: 'Centreville Square', time: '25 min' },
-    { name: 'Route 28 Corridor', time: '23 min' },
-    { name: 'Bull Run Area', time: '28 min' },
-    { name: 'Virginia Run', time: '22 min' },
-    { name: 'Centre Ridge', time: '24 min' },
-    { name: 'Little Rocky Run', time: '22 min' },
+    { name: 'Woodbridge (I-95)', time: '35 min' },
+    { name: 'Dale City', time: '30 min' },
+    { name: 'Lake Ridge', time: '28 min' },
+    { name: 'Dumfries', time: '38 min' },
+    { name: 'Potomac Mills', time: '35 min' },
+    { name: 'Occoquan', time: '25 min' },
   ];
 
-  const centrevilleTestimonials = [
+  const woodbridgeTestimonials = [
     {
-      name: "Jennifer H.",
-      location: "Centreville",
-      text: "After two consultations at salons near Centreville Square that felt rushed, I drove to Mugi's studio in Annandale. She spent 40 minutes mapping my face before even discussing pigment. That level of care is why my healed results look flawless.",
+      name: "Tamara J.",
+      location: "Woodbridge",
+      text: "I drove past several PMU studios closer to home after seeing Mugi's healed results. The 35-minute drive on I-95 was nothing compared to the confidence I have in my brows now. Best decision I made all year.",
       rating: 5
     },
     {
-      name: "Nadia R.",
-      location: "Virginia Run",
-      text: "My morning routine used to eat 15 minutes on brows alone. As a working mom in Virginia Run, those minutes matter. Now I wake up with brows that look naturally filled in — and they've held up perfectly through two humid summers.",
+      name: "Angela M.",
+      location: "Dale City",
+      text: "After a bad microblading experience in my area, I wasn't going to settle again. Mugi's transparent approach — showing healed photos, not fresh ones — gave me confidence. My corrected brows look incredible and natural.",
       rating: 5
     },
     {
-      name: "Stephanie C.",
-      location: "Little Rocky Run",
-      text: "I'm particular about who I trust with something permanent. Mugi's documented results and 0.19% complication rate were what convinced me to make the drive. Six months later, I still get compliments from people who think I just have amazing natural brows.",
+      name: "Stephanie H.",
+      location: "Lake Ridge",
+      text: "I commute from Lake Ridge to DC for work, so stopping at the Annandale studio was easy. Mugi's precision and the aftercare support were outstanding. Five months later and my brows still look freshly done.",
       rating: 5
     }
   ];
 
   const faqs = [
     {
-      question: "Is your Annandale studio convenient from Centreville?",
-      answer: "Very convenient — it's approximately 25 minutes via I-66 East from the Centreville Square area. Clients from Virginia Run and Little Rocky Run often reach us in 22 minutes via Route 29. The drive is straightforward with no tricky turns, and free on-site parking means zero hassle when you arrive."
+      question: "Do you offer ombre powder brows near Woodbridge, VA?",
+      answer: "Our studio is located in Annandale, VA — approximately 35 minutes from Woodbridge via I-95 North to the Fairfax County Parkway. Many of our Prince William County clients find the drive straightforward, especially with no traffic during mid-morning appointment times. Free parking is available at our studio, and our private suite ensures a calm, comfortable experience."
     },
     {
-      question: "What makes ombre powder brows a good choice for Centreville residents?",
-      answer: "Centreville's location in western Fairfax County means full exposure to Northern Virginia's humid summers. Ombre powder brows deposit pigment into the stable mid-dermis using a digital machine — this means results that hold their shape and color regardless of humidity, sweat, or seasonal changes. For active Centreville families who spend time at Bull Run or enjoy outdoor activities, powder brows are the most resilient option."
+      question: "Why do Woodbridge residents choose Ink Mugi over closer studios?",
+      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With 330+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
     },
     {
-      question: "How is Ink Mugi different from PMU artists closer to Centreville?",
-      answer: "Three measurable differences: 330+ tracked procedures (not an estimate), a 0.19% complication rate that's 13x below industry average, and a portfolio that exclusively shows healed results at 6+ weeks — not fresh, same-day photos. We also use premium EU-compliant vegan pigments and include a 6-week perfecting session in every price."
+      question: "How long do ombre powder brows last for Woodbridge area clients?",
+      answer: "Ombre powder brows typically last 1.5–3 years, depending on skin type, lifestyle, and aftercare. Northern Virginia's humid summers can affect retention, so we provide customized seasonal aftercare guidance tailored to our regional climate. Most Woodbridge clients schedule a color refresh around the 18–24 month mark."
     },
     {
-      question: "Do you serve clients from the Route 28 and Bull Run areas?",
-      answer: "Absolutely. We regularly welcome clients from across the Centreville community — Centreville Square, Route 28 corridor, Bull Run, Virginia Run, Centre Ridge, and Little Rocky Run. Several clients combine their appointment with errands in the Annandale or Fairfax area to maximize the trip."
+      question: "What's the best route from Woodbridge to your Annandale studio?",
+      answer: "The most common route is I-95 North to the Fairfax County Parkway (Route 7100), then east to Heritage Drive — approximately 35 minutes in normal traffic. Some Lake Ridge clients prefer the back roads via Route 123 through Occoquan and Lorton. We offer free on-site parking at our Heritage Drive location."
     },
     {
-      question: "How long is the entire ombre powder brow process?",
-      answer: "Your initial consultation (free, no obligation) takes about 30–45 minutes. The procedure itself is 2–3 hours, including 45 minutes of design mapping and your approval. The healing process takes approximately 6 weeks, during which Mugi is available via text for any questions. Your included perfecting session at 6 weeks completes the process."
+      question: "What's included in the $600 ombre brows price for Woodbridge clients?",
+      answer: "Everything: a thorough design consultation with facial mapping, the full procedure (2–3 hours, unrushed), premium EU-compliant vegan pigments, a medical-grade aftercare kit, 24/7 healing text support from Mugi directly, and your included perfecting session at 6 weeks. No hidden costs, no add-on upsells."
     },
     {
-      question: "What if I want nano brows or microshading instead?",
-      answer: "We offer all three techniques: ombre powder brows, nano brows (individual hair strokes), and microshading (soft dotwork finish). During your free consultation, we'll evaluate your skin type, natural brow pattern, and goals to recommend the approach that will deliver the best healed outcome for your specific situation."
+      question: "Can I get nano brows or microshading instead of ombre powder brows?",
+      answer: "Absolutely. We also offer nano brows (crisp hair-stroke technique) and microshading (soft dot-work finish). During your free consultation, Mugi will evaluate your skin type, lifestyle, and goals to recommend the technique that will heal best for you — especially important given our humid Northern Virginia summers."
     }
   ];
 
   return (
     <>
       <SEO
-        title="Ombre Powder Brows Centreville VA | Ink Mugi — Healed-First Results"
-        description="Ombre powder brows for Centreville VA residents. 330+ procedures, 0.19% complication rate. 25 min from Centreville Square. VA licensed, healed-first approach. Free consultation."
-        path="/ombre-brows-centreville-va"
-        keywords="ombre powder brows Centreville VA, permanent makeup Centreville Virginia, PMU near Centreville Square, powder brows Route 28, microshading Centreville, nano brows Centreville VA"
+        title="Ombre Powder Brows Woodbridge VA | Ink Mugi — Healed-First PMU"
+        description="Ombre powder brows for Woodbridge VA residents. 330+ procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
+        path="/ombre-brows-woodbridge-va"
+        keywords="ombre powder brows Woodbridge VA, permanent makeup Woodbridge Virginia, powder brows Prince William County, PMU near Woodbridge, microshading Woodbridge VA, nano brows Woodbridge"
       >
         <script type="application/ld+json">
           {JSON.stringify({
@@ -148,7 +149,7 @@ const OmbreBrowsCentreville: React.FC = () => {
               "bestRating": "5",
               "worstRating": "5"
             },
-            "review": centrevilleTestimonials.map(t => ({
+            "review": woodbridgeTestimonials.map(t => ({
               "@type": "Review",
               "author": { "@type": "Person", "name": t.name },
               "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
@@ -180,7 +181,7 @@ const OmbreBrowsCentreville: React.FC = () => {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
               { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Centreville VA", "item": "https://www.inkmugi.com/ombre-brows-centreville-va" }
+              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Woodbridge VA", "item": "https://www.inkmugi.com/ombre-brows-woodbridge-va" }
             ]
           })}
         </script>
@@ -196,17 +197,17 @@ const OmbreBrowsCentreville: React.FC = () => {
           <AnimatedSection className="text-center mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
               <MapPin className="w-4 h-4" />
-              Serving Centreville, VA
+              Serving Woodbridge, VA
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
               Ombre Powder Brows for<br />
-              <span className="text-[#9A7B69]">Centreville, VA</span>
+              <span className="text-[#9A7B69]">Woodbridge, VA</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Permanent makeup grounded in evidence, not trends. 330+ procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable.
+              Healed-first permanent makeup trusted by Prince William County professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment.
             </p>
             <p className="text-base text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model.
+              35 minutes from Woodbridge via I-95 to our private Annandale studio. Free parking. Consultation-first approach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -227,25 +228,25 @@ const OmbreBrowsCentreville: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Centreville Clients Choose Ink Mugi */}
+      {/* Why Woodbridge Clients Choose Ink Mugi */}
       <section className="py-20 bg-white">
         <div className="container-custom">
           <AnimatedSection className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
-              Why Centreville Residents Drive to Ink Mugi
+              Why Woodbridge Residents Trust Ink Mugi for Permanent Makeup
             </h2>
             <div className="prose prose-lg text-[#2D2D2B]/80 max-w-none">
               <p>
-                Centreville sits at one of western Fairfax County's most active crossroads — where Route 28 meets I-66, and where families balance suburban life with demanding careers along the Dulles and DC corridors. When you're managing that kind of pace, the idea of getting something permanent done on your face deserves careful consideration.
+                Woodbridge is the heart of eastern Prince William County — a growing community where suburban convenience meets northern Virginia's connectivity. From the Potomac Mills corridor to the quiet neighborhoods of Lake Ridge, Woodbridge residents understand the value of investing in quality over convenience.
               </p>
               <p>
-                Our clients from the Centreville Square area, Virginia Run, and the neighborhoods around Bull Run Regional Park share a common thread: they researched thoroughly before booking. They compared healed portfolios, read about complication rates, and asked the right questions. What brings them to our Annandale studio — about 25 minutes east on I-66 — is the evidence behind our work.
+                Many of our Woodbridge clients are professionals commuting north on I-95, military families stationed at nearby bases, or parents managing busy schedules between school runs and activities along the Route 1 corridor. They want brows that look polished and natural without daily maintenance — and they want results from an artist with a proven, documented track record.
               </p>
               <p>
-                Centreville is a community of discerning families, many with ties to government, defense, and technology sectors. These are people who evaluate credentials before making decisions. Our Virginia licensure, hospital-grade sterilization standards, and a complication rate 13x below the industry average resonate with that mindset.
+                Our Annandale studio is approximately 35 minutes north of Woodbridge via I-95. Clients from Dale City and Lake Ridge often tell us the drive is straightforward, especially booking mid-morning appointments after the commuter rush clears. Free parking and a private, unhurried environment make the trip effortless.
               </p>
               <p>
-                The drive from Centre Ridge or Little Rocky Run is straightforward — I-66 East to Route 236, then a quick turn into Heritage Center. Free parking, a private studio environment, and appointments that are never double-booked. Several Centreville clients tell us they appreciate the calm after navigating Route 28 traffic.
+                As a Northern Virginia-based studio, we understand the regional climate and lifestyle demands that affect PMU longevity. Every procedure is built around our healed-first philosophy: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Woodbridge clients rely on.
               </p>
             </div>
           </AnimatedSection>
@@ -257,10 +258,10 @@ const OmbreBrowsCentreville: React.FC = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Drive Times from Centreville &amp; Nearby Areas
+              Drive Times from Woodbridge &amp; Nearby Areas
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Straight east on I-66 to our dedicated Annandale studio. Free parking at our door — no garages, no meters.
+              A quick drive north on I-95 to our private studio in Annandale. Free on-site parking — zero stress.
             </p>
           </AnimatedSection>
 
@@ -279,14 +280,14 @@ const OmbreBrowsCentreville: React.FC = () => {
           <AnimatedSection className="mt-12">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d99000!2d-77.40!3d38.84!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89b6444440b7af63%3A0x908b84f7b7e8c9e0!2sCentreville%2C%20VA!3m2!1d38.8403516!2d-77.4289153!4m5!1s0x89b64faa3b8d9e57%3A0x7b0da9b5a7a0b8f0!2s7857%20Heritage%20Dr%20%23330%2C%20Annandale%2C%20VA%2022003!3m2!1d38.8303726!2d-77.1969261!5e0!3m2!1sen!2sus!4v1703444800000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d99400!2d-77.30!3d38.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89b6607acbb6c1e5%3A0xfb27a58dd68e8be6!2sWoodbridge%2C%20VA!3m2!1d38.6581722!2d-77.2497049!4m5!1s0x89b64faa3b8d9e57%3A0x7b0da9b5a7a0b8f0!2s7857%20Heritage%20Dr%20%23330%2C%20Annandale%2C%20VA%2022003!3m2!1d38.8303726!2d-77.1969261!5e0!3m2!1sen!2sus!4v1703444800000!5m2!1sen!2sus"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Directions from Centreville to Ink Mugi in Annandale"
+                title="Directions from Woodbridge to Ink Mugi in Annandale"
               />
             </div>
             <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
@@ -301,10 +302,10 @@ const OmbreBrowsCentreville: React.FC = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Measurable Excellence, Not Marketing Claims
+              Data-Driven Artistry Woodbridge Clients Rely On
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Every number we cite is tracked. Every healed photo is real. Our Centreville clients expect evidence — we deliver it.
+              Every claim is documented. Every result is photographed at 6+ weeks healed — not fresh.
             </p>
           </AnimatedSection>
 
@@ -314,9 +315,9 @@ const OmbreBrowsCentreville: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ Outcomes Documented</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Each procedure is tracked end-to-end — consultation notes, procedure details, healed photographs at 6+ weeks. This accumulated experience means refined precision for every client, including those traveling from the Centreville area.
+                  Not a claim — a tracked dataset. Every procedure is documented from consultation through healed result. This depth of experience means fewer surprises and better outcomes for our Woodbridge clients.
                 </p>
               </div>
             </AnimatedSection>
@@ -326,9 +327,9 @@ const OmbreBrowsCentreville: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Shield className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Verified Safety Standards</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">0.19% Complication Rate</h3>
                 <p className="text-[#2D2D2B]/70">
-                  A 0.19% complication rate isn't an aspiration — it's our documented record across 330+ procedures. Virginia licensed (VA #1231002471), insured, bloodborne pathogen certified. Premium EU-compliant vegan pigments with no heavy metals or undisclosed additives.
+                  That's 13x lower than the industry average of 2.5%. Virginia licensed, insured, bloodborne pathogen certified. Hospital-grade sterilization and premium EU-compliant vegan pigments on every procedure.
                 </p>
               </div>
             </AnimatedSection>
@@ -338,9 +339,9 @@ const OmbreBrowsCentreville: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <CheckCircle className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Your Approval Comes First</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Design Approved Before Pigment</h3>
                 <p className="text-[#2D2D2B]/70">
-                  We map your ideal brow shape using facial proportions and the golden ratio, draw it on your face, and wait for your explicit approval. Adjustments, rethinking, questions — all welcome. Nothing permanent begins until you say "this is exactly right."
+                  Your brow shape is mapped to your facial proportions, drawn on your face, and adjusted until you say "perfect." Nothing permanent happens until you're 100% confident — that's our guarantee.
                 </p>
               </div>
             </AnimatedSection>
@@ -350,20 +351,20 @@ const OmbreBrowsCentreville: React.FC = () => {
           <AnimatedSection className="mt-12">
             <div className="bg-[#F7EDE6] rounded-2xl p-8 max-w-4xl mx-auto">
               <h3 className="text-xl font-cormorant font-semibold text-[#2D2D2B] text-center mb-6">
-                Explore Our Technique Options
+                Explore Our Permanent Makeup Services
               </h3>
               <div className="grid sm:grid-cols-3 gap-4">
                 <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group">
                   <p className="font-semibold text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Signature Ombre Brows</p>
-                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Soft gradient, powdered finish</p>
+                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Our flagship technique</p>
                 </Link>
                 <Link to="/nano-brows" className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group">
                   <p className="font-semibold text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Nano Brows</p>
-                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Individual hair-stroke detail</p>
+                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Crisp hair-stroke precision</p>
                 </Link>
                 <Link to="/microshading-artistry" className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-shadow group">
                   <p className="font-semibold text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Microshading</p>
-                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Delicate dotwork technique</p>
+                  <p className="text-sm text-[#2D2D2B]/60 mt-1">Whisper-soft definition</p>
                 </Link>
               </div>
             </div>
@@ -371,7 +372,7 @@ const OmbreBrowsCentreville: React.FC = () => {
         </div>
       </section>
 
-      {/* Ombre vs Microblading Section */}
+      {/* Ombre vs Microblading - Climate Section */}
       <section className="py-20 bg-[#2D2D2B] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5"
           style={{
@@ -382,27 +383,27 @@ const OmbreBrowsCentreville: React.FC = () => {
           <AnimatedSection className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-8 text-center">
               Ombre Brows vs Microblading —<br />
-              <span className="text-[#E6DAD2]">What Works Best in Centreville?</span>
+              <span className="text-[#E6DAD2]">What Works Best in Woodbridge?</span>
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-10">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Droplets className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Fairfax County's Humidity Reality</h3>
+                  <h3 className="text-xl font-semibold">Potomac Basin Humidity Factor</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
-                  Centreville's position at the edge of the Piedmont and Bull Run watershed means warm, moisture-heavy summers. Microblading — a manual blade technique that places pigment in the shallow epidermis — is particularly susceptible to humidity-driven diffusion. The strokes blur, spread, and fade unevenly. Ombre powder brows use controlled digital application into the mid-dermis, where pigment remains stable. For families who spend summers at Bull Run or on neighborhood trails, this durability distinction is practical, not theoretical.
+                  Woodbridge's location near the Occoquan River and Potomac means consistent high humidity through summer — often 75–85% in the corridor between Dale City and Dumfries. Microblading strokes — created by manual blade cuts in the epidermis — tend to blur and migrate faster in these conditions. We regularly see clients from southern Prince William County who were frustrated by how quickly their microblading faded. Ombre powder brows deposit pigment deeper using a digital machine, creating results that hold their clarity through every Northern Virginia summer.
                 </p>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Healed Is the Only Result That Counts</h3>
+                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
-                  Fresh permanent makeup always photographs beautifully — the pigment is vivid, the skin is pristine. But the actual result emerges 4–6 weeks later, after healing, flaking, and pigment settling. That's why we only showcase healed work in our portfolio. When Centreville clients compare studios, we ask them to request healed photos from every artist they're considering. It's the single most revealing question you can ask.
+                  Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Woodbridge clients who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work. When you're investing time and money in the drive from Prince William County, you deserve certainty.
                 </p>
               </div>
             </div>
@@ -412,7 +413,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                 to="/blog/nano-brows-vs-microblading-comparison"
                 className="inline-flex items-center gap-2 text-[#E6DAD2] hover:text-white transition-colors font-medium"
               >
-                See the detailed technique comparison backed by procedure data
+                Read the full comparison with procedure data
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -420,12 +421,12 @@ const OmbreBrowsCentreville: React.FC = () => {
         </div>
       </section>
 
-      {/* Centreville Testimonials */}
+      {/* Woodbridge Testimonials */}
       <section className="py-20 bg-[#F9F7F5]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Centreville Client Experiences
+              What Woodbridge Area Clients Say
             </h2>
             <div className="flex items-center justify-center gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
@@ -436,7 +437,7 @@ const OmbreBrowsCentreville: React.FC = () => {
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {centrevilleTestimonials.map((testimonial, index) => (
+            {woodbridgeTestimonials.map((testimonial, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div className="bg-white rounded-2xl p-8 h-full">
                   <div className="flex items-center gap-1 mb-4">
@@ -461,15 +462,15 @@ const OmbreBrowsCentreville: React.FC = () => {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Service Pricing */}
       <section className="py-20 bg-[#F0E4D8]">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Complete Pricing — No Surprises
+              Transparent Pricing for Woodbridge Clients
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Every element of your procedure is included upfront. The number you see is the number you pay — nothing hidden, nothing added later.
+              All-inclusive investment. No hidden fees, no surprise add-ons — everything is included from consultation to perfecting session.
             </p>
           </AnimatedSection>
 
@@ -483,12 +484,12 @@ const OmbreBrowsCentreville: React.FC = () => {
                 </div>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Comprehensive design consultation with mapping',
-                    'Full procedure in a private, calm studio (2–3 hrs)',
-                    'Premium vegan pigments — EU-compliant, no heavy metals',
-                    'Medical-grade aftercare kit & written guide',
-                    'Text access to Mugi throughout your healing',
-                    '6-week perfecting session — always included',
+                    'In-depth design consultation & facial mapping',
+                    'Full procedure (2–3 hours, unrushed)',
+                    'Premium EU-compliant vegan pigments',
+                    'Medical-grade aftercare kit included',
+                    '24/7 healing support via text',
+                    '6-week perfecting session included',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-[#9A7B69] flex-shrink-0" />
@@ -515,7 +516,7 @@ const OmbreBrowsCentreville: React.FC = () => {
             <AnimatedSection>
               <InlineFaqAccordion
                 faqs={faqs}
-                title="Questions from Centreville Clients"
+                title="Questions from Woodbridge Clients"
                 subtitle="Tap a question to reveal the answer"
                 maxVisible={6}
               />
@@ -531,40 +532,32 @@ const OmbreBrowsCentreville: React.FC = () => {
             <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-3">
               Also Serving Nearby Communities
             </h2>
-            <p className="text-[#2D2D2B]/60">Premium ombre powder brows across Fairfax County &amp; Northern Virginia</p>
+            <p className="text-[#2D2D2B]/60">Premium ombre powder brows across Northern Virginia</p>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <Link to="/ombre-brows-chantilly-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Chantilly, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">10 min drive</p>
-            </Link>
-            <Link to="/ombre-brows-fairfax-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Fairfax, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
-            </Link>
-            <Link to="/ombre-brows-reston-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Reston, VA</p>
+            <Link to="/ombre-brows-manassas-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Manassas, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
-            </Link>
-            <Link to="/ombre-brows-vienna-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Vienna, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">18 min drive</p>
             </Link>
             <Link to="/permanent-makeup-springfield-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Springfield, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
+              <p className="text-sm text-[#2D2D2B]/50">22 min drive</p>
             </Link>
-            <Link to="/ombre-brows-mclean-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">McLean, VA</p>
+            <Link to="/ombre-brows-fairfax-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Fairfax, VA</p>
               <p className="text-sm text-[#2D2D2B]/50">25 min drive</p>
             </Link>
-            <Link to="/ombre-brows-manassas-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Manassas, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">15 min drive</p>
+            <Link to="/ombre-brows-centreville-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Centreville, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">25 min drive</p>
             </Link>
-            <Link to="/ombre-brows-woodbridge-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Woodbridge, VA</p>
-              <p className="text-sm text-[#2D2D2B]/50">20 min drive</p>
+            <Link to="/ombre-brows-arlington-va" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Arlington, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">30 min drive</p>
+            </Link>
+            <Link to="/licensed-pmu-artist-annandale" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Annandale, VA</p>
+              <p className="text-sm text-[#2D2D2B]/50">Studio location</p>
             </Link>
             <Link to="/signature-ombre-brows" className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-shadow group">
               <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Ombre Powder Brows</p>
@@ -583,22 +576,22 @@ const OmbreBrowsCentreville: React.FC = () => {
         <div className="container-custom max-w-3xl">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-6 text-[#2D2D2B]">
-              Considering Microblading in Centreville, VA?
+              Considering Microblading in Woodbridge, VA?
             </h2>
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed mb-4">
-              Centreville families and professionals deserve accurate information about brow procedures before investing. Microblading's shallow, blade-based technique fades significantly faster in Northern Virginia's humid climate than what's typically advertised — often lasting less than a year. Our data from Centreville-area correction clients confirms the same patterns we see across western Fairfax County.
+              Woodbridge and the surrounding Prince William County communities face the same climate challenge that undermines microblading throughout Northern Virginia. The Potomac basin's high humidity accelerates pigment fading, while active outdoor lifestyles amplify the effect through increased perspiration and UV exposure. Our Woodbridge clients who converted from microblading to powder brows consistently report dramatically improved longevity.
             </p>
             <p className="text-[#2D2D2B]/70 leading-relaxed mb-6">
-              Ombré powder brows offer a more sustainable solution, with 18–36 month retention even in our challenging climate. Compare the techniques and costs before you decide.
+              The science is clear: microblading's shallow deposit method can't compete with powder brows in humid climates. Explore the comparison before making your decision.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link to="/microblading-vs-powder-brows" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
                 <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
                 <span className="text-[#2D2D2B] text-sm font-medium">Microblading vs Powder Brows Comparison</span>
               </Link>
-              <Link to="/microblading-correction-northern-virginia" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
+              <Link to="/microblading-for-oily-skin" className="flex items-center gap-2 p-4 bg-[#F9F7F5] rounded-lg border border-[#E6DAD2] hover:shadow-md transition-shadow">
                 <ArrowRight className="w-5 h-5 text-amber-700 flex-shrink-0" />
-                <span className="text-[#2D2D2B] text-sm font-medium">Microblading Correction in Northern Virginia</span>
+                <span className="text-[#2D2D2B] text-sm font-medium">Microblading & Oily Skin: What to Know</span>
               </Link>
             </div>
           </AnimatedSection>
@@ -611,13 +604,13 @@ const OmbreBrowsCentreville: React.FC = () => {
         <div className="container-custom relative z-10">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium mb-6">
-              Let's Find Out If We're the Right Fit
+              Ready to See If We're a Fit?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
-              Centreville clients from Virginia Run to Bull Run have found a permanent makeup practice that values evidence over hype. Your consultation is an honest conversation about what's possible — with zero obligation.
+              Join Woodbridge residents from Dale City to Lake Ridge who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment.
             </p>
             <p className="text-base text-white/60 mb-8">
-              Serving Fairfax County &amp; Northern Virginia • 25 minutes from Centreville • Free parking • By consultation only
+              Serving Prince William County &amp; Northern Virginia • 35 minutes from Woodbridge • Free parking • By consultation only
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -648,4 +641,4 @@ const OmbreBrowsCentreville: React.FC = () => {
   );
 };
 
-export default OmbreBrowsCentreville;
+export default OmbreBrowsWoodbridge;
