@@ -362,4 +362,11 @@
     <lastmod>2026-03-08</lastmod>
     <priority>0.6</priority>
   </url>
+
+  <!-- Knowledge Hub Pages (added 2026-03-09) -->
+  <url>
+    <loc>https://www.inkmugi.com/ombre-powder-brows-guide</loc>
+    <lastmod>2026-03-09</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>

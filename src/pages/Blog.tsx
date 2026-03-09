@@ -391,6 +391,36 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
         </section>
       )}
 
+      {/* Knowledge Hub Banner */}
+      {!searchQuery && !activeCategory && (
+        <section className="py-10 bg-white">
+          <div className="container-custom">
+            <AnimatedSection>
+              <Link
+                to="/ombre-powder-brows-guide"
+                className="group block bg-gradient-to-r from-[#F0E4D8] to-[#F7EDE6] rounded-2xl p-6 md:p-8 border border-[#E6DAD2]/50 hover:shadow-lg transition-all"
+              >
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+                  <div className="w-12 h-12 bg-[#9A7B69]/15 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-[#9A7B69]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                  </div>
+                  <div className="flex-1">
+                    <span className="text-[10px] font-bold tracking-widest uppercase text-[#9A7B69] mb-1 block">Knowledge Hub</span>
+                    <h3 className="text-xl md:text-2xl font-semibold text-[#2D2D2B] font-cormorant group-hover:text-[#9A7B69] transition-colors">
+                      The Complete Guide to Ombré Powder Brows
+                    </h3>
+                    <p className="text-sm text-[#2D2D2B]/65 mt-1">
+                      Healing timelines, skin-type guides, pigment science, correction options & expert aftercare — all in one place.
+                    </p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-[#9A7B69] flex-shrink-0 group-hover:translate-x-1 transition-transform hidden md:block" />
+                </div>
+              </Link>
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
+
       {/* All Blog Posts */}
       <section className="py-20 bg-white">
         <div className="container-custom">

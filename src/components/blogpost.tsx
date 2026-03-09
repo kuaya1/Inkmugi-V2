@@ -494,6 +494,10 @@ const BlogPost: React.FC = () => {
                 <div className="bg-[#F9F7F5] p-6 rounded-lg shadow-soft">
                   <h3 className="text-xl font-medium text-[#2D2D2B] mb-4 font-cormorant">Explore Ink Mugi</h3>
                   <div className="space-y-2">
+                    <Link to="/ombre-powder-brows-guide" className="flex items-center justify-between p-2 rounded-md hover:bg-[#E6DAD2]/30 transition-colors text-sm text-[#9A7B69] font-medium hover:text-[#2D2D2B]">
+                      <span>Ombré Powder Brows Hub</span>
+                      <ArrowRight size={14} />
+                    </Link>
                     <Link to="/gallery" className="flex items-center justify-between p-2 rounded-md hover:bg-[#E6DAD2]/30 transition-colors text-sm text-[#2D2D2B]/80 hover:text-[#2D2D2B]">
                       <span>Before & After Gallery</span>
                       <ArrowRight size={14} />

@@ -70,6 +70,8 @@ const MicrobladingProblems = lazy(() => import('./pages/MicrobladingProblems'));
 const PowderBrowsOverMicroblading = lazy(() => import('./pages/PowderBrowsOverMicroblading'));
 const MicrobladingRemovalVsCorrection = lazy(() => import('./pages/MicrobladingRemovalVsCorrection'));
 const MicrobladingCorrectionCaseStudy = lazy(() => import('./pages/MicrobladingCorrectionCaseStudy'));
+// Knowledge Hub Pages
+const OmbrePowderBrowsGuide = lazy(() => import('./pages/OmbrePowderBrowsGuide'));
 // Content Pages
 const AftercareGuide = lazy(() => import('./pages/AftercareGuide'));
 const PmuCostGuideDmv = lazy(() => import('./pages/PmuCostGuideDmv'));
@@ -160,6 +162,8 @@ function App() {
           <Route path="/powder-brows-over-microblading" element={<PowderBrowsOverMicroblading />} />
           <Route path="/microblading-removal-vs-correction" element={<MicrobladingRemovalVsCorrection />} />
           <Route path="/microblading-correction-case-study" element={<MicrobladingCorrectionCaseStudy />} />
+          {/* Knowledge Hub Pages */}
+          <Route path="/ombre-powder-brows-guide" element={<OmbrePowderBrowsGuide />} />
           {/* Content Pages */}
           <Route path="/aftercare-guide" element={<AftercareGuide />} />
           <Route path="/pmu-cost-guide-dmv" element={<PmuCostGuideDmv />} />
