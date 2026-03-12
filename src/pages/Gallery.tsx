@@ -379,7 +379,7 @@ const Gallery: React.FC = () => {
             "@type": "ImageGallery",
             "name": "Ink Mugi Before & After Gallery",
             "description": "Healed ombre powder brows results from 330+ procedures at Ink Mugi in Annandale, VA.",
-            "url": "https://www.inkmugi.com/gallery",
+            "url": "https://inkmugi.com/gallery",
             "publisher": {
               "@type": "Organization",
               "name": "Ink Mugi"
@@ -391,8 +391,8 @@ const Gallery: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://www.inkmugi.com/gallery" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://inkmugi.com/gallery" }
             ]
           })}
         </script>

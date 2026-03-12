@@ -73,11 +73,11 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "@id": "https://www.inkmugi.com/#business",
+            "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
-            "url": "https://www.inkmugi.com/",
-            "logo": "https://www.inkmugi.com/logo.png",
-            "image": "https://www.inkmugi.com/og-safety-trust.jpg",
+            "url": "https://inkmugi.com/",
+            "logo": "https://inkmugi.com/logo.png",
+            "image": "https://inkmugi.com/og-safety-trust.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
@@ -99,9 +99,9 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Authority Hub", "item": "https://www.inkmugi.com/authority" },
-              { "@type": "ListItem", "position": 3, "name": "PMU Safety Guide", "item": "https://www.inkmugi.com/permanent-makeup-safety-dmv" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Authority Hub", "item": "https://inkmugi.com/authority" },
+              { "@type": "ListItem", "position": 3, "name": "PMU Safety Guide", "item": "https://inkmugi.com/permanent-makeup-safety-dmv" }
             ]
           })}
         </script>
@@ -110,11 +110,11 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Permanent Makeup Safety Guide: Hospital-Grade PMU Protocols",
-            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://inkmugi.com/#business", "name": "Ink Mugi", "url": "https://inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
-            "mainEntityOfPage": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
+            "mainEntityOfPage": "https://inkmugi.com/permanent-makeup-safety-dmv",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "Hospital-grade PMU safety protocols at Ink Mugi. 0.19% complication rate vs 2.5% industry average. Virginia-licensed, bloodborne pathogens certified."
           })}
@@ -142,7 +142,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
               "@type": "SpeakableSpecification",
               "cssSelector": ["h1", "h2", ".safety-answer"]
             },
-            "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv"
+            "url": "https://inkmugi.com/permanent-makeup-safety-dmv"
           })}
         </script>
       </SEO>

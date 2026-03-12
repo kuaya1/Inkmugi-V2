@@ -8,11 +8,11 @@ const Contact: React.FC = () => {
   const contactSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
-    "url": "https://www.inkmugi.com/",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+1-571-283-8228",
     "email": "inkmugi@gmail.com",
     "address": {
@@ -46,8 +46,8 @@ const Contact: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.inkmugi.com/contact" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://inkmugi.com/contact" }
             ]
           })}
         </script>

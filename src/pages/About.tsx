@@ -27,14 +27,14 @@ const About: React.FC = () => {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://www.inkmugi.com/#mugi",
+    "@id": "https://inkmugi.com/#mugi",
     "name": "Mugi",
     "jobTitle": "Licensed Permanent Cosmetic Tattooer",
     "description": "Virginia-licensed permanent makeup artist specializing in ombre powder brows with 330+ documented procedures and a 0.19% complication rate. Founder of Ink Mugi in Annandale, VA.",
     "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-    "url": "https://www.inkmugi.com/about",
+    "url": "https://inkmugi.com/about",
     "worksFor": {
-      "@id": "https://www.inkmugi.com/#business"
+      "@id": "https://inkmugi.com/#business"
     },
     "hasCredential": [
       {
@@ -77,14 +77,14 @@ const About: React.FC = () => {
   const businessSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
-    "url": "https://www.inkmugi.com/",
+    "url": "https://inkmugi.com/",
     "logo": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "telephone": "+1-571-283-8228",
     "founder": {
-      "@id": "https://www.inkmugi.com/#mugi"
+      "@id": "https://inkmugi.com/#mugi"
     },
     "address": {
       "@type": "PostalAddress",
@@ -187,8 +187,8 @@ const About: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.inkmugi.com/about" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "About", "item": "https://inkmugi.com/about" }
             ]
           })}
         </script>

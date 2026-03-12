@@ -190,7 +190,7 @@ const HowToChoosePmuArtist: React.FC = () => {
         description="Expert guide to choosing a permanent makeup artist. Learn the 10 essential green flags and 8 red flags to avoid botched PMU. Questions to ask, what to look for, and how to protect yourself."
         path="/how-to-choose-pmu-artist"
         keywords="how to choose PMU artist, permanent makeup artist red flags, how to find good microblading artist, PMU artist questions to ask, choosing eyebrow tattoo artist, permanent makeup safety, PMU artist green flags, how to avoid bad microblading, PMU artist checklist"
-        image="https://www.inkmugi.com/og-image.jpg"
+        image="https://inkmugi.com/og-image.jpg"
       >
         {/* Article Schema */}
         <script type="application/ld+json">
@@ -214,13 +214,13 @@ const HowToChoosePmuArtist: React.FC = () => {
               name: 'Ink Mugi',
               logo: {
                 '@type': 'ImageObject',
-                url: 'https://www.inkmugi.com/logo.png',
+                url: 'https://inkmugi.com/logo.png',
               },
             },
             datePublished: '2026-02-10',
             dateModified: '2026-02-10',
-            image: 'https://www.inkmugi.com/og-image.jpg',
-            url: 'https://www.inkmugi.com/how-to-choose-pmu-artist',
+            image: 'https://inkmugi.com/og-image.jpg',
+            url: 'https://inkmugi.com/how-to-choose-pmu-artist',
           })}
         </script>
 
@@ -230,12 +230,12 @@ const HowToChoosePmuArtist: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.inkmugi.com' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com' },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'How to Choose a PMU Artist',
-                item: 'https://www.inkmugi.com/how-to-choose-pmu-artist',
+                item: 'https://inkmugi.com/how-to-choose-pmu-artist',
               },
             ],
           })}
@@ -289,7 +289,7 @@ const HowToChoosePmuArtist: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
             name: 'How to Choose a PMU Artist | Ink Mugi',
-            url: 'https://www.inkmugi.com/how-to-choose-pmu-artist',
+            url: 'https://inkmugi.com/how-to-choose-pmu-artist',
             speakable: {
               '@type': 'SpeakableSpecification',
               cssSelector: ['h1', 'h2', '.summary-box'],

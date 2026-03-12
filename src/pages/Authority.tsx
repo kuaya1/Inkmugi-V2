@@ -97,39 +97,39 @@ export default function Authority() {
             "@type": "CollectionPage",
             "name": "Permanent Makeup Education Hub",
             "description": "Evidence-based permanent makeup research from 330+ procedures. Data studies, safety reports, myth-busting, and climate performance analysis.",
-            "url": "https://www.inkmugi.com/authority",
+            "url": "https://inkmugi.com/authority",
             "isPartOf": {
-              "@id": "https://www.inkmugi.com/#website"
+              "@id": "https://inkmugi.com/#website"
             },
             "about": {
-              "@id": "https://www.inkmugi.com/#business"
+              "@id": "https://inkmugi.com/#business"
             },
             "author": {
-              "@id": "https://www.inkmugi.com/#mugi"
+              "@id": "https://inkmugi.com/#mugi"
             },
             "hasPart": [
               {
                 "@type": "Article",
                 "name": "PMU Data & Longevity Guide",
-                "url": "https://www.inkmugi.com/pmu-data-guide",
+                "url": "https://inkmugi.com/pmu-data-guide",
                 "description": "Comprehensive analysis of retention rates, longevity factors, and performance metrics from 330+ procedures."
               },
               {
                 "@type": "Article",
                 "name": "Clinical Safety in the DMV",
-                "url": "https://www.inkmugi.com/permanent-makeup-safety-dmv",
+                "url": "https://inkmugi.com/permanent-makeup-safety-dmv",
                 "description": "Evidence-based safety protocols with 0.19% complication rate—13x safer than industry average."
               },
               {
                 "@type": "Article",
                 "name": "PMU Myths vs. Clinical Facts",
-                "url": "https://www.inkmugi.com/pmu-myths-facts",
+                "url": "https://inkmugi.com/pmu-myths-facts",
                 "description": "12 common permanent makeup myths debunked with clinical data from 330+ procedures."
               },
               {
                 "@type": "Article",
                 "name": "Humid Climate Performance Analysis",
-                "url": "https://www.inkmugi.com/climate-performance-analysis",
+                "url": "https://inkmugi.com/climate-performance-analysis",
                 "description": "Regional study showing 340% advantage for powder brows in high-humidity DMV climate."
               }
             ]
@@ -146,13 +146,13 @@ export default function Authority() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.inkmugi.com"
+                "item": "https://inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Authority Hub",
-                "item": "https://www.inkmugi.com/authority"
+                "item": "https://inkmugi.com/authority"
               }
             ]
           })}
@@ -166,7 +166,7 @@ export default function Authority() {
               "@type": "SpeakableSpecification",
               "cssSelector": [".voice-answer", ".quick-answer", ".featured-info"]
             },
-            "url": "https://www.inkmugi.com/authority"
+            "url": "https://inkmugi.com/authority"
           })}
         </script>
       </SEO>

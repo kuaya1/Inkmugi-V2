@@ -37,27 +37,27 @@ const MicroshadingArtistry: React.FC = () => {
     {
       name: "Free Consultation",
       text: "Discuss your brow goals, analyze your skin type and undertone, review reference photos, and determine if microshading is the right technique for you. We'll also explain the full process and answer every question.",
-      image: "https://www.inkmugi.com/consultation.jpg"
+      image: "https://inkmugi.com/consultation.jpg"
     },
     {
       name: "Custom Brow Mapping",
       text: "Using precise measurements and your unique facial proportions, Mugi designs your ideal brow shape. You'll approve the shape before any pigment is applied — ensuring you love the design before we begin.",
-      image: "https://www.inkmugi.com/brow-mapping.jpg"
+      image: "https://inkmugi.com/brow-mapping.jpg"
     },
     {
       name: "Numbing & Comfort",
       text: "Medical-grade numbing cream is applied and left to take effect for 20-30 minutes. Your comfort is our priority — most clients rate the experience a 2-3 out of 10 on the discomfort scale.",
-      image: "https://www.inkmugi.com/numbing.jpg"
+      image: "https://inkmugi.com/numbing.jpg"
     },
     {
       name: "Microshading Application",
       text: "Using a specialized hand tool with fine needles, Mugi creates thousands of tiny, pixelated dots of pigment in a stippling pattern. This builds a soft, powdered effect that mimics natural brow fullness. The process takes 90-120 minutes.",
-      image: "https://www.inkmugi.com/microshading-application.jpg"
+      image: "https://inkmugi.com/microshading-application.jpg"
     },
     {
       name: "Healing & Touch-Up",
       text: "Your brows will go through a 4-6 week healing cycle. We provide a premium aftercare kit and 24/7 text support throughout your healing. A complimentary touch-up appointment at 6-8 weeks ensures your results are absolutely perfect.",
-      image: "https://www.inkmugi.com/healing.jpg"
+      image: "https://inkmugi.com/healing.jpg"
     }
   ];
 
@@ -68,11 +68,11 @@ const MicroshadingArtistry: React.FC = () => {
     "description": "Microshading eyebrows by Ink Mugi — a hand-tool PMU technique creating pixelated, powder-finish brows for the most natural results. $700 all-inclusive with consultation, procedure, premium pigments, aftercare kit, and touch-up.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
-      "@id": "https://www.inkmugi.com/#business",
+      "@id": "https://inkmugi.com/#business",
       "name": "Ink Mugi",
-      "url": "https://www.inkmugi.com/",
-      "logo": "https://www.inkmugi.com/logo.png",
-      "image": "https://www.inkmugi.com/og-image.jpg",
+      "url": "https://inkmugi.com/",
+      "logo": "https://inkmugi.com/logo.png",
+      "image": "https://inkmugi.com/og-image.jpg",
       "telephone": "+1-571-283-8228",
       "address": {
         "@type": "PostalAddress",
@@ -101,7 +101,7 @@ const MicroshadingArtistry: React.FC = () => {
       "priceCurrency": "USD",
       "priceValidUntil": "2026-12-31",
       "availability": "https://schema.org/InStock",
-      "url": "https://www.inkmugi.com/microshading-artistry"
+      "url": "https://inkmugi.com/microshading-artistry"
     },
     "areaServed": {
       "@type": "GeoCircle",
@@ -131,9 +131,9 @@ const MicroshadingArtistry: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-      { "@type": "ListItem", "position": 3, "name": "Microshading Artistry", "item": "https://www.inkmugi.com/microshading-artistry" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+      { "@type": "ListItem", "position": 3, "name": "Microshading Artistry", "item": "https://inkmugi.com/microshading-artistry" }
     ]
   };
 

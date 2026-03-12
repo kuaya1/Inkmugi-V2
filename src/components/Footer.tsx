@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/ombre-brows" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to="/signature-ombre-brows" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Ombre Powder Brows
                 </Link>
               </li>
@@ -177,6 +177,31 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/ombre-brows-vienna-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Vienna, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/ombre-brows-chantilly-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Chantilly, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/ombre-brows-centreville-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Centreville, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/ombre-brows-herndon-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Herndon, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/ombre-brows-woodbridge-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Woodbridge, VA
+                </Link>
+              </li>
+              <li>
+                <Link to="/ombre-brows-manassas-va" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                  Manassas, VA
                 </Link>
               </li>
             </ul>

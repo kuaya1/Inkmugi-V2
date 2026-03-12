@@ -80,18 +80,18 @@ const MicrobladingForOilySkin: React.FC = () => {
               "@type": "Person",
               "name": "Mugi",
               "jobTitle": "Licensed PMU Artist",
-              "worksFor": { "@type": "HealthAndBeautyBusiness", "name": "Ink Mugi", "url": "https://www.inkmugi.com" }
+              "worksFor": { "@type": "HealthAndBeautyBusiness", "name": "Ink Mugi", "url": "https://inkmugi.com" }
             },
             "publisher": {
               "@type": "Organization",
               "name": "Ink Mugi",
-              "url": "https://www.inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://www.inkmugi.com/logo.png" }
+              "url": "https://inkmugi.com",
+              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
             },
             "datePublished": "2026-04-01",
             "dateModified": "2026-04-01",
-            "url": "https://www.inkmugi.com/microblading-for-oily-skin",
-            "mainEntityOfPage": "https://www.inkmugi.com/microblading-for-oily-skin"
+            "url": "https://inkmugi.com/microblading-for-oily-skin",
+            "mainEntityOfPage": "https://inkmugi.com/microblading-for-oily-skin"
           })}
         </script>
         {/* FAQ Schema */}
@@ -112,9 +112,9 @@ const MicrobladingForOilySkin: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Microblading vs Powder Brows", "item": "https://www.inkmugi.com/microblading-vs-powder-brows" },
-              { "@type": "ListItem", "position": 3, "name": "Microblading for Oily Skin", "item": "https://www.inkmugi.com/microblading-for-oily-skin" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Microblading vs Powder Brows", "item": "https://inkmugi.com/microblading-vs-powder-brows" },
+              { "@type": "ListItem", "position": 3, "name": "Microblading for Oily Skin", "item": "https://inkmugi.com/microblading-for-oily-skin" }
             ]
           })}
         </script>

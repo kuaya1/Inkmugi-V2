@@ -143,11 +143,11 @@ const ClimatePerformanceAnalysis = () => {
   const businessSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
-    "url": "https://www.inkmugi.com/",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -172,19 +172,19 @@ const ClimatePerformanceAnalysis = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.inkmugi.com"
+        "item": "https://inkmugi.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Authority Hub",
-        "item": "https://www.inkmugi.com/authority"
+        "item": "https://inkmugi.com/authority"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Climate Performance Analysis",
-        "item": "https://www.inkmugi.com/climate-performance-analysis"
+        "item": "https://inkmugi.com/climate-performance-analysis"
       }
     ]
   };
@@ -205,11 +205,11 @@ const ClimatePerformanceAnalysis = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Humid Climate Performance Analysis: PMU Longevity in DMV Region",
-            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://inkmugi.com/#business", "name": "Ink Mugi", "url": "https://inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
-            "mainEntityOfPage": "https://www.inkmugi.com/climate-performance-analysis",
+            "mainEntityOfPage": "https://inkmugi.com/climate-performance-analysis",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 330+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
           })}
@@ -223,7 +223,7 @@ const ClimatePerformanceAnalysis = () => {
               "@type": "SpeakableSpecification",
               "cssSelector": [".voice-answer", ".quick-answer", ".featured-info", ".ai-optimized-content"]
             },
-            "url": "https://www.inkmugi.com/climate-performance-analysis"
+            "url": "https://inkmugi.com/climate-performance-analysis"
           })}
         </script>
       </SEO>

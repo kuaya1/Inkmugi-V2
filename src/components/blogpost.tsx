@@ -50,7 +50,7 @@ const BlogPost: React.FC = () => {
   }, [post]);
 
   // Share functions
-  const shareUrl = post ? `https://www.inkmugi.com/blog/${post.slug}` : '';
+  const shareUrl = post ? `https://inkmugi.com/blog/${post.slug}` : '';
   const shareTitle = post?.title || '';
   const handleShare = (platform: string) => {
     let url = '';
@@ -114,11 +114,11 @@ const BlogPost: React.FC = () => {
             },
             "author": {
               "@type": "Person",
-              "@id": "https://www.inkmugi.com/#mugi",
+              "@id": "https://inkmugi.com/#mugi",
               "name": post.author,
               "jobTitle": post.authorTitle,
-              "url": "https://www.inkmugi.com/about",
-              "sameAs": ["https://www.inkmugi.com/about", "https://www.inkmugi.com/authority"],
+              "url": "https://inkmugi.com/about",
+              "sameAs": ["https://inkmugi.com/about", "https://inkmugi.com/authority"],
               "hasCredential": {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "Professional License",
@@ -130,9 +130,9 @@ const BlogPost: React.FC = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "@id": "https://www.inkmugi.com/#business",
+              "@id": "https://inkmugi.com/#business",
               "name": "Ink Mugi",
-              "url": "https://www.inkmugi.com",
+              "url": "https://inkmugi.com",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
@@ -149,7 +149,7 @@ const BlogPost: React.FC = () => {
             })(),
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://www.inkmugi.com/blog/${post.slug}`
+              "@id": `https://inkmugi.com/blog/${post.slug}`
             },
             "keywords": post.tags.join(', '),
             "articleSection": post.category,
@@ -166,19 +166,19 @@ const BlogPost: React.FC = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.inkmugi.com"
+                "item": "https://inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": "https://www.inkmugi.com/blog"
+                "item": "https://inkmugi.com/blog"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": post.title,
-                "item": `https://www.inkmugi.com/blog/${post.slug}`
+                "item": `https://inkmugi.com/blog/${post.slug}`
               }
             ]
           })}

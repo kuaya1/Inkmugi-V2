@@ -132,11 +132,11 @@ export default function PMUDataGuide() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "@id": "https://www.inkmugi.com/#business",
+            "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
-            "url": "https://www.inkmugi.com/",
-            "logo": "https://www.inkmugi.com/logo.png",
-            "image": "https://www.inkmugi.com/og-image.jpg",
+            "url": "https://inkmugi.com/",
+            "logo": "https://inkmugi.com/logo.png",
+            "image": "https://inkmugi.com/og-image.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
@@ -164,19 +164,19 @@ export default function PMUDataGuide() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.inkmugi.com"
+                "item": "https://inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Authority Hub",
-                "item": "https://www.inkmugi.com/authority"
+                "item": "https://inkmugi.com/authority"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "PMU Data & Longevity Guide",
-                "item": "https://www.inkmugi.com/pmu-data-guide"
+                "item": "https://inkmugi.com/pmu-data-guide"
               }
             ]
           })}
@@ -186,11 +186,11 @@ export default function PMUDataGuide() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "PMU Longevity Data: 330+ procedures Analysis",
-            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://inkmugi.com/#business", "name": "Ink Mugi", "url": "https://inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
-            "mainEntityOfPage": "https://www.inkmugi.com/pmu-data-guide",
+            "mainEntityOfPage": "https://inkmugi.com/pmu-data-guide",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "Comprehensive PMU longevity data from 330+ procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison."
           })}
@@ -204,7 +204,7 @@ export default function PMUDataGuide() {
               "@type": "SpeakableSpecification",
               "cssSelector": [".voice-answer", "h1", "h2"]
             },
-            "url": "https://www.inkmugi.com/pmu-data-guide"
+            "url": "https://inkmugi.com/pmu-data-guide"
           })}
         </script>
       </SEO>

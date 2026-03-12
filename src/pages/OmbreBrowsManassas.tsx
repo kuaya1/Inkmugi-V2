@@ -22,11 +22,11 @@ const OmbreBrowsManassas: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://www.inkmugi.com/ombre-brows-manassas-va",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/ombre-brows-manassas-va",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
@@ -60,7 +60,7 @@ const OmbreBrowsManassas: React.FC = () => {
     "description": "Professional ombre powder brows service for Manassas, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Historic Downtown Manassas.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
-      "@id": "https://www.inkmugi.com/#business"
+      "@id": "https://inkmugi.com/#business"
     },
     "areaServed": {
       "@type": "City",
@@ -181,9 +181,9 @@ const OmbreBrowsManassas: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Manassas VA", "item": "https://www.inkmugi.com/ombre-brows-manassas-va" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Manassas VA", "item": "https://inkmugi.com/ombre-brows-manassas-va" }
             ]
           })}
         </script>

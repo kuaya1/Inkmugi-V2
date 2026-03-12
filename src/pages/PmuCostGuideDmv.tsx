@@ -168,11 +168,11 @@ export default function PmuCostGuideDmv() {
                 publisher: {
                   '@type': 'Organization',
                   name: 'Ink Mugi',
-                  url: 'https://www.inkmugi.com',
+                  url: 'https://inkmugi.com',
                 },
                 datePublished: '2026-02-09',
                 dateModified: '2026-02-09',
-                mainEntityOfPage: 'https://www.inkmugi.com/pmu-cost-guide-dmv',
+                mainEntityOfPage: 'https://inkmugi.com/pmu-cost-guide-dmv',
               },
               {
                 '@type': 'FAQPage',
@@ -188,9 +188,9 @@ export default function PmuCostGuideDmv() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.inkmugi.com/' },
-                  { '@type': 'ListItem', position: 2, name: 'Authority Hub', item: 'https://www.inkmugi.com/authority' },
-                  { '@type': 'ListItem', position: 3, name: 'PMU Cost Guide DMV', item: 'https://www.inkmugi.com/pmu-cost-guide-dmv' },
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com/' },
+                  { '@type': 'ListItem', position: 2, name: 'Authority Hub', item: 'https://inkmugi.com/authority' },
+                  { '@type': 'ListItem', position: 3, name: 'PMU Cost Guide DMV', item: 'https://inkmugi.com/pmu-cost-guide-dmv' },
                 ],
               },
             ],

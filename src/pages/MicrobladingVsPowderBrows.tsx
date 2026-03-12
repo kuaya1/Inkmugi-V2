@@ -73,7 +73,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
       <SEO
         title="Microblading vs Powder Brows | Northern Virginia Guide | Ink Mugi"
         description="Microblading vs powder brows — which is better in Northern Virginia? Compare longevity, cost, healing & skin type suitability. Data from 330+ procedures. Serving Arlington, Reston, Fairfax & DC."
-        canonical="https://www.inkmugi.com/microblading-vs-powder-brows"
+        canonical="https://inkmugi.com/microblading-vs-powder-brows"
         path="/microblading-vs-powder-brows"
         keywords="microblading vs powder brows, microblading vs ombre brows, powder brows vs microblading oily skin, microblading alternative DMV, permanent eyebrows comparison, microblading vs ombre brows cost, which is better microblading or powder brows, microblading or powder brows for oily skin"
       >
@@ -91,19 +91,19 @@ const MicrobladingVsPowderBrows: React.FC = () => {
               "worksFor": {
                 "@type": "HealthAndBeautyBusiness",
                 "name": "Ink Mugi",
-                "url": "https://www.inkmugi.com"
+                "url": "https://inkmugi.com"
               }
             },
             "publisher": {
               "@type": "Organization",
               "name": "Ink Mugi",
-              "url": "https://www.inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://www.inkmugi.com/logo.png" }
+              "url": "https://inkmugi.com",
+              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
             },
             "datePublished": "2026-03-06",
             "dateModified": "2026-03-06",
-            "url": "https://www.inkmugi.com/microblading-vs-powder-brows",
-            "mainEntityOfPage": "https://www.inkmugi.com/microblading-vs-powder-brows"
+            "url": "https://inkmugi.com/microblading-vs-powder-brows",
+            "mainEntityOfPage": "https://inkmugi.com/microblading-vs-powder-brows"
           })}
         </script>
         {/* FAQ Schema */}
@@ -127,9 +127,9 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.inkmugi.com/ombre-powder-brows-guide" },
-              { "@type": "ListItem", "position": 3, "name": "Microblading vs Powder Brows", "item": "https://www.inkmugi.com/microblading-vs-powder-brows" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://inkmugi.com/ombre-powder-brows-guide" },
+              { "@type": "ListItem", "position": 3, "name": "Microblading vs Powder Brows", "item": "https://inkmugi.com/microblading-vs-powder-brows" }
             ]
           })}
         </script>

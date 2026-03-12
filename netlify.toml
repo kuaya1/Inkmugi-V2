@@ -6,24 +6,26 @@
   NODE_VERSION = "18"
 
 # ──────────────────────────────────────────────────────────────────
-# HTTPS + www canonicalisation (force = true means these fire even
-# when a matching file exists in the publish directory)
+# HTTPS + non-www canonicalisation (force = true means these fire
+# even when a matching file exists in the publish directory)
+# Google selected https://inkmugi.com as canonical — all variants
+# must 301 to non-www HTTPS.
 # ──────────────────────────────────────────────────────────────────
 [[redirects]]
   from = "http://inkmugi.com/*"
-  to   = "https://www.inkmugi.com/:splat"
+  to   = "https://inkmugi.com/:splat"
   status = 301
   force  = true
 
 [[redirects]]
   from = "http://www.inkmugi.com/*"
-  to   = "https://www.inkmugi.com/:splat"
+  to   = "https://inkmugi.com/:splat"
   status = 301
   force  = true
 
 [[redirects]]
-  from = "https://inkmugi.com/*"
-  to   = "https://www.inkmugi.com/:splat"
+  from = "https://www.inkmugi.com/*"
+  to   = "https://inkmugi.com/:splat"
   status = 301
   force  = true
 

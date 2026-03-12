@@ -36,18 +36,18 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
     "description": "Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection, healing differences, keloid considerations, and before/after examples from 330+ procedures.",
     "author": {
       "@type": "Person",
-      "@id": "https://www.inkmugi.com/#mugi",
+      "@id": "https://inkmugi.com/#mugi",
       "name": "Mugi"
     },
     "publisher": {
       "@type": "HealthAndBeautyBusiness",
-      "@id": "https://www.inkmugi.com/#business",
+      "@id": "https://inkmugi.com/#business",
       "name": "Ink Mugi"
     },
     "datePublished": "2026-03-08",
     "dateModified": "2026-03-08",
-    "mainEntityOfPage": "https://www.inkmugi.com/blog/ombre-brows-dark-skin-guide",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "mainEntityOfPage": "https://inkmugi.com/blog/ombre-brows-dark-skin-guide",
+    "image": "https://inkmugi.com/og-image.jpg",
     "wordCount": 4200,
     "articleSection": "Permanent Makeup Education"
   };
@@ -125,9 +125,9 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.inkmugi.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Dark Skin Guide", "item": "https://www.inkmugi.com/blog/ombre-brows-dark-skin-guide" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://inkmugi.com/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Dark Skin Guide", "item": "https://inkmugi.com/blog/ombre-brows-dark-skin-guide" }
             ]
           })}
         </script>

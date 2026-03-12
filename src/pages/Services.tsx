@@ -14,11 +14,11 @@ const Services = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
-    "url": "https://www.inkmugi.com/",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -204,8 +204,8 @@ const Services = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" }
             ]
           })}
         </script>

@@ -22,11 +22,11 @@ const PermanentMakeupAnnandale: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
-    "url": "https://www.inkmugi.com/",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -147,7 +147,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
             "@type": "Service",
             "name": "Permanent Makeup in Annandale, VA",
             "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. 330+ documented procedures, healed-first approach. Located at Heritage Center, 7857 Heritage Dr #330.",
-            "provider": { "@type": "HealthAndBeautyBusiness", "@id": "https://www.inkmugi.com/#business" },
+            "provider": { "@type": "HealthAndBeautyBusiness", "@id": "https://inkmugi.com/#business" },
             "areaServed": { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
             "serviceType": "Permanent Makeup",
             "offers": { "@type": "Offer", "price": "600", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
@@ -172,9 +172,9 @@ const PermanentMakeupAnnandale: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Permanent Makeup Annandale VA", "item": "https://www.inkmugi.com/licensed-pmu-artist-annandale" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Permanent Makeup Annandale VA", "item": "https://inkmugi.com/licensed-pmu-artist-annandale" }
             ]
           })}
         </script>

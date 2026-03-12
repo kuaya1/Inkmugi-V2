@@ -63,7 +63,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
       <SEO
         title="Nano Brows vs Microblading Cost & Comparison | Northern Virginia | Ink Mugi"
         description="Nano brows vs microblading — compare cost, longevity, pain, healing & results. Nano brows $650 all-inclusive vs microblading $400–$800. Data from 330+ procedures in Northern Virginia."
-        canonical="https://www.inkmugi.com/nano-brows-vs-microblading"
+        canonical="https://inkmugi.com/nano-brows-vs-microblading"
         path="/nano-brows-vs-microblading"
         keywords="nano brows vs microblading cost, nano brows vs microblading price, nano brows cost comparison, nano brows or microblading, nano brows vs microblading which is better, nano brows vs microblading oily skin, nano brows vs microblading longevity, nano brows vs microblading healing"
       >
@@ -81,19 +81,19 @@ const NanoBrowsVsMicroblading: React.FC = () => {
               "worksFor": {
                 "@type": "HealthAndBeautyBusiness",
                 "name": "Ink Mugi",
-                "url": "https://www.inkmugi.com"
+                "url": "https://inkmugi.com"
               }
             },
             "publisher": {
               "@type": "Organization",
               "name": "Ink Mugi",
-              "url": "https://www.inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://www.inkmugi.com/logo.png" }
+              "url": "https://inkmugi.com",
+              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
             },
             "datePublished": "2025-06-15",
             "dateModified": "2025-06-15",
-            "url": "https://www.inkmugi.com/nano-brows-vs-microblading",
-            "mainEntityOfPage": "https://www.inkmugi.com/nano-brows-vs-microblading"
+            "url": "https://inkmugi.com/nano-brows-vs-microblading",
+            "mainEntityOfPage": "https://inkmugi.com/nano-brows-vs-microblading"
           })}
         </script>
         {/* FAQ Schema */}
@@ -117,9 +117,9 @@ const NanoBrowsVsMicroblading: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.inkmugi.com/ombre-powder-brows-guide" },
-              { "@type": "ListItem", "position": 3, "name": "Nano Brows vs Microblading", "item": "https://www.inkmugi.com/nano-brows-vs-microblading" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://inkmugi.com/ombre-powder-brows-guide" },
+              { "@type": "ListItem", "position": 3, "name": "Nano Brows vs Microblading", "item": "https://inkmugi.com/nano-brows-vs-microblading" }
             ]
           })}
         </script>

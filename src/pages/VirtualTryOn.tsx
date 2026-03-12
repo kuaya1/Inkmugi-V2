@@ -92,7 +92,7 @@ const VirtualTryOn: React.FC = () => {
             "operatingSystem": "Web",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
             "description": "AI-powered virtual brow try-on tool. Upload your photo and preview ombre powder brows before your appointment.",
-            "url": "https://www.inkmugi.com/virtual-try-on"
+            "url": "https://inkmugi.com/virtual-try-on"
           })}
         </script>
         <script type="application/ld+json">
@@ -100,8 +100,8 @@ const VirtualTryOn: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Virtual Try-On", "item": "https://www.inkmugi.com/virtual-try-on" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Virtual Try-On", "item": "https://inkmugi.com/virtual-try-on" }
             ]
           })}
         </script>

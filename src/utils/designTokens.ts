@@ -151,7 +151,7 @@ export const brand = {
   license: '#1231002471',
   instagram: 'browsby.mugi',
   instagramUrl: 'https://www.instagram.com/browsby.mugi/',
-  url: 'https://www.inkmugi.com',
+  url: 'https://inkmugi.com',
   procedures: '330+',
   email: '', // fill when available
   booking: {

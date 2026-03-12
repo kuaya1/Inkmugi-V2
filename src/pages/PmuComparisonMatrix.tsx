@@ -254,7 +254,7 @@ const PmuComparisonMatrix: React.FC = () => {
         description="Complete side-by-side comparison of permanent makeup techniques. Ombre powder brows vs microshading vs nano brows vs microblading — longevity, costs, skin types, and which to choose."
         path="/pmu-comparison-matrix"
         keywords="PMU comparison, ombre vs microblading, powder brows vs microblading, microshading vs ombre, nano brows vs microblading, permanent makeup techniques comparison, best PMU technique, which PMU technique"
-        image="https://www.inkmugi.com/og-image.jpg"
+        image="https://inkmugi.com/og-image.jpg"
       >
         {/* Article Schema */}
         <script type="application/ld+json">
@@ -273,12 +273,12 @@ const PmuComparisonMatrix: React.FC = () => {
             publisher: {
               '@type': 'Organization',
               name: 'Ink Mugi',
-              logo: { '@type': 'ImageObject', url: 'https://www.inkmugi.com/logo.png' },
+              logo: { '@type': 'ImageObject', url: 'https://inkmugi.com/logo.png' },
             },
             datePublished: '2026-02-10',
             dateModified: '2026-02-10',
-            image: 'https://www.inkmugi.com/og-image.jpg',
-            url: 'https://www.inkmugi.com/pmu-comparison-matrix',
+            image: 'https://inkmugi.com/og-image.jpg',
+            url: 'https://inkmugi.com/pmu-comparison-matrix',
           })}
         </script>
 
@@ -325,12 +325,12 @@ const PmuComparisonMatrix: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.inkmugi.com' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com' },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'PMU Comparison Matrix',
-                item: 'https://www.inkmugi.com/pmu-comparison-matrix',
+                item: 'https://inkmugi.com/pmu-comparison-matrix',
               },
             ],
           })}
@@ -342,7 +342,7 @@ const PmuComparisonMatrix: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
             name: 'PMU Comparison Matrix | Ink Mugi',
-            url: 'https://www.inkmugi.com/pmu-comparison-matrix',
+            url: 'https://inkmugi.com/pmu-comparison-matrix',
             speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.summary-box', '.key-stat'] },
           })}
         </script>

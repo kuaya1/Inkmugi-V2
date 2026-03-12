@@ -170,7 +170,7 @@ const UltimateGuidePmu: React.FC = () => {
         description="Complete guide to permanent makeup covering techniques, safety, costs, healing, choosing an artist, and everything you need to know before getting PMU. 5,000+ word expert resource."
         path="/ultimate-guide-permanent-makeup"
         keywords="permanent makeup guide, PMU complete guide, what is permanent makeup, permanent makeup techniques, PMU safety, permanent makeup cost, how to choose PMU artist, permanent makeup healing, ombre brows guide, microblading guide"
-        image="https://www.inkmugi.com/og-image.jpg"
+        image="https://inkmugi.com/og-image.jpg"
       >
         {/* Article Schema */}
         <script type="application/ld+json">
@@ -188,12 +188,12 @@ const UltimateGuidePmu: React.FC = () => {
             publisher: {
               '@type': 'Organization',
               name: 'Ink Mugi',
-              logo: { '@type': 'ImageObject', url: 'https://www.inkmugi.com/logo.png' },
+              logo: { '@type': 'ImageObject', url: 'https://inkmugi.com/logo.png' },
             },
             datePublished: '2026-02-10',
             dateModified: '2026-02-10',
-            image: 'https://www.inkmugi.com/og-image.jpg',
-            url: 'https://www.inkmugi.com/ultimate-guide-permanent-makeup',
+            image: 'https://inkmugi.com/og-image.jpg',
+            url: 'https://inkmugi.com/ultimate-guide-permanent-makeup',
             wordCount: 5000,
             articleBody: 'Complete expert guide to permanent makeup...',
           })}
@@ -205,8 +205,8 @@ const UltimateGuidePmu: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.inkmugi.com' },
-              { '@type': 'ListItem', position: 2, name: 'Ultimate PMU Guide', item: 'https://www.inkmugi.com/ultimate-guide-permanent-makeup' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com' },
+              { '@type': 'ListItem', position: 2, name: 'Ultimate PMU Guide', item: 'https://inkmugi.com/ultimate-guide-permanent-makeup' },
             ],
           })}
         </script>
@@ -217,7 +217,7 @@ const UltimateGuidePmu: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
             name: 'Ultimate Guide to Permanent Makeup | Ink Mugi',
-            url: 'https://www.inkmugi.com/ultimate-guide-permanent-makeup',
+            url: 'https://inkmugi.com/ultimate-guide-permanent-makeup',
             speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.summary-box', '.key-stat'] },
           })}
         </script>

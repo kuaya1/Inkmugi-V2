@@ -122,10 +122,10 @@ const MicrobladingCorrectionNorthernVirginia: React.FC = () => {
             "@type": "Service",
             "name": "Microblading Correction — Powder Brow Restoration",
             "description": "Advanced microblading correction service using ombré powder brow technique. Specializing in grey color shift repair, blurred stroke correction, and uneven fading restoration for Northern Virginia, DC, and Maryland clients.",
-            "url": "https://www.inkmugi.com/microblading-correction-northern-virginia",
+            "url": "https://inkmugi.com/microblading-correction-northern-virginia",
             "provider": {
               "@type": "HealthAndBeautyBusiness",
-              "@id": "https://www.inkmugi.com/#business",
+              "@id": "https://inkmugi.com/#business",
               "name": "Ink Mugi",
               "telephone": "+1-571-283-8228",
               "address": {
@@ -176,9 +176,9 @@ const MicrobladingCorrectionNorthernVirginia: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "PMU Correction", "item": "https://www.inkmugi.com/pmu-correction-restoration" },
-              { "@type": "ListItem", "position": 3, "name": "Microblading Correction", "item": "https://www.inkmugi.com/microblading-correction-northern-virginia" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "PMU Correction", "item": "https://inkmugi.com/pmu-correction-restoration" },
+              { "@type": "ListItem", "position": 3, "name": "Microblading Correction", "item": "https://inkmugi.com/microblading-correction-northern-virginia" }
             ]
           })}
         </script>

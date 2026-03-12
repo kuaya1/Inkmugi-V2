@@ -238,9 +238,9 @@ const AftercareGuide: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Aftercare Guide", "item": "https://www.inkmugi.com/aftercare-guide" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Aftercare Guide", "item": "https://inkmugi.com/aftercare-guide" }
             ]
           })}
         </script>

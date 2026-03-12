@@ -23,11 +23,11 @@ const OmbreBrowsMcLean: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://www.inkmugi.com/ombre-brows-mclean-va",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/ombre-brows-mclean-va",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
@@ -153,7 +153,7 @@ const OmbreBrowsMcLean: React.FC = () => {
             "@type": "Service",
             "name": "Ombré Powder Brows — McLean Area",
             "description": "Precision ombré powder brows for McLean, VA residents. Includes design consultation, full procedure, medical-grade aftercare kit, healing support, and perfecting touch-up.",
-            "provider": { "@id": "https://www.inkmugi.com/#business" },
+            "provider": { "@id": "https://inkmugi.com/#business" },
             "areaServed": { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
             "offers": {
               "@type": "Offer",
@@ -186,9 +186,9 @@ const OmbreBrowsMcLean: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Ombré Powder Brows", "item": "https://www.inkmugi.com/signature-ombre-brows" },
-              { "@type": "ListItem", "position": 3, "name": "McLean, VA", "item": "https://www.inkmugi.com/ombre-brows-mclean-va" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Ombré Powder Brows", "item": "https://inkmugi.com/signature-ombre-brows" },
+              { "@type": "ListItem", "position": 3, "name": "McLean, VA", "item": "https://inkmugi.com/ombre-brows-mclean-va" }
             ]
           })}
         </script>

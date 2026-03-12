@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL = 'https://www.inkmugi.com';
+const SITE_URL = 'https://inkmugi.com';
 const DEFAULT_IMAGE = 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg';
 
 interface SEOProps {

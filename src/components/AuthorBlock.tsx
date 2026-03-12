@@ -20,16 +20,16 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    '@id': 'https://www.inkmugi.com/#mugi',
+    '@id': 'https://inkmugi.com/#mugi',
     name: 'Mugi',
     jobTitle: 'Licensed Permanent Cosmetic Tattooer',
     description:
       'Virginia-licensed permanent makeup artist specializing in powder brows and microblading correction with 330+ documented procedures.',
     image:
       'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg',
-    url: 'https://www.inkmugi.com/about',
+    url: 'https://inkmugi.com/about',
     worksFor: {
-      '@id': 'https://www.inkmugi.com/#business',
+      '@id': 'https://inkmugi.com/#business',
     },
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',

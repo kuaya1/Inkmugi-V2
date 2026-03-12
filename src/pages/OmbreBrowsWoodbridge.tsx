@@ -22,11 +22,11 @@ const OmbreBrowsWoodbridge: React.FC = () => {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://www.inkmugi.com/ombre-brows-woodbridge-va",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/ombre-brows-woodbridge-va",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
@@ -60,7 +60,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     "description": "Professional ombre powder brows service for Woodbridge, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 35 minutes from Woodbridge via I-95/I-395.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
-      "@id": "https://www.inkmugi.com/#business"
+      "@id": "https://inkmugi.com/#business"
     },
     "areaServed": {
       "@type": "City",
@@ -181,9 +181,9 @@ const OmbreBrowsWoodbridge: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Woodbridge VA", "item": "https://www.inkmugi.com/ombre-brows-woodbridge-va" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Ombre Brows Woodbridge VA", "item": "https://inkmugi.com/ombre-brows-woodbridge-va" }
             ]
           })}
         </script>

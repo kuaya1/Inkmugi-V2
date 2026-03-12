@@ -118,10 +118,10 @@ const SignatureOmbreBrows: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "@id": "https://www.inkmugi.com/#business",
+            "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
-            "url": "https://www.inkmugi.com/",
-            "logo": "https://www.inkmugi.com/logo.png",
+            "url": "https://inkmugi.com/",
+            "logo": "https://inkmugi.com/logo.png",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
@@ -158,7 +158,7 @@ const SignatureOmbreBrows: React.FC = () => {
             "@type": "Service",
             "name": "Signature Ombre Powder Brows",
             "description": "Professional ombre powder brows performed in Annandale, VA. Includes consultation, procedure, aftercare kit, and perfecting touch-up.",
-            "provider": { "@id": "https://www.inkmugi.com/#business" },
+            "provider": { "@id": "https://inkmugi.com/#business" },
             "areaServed": [
               { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
               { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
@@ -211,9 +211,9 @@ const SignatureOmbreBrows: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "Signature Ombre Brows", "item": "https://www.inkmugi.com/signature-ombre-brows" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Signature Ombre Brows", "item": "https://inkmugi.com/signature-ombre-brows" }
             ]
           })}
         </script>
@@ -240,7 +240,7 @@ const SignatureOmbreBrows: React.FC = () => {
               "position": s.step,
               "name": s.title,
               "text": s.description,
-              "url": `https://www.inkmugi.com/signature-ombre-brows#step-${s.step}`
+              "url": `https://inkmugi.com/signature-ombre-brows#step-${s.step}`
             }))
           })}
         </script>
@@ -253,7 +253,7 @@ const SignatureOmbreBrows: React.FC = () => {
               "@type": "SpeakableSpecification",
               "cssSelector": ["h1", "h2", ".faq-answer"]
             },
-            "url": "https://www.inkmugi.com/signature-ombre-brows"
+            "url": "https://inkmugi.com/signature-ombre-brows"
           })}
         </script>
       </SEO>

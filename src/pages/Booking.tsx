@@ -19,8 +19,8 @@ const Booking: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com" },
-              { "@type": "ListItem", "position": 2, "name": "Book Consultation", "item": "https://www.inkmugi.com/booking" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com" },
+              { "@type": "ListItem", "position": 2, "name": "Book Consultation", "item": "https://inkmugi.com/booking" }
             ]
           })}
         </script>

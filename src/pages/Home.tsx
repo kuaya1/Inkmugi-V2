@@ -147,7 +147,7 @@ const Home: React.FC = () => {
         title="Ombré Powder Brows in Annandale, VA | Fairfax County | Ink Mugi"
         description="Licensed permanent makeup studio in Annandale, Virginia. Ombré powder brows, nano brows & microblading correction for Northern Virginia. 330+ procedures, 0.19% complication rate. Serving Fairfax County, Arlington, Reston & DC."
         path="/"
-        image="https://www.inkmugi.com/2315.png"
+        image="https://inkmugi.com/2315.png"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, powder brows near me, ombre brows near me, licensed PMU artist Virginia, healed brow results, permanent makeup Northern Virginia"
       >
         {/* Preload hero LCP image */}
@@ -159,13 +159,13 @@ const Home: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "@id": "https://www.inkmugi.com/#business",
+            "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
-            "url": "https://www.inkmugi.com/",
-            "logo": "https://www.inkmugi.com/logo.png",
-            "image": "https://www.inkmugi.com/2315.png",
+            "url": "https://inkmugi.com/",
+            "logo": "https://inkmugi.com/logo.png",
+            "image": "https://inkmugi.com/2315.png",
             "telephone": "+1-571-283-8228",
-            "founder": { "@id": "https://www.inkmugi.com/#mugi" },
+            "founder": { "@id": "https://inkmugi.com/#mugi" },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "7857 Heritage Dr #330",
@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             "@type": "Service",
             "name": "Natural Ombré Powder Brows",
             "description": "Precision ombré powder brows designed for natural healed results. Includes consultation, procedure, aftercare, and perfecting touch-up.",
-            "provider": { "@id": "https://www.inkmugi.com/#business" },
+            "provider": { "@id": "https://inkmugi.com/#business" },
             "areaServed": [
               { "@type": "City", "name": "Annandale" },
               { "@type": "AdministrativeArea", "name": "Fairfax County" },
@@ -231,10 +231,10 @@ const Home: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "@id": "https://www.inkmugi.com/#website",
-            "url": "https://www.inkmugi.com/",
+            "@id": "https://inkmugi.com/#website",
+            "url": "https://inkmugi.com/",
             "name": "Ink Mugi",
-            "publisher": { "@id": "https://www.inkmugi.com/#business" }
+            "publisher": { "@id": "https://inkmugi.com/#business" }
           })}
         </script>
 
@@ -892,6 +892,12 @@ const Home: React.FC = () => {
               { label: 'Falls Church, VA', to: '/permanent-makeup-falls-church-va' },
               { label: 'Reston, VA', to: '/ombre-brows-reston-va' },
               { label: 'Loudoun County', to: '/ombre-brows-loudoun-county-va' },
+              { label: 'Chantilly, VA', to: '/ombre-brows-chantilly-va' },
+              { label: 'Centreville, VA', to: '/ombre-brows-centreville-va' },
+              { label: 'Herndon, VA', to: '/ombre-brows-herndon-va' },
+              { label: 'Woodbridge, VA', to: '/ombre-brows-woodbridge-va' },
+              { label: 'Manassas, VA', to: '/ombre-brows-manassas-va' },
+              { label: 'Springfield, VA', to: '/permanent-makeup-springfield-va' },
             ].map((city) => (
               <Link
                 key={city.label}

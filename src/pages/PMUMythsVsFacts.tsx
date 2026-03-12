@@ -98,11 +98,11 @@ export default function PMUMythsVsFacts() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "@id": "https://www.inkmugi.com/#business",
+            "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
-            "url": "https://www.inkmugi.com/",
-            "logo": "https://www.inkmugi.com/logo.png",
-            "image": "https://www.inkmugi.com/og-image.jpg",
+            "url": "https://inkmugi.com/",
+            "logo": "https://inkmugi.com/logo.png",
+            "image": "https://inkmugi.com/og-image.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
@@ -130,19 +130,19 @@ export default function PMUMythsVsFacts() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.inkmugi.com"
+                "item": "https://inkmugi.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Authority Hub",
-                "item": "https://www.inkmugi.com/authority"
+                "item": "https://inkmugi.com/authority"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "PMU Myths vs. Clinical Facts",
-                "item": "https://www.inkmugi.com/pmu-myths-facts"
+                "item": "https://inkmugi.com/pmu-myths-facts"
               }
             ]
           })}
@@ -152,11 +152,11 @@ export default function PMUMythsVsFacts() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "12 PMU Myths Debunked with Clinical Data",
-            "author": { "@type": "Person", "@id": "https://www.inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
-            "publisher": { "@type": "Organization", "@id": "https://www.inkmugi.com/#business", "name": "Ink Mugi", "url": "https://www.inkmugi.com/" },
+            "author": { "@type": "Person", "@id": "https://inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
+            "publisher": { "@type": "Organization", "@id": "https://inkmugi.com/#business", "name": "Ink Mugi", "url": "https://inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
-            "mainEntityOfPage": "https://www.inkmugi.com/pmu-myths-facts",
+            "mainEntityOfPage": "https://inkmugi.com/pmu-myths-facts",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "description": "12 common permanent makeup myths debunked with clinical data from 330+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results."
           })}
@@ -184,7 +184,7 @@ export default function PMUMythsVsFacts() {
               "@type": "SpeakableSpecification",
               "cssSelector": ["h1", "h2", ".myth-fact"]
             },
-            "url": "https://www.inkmugi.com/pmu-myths-facts"
+            "url": "https://inkmugi.com/pmu-myths-facts"
           })}
         </script>
       </SEO>

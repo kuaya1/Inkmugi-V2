@@ -181,13 +181,13 @@ const OmbrePowderBrowsGuide: React.FC = () => {
     publisher: {
       '@type': 'Organization',
       name: 'Ink Mugi',
-      url: 'https://www.inkmugi.com',
-      logo: { '@type': 'ImageObject', url: 'https://www.inkmugi.com/android-chrome-512x512.png' },
+      url: 'https://inkmugi.com',
+      logo: { '@type': 'ImageObject', url: 'https://inkmugi.com/android-chrome-512x512.png' },
     },
     datePublished: '2026-03-09',
     dateModified: '2026-03-09',
-    mainEntityOfPage: 'https://www.inkmugi.com/ombre-powder-brows-guide',
-    image: 'https://www.inkmugi.com/images/ombre-powder-brows-guide-hero.jpg',
+    mainEntityOfPage: 'https://inkmugi.com/ombre-powder-brows-guide',
+    image: 'https://inkmugi.com/images/ombre-powder-brows-guide-hero.jpg',
     wordCount: 3200,
   };
 
@@ -195,13 +195,13 @@ const OmbrePowderBrowsGuide: React.FC = () => {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.inkmugi.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.inkmugi.com/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://inkmugi.com/blog' },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Ombré Powder Brows Guide',
-        item: 'https://www.inkmugi.com/ombre-powder-brows-guide',
+        item: 'https://inkmugi.com/ombre-powder-brows-guide',
       },
     ],
   };
@@ -221,7 +221,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
       <SEO
         title="Ombré Powder Brows Guide – Healing, Results & Expert Advice | Ink Mugi"
         description="Your complete ombré powder brows knowledge hub. Explore healing timelines, skin-type suitability, pigment science, correction options, and expert aftercare advice from Ink Mugi in Northern Virginia."
-        canonical="https://www.inkmugi.com/ombre-powder-brows-guide"
+        canonical="https://inkmugi.com/ombre-powder-brows-guide"
         schema={[articleSchema, breadcrumbSchema, faqSchema]}
       />
 

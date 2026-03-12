@@ -112,18 +112,18 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               "@type": "Person",
               "name": "Mugi",
               "jobTitle": "Licensed PMU Artist",
-              "worksFor": { "@type": "HealthAndBeautyBusiness", "name": "Ink Mugi", "url": "https://www.inkmugi.com" }
+              "worksFor": { "@type": "HealthAndBeautyBusiness", "name": "Ink Mugi", "url": "https://inkmugi.com" }
             },
             "publisher": {
               "@type": "Organization",
               "name": "Ink Mugi",
-              "url": "https://www.inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://www.inkmugi.com/logo.png" }
+              "url": "https://inkmugi.com",
+              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
             },
             "datePublished": "2026-03-06",
             "dateModified": "2026-03-06",
-            "url": "https://www.inkmugi.com/powder-brows-over-microblading",
-            "mainEntityOfPage": "https://www.inkmugi.com/powder-brows-over-microblading"
+            "url": "https://inkmugi.com/powder-brows-over-microblading",
+            "mainEntityOfPage": "https://inkmugi.com/powder-brows-over-microblading"
           })}
         </script>
         <script type="application/ld+json">
@@ -142,9 +142,9 @@ const PowderBrowsOverMicroblading: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Microblading Correction", "item": "https://www.inkmugi.com/microblading-correction-northern-virginia" },
-              { "@type": "ListItem", "position": 3, "name": "Powder Brows Over Microblading", "item": "https://www.inkmugi.com/powder-brows-over-microblading" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Microblading Correction", "item": "https://inkmugi.com/microblading-correction-northern-virginia" },
+              { "@type": "ListItem", "position": 3, "name": "Powder Brows Over Microblading", "item": "https://inkmugi.com/powder-brows-over-microblading" }
             ]
           })}
         </script>

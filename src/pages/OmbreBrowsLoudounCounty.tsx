@@ -20,11 +20,11 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
   const businessSchema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.inkmugi.com/#business",
+    "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://www.inkmugi.com/ombre-brows-loudoun-county-va",
-    "logo": "https://www.inkmugi.com/logo.png",
-    "image": "https://www.inkmugi.com/og-image.jpg",
+    "url": "https://inkmugi.com/ombre-brows-loudoun-county-va",
+    "logo": "https://inkmugi.com/logo.png",
+    "image": "https://inkmugi.com/og-image.jpg",
     "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
@@ -118,7 +118,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
             "@type": "Service",
             "name": "Ombré Powder Brows — Loudoun County Area",
             "description": "Precision ombré powder brows for Loudoun County, VA residents. Includes design consultation, full procedure, medical-grade aftercare, healing support, and perfecting touch-up.",
-            "provider": { "@id": "https://www.inkmugi.com/#business" },
+            "provider": { "@id": "https://inkmugi.com/#business" },
             "areaServed": { "@type": "AdministrativeArea", "name": "Loudoun County", "containedInPlace": { "@type": "State", "name": "Virginia" } },
             "offers": {
               "@type": "Offer",
@@ -151,9 +151,9 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Permanent Makeup in Fairfax County", "item": "https://www.inkmugi.com/permanent-makeup-fairfax-county" },
-              { "@type": "ListItem", "position": 3, "name": "Loudoun County, VA", "item": "https://www.inkmugi.com/ombre-brows-loudoun-county-va" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Permanent Makeup in Fairfax County", "item": "https://inkmugi.com/permanent-makeup-fairfax-county" },
+              { "@type": "ListItem", "position": 3, "name": "Loudoun County, VA", "item": "https://inkmugi.com/ombre-brows-loudoun-county-va" }
             ]
           })}
         </script>

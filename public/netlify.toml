@@ -6,22 +6,22 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Force HTTPS and www
+# Force HTTPS and non-www (Google selected non-www as canonical)
 [[redirects]]
   from = "http://inkmugi.com/*"
-  to = "https://www.inkmugi.com/:splat"
+  to = "https://inkmugi.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "http://www.inkmugi.com/*"
-  to = "https://www.inkmugi.com/:splat"
+  to = "https://inkmugi.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://inkmugi.com/*"
-  to = "https://www.inkmugi.com/:splat"
+  from = "https://www.inkmugi.com/*"
+  to = "https://inkmugi.com/:splat"
   status = 301
   force = true
 

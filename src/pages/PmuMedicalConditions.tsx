@@ -238,7 +238,7 @@ const PmuMedicalConditions: React.FC = () => {
         description="Complete guide to permanent makeup and medical conditions. Learn about contraindications, medications that affect PMU, pregnancy, diabetes, autoimmune conditions, and when PMU is safe."
         path="/pmu-medical-conditions"
         keywords="permanent makeup medical conditions, PMU contraindications, microblading pregnancy, PMU diabetes, PMU autoimmune disease, permanent makeup safety, PMU medications, can I get PMU with, permanent makeup health conditions"
-        image="https://www.inkmugi.com/og-image.jpg"
+        image="https://inkmugi.com/og-image.jpg"
       >
         {/* Article Schema */}
         <script type="application/ld+json">
@@ -257,12 +257,12 @@ const PmuMedicalConditions: React.FC = () => {
             publisher: {
               '@type': 'Organization',
               name: 'Ink Mugi',
-              logo: { '@type': 'ImageObject', url: 'https://www.inkmugi.com/logo.png' },
+              logo: { '@type': 'ImageObject', url: 'https://inkmugi.com/logo.png' },
             },
             datePublished: '2026-02-10',
             dateModified: '2026-02-10',
-            image: 'https://www.inkmugi.com/og-image.jpg',
-            url: 'https://www.inkmugi.com/pmu-medical-conditions',
+            image: 'https://inkmugi.com/og-image.jpg',
+            url: 'https://inkmugi.com/pmu-medical-conditions',
           })}
         </script>
 
@@ -272,12 +272,12 @@ const PmuMedicalConditions: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.inkmugi.com' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com' },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'PMU & Medical Conditions',
-                item: 'https://www.inkmugi.com/pmu-medical-conditions',
+                item: 'https://inkmugi.com/pmu-medical-conditions',
               },
             ],
           })}
@@ -309,7 +309,7 @@ const PmuMedicalConditions: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
             name: 'PMU & Medical Conditions Safety Guide | Ink Mugi',
-            url: 'https://www.inkmugi.com/pmu-medical-conditions',
+            url: 'https://inkmugi.com/pmu-medical-conditions',
             speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', '.summary-box'] },
           })}
         </script>

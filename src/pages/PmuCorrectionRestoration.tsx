@@ -68,13 +68,13 @@ const PmuCorrectionRestoration: React.FC = () => {
             "@type": "Service",
             "name": "PMU Correction & Pigment Recalibration",
             "description": "Advanced permanent makeup correction service specializing in undertone neutralization, structural redesign, and pigment recalibration for failed microblading, discolored brows, and substandard previous work.",
-            "url": "https://www.inkmugi.com/pmu-correction-restoration",
-            "image": "https://www.inkmugi.com/og-image.jpg",
+            "url": "https://inkmugi.com/pmu-correction-restoration",
+            "image": "https://inkmugi.com/og-image.jpg",
             "provider": {
               "@type": "HealthAndBeautyBusiness",
-              "@id": "https://www.inkmugi.com/#business",
+              "@id": "https://inkmugi.com/#business",
               "name": "Ink Mugi",
-              "url": "https://www.inkmugi.com/",
+              "url": "https://inkmugi.com/",
               "telephone": "+1-571-283-8228",
               "address": {
                 "@type": "PostalAddress",
@@ -130,9 +130,9 @@ const PmuCorrectionRestoration: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inkmugi.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inkmugi.com/services" },
-              { "@type": "ListItem", "position": 3, "name": "PMU Correction & Pigment Recalibration", "item": "https://www.inkmugi.com/pmu-correction-restoration" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkmugi.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkmugi.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "PMU Correction & Pigment Recalibration", "item": "https://inkmugi.com/pmu-correction-restoration" }
             ]
           })}
         </script>
