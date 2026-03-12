@@ -49,7 +49,7 @@ const SEO: React.FC<SEOProps> = ({
   const ogImage = image || DEFAULT_IMAGE;
 
   return (
-    <Helmet>
+    <Helmet defer={false}>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
