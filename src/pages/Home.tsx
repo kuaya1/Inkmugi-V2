@@ -145,7 +145,7 @@ const Home: React.FC = () => {
     <>
       <SEO
         title="Ink Mugi | Ombré Powder Brows with a 0.19% Complication Rate — Annandale, VA"
-        description="523 procedures. 0.19% complication rate. Licensed in Virginia. Ink Mugi specializes in natural ombré powder brows for women who won't settle for close enough. Free consultation in Annandale."
+        description="Virginia-licensed ombré powder brow specialist in Annandale. 523 documented procedures, 0.19% complication rate, healed-first standards, and consultation-based treatment planning."
         path="/"
         image="https://inkmugi.com/2315.png"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, powder brows near me, ombre brows near me, licensed PMU artist Virginia, healed brow results, permanent makeup Northern Virginia"
@@ -210,7 +210,7 @@ const Home: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Natural Ombré Powder Brows",
-            "description": "Precision ombré powder brows designed for natural healed results. Includes consultation, procedure, aftercare, and perfecting touch-up.",
+            "description": "Ombré powder brows performed with facial mapping, pigment selection by undertone, conservative saturation, and healed-result review.",
             "provider": { "@id": "https://inkmugi.com/#business" },
             "areaServed": [
               { "@type": "City", "name": "Annandale" },
@@ -310,17 +310,17 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/80 tracking-[0.25em] text-xs uppercase font-light">
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
-                Licensed Permanent Makeup · Annandale, Virginia
+                Virginia Licensed Permanent Cosmetic Tattooer · Annandale, Virginia
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
               </span>
             </motion.div>
 
             <h1 className="mb-6 md:mb-8">
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
-                Brows you don't have to think about.
+                Ombr\u00e9 powder brows
               </span>
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
-                <span className="text-[#E6DAD2]">Ever.</span>
+                <span className="text-[#E6DAD2]">designed for predictable healed results.</span>
               </span>
             </h1>
 
@@ -331,9 +331,9 @@ const Home: React.FC = () => {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <p className="text-lg md:text-xl text-white/75 font-light leading-relaxed">
-                523 procedures. A 0.19% complication rate.
+                After 523 documented procedures, the difference is no longer aesthetic preference.
                 <br className="hidden sm:block" />
-                One artist who treats your face like the one thing she refuses to rush.
+                It is mapping, pigment selection, depth control, conservative technique, and judging the work only after it heals.
               </p>
             </motion.div>
 
@@ -348,7 +348,7 @@ const Home: React.FC = () => {
                   to="/booking"
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Book Your Free Consultation</span>
+                  <span>Request a Consultation Review</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <a
@@ -362,7 +362,7 @@ const Home: React.FC = () => {
                 </a>
               </div>
               <p className="text-xs tracking-[0.15em] uppercase text-[#E6DAD2]/70 font-light">
-                Currently booking for {new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toLocaleString('en-US', { month: 'long', year: 'numeric' })}
+                Currently reviewing new consultation requests for {new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toLocaleString('en-US', { month: 'long', year: 'numeric' })}
               </p>
             </motion.div>
           </motion.div>
@@ -634,16 +634,16 @@ const Home: React.FC = () => {
                 The Specialist
               </span>
               <h2 className="text-3xl md:text-4xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                Measured precision. Documented outcomes.
+                Why the work heals differently.
                 <br />
-                <span className="text-[#2D2D2B]/50">Designed to be undetectable.</span>
+                <span className="text-[#2D2D2B]/50">The protocol matters more than the style name.</span>
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  A Virginia-licensed permanent makeup specialist with 523+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed. Over hundreds of procedures, that consistency is what allows results to stay refined rather than overly formulaic.
+                  After 523+ documented procedures, certain patterns are no longer hypothetical. Retention changes with skin type. Undertone matters. Depth matters. Front density matters. Most unsatisfactory brows are not caused by one dramatic mistake; they come from a series of small technical decisions that were made too quickly or without enough restraint.
                 </p>
                 <p>
-                  Every session at the Annandale studio is private, unrushed, and structured for clinical clarity. Many clients who visit us from Northern Virginia and the Washington DC metro area value discretion and predictability — professionals and individuals who want natural results without visible evidence of a procedure.
+                  That is why every appointment follows the same sequence: facial mapping before any design decision, design approval before pigment, conservative first-pass saturation, and healed review before calling the result complete. The goal is not to make brows look freshly done on day one. The goal is to have them heal evenly, sit correctly on the face, and still make sense months later in natural light.
                 </p>
               </div>
 
@@ -667,7 +667,7 @@ const Home: React.FC = () => {
                 to="/about"
                 className="inline-flex items-center gap-2 text-[#2D2D2B] font-medium hover:gap-3 transition-all duration-300 group text-sm"
               >
-                <span>Read the full story and credentials</span>
+                <span>Review credentials, licensure, and approach</span>
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </AnimatedSection>
@@ -955,13 +955,13 @@ const Home: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center text-white">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium leading-tight mb-6">
-                When you are ready,
+                Start with an honest assessment,
                 <br />
-                <span className="text-[#E6DAD2]">we are here.</span>
+                <span className="text-[#E6DAD2]">not a sales conversation.</span>
               </h2>
 
               <p className="text-base text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
-                A consultation is an assessment — not a commitment. We evaluate your goals, review documented outcomes, and determine whether this procedure is appropriate for you. In our consultations, that may also include explaining why a previous microblading result healed the way it did or why another technique may suit your skin better. If it is not the right procedure, we will tell you directly. If it is, we proceed with precision.
+                A consultation is where your skin, brow history, medical considerations, and long-term expectations are reviewed before any procedure is discussed seriously. That conversation may end with a treatment plan, a recommendation to wait, or a recommendation not to proceed at all. Good permanent makeup starts with accurate screening, not persuasion.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
@@ -969,7 +969,7 @@ const Home: React.FC = () => {
                   to="/booking"
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Schedule a Consultation</span>
+                  <span>Request a Consultation Review</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <span className="text-white/30">or</span>
