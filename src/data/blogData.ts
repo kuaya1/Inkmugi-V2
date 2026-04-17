@@ -21,12 +21,12 @@ export const blogPosts: BlogPost[] = [
   {
     id: 1,
     slug: "nano-brows-vs-microblading-comparison",
-    title: "Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity? (330+ Procedures Analyzed)",
-    excerpt: "After performing 330+ procedures in Northern Virginia's humid climate, here's what I've seen firsthand about how nano brows and microblading actually hold up — not what the textbooks say.",
+    title: "Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity? (523+ Procedures Analyzed)",
+    excerpt: "After performing 523+ procedures in Northern Virginia's humid climate, here's what I've seen firsthand about how nano brows and microblading actually hold up — not what the textbooks say.",
     content: `
 # Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity?
 
-**After 330+ procedures, here's what I've learned about how these techniques actually perform in the DC/Maryland/Virginia climate.**
+**After 523+ procedures, here's what I've learned about how these techniques actually perform in the DC/Maryland/Virginia climate.**
 
 I'm Mugi, a licensed permanent cosmetic tattooer (Virginia License #1231002471) based in Annandale, VA. One of the most common questions I hear during [free consultations](/booking) is: *"Should I get nano brows or microblading?"*
 
@@ -40,7 +40,7 @@ Northern Virginia summers average 70–80% humidity with temperatures regularly 
 - **Sweat production** on the brow bone is 2–3x higher in humid climates
 - **UV exposure** during our long summers fades pigment faster
 
-In my [330+ procedure dataset](/authority), I've tracked retention rates across both techniques specifically in our region. The results surprised me.
+In my [523+ procedure dataset](/authority), I've tracked retention rates across both techniques specifically in our region. The results surprised me.
 
 ## What Are Nano Brows?
 
@@ -112,7 +112,7 @@ Post-procedure care is especially important in the DMV. My protocol includes:
 - **Weeks 3–6**: True color settles in. Apply SPF 30+ on brows when outdoors.
 - **Long-term**: Annual SPF protection extends your results by 6–12 months.
 
-For a deeper dive into healing stages, check out my [Powder Brows Healing Data guide](/pmu-data-guide) — it's based on clinical data from 330+ procedures.
+For a deeper dive into healing stages, check out my [Powder Brows Healing Data guide](/pmu-data-guide) — it's based on clinical data from 523+ procedures.
 
 ## The Bottom Line
 
@@ -132,21 +132,21 @@ If you're in the DMV area and considering semi-permanent brows, nano brows (or o
     lastUpdated: "February 9, 2026",
     readTime: "10 min read",
     featured: true,
-    metaDescription: "Licensed VA artist compares nano brows vs microblading with data from 330+ procedures. See which technique lasts longer in DMV humidity, real complication rates, and healed results."
+    metaDescription: "Licensed VA artist compares nano brows vs microblading with data from 523+ procedures. See which technique lasts longer in DMV humidity, real complication rates, and healed results."
   },
   {
     id: 2,
     slug: "ombre-powder-brows-complete-guide",
-    title: "Ombre Powder Brows: What 330+ Procedures Taught Me About Healing, Cost & Results",
-    excerpt: "I've performed 330+ ombre powder brow procedures in Annandale, VA. Here's my honest guide to preparation, pain, healing stages, and what results actually look like at 6 weeks.",
-    metaDescription: "Licensed VA artist shares firsthand ombre powder brows guide based on 330+ procedures. Real healing timeline, honest cost breakdown, DMV-specific aftercare, and healed photos.",
+    title: "Ombre Powder Brows: What 523+ Procedures Taught Me About Healing, Cost & Results",
+    excerpt: "I've performed 523+ ombre powder brow procedures in Annandale, VA. Here's my honest guide to preparation, pain, healing stages, and what results actually look like at 6 weeks.",
+    metaDescription: "Licensed VA artist shares firsthand ombre powder brows guide based on 523+ procedures. Real healing timeline, honest cost breakdown, DMV-specific aftercare, and healed photos.",
     image: "https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg",
     content: `
-# Ombre Powder Brows: What 330+ Procedures Taught Me About Healing, Cost & Results
+# Ombre Powder Brows: What 523+ Procedures Taught Me About Healing, Cost & Results
 
 **A firsthand guide from Mugi, Licensed Permanent Cosmetic Tattooer (VA #1231002471) in Annandale, VA.**
 
-If you're reading this, you've probably spent hours scrolling through before-and-after photos wondering: *Will this actually work for me?* As someone who has performed 330+ ombre powder brow procedures, I want to give you the honest, no-fluff guide I wish every client read before their appointment.
+If you're reading this, you've probably spent hours scrolling through before-and-after photos wondering: *Will this actually work for me?* As someone who has performed 523+ ombre powder brow procedures, I want to give you the honest, no-fluff guide I wish every client read before their appointment.
 
 ## What Are Ombre Powder Brows?
 
@@ -209,7 +209,7 @@ You'll leave with a detailed aftercare kit and written instructions. I also text
 
 ## Honest Healing Timeline
 
-This is where most generic guides fail — they don't tell you about the "ugly duckling" phase. Here's what actually happens, based on patterns I've documented across [330+ procedures](/authority):
+This is where most generic guides fail — they don't tell you about the "ugly duckling" phase. Here's what actually happens, based on patterns I've documented across [523+ procedures](/authority):
 
 ### Days 1–3: Bold & Dark
 Your brows will look 40–50% darker than the final result. This is **normal**. The excess pigment sits on the surface and will shed during healing. Don't panic.
@@ -311,8 +311,8 @@ Or just call/text me at **(571) 283-8228**. I answer every message personally.
     id: 3,
     slug: "choosing-right-brow-shape",
     title: "How to Choose the Perfect Brow Shape for Your Face (Pro Mapping Guide)",
-    excerpt: "As a licensed PMU artist with 330+ procedures, here's how I use facial mapping and the golden ratio to design brows that complement every face shape.",
-    metaDescription: "Licensed PMU artist reveals the brow mapping process used in 330+ procedures. Learn how face shape, golden ratio, and bone structure determine your perfect brow shape.",
+    excerpt: "As a licensed PMU artist with 523+ procedures, here's how I use facial mapping and the golden ratio to design brows that complement every face shape.",
+    metaDescription: "Licensed PMU artist reveals the brow mapping process used in 523+ procedures. Learn how face shape, golden ratio, and bone structure determine your perfect brow shape.",
     image: "https://live.staticflickr.com/65535/54363151472_699bd8a642_o_d.jpg",
     alt: "Professional brow mapping technique for face shape analysis at Ink Mugi",
     category: "Design",
@@ -326,7 +326,7 @@ Or just call/text me at **(571) 283-8228**. I answer every message personally.
     content: `
 # How to Choose the Perfect Brow Shape for Your Face
 
-**A professional mapping guide from Mugi — 330+ procedures in Annandale, VA.**
+**A professional mapping guide from Mugi — 523+ procedures in Annandale, VA.**
 
 Your brow shape can change your entire face. I've seen it hundreds of times: a client walks in with brows that don't quite fit their features, and after proper mapping and reshaping, they look like a completely different person — in the best way.
 
@@ -352,7 +352,7 @@ I use a combination of the golden ratio (phi) and facial bone structure to map e
 
 ## Brow Shapes by Face Type
 
-After 330+ procedures, I've developed intuition for what works — but here's the general framework:
+After 523+ procedures, I've developed intuition for what works — but here's the general framework:
 
 ### Round Face
 - **Best shape**: High, defined arch
@@ -448,8 +448,8 @@ Or call/text **(571) 283-8228**. Located in Annandale, VA, serving the entire DM
     id: 4,
     slug: "pmu-pigment-science-quality-importance",
     title: "PMU Pigments: Why I Switched to Vegan & What It Means for Your Results",
-    excerpt: "Not all PMU pigments are equal. After testing dozens of brands across 330+ procedures, here's why I exclusively use EU-compliant vegan pigments — and why you should care.",
-    metaDescription: "Licensed VA PMU artist explains the science behind pigment quality after 330+ procedures. Learn why vegan, EU-compliant pigments heal better, last longer, and never turn orange.",
+    excerpt: "Not all PMU pigments are equal. After testing dozens of brands across 523+ procedures, here's why I exclusively use EU-compliant vegan pigments — and why you should care.",
+    metaDescription: "Licensed VA PMU artist explains the science behind pigment quality after 523+ procedures. Learn why vegan, EU-compliant pigments heal better, last longer, and never turn orange.",
     image: "https://live.staticflickr.com/65535/54364392854_9d155b0510_o_d.png",
     alt: "Premium vegan PMU pigments used at Ink Mugi studio in Annandale VA",
     category: "Education",
@@ -463,7 +463,7 @@ Or call/text **(571) 283-8228**. Located in Annandale, VA, serving the entire DM
     content: `
 # PMU Pigments: Why I Switched to Vegan & What It Means for Your Results
 
-**After testing dozens of pigment brands across 330+ procedures, here's what I've learned about why pigment quality is the single most important factor in your results.**
+**After testing dozens of pigment brands across 523+ procedures, here's what I've learned about why pigment quality is the single most important factor in your results.**
 
 I'm Mugi, a licensed permanent cosmetic tattooer (VA #1231002471) in Annandale, VA. When clients ask what makes one PMU artist different from another, my answer usually surprises them: **it's not just technique — it's pigment.**
 
@@ -526,7 +526,7 @@ You've probably seen this: brows that healed to an orange or reddish-brown that 
 - The warm undertones dominate as the pigment fades
 - Skin tone wasn't properly accounted for during color mixing
 
-With the pigments I use, this virtually never happens. In my [330+ procedure dataset](/authority), I've recorded zero cases of drastic color shifting to orange.
+With the pigments I use, this virtually never happens. In my [523+ procedure dataset](/authority), I've recorded zero cases of drastic color shifting to orange.
 
 ### 3. Skin Reactions
 Pigment impurities are the #1 cause of post-procedure allergic reactions in PMU. Heavy metals and unregulated additives can cause:
@@ -589,8 +589,8 @@ You wouldn't paint your house with the cheapest paint and expect it to look good
     id: 5,
     slug: "pmu-healing-timeline-week-by-week",
     title: "PMU Healing Timeline: What Actually Happens Week by Week (With Real Data)",
-    excerpt: "The healing process scares more people out of PMU than anything else. Here's an honest, data-backed week-by-week timeline from 330+ procedures — including the ugly duckling phase no one warns you about.",
-    metaDescription: "Week-by-week PMU healing timeline based on 330+ real procedures. Licensed VA artist explains each healing phase honestly, including the scary 'ghost phase' and when to expect your true color.",
+    excerpt: "The healing process scares more people out of PMU than anything else. Here's an honest, data-backed week-by-week timeline from 523+ procedures — including the ugly duckling phase no one warns you about.",
+    metaDescription: "Week-by-week PMU healing timeline based on 523+ real procedures. Licensed VA artist explains each healing phase honestly, including the scary 'ghost phase' and when to expect your true color.",
     image: "https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg",
     alt: "Week by week healing stages of ombre powder brows at Ink Mugi Annandale VA",
     category: "Aftercare",
@@ -604,13 +604,13 @@ You wouldn't paint your house with the cheapest paint and expect it to look good
     content: `
 # PMU Healing Timeline: What Actually Happens Week by Week
 
-**Based on patterns documented across 330+ procedures at Ink Mugi, Annandale, VA.**
+**Based on patterns documented across 523+ procedures at Ink Mugi, Annandale, VA.**
 
 The healing process is the #1 reason people panic after getting permanent makeup. I've lost count of how many texts I've received at day 5 saying *"My brows disappeared! Did something go wrong?"*
 
 The answer is almost always: **no, you're right on schedule.**
 
-This guide walks you through exactly what to expect each day, each week, and each month after your procedure. Not the sanitized version — the real version, based on what I've documented across 330+ ombre powder brow procedures.
+This guide walks you through exactly what to expect each day, each week, and each month after your procedure. Not the sanitized version — the real version, based on what I've documented across 523+ ombre powder brow procedures.
 
 ## Before We Start: Key Variables
 
@@ -755,7 +755,7 @@ All semi-permanent pigment fades eventually, by design. What you'll notice:
 Normal: Dark color, flaking, ghost phase, minor itching, slight redness
 **Contact me if you experience**: Excessive swelling after day 3, pus or yellow discharge, extreme pain, fever, or allergic reaction signs
 
-In my 330+ procedures, [serious complications have occurred in only 0.19% of cases](/permanent-makeup-safety-dmv). But I'm always reachable by text at **(571) 283-8228** if anything concerns you.
+In my 523+ procedures, [serious complications have occurred in only 0.19% of cases](/permanent-makeup-safety-dmv). But I'm always reachable by text at **(571) 283-8228** if anything concerns you.
 
 ## The Bottom Line
 
@@ -777,8 +777,8 @@ For a deeper dive into the clinical data behind these patterns, visit my [Powder
     id: 6,
     slug: "pmu-myths-versus-facts-expert-guide",
     title: "12 PMU Myths I Hear Every Week (And the Data That Proves Them Wrong)",
-    excerpt: "From 'permanent makeup looks fake' to 'it's basically a tattoo' — I've heard every myth after 330+ procedures. Here are the facts, backed by actual data from my practice.",
-    metaDescription: "Licensed VA PMU artist debunks 12 common permanent makeup myths with real data from 330+ procedures. Facts about pain, fading, safety, and what PMU actually looks like healed.",
+    excerpt: "From 'permanent makeup looks fake' to 'it's basically a tattoo' — I've heard every myth after 523+ procedures. Here are the facts, backed by actual data from my practice.",
+    metaDescription: "Licensed VA PMU artist debunks 12 common permanent makeup myths with real data from 523+ procedures. Facts about pain, fading, safety, and what PMU actually looks like healed.",
     image: "https://live.staticflickr.com/65535/54363190627_a16b921317_o_d.jpg",
     alt: "Before and after healed permanent makeup showing natural results at Ink Mugi",
     category: "Education",
@@ -792,7 +792,7 @@ For a deeper dive into the clinical data behind these patterns, visit my [Powder
     content: `
 # 12 PMU Myths I Hear Every Week (And the Data That Proves Them Wrong)
 
-**After 330+ procedures at Ink Mugi in Annandale, VA, I've heard every myth. Here are the facts.**
+**After 523+ procedures at Ink Mugi in Annandale, VA, I've heard every myth. Here are the facts.**
 
 Permanent makeup has a misinformation problem. For every person who's thrilled with their results, there's someone who's been scared off by myths they read on Reddit or heard from a cousin's friend. As a licensed permanent cosmetic tattooer (VA #1231002471), I want to set the record straight — not with opinions, but with data from my actual practice.
 
@@ -837,7 +837,7 @@ I've had clients fall asleep during procedures. It's not the torture session soc
 Virginia requires a Permanent Cosmetic Tattooer license from the Department of Health Professions. But here's what most people don't know: the barrier to entry is lower than you'd think. Someone could take a weekend course and legally perform PMU.
 
 What separates an experienced artist:
-- **Procedure volume**: I've performed 330+ procedures. Some artists have done 20.
+- **Procedure volume**: I've performed 523+ procedures. Some artists have done 20.
 - **Complication tracking**: I track every outcome. My [0.19% complication rate](/permanent-makeup-safety-dmv) is 13x lower than the industry average.
 - **Ongoing education**: Techniques evolve annually. I invest in continued training.
 - **Pigment quality**: I use [EU-compliant vegan pigments](/blog/pmu-pigment-science-quality-importance) — not everyone does.
@@ -912,7 +912,7 @@ Is it glamorous? No. Is it manageable with proper instructions? Absolutely. The 
 **Fact: With a qualified artist, PMU has an extremely low complication rate.**
 
 In my practice:
-- **Complication rate**: 0.19% across 330+ procedures
+- **Complication rate**: 0.19% across 523+ procedures
 - **Industry average**: 2.5% (my rate is 13x lower)
 - **Serious complications**: Zero hospitalizations or systemic reactions
 
@@ -942,7 +942,7 @@ I adjust my technique for mature skin — slightly different pigment depth, adap
 **Fact: Results vary dramatically based on training, experience, and materials.**
 
 Two artists using the same machine can produce wildly different outcomes. The differences that matter:
-- **Procedure volume**: 330+ vs. 50 procedures
+- **Procedure volume**: 523+ vs. 50 procedures
 - **Pigment quality**: EU-compliant vegan vs. unregulated bulk pigment
 - **Outcome tracking**: Data-driven practice vs. "looks good on the day"
 - **Climate adaptation**: [DMV-specific protocols](/blog/nano-brows-vs-microblading-comparison) vs. one-size-fits-all
@@ -973,9 +973,9 @@ Or text me at **(571) 283-8228**. I answer every question personally.
   {
     id: 7,
     slug: "ombre-brows-oily-skin-guide",
-    title: "Ombre Brows on Oily Skin: Why It Works When Microblading Doesn't (330+ Procedures)",
+    title: "Ombre Brows on Oily Skin: Why It Works When Microblading Doesn't (523+ Procedures)",
     excerpt: "If you have oily skin and a PMU artist told you you're 'not a good candidate,' they were using the wrong technique. Here's why ombre powder brows are the oily-skin solution — backed by data from my practice.",
-    metaDescription: "Ombre brows on oily skin — why powder brows last 2-3 years on oily skin while microblading fades in months. Data from 330+ procedures by VA-licensed artist. Annandale, VA. $600 all-inclusive.",
+    metaDescription: "Ombre brows on oily skin — why powder brows last 2-3 years on oily skin while microblading fades in months. Data from 523+ procedures by VA-licensed artist. Annandale, VA. $600 all-inclusive.",
     image: "https://live.staticflickr.com/65535/54363190627_a16b921317_o_d.jpg",
     alt: "Healed ombre powder brows on oily skin showing soft natural results at Ink Mugi",
     category: "Skin Science",
@@ -989,7 +989,7 @@ Or text me at **(571) 283-8228**. I answer every question personally.
     content: `
 # Ombre Brows on Oily Skin: Why It Works When Microblading Doesn't
 
-**After 330+ procedures on every skin type imaginable, here's the truth about oily skin and permanent makeup.**
+**After 523+ procedures on every skin type imaginable, here's the truth about oily skin and permanent makeup.**
 
 I'm Mugi, a licensed permanent cosmetic tattooer (VA #1231002471) in Annandale, VA. If you have oily skin, you've probably been told one of these things:
 
@@ -1016,7 +1016,7 @@ Here's the problem: **oily skin produces excess sebum**, and that sebum:
 
 In humid climates like the DMV (where summer humidity averages 70-80%), the problem is amplified. Your skin is oilier in humidity, and [my climate research](/climate-performance-analysis) shows microblading retention drops dramatically in our region.
 
-**My data from 330+ procedures shows:**
+**My data from 523+ procedures shows:**
 - Microblading on oily skin retains acceptable color at 12 months: ~40%
 - Ombre powder brows on oily skin retain color at 12 months: **92%**
 
@@ -1042,7 +1042,7 @@ I can adjust the density and saturation of the powder application based on how o
 
 ## Real Results: Oily Skin Client Data
 
-From my practice data across 330+ procedures:
+From my practice data across 523+ procedures:
 
 | Metric | Oily Skin + Ombre Brows | Oily Skin + Microblading |
 |--------|------------------------|--------------------------|
@@ -1158,7 +1158,7 @@ You're not a "*bad candidate*." You just need the right technique and an artist 
 
 - **[Book a free consultation](/booking)** — I'll assess your skin type and show you oily-skin results
 - **[View healed results](/gallery)** — real clients, real oily skin, real results
-- **[Read the science](/pmu-data-guide)** — full data from 330+ procedures
+- **[Read the science](/pmu-data-guide)** — full data from 523+ procedures
 - **[Compare pricing](/services)** — $600 all-inclusive, no hidden fees
 
 Or text me at **(571) 283-8228**. I answer every question personally.
@@ -1171,7 +1171,7 @@ Or text me at **(571) 283-8228**. I answer every question personally.
     slug: "fix-botched-microblading-guide",
     title: "Can You Fix Botched Microblading? A PMU Artist's Honest Guide (Before You Panic)",
     excerpt: "Your microblading didn't turn out right — too dark, uneven, faded, or just wrong. Here's the honest truth about what can be fixed, what can't, and exactly what to do next.",
-    metaDescription: "Can botched microblading be fixed? Licensed VA PMU artist explains correction options — from color fixes to full cover-ups. 330+ procedures. Free correction consultations in Annandale, VA.",
+    metaDescription: "Can botched microblading be fixed? Licensed VA PMU artist explains correction options — from color fixes to full cover-ups. 523+ procedures. Free correction consultations in Annandale, VA.",
     image: "https://live.staticflickr.com/65535/54363190627_a16b921317_o_d.jpg",
     alt: "Before and after microblading correction showing improved brow shape and color at Ink Mugi",
     category: "Corrections",
@@ -1415,7 +1415,7 @@ Come in for a [$150 correction consultation](/pmu-correction-restoration) (credi
     slug: "ombre-brows-dark-skin-guide",
     title: "Ombre Powder Brows for Dark Skin: Techniques, Pigment Science & Healing for Fitzpatrick IV–VI",
     excerpt: "A deep-dive expert guide on why ombre powder brows require specialized technique for melanin-rich skin — covering pigment chemistry, the Tyndall effect, healing differences, and aftercare modifications for Fitzpatrick IV–VI skin types.",
-    metaDescription: "Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection for dark skin, healing differences, keloid considerations, and real healed results from 330+ procedures.",
+    metaDescription: "Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection for dark skin, healing differences, keloid considerations, and real healed results from 523+ procedures.",
     image: "https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg",
     alt: "Healed ombre powder brows on melanin-rich dark skin at Ink Mugi Annandale VA",
     category: "Skin Science",

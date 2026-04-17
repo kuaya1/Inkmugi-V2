@@ -57,7 +57,7 @@ const PmuCorrectionRestoration: React.FC = () => {
     <>
       <SEO
         title="Microblading Correction Fairfax County | PMU Correction & Pigment Fix — Ink Mugi, Annandale VA"
-        description="Advanced permanent makeup correction in Annandale, Virginia. Undertone neutralization, structural redesign, and pigment recalibration for botched microblading, grey brows, and faded PMU. 330+ documented procedures. 0.19% complication rate. VA-licensed. Fairfax County."
+        description="Advanced permanent makeup correction in Annandale, Virginia. Undertone neutralization, structural redesign, and pigment recalibration for botched microblading, grey brows, and faded PMU. 523+ documented procedures. 0.19% complication rate. VA-licensed. Fairfax County."
         path="/pmu-correction-restoration"
         keywords="microblading correction near me, PMU correction Fairfax County, fix grey microblading Virginia, ombre brow correction Annandale, eyebrow tattoo correction Northern Virginia, botched microblading fix, over-saturated brows correction, brow pigment neutralization, permanent makeup correction McLean, PMU fix Arlington VA"
       >
@@ -184,7 +184,7 @@ const PmuCorrectionRestoration: React.FC = () => {
               Correction is not a touch-up. It is a structured recalibration of pigment depth, undertone balance, and brow architecture — performed under the same documented protocol that governs every procedure at this studio.
             </p>
             <p className="text-[0.8rem] tracking-[0.15em] uppercase text-[#E6DAD2]/90 font-normal mb-10">
-              330+ Documented Procedures · 0.19% Complication Rate · Healed-First Verification
+              523+ Documented Procedures · 0.19% Complication Rate · Healed-First Verification
             </p>
           </AnimatedSection>
 
@@ -219,7 +219,7 @@ const PmuCorrectionRestoration: React.FC = () => {
         <div className="container-custom max-w-5xl mx-auto py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { value: '330+', label: 'Documented Procedures' },
+              { value: '523+', label: 'Documented Procedures' },
               { value: '0.19%', label: 'Complication Rate', accent: true },
               { value: '6-Week', label: 'Healed Verification' },
               { value: 'VA', label: 'Licensed & Insured' },
@@ -665,7 +665,7 @@ const PmuCorrectionRestoration: React.FC = () => {
                   </li>
                 </ul>
                 <p className="text-sm text-[#2D2D2B]/45 italic mt-4">
-                  This willingness to decline cases — and the transparency to explain why — is part of the documented standard that produces a 0.19% complication rate across 330+ procedures.
+                  This willingness to decline cases — and the transparency to explain why — is part of the documented standard that produces a 0.19% complication rate across 523+ procedures.
                 </p>
               </div>
             </div>
@@ -773,7 +773,7 @@ const PmuCorrectionRestoration: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: <Shield size={20} />, title: '0.19% Documented Complication Rate', desc: 'Across 330+ total procedures. Calculated from healed outcomes — not procedural volume. This rate reflects rigorous candidacy screening, sterile protocol, and the willingness to decline cases where risk exceeds acceptable threshold.' },
+              { icon: <Shield size={20} />, title: '0.19% Documented Complication Rate', desc: 'Across 523+ total procedures. Calculated from healed outcomes — not procedural volume. This rate reflects rigorous candidacy screening, sterile protocol, and the willingness to decline cases where risk exceeds acceptable threshold.' },
               { icon: <FileText size={20} />, title: 'Virginia Body Art Licensure', desc: 'Full compliance with Virginia Department of Health regulations (12 VAC 5-460). License #1231002471. Hospital-grade sterilization, single-use disposable components, and documented sanitation protocol for every appointment.' },
               { icon: <Eye size={20} />, title: 'Healed-First Documentation', desc: 'Every correction outcome is documented at the healed stage — minimum 6 weeks post-procedure. Fresh results are never presented as final outcomes. Healed documentation is the standard by which all work is evaluated.' },
               { icon: <Target size={20} />, title: 'Corrective Pigment Certification', desc: 'EU-compliant vegan pigments specifically formulated for color correction work. Hypoallergenic, heavy-metal-free, tested for skin reactivity. Corrective formulations selected per individual case — not standard off-the-shelf shades.' },
@@ -947,7 +947,7 @@ const PmuCorrectionRestoration: React.FC = () => {
         <div className="container-custom max-w-5xl mx-auto">
           <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
             <p>
-              <strong className="text-[#2D2D2B]/50">PMU Correction & Pigment Recalibration at Ink Mugi — Annandale, Virginia</strong> — Advanced permanent makeup correction specializing in undertone neutralization, structural redesign, and pigment recalibration. Fix botched microblading, grey or ashy brow migration, over-saturated permanent makeup, and faded cosmetic tattooing. Virginia licensed (#1231002471), fully insured, 330+ documented procedures, 0.19% complication rate.
+              <strong className="text-[#2D2D2B]/50">PMU Correction & Pigment Recalibration at Ink Mugi — Annandale, Virginia</strong> — Advanced permanent makeup correction specializing in undertone neutralization, structural redesign, and pigment recalibration. Fix botched microblading, grey or ashy brow migration, over-saturated permanent makeup, and faded cosmetic tattooing. Virginia licensed (#1231002471), fully insured, 523+ documented procedures, 0.19% complication rate.
             </p>
             <p>
               Related searches: microblading correction near me, PMU correction Fairfax County, fix grey microblading Virginia, ombré brow correction Annandale VA, eyebrow tattoo correction Northern Virginia, botched microblading fix Arlington, over-saturated brows correction, brow pigment neutralization McLean, permanent makeup fix Vienna VA, cosmetic tattoo repair Reston, PMU color correction Chantilly, brow correction Centreville, microblading fix near me DMV.

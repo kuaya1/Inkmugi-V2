@@ -106,7 +106,7 @@ const WhyMicrobladingFades: React.FC = () => {
     <>
       <SEO
         title="Why Microblading Fades: The Science Behind Pigment Loss | Ink Mugi"
-        description="Expert analysis of why microblading fades — pigment oxidation, oily skin, humidity, UV exposure, and how the DMV climate accelerates fading. Data from 330+ procedures. Learn what lasts longer. Ink Mugi, Annandale VA."
+        description="Expert analysis of why microblading fades — pigment oxidation, oily skin, humidity, UV exposure, and how the DMV climate accelerates fading. Data from 523+ procedures. Learn what lasts longer. Ink Mugi, Annandale VA."
         path="/why-microblading-fades"
         keywords="why microblading fades, microblading fading fast, microblading turning grey, how long does microblading last, microblading not lasting, microblading disappearing, microblading fading unevenly, microblading color change, why did my microblading fade, microblading fading humid climate"
       >
@@ -177,7 +177,7 @@ const WhyMicrobladingFades: React.FC = () => {
               Six biological, chemical, and environmental factors explain why microblading fades — and why some climates and skin types make it fade dramatically faster. This is the same framework we use when a client asks us to assess whether fading is normal, preventable, or a sign the technique was never a good match.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures • Includes DMV-specific climate data
+              By a Virginia-licensed PMU artist with 523+ procedures • Includes DMV-specific climate data
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

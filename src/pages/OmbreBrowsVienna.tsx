@@ -91,7 +91,7 @@ const OmbreBrowsVienna: React.FC = () => {
     },
     {
       question: "What style of brows does Mugi specialize in?",
-      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. In our consultations with Vienna clients, the most common request is a soft, polished look that still feels understated up close and in daylight. Perfect for Vienna clients who want a result that's undetectable as permanent makeup. 330+ procedures refined this technique to perfection."
+      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. In our consultations with Vienna clients, the most common request is a soft, polished look that still feels understated up close and in daylight. Perfect for Vienna clients who want a result that's undetectable as permanent makeup. 523+ procedures refined this technique to perfection."
     },
     {
       question: "Is there a consultation before the procedure?",
@@ -103,7 +103,7 @@ const OmbreBrowsVienna: React.FC = () => {
     <>
       <SEO
         title="Ombré Brows for Vienna, VA Residents | Ink Mugi — 12 Min from Town Center"
-        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 330+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
+        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 523+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
         path="/ombre-brows-vienna-va"
         keywords="ombre brows vienna va, powder brows vienna virginia, permanent makeup vienna va, PMU near oakton, microshading vienna town center"
       >
@@ -156,7 +156,7 @@ const OmbreBrowsVienna: React.FC = () => {
         city="Vienna"
         badgeText="Serving Vienna, VA — 12 Min from Town Center"
         headline={<>Ombré Powder Brows for<br /><span className="text-[#9A7B69]">Vienna, VA</span></>}
-        subtext="Just 12 minutes from Vienna Town Center. Many clients from Vienna, Oakton, and Mantua come in wanting brows that look quietly polished rather than heavily made up, and that softer finish is exactly where ombré powder brows excel. Northern Virginia's most trusted PMU artist — 330+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever."
+        subtext="Just 12 minutes from Vienna Town Center. Many clients from Vienna, Oakton, and Mantua come in wanting brows that look quietly polished rather than heavily made up, and that softer finish is exactly where ombré powder brows excel. Northern Virginia's most trusted PMU artist — 523+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever."
         heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows client from Vienna, VA at Ink Mugi studio"
         secondaryCTA={{ type: 'phone' }}
@@ -236,7 +236,7 @@ const OmbreBrowsVienna: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Natural Results Vienna Clients Love</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Ombré powder brows that look like perfectly filled-in brows, not stamped-on tattoos. A common conversation we have with Vienna clients is how to add definition without losing softness, especially for clients who wear very minimal makeup day to day. 330+ clients can't be wrong — see healed photos in our gallery.
+                  Ombré powder brows that look like perfectly filled-in brows, not stamped-on tattoos. A common conversation we have with Vienna clients is how to add definition without losing softness, especially for clients who wear very minimal makeup day to day. 523+ clients can't be wrong — see healed photos in our gallery.
                 </p>
               </div>
             </AnimatedSection>

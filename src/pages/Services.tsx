@@ -144,7 +144,7 @@ const Services = () => {
     <>
       <SEO
         title="Ombre Powder Brows & PMU Services | Pricing & Process | Ink Mugi VA"
-        description="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from 330+ clients. Licensed & insured."
+        description="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from 523+ clients. Licensed & insured."
         path="/services"
         keywords="permanent makeup services Annandale VA, ombre powder brows pricing, powder brows cost Northern Virginia, PMU services near me, brow transformation Annandale"
       >
@@ -448,7 +448,7 @@ const Services = () => {
           <AnimatedSection>
             <h2 className="section-title text-[#2D2D2B] text-center mb-4">Microblading vs Ombre Powder Brows vs Microshading</h2>
             <p className="text-center text-[#2D2D2B]/70 mb-10 max-w-2xl mx-auto">
-              Not sure which technique is right for you? Here's a data-driven comparison based on 330+ procedures in the DMV.
+              Not sure which technique is right for you? Here's a data-driven comparison based on 523+ procedures in the DMV.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm md:text-base">
@@ -550,7 +550,7 @@ const Services = () => {
             </div>
             <div>
               <CheckCircle size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
-              <p className="font-semibold text-sm">330+ procedures</p>
+              <p className="font-semibold text-sm">523+ procedures</p>
               <p className="text-xs text-white/60">Documented Results</p>
             </div>
             <div>

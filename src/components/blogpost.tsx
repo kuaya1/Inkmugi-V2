@@ -400,7 +400,7 @@ const BlogPost: React.FC = () => {
                 <div className="mt-12 bg-gradient-to-br from-[#2D2D2B] to-[#3D3D3B] rounded-xl p-8 text-white">
                   <h3 className="text-2xl font-cormorant font-medium mb-3">Ready to See What's Possible?</h3>
                   <p className="text-white/80 mb-2 text-sm">
-                    I've performed 330+ ombre powder brow procedures with a 0.19% complication rate — 13x safer than the industry average. Every technique I use is backed by clinical data and years of refined precision.
+                    I've performed 523+ ombre powder brow procedures with a 0.19% complication rate — 13x safer than the industry average. Every technique I use is backed by clinical data and years of refined precision.
                   </p>
                   <p className="text-white/60 text-xs mb-6">
                     Virginia Licensed #1231002471 · Bloodborne Pathogens Certified · Premium Vegan Pigments
@@ -433,7 +433,7 @@ const BlogPost: React.FC = () => {
                   </Link>
                   <Link to="/authority" className="bg-[#F9F7F5] rounded-lg p-4 hover:bg-[#E6DAD2]/30 transition-colors group">
                     <h4 className="font-medium text-[#2D2D2B] text-sm mb-1 group-hover:text-[#2D2D2B]/80">Research Hub</h4>
-                    <p className="text-xs text-[#2D2D2B]/60">330+ procedures data & safety studies</p>
+                    <p className="text-xs text-[#2D2D2B]/60">523+ procedures data & safety studies</p>
                   </Link>
                   <Link to="/faq" className="bg-[#F9F7F5] rounded-lg p-4 hover:bg-[#E6DAD2]/30 transition-colors group">
                     <h4 className="font-medium text-[#2D2D2B] text-sm mb-1 group-hover:text-[#2D2D2B]/80">FAQ</h4>
@@ -454,7 +454,7 @@ const BlogPost: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-medium mb-3 font-cormorant">Book Your Consultation</h3>
                   <p className="text-white/80 text-sm mb-4">
-                    330+ procedures with a 0.19% complication rate. Virginia License #1231002471.
+                    523+ procedures with a 0.19% complication rate. Virginia License #1231002471.
                   </p>
                   <Link 
                     to="/booking" 

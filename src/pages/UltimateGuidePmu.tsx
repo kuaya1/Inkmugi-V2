@@ -372,7 +372,7 @@ const UltimateGuidePmu: React.FC = () => {
                 </div>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Ink Mugi, we specialize exclusively in cosmetic tattooing for brows and lips. With <strong className="key-stat">330+ documented procedures</strong> and a <strong className="key-stat">0.19% complication rate</strong>, we've refined our techniques to deliver natural, long-lasting results tailored to Northern Virginia's unique climate and lifestyle.
+                  At Ink Mugi, we specialize exclusively in cosmetic tattooing for brows and lips. With <strong className="key-stat">523+ documented procedures</strong> and a <strong className="key-stat">0.19% complication rate</strong>, we've refined our techniques to deliver natural, long-lasting results tailored to Northern Virginia's unique climate and lifestyle.
                 </p>
               </div>
             </AnimatedSection>
@@ -508,7 +508,7 @@ const UltimateGuidePmu: React.FC = () => {
                 </ul>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Ink Mugi, our complication rate across 330+ procedures is <strong className="key-stat">0.19%</strong> — significantly below industry averages. This is achieved through rigorous safety protocols, proper client screening, and comprehensive aftercare support.
+                  At Ink Mugi, our complication rate across 523+ procedures is <strong className="key-stat">0.19%</strong> — significantly below industry averages. This is achieved through rigorous safety protocols, proper client screening, and comprehensive aftercare support.
                 </p>
 
                 <div className="mt-8">

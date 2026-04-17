@@ -92,7 +92,7 @@ const OmbreBrowsArlington: React.FC = () => {
     },
     {
       question: "Why do Arlington residents choose Inkmugi over DC studios?",
-      answer: "Arlington clients appreciate our combination of quality and value. In our consultations with clients from Clarendon, Ballston, and Pentagon City, we often hear that they want a polished result without the hassle of downtown pricing, parking, and rushed appointments. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 330+ documented procedure track record speaks for itself."
+      answer: "Arlington clients appreciate our combination of quality and value. In our consultations with clients from Clarendon, Ballston, and Pentagon City, we often hear that they want a polished result without the hassle of downtown pricing, parking, and rushed appointments. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 523+ documented procedure track record speaks for itself."
     },
     {
       question: "Do you offer flexible hours for Arlington professionals?",
@@ -104,7 +104,7 @@ const OmbreBrowsArlington: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Arlington, VA | Ink Mugi"
-        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 330+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
+        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 523+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
         path="/ombre-brows-arlington-va"
         keywords="ombre brows Arlington VA, powder brows Clarendon, permanent makeup Arlington County, PMU near Ballston, microshading Arlington Virginia"
       >
@@ -158,7 +158,7 @@ const OmbreBrowsArlington: React.FC = () => {
         city="Arlington"
         badgeText="Serving Arlington County, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Arlington</span> Residents</>}
-        subtext="Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with 330+ procedures and a 0.19% complication rate."
+        subtext="Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with 523+ procedures and a 0.19% complication rate."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Arlington, Virginia"
         primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
@@ -227,7 +227,7 @@ const OmbreBrowsArlington: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">DC Quality, Better Value</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Get the same premium technique as $800+ DC studios for $600. Virginia-licensed artist with 330+ procedures and verifiable results.
+                  Get the same premium technique as $800+ DC studios for $600. Virginia-licensed artist with 523+ procedures and verifiable results.
                 </p>
               </div>
             </AnimatedSection>

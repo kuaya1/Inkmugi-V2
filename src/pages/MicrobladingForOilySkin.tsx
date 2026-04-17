@@ -136,7 +136,7 @@ const MicrobladingForOilySkin: React.FC = () => {
               Data from 187 oily-skin clients shows powder brows last 340% longer than microblading. Here's the science behind the difference — and what it means for your results if your brow area gets shiny by midday or your makeup never stays put.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures in the humid DMV climate
+              By a Virginia-licensed PMU artist with 523+ procedures in the humid DMV climate
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

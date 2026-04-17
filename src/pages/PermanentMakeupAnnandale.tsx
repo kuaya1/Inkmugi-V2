@@ -95,7 +95,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
     },
     {
       question: "Why should I choose a local Annandale studio over DC or Tysons?",
-      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. In our consultations with Annandale clients, we hear over and over that being able to stay local for design appointments, follow-up questions, and touch-ups makes the entire process feel less stressful. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 330+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
+      answer: "Convenience is the biggest win — no commute, no traffic, no expensive parking garages. In our consultations with Annandale clients, we hear over and over that being able to stay local for design appointments, follow-up questions, and touch-ups makes the entire process feel less stressful. Our pricing is $600 all-inclusive compared to $800+ at DC and Tysons studios for the same quality. Plus, with 523+ documented procedures, you're getting an artist with a proven track record right in your neighborhood. And because I'm local, I'm here for your touch-ups, questions, and aftercare check-ins without you having to trek across the DMV."
     },
     {
       question: "Is Ink Mugi open on weekends?",
@@ -119,7 +119,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Annandale VA | PMU Artist & Ombre Powder Brows — Ink Mugi"
-        description="Licensed PMU artist in Annandale, VA — ombre powder brows, eyebrow tattoo & microshading at Heritage Center. 330+ procedures, 0.19% complication rate, $600 all-inclusive. Free parking & consultation."
+        description="Licensed PMU artist in Annandale, VA — ombre powder brows, eyebrow tattoo & microshading at Heritage Center. 523+ procedures, 0.19% complication rate, $600 all-inclusive. Free parking & consultation."
         path="/licensed-pmu-artist-annandale"
         keywords="permanent makeup Annandale VA, pmu artist Annandale, ombre powder brows Annandale, eyebrow tattoo Annandale VA, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA, nano brows Annandale"
       >
@@ -146,7 +146,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Permanent Makeup in Annandale, VA",
-            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. 330+ documented procedures, healed-first approach. Located at Heritage Center, 7857 Heritage Dr #330.",
+            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. 523+ documented procedures, healed-first approach. Located at Heritage Center, 7857 Heritage Dr #330.",
             "provider": { "@type": "HealthAndBeautyBusiness", "@id": "https://inkmugi.com/#business" },
             "areaServed": { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
             "serviceType": "Permanent Makeup",
@@ -185,7 +185,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
         city="Annandale"
         badgeText="Located in Annandale, VA — Our Home Studio"
         headline={<>Permanent Makeup in<br /><span className="text-[#9A7B69]">Annandale</span> — Your Neighborhood Studio</>}
-        subtext="Right here at Heritage Center — no commute needed. Experience 330+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves."
+        subtext="Right here at Heritage Center — no commute needed. Experience 523+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi in Annandale, Virginia"
         primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
@@ -264,7 +264,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ Documented Results</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Results</h3>
                 <p className="text-[#2D2D2B]/70">
                   Every procedure is documented with 6+ week healed photos. See our track record right here in your community. Real results from real clients — verifiable and transparent.
                 </p>

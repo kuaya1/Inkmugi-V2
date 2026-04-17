@@ -24,7 +24,7 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
     name: 'Mugi',
     jobTitle: 'Licensed Permanent Cosmetic Tattooer',
     description:
-      'Virginia-licensed permanent makeup artist specializing in powder brows and microblading correction with 330+ documented procedures.',
+      'Virginia-licensed permanent makeup artist specializing in powder brows and microblading correction with 523+ documented procedures.',
     image:
       'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg',
     url: 'https://inkmugi.com/about',
@@ -82,7 +82,7 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
             </h4>
             <p className="text-sm text-[#2D2D2B]/60 leading-relaxed">
               Virginia Licensed Permanent Makeup Artist · Specializing in
-              powder brows and microblading correction · 330+ brow procedures
+              powder brows and microblading correction · 523+ brow procedures
               performed · Serving Northern Virginia and the Washington DC
               metro area
             </p>
@@ -121,7 +121,7 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
               </h4>
               <p className="text-sm text-[#2D2D2B]/70 leading-relaxed mb-4">
                 Virginia Licensed Permanent Makeup Artist specializing in
-                powder brows and microblading correction. 330+ brow procedures
+                powder brows and microblading correction. 523+ brow procedures
                 performed. Serving Northern Virginia and the Washington DC
                 metro area.
               </p>
@@ -132,7 +132,7 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs text-[#2D2D2B]/50 bg-[#F7EDE6] px-3 py-1.5 rounded-full">
                   <Award size={12} className="text-[#9A7B69]" />
-                  330+ Procedures
+                  523+ Procedures
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs text-[#2D2D2B]/50 bg-[#F7EDE6] px-3 py-1.5 rounded-full">
                   <MapPin size={12} className="text-[#9A7B69]" />

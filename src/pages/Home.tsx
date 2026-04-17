@@ -125,7 +125,7 @@ const Home: React.FC = () => {
     },
     {
       question: 'Is this procedure safe? What safety standards does Ink Mugi follow?',
-      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 330+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
+      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 523+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
     },
     {
       question: 'How does ombré powder compare to microblading in Northern Virginia\'s climate?',
@@ -144,8 +144,8 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombré Powder Brows in Annandale, VA | Fairfax County | Ink Mugi"
-        description="Licensed permanent makeup studio in Annandale, Virginia. Ombré powder brows, nano brows & microblading correction for Northern Virginia. 330+ procedures, 0.19% complication rate. Serving Fairfax County, Arlington, Reston & DC."
+        title="Ink Mugi | Ombré Powder Brows with a 0.19% Complication Rate — Annandale, VA"
+        description="523 procedures. 0.19% complication rate. Licensed in Virginia. Ink Mugi specializes in natural ombré powder brows for women who won't settle for close enough. Free consultation in Annandale."
         path="/"
         image="https://inkmugi.com/2315.png"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, powder brows near me, ombre brows near me, licensed PMU artist Virginia, healed brow results, permanent makeup Northern Virginia"
@@ -310,17 +310,17 @@ const Home: React.FC = () => {
             >
               <span className="inline-flex items-center gap-3 text-[#E6DAD2]/80 tracking-[0.25em] text-xs uppercase font-light">
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
-                VA-Licensed · Fairfax County, Virginia
+                Licensed Permanent Makeup · Annandale, Virginia
                 <span className="w-10 h-px bg-[#E6DAD2]/40" />
               </span>
             </motion.div>
 
             <h1 className="mb-6 md:mb-8">
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
-                Natural Ombré Powder Brows
+                Brows you don't have to think about.
               </span>
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
-                in <span className="text-[#E6DAD2]">Annandale, Virginia</span>
+                <span className="text-[#E6DAD2]">Ever.</span>
               </span>
             </h1>
 
@@ -331,12 +331,9 @@ const Home: React.FC = () => {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <p className="text-lg md:text-xl text-white/75 font-light leading-relaxed">
-                Precision-mapped to your facial structure. Approved before pigment.
+                523 procedures. A 0.19% complication rate.
                 <br className="hidden sm:block" />
-                Evaluated and documented at 6 weeks healed.
-              </p>
-              <p className="mt-3 text-[0.8rem] tracking-[0.15em] uppercase text-[#E6DAD2]/90 font-normal">
-                330+ documented procedures · 0.19% Complication Rate
+                One artist who treats your face like the one thing she refuses to rush.
               </p>
             </motion.div>
 
@@ -344,24 +341,29 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="mt-4 flex flex-col sm:flex-row gap-5 sm:gap-4 justify-center items-center"
+              className="mt-4 flex flex-col items-center gap-5"
             >
-              <Link
-                to="/booking"
-                className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
-              >
-                <span>Schedule a Consultation</span>
-                <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-              <a
-                href="tel:+15712838228"
-                className="group inline-flex items-center gap-3 text-white/70 hover:text-white transition-colors duration-300"
-              >
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
-                  <Phone size={16} />
-                </span>
-                <span className="text-sm tracking-wide">(571) 283-8228</span>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-5 sm:gap-4 justify-center items-center">
+                <Link
+                  to="/booking"
+                  className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+                >
+                  <span>Book Your Free Consultation</span>
+                  <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+                <a
+                  href="tel:+15712838228"
+                  className="group inline-flex items-center gap-3 text-white/70 hover:text-white transition-colors duration-300"
+                >
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
+                    <Phone size={16} />
+                  </span>
+                  <span className="text-sm tracking-wide">(571) 283-8228</span>
+                </a>
+              </div>
+              <p className="text-xs tracking-[0.15em] uppercase text-[#E6DAD2]/70 font-light">
+                Currently booking for {new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toLocaleString('en-US', { month: 'long', year: 'numeric' })}
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -389,7 +391,7 @@ const Home: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
             {[
-              { value: '330+', label: 'Documented Procedures' },
+              { value: '523+', label: 'Documented Procedures' },
               { value: '0.19%', label: 'Documented Complication Rate', accent: true },
               { value: '6-Week', label: 'Healed-Result Verification' },
               { value: '5.0', label: 'Rating (47+ Reviews)' },
@@ -492,7 +494,7 @@ const Home: React.FC = () => {
                   This standard shapes every protocol: pigment depth, density selection, undertone calibration, and the design approval process. Working with clients across Northern Virginia, parameters are chosen for healed outcomes — not for how they photograph on day one.
                 </p>
                 <p>
-                  Across 330+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it. Many clients who visit us after previous microblading are surprised by how much emphasis we place on screening and healed expectations before booking.
+                  Across 523+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it. Many clients who visit us after previous microblading are surprised by how much emphasis we place on screening and healed expectations before booking.
                 </p>
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -519,7 +521,7 @@ const Home: React.FC = () => {
                 {[
                   { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. In our consultations, that design stage is where trust is built.' },
                   { icon: Eye, title: 'Healed Portfolio Standard', desc: 'Every result in our gallery is photographed at 6+ weeks — after the healing process reveals the true outcome. No fresh glamor shots. No filters.' },
-                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 330+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
+                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 523+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
                   { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, hospital-grade sterilization, and hypoallergenic vegan pigments selected for predictable healed performance.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-[#F9F7F5] rounded-xl p-5">
@@ -620,7 +622,7 @@ const Home: React.FC = () => {
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <Award size={18} className="text-[#9A7B69]" />
-                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">330+</span>
+                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
                   </div>
                   <p className="text-xs text-[#2D2D2B]/60">Documented procedures with healed-result tracking</p>
                 </motion.div>
@@ -638,7 +640,7 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  A Virginia-licensed permanent makeup specialist with 330+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed. Over hundreds of procedures, that consistency is what allows results to stay refined rather than overly formulaic.
+                  A Virginia-licensed permanent makeup specialist with 523+ documented procedures, Mugi applies a methodical protocol to every appointment. Face mapping before design. Design approval before pigment. Healed documentation before portfolio inclusion. Each stage is reviewed, not rushed. Over hundreds of procedures, that consistency is what allows results to stay refined rather than overly formulaic.
                 </p>
                 <p>
                   Every session at the Annandale studio is private, unrushed, and structured for clinical clarity. Many clients who visit us from Northern Virginia and the Washington DC metro area value discretion and predictability — professionals and individuals who want natural results without visible evidence of a procedure.
@@ -647,7 +649,7 @@ const Home: React.FC = () => {
 
               <div className="grid sm:grid-cols-3 gap-5 mt-8 mb-8">
                 {[
-                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 330+ documented procedures.' },
+                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 523+ documented procedures.' },
                   { icon: Clock, title: 'Private Sessions', desc: 'Unrushed appointments structured for comfort, clarity, and thoughtful design approval.' },
                   { icon: Shield, title: 'Documented Safety', desc: 'VA-licensed, insured, with verified healed outcomes and conservative screening.' },
                 ].map((item, index) => (
@@ -940,7 +942,7 @@ const Home: React.FC = () => {
           Emotional: Calm invitation. Not urgency. Not sales pressure.
           Tone: 40% Artistic / 40% Safe / 20% Data
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section id="final-cta-section" className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center"

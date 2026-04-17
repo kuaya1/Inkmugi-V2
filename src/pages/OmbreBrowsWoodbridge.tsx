@@ -57,7 +57,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Woodbridge VA Clients",
-    "description": "Professional ombre powder brows service for Woodbridge, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 35 minutes from Woodbridge via I-95/I-395.",
+    "description": "Professional ombre powder brows service for Woodbridge, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 35 minutes from Woodbridge via I-95/I-395.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -113,7 +113,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     },
     {
       question: "Why do Woodbridge residents choose Ink Mugi over closer studios?",
-      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With 330+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
+      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With 523+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
     },
     {
       question: "How long do ombre powder brows last for Woodbridge area clients?",
@@ -137,7 +137,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Woodbridge VA | Ink Mugi — Healed-First PMU"
-        description="Ombre powder brows for Woodbridge VA residents. 330+ procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
+        description="Ombre powder brows for Woodbridge VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
         path="/ombre-brows-woodbridge-va"
         keywords="ombre powder brows Woodbridge VA, permanent makeup Woodbridge Virginia, powder brows Prince William County, PMU near Woodbridge, microshading Woodbridge VA, nano brows Woodbridge"
       >
@@ -193,7 +193,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         city="Woodbridge"
         badgeText="Serving Woodbridge, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Woodbridge, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="35 minutes from Woodbridge via I-95 to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Ombre powder brows for Woodbridge, VA clients at Ink Mugi studio"
@@ -288,7 +288,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ documented procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not a claim — a tracked dataset. Every procedure is documented from consultation through healed result. This depth of experience means fewer surprises and better outcomes for our Woodbridge clients.
                 </p>

@@ -25,10 +25,10 @@ const Blog = () => {
   const _legacyPosts = [
     {
       id: 1,
-      title: "Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity? (330+ procedures Analyzed)",
+      title: "Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity? (523+ procedures Analyzed)",
       slug: "nano-brows-vs-microblading-comparison", 
-      excerpt: "After performing 330+ procedures in Northern Virginia's humid climate, here's what I've seen firsthand about how nano brows and microblading actually hold up.",
-      metaDescription: "Licensed VA artist compares nano brows vs microblading with data from 330+ procedures. See which technique lasts longer in DMV humidity, real complication rates, and healed results.",
+      excerpt: "After performing 523+ procedures in Northern Virginia's humid climate, here's what I've seen firsthand about how nano brows and microblading actually hold up.",
+      metaDescription: "Licensed VA artist compares nano brows vs microblading with data from 523+ procedures. See which technique lasts longer in DMV humidity, real complication rates, and healed results.",
       image: "https://live.staticflickr.com/65535/54364179271_ab1319693c_o_d.jpg",
       alt: "Nano brows vs microblading comparison showing healed results at Ink Mugi in Annandale VA",
       category: "Techniques",
@@ -40,7 +40,7 @@ const Blog = () => {
       featured: true,
       content: `## Why DMV Climate Changes the Equation
 
-After performing 330+ procedures in Northern Virginia, I've learned that our humid summers (70–80% humidity, 90°F+) change everything about how semi-permanent brow techniques perform. Humidity accelerates pigment migration, sweat production on the brow bone increases 2–3x, and UV exposure during our long summers fades pigment faster.
+After performing 523+ procedures in Northern Virginia, I've learned that our humid summers (70–80% humidity, 90°F+) change everything about how semi-permanent brow techniques perform. Humidity accelerates pigment migration, sweat production on the brow bone increases 2–3x, and UV exposure during our long summers fades pigment faster.
 
 ## Nano Brows: What I've Seen in Practice
 
@@ -75,16 +75,16 @@ Microblading uses manual blades to scratch the epidermis (upper skin layer). Aft
 
 ## The Bottom Line
 
-If you're in the DMV and considering semi-permanent brows, nano brows (or ombre powder brows) will outperform microblading in our climate. That's not marketing — it's what I've documented across 330+ procedures.
+If you're in the DMV and considering semi-permanent brows, nano brows (or ombre powder brows) will outperform microblading in our climate. That's not marketing — it's what I've documented across 523+ procedures.
 
 **Ready to see what's possible?** View my healed results gallery or book a free consultation. Virginia License #1231002471 · (571) 283-8228 · Annandale, VA`
     },
     {
       id: 2,
-      title: "Ombre Powder Brows: What 330+ procedures Taught Me About Healing, Cost & Results",
+      title: "Ombre Powder Brows: What 523+ procedures Taught Me About Healing, Cost & Results",
       slug: "ombre-powder-brows-complete-guide",
-      excerpt: "I've performed 330+ ombre powder brow procedures in Annandale, VA. Here's my honest guide to preparation, pain, healing stages, and what results actually look like at 6 weeks.",
-      metaDescription: "Licensed VA artist shares firsthand ombre powder brows guide based on 330+ procedures. Real healing timeline, honest cost breakdown, DMV-specific aftercare, and healed photos.",
+      excerpt: "I've performed 523+ ombre powder brow procedures in Annandale, VA. Here's my honest guide to preparation, pain, healing stages, and what results actually look like at 6 weeks.",
+      metaDescription: "Licensed VA artist shares firsthand ombre powder brows guide based on 523+ procedures. Real healing timeline, honest cost breakdown, DMV-specific aftercare, and healed photos.",
       image: "https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg",
       alt: "Healed ombre powder brows result showing soft gradient at Ink Mugi Annandale VA",
       category: "Guides",
@@ -99,8 +99,8 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
       id: 3,
       title: "PMU Pigments: Why I Switched to Vegan & What It Means for Your Results",
       slug: "pmu-pigment-science-quality-importance",
-      excerpt: "Not all PMU pigments are equal. After testing dozens of brands across 330+ procedures, here's why I exclusively use EU-compliant vegan pigments — and why you should care.",
-      metaDescription: "Licensed VA PMU artist explains the science behind pigment quality after 330+ procedures. Learn why vegan, EU-compliant pigments heal better, last longer, and never turn orange.",
+      excerpt: "Not all PMU pigments are equal. After testing dozens of brands across 523+ procedures, here's why I exclusively use EU-compliant vegan pigments — and why you should care.",
+      metaDescription: "Licensed VA PMU artist explains the science behind pigment quality after 523+ procedures. Learn why vegan, EU-compliant pigments heal better, last longer, and never turn orange.",
       image: "https://live.staticflickr.com/65535/54364392854_9d155b0510_o_d.png",
       alt: "Premium vegan PMU pigments used at Ink Mugi studio in Annandale VA",
       category: "Education",
@@ -115,8 +115,8 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
       id: 4,
       title: "PMU Healing Timeline: What Actually Happens Week by Week (With Real Data)",
       slug: "pmu-healing-timeline-week-by-week",
-      excerpt: "The healing process scares more people out of PMU than anything else. Here's an honest, data-backed week-by-week timeline from 330+ procedures.",
-      metaDescription: "Week-by-week PMU healing timeline based on 330+ real procedures. Licensed VA artist explains each healing phase honestly, including the scary ghost phase.",
+      excerpt: "The healing process scares more people out of PMU than anything else. Here's an honest, data-backed week-by-week timeline from 523+ procedures.",
+      metaDescription: "Week-by-week PMU healing timeline based on 523+ real procedures. Licensed VA artist explains each healing phase honestly, including the scary ghost phase.",
       image: "https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg",
       alt: "Week by week healing stages of ombre powder brows at Ink Mugi",
       category: "Aftercare",
@@ -131,8 +131,8 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
       id: 5,
       title: "How to Choose the Perfect Brow Shape for Your Face (Pro Mapping Guide)",
       slug: "perfect-brow-shape-face-mapping-guide",
-      excerpt: "As a licensed PMU artist with 330+ procedures, here's how I use facial mapping and the golden ratio to design brows that complement every face shape.",
-      metaDescription: "Licensed PMU artist reveals the brow mapping process used in 330+ procedures. Learn how face shape, golden ratio, and bone structure determine your perfect brow shape.",
+      excerpt: "As a licensed PMU artist with 523+ procedures, here's how I use facial mapping and the golden ratio to design brows that complement every face shape.",
+      metaDescription: "Licensed PMU artist reveals the brow mapping process used in 523+ procedures. Learn how face shape, golden ratio, and bone structure determine your perfect brow shape.",
       image: "https://live.staticflickr.com/65535/54363151472_699bd8a642_o_d.jpg",
       alt: "Face mapping demonstration for perfect brow shape at Ink Mugi",
       category: "Design",
@@ -147,8 +147,8 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
       id: 6,
       title: "12 PMU Myths I Hear Every Week (And the Data That Proves Them Wrong)",
       slug: "pmu-myths-versus-facts-expert-guide",
-      excerpt: "From 'permanent makeup looks fake' to 'it's basically a tattoo' — I've heard every myth after 330+ procedures. Here are the facts, backed by actual data.",
-      metaDescription: "Licensed VA PMU artist debunks 12 common permanent makeup myths with real data from 330+ procedures. Facts about pain, fading, safety, and what PMU actually looks like healed.",
+      excerpt: "From 'permanent makeup looks fake' to 'it's basically a tattoo' — I've heard every myth after 523+ procedures. Here are the facts, backed by actual data.",
+      metaDescription: "Licensed VA PMU artist debunks 12 common permanent makeup myths with real data from 523+ procedures. Facts about pain, fading, safety, and what PMU actually looks like healed.",
       image: "https://live.staticflickr.com/65535/54363190627_a16b921317_o_d.jpg",
       alt: "Before and after healed permanent makeup showing natural results at Ink Mugi",
       category: "Education",
@@ -240,7 +240,7 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
     <>
       <SEO
         title={getPageTitle()}
-        description="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with 330+ procedures."
+        description="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with 523+ procedures."
         path="/blog"
         keywords="permanent makeup blog, ombre brows vs microblading, nano brows cost, PMU healing timeline, powder brows aftercare, permanent makeup guide DMV"
       />
@@ -538,7 +538,7 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
                 <div className="bg-[#2D2D2B] p-6 rounded-lg shadow-soft mb-8 text-white">
                   <h3 className="text-xl font-medium mb-3 font-cormorant">Ready for Your Brow Transformation?</h3>
                   <p className="text-white/80 text-sm mb-4">
-                    330+ procedures. 0.19% complication rate. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
+                    523+ procedures. 0.19% complication rate. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
                   </p>
                   <Link 
                     to="/booking" 
@@ -569,7 +569,7 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
                     </div>
                   </div>
                   <p className="text-[#2D2D2B]/80 text-sm mb-2">
-                    Virginia License #1231002471. Specializing in natural ombre powder brows with Korean precision techniques. 330+ procedures documented with clinical data tracking.
+                    Virginia License #1231002471. Specializing in natural ombre powder brows with Korean precision techniques. 523+ procedures documented with clinical data tracking.
                   </p>
                   <p className="text-[#2D2D2B]/60 text-xs mb-4">
                     Bloodborne Pathogens Certified · OSHA Compliant · Premium Vegan Pigments

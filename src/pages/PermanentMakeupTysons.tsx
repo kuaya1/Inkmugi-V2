@@ -91,7 +91,7 @@ const PermanentMakeupTysons: React.FC = () => {
     },
     {
       question: "Why not go to a Tysons Corner PMU studio?",
-      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. In our consultations with Tysons clients, we often hear that they want a more private, one-on-one experience instead of a high-traffic commercial setting where appointments can feel transactional. Our $600 all-inclusive pricing, 330+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
+      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. In our consultations with Tysons clients, we often hear that they want a more private, one-on-one experience instead of a high-traffic commercial setting where appointments can feel transactional. Our $600 all-inclusive pricing, 523+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
     },
     {
       question: "Can I book a lunchtime consultation from Tysons?",
@@ -103,7 +103,7 @@ const PermanentMakeupTysons: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Near Tysons Corner, VA | Ink Mugi — 10 Min Drive, $200+ Savings"
-        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 330+ procedures, 5.0★ reviews. Free consultation."
+        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 523+ procedures, 5.0★ reviews. Free consultation."
         path="/permanent-makeup-tysons-va"
         keywords="permanent makeup Tysons Corner VA, ombre brows Tysons, powder brows Tysons Virginia, PMU near Tysons Galleria, microshading Tysons Corner"
       >
@@ -157,7 +157,7 @@ const PermanentMakeupTysons: React.FC = () => {
         city="Tysons Corner"
         badgeText="Serving Tysons Corner, VA"
         headline={<>Permanent Makeup Near<br /><span className="text-[#9A7B69]">Tysons Corner</span></>}
-        subtext="Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. 330+ successful procedures, 5.0-star reviews, and premium results without the premium markup."
+        subtext="Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. 523+ successful procedures, 5.0-star reviews, and premium results without the premium markup."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Tysons Corner, Virginia"
         primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
@@ -248,7 +248,7 @@ const PermanentMakeupTysons: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                   <Shield className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ Happy Clients & Counting</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Happy Clients & Counting</h3>
                 <p className="text-[#2D2D2B]/70">
                   More documented procedures than most Tysons studios combined. Every result photographed at 6+ weeks healed.
                 </p>

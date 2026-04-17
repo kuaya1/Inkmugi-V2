@@ -104,7 +104,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Alexandria, VA | Ink Mugi"
-        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 330+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
+        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 523+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
         path="/ombre-brows-alexandria-va"
         keywords="ombre brows Alexandria VA, powder brows Old Town, permanent makeup Alexandria Virginia, PMU near Del Ray, microshading Alexandria City"
       >
@@ -158,7 +158,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
         city="Alexandria"
         badgeText="Serving Alexandria, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Alexandria</span> Residents</>}
-        subtext="Just 15 minutes from Old Town & Del Ray. Northern Virginia's most trusted PMU artist with 330+ successful procedures and premium results."
+        subtext="Just 15 minutes from Old Town & Del Ray. Northern Virginia's most trusted PMU artist with 523+ successful procedures and premium results."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Alexandria, Virginia"
         primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}

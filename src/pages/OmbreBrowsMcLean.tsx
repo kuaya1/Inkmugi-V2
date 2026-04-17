@@ -98,11 +98,11 @@ const OmbreBrowsMcLean: React.FC = () => {
     },
     {
       question: "Is ombré powder technique better than microblading for McLean's climate?",
-      answer: "For Northern Virginia's humidity, ombré powder brows significantly outperform microblading. The stippling technique deposits pigment below the skin surface rather than in shallow cuts, resulting in better retention in humid conditions. Our data from 330+ procedures shows an average longevity of 24 months for ombré powder versus 8–12 months for microblading in similar DMV-area clients. This is especially relevant for oily or combination skin types."
+      answer: "For Northern Virginia's humidity, ombré powder brows significantly outperform microblading. The stippling technique deposits pigment below the skin surface rather than in shallow cuts, resulting in better retention in humid conditions. Our data from 523+ procedures shows an average longevity of 24 months for ombré powder versus 8–12 months for microblading in similar DMV-area clients. This is especially relevant for oily or combination skin types."
     },
     {
       question: "What safety standards does Ink Mugi follow?",
-      answer: "Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization protocols, single-use disposable cartridges, and hypoallergenic vegan pigments tested for skin reactivity. Our documented complication rate across 330+ procedures is 0.19% — which reflects rigorous technique, proper client screening, and thorough aftercare guidance."
+      answer: "Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization protocols, single-use disposable cartridges, and hypoallergenic vegan pigments tested for skin reactivity. Our documented complication rate across 523+ procedures is 0.19% — which reflects rigorous technique, proper client screening, and thorough aftercare guidance."
     },
     {
       question: "What if I have previous PMU work I'm unhappy with?",
@@ -122,7 +122,7 @@ const OmbreBrowsMcLean: React.FC = () => {
     <>
       <SEO
         title="Ombré Powder Brows Near McLean, VA | Licensed Studio — Ink Mugi"
-        description="Considering permanent makeup near McLean, VA? Ink Mugi offers precision ombré powder brows with a documented 0.19% complication rate. 330+ procedures. VA-licensed. Healed results, not promises. Free consultation."
+        description="Considering permanent makeup near McLean, VA? Ink Mugi offers precision ombré powder brows with a documented 0.19% complication rate. 523+ procedures. VA-licensed. Healed results, not promises. Free consultation."
         path="/ombre-brows-mclean-va"
         keywords="ombre powder brows McLean VA, permanent makeup McLean Virginia, natural brows near Tysons Corner, licensed PMU artist Fairfax County, healed ombre brows Northern Virginia, powder brows near Great Falls VA"
       >
@@ -214,7 +214,7 @@ const OmbreBrowsMcLean: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">330+</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
@@ -248,7 +248,7 @@ const OmbreBrowsMcLean: React.FC = () => {
                 Technique selection should be informed by how pigment behaves in <em>your</em> skin type under <em>your</em> regional conditions — not by aesthetic trends. At Ink Mugi, every recommendation begins with skin science and climate assessment.
               </p>
               <p>
-                Ombré powder brows use a precision stippling technique that deposits pigment beneath the skin surface in fine, layered dots. Unlike microblading — which creates shallow incisions that blur and fade quickly in humid climates — the powder method produces a soft, graduated density that holds its form through Northern Virginia's seasonal shifts. Our data from 330+ procedures shows an average retention of 24 months, compared to 8–12 months for microblading in similar DMV-area clients.
+                Ombré powder brows use a precision stippling technique that deposits pigment beneath the skin surface in fine, layered dots. Unlike microblading — which creates shallow incisions that blur and fade quickly in humid climates — the powder method produces a soft, graduated density that holds its form through Northern Virginia's seasonal shifts. Our data from 523+ procedures shows an average retention of 24 months, compared to 8–12 months for microblading in similar DMV-area clients.
               </p>
               <p>
                 For McLean residents with oily or combination skin — common in this region — the difference is even more pronounced. The stippled pigment anchors more reliably than hair-stroke incisions, resulting in cleaner healed edges and more predictable color retention. The finished result resembles soft pencil shading: present, polished, and entirely undetectable as permanent makeup.
@@ -325,7 +325,7 @@ const OmbreBrowsMcLean: React.FC = () => {
                 {[
                   { icon: FileCheck, title: 'Design Approval Before Pigment', desc: 'You see and approve the exact brow shape mapped to your bone structure before we begin. No surprises.' },
                   { icon: Eye, title: 'Healed Portfolio, Not Fresh', desc: 'Every result in our gallery is photographed at 6+ weeks — the true representation of your outcome.' },
-                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 330+ documented procedures. Rigorous technique, proper screening, and comprehensive aftercare.' },
+                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 523+ documented procedures. Rigorous technique, proper screening, and comprehensive aftercare.' },
                   { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, and hospital-grade sterilization protocols.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-white rounded-xl p-5 shadow-sm">
@@ -582,7 +582,7 @@ const OmbreBrowsMcLean: React.FC = () => {
       </section>
 
       <LocationMidCTA
-        subtext="McLean and Great Falls clients trust Ink Mugi for precision ombré brows — VA-licensed, 330+ documented procedures, just 15 minutes away."
+        subtext="McLean and Great Falls clients trust Ink Mugi for precision ombré brows — VA-licensed, 523+ documented procedures, just 15 minutes away."
       />
 
       {/* ═══════════════════════════════════════════

@@ -33,7 +33,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Ombre Powder Brows for Dark Skin: Techniques, Pigment Selection, and Healing",
-    "description": "Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection, healing differences, keloid considerations, and before/after examples from 330+ procedures.",
+    "description": "Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection, healing differences, keloid considerations, and before/after examples from 523+ procedures.",
     "author": {
       "@type": "Person",
       "@id": "https://inkmugi.com/#mugi",
@@ -67,7 +67,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
     },
     {
       question: "Is there a keloid risk with ombre powder brows on dark skin?",
-      answer: "While clients with darker skin tones have a statistically higher predisposition to keloid scarring, ombre powder brows use a superficial tattooing technique that deposits pigment in the upper dermis — much shallower than traditional tattoos. In our 330+ procedures, we have not encountered keloid formation from our ombre technique. During your consultation, we review your scarring history and can perform a small patch test if you have concerns."
+      answer: "While clients with darker skin tones have a statistically higher predisposition to keloid scarring, ombre powder brows use a superficial tattooing technique that deposits pigment in the upper dermis — much shallower than traditional tattoos. In our 523+ procedures, we have not encountered keloid formation from our ombre technique. During your consultation, we review your scarring history and can perform a small patch test if you have concerns."
     },
     {
       question: "How long do ombre brows last on darker skin tones?",
@@ -190,7 +190,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                 The answer is an emphatic yes — but the approach matters enormously. Permanent makeup on melanin-rich skin requires specific knowledge about pigment chemistry, healing biology, and technique adjustments that many generalist PMU artists simply haven't been trained on.
               </p>
               <p>
-                I'm Mugi, a Virginia-licensed permanent cosmetic tattooer (<a href="https://www.dpor.virginia.gov/" target="_blank" rel="noopener noreferrer">License #1231002471</a>) with 330+ documented procedures — a significant portion on Fitzpatrick IV–VI clients from the Northern Virginia and Washington DC area. In this guide, I'll share what I've learned about performing ombre powder brows specifically on darker skin tones — the science behind pigment selection, how healing differs, why some brows turn grey (and how to prevent it), and the questions you should ask any artist before booking.
+                I'm Mugi, a Virginia-licensed permanent cosmetic tattooer (<a href="https://www.dpor.virginia.gov/" target="_blank" rel="noopener noreferrer">License #1231002471</a>) with 523+ documented procedures — a significant portion on Fitzpatrick IV–VI clients from the Northern Virginia and Washington DC area. In this guide, I'll share what I've learned about performing ombre powder brows specifically on darker skin tones — the science behind pigment selection, how healing differs, why some brows turn grey (and how to prevent it), and the questions you should ask any artist before booking.
               </p>
             </div>
           </AnimatedSection>
@@ -679,7 +679,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                   <li><strong>Sickle cell trait/disease:</strong> May affect healing time. We adjust aftercare timelines accordingly.</li>
                 </ul>
                 <p>
-                  Across our 330+ procedures, our complication rate is 0.19% — 13× lower than the industry average of 2.5%. We attribute this to thorough pre-screening, specialized technique, and proactive aftercare support.
+                  Across our 523+ procedures, our complication rate is 0.19% — 13× lower than the industry average of 2.5%. We attribute this to thorough pre-screening, specialized technique, and proactive aftercare support.
                 </p>
                 <p>
                   For a comprehensive overview of medical conditions and PMU compatibility, see our detailed <Link to="/pmu-medical-conditions">medical conditions guide</Link>.
@@ -747,7 +747,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                 <p className="font-semibold text-[#2D2D2B]">Written by Mugi</p>
                 <p className="text-sm text-[#9A7B69] mb-2">Licensed Permanent Cosmetic Tattooer • VA License #1231002471</p>
                 <p className="text-sm text-[#2D2D2B]/70">
-                  Mugi is the founder of Ink Mugi, a permanent makeup studio in Annandale, Virginia specializing in ombre powder brows. With 330+ documented procedures and a 0.19% complication rate, she focuses on healed-first results and evidence-based technique for all skin types.
+                  Mugi is the founder of Ink Mugi, a permanent makeup studio in Annandale, Virginia specializing in ombre powder brows. With 523+ documented procedures and a 0.19% complication rate, she focuses on healed-first results and evidence-based technique for all skin types.
                 </p>
               </div>
             </div>

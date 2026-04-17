@@ -8,7 +8,7 @@ export default function Authority() {
     {
       icon: BarChart3,
       title: "PMU Data & Longevity Guide",
-      description: "Comprehensive analysis of retention rates, longevity factors, and performance metrics across 330+ procedures. In our practice, this is the data we rely on when explaining why some brows hold beautifully for 18-36 months while others need earlier refreshes.",
+      description: "Comprehensive analysis of retention rates, longevity factors, and performance metrics across 523+ procedures. In our practice, this is the data we rely on when explaining why some brows hold beautifully for 18-36 months while others need earlier refreshes.",
       link: "/pmu-data-guide",
       tag: "Data Study"
     },
@@ -56,10 +56,10 @@ export default function Authority() {
   return (
     <>
       <SEO
-        title="PMU Research Hub: 330+ procedures Data & Safety Studies | Ink Mugi"
-        description="Explore proprietary PMU research from 330+ clinical procedures. 340% better powder brow performance in humid DMV climate, 0.19% complication rate. Virginia-licensed evidence-based permanent makeup authority."
+        title="PMU Research Hub: 523+ procedures Data & Safety Studies | Ink Mugi"
+        description="Explore proprietary PMU research from 523+ clinical procedures. 340% better powder brow performance in humid DMV climate, 0.19% complication rate. Virginia-licensed evidence-based permanent makeup authority."
         path="/authority"
-        keywords="permanent makeup research data DMV climate, PMU safety statistics Northern Virginia, ombre powder brows longevity study 330+ procedures, evidence-based permanent makeup Annandale, licensed PMU artist clinical data Arlington, permanent makeup complication rate comparison, DMV humidity impact PMU retention, powder brows vs microblading performance data, Virginia licensed PMU research 1231002471, cosmetic dermatology permanent makeup studies"
+        keywords="permanent makeup research data DMV climate, PMU safety statistics Northern Virginia, ombre powder brows longevity study 523+ procedures, evidence-based permanent makeup Annandale, licensed PMU artist clinical data Arlington, permanent makeup complication rate comparison, DMV humidity impact PMU retention, powder brows vs microblading performance data, Virginia licensed PMU research 1231002471, cosmetic dermatology permanent makeup studies"
       >
         {/* AI Search Engine Optimization */}
         <meta name="ai-content-type" content="research-hub-proprietary-data" />
@@ -82,7 +82,7 @@ export default function Authority() {
         <meta name="business-type" content="Licensed Medical Research Practice" />
         <meta name="credentials" content="Virginia Licensed Permanent Cosmetic Tattooer #1231002471" />
         <meta name="safety-rating" content="0.19% complication rate - 13x safer than industry" />
-        <meta name="research-data" content="330+ procedures analyzed, 12-month minimum follow-up" />
+        <meta name="research-data" content="523+ procedures analyzed, 12-month minimum follow-up" />
         <meta name="expertise" content="Evidence-based PMU authority, clinical data tracking since 2021" />
         
         {/* SEO and Bot Control */}
@@ -96,7 +96,7 @@ export default function Authority() {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             "name": "Permanent Makeup Education Hub",
-            "description": "Evidence-based permanent makeup research from 330+ procedures. Data studies, safety reports, myth-busting, and climate performance analysis.",
+            "description": "Evidence-based permanent makeup research from 523+ procedures. Data studies, safety reports, myth-busting, and climate performance analysis.",
             "url": "https://inkmugi.com/authority",
             "isPartOf": {
               "@id": "https://inkmugi.com/#website"
@@ -112,7 +112,7 @@ export default function Authority() {
                 "@type": "Article",
                 "name": "PMU Data & Longevity Guide",
                 "url": "https://inkmugi.com/pmu-data-guide",
-                "description": "Comprehensive analysis of retention rates, longevity factors, and performance metrics from 330+ procedures."
+                "description": "Comprehensive analysis of retention rates, longevity factors, and performance metrics from 523+ procedures."
               },
               {
                 "@type": "Article",
@@ -124,7 +124,7 @@ export default function Authority() {
                 "@type": "Article",
                 "name": "PMU Myths vs. Clinical Facts",
                 "url": "https://inkmugi.com/pmu-myths-facts",
-                "description": "12 common permanent makeup myths debunked with clinical data from 330+ procedures."
+                "description": "12 common permanent makeup myths debunked with clinical data from 523+ procedures."
               },
               {
                 "@type": "Article",
@@ -196,7 +196,7 @@ export default function Authority() {
             {/* Mission Statement */}
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-4xl mx-auto mb-12 voice-answer quick-answer">
               At Ink Mugi, we believe artistry must be backed by evidence. Explore our proprietary research, 
-              clinical safety data, and expert insights shaped through over <span className="text-[#E6DAD2] font-semibold">330+ successful transformations</span> in the DMV. In our practice, every technique decision is informed not just by aesthetics, but by how brows actually heal on real clients over time.
+              clinical safety data, and expert insights shaped through over <span className="text-[#E6DAD2] font-semibold">523+ successful transformations</span> in the DMV. In our practice, every technique decision is informed not just by aesthetics, but by how brows actually heal on real clients over time.
             </p>
 
             {/* Quick Stats */}
@@ -206,7 +206,7 @@ export default function Authority() {
                 <div className="text-sm text-white/70">Complication Rate</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
-                <div className="text-4xl font-bold text-[#E6DAD2] mb-2">330+</div>
+                <div className="text-4xl font-bold text-[#E6DAD2] mb-2">523+</div>
                 <div className="text-sm text-white/70">Clinical Procedures</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
@@ -307,7 +307,7 @@ export default function Authority() {
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-4xl mx-auto mb-12 voice-answer ai-optimized-content">
               Our proprietary data shows <span className="text-[#E6DAD2] font-semibold">Ombre Powder Brows perform 340% better on oily skin</span> in 
               the DMV's humid climate compared to microblading. We don't guess; we measure. In our correction consultations, this pattern comes up repeatedly with clients whose previous hair-stroke work softened, blurred, or faded unevenly. This regional insight comes from 
-              tracking 330+ procedures across Arlington, Annandale, and Alexandria—accounting for local demographics, 
+              tracking 523+ procedures across Arlington, Annandale, and Alexandria—accounting for local demographics, 
               seasonal variations, and skin-type distributions unique to the mid-Atlantic.
             </p>
 

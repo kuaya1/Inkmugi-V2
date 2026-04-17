@@ -57,7 +57,7 @@ const OmbreBrowsManassas: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Manassas VA Clients",
-    "description": "Professional ombre powder brows service for Manassas, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Historic Downtown Manassas.",
+    "description": "Professional ombre powder brows service for Manassas, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Historic Downtown Manassas.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -113,7 +113,7 @@ const OmbreBrowsManassas: React.FC = () => {
     },
     {
       question: "Why do Manassas residents choose Ink Mugi over closer studios?",
-      answer: "Manassas clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With 330+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach gives the certainty and quality that Prince William County clients demand. Many of our Manassas clients were referred by friends or family who'd already experienced our work."
+      answer: "Manassas clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With 523+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach gives the certainty and quality that Prince William County clients demand. Many of our Manassas clients were referred by friends or family who'd already experienced our work."
     },
     {
       question: "How long do ombre powder brows last for Manassas area clients?",
@@ -137,7 +137,7 @@ const OmbreBrowsManassas: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Manassas VA | Ink Mugi — Healed-First PMU"
-        description="Ombre powder brows for Manassas VA residents. 330+ procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Manassas. Free consultation — see healed results first."
+        description="Ombre powder brows for Manassas VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Manassas. Free consultation — see healed results first."
         path="/ombre-brows-manassas-va"
         keywords="ombre powder brows Manassas VA, permanent makeup Manassas Virginia, powder brows Prince William County, PMU near Manassas, microshading Manassas VA, nano brows Manassas"
       >
@@ -193,7 +193,7 @@ const OmbreBrowsManassas: React.FC = () => {
         city="Manassas"
         badgeText="Serving Manassas, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Manassas, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="30 minutes from Historic Downtown Manassas to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Ombre powder brows for Manassas, VA clients at Ink Mugi studio"
@@ -288,7 +288,7 @@ const OmbreBrowsManassas: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ documented procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not a claim — a tracked dataset. Every procedure is documented from consultation through healed result. This depth of experience means fewer surprises and better outcomes for our Manassas clients.
                 </p>

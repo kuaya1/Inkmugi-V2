@@ -152,7 +152,7 @@ export const brand = {
   instagram: 'browsby.mugi',
   instagramUrl: 'https://www.instagram.com/browsby.mugi/',
   url: 'https://inkmugi.com',
-  procedures: '330+',
+  procedures: '523+',
   email: '', // fill when available
   booking: {
     /** Vagaro redirect path within the SPA */

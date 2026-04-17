@@ -41,7 +41,7 @@ const BotchedMicrobladingFix: React.FC = () => {
     },
     {
       question: "Will powder brows look good over botched microblading?",
-      answer: "Powder brows are the gold-standard correction technique for botched microblading specifically because they address the weaknesses that caused the original failure. The stippled dot technique provides even, consistent coverage that masks blurred strokes and patchy areas. The digital machine allows precise depth control, preventing the over-deep placement that leads to color shift. When preceded by proper neutralization (for color issues) or saline removal (for shape issues), a powder brow overlay consistently delivers natural, flattering results. We've performed 330+ procedures and specialize in working with previously treated skin."
+      answer: "Powder brows are the gold-standard correction technique for botched microblading specifically because they address the weaknesses that caused the original failure. The stippled dot technique provides even, consistent coverage that masks blurred strokes and patchy areas. The digital machine allows precise depth control, preventing the over-deep placement that leads to color shift. When preceded by proper neutralization (for color issues) or saline removal (for shape issues), a powder brow overlay consistently delivers natural, flattering results. We've performed 523+ procedures and specialize in working with previously treated skin."
     },
     {
       question: "Is botched microblading correction painful?",
@@ -169,7 +169,7 @@ const BotchedMicrobladingFix: React.FC = () => {
               brows you actually love.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures • Specializing in corrections
+              By a Virginia-licensed PMU artist with 523+ procedures • Specializing in corrections
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -397,7 +397,7 @@ const BotchedMicrobladingFix: React.FC = () => {
             {[
               {
                 icon: Award,
-                title: '330+ Procedures',
+                title: '523+ Procedures',
                 desc: 'Extensive experience across the full spectrum of correction cases — from simple color corrections to complex multi-session shape rebuilds. We\'ve seen every type of botched microblading and know which protocols deliver the best outcomes.'
               },
               {

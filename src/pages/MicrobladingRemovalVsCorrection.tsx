@@ -144,7 +144,7 @@ const MicrobladingRemovalVsCorrection: React.FC = () => {
               option makes sense — and why correction is the right choice for most people.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures • Offering both saline removal and powder brow correction
+              By a Virginia-licensed PMU artist with 523+ procedures • Offering both saline removal and powder brow correction
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

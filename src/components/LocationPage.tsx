@@ -328,7 +328,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ Documented Procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not a claim — a tracked dataset. Every procedure is documented from consultation
                   through healed result. This depth of experience means fewer surprises and better

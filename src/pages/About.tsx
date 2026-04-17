@@ -30,7 +30,7 @@ const About: React.FC = () => {
     "@id": "https://inkmugi.com/#mugi",
     "name": "Mugi",
     "jobTitle": "Licensed Permanent Cosmetic Tattooer",
-    "description": "Virginia-licensed permanent makeup artist specializing in ombre powder brows with 330+ documented procedures and a 0.19% complication rate. Founder of Ink Mugi in Annandale, VA.",
+    "description": "Virginia-licensed permanent makeup artist specializing in ombre powder brows with 523+ documented procedures and a 0.19% complication rate. Founder of Ink Mugi in Annandale, VA.",
     "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "url": "https://inkmugi.com/about",
     "worksFor": {
@@ -171,7 +171,7 @@ const About: React.FC = () => {
     <>
       <SEO
         title="Meet Mugi | Licensed PMU Artist in Annandale, VA | Ink Mugi"
-        description="Meet Mugi — Virginia-licensed permanent makeup artist (License #1231002471) with 330+ ombre powder brow procedures. Korean technique specialist in Annandale, VA. See her story and credentials."
+        description="Meet Mugi — Virginia-licensed permanent makeup artist (License #1231002471) with 523+ ombre powder brow procedures. Korean technique specialist in Annandale, VA. See her story and credentials."
         path="/about"
         ogType="profile"
         keywords="Mugi PMU artist, licensed permanent makeup artist Virginia, ombre brows artist Annandale, Korean PMU technique, about Ink Mugi, PMU artist near me"

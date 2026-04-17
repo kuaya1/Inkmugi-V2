@@ -166,7 +166,7 @@ const MicrobladingTurningGrey: React.FC = () => {
               This is pigment oxidation, and it's one of the most common microblading problems we correct.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures • Includes DMV-specific climate data
+              By a Virginia-licensed PMU artist with 523+ procedures • Includes DMV-specific climate data
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

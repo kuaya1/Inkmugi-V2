@@ -129,7 +129,7 @@ const MicrobladingProblems: React.FC = () => {
               Microblading doesn't always heal as expected. Grey color shift, patchy results, rapid fading, and botched outcomes are more common than the industry acknowledges — especially in humid climates like the DMV. The good news: most microblading problems are correctable.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              Correction guides by a Virginia-licensed PMU artist with 330+ documented procedures
+              Correction guides by a Virginia-licensed PMU artist with 523+ documented procedures
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -292,7 +292,7 @@ const MicrobladingProblems: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { to: '/microblading-vs-powder-brows', title: 'Microblading vs Powder Brows', desc: 'Data-driven comparison of longevity, skin compatibility, and healed results across 330+ procedures.' },
+              { to: '/microblading-vs-powder-brows', title: 'Microblading vs Powder Brows', desc: 'Data-driven comparison of longevity, skin compatibility, and healed results across 523+ procedures.' },
               { to: '/why-microblading-fades', title: 'Why Microblading Fades', desc: 'The 6 biological and environmental factors that cause microblading to lose pigment over time.' },
               { to: '/microblading-for-oily-skin', title: 'Microblading & Oily Skin', desc: 'Why oily skin is the #1 reason microblading fails — and why powder brows perform 340% better.' },
             ].map((link, idx) => (
@@ -316,7 +316,7 @@ const MicrobladingProblems: React.FC = () => {
           <AnimatedSection>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { value: '330+', label: 'Documented Procedures' },
+                { value: '523+', label: 'Documented Procedures' },
                 { value: '0.19%', label: 'Complication Rate' },
                 { value: '5.0', label: 'Google Rating' },
                 { value: 'VA Licensed', label: '#1231002471' },

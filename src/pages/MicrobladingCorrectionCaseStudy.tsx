@@ -179,7 +179,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
               correction strategy to the verified healing outcome.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By Mugi, Virginia-licensed PMU artist • 330+ procedures • Specializing in correction and powder brows
+              By Mugi, Virginia-licensed PMU artist • 523+ procedures • Specializing in correction and powder brows
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

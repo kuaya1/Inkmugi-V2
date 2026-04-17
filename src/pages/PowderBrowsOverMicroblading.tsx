@@ -168,7 +168,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               to restore, refresh, or completely transform your brow appearance.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures • ~35% of our clients are microblading transitions
+              By a Virginia-licensed PMU artist with 523+ procedures • ~35% of our clients are microblading transitions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -438,7 +438,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               {
                 icon: Target,
                 title: 'Correction Expertise',
-                desc: 'With 330+ procedures, approximately 35% involving previously-treated skin, we have extensive experience managing the unique challenges of layered PMU work — pigment interaction, color theory, and texture adaptation.'
+                desc: 'With 523+ procedures, approximately 35% involving previously-treated skin, we have extensive experience managing the unique challenges of layered PMU work — pigment interaction, color theory, and texture adaptation.'
               },
               {
                 icon: Palette,

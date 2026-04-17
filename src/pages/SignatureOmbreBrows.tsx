@@ -91,7 +91,7 @@ const SignatureOmbreBrows: React.FC = () => {
     },
     {
       question: 'How long will my results last in Northern Virginia?',
-      answer: 'Based on 330+ procedures tracked: ombre powder brows last 18-36 months in DMV climate, with an average of 24 months. Summer humidity (70-85%) gives 88% retention, winter (45-60% humidity) gives 94% retention. Factors affecting longevity: skin type, sun exposure, skincare routine, and immune system.'
+      answer: 'Based on 523+ procedures tracked: ombre powder brows last 18-36 months in DMV climate, with an average of 24 months. Summer humidity (70-85%) gives 88% retention, winter (45-60% humidity) gives 94% retention. Factors affecting longevity: skin type, sun exposure, skincare routine, and immune system.'
     },
     {
       question: 'What if I have previous PMU work I\'m unhappy with?',
@@ -107,7 +107,7 @@ const SignatureOmbreBrows: React.FC = () => {
     <>
       <SEO
         title="Ombré Powder Brows Near Me | Annandale VA | $600 All-Inclusive | Ink Mugi"
-        description="Ombré powder brows near you in Northern Virginia. $600 all-inclusive — consultation, procedure, aftercare kit & 6-week touch-up. 330+ documented results. Serving Arlington, Reston, Herndon, Tysons & Fairfax County."
+        description="Ombré powder brows near you in Northern Virginia. $600 all-inclusive — consultation, procedure, aftercare kit & 6-week touch-up. 523+ documented results. Serving Arlington, Reston, Herndon, Tysons & Fairfax County."
         path="/signature-ombre-brows"
         image="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         keywords="ombre brows near me, ombre powder brows near me, powder brows Northern Virginia, ombre powder brows Annandale VA, permanent makeup near me, powder brows Fairfax County, ombre brows cost, permanent eyebrows Arlington Reston"
@@ -288,7 +288,7 @@ const SignatureOmbreBrows: React.FC = () => {
 
               <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">330+</div>
+                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">523+</div>
                   <div className="text-xs text-white/70 uppercase tracking-wide">Procedures</div>
                 </div>
                 <div className="text-center border-x border-white/20">
@@ -335,7 +335,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Ombre Powder Brows at a Glance
                 </h2>
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on 330+ documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Many clients come in wanting something polished but not overly drawn on, and this is the technique we most often recommend for that balance.
+                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on 523+ documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Many clients come in wanting something polished but not overly drawn on, and this is the technique we most often recommend for that balance.
                 </p>
               </div>
             </AnimatedSection>
@@ -655,7 +655,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   How Long Do Powder Brows Last?
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Ombre powder brows last <strong>18 to 36 months</strong>, with an average longevity of 24 months based on 330+ tracked procedures. Results vary by skin type — oily skin averages 18-24 months; dry skin often reaches 30-36 months. Northern Virginia's variable humidity (45-85%) supports 88-94% pigment retention. A color refresh every 18-24 months maintains optimal vibrancy.
+                  Ombre powder brows last <strong>18 to 36 months</strong>, with an average longevity of 24 months based on 523+ tracked procedures. Results vary by skin type — oily skin averages 18-24 months; dry skin often reaches 30-36 months. Northern Virginia's variable humidity (45-85%) supports 88-94% pigment retention. A color refresh every 18-24 months maintains optimal vibrancy.
                 </p>
               </div>
             </AnimatedSection>
@@ -690,7 +690,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Your Questions, Answered with Data
                 </h2>
                 <p className="text-xl text-gray-600">
-                  Evidence-based answers from 330+ procedures
+                  Evidence-based answers from 523+ procedures
                 </p>
               </div>
 
@@ -734,7 +734,7 @@ const SignatureOmbreBrows: React.FC = () => {
               </h2>
               <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  Searching for <strong>ombre brows near me</strong> or <strong>powder brows near me</strong> in the Northern Virginia and DMV area? Ink Mugi's studio in Annandale, VA is centrally located in Fairfax County — just minutes from Arlington, Falls Church, Springfield, and the Beltway. Clients from across Northern Virginia choose us for documented, outcome-verified permanent makeup with 330+ successful procedures.
+                  Searching for <strong>ombre brows near me</strong> or <strong>powder brows near me</strong> in the Northern Virginia and DMV area? Ink Mugi's studio in Annandale, VA is centrally located in Fairfax County — just minutes from Arlington, Falls Church, Springfield, and the Beltway. Clients from across Northern Virginia choose us for documented, outcome-verified permanent makeup with 523+ successful procedures.
                 </p>
                 <p>
                   Unlike high-overhead studios in Tysons Corner, Georgetown, or downtown DC that charge $800–$1,500, our <strong>ombré powder brows near me</strong> service is $600 all-inclusive — covering your initial consultation, the full procedure, an aftercare kit, and your 6-week perfecting touch-up. No surprise fees, no add-ons.
@@ -806,7 +806,7 @@ const SignatureOmbreBrows: React.FC = () => {
               </h2>
 
               <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                Join 330+ confident clients who wake up beautiful every single day
+                Join 523+ confident clients who wake up beautiful every single day
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -858,7 +858,7 @@ const SignatureOmbreBrows: React.FC = () => {
           <div className="container-custom max-w-5xl mx-auto">
             <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
               <p>
-                <strong className="text-[#2D2D2B]/50">Signature Ombre Powder Brows at Ink Mugi — Annandale, VA</strong> — Professional ombre powder brows, microshading, and semi-permanent eyebrow tattooing in Annandale, Virginia. Data-driven results from 330+ tracked procedures with 97% client satisfaction and 0.19% complication rate. Virginia licensed (#1231002471) and fully insured PMU artist.
+                <strong className="text-[#2D2D2B]/50">Signature Ombre Powder Brows at Ink Mugi — Annandale, VA</strong> — Professional ombre powder brows, microshading, and semi-permanent eyebrow tattooing in Annandale, Virginia. Data-driven results from 523+ tracked procedures with 97% client satisfaction and 0.19% complication rate. Virginia licensed (#1231002471) and fully insured PMU artist.
               </p>
               <p>
                 Related searches: ombre powder brows near me, ombre brows Annandale VA, powder brows Northern Virginia, ombre brows cost, ombre brows vs microblading, permanent eyebrows DMV, semi permanent brows Arlington, ombre brows oily skin, powder brows Fairfax Virginia, eyebrow tattoo Alexandria, ombre brows McLean, powder brows Tysons, ombre brows healing process, how long do powder brows last, ombre brows for oily skin, permanent makeup near me, brow tattoo Northern Virginia.

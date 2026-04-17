@@ -57,7 +57,7 @@ const OmbreBrowsHerndon: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Herndon VA Clients",
-    "description": "Professional ombre powder brows service for Herndon, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Downtown Herndon.",
+    "description": "Professional ombre powder brows service for Herndon, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Downtown Herndon.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -113,7 +113,7 @@ const OmbreBrowsHerndon: React.FC = () => {
     },
     {
       question: "Why do Herndon residents choose Ink Mugi over closer studios?",
-      answer: "Herndon clients consistently tell us they chose Ink Mugi after researching healed results online. With 330+ documented procedures and a 0.19% complication rate, our track record speaks for itself. Professional women along the Dulles Corridor especially appreciate our design-approval process — you see the exact shape mapped on your face and approve it before any pigment touches your skin."
+      answer: "Herndon clients consistently tell us they chose Ink Mugi after researching healed results online. With 523+ documented procedures and a 0.19% complication rate, our track record speaks for itself. Professional women along the Dulles Corridor especially appreciate our design-approval process — you see the exact shape mapped on your face and approve it before any pigment touches your skin."
     },
     {
       question: "How long do ombre powder brows last for Herndon area clients?",
@@ -137,7 +137,7 @@ const OmbreBrowsHerndon: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Herndon VA | Ink Mugi — Healed-First PMU"
-        description="Ombre powder brows for Herndon VA residents. 330+ procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Herndon. Free consultation — see healed results first."
+        description="Ombre powder brows for Herndon VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Herndon. Free consultation — see healed results first."
         path="/ombre-brows-herndon-va"
         keywords="ombre powder brows Herndon VA, permanent makeup Herndon Virginia, PMU near Herndon, powder brows Fairfax County, microshading Herndon VA, nano brows Herndon"
       >
@@ -193,7 +193,7 @@ const OmbreBrowsHerndon: React.FC = () => {
         city="Herndon"
         badgeText="Serving Herndon, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Herndon, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Herndon professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Healed-first permanent makeup trusted by Herndon professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="30 minutes from Downtown Herndon to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Ombre powder brows for Herndon, VA clients at Ink Mugi studio"
@@ -288,7 +288,7 @@ const OmbreBrowsHerndon: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">330+ documented procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not a claim — a tracked dataset. Every procedure is documented from consultation through healed result. This depth of experience means fewer surprises and better outcomes for our Herndon clients.
                 </p>

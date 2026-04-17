@@ -171,7 +171,7 @@ const MicrobladingGoneWrong: React.FC = () => {
               If your microblading didn't heal as expected — grey color, uneven strokes, patchy areas, or just doesn't look right — this guide explains exactly what to do now, what's fixable, and how professional correction works.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 330+ procedures • Specializing in microblading corrections
+              By a Virginia-licensed PMU artist with 523+ procedures • Specializing in microblading corrections
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

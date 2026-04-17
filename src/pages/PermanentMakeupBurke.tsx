@@ -12,7 +12,7 @@ const PermanentMakeupBurke: React.FC = () => {
 
       /* ---- SEO ---- */
       seoTitle="Permanent Makeup Burke VA | Ombre Powder Brows — Ink Mugi"
-      seoDescription="Professional ombre powder brows for Burke, VA residents. VA-licensed, 330+ documented procedures, 0.19% complication rate. Just 12 minutes from Burke Centre. $600 all-inclusive. Free consultation."
+      seoDescription="Professional ombre powder brows for Burke, VA residents. VA-licensed, 523+ documented procedures, 0.19% complication rate. Just 12 minutes from Burke Centre. $600 all-inclusive. Free consultation."
       seoKeywords="permanent makeup Burke VA, ombre powder brows Burke Virginia, PMU near Burke Centre, powder brows Fairfax County, eyebrow tattoo Burke VA, microshading Burke"
 
       /* ---- schema ---- */
@@ -26,12 +26,12 @@ const PermanentMakeupBurke: React.FC = () => {
         { type: 'AdministrativeArea', name: 'Fairfax County', state: 'Virginia' },
       ]}
       serviceSchemaName="Ombre Powder Brows for Burke VA Clients"
-      serviceSchemaDesc="Professional ombre powder brows service for Burke, VA residents. 330+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 12 minutes from Burke Centre."
+      serviceSchemaDesc="Professional ombre powder brows service for Burke, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 12 minutes from Burke Centre."
 
       /* ---- hero ---- */
       badgeText="Serving Burke, VA — 12 Min from Our Studio"
       headline={<>Permanent Makeup for<br /><span className="text-[#9A7B69]">Burke, VA</span> — Your Neighborhood PMU Expert</>}
-      heroSubtext="Healed-first permanent makeup trusted by Burke families and professionals. 330+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+      heroSubtext="Healed-first permanent makeup trusted by Burke families and professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
       heroSecondaryText="12 minutes from Burke Centre to our private Annandale studio. Free parking. Consultation-first approach."
       heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
       heroImageAlt="Healed ombre powder brows for Burke, VA clients at Ink Mugi studio"
@@ -124,7 +124,7 @@ const PermanentMakeupBurke: React.FC = () => {
         },
         {
           question: 'Why do Burke residents choose Ink Mugi over closer studios?',
-          answer: "Burke clients consistently choose us after comparing healed results online. With 330+ documented procedures and a 0.19% complication rate, our track record is verifiable. The $600 all-inclusive price (compared to $800+ at DC and Tysons studios), combined with our design-approval process where you see the exact shape on your face before any pigment, gives Burke families the confidence they need.",
+          answer: "Burke clients consistently choose us after comparing healed results online. With 523+ documented procedures and a 0.19% complication rate, our track record is verifiable. The $600 all-inclusive price (compared to $800+ at DC and Tysons studios), combined with our design-approval process where you see the exact shape on your face before any pigment, gives Burke families the confidence they need.",
         },
         {
           question: 'How long do ombre powder brows last for Burke area clients?',

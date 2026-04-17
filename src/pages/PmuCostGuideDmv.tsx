@@ -107,7 +107,7 @@ const faqs = [
   },
   {
     question: 'Is expensive always better for PMU?',
-    answer: 'No. Price doesn\'t guarantee quality. A $1,200 Georgetown studio and a $600 Annandale studio can produce identical results — or the more expensive one could be worse. What matters: healed result photos (not fresh), procedure volume, complication rates, pigment quality, and licensing. My $600 price point reflects efficient overhead (free parking, reasonable rent) — not inferior quality. My 5.0-star rating across 47+ reviews and 330+ procedures demonstrate the results.',
+    answer: 'No. Price doesn\'t guarantee quality. A $1,200 Georgetown studio and a $600 Annandale studio can produce identical results — or the more expensive one could be worse. What matters: healed result photos (not fresh), procedure volume, complication rates, pigment quality, and licensing. My $600 price point reflects efficient overhead (free parking, reasonable rent) — not inferior quality. My 5.0-star rating across 47+ reviews and 523+ procedures demonstrate the results.',
   },
   {
     question: 'What should be included in the PMU price?',
@@ -119,7 +119,7 @@ const faqs = [
   },
   {
     question: 'Is it worth driving to Annandale from DC or Tysons to save money?',
-    answer: 'Consider this: a 15-20 minute drive saves you $200–600 on the procedure, $0–20 on parking, and gets you free consultation + touch-up that other studios charge extra for. Plus, Ink Mugi\'s 330+ procedures and 5.0-star rating mean you\'re not sacrificing quality for price. Many DC and Tysons professionals are already making this drive — check our reviews from clients across the DMV.',
+    answer: 'Consider this: a 15-20 minute drive saves you $200–600 on the procedure, $0–20 on parking, and gets you free consultation + touch-up that other studios charge extra for. Plus, Ink Mugi\'s 523+ procedures and 5.0-star rating mean you\'re not sacrificing quality for price. Many DC and Tysons professionals are already making this drive — check our reviews from clients across the DMV.',
   },
   {
     question: 'How much does microblading correction cost?',
@@ -225,7 +225,7 @@ export default function PmuCostGuideDmv() {
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Transparent pricing comparison across the DMV — what you should pay, what's included,
-              and the hidden fees most studios don't mention. Based on market research and 330+ procedures.
+              and the hidden fees most studios don't mention. Based on market research and 523+ procedures.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -507,7 +507,7 @@ export default function PmuCostGuideDmv() {
                 <TrendingUp className="w-10 h-10 text-amber-600 mb-4" />
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Volume & Efficiency</h3>
                 <p className="text-gray-600 text-sm">
-                  330+ procedures means efficiency through experience. I don't need 4 hours for what
+                  523+ procedures means efficiency through experience. I don't need 4 hours for what
                   I can do expertly in 2.5. My time efficiency benefits you financially.
                 </p>
               </div>
@@ -542,7 +542,7 @@ export default function PmuCostGuideDmv() {
             </div>
             <div className="flex items-center gap-2 text-amber-900">
               <BarChart3 className="w-5 h-5 text-amber-700" />
-              <span className="text-sm font-medium">330+ procedures</span>
+              <span className="text-sm font-medium">523+ procedures</span>
             </div>
           </div>
         </div>
@@ -579,7 +579,7 @@ export default function PmuCostGuideDmv() {
                 { label: 'Microshading', to: '/microshading-artistry', sub: '$700 all-inclusive' },
                 { label: 'Aftercare Guide', to: '/aftercare-guide', sub: 'Healing timeline' },
                 { label: 'Safety Data', to: '/permanent-makeup-safety-dmv', sub: '0.19% complication rate' },
-                { label: 'Authority Hub', to: '/authority', sub: '330+ procedure data' },
+                { label: 'Authority Hub', to: '/authority', sub: '523+ procedure data' },
                 { label: 'View Gallery', to: '/gallery', sub: 'Healed results' },
                 { label: 'Book Now', to: '/booking', sub: 'Free consultation' },
               ].map((link) => (
@@ -609,7 +609,7 @@ export default function PmuCostGuideDmv() {
             </h2>
             <p className="text-gray-300 mb-8 max-w-xl mx-auto">
               $600 all-inclusive ombre powder brows. Free consultation. Free parking. No hidden fees.
-              330+ procedures and a 5.0-star reputation backing every result.
+              523+ procedures and a 5.0-star reputation backing every result.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

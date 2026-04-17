@@ -158,7 +158,7 @@ const OmbreBrowsFairfax: React.FC = () => {
         city="Fairfax"
         badgeText="Serving Fairfax County, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Fairfax County</span></>}
-        subtext="Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 330+ procedures and exceptional results."
+        subtext="Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 523+ procedures and exceptional results."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Fairfax County, Virginia"
         primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
@@ -227,7 +227,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Tysons Quality, Better Value</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Tysons and McLean studios charge $750-900. Get premium results at $600 with a Virginia-licensed artist who has completed 330+ successful procedures.
+                  Tysons and McLean studios charge $750-900. Get premium results at $600 with a Virginia-licensed artist who has completed 523+ successful procedures.
                 </p>
               </div>
             </AnimatedSection>
