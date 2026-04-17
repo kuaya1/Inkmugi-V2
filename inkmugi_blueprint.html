@@ -1,0 +1,2646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ink Mugi — Execution Blueprint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* ============ CORE DESIGN TOKENS (INK MUGI SYSTEM) ============ */
+    --im-bone:        #F6F1EA;  /* primary bg — warm off-white */
+    --im-paper:       #FBF8F3;  /* card bg */
+    --im-ink:         #1A1612;  /* primary text — warm black */
+    --im-ink-70:      #524A43;  /* secondary text */
+    --im-ink-50:      #8A817A;  /* tertiary / muted */
+    --im-rose:        #B8756B;  /* brand accent — warm clay rose */
+    --im-rose-dark:   #8F5850;
+    --im-rose-soft:   #E8D5CF;
+    --im-line:        #E6DED3;  /* dividers */
+    --im-gold:        #B8966B;  /* micro accent for data claims */
+
+    --im-success:     #6B8E5A;
+    --im-alert:       #C44536;
+
+    /* ============ TYPOGRAPHY SCALE ============ */
+    --f-display:  "Fraunces", Georgia, serif;
+    --f-body:     "Inter Tight", system-ui, sans-serif;
+    --f-mono:     "JetBrains Mono", monospace;
+
+    /* ============ SPACING (8px baseline) ============ */
+    --s-1: 4px;   --s-2: 8px;   --s-3: 12px;  --s-4: 16px;
+    --s-5: 24px;  --s-6: 32px;  --s-7: 48px;  --s-8: 64px;
+    --s-9: 96px;  --s-10: 128px; --s-11: 160px;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+
+    --shadow-sm: 0 1px 2px rgba(26,22,18,0.06);
+    --shadow-md: 0 4px 20px rgba(26,22,18,0.08);
+    --shadow-lg: 0 20px 60px rgba(26,22,18,0.12);
+
+    --max-w:   1200px;
+    --max-w-narrow: 720px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--f-body);
+    background: var(--im-bone);
+    color: var(--im-ink);
+    line-height: 1.5;
+    font-feature-settings: "ss01","ss02","cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ============ BLUEPRINT CHROME ============ */
+
+  .bp-nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(246,241,234,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--im-line);
+    padding: var(--s-4) var(--s-6);
+  }
+  .bp-nav-inner {
+    max-width: var(--max-w); margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: var(--s-5);
+  }
+  .bp-nav-title {
+    font-family: var(--f-display);
+    font-size: 18px; font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .bp-nav-title em { font-style: italic; color: var(--im-rose); font-weight: 400; }
+  .bp-nav-links {
+    display: flex; gap: var(--s-5);
+    font-family: var(--f-mono);
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .bp-nav-links a {
+    color: var(--im-ink-70); text-decoration: none;
+    padding-bottom: 2px; border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .bp-nav-links a:hover { color: var(--im-rose); border-color: var(--im-rose); }
+
+  .bp-section {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: var(--s-9) var(--s-6);
+  }
+
+  .bp-section-label {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--im-rose);
+    margin-bottom: var(--s-3);
+  }
+  .bp-section-title {
+    font-family: var(--f-display);
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    margin-bottom: var(--s-4);
+    color: var(--im-ink);
+  }
+  .bp-section-title em {
+    font-style: italic;
+    color: var(--im-rose);
+    font-variation-settings: "SOFT" 100;
+  }
+  .bp-section-lede {
+    font-size: 18px;
+    color: var(--im-ink-70);
+    max-width: 640px;
+    margin-bottom: var(--s-7);
+  }
+
+  /* Callout blocks */
+  .bp-callout {
+    background: var(--im-paper);
+    border-left: 2px solid var(--im-rose);
+    padding: var(--s-5) var(--s-6);
+    margin: var(--s-6) 0;
+    font-size: 14px;
+  }
+  .bp-callout-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--im-rose);
+    margin-bottom: var(--s-2);
+  }
+
+  /* Annotation tags (shown beside wireframes) */
+  .annotation {
+    display: inline-block;
+    font-family: var(--f-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: var(--radius-pill);
+    background: var(--im-rose-soft);
+    color: var(--im-rose-dark);
+    margin-right: var(--s-2);
+    vertical-align: middle;
+  }
+  .annotation.gold { background: #F0E4D0; color: #8B6A3F; }
+  .annotation.ink  { background: var(--im-ink); color: var(--im-paper); }
+
+  /* Code/copy blocks */
+  .copy-block {
+    background: var(--im-ink);
+    color: var(--im-paper);
+    padding: var(--s-5) var(--s-6);
+    border-radius: var(--radius-md);
+    font-family: var(--f-mono);
+    font-size: 13px;
+    line-height: 1.7;
+    margin: var(--s-4) 0;
+    overflow-x: auto;
+  }
+  .copy-block .k { color: #C9B382; }  /* key */
+  .copy-block .v { color: var(--im-paper); }  /* value */
+  .copy-block .c { color: #8A817A; }  /* comment */
+  .copy-block .h { color: var(--im-rose-soft); } /* highlight */
+
+  /* Wireframe frame */
+  .wireframe {
+    border: 1px dashed var(--im-ink-50);
+    border-radius: var(--radius-md);
+    padding: var(--s-5);
+    background: var(--im-paper);
+    margin: var(--s-4) 0;
+    position: relative;
+  }
+  .wireframe-label {
+    position: absolute; top: -10px; left: 16px;
+    background: var(--im-bone);
+    padding: 0 8px;
+    font-family: var(--f-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--im-ink-50);
+  }
+
+  /* Live component previews */
+  .preview {
+    background: linear-gradient(180deg, var(--im-bone) 0%, var(--im-paper) 100%);
+    border-radius: var(--radius-lg);
+    padding: 0;
+    margin: var(--s-6) 0;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--im-line);
+  }
+  .preview-header {
+    background: var(--im-ink);
+    color: var(--im-paper);
+    padding: 10px var(--s-5);
+    display: flex; align-items: center; gap: var(--s-3);
+    font-family: var(--f-mono); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .preview-header-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--im-rose);
+  }
+  .preview-body { padding: 0; background: var(--im-bone); }
+
+  /* ============ HERO BLOCK (LIVE PREVIEW) ============ */
+  .hero-preview {
+    padding: var(--s-10) var(--s-7) var(--s-9);
+    position: relative;
+    background:
+      radial-gradient(circle at 70% 30%, rgba(184,117,107,0.08) 0%, transparent 50%),
+      var(--im-bone);
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: var(--s-8);
+    align-items: center;
+  }
+  .hero-kicker {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--im-rose);
+    margin-bottom: var(--s-5);
+    display: flex; align-items: center; gap: var(--s-3);
+  }
+  .hero-kicker::before {
+    content: ""; width: 24px; height: 1px; background: var(--im-rose);
+  }
+  .hero-h1 {
+    font-family: var(--f-display);
+    font-size: clamp(44px, 5vw, 72px);
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    color: var(--im-ink);
+    margin-bottom: var(--s-5);
+  }
+  .hero-h1 em {
+    font-style: italic;
+    color: var(--im-rose);
+    font-variation-settings: "SOFT" 100;
+    font-weight: 300;
+  }
+  .hero-sub {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--im-ink-70);
+    max-width: 520px;
+    margin-bottom: var(--s-7);
+  }
+  .hero-ctas {
+    display: flex; gap: var(--s-5); align-items: center; flex-wrap: wrap;
+  }
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: linear-gradient(135deg, var(--im-rose-soft), #D4B8AE);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--f-mono); font-size: 11px;
+    color: var(--im-rose-dark); text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .hero-visual::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.2), transparent 50%),
+      radial-gradient(ellipse at 70% 70%, rgba(143,88,80,0.2), transparent 50%);
+  }
+  .hero-visual-caption {
+    position: absolute; bottom: var(--s-4); left: var(--s-4); right: var(--s-4);
+    background: rgba(26,22,18,0.85);
+    color: var(--im-paper);
+    padding: var(--s-3) var(--s-4);
+    border-radius: var(--radius-sm);
+    font-family: var(--f-mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    backdrop-filter: blur(8px);
+    z-index: 2;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: var(--s-2);
+    font-family: var(--f-body);
+    font-size: 15px; font-weight: 500;
+    letter-spacing: 0.01em;
+    padding: 14px 28px;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+    line-height: 1;
+  }
+  .btn-primary {
+    background: var(--im-ink); color: var(--im-bone);
+  }
+  .btn-primary:hover {
+    background: var(--im-rose-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+  .btn-secondary {
+    background: transparent; color: var(--im-ink);
+    border-color: var(--im-ink);
+  }
+  .btn-secondary:hover {
+    background: var(--im-ink); color: var(--im-bone);
+  }
+  .btn-ghost {
+    background: transparent; color: var(--im-ink-70);
+    padding: 14px 0;
+    border: none;
+    border-bottom: 1px solid var(--im-ink-70);
+    border-radius: 0;
+  }
+  .btn-ghost:hover {
+    color: var(--im-rose); border-color: var(--im-rose);
+  }
+  .btn-arrow {
+    display: inline-block; transition: transform 0.2s;
+  }
+  .btn:hover .btn-arrow { transform: translateX(3px); }
+
+  /* ============ TRUST BAR ============ */
+  .trust-bar {
+    background: var(--im-ink);
+    color: var(--im-paper);
+    padding: var(--s-5) var(--s-7);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s-5);
+  }
+  .trust-item {
+    border-left: 1px solid rgba(246,241,234,0.15);
+    padding-left: var(--s-4);
+  }
+  .trust-item:first-child { border-left: none; padding-left: 0; }
+  .trust-number {
+    font-family: var(--f-display);
+    font-size: 32px;
+    font-weight: 300;
+    font-variation-settings: "SOFT" 60;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--im-rose-soft);
+    margin-bottom: 4px;
+  }
+  .trust-number em { font-style: italic; color: var(--im-gold); }
+  .trust-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(246,241,234,0.7);
+  }
+
+  /* ============ RESULTS TRIPTYCH ============ */
+  .triptych-section {
+    padding: var(--s-10) var(--s-7);
+    background: var(--im-paper);
+  }
+  .triptych-header {
+    max-width: var(--max-w-narrow);
+    margin-bottom: var(--s-7);
+  }
+  .triptych-eyebrow {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--im-rose);
+    margin-bottom: var(--s-3);
+  }
+  .triptych-title {
+    font-family: var(--f-display);
+    font-size: clamp(32px, 4vw, 44px);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--im-ink);
+  }
+  .triptych-title em { font-style: italic; color: var(--im-rose); }
+  .triptych-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-5);
+  }
+  .triptych-card {
+    aspect-ratio: 3/4;
+    background: var(--im-rose-soft);
+    position: relative;
+    overflow: hidden;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: var(--s-4);
+    color: var(--im-ink);
+  }
+  .triptych-card::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(26,22,18,0.4) 100%);
+  }
+  .triptych-card.c1 { background: linear-gradient(135deg, #D4B8AE, #B8756B); }
+  .triptych-card.c2 { background: linear-gradient(135deg, #E8D5CF, #C89A8E); }
+  .triptych-card.c3 { background: linear-gradient(135deg, #F2E5DE, #D4B8AE); }
+  .triptych-tag {
+    position: relative; z-index: 2;
+    font-family: var(--f-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--im-paper);
+    background: rgba(26,22,18,0.7);
+    display: inline-block;
+    padding: 4px 10px;
+    backdrop-filter: blur(4px);
+    align-self: flex-start;
+  }
+  .triptych-caption {
+    position: relative; z-index: 2;
+    font-family: var(--f-display);
+    font-size: 20px; font-weight: 400; font-style: italic;
+    color: var(--im-paper);
+    margin-top: var(--s-2);
+    line-height: 1.3;
+  }
+
+  /* ============ METHOD STEPS ============ */
+  .method-section {
+    padding: var(--s-10) var(--s-7);
+    background: var(--im-bone);
+  }
+  .method-header {
+    text-align: center;
+    max-width: var(--max-w-narrow);
+    margin: 0 auto var(--s-8);
+  }
+  .method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--im-line);
+    border-bottom: 1px solid var(--im-line);
+  }
+  .method-step {
+    padding: var(--s-7) var(--s-5);
+    border-left: 1px solid var(--im-line);
+    position: relative;
+  }
+  .method-step:first-child { border-left: none; }
+  .method-num {
+    font-family: var(--f-display);
+    font-size: 64px;
+    font-weight: 300;
+    font-variation-settings: "SOFT" 100;
+    color: var(--im-rose);
+    line-height: 1;
+    font-style: italic;
+    margin-bottom: var(--s-4);
+  }
+  .method-name {
+    font-family: var(--f-display);
+    font-size: 24px; font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: var(--s-3);
+    color: var(--im-ink);
+  }
+  .method-desc {
+    font-size: 15px;
+    color: var(--im-ink-70);
+    line-height: 1.55;
+  }
+
+  /* ============ STORY / PRICING ============ */
+  .pricing-section {
+    padding: var(--s-10) var(--s-7);
+    background: var(--im-ink);
+    color: var(--im-paper);
+  }
+  .pricing-header { text-align: center; margin-bottom: var(--s-8); }
+  .pricing-eyebrow {
+    font-family: var(--f-mono); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    color: var(--im-rose-soft);
+    margin-bottom: var(--s-3);
+  }
+  .pricing-title {
+    font-family: var(--f-display);
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+  .pricing-title em { font-style: italic; color: var(--im-rose-soft); }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-5);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .price-card {
+    background: rgba(246,241,234,0.04);
+    border: 1px solid rgba(246,241,234,0.15);
+    padding: var(--s-6);
+    position: relative;
+  }
+  .price-card.featured {
+    background: var(--im-rose);
+    border-color: var(--im-rose);
+  }
+  .price-card.featured .price-name,
+  .price-card.featured .price-amount,
+  .price-card.featured .price-desc,
+  .price-card.featured .price-features li { color: var(--im-bone); }
+  .price-card.featured .price-unit { color: var(--im-rose-soft); }
+  .price-tag {
+    position: absolute; top: -10px; left: var(--s-5);
+    background: var(--im-gold); color: var(--im-ink);
+    font-family: var(--f-mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    padding: 4px 10px;
+  }
+  .price-name {
+    font-family: var(--f-display);
+    font-size: 24px; font-weight: 400;
+    margin-bottom: var(--s-2);
+    color: var(--im-paper);
+  }
+  .price-desc {
+    font-size: 14px;
+    color: rgba(246,241,234,0.7);
+    margin-bottom: var(--s-5);
+    min-height: 42px;
+  }
+  .price-amount {
+    font-family: var(--f-display);
+    font-size: 56px; font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--im-paper);
+    margin-bottom: var(--s-5);
+  }
+  .price-unit {
+    font-family: var(--f-mono); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246,241,234,0.5);
+    display: block;
+    margin-top: var(--s-2);
+  }
+  .price-features {
+    list-style: none;
+    margin-bottom: var(--s-6);
+  }
+  .price-features li {
+    padding: var(--s-3) 0;
+    border-top: 1px solid rgba(246,241,234,0.1);
+    font-size: 14px;
+    color: rgba(246,241,234,0.85);
+    display: flex; align-items: flex-start; gap: var(--s-3);
+  }
+  .price-card.featured .price-features li {
+    border-color: rgba(246,241,234,0.2);
+  }
+  .price-features li::before {
+    content: "→"; color: var(--im-rose); flex-shrink: 0;
+  }
+  .price-card.featured .price-features li::before { color: var(--im-bone); }
+
+  /* ============ STICKY MOBILE CTA ============ */
+  .mobile-demo {
+    max-width: 380px;
+    margin: 0 auto;
+    border: 12px solid var(--im-ink);
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background: var(--im-bone);
+    position: relative;
+  }
+  .mobile-screen {
+    height: 680px;
+    overflow-y: auto;
+    position: relative;
+  }
+  .mobile-status {
+    background: var(--im-ink);
+    color: var(--im-bone);
+    padding: 8px var(--s-4) 4px;
+    display: flex; justify-content: space-between;
+    font-family: var(--f-mono); font-size: 10px;
+  }
+  .mobile-hero {
+    padding: var(--s-7) var(--s-5) var(--s-6);
+    background:
+      radial-gradient(circle at 80% 20%, rgba(184,117,107,0.12) 0%, transparent 60%),
+      var(--im-bone);
+  }
+  .mobile-hero-kicker {
+    font-family: var(--f-mono); font-size: 9px;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    color: var(--im-rose);
+    margin-bottom: var(--s-3);
+  }
+  .mobile-hero-h1 {
+    font-family: var(--f-display);
+    font-size: 34px; font-weight: 300;
+    line-height: 1.05; letter-spacing: -0.03em;
+    margin-bottom: var(--s-3);
+  }
+  .mobile-hero-h1 em { font-style: italic; color: var(--im-rose); }
+  .mobile-hero-sub {
+    font-size: 14px;
+    color: var(--im-ink-70);
+    line-height: 1.5;
+  }
+  .mobile-hero-img {
+    margin-top: var(--s-5);
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #D4B8AE, #B8756B);
+    border-radius: 2px;
+  }
+  .mobile-trust {
+    background: var(--im-ink); color: var(--im-paper);
+    padding: var(--s-5);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: var(--s-4);
+  }
+  .mobile-trust-item .num {
+    font-family: var(--f-display); font-size: 24px;
+    font-weight: 300; color: var(--im-rose-soft);
+    font-style: italic;
+  }
+  .mobile-trust-item .lbl {
+    font-family: var(--f-mono); font-size: 9px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(246,241,234,0.6);
+  }
+  .sticky-cta-bar {
+    position: sticky; bottom: 0;
+    background: var(--im-ink);
+    padding: var(--s-3) var(--s-4);
+    display: flex; gap: var(--s-3);
+    border-top: 1px solid rgba(246,241,234,0.1);
+    z-index: 10;
+  }
+  .sticky-cta-bar .btn {
+    flex: 1;
+    padding: 14px var(--s-4);
+    font-size: 13px;
+    justify-content: center;
+  }
+  .sticky-cta-bar .btn-sticky-primary {
+    background: var(--im-rose); color: var(--im-bone);
+    border: none;
+  }
+  .sticky-cta-bar .btn-sticky-ghost {
+    background: transparent; color: var(--im-bone);
+    border: 1px solid rgba(246,241,234,0.3);
+  }
+
+  /* ============ SPEC TABLES ============ */
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: var(--s-5) 0;
+    font-family: var(--f-body);
+  }
+  .spec-table th, .spec-table td {
+    padding: var(--s-3) var(--s-4);
+    text-align: left;
+    border-bottom: 1px solid var(--im-line);
+    vertical-align: top;
+  }
+  .spec-table th {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--im-ink-50);
+    font-weight: 500;
+    background: var(--im-paper);
+  }
+  .spec-table td code, .spec-table th code {
+    font-family: var(--f-mono); font-size: 12px;
+    background: var(--im-paper); padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--im-rose-dark);
+  }
+
+  /* Color swatches */
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--s-4);
+    margin: var(--s-5) 0;
+  }
+  .color-chip {
+    border: 1px solid var(--im-line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+  .color-swatch {
+    aspect-ratio: 3/2;
+    display: flex; align-items: flex-end;
+    padding: var(--s-3);
+  }
+  .color-meta {
+    padding: var(--s-3) var(--s-4);
+    background: var(--im-paper);
+  }
+  .color-name {
+    font-weight: 500; font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .color-hex {
+    font-family: var(--f-mono); font-size: 11px;
+    color: var(--im-ink-50);
+    text-transform: uppercase;
+  }
+  .color-usage {
+    font-size: 12px; color: var(--im-ink-70);
+    margin-top: var(--s-2);
+  }
+
+  /* Type specimens */
+  .type-spec {
+    padding: var(--s-5) 0;
+    border-bottom: 1px solid var(--im-line);
+  }
+  .type-spec-meta {
+    display: flex; gap: var(--s-5); flex-wrap: wrap;
+    font-family: var(--f-mono); font-size: 11px;
+    color: var(--im-ink-50);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: var(--s-3);
+  }
+  .type-spec-meta strong { color: var(--im-ink); font-weight: 500; }
+
+  /* Spacing scale visualization */
+  .space-scale {
+    display: flex; flex-direction: column; gap: var(--s-3);
+    margin: var(--s-5) 0;
+  }
+  .space-row {
+    display: grid;
+    grid-template-columns: 80px 80px 1fr;
+    align-items: center;
+    gap: var(--s-4);
+    font-family: var(--f-mono); font-size: 12px;
+  }
+  .space-name { font-weight: 500; }
+  .space-value { color: var(--im-ink-50); }
+  .space-bar {
+    height: 16px; background: var(--im-rose);
+    border-radius: 2px;
+  }
+
+  /* Button specimens */
+  .btn-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--s-5); margin: var(--s-5) 0;
+  }
+  .btn-specimen {
+    padding: var(--s-5);
+    background: var(--im-paper);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--im-line);
+  }
+  .btn-specimen-label {
+    font-family: var(--f-mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--im-ink-50);
+    margin-bottom: var(--s-3);
+  }
+  .btn-specimen-preview {
+    margin: var(--s-4) 0;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 60px;
+    padding: var(--s-4);
+    background: var(--im-bone);
+    border-radius: var(--radius-sm);
+  }
+
+  /* Section numbering */
+  .bp-big-num {
+    font-family: var(--f-display);
+    font-size: 180px;
+    font-weight: 300;
+    font-variation-settings: "SOFT" 100;
+    color: var(--im-rose-soft);
+    line-height: 0.8;
+    font-style: italic;
+    margin-bottom: var(--s-5);
+    letter-spacing: -0.05em;
+  }
+
+  /* Wireframe boxes */
+  .wire-row {
+    display: flex; gap: var(--s-3);
+    margin-bottom: var(--s-3);
+  }
+  .wire-box {
+    background: rgba(26,22,18,0.04);
+    border: 1px solid var(--im-line);
+    padding: var(--s-3) var(--s-4);
+    flex: 1;
+    font-family: var(--f-mono); font-size: 11px;
+    color: var(--im-ink-70);
+    min-height: 40px;
+    display: flex; align-items: center; gap: var(--s-3);
+  }
+  .wire-box.dark {
+    background: var(--im-ink); color: var(--im-bone);
+    border-color: var(--im-ink);
+  }
+  .wire-box.accent {
+    background: var(--im-rose-soft);
+    border-color: var(--im-rose);
+    color: var(--im-rose-dark);
+  }
+  .wire-box.tall { min-height: 120px; }
+  .wire-box.taller { min-height: 200px; }
+  .wire-box.xtall { min-height: 320px; }
+
+  /* Flow diagram */
+  .flow-diagram {
+    display: flex; align-items: stretch; gap: 0;
+    margin: var(--s-6) 0;
+    flex-wrap: wrap;
+  }
+  .flow-node {
+    flex: 1; min-width: 160px;
+    background: var(--im-paper);
+    border: 1px solid var(--im-line);
+    padding: var(--s-4);
+    position: relative;
+  }
+  .flow-node + .flow-node::before {
+    content: "→";
+    position: absolute;
+    left: -12px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--im-rose); font-size: 20px;
+    background: var(--im-bone);
+    width: 24px; text-align: center;
+  }
+  .flow-node-step {
+    font-family: var(--f-mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--im-rose);
+    margin-bottom: var(--s-2);
+  }
+  .flow-node-title {
+    font-family: var(--f-display); font-size: 18px;
+    font-weight: 500; margin-bottom: var(--s-2);
+    letter-spacing: -0.01em;
+  }
+  .flow-node-desc {
+    font-size: 12px; color: var(--im-ink-70);
+    line-height: 1.5;
+  }
+
+  /* Mobile scroll flow */
+  .mobile-flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--s-4);
+    margin: var(--s-5) 0;
+  }
+  .mobile-frame-mini {
+    border: 6px solid var(--im-ink);
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    background: var(--im-bone);
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+  .mf-label {
+    position: absolute; top: -24px; left: 0;
+    font-family: var(--f-mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--im-ink-50);
+  }
+  .mf-bar {
+    height: 8px; margin: 4px 8px;
+    background: var(--im-line);
+    border-radius: 2px;
+  }
+  .mf-bar.wide { width: 80%; }
+  .mf-bar.narrow { width: 50%; }
+  .mf-bar.accent { background: var(--im-rose); }
+  .mf-bar.dark { background: var(--im-ink); }
+  .mf-img {
+    margin: 8px; height: 80px;
+    background: linear-gradient(135deg, #D4B8AE, #B8756B);
+    border-radius: 2px;
+  }
+  .mf-title {
+    font-family: var(--f-display);
+    font-size: 13px; padding: 8px;
+    font-weight: 500; line-height: 1.2;
+  }
+  .mf-cta-bar {
+    margin-top: auto;
+    background: var(--im-ink);
+    padding: 6px;
+    display: flex; gap: 4px;
+  }
+  .mf-cta-btn {
+    flex: 1; height: 20px;
+    background: var(--im-rose); border-radius: 2px;
+  }
+  .mf-cta-btn.ghost {
+    background: transparent;
+    border: 1px solid rgba(246,241,234,0.3);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-preview, .method-grid, .triptych-grid, .pricing-grid, .trust-bar {
+      grid-template-columns: 1fr !important;
+    }
+    .method-step { border-left: none; border-top: 1px solid var(--im-line); }
+    .trust-item { border-left: none; padding-left: 0; }
+    .bp-section { padding: var(--s-7) var(--s-4); }
+    .bp-big-num { font-size: 100px; }
+    .flow-node + .flow-node::before { display: none; }
+  }
+
+  /* Utility */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6); }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-5); }
+  @media (max-width: 768px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  }
+
+  .divider-ornament {
+    display: flex; align-items: center; justify-content: center;
+    gap: var(--s-4); margin: var(--s-8) 0;
+    color: var(--im-rose);
+  }
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: ""; flex: 1; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--im-line), transparent);
+  }
+  .divider-ornament span {
+    font-family: var(--f-display); font-size: 20px; font-style: italic;
+  }
+
+  /* Toggle tabs */
+  .tabs {
+    display: flex; gap: 0; margin-bottom: var(--s-5);
+    border-bottom: 1px solid var(--im-line);
+  }
+  .tab {
+    padding: var(--s-3) var(--s-5);
+    font-family: var(--f-mono); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--im-ink-50);
+    background: transparent;
+    border: none; cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+  }
+  .tab.active {
+    color: var(--im-rose);
+    border-bottom-color: var(--im-rose);
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="bp-nav">
+  <div class="bp-nav-inner">
+    <div class="bp-nav-title">Ink Mugi <em>/ Execution Blueprint</em></div>
+    <div class="bp-nav-links">
+      <a href="#design-system">01 System</a>
+      <a href="#homepage">02 Home</a>
+      <a href="#service">03 Service</a>
+      <a href="#conversion">04 Conversion</a>
+      <a href="#mobile">05 Mobile</a>
+      <a href="#dev-handoff">06 Handoff</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HEADER ============ -->
+<section class="bp-section" style="padding-top: var(--s-8); padding-bottom: var(--s-7);">
+  <div class="bp-section-label">EXECUTION BLUEPRINT / V1.0 / BUILD-READY</div>
+  <h1 class="bp-section-title">A complete, developer-ready specification for <em>inkmugi.com</em>.</h1>
+  <p class="bp-section-lede">Final copy. Zero placeholders. Every section below is implementation-grade — hand it to a developer, designer, or Webflow/Framer builder and ship.</p>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">BUILD STACK RECOMMENDATION</div>
+    <strong>Framer</strong> (fastest to ship, SSR-native, native CMS for galleries/reviews) or <strong>Next.js 14 + Tailwind + Sanity CMS</strong> (maximum control). Avoid: Squarespace (SSR flaky), Wix (slow LCP). Verify current platform with <code style="font-family: var(--f-mono); background: var(--im-line); padding: 2px 6px;">curl -A "Googlebot" https://inkmugi.com/</code> — if body content returns, current platform is salvageable.
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SECTION 01 — DESIGN SYSTEM                                      -->
+<!-- ============================================================== -->
+<section class="bp-section" id="design-system">
+  <div class="bp-big-num">01</div>
+  <div class="bp-section-label">DESIGN SYSTEM / TOKENS / FOUNDATIONS</div>
+  <h2 class="bp-section-title">The <em>system</em>.</h2>
+  <p class="bp-section-lede">Every color, type choice, and spacing unit below has been committed. Load these once as CSS variables or Tailwind tokens and never deviate.</p>
+
+  <!-- COLOR PALETTE -->
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">1.1 Color palette</h3>
+  <p style="color: var(--im-ink-70); margin-bottom: var(--s-5);">Warm editorial neutrals + one clay rose accent. Never use: pink gradients, gold foil, black-and-white only, or cool grays (they kill the warmth).</p>
+
+  <div class="color-grid">
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #F6F1EA; border-bottom: 1px solid var(--im-line);"></div>
+      <div class="color-meta">
+        <div class="color-name">Bone</div>
+        <div class="color-hex">#F6F1EA</div>
+        <div class="color-usage">Primary page background</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #FBF8F3; border-bottom: 1px solid var(--im-line);"></div>
+      <div class="color-meta">
+        <div class="color-name">Paper</div>
+        <div class="color-hex">#FBF8F3</div>
+        <div class="color-usage">Cards, elevated surfaces</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #1A1612;"></div>
+      <div class="color-meta">
+        <div class="color-name">Ink</div>
+        <div class="color-hex">#1A1612</div>
+        <div class="color-usage">Primary text, primary CTA, footer</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #524A43;"></div>
+      <div class="color-meta">
+        <div class="color-name">Ink-70</div>
+        <div class="color-hex">#524A43</div>
+        <div class="color-usage">Body copy, descriptions</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #8A817A;"></div>
+      <div class="color-meta">
+        <div class="color-name">Ink-50</div>
+        <div class="color-hex">#8A817A</div>
+        <div class="color-usage">Labels, meta, captions</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #B8756B;"></div>
+      <div class="color-meta">
+        <div class="color-name">Rose (accent)</div>
+        <div class="color-hex">#B8756B</div>
+        <div class="color-usage">Accent, eyebrows, italic display</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #8F5850;"></div>
+      <div class="color-meta">
+        <div class="color-name">Rose-Dark</div>
+        <div class="color-hex">#8F5850</div>
+        <div class="color-usage">Hover states, active</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #E8D5CF;"></div>
+      <div class="color-meta">
+        <div class="color-name">Rose-Soft</div>
+        <div class="color-hex">#E8D5CF</div>
+        <div class="color-usage">Tints, badges, soft bg</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #B8966B;"></div>
+      <div class="color-meta">
+        <div class="color-name">Gold (micro)</div>
+        <div class="color-hex">#B8966B</div>
+        <div class="color-usage">Data-claim emphasis only</div>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-swatch" style="background: #E6DED3;"></div>
+      <div class="color-meta">
+        <div class="color-name">Line</div>
+        <div class="color-hex">#E6DED3</div>
+        <div class="color-usage">Dividers, borders</div>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="font-family: var(--f-display); font-size: 18px; font-weight: 500; margin-top: var(--s-6); margin-bottom: var(--s-3);">Color ratio rule</h4>
+  <p style="color: var(--im-ink-70); font-size: 14px;">Per page: Bone/Paper 70%, Ink 20%, Rose 7%, Gold 3%. Gold appears ONLY on the "0.19%" and "523+" numerals. Never on buttons, icons, or typography elsewhere.</p>
+
+  <div class="divider-ornament"><span>⁂</span></div>
+
+  <!-- TYPOGRAPHY -->
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">1.2 Typography</h3>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">FONT PAIRING / LOAD ORDER</div>
+    <strong>Display:</strong> Fraunces (variable, SOFT + opsz axes used) — Google Fonts, self-host for production.<br>
+    <strong>Body:</strong> Inter Tight (weights 400, 500, 600) — Google Fonts.<br>
+    <strong>Mono:</strong> JetBrains Mono (weight 400, 500) — for meta/labels/eyebrow tags only.<br>
+    <code style="display: block; margin-top: var(--s-3); font-size: 11px; background: var(--im-line); padding: var(--s-3); overflow-x: auto;">&lt;link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"&gt;</code>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>H1 / Hero</strong><span>Fraunces</span><span>72/76</span><span>Weight 300</span><span>Letter −0.035em</span><span>SOFT 100 (italic only)</span></div>
+    <div style="font-family: var(--f-display); font-size: 72px; font-weight: 300; line-height: 1.02; letter-spacing: -0.035em;">Brows you don't have to <em style="font-style: italic; color: var(--im-rose); font-variation-settings: 'SOFT' 100;">think about.</em></div>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>H2 / Section</strong><span>Fraunces</span><span>44/48</span><span>Weight 300</span><span>Letter −0.025em</span></div>
+    <div style="font-family: var(--f-display); font-size: 44px; font-weight: 300; line-height: 1.08; letter-spacing: -0.025em;">The <em style="font-style: italic; color: var(--im-rose);">Ink Mugi</em> method.</div>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>H3 / Block</strong><span>Fraunces</span><span>24/28</span><span>Weight 500</span><span>Letter −0.015em</span></div>
+    <div style="font-family: var(--f-display); font-size: 24px; font-weight: 500; line-height: 1.2; letter-spacing: -0.015em;">01 / Mapping</div>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>Lede / Subhead</strong><span>Inter Tight</span><span>20/30</span><span>Weight 400</span><span>Color Ink-70</span></div>
+    <div style="font-family: var(--f-body); font-size: 20px; line-height: 1.5; color: var(--im-ink-70); font-weight: 400;">523 procedures. A 0.19% complication rate. One artist who treats your face like the one thing she refuses to rush.</div>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>Body</strong><span>Inter Tight</span><span>16/26</span><span>Weight 400</span></div>
+    <div style="font-family: var(--f-body); font-size: 16px; line-height: 1.62; color: var(--im-ink);">Ombré powder brows are a method, not a trend. Using a precision machine, pigment is layered into the upper dermis in thousands of fine dots, building a soft gradient that reads as makeup — never as a tattoo.</div>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>Eyebrow / Label</strong><span>JetBrains Mono</span><span>11/16</span><span>Weight 500</span><span>Tracking 0.15em</span><span>ALL CAPS</span></div>
+    <div style="font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--im-rose);">LICENSED PMU — ANNANDALE, VIRGINIA</div>
+  </div>
+
+  <div class="type-spec">
+    <div class="type-spec-meta"><strong>Stat numeral</strong><span>Fraunces italic</span><span>56/56</span><span>Weight 300</span><span>SOFT 60</span></div>
+    <div style="font-family: var(--f-display); font-size: 56px; font-weight: 300; font-style: italic; font-variation-settings: 'SOFT' 60; color: var(--im-gold); line-height: 1;">0.19<span style="font-size: 32px;">%</span></div>
+  </div>
+
+  <div class="divider-ornament"><span>⁂</span></div>
+
+  <!-- SPACING -->
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">1.3 Spacing system (8px baseline)</h3>
+
+  <div class="space-scale">
+    <div class="space-row"><span class="space-name">s-1</span><span class="space-value">4px</span><div class="space-bar" style="width: 4px;"></div></div>
+    <div class="space-row"><span class="space-name">s-2</span><span class="space-value">8px</span><div class="space-bar" style="width: 8px;"></div></div>
+    <div class="space-row"><span class="space-name">s-3</span><span class="space-value">12px</span><div class="space-bar" style="width: 12px;"></div></div>
+    <div class="space-row"><span class="space-name">s-4</span><span class="space-value">16px</span><div class="space-bar" style="width: 16px;"></div></div>
+    <div class="space-row"><span class="space-name">s-5</span><span class="space-value">24px</span><div class="space-bar" style="width: 24px;"></div></div>
+    <div class="space-row"><span class="space-name">s-6</span><span class="space-value">32px</span><div class="space-bar" style="width: 32px;"></div></div>
+    <div class="space-row"><span class="space-name">s-7</span><span class="space-value">48px</span><div class="space-bar" style="width: 48px;"></div></div>
+    <div class="space-row"><span class="space-name">s-8</span><span class="space-value">64px</span><div class="space-bar" style="width: 64px;"></div></div>
+    <div class="space-row"><span class="space-name">s-9</span><span class="space-value">96px</span><div class="space-bar" style="width: 96px;"></div></div>
+    <div class="space-row"><span class="space-name">s-10</span><span class="space-value">128px</span><div class="space-bar" style="width: 128px;"></div></div>
+    <div class="space-row"><span class="space-name">s-11</span><span class="space-value">160px</span><div class="space-bar" style="width: 160px;"></div></div>
+  </div>
+
+  <table class="spec-table">
+    <thead>
+      <tr><th>Usage</th><th>Desktop</th><th>Mobile</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Section vertical padding</td><td><code>s-10</code> (128px top/bottom)</td><td><code>s-7</code> (48px)</td></tr>
+      <tr><td>Section horizontal padding</td><td><code>s-7</code> (48px)</td><td><code>s-4</code> (16px)</td></tr>
+      <tr><td>Card padding</td><td><code>s-6</code> (32px)</td><td><code>s-5</code> (24px)</td></tr>
+      <tr><td>Gap between H1 and subhead</td><td><code>s-5</code> (24px)</td><td><code>s-4</code> (16px)</td></tr>
+      <tr><td>Gap between subhead and CTA</td><td><code>s-7</code> (48px)</td><td><code>s-6</code> (32px)</td></tr>
+      <tr><td>Gap between grid items</td><td><code>s-5</code> (24px)</td><td><code>s-4</code> (16px)</td></tr>
+      <tr><td>Max content width (wide)</td><td><code>1200px</code></td><td>100%</td></tr>
+      <tr><td>Max content width (narrow)</td><td><code>720px</code></td><td>100%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider-ornament"><span>⁂</span></div>
+
+  <!-- BUTTONS -->
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">1.4 Button system</h3>
+
+  <div class="btn-grid">
+    <div class="btn-specimen">
+      <div class="btn-specimen-label">PRIMARY / BTN-PRIMARY</div>
+      <div class="btn-specimen-preview">
+        <a href="#" class="btn btn-primary">Book your free consultation <span class="btn-arrow">→</span></a>
+      </div>
+      <table class="spec-table">
+        <tr><td>BG</td><td><code>#1A1612</code></td></tr>
+        <tr><td>Text</td><td><code>#F6F1EA</code></td></tr>
+        <tr><td>Padding</td><td><code>14px 28px</code></td></tr>
+        <tr><td>Radius</td><td><code>2px</code></td></tr>
+        <tr><td>Size</td><td><code>15px / 500</code></td></tr>
+        <tr><td>Hover</td><td>BG → Rose-Dark, translateY(-1px)</td></tr>
+      </table>
+    </div>
+
+    <div class="btn-specimen">
+      <div class="btn-specimen-label">SECONDARY / BTN-SECONDARY</div>
+      <div class="btn-specimen-preview">
+        <a href="#" class="btn btn-secondary">View healed results</a>
+      </div>
+      <table class="spec-table">
+        <tr><td>BG</td><td>transparent</td></tr>
+        <tr><td>Border</td><td><code>1px solid #1A1612</code></td></tr>
+        <tr><td>Text</td><td><code>#1A1612</code></td></tr>
+        <tr><td>Hover</td><td>BG → Ink, text → Bone</td></tr>
+      </table>
+    </div>
+
+    <div class="btn-specimen">
+      <div class="btn-specimen-label">GHOST / BTN-GHOST (low-commit)</div>
+      <div class="btn-specimen-preview">
+        <a href="#" class="btn btn-ghost">Get the candidate guide →</a>
+      </div>
+      <table class="spec-table">
+        <tr><td>BG</td><td>transparent</td></tr>
+        <tr><td>Border-bottom</td><td><code>1px solid Ink-70</code></td></tr>
+        <tr><td>Use for</td><td>Secondary/tertiary CTAs, lead magnets</td></tr>
+      </table>
+    </div>
+
+    <div class="btn-specimen">
+      <div class="btn-specimen-label">STICKY MOBILE / BTN-STICKY</div>
+      <div class="btn-specimen-preview" style="background: var(--im-ink); padding: var(--s-3);">
+        <a href="#" style="flex: 1; text-align: center; background: var(--im-rose); color: var(--im-bone); padding: 12px 20px; border-radius: 2px; font-size: 14px; font-weight: 500; font-family: var(--f-body); text-decoration: none;">Book free consult</a>
+      </div>
+      <table class="spec-table">
+        <tr><td>BG</td><td><code>#B8756B</code> (Rose)</td></tr>
+        <tr><td>Container</td><td>Ink bar, full width, 12px padding</td></tr>
+        <tr><td>Appears</td><td>After hero scroll (>400px on mobile)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">BUTTON RULES</div>
+    <strong>1.</strong> Max 2 primary CTAs visible at once (hero + sticky mobile). Everything else is ghost or secondary.<br>
+    <strong>2.</strong> Radius = 2px always. Never pill. Never squared (0px reads brutalist). 2px is the system signature.<br>
+    <strong>3.</strong> Primary buttons always end in "→" (→ anchors forward motion, non-negotiable).<br>
+    <strong>4.</strong> Hover lift = 1px, never more. Restraint is the signal.
+  </div>
+
+  <div class="divider-ornament"><span>⁂</span></div>
+
+  <!-- GRID -->
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">1.5 Grid & layout</h3>
+
+  <table class="spec-table">
+    <thead>
+      <tr><th>Breakpoint</th><th>Range</th><th>Columns</th><th>Gutter</th><th>Margin</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>320–639px</td><td>4</td><td>16px</td><td>16px</td></tr>
+      <tr><td>Tablet</td><td>640–1023px</td><td>8</td><td>24px</td><td>32px</td></tr>
+      <tr><td>Desktop</td><td>1024px+</td><td>12</td><td>24px</td><td>auto (max 1200px)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">SECTION PATTERNS</div>
+    <strong>Full-width</strong> → dark sections (Trust bar, Pricing). Background extends edge-to-edge, content respects 1200px max.<br>
+    <strong>Contained</strong> → default for all content sections. 1200px max, auto margins.<br>
+    <strong>Narrow</strong> → headers, long-form copy. 720px max, auto margins, centered.
+  </div>
+
+  <div class="divider-ornament"><span>⁂</span></div>
+
+  <!-- MOTION -->
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">1.6 Motion & interactions</h3>
+
+  <table class="spec-table">
+    <thead>
+      <tr><th>Element</th><th>Trigger</th><th>Animation</th><th>Duration / Easing</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Hero H1 + subhead</td><td>Page load</td><td>Fade + translateY(12px → 0), staggered 80ms</td><td>600ms / cubic-bezier(.22,1,.36,1)</td></tr>
+      <tr><td>Section reveal</td><td>Scroll into view (IntersectionObserver)</td><td>Fade + translateY(24px → 0)</td><td>500ms / ease-out</td></tr>
+      <tr><td>Button hover</td><td>mouseenter</td><td>BG shift + translateY(-1px) + shadow</td><td>250ms / ease</td></tr>
+      <tr><td>Arrow glyph (→)</td><td>Button hover</td><td>translateX(3px)</td><td>200ms / ease</td></tr>
+      <tr><td>Image gallery card</td><td>Hover</td><td>scale(1.02) on inner image, not outer</td><td>500ms / cubic-bezier(.22,1,.36,1)</td></tr>
+      <tr><td>Sticky mobile CTA</td><td>Scroll past 400px on mobile</td><td>slideUp from bottom</td><td>300ms / ease-out</td></tr>
+      <tr><td>Nav blur on scroll</td><td>scrollY > 40px</td><td>backdrop-filter blur(12px) + bg opacity 0.92</td><td>200ms</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">MOTION RULE</div>
+    Restraint. One orchestrated hero reveal on load, subtle scroll reveals, button micro-interactions. Nothing else. No parallax. No cursor effects. No scroll-jacking. The photography does the work.
+  </div>
+
+</section>
+
+<!-- ============================================================== -->
+<!-- SECTION 02 — HOMEPAGE                                          -->
+<!-- ============================================================== -->
+<section class="bp-section" id="homepage">
+  <div class="bp-big-num">02</div>
+  <div class="bp-section-label">HOMEPAGE / TOP-TO-BOTTOM / EXACT COPY</div>
+  <h2 class="bp-section-title">The <em>homepage</em>.</h2>
+  <p class="bp-section-lede">Eight sections. Every word final. Wireframe, copy, and live render — in order.</p>
+
+  <!-- SECTION MAP -->
+  <div class="wireframe" style="padding: var(--s-6);">
+    <div class="wireframe-label">SECTION MAP — ORDER OF BUILD</div>
+    <div class="wire-row"><div class="wire-box dark">§A / Nav (60px tall, sticky)</div></div>
+    <div class="wire-row"><div class="wire-box xtall">§B / Hero — 720px min-height — H1 left, healed-result image right</div></div>
+    <div class="wire-row"><div class="wire-box dark tall">§C / Trust bar — 4-column stats — full-width Ink bg</div></div>
+    <div class="wire-row"><div class="wire-box taller">§D / Healed-results triptych — Day 1 / Day 14 / Day 45 healed</div></div>
+    <div class="wire-row"><div class="wire-box tall">§E / The Ink Mugi Method — 3 steps, numbered</div></div>
+    <div class="wire-row"><div class="wire-box accent tall">§F / Artist intro — "Meet Nara" teaser card</div></div>
+    <div class="wire-row"><div class="wire-box taller">§G / Testimonials + video placeholder</div></div>
+    <div class="wire-row"><div class="wire-box dark taller">§H / Pricing / Three offers — full-width Ink bg</div></div>
+    <div class="wire-row"><div class="wire-box tall">§I / Lead magnet / Candidate Guide capture</div></div>
+    <div class="wire-row"><div class="wire-box tall">§J / FAQ accordion (6 questions)</div></div>
+    <div class="wire-row"><div class="wire-box dark">§K / Final CTA + footer</div></div>
+  </div>
+
+  <!-- ================= §B HERO ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§B Hero</h3>
+
+  <div class="tabs">
+    <button class="tab active">Live render</button>
+    <button class="tab">Copy</button>
+    <button class="tab">Specs</button>
+  </div>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>inkmugi.com — hero — 1200px desktop</span>
+    </div>
+    <div class="preview-body">
+      <div class="hero-preview">
+        <div>
+          <div class="hero-kicker">LICENSED PMU — ANNANDALE, VIRGINIA</div>
+          <h1 class="hero-h1">Brows you don't have to <em>think about.</em></h1>
+          <p class="hero-sub">523 procedures. A 0.19% complication rate. One artist who treats your face like the one thing she refuses to rush.</p>
+          <div class="hero-ctas">
+            <a href="#" class="btn btn-primary">Book your free consultation <span class="btn-arrow">→</span></a>
+            <a href="#" class="btn btn-ghost">Get the candidate guide →</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-caption">Day 45 healed — client consented</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §B HERO — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"LICENSED PMU — ANNANDALE, VIRGINIA"</span>
+<span class="k">h1:</span>        <span class="h">"Brows you don't have to think about."</span>  <span class="c">// "think about" = italic, rose color</span>
+<span class="k">subhead:</span>   <span class="v">"523 procedures. A 0.19% complication rate. One artist who</span>
+            <span class="v">treats your face like the one thing she refuses to rush."</span>
+<span class="k">cta_1:</span>     <span class="v">"Book your free consultation →"</span>  <span class="c">// btn-primary, links /book</span>
+<span class="k">cta_2:</span>     <span class="v">"Get the candidate guide →"</span>      <span class="c">// btn-ghost, triggers email modal</span>
+<span class="k">image:</span>     <span class="v">Day 45 healed portfolio shot — 4:5 ratio — minimum 1600×2000px</span>
+<span class="k">caption:</span>   <span class="v">"Day 45 healed — client consented"</span>   <span class="c">// overlays bottom-left on image</span>
+  </div>
+
+  <table class="spec-table">
+    <thead><tr><th>Element</th><th>Spec</th></tr></thead>
+    <tbody>
+      <tr><td>Section height</td><td><code>min-height: 720px</code> desktop, auto mobile</td></tr>
+      <tr><td>Padding</td><td><code>128px top, 96px bottom, 48px horizontal</code></td></tr>
+      <tr><td>Grid</td><td>Desktop: 1.3fr 1fr. Mobile: single column, image below copy.</td></tr>
+      <tr><td>Background</td><td>Bone + radial gradient top-right, 8% Rose opacity</td></tr>
+      <tr><td>H1 animation</td><td>Fade + rise 12px, 600ms on load</td></tr>
+      <tr><td>Image treatment</td><td>No border radius. Subtle gradient overlay for caption legibility.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ================= §C TRUST BAR ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§C Trust bar</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§C — full-width Ink bar — sits immediately under hero</span>
+    </div>
+    <div class="preview-body">
+      <div class="trust-bar">
+        <div class="trust-item">
+          <div class="trust-number"><em>523+</em></div>
+          <div class="trust-label">Procedures completed</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-number"><em>0.19%</em></div>
+          <div class="trust-label">Reported complication rate</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-number">VA</div>
+          <div class="trust-label">Licensed — Board of Barbers & Cosmetology</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-number">100%</div>
+          <div class="trust-label">Single-use sterile cartridges</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §C TRUST BAR — COPY (final)</span>
+<span class="k">stat_1:</span>  <span class="h">"523+"</span>    <span class="v">→ "Procedures completed"</span>
+<span class="k">stat_2:</span>  <span class="h">"0.19%"</span>   <span class="v">→ "Reported complication rate"</span>
+<span class="k">stat_3:</span>  <span class="h">"VA"</span>      <span class="v">→ "Licensed — Board of Barbers &amp; Cosmetology"</span>
+<span class="k">stat_4:</span>  <span class="h">"100%"</span>    <span class="v">→ "Single-use sterile cartridges"</span>
+
+<span class="c">// Numerals in Fraunces italic, SOFT 60, Gold (#B8966B) color</span>
+<span class="c">// Labels in JetBrains Mono 10px uppercase</span>
+<span class="c">// Divider lines between items: 1px rgba(246,241,234,0.15)</span>
+  </div>
+
+  <!-- ================= §D TRIPTYCH ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§D Healed-results triptych</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§D — healed-results evidence grid</span>
+    </div>
+    <div class="preview-body">
+      <div class="triptych-section">
+        <div class="triptych-header">
+          <div class="triptych-eyebrow">WHAT "HEALED" ACTUALLY LOOKS LIKE</div>
+          <h2 class="triptych-title">Fresh-done brows are easy. <em>Healed brows are the truth.</em></h2>
+        </div>
+        <div class="triptych-grid">
+          <div class="triptych-card c1">
+            <span class="triptych-tag">Day 1 — fresh</span>
+            <p class="triptych-caption">"Bold now — they'll soften 30–40% by week 6."</p>
+          </div>
+          <div class="triptych-card c2">
+            <span class="triptych-tag">Day 14 — peel phase</span>
+            <p class="triptych-caption">"Patchy is normal. Trust the process."</p>
+          </div>
+          <div class="triptych-card c3">
+            <span class="triptych-tag">Day 45 — healed</span>
+            <p class="triptych-caption">"This is what you'll live with for 18 months."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §D TRIPTYCH — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"WHAT \"HEALED\" ACTUALLY LOOKS LIKE"</span>
+<span class="k">h2:</span>        <span class="h">"Fresh-done brows are easy. Healed brows are the truth."</span>
+             <span class="c">// "Healed brows are the truth." = italic + rose</span>
+
+<span class="k">card_1:</span>
+  <span class="k">tag:</span>      <span class="v">"Day 1 — fresh"</span>
+  <span class="k">caption:</span>  <span class="v">"Bold now — they'll soften 30–40% by week 6."</span>
+  <span class="k">image:</span>    <span class="v">Immediately post-procedure, same client, same angle</span>
+
+<span class="k">card_2:</span>
+  <span class="k">tag:</span>      <span class="v">"Day 14 — peel phase"</span>
+  <span class="k">caption:</span>  <span class="v">"Patchy is normal. Trust the process."</span>
+  <span class="k">image:</span>    <span class="v">Same client, same angle, mid-healing</span>
+
+<span class="k">card_3:</span>
+  <span class="k">tag:</span>      <span class="v">"Day 45 — healed"</span>
+  <span class="k">caption:</span>  <span class="v">"This is what you'll live with for 18 months."</span>
+  <span class="k">image:</span>    <span class="v">Same client, same angle, fully healed</span>
+
+<span class="c">// CRITICAL: All 3 cards MUST be the same client, same angle, same lighting.</span>
+<span class="c">// This is the single highest-trust element on the page.</span>
+  </div>
+
+  <!-- ================= §E METHOD ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§E The Ink Mugi Method</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§E — proprietary method — 3 steps</span>
+    </div>
+    <div class="preview-body">
+      <div class="method-section">
+        <div class="method-header">
+          <div class="triptych-eyebrow" style="text-align: center;">OUR METHOD — TRADEMARKED</div>
+          <h2 class="triptych-title" style="text-align: center;">Three phases. <em>No shortcuts.</em></h2>
+          <p style="color: var(--im-ink-70); margin-top: var(--s-4); font-size: 17px;">Every client, every time. This is the protocol behind a 0.19% complication rate.</p>
+        </div>
+        <div class="method-grid">
+          <div class="method-step">
+            <div class="method-num"><em>01</em></div>
+            <h3 class="method-name">Mapping</h3>
+            <p class="method-desc">40-minute consultation. Facial symmetry analysis, bone structure mapping, skin-type pigment matching. You approve the drawn shape before a single needle touches your skin. No drawing — no procedure.</p>
+          </div>
+          <div class="method-step">
+            <div class="method-num"><em>02</em></div>
+            <h3 class="method-name">Pigment match</h3>
+            <p class="method-desc">Medical-grade Permablend pigments, matched to your natural brow tone + skin undertone. Patch-tested if you request. We mix your exact formula in-session — never pre-mixed, never reused.</p>
+          </div>
+          <div class="method-step">
+            <div class="method-num"><em>03</em></div>
+            <h3 class="method-name">Layered shading</h3>
+            <p class="method-desc">Three pigment passes, building density gradually. Topical anesthetic throughout. 90-minute session. You watch every stroke in a handheld mirror and direct final symmetry yourself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §E METHOD — COPY (final)</span>
+<span class="k">eyebrow:</span>    <span class="v">"OUR METHOD — TRADEMARKED"</span>
+<span class="k">h2:</span>         <span class="h">"Three phases. No shortcuts."</span>  <span class="c">// italic rose: "No shortcuts."</span>
+<span class="k">lede:</span>       <span class="v">"Every client, every time. This is the protocol behind a 0.19% complication rate."</span>
+
+<span class="k">step_01:</span>
+  <span class="k">name:</span>     <span class="v">"Mapping"</span>
+  <span class="k">desc:</span>     <span class="v">"40-minute consultation. Facial symmetry analysis, bone structure</span>
+             <span class="v">mapping, skin-type pigment matching. You approve the drawn shape</span>
+             <span class="v">before a single needle touches your skin. No drawing — no procedure."</span>
+
+<span class="k">step_02:</span>
+  <span class="k">name:</span>     <span class="v">"Pigment match"</span>
+  <span class="k">desc:</span>     <span class="v">"Medical-grade Permablend pigments, matched to your natural brow</span>
+             <span class="v">tone + skin undertone. Patch-tested if you request. We mix your</span>
+             <span class="v">exact formula in-session — never pre-mixed, never reused."</span>
+
+<span class="k">step_03:</span>
+  <span class="k">name:</span>     <span class="v">"Layered shading"</span>
+  <span class="k">desc:</span>     <span class="v">"Three pigment passes, building density gradually. Topical anesthetic</span>
+             <span class="v">throughout. 90-minute session. You watch every stroke in a handheld</span>
+             <span class="v">mirror and direct final symmetry yourself."</span>
+  </div>
+
+  <!-- ================= §F ARTIST ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§F Meet Nara (teaser card)</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§F — artist intro card — links to full /about-nara page</span>
+    </div>
+    <div class="preview-body">
+      <div style="padding: var(--s-9) var(--s-7); background: var(--im-paper);">
+        <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--s-8); align-items: center;">
+          <div style="aspect-ratio: 4/5; background: linear-gradient(135deg, #C89A8E, #8F5850); border-radius: 2px; position: relative;">
+            <div style="position: absolute; bottom: var(--s-4); left: var(--s-4); background: rgba(26,22,18,0.8); color: var(--im-bone); padding: var(--s-2) var(--s-3); font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;">Nara — founder, Ink Mugi</div>
+          </div>
+          <div>
+            <div class="triptych-eyebrow">THE ARTIST</div>
+            <h2 class="triptych-title" style="margin-bottom: var(--s-4);">I won't book you <em>if you're not right for this.</em></h2>
+            <p style="font-size: 17px; color: var(--im-ink-70); line-height: 1.6; margin-bottom: var(--s-5);">I trained under [Master Artist], hold a Virginia PMU license, and have performed 523 procedures since 2021. I turn down about 1 in 12 consultations — pregnancy, Accutane, active eczema, specific skin conditions, or unrealistic expectations. Saying no is part of how I stay at 0.19%.</p>
+            <a href="#" class="btn btn-ghost">Read my full story →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §F ARTIST — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"THE ARTIST"</span>
+<span class="k">h2:</span>        <span class="h">"I won't book you if you're not right for this."</span>
+             <span class="c">// italic rose: "if you're not right for this."</span>
+<span class="k">body:</span>      <span class="v">"I trained under [INSERT: training lineage, e.g. Tina Davies / Phi Academy],</span>
+            <span class="v">hold a Virginia PMU license, and have performed 523 procedures since [YEAR].</span>
+            <span class="v">I turn down about 1 in 12 consultations — pregnancy, Accutane, active eczema,</span>
+            <span class="v">specific skin conditions, or unrealistic expectations. Saying no is part of</span>
+            <span class="v">how I stay at 0.19%."</span>
+<span class="k">cta:</span>       <span class="v">"Read my full story →"</span>   <span class="c">// btn-ghost → /about-nara</span>
+<span class="k">image:</span>     <span class="v">Professional portrait, 4:5 ratio, Nara at studio, warm natural light</span>
+<span class="k">caption:</span>   <span class="v">"Nara — founder, Ink Mugi"</span>
+
+<span class="c">// TODO Nara: confirm training lineage and start year before publishing.</span>
+  </div>
+
+  <!-- ================= §G TESTIMONIALS ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§G Testimonials</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§G — 1 video testimonial + 3 text reviews</span>
+    </div>
+    <div class="preview-body">
+      <div style="padding: var(--s-9) var(--s-7); background: var(--im-bone);">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto var(--s-7);">
+          <div class="triptych-eyebrow">IN THEIR OWN WORDS</div>
+          <h2 class="triptych-title">The consultation is <em>free. The research is on you.</em></h2>
+        </div>
+        <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--s-6);">
+          <div style="aspect-ratio: 16/10; background: linear-gradient(135deg, #524A43, #1A1612); border-radius: 2px; display: flex; align-items: center; justify-content: center; position: relative;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--im-rose); display: flex; align-items: center; justify-content: center; color: var(--im-bone); font-size: 20px;">▶</div>
+            <div style="position: absolute; bottom: var(--s-4); left: var(--s-4); right: var(--s-4); color: var(--im-bone);">
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: var(--s-2);">VIDEO · 90 SECONDS</div>
+              <div style="font-family: var(--f-display); font-size: 22px; font-weight: 400; font-style: italic;">"I'd never commit to anything on my face. Nara showed me the drawing and I knew."</div>
+              <div style="font-family: var(--f-mono); font-size: 11px; opacity: 0.7; margin-top: var(--s-2);">M.S. — MCLEAN, VA</div>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: var(--s-4);">
+            <div style="padding: var(--s-5); background: var(--im-paper); border-left: 2px solid var(--im-rose);">
+              <div style="font-family: var(--f-display); font-size: 17px; line-height: 1.5; margin-bottom: var(--s-3);">"She refused to book me the first time I called. Explained why. That's the only reason I trusted her the second time."</div>
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--im-ink-50);">K.L. — ARLINGTON, VA</div>
+            </div>
+            <div style="padding: var(--s-5); background: var(--im-paper); border-left: 2px solid var(--im-rose);">
+              <div style="font-family: var(--f-display); font-size: 17px; line-height: 1.5; margin-bottom: var(--s-3);">"Six weeks later they still look like my face. That's all I wanted."</div>
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--im-ink-50);">J.P. — TYSONS, VA</div>
+            </div>
+            <div style="padding: var(--s-5); background: var(--im-paper); border-left: 2px solid var(--im-rose);">
+              <div style="font-family: var(--f-display); font-size: 17px; line-height: 1.5; margin-bottom: var(--s-3);">"The mapping took longer than the actual tattoo. That's the whole reason it worked."</div>
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--im-ink-50);">D.R. — VIENNA, VA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §G TESTIMONIALS — COPY (final). Replace initials + locations with real.</span>
+<span class="k">eyebrow:</span>   <span class="v">"IN THEIR OWN WORDS"</span>
+<span class="k">h2:</span>        <span class="h">"The consultation is free. The research is on you."</span>
+
+<span class="k">video_testimonial:</span>
+  <span class="k">pull_quote:</span>   <span class="v">"I'd never commit to anything on my face. Nara showed me the drawing and I knew."</span>
+  <span class="k">attribution:</span>  <span class="v">"M.S. — MCLEAN, VA"</span>
+  <span class="k">duration:</span>     <span class="v">"90 SECONDS"</span>
+  <span class="k">asset:</span>        <span class="v">60–90s client video, minimum 1080p, captions hardcoded</span>
+
+<span class="k">text_reviews:</span> <span class="c">// 3 cards, in this order:</span>
+  <span class="v">1. "She refused to book me the first time I called. Explained why. That's the only reason I trusted her the second time." — K.L., ARLINGTON</span>
+  <span class="v">2. "Six weeks later they still look like my face. That's all I wanted." — J.P., TYSONS</span>
+  <span class="v">3. "The mapping took longer than the actual tattoo. That's the whole reason it worked." — D.R., VIENNA</span>
+
+<span class="c">// Each review is 1-2 sentences, never more. Pull only the line that sells the method.</span>
+  </div>
+
+  <!-- ================= §H PRICING ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§H Pricing</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§H — 3-tier pricing — full-width Ink bg</span>
+    </div>
+    <div class="preview-body">
+      <div class="pricing-section">
+        <div class="pricing-header">
+          <div class="pricing-eyebrow">TRANSPARENT PRICING</div>
+          <h2 class="pricing-title">Three ways <em>to work with me.</em></h2>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-name">Signature Ombré</div>
+            <div class="price-desc">Full mapping + procedure + 6–8 week perfecting session.</div>
+            <div class="price-amount">$850<span class="price-unit">All-inclusive</span></div>
+            <ul class="price-features">
+              <li>40-min mapping consultation</li>
+              <li>90-min procedure</li>
+              <li>6–8 week touch-up included</li>
+              <li>Aftercare kit provided</li>
+              <li>Color guarantee through perfecting session</li>
+            </ul>
+            <a href="#" class="btn btn-secondary" style="background: transparent; color: var(--im-bone); border-color: var(--im-bone); width: 100%; justify-content: center;">Book consultation</a>
+          </div>
+          <div class="price-card featured">
+            <div class="price-tag">Most popular</div>
+            <div class="price-name">Signature + Lip Blush</div>
+            <div class="price-desc">Brows and a soft lip tint in one same-day session.</div>
+            <div class="price-amount">$1,450<span class="price-unit">Save $250 vs. separate</span></div>
+            <ul class="price-features">
+              <li>Everything in Signature Ombré</li>
+              <li>Lip blush procedure (2hr)</li>
+              <li>Lip touch-up at 6–8 weeks</li>
+              <li>Single-day or split over 2 visits</li>
+              <li>$250 saved vs. booking separately</li>
+            </ul>
+            <a href="#" class="btn btn-primary" style="background: var(--im-bone); color: var(--im-ink); width: 100%; justify-content: center;">Book consultation</a>
+          </div>
+          <div class="price-card">
+            <div class="price-name">Annual Color Boost</div>
+            <div class="price-desc">For existing clients. Priority booking, maintenance, continuity.</div>
+            <div class="price-amount">$295<span class="price-unit">Per year</span></div>
+            <ul class="price-features">
+              <li>One 60-min color refresh annually</li>
+              <li>Priority booking (skip the waitlist)</li>
+              <li>Free shape touch-up if needed</li>
+              <li>$150 off any additional service</li>
+              <li>For current Ink Mugi clients only</li>
+            </ul>
+            <a href="#" class="btn btn-secondary" style="background: transparent; color: var(--im-bone); border-color: var(--im-bone); width: 100%; justify-content: center;">Add to next visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §H PRICING — COPY (final). These are the exact numbers to publish.</span>
+<span class="k">eyebrow:</span>   <span class="v">"TRANSPARENT PRICING"</span>
+<span class="k">h2:</span>        <span class="h">"Three ways to work with me."</span>
+
+<span class="k">tier_1:</span>
+  <span class="k">name:</span>        <span class="v">"Signature Ombré"</span>
+  <span class="k">desc:</span>        <span class="v">"Full mapping + procedure + 6–8 week perfecting session."</span>
+  <span class="k">price:</span>       <span class="v">$850</span>
+  <span class="k">unit:</span>        <span class="v">"All-inclusive"</span>
+
+<span class="k">tier_2:</span> <span class="c">// FEATURED</span>
+  <span class="k">tag:</span>         <span class="v">"Most popular"</span>
+  <span class="k">name:</span>        <span class="v">"Signature + Lip Blush"</span>
+  <span class="k">desc:</span>        <span class="v">"Brows and a soft lip tint in one same-day session."</span>
+  <span class="k">price:</span>       <span class="v">$1,450</span>
+  <span class="k">unit:</span>        <span class="v">"Save $250 vs. separate"</span>
+
+<span class="k">tier_3:</span>
+  <span class="k">name:</span>        <span class="v">"Annual Color Boost"</span>
+  <span class="k">desc:</span>        <span class="v">"For existing clients. Priority booking, maintenance, continuity."</span>
+  <span class="k">price:</span>       <span class="v">$295</span>
+  <span class="k">unit:</span>        <span class="v">"Per year"</span>
+
+<span class="c">// Pricing is final. Do not A/B test. Premium pricing requires conviction.</span>
+  </div>
+
+  <!-- ================= §I LEAD MAGNET ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§I Lead magnet / Candidate Guide</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§I — captures the 70–80% not ready to book — feeds 5-email nurture</span>
+    </div>
+    <div class="preview-body">
+      <div style="padding: var(--s-9) var(--s-7); background: var(--im-paper);">
+        <div style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--s-7); align-items: center;">
+          <div style="aspect-ratio: 4/5; background: var(--im-bone); border: 1px solid var(--im-line); padding: var(--s-5); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--im-rose); margin-bottom: var(--s-3);">INK MUGI / PRE-CONSULTATION GUIDE</div>
+              <div style="font-family: var(--f-display); font-size: 28px; font-weight: 300; line-height: 1.15; letter-spacing: -0.02em;">Is ombré powder brows <em style="color: var(--im-rose); font-style: italic;">right for you?</em></div>
+            </div>
+            <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--im-ink-50);">12 pages · Free · PDF</div>
+          </div>
+          <div>
+            <div class="triptych-eyebrow">NOT READY YET?</div>
+            <h2 class="triptych-title" style="margin-bottom: var(--s-4);">Do the research <em>before</em> you book.</h2>
+            <p style="font-size: 16px; color: var(--im-ink-70); line-height: 1.6; margin-bottom: var(--s-5);">12 pages covering: the candidate checklist, full contraindications list, pigment and equipment transparency, what to expect Day 0 through Year 2, cost breakdown, and the 8 questions to ask any PMU artist before committing.</p>
+            <form style="display: flex; gap: var(--s-2); max-width: 440px; flex-wrap: wrap;">
+              <input type="email" placeholder="your@email.com" style="flex: 1; min-width: 200px; padding: 14px 18px; border: 1px solid var(--im-ink); background: transparent; font-family: var(--f-body); font-size: 15px; border-radius: 2px;">
+              <button class="btn btn-primary" type="submit">Send me the guide →</button>
+            </form>
+            <p style="font-size: 12px; color: var(--im-ink-50); margin-top: var(--s-3); font-family: var(--f-mono);">NO SPAM. 1 EMAIL OCCASIONALLY. UNSUBSCRIBE ANY TIME.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §I LEAD MAGNET — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"NOT READY YET?"</span>
+<span class="k">h2:</span>        <span class="h">"Do the research before you book."</span>  <span class="c">// "before" = italic rose</span>
+<span class="k">body:</span>      <span class="v">"12 pages covering: the candidate checklist, full contraindications list,</span>
+             <span class="v">pigment and equipment transparency, what to expect Day 0 through Year 2,</span>
+             <span class="v">cost breakdown, and the 8 questions to ask any PMU artist before committing."</span>
+<span class="k">form_input:</span>  <span class="v">"your@email.com"</span>
+<span class="k">form_cta:</span>    <span class="v">"Send me the guide →"</span>
+<span class="k">trust:</span>       <span class="v">"NO SPAM. 1 EMAIL OCCASIONALLY. UNSUBSCRIBE ANY TIME."</span>
+
+<span class="k">asset:</span>       <span class="v">12-page PDF, designed in same system, hosted on CDN</span>
+<span class="k">sequence:</span>    <span class="v">5-email nurture (see §4 Conversion System)</span>
+  </div>
+
+  <!-- ================= §J FAQ ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§J FAQ</h3>
+
+  <div class="copy-block">
+<span class="c">// §J FAQ — COPY (final) — 6 questions, in this order. FAQPage schema required.</span>
+
+<span class="k">Q1:</span>  <span class="v">"How long does it last?"</span>
+<span class="k">A:</span>   <span class="v">"12 to 18 months for most skin types. Oilier skin tends toward 12; drier skin</span>
+     <span class="v">toward 18. After that, an Annual Color Boost ($295) refreshes without a full</span>
+     <span class="v">re-do."</span>
+
+<span class="k">Q2:</span>  <span class="v">"Does it hurt?"</span>
+<span class="k">A:</span>   <span class="v">"Less than you're expecting. Topical numbing is applied before and during.</span>
+     <span class="v">Most clients describe it as a light scratching sensation. Clients who have</span>
+     <span class="v">tattoos almost always say this is easier."</span>
+
+<span class="k">Q3:</span>  <span class="v">"Who should NOT get this?"</span>
+<span class="k">A:</span>   <span class="v">"Pregnant or breastfeeding, currently on Accutane, active eczema or psoriasis</span>
+     <span class="v">in the brow area, recent Botox (within 2 weeks), keloid-prone scarring, or</span>
+     <span class="v">anyone on blood thinners without physician clearance. If any of these apply,</span>
+     <span class="v">I'll decline — that's the whole point."</span>
+
+<span class="k">Q4:</span>  <span class="v">"How do you compare to microblading?"</span>
+<span class="k">A:</span>   <span class="v">"Microblading cuts the skin with a hand blade to mimic hair. It works on dry,</span>
+     <span class="v">resilient skin — and fades badly on anything else. Ombré powder shades with</span>
+     <span class="v">a precision machine, heals evenly on all skin types, and lasts roughly 2x</span>
+     <span class="v">longer. For most people, ombré is the right answer."</span>
+
+<span class="k">Q5:</span>  <span class="v">"What does the 0.19% complication rate actually mean?"</span>
+<span class="k">A:</span>   <span class="v">"Across 523 procedures since [YEAR], one client has experienced an adverse</span>
+     <span class="v">outcome requiring unplanned correction — defined as pigment migration,</span>
+     <span class="v">infection, or uneven healing beyond normal variation. That case was resolved</span>
+     <span class="v">at no cost within 90 days. 0.19% is the honest number."</span>
+
+<span class="k">Q6:</span>  <span class="v">"Can I see you if I'm traveling to the DMV?"</span>
+<span class="k">A:</span>   <span class="v">"Yes. The studio is in Annandale, 15 minutes from Tysons and 25 from downtown</span>
+     <span class="v">DC. Travel clients book the 6–8 week touch-up 6+ weeks in advance."</span>
+  </div>
+
+  <!-- ================= §K FINAL CTA ================= -->
+  <h3 style="font-family: var(--f-display); font-size: 32px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">§K Final CTA + Footer</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§K — close the page with the same offer the hero opened with</span>
+    </div>
+    <div class="preview-body">
+      <div style="padding: var(--s-10) var(--s-7); background: var(--im-ink); color: var(--im-bone); text-align: center;">
+        <div style="max-width: 720px; margin: 0 auto;">
+          <div style="font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--im-rose-soft); margin-bottom: var(--s-4);">CURRENTLY BOOKING FOR [MONTH]</div>
+          <h2 style="font-family: var(--f-display); font-size: 56px; font-weight: 300; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: var(--s-5); color: var(--im-bone);">Ready when you are.</h2>
+          <p style="font-size: 18px; color: rgba(246,241,234,0.75); line-height: 1.55; margin-bottom: var(--s-7);">Free 40-minute consultation. No deposit to talk. If we're right for each other, we'll book.</p>
+          <a href="#" style="display: inline-flex; align-items: center; gap: var(--s-3); background: var(--im-rose); color: var(--im-bone); padding: 18px 36px; font-family: var(--f-body); font-size: 16px; font-weight: 500; text-decoration: none; border-radius: 2px;">Book your free consultation <span>→</span></a>
+        </div>
+      </div>
+      <div style="background: #0F0D0A; color: rgba(246,241,234,0.5); padding: var(--s-6) var(--s-7); font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; text-align: center; border-top: 1px solid rgba(246,241,234,0.08);">
+        INK MUGI · ANNANDALE, VIRGINIA · VA LICENSE [######] · © 2026
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §K FINAL CTA — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"CURRENTLY BOOKING FOR [MONTH]"</span>  <span class="c">// dynamic — updates via CMS</span>
+<span class="k">h2:</span>        <span class="v">"Ready when you are."</span>
+<span class="k">sub:</span>       <span class="v">"Free 40-minute consultation. No deposit to talk. If we're right</span>
+             <span class="v">for each other, we'll book."</span>
+<span class="k">cta:</span>       <span class="v">"Book your free consultation →"</span>  <span class="c">// Rose bg, Bone text</span>
+
+<span class="k">footer:</span>    <span class="v">"INK MUGI · ANNANDALE, VIRGINIA · VA LICENSE [######] · © 2026"</span>
+<span class="c">// License number required for legal compliance and as a trust signal.</span>
+  </div>
+
+</section>
+
+<!-- ============================================================== -->
+<!-- SECTION 03 — SERVICE PAGE                                      -->
+<!-- ============================================================== -->
+<section class="bp-section" id="service" style="background: var(--im-paper);">
+  <div class="bp-big-num">03</div>
+  <div class="bp-section-label">SERVICE PAGE / /SIGNATURE-OMBRE-BROWS</div>
+  <h2 class="bp-section-title">The <em>service page</em>.</h2>
+  <p class="bp-section-lede">Conversion-stage page. Visitor arrives with intent, leaves with a booking or an email captured. Ten sections, ordered by decision psychology.</p>
+
+  <div class="wireframe" style="padding: var(--s-6);">
+    <div class="wireframe-label">SERVICE PAGE — SECTION MAP</div>
+    <div class="wire-row"><div class="wire-box taller">§A / Hero — healed result + H1 + single price anchor + primary CTA</div></div>
+    <div class="wire-row"><div class="wire-box dark tall">§B / What's included — 5-item breakdown of the $850</div></div>
+    <div class="wire-row"><div class="wire-box tall">§C / Method recap (3-step, condensed)</div></div>
+    <div class="wire-row"><div class="wire-box taller">§D / Full gallery — min. 12 healed results, filterable</div></div>
+    <div class="wire-row"><div class="wire-box accent tall">§E / Is this right for you? — candidate checklist + contraindications</div></div>
+    <div class="wire-row"><div class="wire-box taller">§F / Timeline — Day 0 through Year 2 (6 milestones)</div></div>
+    <div class="wire-row"><div class="wire-box tall">§G / The 0.19% methodology — one-paragraph explainer</div></div>
+    <div class="wire-row"><div class="wire-box">§H / Pigment + equipment transparency</div></div>
+    <div class="wire-row"><div class="wire-box taller">§I / 5 testimonials specific to ombré (vs. homepage 3)</div></div>
+    <div class="wire-row"><div class="wire-box tall">§J / Service-page FAQ (10 questions, ombré-specific)</div></div>
+    <div class="wire-row"><div class="wire-box dark tall">§K / Dual CTA — Book consult + Download guide</div></div>
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">Service-page hero</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>/signature-ombre-brows — §A hero</span>
+    </div>
+    <div class="preview-body">
+      <div style="padding: var(--s-9) var(--s-7); background: var(--im-bone); display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-7); align-items: center;">
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #D4B8AE, #B8756B); border-radius: 2px; position: relative;">
+          <div style="position: absolute; bottom: var(--s-4); left: var(--s-4); background: rgba(26,22,18,0.85); color: var(--im-bone); padding: var(--s-2) var(--s-3); font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;">Day 45 — healed — consented use</div>
+        </div>
+        <div>
+          <div class="hero-kicker">SIGNATURE SERVICE</div>
+          <h1 style="font-family: var(--f-display); font-size: 56px; font-weight: 300; line-height: 1.03; letter-spacing: -0.035em; margin-bottom: var(--s-4);">Ombré powder brows. <em style="font-style: italic; color: var(--im-rose);">Mapped. Matched. Layered.</em></h1>
+          <p style="font-size: 17px; color: var(--im-ink-70); line-height: 1.55; margin-bottom: var(--s-5);">A three-phase method. 12–18 month wear. Heals on every skin type. Priced once, no surprises — the 6–8 week perfecting session is included.</p>
+          <div style="display: flex; gap: var(--s-2); align-items: baseline; margin-bottom: var(--s-5); padding-bottom: var(--s-5); border-bottom: 1px solid var(--im-line);">
+            <span style="font-family: var(--f-display); font-size: 48px; font-weight: 300; letter-spacing: -0.03em; line-height: 1;">$850</span>
+            <span style="font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--im-ink-50);">ALL-INCLUSIVE · 2.5HR · ANNANDALE, VA</span>
+          </div>
+          <a href="#" class="btn btn-primary">Book free consultation <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// /signature-ombre-brows §A HERO — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"SIGNATURE SERVICE"</span>
+<span class="k">h1:</span>        <span class="h">"Ombré powder brows. Mapped. Matched. Layered."</span>
+             <span class="c">// "Mapped. Matched. Layered." = italic rose</span>
+<span class="k">sub:</span>       <span class="v">"A three-phase method. 12–18 month wear. Heals on every skin type.</span>
+             <span class="v">Priced once, no surprises — the 6–8 week perfecting session is included."</span>
+<span class="k">price:</span>     <span class="v">"$850"</span>
+<span class="k">meta:</span>      <span class="v">"ALL-INCLUSIVE · 2.5HR · ANNANDALE, VA"</span>
+<span class="k">cta:</span>       <span class="v">"Book free consultation →"</span>
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">§E — Is this right for you? (high-trust qualifier)</h3>
+
+  <div class="preview">
+    <div class="preview-header">
+      <div class="preview-header-dot"></div>
+      <span>§E — candidate checklist + contraindications</span>
+    </div>
+    <div class="preview-body">
+      <div style="padding: var(--s-8) var(--s-7); background: var(--im-rose-soft);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <div style="text-align: center; margin-bottom: var(--s-7);">
+            <div style="font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--im-rose-dark); margin-bottom: var(--s-3);">HONESTY FIRST</div>
+            <h2 style="font-family: var(--f-display); font-size: 40px; font-weight: 300; line-height: 1.1; letter-spacing: -0.025em; color: var(--im-ink);">Is this <em style="font-style: italic; color: var(--im-rose-dark);">actually</em> right for you?</h2>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6);">
+            <div style="background: var(--im-bone); padding: var(--s-6); border-radius: 2px;">
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--im-success); margin-bottom: var(--s-4);">✓ YOU'RE A GOOD CANDIDATE IF</div>
+              <ul style="list-style: none; padding: 0;">
+                <li style="padding: 10px 0; border-bottom: 1px solid var(--im-line); font-size: 15px;">Your brows are sparse, asymmetrical, or over-plucked</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid var(--im-line); font-size: 15px;">You want a "done" look without daily filling</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid var(--im-line); font-size: 15px;">You've had microblading that's fading or blurring</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid var(--im-line); font-size: 15px;">You have oily or mature skin (microblading won't hold)</li>
+                <li style="padding: 10px 0; font-size: 15px;">You're ready to commit to 2 visits over 6–8 weeks</li>
+              </ul>
+            </div>
+            <div style="background: var(--im-ink); color: var(--im-bone); padding: var(--s-6); border-radius: 2px;">
+              <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--im-alert); margin-bottom: var(--s-4);">✕ I'LL DECLINE IF</div>
+              <ul style="list-style: none; padding: 0;">
+                <li style="padding: 10px 0; border-bottom: 1px solid rgba(246,241,234,0.1); font-size: 15px;">You're pregnant or breastfeeding</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid rgba(246,241,234,0.1); font-size: 15px;">You're on Accutane (must wait 12 months post)</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid rgba(246,241,234,0.1); font-size: 15px;">Active eczema, psoriasis, or rosacea in brow area</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid rgba(246,241,234,0.1); font-size: 15px;">Botox or filler in last 2 weeks (or planned in next 2)</li>
+                <li style="padding: 10px 0; font-size: 15px;">History of keloid scarring or on blood thinners</li>
+              </ul>
+            </div>
+          </div>
+          <p style="text-align: center; margin-top: var(--s-6); font-family: var(--f-display); font-size: 20px; font-style: italic; color: var(--im-ink);">"If I turn you down, I'll tell you why — and when you can re-book."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy-block">
+<span class="c">// §E CANDIDATE / CONTRAINDICATIONS — COPY (final)</span>
+<span class="k">eyebrow:</span>   <span class="v">"HONESTY FIRST"</span>
+<span class="k">h2:</span>        <span class="h">"Is this actually right for you?"</span>  <span class="c">// "actually" = italic</span>
+
+<span class="k">green_list:</span>   <span class="v">"✓ YOU'RE A GOOD CANDIDATE IF"</span>
+  <span class="v">1. Your brows are sparse, asymmetrical, or over-plucked</span>
+  <span class="v">2. You want a "done" look without daily filling</span>
+  <span class="v">3. You've had microblading that's fading or blurring</span>
+  <span class="v">4. You have oily or mature skin (microblading won't hold)</span>
+  <span class="v">5. You're ready to commit to 2 visits over 6–8 weeks</span>
+
+<span class="k">red_list:</span>     <span class="v">"✕ I'LL DECLINE IF"</span>
+  <span class="v">1. You're pregnant or breastfeeding</span>
+  <span class="v">2. You're on Accutane (must wait 12 months post)</span>
+  <span class="v">3. Active eczema, psoriasis, or rosacea in brow area</span>
+  <span class="v">4. Botox or filler in last 2 weeks (or planned in next 2)</span>
+  <span class="v">5. History of keloid scarring or on blood thinners</span>
+
+<span class="k">closer:</span>      <span class="v">"\"If I turn you down, I'll tell you why — and when you can re-book.\""</span>
+</div>
+
+<h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">§F — Timeline (Day 0 → Year 2)</h3>
+
+  <div class="copy-block">
+<span class="c">// §F TIMELINE — COPY (final). Render as horizontal stepper on desktop, stacked on mobile.</span>
+
+<span class="k">eyebrow:</span>   <span class="v">"WHAT TO EXPECT"</span>
+<span class="k">h2:</span>        <span class="h">"Day 0 to Year 2. The full honest timeline."</span>
+
+<span class="k">milestone_1:</span>
+  <span class="k">marker:</span>     <span class="v">"DAY 0"</span>
+  <span class="k">title:</span>      <span class="v">"Procedure day"</span>
+  <span class="k">desc:</span>       <span class="v">"2.5 hours at the studio. Brows look 30–40% darker than final result.</span>
+               <span class="v">Mild redness for 24 hours. You can drive yourself home."</span>
+
+<span class="k">milestone_2:</span>
+  <span class="k">marker:</span>     <span class="v">"DAYS 1–7"</span>
+  <span class="k">title:</span>      <span class="v">"Dark phase"</span>
+  <span class="k">desc:</span>       <span class="v">"Still looking bold. Keep dry. Apply aftercare balm 2× daily.</span>
+               <span class="v">No makeup on brows, no swimming, no workouts that sweat heavily."</span>
+
+<span class="k">milestone_3:</span>
+  <span class="k">marker:</span>     <span class="v">"DAYS 8–14"</span>
+  <span class="k">title:</span>      <span class="v">"Peel phase"</span>
+  <span class="k">desc:</span>       <span class="v">"Scabs flake off in small patches. Color underneath may look faded,</span>
+               <span class="v">uneven, or patchy. This is normal. Do not pick. The pigment is</span>
+               <span class="v">still settling under the skin."</span>
+
+<span class="k">milestone_4:</span>
+  <span class="k">marker:</span>     <span class="v">"DAYS 21–28"</span>
+  <span class="k">title:</span>      <span class="v">"Ghosting phase"</span>
+  <span class="k">desc:</span>       <span class="v">"Brows may look 30–50% lighter than expected. Do not panic.</span>
+               <span class="v">Pigment re-emerges as the skin fully regenerates."</span>
+
+<span class="k">milestone_5:</span>
+  <span class="k">marker:</span>     <span class="v">"WEEK 6–8"</span>
+  <span class="k">title:</span>      <span class="v">"Perfecting session (included)"</span>
+  <span class="k">desc:</span>       <span class="v">"60-minute touch-up. We adjust color, shape, and density.</span>
+               <span class="v">This is when brows reach their final state."</span>
+
+<span class="k">milestone_6:</span>
+  <span class="k">marker:</span>     <span class="v">"YEAR 1–2"</span>
+  <span class="k">title:</span>      <span class="v">"Wear + color boost"</span>
+  <span class="k">desc:</span>       <span class="v">"Brows fade gradually over 12–18 months. Annual color boost ($295)</span>
+               <span class="v">refreshes without a full re-do."</span>
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">§K — Dual CTA closer</h3>
+
+  <div class="copy-block">
+<span class="c">// §K SERVICE PAGE CLOSER — COPY (final)</span>
+
+<span class="k">eyebrow:</span>   <span class="v">"TWO WAYS FORWARD"</span>
+<span class="k">h2:</span>        <span class="h">"Ready — or not ready yet?"</span>
+
+<span class="k">left_card (primary):</span>
+  <span class="k">title:</span>    <span class="v">"Ready to book"</span>
+  <span class="k">desc:</span>     <span class="v">"40-minute free consultation. No deposit. We decide together whether this fits."</span>
+  <span class="k">cta:</span>      <span class="v">"Book your consultation →"</span>   <span class="c">// btn-primary</span>
+
+<span class="k">right_card (secondary):</span>
+  <span class="k">title:</span>    <span class="v">"Still researching"</span>
+  <span class="k">desc:</span>     <span class="v">"Get the 12-page Pre-Consultation Guide. Everything you need to decide."</span>
+  <span class="k">cta:</span>      <span class="v">"Send me the guide →"</span>           <span class="c">// btn-ghost, email modal</span>
+
+<span class="c">// Both cards equal visual weight. Do not make the primary 50% wider — that forces the decision.</span>
+  </div>
+
+</section>
+
+<!-- ============================================================== -->
+<!-- SECTION 04 — CONVERSION SYSTEM                                 -->
+<!-- ============================================================== -->
+<section class="bp-section" id="conversion">
+  <div class="bp-big-num">04</div>
+  <div class="bp-section-label">CONVERSION SYSTEM / CTA LOGIC / FUNNEL</div>
+  <h2 class="bp-section-title">The <em>conversion system</em>.</h2>
+  <p class="bp-section-lede">Two offers, four CTA placements, one nurture sequence. Every visitor routes into one of two paths: book now or capture email.</p>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">4.1 CTA placement matrix</h3>
+
+  <table class="spec-table">
+    <thead>
+      <tr><th>Location</th><th>Primary CTA</th><th>Secondary CTA</th><th>Visibility</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Home hero</td><td>Book consultation</td><td>Get guide</td><td>Above fold</td></tr>
+      <tr><td>Nav bar (desktop)</td><td>Book consult (btn-primary, right-aligned)</td><td>—</td><td>Sticky after scroll > 40px</td></tr>
+      <tr><td>After §D Triptych</td><td>Book consultation</td><td>—</td><td>Inline</td></tr>
+      <tr><td>After §F Nara teaser</td><td>Read full story</td><td>—</td><td>Inline (btn-ghost)</td></tr>
+      <tr><td>Pricing cards (§H)</td><td>Book consultation (×3)</td><td>—</td><td>In cards</td></tr>
+      <tr><td>Lead magnet (§I)</td><td>Send guide (email form)</td><td>—</td><td>Inline</td></tr>
+      <tr><td>Final CTA (§K)</td><td>Book consultation</td><td>—</td><td>Full-width dark section</td></tr>
+      <tr><td>Mobile sticky bar</td><td>Book consult (Rose bg)</td><td>Get guide (ghost)</td><td>Appears after 400px scroll</td></tr>
+      <tr><td>Exit intent (desktop only)</td><td>Get guide before you go</td><td>—</td><td>Modal, triggers once per session</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">4.2 Lead magnet — Pre-Consultation Guide</h3>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">12-PAGE PDF — TABLE OF CONTENTS</div>
+    <strong>P1</strong> Cover — "Is Ombré Powder Brows Right For You?"<br>
+    <strong>P2</strong> Welcome letter from Nara (personal, face photo, signature)<br>
+    <strong>P3</strong> The candidate checklist (5 "yes" / 5 "no")<br>
+    <strong>P4–5</strong> What to expect: Day 0 → Year 2 timeline<br>
+    <strong>P6</strong> The 0.19% methodology (explained)<br>
+    <strong>P7</strong> Pigment + equipment transparency (named brands)<br>
+    <strong>P8</strong> Pricing breakdown + what's included<br>
+    <strong>P9</strong> 8 questions to ask ANY PMU artist<br>
+    <strong>P10</strong> Aftercare quick-reference<br>
+    <strong>P11</strong> FAQ expanded (10 questions)<br>
+    <strong>P12</strong> Next steps — book consultation + contact details
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">4.3 Email nurture sequence (5 emails)</h3>
+
+  <table class="spec-table">
+    <thead>
+      <tr><th>#</th><th>Send</th><th>Subject</th><th>Purpose</th><th>CTA</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Instant</td><td>Here's your guide — plus one thing most PMU sites won't tell you</td><td>Deliver asset, build trust</td><td>Read the guide</td></tr>
+      <tr><td>2</td><td>Day 2</td><td>The 3 types of women who should NOT get this</td><td>Qualification, trust deepen</td><td>Check candidate list</td></tr>
+      <tr><td>3</td><td>Day 5</td><td>What "0.19%" actually means (the honest math)</td><td>Authority, differentiation</td><td>Read methodology</td></tr>
+      <tr><td>4</td><td>Day 9</td><td>Two clients who waited 6 months. One didn't.</td><td>Case studies, identification</td><td>View healed gallery</td></tr>
+      <tr><td>5</td><td>Day 14</td><td>Booking opens for [Month+2] — consultation is always free</td><td>Convert to consult</td><td>Book consultation</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">4.4 Booking funnel UX</h3>
+
+  <div class="flow-diagram">
+    <div class="flow-node">
+      <div class="flow-node-step">01</div>
+      <div class="flow-node-title">Click CTA</div>
+      <div class="flow-node-desc">"Book your free consultation →" from anywhere on site.</div>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node-step">02</div>
+      <div class="flow-node-title">Micro-form</div>
+      <div class="flow-node-desc">Name, email, phone, 1 dropdown: "Main concern?" (5 options). No deposit at this step.</div>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node-step">03</div>
+      <div class="flow-node-title">Calendar</div>
+      <div class="flow-node-desc">Embedded Vagaro/Acuity/Square. 40-min consultation slots only.</div>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node-step">04</div>
+      <div class="flow-node-title">Confirmation</div>
+      <div class="flow-node-desc">Thank-you page + email with prep checklist, studio address, and Nara's direct number.</div>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node-step">05</div>
+      <div class="flow-node-title">24hr reminder</div>
+      <div class="flow-node-desc">SMS + email. Reduces no-show 40–60%. Includes 2-question pre-consult form.</div>
+    </div>
+  </div>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">BOOKING SYSTEM RECOMMENDATIONS</div>
+    <strong>Tier 1:</strong> Square Appointments (free, integrates with Square payments, SMS reminders built-in).<br>
+    <strong>Tier 2:</strong> Vagaro ($30/mo, industry standard for PMU, strong review aggregation).<br>
+    <strong>Tier 3:</strong> Acuity ($16/mo, most elegant embed, best for custom brand look).<br>
+    <strong>Avoid:</strong> Calendly (reads generic, not beauty-category native).
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">4.5 Deposit & no-show logic</h3>
+
+  <table class="spec-table">
+    <thead><tr><th>Stage</th><th>Deposit</th><th>Rationale</th></tr></thead>
+    <tbody>
+      <tr><td>Consultation (free)</td><td>$0</td><td>Reduces friction on initial CTA. 40-min time investment only.</td></tr>
+      <tr><td>Actual procedure booking</td><td>$150 non-refundable</td><td>Applied to service price. Filters serious clients. Covers Nara's time if client reschedules 3×.</td></tr>
+      <tr><td>24hr cancellation policy</td><td>Keep deposit</td><td>Industry standard. Explicit at booking.</td></tr>
+      <tr><td>No-show</td><td>Forfeit deposit + $150 rebooking fee</td><td>Published on booking confirmation.</td></tr>
+    </tbody>
+  </table>
+
+</section>
+
+<!-- ============================================================== -->
+<!-- SECTION 05 — MOBILE                                            -->
+<!-- ============================================================== -->
+<section class="bp-section" id="mobile" style="background: var(--im-paper);">
+  <div class="bp-big-num">05</div>
+  <div class="bp-section-label">MOBILE / STICKY CTA / SCROLL FLOW</div>
+  <h2 class="bp-section-title">Mobile <em>behavior</em>.</h2>
+  <p class="bp-section-lede">75%+ of PMU traffic is mobile. This is the version that actually matters.</p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--s-8); align-items: flex-start;">
+    <div class="mobile-demo">
+      <div class="mobile-status">
+        <span>9:41</span>
+        <span>●●●●● 5G</span>
+      </div>
+      <div class="mobile-screen">
+        <div class="mobile-hero">
+          <div class="mobile-hero-kicker">LICENSED PMU — ANNANDALE, VA</div>
+          <h1 class="mobile-hero-h1">Brows you don't have to <em>think about.</em></h1>
+          <p class="mobile-hero-sub">523 procedures. A 0.19% complication rate. One artist who treats your face like the one thing she refuses to rush.</p>
+          <div class="mobile-hero-img"></div>
+        </div>
+        <div class="mobile-trust">
+          <div class="mobile-trust-item">
+            <div class="num">523+</div>
+            <div class="lbl">Procedures</div>
+          </div>
+          <div class="mobile-trust-item">
+            <div class="num">0.19%</div>
+            <div class="lbl">Complications</div>
+          </div>
+          <div class="mobile-trust-item">
+            <div class="num">VA</div>
+            <div class="lbl">Licensed</div>
+          </div>
+          <div class="mobile-trust-item">
+            <div class="num">100%</div>
+            <div class="lbl">Single-use</div>
+          </div>
+        </div>
+        <div style="padding: var(--s-5); background: var(--im-paper);">
+          <div class="mobile-hero-kicker">WHAT HEALED LOOKS LIKE</div>
+          <div style="font-family: var(--f-display); font-size: 22px; font-weight: 300; line-height: 1.15; margin-bottom: var(--s-4);">Fresh-done brows are easy. <em style="color: var(--im-rose); font-style: italic;">Healed brows are the truth.</em></div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
+            <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #D4B8AE, #B8756B);"></div>
+            <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #E8D5CF, #C89A8E);"></div>
+            <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #F2E5DE, #D4B8AE);"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-cta-bar">
+        <a href="#" class="btn btn-sticky-primary">Book consult</a>
+        <a href="#" class="btn btn-sticky-ghost">Get guide</a>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-family: var(--f-display); font-size: 24px; font-weight: 500; margin-bottom: var(--s-4);">5.1 Sticky CTA bar — exact spec</h3>
+      <table class="spec-table">
+        <tbody>
+          <tr><td>Trigger</td><td>scrollY &gt; 400px (past hero)</td></tr>
+          <tr><td>Position</td><td><code>position: fixed; bottom: 0; left: 0; right: 0</code></td></tr>
+          <tr><td>Height</td><td>64px total (12px padding × 2 + 40px btn)</td></tr>
+          <tr><td>BG</td><td>Ink <code>#1A1612</code></td></tr>
+          <tr><td>Primary btn</td><td>Rose <code>#B8756B</code> bg, Bone text, 14px, weight 500, "Book consult"</td></tr>
+          <tr><td>Ghost btn</td><td>Transparent bg, 1px Bone border 30% opacity, "Get guide"</td></tr>
+          <tr><td>Animation</td><td>slideUp 300ms cubic-bezier(.22,1,.36,1)</td></tr>
+          <tr><td>Dismissable</td><td>No — persistent (brand trust +)</td></tr>
+          <tr><td>Z-index</td><td>1000</td></tr>
+          <tr><td>Safe-area</td><td><code>padding-bottom: env(safe-area-inset-bottom)</code> for iPhone home bar</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-family: var(--f-display); font-size: 24px; font-weight: 500; margin-top: var(--s-6); margin-bottom: var(--s-4);">5.2 Mobile scroll flow — section hierarchy</h3>
+      <p style="color: var(--im-ink-70); margin-bottom: var(--s-4); font-size: 14px;">Section order is identical to desktop. Mobile-specific adjustments:</p>
+      <table class="spec-table">
+        <thead><tr><th>Section</th><th>Mobile adjustment</th></tr></thead>
+        <tbody>
+          <tr><td>Hero</td><td>Single column. Image BELOW headline/CTAs (not above). CTA is primary only, ghost moved to sticky bar.</td></tr>
+          <tr><td>Trust bar</td><td>2×2 grid instead of 1×4. Numerals 24px instead of 32px.</td></tr>
+          <tr><td>Triptych</td><td>Horizontal scroll carousel (swipe), 90% card width visible, peek at next.</td></tr>
+          <tr><td>Method</td><td>Stacked vertically with dividers. Num stays 48px.</td></tr>
+          <tr><td>Pricing</td><td>Stacked. Featured card first (most popular at top on mobile, middle on desktop).</td></tr>
+          <tr><td>Testimonials</td><td>Video first, text reviews below as swipe carousel.</td></tr>
+          <tr><td>Nav</td><td>Hamburger menu. Logo left, menu icon right. No text links.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-family: var(--f-display); font-size: 24px; font-weight: 500; margin-top: var(--s-6); margin-bottom: var(--s-4);">5.3 Tap targets</h3>
+      <table class="spec-table">
+        <tbody>
+          <tr><td>Minimum tap target</td><td>44×44px (Apple HIG)</td></tr>
+          <tr><td>All buttons</td><td>48px height minimum on mobile</td></tr>
+          <tr><td>Gallery images</td><td>Full-screen modal on tap, swipe to dismiss</td></tr>
+          <tr><td>Phone link</td><td><code>tel:</code> href on VA license/contact, not just visual</td></tr>
+          <tr><td>Map link</td><td><code>maps://</code> href for iOS, <code>geo:</code> for Android</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-8); margin-bottom: var(--s-4);">5.4 Mobile scroll keyframes</h3>
+  <p style="color: var(--im-ink-70); margin-bottom: var(--s-5);">How the page behaves during vertical scroll — screens 1, 2, 3, 5, 8 of the full flow:</p>
+
+  <div class="mobile-flow" style="padding-top: var(--s-6);">
+    <div style="position: relative;">
+      <span class="mf-label">0–100vh</span>
+      <div class="mobile-frame-mini">
+        <div class="mf-bar narrow accent" style="margin-top: 8px;"></div>
+        <div class="mf-bar wide dark" style="height: 12px;"></div>
+        <div class="mf-bar wide"></div>
+        <div class="mf-bar narrow"></div>
+        <div class="mf-img"></div>
+        <div style="flex: 1;"></div>
+        <div class="mf-cta-bar" style="opacity: 0;"></div>
+      </div>
+    </div>
+    <div style="position: relative;">
+      <span class="mf-label">100–200vh</span>
+      <div class="mobile-frame-mini">
+        <div style="background: var(--im-ink); padding: 8px; color: var(--im-bone); font-family: var(--f-mono); font-size: 8px; text-align: center;">523+  ·  0.19%  ·  VA  ·  100%</div>
+        <div class="mf-bar accent" style="margin-top: 8px; width: 70%;"></div>
+        <div class="mf-bar wide dark" style="height: 12px;"></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; padding: 8px;">
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #D4B8AE, #B8756B);"></div>
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #E8D5CF, #C89A8E);"></div>
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #F2E5DE, #D4B8AE);"></div>
+        </div>
+        <div style="flex: 1;"></div>
+        <div class="mf-cta-bar">
+          <div class="mf-cta-btn"></div>
+          <div class="mf-cta-btn ghost"></div>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative;">
+      <span class="mf-label">200–300vh</span>
+      <div class="mobile-frame-mini">
+        <div class="mf-bar accent" style="margin-top: 8px; width: 60%;"></div>
+        <div class="mf-bar wide dark" style="height: 12px;"></div>
+        <div style="padding: 8px;">
+          <div style="font-family: var(--f-display); color: var(--im-rose); font-style: italic; font-size: 28px; margin-bottom: 4px;">01</div>
+          <div class="mf-bar narrow" style="margin: 4px 0;"></div>
+          <div class="mf-bar wide"></div>
+          <div style="font-family: var(--f-display); color: var(--im-rose); font-style: italic; font-size: 28px; margin: 12px 0 4px;">02</div>
+          <div class="mf-bar narrow" style="margin: 4px 0;"></div>
+          <div class="mf-bar wide"></div>
+        </div>
+        <div style="flex: 1;"></div>
+        <div class="mf-cta-bar">
+          <div class="mf-cta-btn"></div>
+          <div class="mf-cta-btn ghost"></div>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative;">
+      <span class="mf-label">400–500vh</span>
+      <div class="mobile-frame-mini">
+        <div style="background: var(--im-ink); color: var(--im-bone); padding: 12px; flex: 1;">
+          <div style="font-family: var(--f-mono); font-size: 8px; color: var(--im-rose-soft); margin-bottom: 6px;">TRANSPARENT PRICING</div>
+          <div style="font-family: var(--f-display); font-size: 18px; font-weight: 300; line-height: 1.1; color: var(--im-bone);">Three ways to work with me.</div>
+          <div style="background: rgba(246,241,234,0.1); padding: 8px; margin-top: 8px; border-radius: 2px;">
+            <div style="font-family: var(--f-display); font-size: 22px; color: var(--im-bone);">$850</div>
+            <div style="font-family: var(--f-mono); font-size: 8px; color: rgba(246,241,234,0.6);">SIGNATURE OMBRÉ</div>
+          </div>
+          <div style="background: var(--im-rose); padding: 8px; margin-top: 8px; border-radius: 2px;">
+            <div style="font-family: var(--f-display); font-size: 22px; color: var(--im-bone);">$1,450</div>
+            <div style="font-family: var(--f-mono); font-size: 8px; color: var(--im-rose-soft);">+ LIP BLUSH</div>
+          </div>
+        </div>
+        <div class="mf-cta-bar">
+          <div class="mf-cta-btn"></div>
+          <div class="mf-cta-btn ghost"></div>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative;">
+      <span class="mf-label">700vh+</span>
+      <div class="mobile-frame-mini">
+        <div style="background: var(--im-paper); padding: 12px; flex: 1;">
+          <div style="font-family: var(--f-mono); font-size: 8px; color: var(--im-rose); margin-bottom: 6px;">NOT READY YET?</div>
+          <div style="font-family: var(--f-display); font-size: 18px; font-weight: 300; line-height: 1.1;">Do the <em style="color: var(--im-rose); font-style: italic;">research</em> first.</div>
+          <div style="background: var(--im-bone); border: 1px solid var(--im-ink); margin-top: 8px; padding: 8px; font-family: var(--f-mono); font-size: 9px; color: var(--im-ink-50);">your@email.com</div>
+          <div style="background: var(--im-ink); padding: 10px; margin-top: 4px; text-align: center; color: var(--im-bone); font-family: var(--f-body); font-size: 10px;">Send me the guide →</div>
+        </div>
+        <div class="mf-cta-bar">
+          <div class="mf-cta-btn"></div>
+          <div class="mf-cta-btn ghost"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================== -->
+<!-- SECTION 06 — DEV HANDOFF                                        -->
+<!-- ============================================================== -->
+<section class="bp-section" id="dev-handoff">
+  <div class="bp-big-num">06</div>
+  <div class="bp-section-label">DEV HANDOFF / TOKENS / COMPONENTS / SCHEMA</div>
+  <h2 class="bp-section-title">Developer <em>handoff</em>.</h2>
+  <p class="bp-section-lede">Copy-paste-ready. Tokens as CSS vars or Tailwind config. Component IDs matched to wireframe sections.</p>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-bottom: var(--s-4);">6.1 CSS token file (<code style="font-family: var(--f-mono); background: var(--im-line); padding: 2px 6px;">tokens.css</code>)</h3>
+
+  <div class="copy-block">
+<span class="c">/* ============ INK MUGI DESIGN TOKENS ============ */</span>
+<span class="k">:root {</span>
+  <span class="c">/* Color */</span>
+  <span class="k">--im-bone:</span>      <span class="v">#F6F1EA;</span>
+  <span class="k">--im-paper:</span>     <span class="v">#FBF8F3;</span>
+  <span class="k">--im-ink:</span>       <span class="v">#1A1612;</span>
+  <span class="k">--im-ink-70:</span>    <span class="v">#524A43;</span>
+  <span class="k">--im-ink-50:</span>    <span class="v">#8A817A;</span>
+  <span class="k">--im-rose:</span>      <span class="v">#B8756B;</span>
+  <span class="k">--im-rose-dark:</span> <span class="v">#8F5850;</span>
+  <span class="k">--im-rose-soft:</span> <span class="v">#E8D5CF;</span>
+  <span class="k">--im-gold:</span>      <span class="v">#B8966B;</span>
+  <span class="k">--im-line:</span>      <span class="v">#E6DED3;</span>
+  <span class="k">--im-success:</span>   <span class="v">#6B8E5A;</span>
+  <span class="k">--im-alert:</span>     <span class="v">#C44536;</span>
+
+  <span class="c">/* Type */</span>
+  <span class="k">--f-display:</span>    <span class="v">"Fraunces", Georgia, serif;</span>
+  <span class="k">--f-body:</span>       <span class="v">"Inter Tight", system-ui, sans-serif;</span>
+  <span class="k">--f-mono:</span>       <span class="v">"JetBrains Mono", monospace;</span>
+
+  <span class="c">/* Spacing (8px base) */</span>
+  <span class="k">--s-1:</span> <span class="v">4px;</span>    <span class="k">--s-2:</span> <span class="v">8px;</span>    <span class="k">--s-3:</span> <span class="v">12px;</span>
+  <span class="k">--s-4:</span> <span class="v">16px;</span>   <span class="k">--s-5:</span> <span class="v">24px;</span>   <span class="k">--s-6:</span> <span class="v">32px;</span>
+  <span class="k">--s-7:</span> <span class="v">48px;</span>   <span class="k">--s-8:</span> <span class="v">64px;</span>   <span class="k">--s-9:</span> <span class="v">96px;</span>
+  <span class="k">--s-10:</span> <span class="v">128px;</span> <span class="k">--s-11:</span> <span class="v">160px;</span>
+
+  <span class="c">/* Radius */</span>
+  <span class="k">--radius-sm:</span>  <span class="v">2px;</span>
+  <span class="k">--radius-md:</span>  <span class="v">8px;</span>
+  <span class="k">--radius-lg:</span>  <span class="v">16px;</span>
+
+  <span class="c">/* Shadow */</span>
+  <span class="k">--shadow-sm:</span>  <span class="v">0 1px 2px rgba(26,22,18,0.06);</span>
+  <span class="k">--shadow-md:</span>  <span class="v">0 4px 20px rgba(26,22,18,0.08);</span>
+  <span class="k">--shadow-lg:</span>  <span class="v">0 20px 60px rgba(26,22,18,0.12);</span>
+
+  <span class="c">/* Layout */</span>
+  <span class="k">--max-w:</span>         <span class="v">1200px;</span>
+  <span class="k">--max-w-narrow:</span>  <span class="v">720px;</span>
+<span class="k">}</span>
+</div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">6.2 Required schema.org markup (<code style="font-family: var(--f-mono); background: var(--im-line); padding: 2px 6px;">JSON-LD</code>)</h3>
+
+  <div class="copy-block">
+<span class="c">&lt;!-- Inject into &lt;head&gt; of every page --&gt;</span>
+<span class="k">&lt;script type="application/ld+json"&gt;</span>
+{
+  <span class="k">"@context":</span> <span class="v">"https://schema.org"</span>,
+  <span class="k">"@type":</span> <span class="v">"BeautySalon"</span>,
+  <span class="k">"name":</span> <span class="v">"Ink Mugi"</span>,
+  <span class="k">"image":</span> <span class="v">"https://inkmugi.com/assets/og-image.jpg"</span>,
+  <span class="k">"url":</span> <span class="v">"https://inkmugi.com"</span>,
+  <span class="k">"telephone":</span> <span class="v">"+1-XXX-XXX-XXXX"</span>,
+  <span class="k">"priceRange":</span> <span class="v">"$$$"</span>,
+  <span class="k">"address":</span> {
+    <span class="k">"@type":</span> <span class="v">"PostalAddress"</span>,
+    <span class="k">"streetAddress":</span> <span class="v">"[STREET]"</span>,
+    <span class="k">"addressLocality":</span> <span class="v">"Annandale"</span>,
+    <span class="k">"addressRegion":</span> <span class="v">"VA"</span>,
+    <span class="k">"postalCode":</span> <span class="v">"22003"</span>,
+    <span class="k">"addressCountry":</span> <span class="v">"US"</span>
+  },
+  <span class="k">"geo":</span> {
+    <span class="k">"@type":</span> <span class="v">"GeoCoordinates"</span>,
+    <span class="k">"latitude":</span> <span class="v">38.8307</span>,
+    <span class="k">"longitude":</span> <span class="v">-77.1964</span>
+  },
+  <span class="k">"areaServed":</span> [<span class="v">"Annandale"</span>, <span class="v">"McLean"</span>, <span class="v">"Tysons"</span>, <span class="v">"Vienna"</span>, <span class="v">"Arlington"</span>, <span class="v">"Great Falls"</span>, <span class="v">"Fairfax"</span>],
+  <span class="k">"openingHoursSpecification":</span> [{
+    <span class="k">"@type":</span> <span class="v">"OpeningHoursSpecification"</span>,
+    <span class="k">"dayOfWeek":</span> [<span class="v">"Tuesday"</span>,<span class="v">"Wednesday"</span>,<span class="v">"Thursday"</span>,<span class="v">"Friday"</span>,<span class="v">"Saturday"</span>],
+    <span class="k">"opens":</span> <span class="v">"10:00"</span>,
+    <span class="k">"closes":</span> <span class="v">"18:00"</span>
+  }],
+  <span class="k">"founder":</span> {
+    <span class="k">"@type":</span> <span class="v">"Person"</span>,
+    <span class="k">"name":</span> <span class="v">"Nara [LAST]"</span>,
+    <span class="k">"jobTitle":</span> <span class="v">"Licensed Permanent Makeup Artist"</span>
+  }
+}
+<span class="k">&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- On service page, add FAQPage + Service schema --&gt;</span>
+<span class="c">&lt;!-- On /reviews, add Review/AggregateRating schema --&gt;</span>
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">6.3 Per-page meta (unique, non-duplicate)</h3>
+
+  <table class="spec-table">
+    <thead>
+      <tr><th>URL</th><th>Title (≤60ch)</th><th>Description (≤160ch)</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>/</code></td>
+        <td>Ink Mugi | Ombré Powder Brows · 0.19% Complication Rate</td>
+        <td>523 procedures. 0.19% complication rate. Licensed in Virginia. Ink Mugi specializes in natural ombré powder brows for women who won't settle. Free consultation in Annandale.</td>
+      </tr>
+      <tr>
+        <td><code>/signature-ombre-brows</code></td>
+        <td>Signature Ombré Powder Brows — $850 · Ink Mugi, Annandale VA</td>
+        <td>Three-phase method. $850 all-inclusive (perfecting session included). Heals on every skin type. 12–18 month wear. Book a free consultation with Nara.</td>
+      </tr>
+      <tr>
+        <td><code>/reviews</code></td>
+        <td>Reviews — Ink Mugi PMU · 523+ Procedures · Annandale VA</td>
+        <td>Healed results and client testimonials from Ink Mugi's 523+ ombré powder brow procedures. Read reviews from McLean, Tysons, Arlington, and Fairfax County clients.</td>
+      </tr>
+      <tr>
+        <td><code>/aftercare-guide</code></td>
+        <td>Ombré Powder Brows Aftercare · Day-by-Day Timeline</td>
+        <td>Complete aftercare timeline Day 0 through Year 2. Written by Nara, licensed VA PMU artist. What to do, what to avoid, when to worry.</td>
+      </tr>
+      <tr>
+        <td><code>/microblading-vs-powder-brows</code></td>
+        <td>Microblading vs. Powder Brows · Which is Right for You?</td>
+        <td>The honest comparison — by a licensed PMU artist who's done 523+ procedures. Skin type, wear time, look, and cost. Read before you book.</td>
+      </tr>
+      <tr>
+        <td><code>/about-nara</code> (new)</td>
+        <td>Meet Nara · Founder, Ink Mugi · Licensed PMU Artist</td>
+        <td>Nara trained under [training lineage], holds Virginia PMU license, and has performed 523 procedures. 0.19% complication rate. Turns down 1 in 12 consultations.</td>
+      </tr>
+      <tr>
+        <td><code>/pricing</code> (new)</td>
+        <td>Pricing · Ink Mugi · $850 Signature Ombré · Annandale VA</td>
+        <td>Transparent pricing: $850 Signature, $1,450 Brows+Lip combo, $295 Annual Color Boost. All-inclusive. No deposit for free consultation.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">6.4 URL & sitemap structure</h3>
+
+  <div class="copy-block">
+<span class="c">// REQUIRED URLS — final IA</span>
+<span class="k">/</span>                                <span class="c">// Home</span>
+<span class="k">/signature-ombre-brows</span>           <span class="c">// Primary service page</span>
+<span class="k">/pricing</span>                         <span class="c">// NEW — dedicated pricing page</span>
+<span class="k">/about-nara</span>                      <span class="c">// NEW — artist bio</span>
+<span class="k">/reviews</span>                         <span class="c">// Exists</span>
+<span class="k">/aftercare-guide</span>                 <span class="c">// Exists — expand to full timeline</span>
+<span class="k">/microblading-vs-powder-brows</span>    <span class="c">// Exists — keep</span>
+<span class="k">/faq</span>                             <span class="c">// NEW — expanded FAQ w/ FAQPage schema</span>
+<span class="k">/book</span>                            <span class="c">// NEW — booking flow landing</span>
+<span class="k">/guide</span>                           <span class="c">// NEW — lead magnet thank-you page</span>
+
+<span class="c">// FOOTER-ONLY (low priority, legal/SEO)</span>
+<span class="k">/privacy</span>
+<span class="k">/terms</span>
+<span class="k">/accessibility</span>
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">6.5 Performance targets</h3>
+
+  <table class="spec-table">
+    <thead><tr><th>Metric</th><th>Target</th><th>Minimum</th></tr></thead>
+    <tbody>
+      <tr><td>LCP (Largest Contentful Paint)</td><td>&lt;1.8s</td><td>&lt;2.5s</td></tr>
+      <tr><td>CLS (Cumulative Layout Shift)</td><td>&lt;0.05</td><td>&lt;0.1</td></tr>
+      <tr><td>INP (Interaction to Next Paint)</td><td>&lt;150ms</td><td>&lt;200ms</td></tr>
+      <tr><td>Page weight (mobile)</td><td>&lt;1.5MB</td><td>&lt;2.5MB</td></tr>
+      <tr><td>Hero image size</td><td>&lt;180kb (WebP, lazy-load blurred placeholder)</td><td>&lt;300kb</td></tr>
+      <tr><td>Font load</td><td>preload Fraunces + Inter Tight, swap fallback</td><td>—</td></tr>
+      <tr><td>Lighthouse SEO score</td><td>≥95</td><td>≥90</td></tr>
+      <tr><td>Lighthouse Accessibility</td><td>100</td><td>95</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">6.6 Asset deliverables checklist</h3>
+
+  <div class="bp-callout">
+    <div class="bp-callout-label">NARA / PRE-BUILD ASSETS REQUIRED</div>
+    <strong>Photography</strong> — professional session, natural light, warm tones:<br>
+    &nbsp;&nbsp;• 1 hero healed-result portrait (4:5, min 2000px wide)<br>
+    &nbsp;&nbsp;• 3 matched triptych shots (Day 1, Day 14, Day 45 — same client, same angle)<br>
+    &nbsp;&nbsp;• 12 healed gallery shots (min 1600px, 3:4 ratio)<br>
+    &nbsp;&nbsp;• 1 Nara portrait for §F (4:5)<br>
+    &nbsp;&nbsp;• 3–5 studio/process detail shots<br><br>
+    <strong>Video</strong><br>
+    &nbsp;&nbsp;• 1 × 60–90s client testimonial (1080p min, captions hardcoded)<br>
+    &nbsp;&nbsp;• 1 × 90s Nara intro for /about-nara (can be iPhone 15+ with clip mic)<br><br>
+    <strong>Copy verification</strong> (Nara must confirm before publish)<br>
+    &nbsp;&nbsp;• Training lineage (§F body copy)<br>
+    &nbsp;&nbsp;• Start year for "523 procedures since [YEAR]"<br>
+    &nbsp;&nbsp;• VA license number<br>
+    &nbsp;&nbsp;• Real testimonial attributions (initials + town)<br>
+    &nbsp;&nbsp;• Phone number for nav/footer<br>
+    &nbsp;&nbsp;• Street address for schema
+  </div>
+
+  <h3 style="font-family: var(--f-display); font-size: 28px; font-weight: 500; margin-top: var(--s-7); margin-bottom: var(--s-4);">6.7 Build order (recommended)</h3>
+
+  <ol style="list-style: none; counter-reset: step; padding: 0; margin: var(--s-5) 0;">
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">01</span>
+      <div><strong>Tokens + typography setup.</strong> Build <code style="font-family: var(--f-mono); background: var(--im-line); padding: 2px 6px;">tokens.css</code>, load fonts, confirm render of H1/H2/eyebrow/body. 1 day.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">02</span>
+      <div><strong>Button + form components.</strong> btn-primary, btn-secondary, btn-ghost, email form, all hover/focus states. 1 day.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">03</span>
+      <div><strong>Homepage §A → §K.</strong> In order. Real copy. Placeholder images OK temporarily. 3–4 days.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">04</span>
+      <div><strong>Photography shoot + real assets swap.</strong> 1 day shoot, 2 days edit. Drop into placeholders. 3 days.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">05</span>
+      <div><strong>Service page + about-nara + pricing.</strong> Same components, different content. 2–3 days.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">06</span>
+      <div><strong>Booking flow + email capture.</strong> Vagaro or Square embed, Mailchimp/ConvertKit for nurture. 1–2 days.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; border-bottom: 1px solid var(--im-line); display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">07</span>
+      <div><strong>Schema, meta, sitemap, performance pass.</strong> 1 day.</div>
+    </li>
+    <li style="counter-increment: step; padding: var(--s-4) 0; display: grid; grid-template-columns: 48px 1fr; gap: var(--s-4); align-items: baseline;">
+      <span style="font-family: var(--f-display); font-style: italic; color: var(--im-rose); font-size: 32px;">08</span>
+      <div><strong>QA + launch.</strong> Lighthouse, Schema validator, mobile on real device, 5-email nurture test. 1 day. <strong>Total: ~14 working days.</strong></div>
+    </li>
+  </ol>
+
+  <div class="divider-ornament"><span>⁂</span></div>
+
+  <div style="text-align: center; margin-top: var(--s-8); padding-top: var(--s-7); border-top: 1px solid var(--im-line);">
+    <div style="font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--im-rose); margin-bottom: var(--s-3);">END OF BLUEPRINT · V1.0</div>
+    <div style="font-family: var(--f-display); font-size: 24px; font-weight: 300; font-style: italic; color: var(--im-ink);">Build this. Ship it. Then measure.</div>
+  </div>
+
+</section>
+
+<script>
+  // Simple tab toggle (live-render / copy / specs)
+  document.querySelectorAll('.tabs').forEach(tabGroup => {
+    const tabs = tabGroup.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
