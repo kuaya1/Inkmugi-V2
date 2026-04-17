@@ -317,10 +317,7 @@ const Home: React.FC = () => {
 
             <h1 className="mb-6 md:mb-8">
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
-                Natural Ombré Powder Brows
-              </span>
-              <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
-                in <span className="text-[#E6DAD2]">Annandale, Virginia</span>
+                Brows you don't have to think about.
               </span>
             </h1>
 
