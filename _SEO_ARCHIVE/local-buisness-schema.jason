@@ -1,0 +1,49 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Inkmugi",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7857 Heritage Dr #330",
+        "addressLocality": "Annandale",
+        "addressRegion": "VA",
+        "postalCode": "22003",
+        "addressCountry": "US"
+    },
+    "telephone": "+1-571-283-8228",
+    "url": "https://www.inkmugi.com",
+    "image": "https://www.inkmugi.com/images/logo.png",
+    "description": "Inkmugi specializes in PMU services including precision microblading, flawless ombre powder brows, and innovative microshading for clients across Virginia, Maryland, and the DC metro area.",
+    "keywords": "PMU, microblading, ombre powder brows, microshading, DMV area, Annandale, Arlington, Alexandria",
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "38.8304",
+        "longitude": "-77.1964"
+    },
+    "areaServed": [
+        "Annandale", 
+        "Arlington", 
+        "Alexandria", 
+        "Washington DC", 
+        "Falls Church", 
+        "Vienna", 
+        "McLean", 
+        "Fairfax", 
+        "Springfield"
+    ],
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "16:00"
+        }
+    ],
+    "servesCuisine": "Beauty Services"
+}

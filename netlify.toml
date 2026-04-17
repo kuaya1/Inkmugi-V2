@@ -1,0 +1,165 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# ──────────────────────────────────────────────────────────────────
+# HTTPS + non-www canonicalisation (force = true means these fire
+# even when a matching file exists in the publish directory)
+# Google selected https://inkmugi.com as canonical — all variants
+# must 301 to non-www HTTPS.
+# ──────────────────────────────────────────────────────────────────
+[[redirects]]
+  from = "http://inkmugi.com/*"
+  to   = "https://inkmugi.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "http://www.inkmugi.com/*"
+  to   = "https://inkmugi.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "https://www.inkmugi.com/*"
+  to   = "https://inkmugi.com/:splat"
+  status = 301
+  force  = true
+
+# ──────────────────────────────────────────────────────────────────
+# 301 Redirects — old / short URLs → canonical React routes
+# ──────────────────────────────────────────────────────────────────
+
+# Legacy HTML extensions
+[[redirects]]
+  from = "/services.html"
+  to   = "/services"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/gallery.html"
+  to   = "/gallery"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/contact.html"
+  to   = "/contact"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog.html"
+  to   = "/blog"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/faq.html"
+  to   = "/faq"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/about.html"
+  to   = "/about"
+  status = 301
+  force  = true
+
+# Short / legacy service URL → canonical
+[[redirects]]
+  from = "/ombre-brows"
+  to   = "/signature-ombre-brows"
+  status = 301
+  force  = true
+
+# Old location page → SEO-optimised URL
+[[redirects]]
+  from = "/permanent-makeup-annandale-va"
+  to   = "/licensed-pmu-artist-annandale"
+  status = 301
+  force  = true
+
+# Legacy blog paths
+[[redirects]]
+  from = "/blog/healing-process-old-post"
+  to   = "/permanent-makeup-safety-dmv"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/post-about-pricing"
+  to   = "/services"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/services/microblading"
+  to   = "/services"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/services/ombre-powder-brows"
+  to   = "/services"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/old-gallery-page.html"
+  to   = "/gallery"
+  status = 301
+  force  = true
+
+# ──────────────────────────────────────────────────────────────────
+# SPA fallback — MUST be last.
+# Serves index.html for every path that did not match a redirect
+# above, and lets React Router handle client-side navigation.
+# ──────────────────────────────────────────────────────────────────
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
+
+# ──────────────────────────────────────────────────────────────────
+# Security + SEO response headers
+# ──────────────────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag       = "index, follow"
+    X-Frame-Options    = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy    = "strict-origin-when-cross-origin"
+
+# Cache static assets aggressively, HTML never
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ──────────────────────────────────────────────────────────────────
+# Build post-processing
+# ──────────────────────────────────────────────────────────────────
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+# ──────────────────────────────────────────────────────────────────
+# Prerendering for SEO bots
+# Netlify's built-in prerendering serves fully-rendered HTML to
+# Googlebot, Bingbot, etc. while real users get the SPA.
+# Enable in Netlify Dashboard:
+#   Site Settings → Build & Deploy → Prerendering → Netlify
+# ──────────────────────────────────────────────────────────────────

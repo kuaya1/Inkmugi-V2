@@ -1,0 +1,5 @@
+{
+  "name": "InkMugi AI PMU Expert",
+  "description": "An advanced AI chatbot that serves as an expert on all things Permanent Makeup (PMU), with deep knowledge sourced from inkmugi.com. It offers personalized advice, PMU quizzes, and virtual brow recommendations.",
+  "requestFramePermissions": []
+}

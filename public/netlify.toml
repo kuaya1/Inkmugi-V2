@@ -1,0 +1,136 @@
+[build]
+  base = "project"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Force HTTPS and non-www (Google selected non-www as canonical)
+[[redirects]]
+  from = "http://inkmugi.com/*"
+  to = "https://inkmugi.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.inkmugi.com/*"
+  to = "https://inkmugi.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.inkmugi.com/*"
+  to = "https://inkmugi.com/:splat"
+  status = 301
+  force = true
+
+# BEGIN 301 Redirects for GSC 404 Errors
+
+# Redirect old service pages
+[[redirects]]
+  from = "/services/microblading"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/ombre-powder-brows"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/old-gallery-page.html"
+  to = "/gallery"
+  status = 301
+  force = true
+
+# Redirect old blog posts
+[[redirects]]
+  from = "/blog/healing-process-old-post"
+  to = "/permanent-makeup-safety-dmv"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/post-about-pricing"
+  to = "/services"
+  status = 301
+  force = true
+
+# Redirect old HTML pages to React routes
+[[redirects]]
+  from = "/services.html"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gallery.html"
+  to = "/gallery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq.html"
+  to = "/faq"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+# Redirect old location page URL to new SEO-optimized URL
+[[redirects]]
+  from = "/permanent-makeup-annandale-va"
+  to = "/licensed-pmu-artist-annandale"
+  status = 301
+  force = true
+
+# END 301 Redirects
+
+# SPA fallback (must be last)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  directory = "netlify/functions"
+
+# Enable prerendering for SEO bots
+# Serves fully rendered HTML snapshots to search engine crawlers
+# while real users get the SPA experience
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+# Bot-specific prerendering via Netlify's built-in prerendering
+# Enable in Netlify Dashboard: Site Settings → Build & Deploy → Prerendering
+# Supported bots: Googlebot, Bingbot, Twitterbot, facebookexternalhit, LinkedInBot
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
