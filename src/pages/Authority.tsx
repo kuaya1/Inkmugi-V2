@@ -187,7 +187,7 @@ export default function Authority() {
   return (
     <>
       <SEO
-        title="Ombré Powder Brows Standards & Safety | Ink Mugi Annandale VA"
+        title="Ink Mugi | Ombré Powder Brows Standards, Safety & Risk Control — Annandale, VA"
         description="How Ink Mugi controls risk in permanent makeup: 523+ documented procedures, 0.19% complication rate, healed-first review, sterile protocol, and the Ink Mugi Method for ombré powder brows in Northern Virginia."
         path="/authority"
         keywords="ombré powder brows Annandale VA, permanent makeup Northern Virginia, ombre powder brows safety, permanent makeup standards, healed results ombre powder brows, Ink Mugi method, Virginia licensed cosmetic tattooer"

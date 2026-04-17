@@ -317,7 +317,7 @@ const Home: React.FC = () => {
 
             <h1 className="mb-6 md:mb-8">
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
-                Ombr\u00e9 powder brows
+                Ombré powder brows
               </span>
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
                 <span className="text-[#E6DAD2]">designed for predictable healed results.</span>
