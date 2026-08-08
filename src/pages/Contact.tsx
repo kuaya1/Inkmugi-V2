@@ -77,9 +77,14 @@ const Contact: React.FC = () => {
               <p className="text-[#2D2D2B]/80 mb-4">
                 Whether you have questions about our services, pricing, or want to schedule a consultation, we're here to help. Fill out the form, and we'll get back to you as soon as possible.
               </p>
+              {/*
+                Was a credential block — licence number, procedure count, complication
+                rate and a 97% satisfaction figure with no source — on the page where
+                someone has already decided to make contact. Nobody needs convincing at
+                this point; they need to know they will get a reply.
+              */}
               <p className="text-[#2D2D2B]/70 text-sm mb-8 bg-[#F7EDE6] p-4 rounded-lg">
-                <strong className="text-[#2D2D2B]">Virginia Licensed PMU Artist</strong> • License #1231002471<br />
-                <strong className="text-[#2D2D2B]">523+ procedures</strong> • 0.19% Complication Rate • 97% Satisfaction
+                Messages come straight to Mugi, not to a front desk. If you're not sure what you want yet, say so — that's a normal way to start, and it's easier to work out together than alone.
               </p>
               
               <div className="space-y-6 mb-8">

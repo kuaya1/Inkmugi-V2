@@ -104,7 +104,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Centreville VA | Ink Mugi — Healed-First Results"
-        description="Ombre powder brows for Centreville VA residents. 523+ procedures, 0.19% complication rate. 25 min from Centreville Square. VA licensed, healed-first approach. Free consultation."
+        description="Ombre powder brows for Centreville VA residents. 523+ procedures, 0.19% complication rate. 25 min from Centreville Square. VA licensed, six-week review. Free consultation."
         path="/ombre-brows-centreville-va"
         keywords="ombre powder brows Centreville VA, permanent makeup Centreville Virginia, PMU near Centreville Square, powder brows Route 28, microshading Centreville, nano brows Centreville VA"
       >

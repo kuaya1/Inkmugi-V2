@@ -90,7 +90,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Permanent Makeup in Annandale, VA",
-            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. 523+ documented procedures, healed-first approach. Located at Heritage Center, 7857 Heritage Dr #330.",
+            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. 523+ documented procedures, six-week review. Located at Heritage Center, 7857 Heritage Dr #330.",
             "provider": { "@type": "HealthAndBeautyBusiness", "@id": "https://inkmugi.com/#business" },
             "areaServed": { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
             "serviceType": "Permanent Makeup",
@@ -281,7 +281,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
+                  <h3 className="text-xl font-semibold">You approve the shape first</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
                   Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Annandale residents making a considered investment, this distinction is exactly why they choose our studio over artists who only show fresh work.

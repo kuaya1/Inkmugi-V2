@@ -24,7 +24,7 @@ const OmbreBrowsReston: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Reston VA Clients",
-    "description": "Professional ombre powder brows service for Reston, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 25 minutes from Reston Town Center.",
+    "description": "Professional ombre powder brows service for Reston, VA residents. Virginia licensed · Annandale studio. Located in Annandale — 25 minutes from Reston Town Center.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -103,7 +103,7 @@ const OmbreBrowsReston: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows Reston VA | Ink Mugi — Healed-First PMU"
+        title="Ombre Powder Brows Reston VA | Ink Mugi"
         description="Ombre powder brows for Reston VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 25 min from Reston Town Center. Free consultation — see healed results first."
         path="/ombre-brows-reston-va"
         keywords="ombre powder brows Reston VA, permanent makeup Reston Virginia, PMU near Reston Town Center, powder brows Fairfax County, microshading Reston VA, nano brows Reston"
@@ -142,7 +142,7 @@ const OmbreBrowsReston: React.FC = () => {
         city="Reston"
         badgeText="Serving Reston, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Reston, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Reston professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Reston professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="25 minutes from Reston Town Center to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Ombre powder brows for Reston, VA clients at Ink Mugi studio"
@@ -168,7 +168,7 @@ const OmbreBrowsReston: React.FC = () => {
                 Our Annandale studio is a straight 25-minute drive from the Wiehle-Reston East Metro area via the Fairfax County Parkway. Several clients from the Lake Anne neighborhood and Reston Town Center tell us the drive is easier than dealing with Tysons Corner traffic. Free parking and a private, unhurried environment make the visit effortless.
               </p>
               <p>
-                As a Fairfax County-based studio, we understand the lifestyle demands of Northern Virginia. Every procedure is built around our healed-first philosophy: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Reston clients appreciate.
+                As a Fairfax County-based studio, we understand the lifestyle demands of Northern Virginia. Every procedure is built around the way Mugi works: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Reston clients appreciate.
               </p>
             </div>
           </AnimatedSection>
@@ -322,7 +322,7 @@ const OmbreBrowsReston: React.FC = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
+                  <h3 className="text-xl font-semibold">You approve the shape first</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
                   Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Reston professionals who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work. It is also why so many of our consultations focus on realistic healed expectations rather than only the immediate before-and-after.
@@ -545,7 +545,7 @@ const OmbreBrowsReston: React.FC = () => {
               Ready to See If We're a Fit?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
-              Join Reston residents from Town Center to Lake Anne who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment.
+              Plenty of Reston clients from Town Center to Lake Anne have made the drive. Most say the same thing afterwards — that the shape finally suits them. Your consultation is a conversation — not a commitment.
             </p>
             <p className="text-base text-white/60 mb-8">
               Serving Fairfax County &amp; Northern Virginia • 25 minutes from Reston • Free parking • By consultation only

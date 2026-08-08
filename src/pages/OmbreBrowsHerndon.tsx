@@ -24,7 +24,7 @@ const OmbreBrowsHerndon: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Herndon VA Clients",
-    "description": "Professional ombre powder brows service for Herndon, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Downtown Herndon.",
+    "description": "Professional ombre powder brows service for Herndon, VA residents. Virginia licensed · Annandale studio. Located in Annandale — 30 minutes from Downtown Herndon.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -103,7 +103,7 @@ const OmbreBrowsHerndon: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows Herndon VA | Ink Mugi — Healed-First PMU"
+        title="Ombre Powder Brows Herndon VA | Ink Mugi"
         description="Ombre powder brows for Herndon VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Herndon. Free consultation — see healed results first."
         path="/ombre-brows-herndon-va"
         keywords="ombre powder brows Herndon VA, permanent makeup Herndon Virginia, PMU near Herndon, powder brows Fairfax County, microshading Herndon VA, nano brows Herndon"
@@ -142,7 +142,7 @@ const OmbreBrowsHerndon: React.FC = () => {
         city="Herndon"
         badgeText="Serving Herndon, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Herndon, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Herndon professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Herndon professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="30 minutes from Downtown Herndon to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Ombre powder brows for Herndon, VA clients at Ink Mugi studio"
@@ -168,7 +168,7 @@ const OmbreBrowsHerndon: React.FC = () => {
                 Our Annandale studio is a straightforward 30-minute drive from Downtown Herndon, south on Route 28 to I-66 East. Clients from the Fox Mill and McNair Farm areas tell us the drive is easier than navigating Tysons Corner traffic. Free parking and a private, unhurried appointment environment make the visit effortless.
               </p>
               <p>
-                As a Fairfax County-based studio, we understand the lifestyle demands of Northern Virginia. Every procedure is built around our healed-first philosophy: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Herndon clients appreciate.
+                As a Fairfax County-based studio, we understand the lifestyle demands of Northern Virginia. Every procedure is built around the way Mugi works: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Herndon clients appreciate.
               </p>
             </div>
           </AnimatedSection>
@@ -322,7 +322,7 @@ const OmbreBrowsHerndon: React.FC = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
+                  <h3 className="text-xl font-semibold">You approve the shape first</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
                   Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Herndon professionals who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work. It's also why so many of our consultations focus on realistic healed expectations rather than only the immediate before-and-after.
@@ -568,7 +568,7 @@ const OmbreBrowsHerndon: React.FC = () => {
               Ready to See If We're a Fit?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
-              Join Herndon residents from Downtown to Fox Mill who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment.
+              Plenty of Herndon clients from Downtown to Fox Mill have made the drive. Most say the same thing afterwards — that the shape finally suits them. Your consultation is a conversation — not a commitment.
             </p>
             <p className="text-base text-white/60 mb-8">
               Serving Fairfax County &amp; Northern Virginia • 30 minutes from Herndon • Free parking • By consultation only

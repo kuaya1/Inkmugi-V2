@@ -166,7 +166,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
               If your microblading has faded, shifted color, or simply isn't giving you the results you
               want — you don't need to start from scratch. Powder brows can be applied over old microblading
-              to restore, refresh, or completely transform your brow appearance.
+              to soften what's there, even out the colour, or rebuild the shape entirely.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
               By a Virginia-licensed PMU artist with 523+ procedures • ~35% of our clients are microblading transitions

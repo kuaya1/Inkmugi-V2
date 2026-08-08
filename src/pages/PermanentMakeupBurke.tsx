@@ -27,12 +27,12 @@ const PermanentMakeupBurke: React.FC = () => {
         { type: 'AdministrativeArea', name: 'Fairfax County', state: 'Virginia' },
       ]}
       serviceSchemaName="Ombre Powder Brows for Burke VA Clients"
-      serviceSchemaDesc="Professional ombre powder brows service for Burke, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 12 minutes from Burke Centre."
+      serviceSchemaDesc="Professional ombre powder brows service for Burke, VA residents. Virginia licensed · Annandale studio. Located in Annandale — 12 minutes from Burke Centre."
 
       /* ---- hero ---- */
       badgeText="Serving Burke, VA — 12 Min from Our Studio"
       headline={<>Permanent Makeup for<br /><span className="text-[#9A7B69]">Burke, VA</span> — Your Neighborhood PMU Expert</>}
-      heroSubtext="Healed-first permanent makeup trusted by Burke families and professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+      heroSubtext="Ombré powder brows for Burke families and professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
       heroSecondaryText="12 minutes from Burke Centre to our private Annandale studio. Free parking. Consultation-first approach."
       heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
       heroImageAlt="Healed ombre powder brows for Burke, VA clients at Ink Mugi studio"
@@ -58,7 +58,7 @@ const PermanentMakeupBurke: React.FC = () => {
             <Link to="/licensed-pmu-artist-annandale" className="text-[#9A7B69] underline hover:text-[#2D2D2B] transition-colors">
               Annandale
             </Link>{' '}
-            and the surrounding communities, we understand the active, family-driven lifestyle here. Every procedure is built around our healed-first philosophy: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. No pressure, no rushing — just meticulous artistry 12 minutes from your door.
+            and the surrounding communities, we understand the active, family-driven lifestyle here. Every procedure is built around the way Mugi works: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. No pressure, no rushing — just meticulous artistry 12 minutes from your door.
           </p>
           <p>
             Burke clients who've compared us to studios in Tysons and DC consistently say the same thing: our $600 all-inclusive pricing, documented track record, and intimate studio environment make the choice easy. And unlike driving to Tysons Corner, there's free parking and zero traffic stress.
@@ -90,7 +90,7 @@ const PermanentMakeupBurke: React.FC = () => {
         },
         {
           icon: 'healed' as const,
-          title: 'Healed-First Means Certainty',
+          title: 'You approve the shape first',
           content: "Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Burke families making a considered investment in their appearance, this distinction is exactly why they choose our approach over artists who only showcase fresh work. We focus on realistic healed expectations, not just the immediate before-and-after.",
         },
       ]}
@@ -170,7 +170,7 @@ const PermanentMakeupBurke: React.FC = () => {
       }
 
       /* ---- CTA customization ---- */
-      ctaSubtext="Join Burke families from Burke Centre to Kings Park who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment."
+      ctaSubtext="Join Burke families from Burke Centre to Kings Park who've chosen ombré powder brows with documented results. Your consultation is a conversation — not a commitment."
       ctaFooterText="Serving Fairfax County & Northern Virginia • 12 minutes from Burke • Free parking • By consultation only"
       midCTASubtext="Burke Centre and Kings Park residents trust Ink Mugi for precision permanent makeup — just 12 minutes via Braddock Road."
     />

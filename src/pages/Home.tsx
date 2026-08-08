@@ -312,18 +312,18 @@ const Home: React.FC = () => {
             </motion.div>
 
             {/*
-              The previous headline promised "predictable healed results" — an
-              engineering specification where the reader wanted an outcome. This one
-              keeps the service name first (it is what people search for) and pairs it
-              with what the work actually gives you back: the brows stop being something
-              you manage every morning.
+              Mugi describes her own work, in her own words on her booking profile, as
+              brows "that enhance your features without ever feeling overdone" and
+              results that are "effortless, subtle, and true to you". The headline now
+              says that plainly. It also answers the fear a first-time client actually
+              arrives with — that she will not look like herself afterwards.
             */}
             <h1 className="mb-6 md:mb-8">
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
                 Ombré powder brows
               </span>
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
-                <span className="text-[#E6DAD2]">you stop thinking about.</span>
+                <span className="text-[#E6DAD2]">that still look like you.</span>
               </span>
             </h1>
 
@@ -334,15 +334,15 @@ const Home: React.FC = () => {
               transition={{ delay: 1, duration: 0.8 }}
             >
               {/*
-                The old subhead opened "the difference is no longer aesthetic preference"
-                — denying, in the first sentence a visitor reads, the exact thing she is
-                hiring: an artist's eye. The count is kept but demoted to the last clause,
-                where it explains the restraint instead of leading with volume.
+                No procedure count here at all now. The first screen answers the two
+                questions a nervous first-time client actually has — will I be rushed,
+                and can I change my mind — and it answers them with what happens in the
+                room rather than with credentials.
               */}
               <p className="text-lg md:text-xl text-white/75 font-light leading-relaxed">
-                Mugi maps the shape to your face, keeps the first pass light, and judges the work at six weeks rather than on the day.
+                Most of the appointment happens before any pigment does. Mugi maps the shape to your face, draws it on, and adjusts it with you until you like what you see in the mirror.
                 <br className="hidden sm:block" />
-                After 523 procedures, most of the skill is knowing what not to do.
+                Nothing permanent starts before that.
               </p>
             </motion.div>
 
@@ -417,9 +417,16 @@ const Home: React.FC = () => {
               result; and a bar of four numbers reads as a scoreboard rather than a
               practice. What is left says: experienced, patient, and nearby.
             */}
+            {/*
+              "523+" is gone from this bar. The site publishes four different procedure
+              counts (523+, 600+, 330, 500+), so the precision is false precision, and
+              on the second screen of the homepage it was doing decorative work rather
+              than answering a question. "Hundreds" is both truer and, on a page selling
+              judgement rather than volume, sufficient.
+            */}
             {[
-              { value: '523+', label: 'Procedures, consultation to healed result' },
-              { value: '6 weeks', label: 'Before any result is called finished', accent: true },
+              { value: 'Hundreds', label: 'of brows mapped and drawn by hand' },
+              { value: 'Six weeks', label: 'before a result is called finished', accent: true },
               { value: 'Annandale', label: 'Private studio in Northern Virginia' },
             ].map((item, i) => (
               <div key={i} className="text-center">
@@ -719,19 +726,20 @@ const Home: React.FC = () => {
               <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
                 Client Perspectives
               </span>
+              {/*
+                The self-awarded "5.0 average across 47+ reviews" and its star row are
+                gone, matching the removal already made on the 19 location pages. The
+                count is not verifiable from anything in this repository, and the
+                studio's Vagaro profile currently shows no reviews at all — so whatever
+                the real number is, it is not one this page can assert. What the
+                reviews consistently describe is more persuasive than a score anyway.
+              */}
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-4">
-                What clients describe — in their own words
+                What clients tend to notice
               </h2>
-              <div className="flex items-center gap-3">
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-[#9A7B69] fill-current" viewBox="0 0 20 20">
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-sm text-[#2D2D2B]/50">5.0 average across 47+ reviews</span>
-              </div>
+              <p className="text-base text-[#2D2D2B]/60 max-w-xl">
+                Almost none of it is about the pigment. It is about how long she spent on the shape, and whether they felt listened to while she did it.
+              </p>
             </div>
           </AnimatedSection>
 
@@ -985,14 +993,23 @@ const Home: React.FC = () => {
         <div className="container-custom relative">
           <div className="max-w-3xl mx-auto text-center text-white">
             <AnimatedSection>
+              {/*
+                The page used to close on screening: "may end with a recommendation to
+                wait, or a recommendation not to proceed at all… accurate screening, not
+                persuasion." Honest, and genuinely good writing — but it made the last
+                thing a ready-to-book visitor read a warning that she might be turned
+                away. The honesty is kept; the framing is now an invitation, and the
+                medical screening lives in the FAQ and on /authority, where someone who
+                wants it will look for it.
+              */}
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium leading-tight mb-6">
-                Start with an honest assessment,
+                You don't need to know what you want
                 <br />
-                <span className="text-[#E6DAD2]">not a sales conversation.</span>
+                <span className="text-[#E6DAD2]">before you get in touch.</span>
               </h2>
 
               <p className="text-base text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
-                A consultation is where your skin, brow history, medical considerations, and long-term expectations are reviewed before any procedure is discussed seriously. That conversation may end with a treatment plan, a recommendation to wait, or a recommendation not to proceed at all. Good permanent makeup starts with accurate screening, not persuasion.
+                Plenty of people arrive unsure whether they want powder brows at all, or worried about ending up with something too dark or too strong. That is a normal place to start. Bring photos of brows you like and brows you don't, and Mugi will tell you honestly what she thinks will suit your face.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">

@@ -635,7 +635,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
               {ctaSubtext ||
-                `Join ${city} residents who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment.`}
+                `Join ${city} residents who've chosen ombré powder brows with documented results. Your consultation is a conversation — not a commitment.`}
             </p>
             {ctaFooterText && (
               <p className="text-base text-white/60 mb-8">{ctaFooterText}</p>

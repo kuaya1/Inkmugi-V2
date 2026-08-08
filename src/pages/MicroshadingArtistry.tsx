@@ -247,7 +247,7 @@ const MicroshadingArtistry: React.FC = () => {
                   powder-like finish.
                 </p>
                 <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  The hand tool gives the artist <strong>unparalleled precision and control</strong> over
+                  The hand tool gives the artist <strong>fine control over how much pigment lands where</strong> over
                   pigment depth and density. This means more natural-looking results, especially for
                   clients who want a subtle enhancement rather than a bold, defined brow. The pixelated
                   dot pattern also <strong>holds pigment better in oily skin types</strong> — making

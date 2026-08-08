@@ -24,7 +24,7 @@ const OmbreBrowsManassas: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Manassas VA Clients",
-    "description": "Professional ombre powder brows service for Manassas, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 30 minutes from Historic Downtown Manassas.",
+    "description": "Professional ombre powder brows service for Manassas, VA residents. Virginia licensed · Annandale studio. Located in Annandale — 30 minutes from Historic Downtown Manassas.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -103,7 +103,7 @@ const OmbreBrowsManassas: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows Manassas VA | Ink Mugi — Healed-First PMU"
+        title="Ombre Powder Brows Manassas VA | Ink Mugi"
         description="Ombre powder brows for Manassas VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Manassas. Free consultation — see healed results first."
         path="/ombre-brows-manassas-va"
         keywords="ombre powder brows Manassas VA, permanent makeup Manassas Virginia, powder brows Prince William County, PMU near Manassas, microshading Manassas VA, nano brows Manassas"
@@ -142,7 +142,7 @@ const OmbreBrowsManassas: React.FC = () => {
         city="Manassas"
         badgeText="Serving Manassas, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Manassas, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="30 minutes from Historic Downtown Manassas to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Ombre powder brows for Manassas, VA clients at Ink Mugi studio"
@@ -168,7 +168,7 @@ const OmbreBrowsManassas: React.FC = () => {
                 Our Annandale studio is a straight 30-minute drive from Downtown Manassas via I-66 East. Clients from Manassas Park and Yorkshire tell us the drive is more straightforward than navigating Route 28 traffic toward Centreville. Free parking and a private, unhurried environment make the visit effortless.
               </p>
               <p>
-                As a Northern Virginia-based studio, we understand the lifestyle demands of Prince William County residents. Every procedure is built around our healed-first philosophy: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Manassas clients appreciate.
+                As a Northern Virginia-based studio, we understand the lifestyle demands of Prince William County residents. Every procedure is built around the way Mugi works: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Manassas clients appreciate.
               </p>
             </div>
           </AnimatedSection>
@@ -322,7 +322,7 @@ const OmbreBrowsManassas: React.FC = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
+                  <h3 className="text-xl font-semibold">You approve the shape first</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
                   Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Manassas professionals who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work. Many Manassas clients reference our healed gallery during their consultation as the deciding factor.
@@ -537,7 +537,7 @@ const OmbreBrowsManassas: React.FC = () => {
               Ready to See If We're a Fit?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
-              Join Manassas residents from Historic Downtown to Gainesville who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment.
+              Plenty of Manassas clients from Historic Downtown to Gainesville have made the drive. Most say the same thing afterwards — that the shape finally suits them. Your consultation is a conversation — not a commitment.
             </p>
             <p className="text-base text-white/60 mb-8">
               Serving Prince William County &amp; Northern Virginia • 30 minutes from Manassas • Free parking • By consultation only

@@ -24,7 +24,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Woodbridge VA Clients",
-    "description": "Professional ombre powder brows service for Woodbridge, VA residents. 523+ documented procedures, healed-first approach, VA licensed. Located in Annandale — 35 minutes from Woodbridge via I-95/I-395.",
+    "description": "Professional ombre powder brows service for Woodbridge, VA residents. Virginia licensed · Annandale studio. Located in Annandale — 35 minutes from Woodbridge via I-95/I-395.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -103,7 +103,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows Woodbridge VA | Ink Mugi — Healed-First PMU"
+        title="Ombre Powder Brows Woodbridge VA | Ink Mugi"
         description="Ombre powder brows for Woodbridge VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
         path="/ombre-brows-woodbridge-va"
         keywords="ombre powder brows Woodbridge VA, permanent makeup Woodbridge Virginia, powder brows Prince William County, PMU near Woodbridge, microshading Woodbridge VA, nano brows Woodbridge"
@@ -142,7 +142,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         city="Woodbridge"
         badgeText="Serving Woodbridge, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Woodbridge, VA</span></>}
-        subtext="Healed-first permanent makeup trusted by Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="35 minutes from Woodbridge via I-95 to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Ombre powder brows for Woodbridge, VA clients at Ink Mugi studio"
@@ -168,7 +168,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                 Our Annandale studio is approximately 35 minutes north of Woodbridge via I-95. Clients from Dale City and Lake Ridge often tell us the drive is straightforward, especially booking mid-morning appointments after the commuter rush clears. Free parking and a private, unhurried environment make the trip effortless.
               </p>
               <p>
-                As a Northern Virginia-based studio, we understand the regional climate and lifestyle demands that affect PMU longevity. Every procedure is built around our healed-first philosophy: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Woodbridge clients rely on.
+                As a Northern Virginia-based studio, we understand the regional climate and lifestyle demands that affect PMU longevity. Every procedure is built around the way Mugi works: you see the mapped design, approve the shape on your face, and nothing permanent happens until you're fully confident. That's the certainty Woodbridge clients rely on.
               </p>
             </div>
           </AnimatedSection>
@@ -322,7 +322,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-[#E6DAD2]" />
-                  <h3 className="text-xl font-semibold">Healed-First Means Certainty</h3>
+                  <h3 className="text-xl font-semibold">You approve the shape first</h3>
                 </div>
                 <p className="text-white/80 leading-relaxed">
                   Fresh brows always look great. What matters is how they look in 6 weeks — after the skin has fully healed. Our entire portfolio shows healed results, not same-day photos. For Woodbridge clients who make decisions based on evidence, this distinction is exactly why they choose our approach over artists who only showcase fresh work. When you're investing time and money in the drive from Prince William County, you deserve certainty.
@@ -533,7 +533,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
               Ready to See If We're a Fit?
             </h2>
             <p className="text-lg text-[#F9F7F5]/90 mb-8">
-              Join Woodbridge residents from Dale City to Lake Ridge who've chosen healed-first permanent makeup with documented results. Your consultation is a conversation — not a commitment.
+              Plenty of Woodbridge clients from Dale City to Lake Ridge have made the drive. Most say the same thing afterwards — that the shape finally suits them. Your consultation is a conversation — not a commitment.
             </p>
             <p className="text-base text-white/60 mb-8">
               Serving Prince William County &amp; Northern Virginia • 35 minutes from Woodbridge • Free parking • By consultation only

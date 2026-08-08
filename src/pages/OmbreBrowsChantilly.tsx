@@ -104,7 +104,7 @@ const OmbreBrowsChantilly: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Chantilly VA | Ink Mugi — 523+ procedures"
-        description="Ombre powder brows for Chantilly VA clients. 523+ procedures, VA licensed, healed-first approach. 25 min from Route 50 corridor. Free consultation — $600 all-inclusive."
+        description="Ombre powder brows for Chantilly VA clients. 523+ procedures, VA licensed, six-week review. 25 min from Route 50 corridor. Free consultation — $600 all-inclusive."
         path="/ombre-brows-chantilly-va"
         keywords="ombre powder brows Chantilly VA, permanent makeup Chantilly Virginia, PMU near South Riding, powder brows Dulles corridor, microshading Chantilly, nano brows Chantilly VA"
       >

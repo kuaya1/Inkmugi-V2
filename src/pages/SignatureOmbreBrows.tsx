@@ -278,27 +278,41 @@ const SignatureOmbreBrows: React.FC = () => {
                 <span className="text-sm font-medium">Virginia Licensed #1231002471</span>
               </div>
 
+              {/*
+                Was "The Art of the / Effortless Brow" over an SEO string — a headline
+                that could sit on any brow studio's site and never named the service.
+                This one names it, and says what the client is actually afraid of not
+                getting: brows that read as brows.
+              */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-cormorant font-light leading-tight mb-6">
-                The Art of the
-                <span className="block text-[#E6DAD2] font-medium mt-2">Effortless Brow</span>
+                Ombré powder brows
+                <span className="block text-[#E6DAD2] font-medium mt-2">that read as brows, not makeup.</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-white/90 mb-6 leading-relaxed">
-                Signature Ombre Powder Brows for Northern Virginia's Climate & Lifestyle
+                A soft gradient — diffused at the front, more defined through the tail — built up in thin layers rather than laid down in one pass. Mugi's habit is to under-do it the first time and add at your six-week session, because softer than expected is easy to fix and heavier than expected is not.
               </p>
 
               <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
+                {/*
+                  Was 523+ procedures / 97% satisfaction / 0.19% complications, in the
+                  hero of the page that is supposed to make someone want the brows. Three
+                  numbers, none of which answer a question a first-time client is asking,
+                  and one of them ("97% satisfaction") has no stated source anywhere in
+                  the site. Replaced with what she actually wants to know before booking:
+                  how long it takes, how many visits, and when it is finished.
+                */}
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">523+</div>
-                  <div className="text-xs text-white/70 uppercase tracking-wide">Procedures</div>
+                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">2–3 hrs</div>
+                  <div className="text-xs text-white/70 uppercase tracking-wide">Unrushed</div>
                 </div>
                 <div className="text-center border-x border-white/20">
-                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">97%</div>
-                  <div className="text-xs text-white/70 uppercase tracking-wide">Satisfaction</div>
+                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">Two visits</div>
+                  <div className="text-xs text-white/70 uppercase tracking-wide">Shape first, density second</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">0.19%</div>
-                  <div className="text-xs text-white/70 uppercase tracking-wide">Complications</div>
+                  <div className="text-3xl font-bold text-[#E6DAD2] mb-1">6 weeks</div>
+                  <div className="text-xs text-white/70 uppercase tracking-wide">Until it's finished</div>
                 </div>
               </div>
 

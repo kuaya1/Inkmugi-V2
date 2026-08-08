@@ -189,7 +189,7 @@ const About: React.FC = () => {
     },
     {
       label: 'Current Standard',
-      title: 'Selective, healed-result-focused work',
+      title: 'How I work now',
       description:
         'Today the process is built for Northern Virginia clients who research carefully and expect the work to hold up in ordinary life, not only in fresh photos. The emphasis is long-term coherence, not fast turnover.',
     },
@@ -271,7 +271,7 @@ const About: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              No associates, no rotating staff — the person you consult with is the person who does the work. After 523+ procedures, I've come to think this job is less about style than about judgement: knowing when to proceed, when to stay conservative, and when to say no, because the healed result will matter far longer than the booking.
+              No associates, no rotating staff — the person you consult with is the person doing the work. Three years in, I've stopped thinking of this as a styling job. Most of it is judgement: how much shape a face can carry, when to hold back, and occasionally when to tell someone that the brow they've brought me a photo of isn't going to suit them. I would rather have that conversation than do work you have to live with.
             </motion.p>
 
             <motion.div
@@ -293,17 +293,20 @@ const About: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.4, duration: 0.8 }}
             >
+              {/*
+                Was licence number + procedure count + complication rate, stacked under
+                a personal introduction. Two of the three were credentials competing
+                with the sentence above them, and a complication rate directly beneath
+                "meet me" is a strange first handshake. The licence stays — it is the
+                one fact here that is verifiable and that a client should know.
+              */}
               <span className="flex items-center gap-2">
                 <Shield size={14} className="text-[#E6DAD2]" />
-                VA Licensed #1231002471
+                Virginia licensed permanent cosmetic tattooer · #1231002471
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 size={14} className="text-[#E6DAD2]" />
-                523+ Documented Procedures
-              </span>
-              <span className="flex items-center gap-2">
-                <Award size={14} className="text-[#E6DAD2]" />
-                0.19% Documented Complication Rate
+                Annandale, Virginia
               </span>
             </motion.div>
           </motion.div>
@@ -554,7 +557,7 @@ const About: React.FC = () => {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 size={16} className="text-[#E6DAD2]" />
-                Selective scheduling, not volume-based booking
+                One client at a time, never double-booked
               </span>
             </div>
           </AnimatedSection>
