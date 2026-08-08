@@ -170,5 +170,20 @@
 [build.processing]
   skip_processing = false
 
+# ──────────────────────────────────────────────────────────────────
+# Pretty URLs OFF.
+#
+# With it on, Netlify 301s /about -> /about/ to normalise directory
+# paths. That was harmless for a client-rendered SPA serving one
+# index.html, but now every route is its own prerendered directory, so
+# it meant: every URL in sitemap.xml redirected, every crawlable
+# internal <a href="/about"> redirected, and the document that finally
+# answered at /about/ declared its canonical as /about — a URL that
+# redirects. Verified in production before changing this.
+#
+# Off, Netlify's asset server still resolves /about to
+# dist/about/index.html and answers 200 directly, which is what the
+# canonicals and the sitemap already claim.
+# ──────────────────────────────────────────────────────────────────
 [build.processing.html]
-  pretty_urls = true
+  pretty_urls = false
