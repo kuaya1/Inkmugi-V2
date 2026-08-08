@@ -5,7 +5,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/SEO';
-import { fetchInstagramMedia, getMediaUrl } from '../services/instagramService';
+import { fetchInstagramMedia, getMediaUrl, type InstagramMedia } from '../services/instagramService';
 import { BOOKING_URL } from '../lib/siteMeta';
 
 // Enhanced Gallery Item component
@@ -331,7 +331,7 @@ const Gallery: React.FC = () => {
   ];
 
   // Instagram feed state
-  const [instagramPosts, setInstagramPosts] = useState<any[]>([]);
+  const [instagramPosts, setInstagramPosts] = useState<InstagramMedia[]>([]);
   const [instagramLoading, setInstagramLoading] = useState(true);
   const [instagramError, setInstagramError] = useState<string | null>(null);
   

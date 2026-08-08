@@ -78,7 +78,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "name": "Ink Mugi",
             "url": "https://inkmugi.com/",
             "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
-            "image": "https://inkmugi.com/og-safety-trust.jpg",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",

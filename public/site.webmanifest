@@ -1,7 +1,7 @@
 {
   "name": "Ink Mugi - Licensed PMU Artist | Annandale VA",
   "short_name": "Ink Mugi PMU",
-  "description": "Virginia-licensed permanent makeup artist with 523+ procedures, 0.19% complication rate. Ombre powder brows $600, microshading $500. Serving Annandale, Arlington, Alexandria.",
+  "description": "Virginia-licensed permanent makeup artist specialising in ombré powder brows. Serving Annandale, Arlington, Alexandria and Northern Virginia.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F9F7F5",
@@ -20,7 +20,7 @@
       "url": "/contact?phone=%s"
     },
     {
-      "protocol": "mailto", 
+      "protocol": "mailto",
       "url": "/contact?email=%s"
     }
   ],
@@ -45,7 +45,7 @@
       "url": "/gallery",
       "icons": [
         {
-          "src": "/gallery-icon-192.png", 
+          "src": "/gallery-icon-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -59,7 +59,7 @@
       "icons": [
         {
           "src": "/phone-icon-192.png",
-          "sizes": "192x192", 
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]
@@ -95,7 +95,13 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["beauty", "health", "lifestyle", "medical", "business"],
+  "categories": [
+    "beauty",
+    "health",
+    "lifestyle",
+    "medical",
+    "business"
+  ],
   "related_applications": [
     {
       "platform": "play",

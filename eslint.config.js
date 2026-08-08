@@ -5,7 +5,10 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  // dist-ssr holds the bundled prerender entry (~6 MB of vendored React).
+  // Linting it surfaced errors from eslint-disable comments inside React's own
+  // source, for rules this project does not install.
+  { ignores: ['dist', 'dist-ssr'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],

@@ -23,13 +23,18 @@ export const PERSON_ID = `${SITE_URL}/#mugi`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 
 /*
- * Hosted on the studio's Flickr CDN, which is where the site already loads its
- * imagery from. These replace https://inkmugi.com/logo.png and /og-image.jpg,
- * which were referenced by 82 JSON-LD blocks across 78 files and never existed:
- * the SPA catch-all answered both with the HTML shell at content-type
- * text/html, so every publisher logo and Article image on the site was invalid.
+ * These replace https://inkmugi.com/logo.png and /og-image.jpg, which were
+ * referenced by 82 JSON-LD blocks across 78 files and never existed: the SPA
+ * catch-all answered both with the HTML shell at content-type text/html, so
+ * every publisher logo and Article image on the site was invalid.
+ *
+ * The logo is deliberately first-party. The Flickr original-size variant the
+ * navbar hotlinks (…_o_d.png) returns HTTP 429 under repeated requests, which
+ * is a poor thing to hand a crawler that has to fetch it to validate markup.
+ * /android-chrome-512x512.png is a real 500×500 PNG in public/, served from
+ * our own origin.
  */
-export const LOGO_URL = 'https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png';
+export const LOGO_URL = `${SITE_URL}/android-chrome-512x512.png`;
 export const DEFAULT_IMAGE = 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg';
 
 export const NAP = {

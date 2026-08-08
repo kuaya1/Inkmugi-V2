@@ -694,7 +694,7 @@ const PmuCorrectionRestoration: React.FC = () => {
             {[
               {
                 label: 'Case A — Grey Migration Correction',
-                image: '/gallery/correction-grey-migration-healed.jpg',
+                image: '', // TODO(operator): add the healed photograph for this case
                 imageAlt: 'Healed grey migration correction — before and after microblading fix showing warm-toned natural gradient, Ink Mugi Annandale VA Fairfax County',
                 imageCaption: 'Grey migration correction · Healed result documented at 6 weeks · Warm-toned natural gradient restored',
                 presentation: 'Client presented with microblading performed 14 months prior. Strokes had blurred into a diffuse grey band across both brows. Cool-shifted pigment visible under clinical lighting. Moderate density — workable without lightening.',
@@ -703,7 +703,7 @@ const PmuCorrectionRestoration: React.FC = () => {
               },
               {
                 label: 'Case B — Over-Saturated Brow Reconstruction',
-                image: '/gallery/correction-over-saturated-healed.jpg',
+                image: '', // TODO(operator): add the healed photograph for this case
                 imageAlt: 'Healed over-saturated brow correction — density reduction and arch recalibration, permanent makeup fix Ink Mugi Fairfax County Virginia',
                 imageCaption: 'Over-saturation correction · Healed result documented at 6 weeks · 60% density reduction, arch repositioned',
                 presentation: 'Client presented with brows approximately 40% darker than intended from previous ombré powder procedure elsewhere. Shape was approximately symmetrical but arch position was medially displaced, creating a perpetually surprised expression.',
@@ -712,7 +712,7 @@ const PmuCorrectionRestoration: React.FC = () => {
               },
               {
                 label: 'Case C — Faded Microblading with Warm Shift',
-                image: '/gallery/correction-warm-shift-healed.jpg',
+                image: '', // TODO(operator): add the healed photograph for this case
                 imageAlt: 'Healed warm shift correction — orange microblading neutralized to natural brown tone, PMU correction Northern Virginia',
                 imageCaption: 'Warm shift correction · Healed result documented at 6 weeks · Orange migration fully neutralized',
                 presentation: 'Client presented with microblading performed 22 months prior. Original strokes had dissolved into faint orange-terracotta tint concentrated at brow heads with near-complete drop-out at tails. Skin type: oily-combination.',
@@ -722,16 +722,30 @@ const PmuCorrectionRestoration: React.FC = () => {
             ].map((item, i) => (
               <AnimatedSection key={i}>
                 <div className="bg-[#F9F7F5] rounded-xl overflow-hidden border border-[#E6DAD2]/20">
+                  {/*
+                    Rendered only when a real photograph exists. All three case
+                    images pointed at /gallery/correction-*.jpg files that are
+                    not in the repository — under the old SPA catch-all they
+                    returned the HTML shell, so this section shipped three
+                    broken images captioned "healed result documented at 6
+                    weeks". The written case record stands on its own; matching
+                    an arbitrary photo to a specific narrated case would be
+                    inventing evidence.
+                  */}
                   <figure>
-                    <img
-                      src={item.image}
-                      alt={item.imageAlt}
-                      className="w-full object-cover aspect-[3/2]"
-                      loading="lazy"
-                    />
-                    <figcaption className="text-xs text-[#2D2D2B]/40 px-6 pt-3 text-center italic tracking-wide">
-                      {item.imageCaption}
-                    </figcaption>
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt={item.imageAlt}
+                        className="w-full object-cover aspect-[3/2]"
+                        loading="lazy"
+                      />
+                    )}
+                    {item.image && (
+                      <figcaption className="text-xs text-[#2D2D2B]/40 px-6 pt-3 text-center italic tracking-wide">
+                        {item.imageCaption}
+                      </figcaption>
+                    )}
                   </figure>
                   <div className="p-6 md:p-8">
                     <h3 className="text-base font-semibold text-[#9A7B69] mb-4">{item.label}</h3>

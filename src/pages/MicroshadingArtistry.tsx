@@ -37,28 +37,23 @@ const MicroshadingArtistry: React.FC = () => {
   const howToSteps = [
     {
       name: "Free Consultation",
-      text: "Discuss your brow goals, analyze your skin type and undertone, review reference photos, and determine if microshading is the right technique for you. We'll also explain the full process and answer every question.",
-      image: "https://inkmugi.com/consultation.jpg"
+      text: "Discuss your brow goals, analyze your skin type and undertone, review reference photos, and determine if microshading is the right technique for you. We'll also explain the full process and answer every question."
     },
     {
       name: "Custom Brow Mapping",
-      text: "Using precise measurements and your unique facial proportions, Mugi designs your ideal brow shape. You'll approve the shape before any pigment is applied — ensuring you love the design before we begin.",
-      image: "https://inkmugi.com/brow-mapping.jpg"
+      text: "Using precise measurements and your unique facial proportions, Mugi designs your ideal brow shape. You'll approve the shape before any pigment is applied — ensuring you love the design before we begin."
     },
     {
       name: "Numbing & Comfort",
-      text: "Medical-grade numbing cream is applied and left to take effect for 20-30 minutes. Your comfort is our priority — most clients rate the experience a 2-3 out of 10 on the discomfort scale.",
-      image: "https://inkmugi.com/numbing.jpg"
+      text: "Medical-grade numbing cream is applied and left to take effect for 20-30 minutes. Your comfort is our priority — most clients rate the experience a 2-3 out of 10 on the discomfort scale."
     },
     {
       name: "Microshading Application",
-      text: "Using a specialized hand tool with fine needles, Mugi creates thousands of tiny, pixelated dots of pigment in a stippling pattern. This builds a soft, powdered effect that mimics natural brow fullness. The process takes 90-120 minutes.",
-      image: "https://inkmugi.com/microshading-application.jpg"
+      text: "Using a specialized hand tool with fine needles, Mugi creates thousands of tiny, pixelated dots of pigment in a stippling pattern. This builds a soft, powdered effect that mimics natural brow fullness. The process takes 90-120 minutes."
     },
     {
       name: "Healing & Touch-Up",
-      text: "Your brows will go through a 4-6 week healing cycle. We provide a premium aftercare kit and 24/7 text support throughout your healing. A complimentary touch-up appointment at 6-8 weeks ensures your results are absolutely perfect.",
-      image: "https://inkmugi.com/healing.jpg"
+      text: "Your brows will go through a 4-6 week healing cycle. We provide a premium aftercare kit and 24/7 text support throughout your healing. A complimentary touch-up appointment at 6-8 weeks ensures your results are absolutely perfect."
     }
   ];
 
@@ -149,12 +144,13 @@ const MicroshadingArtistry: React.FC = () => {
       "currency": "USD",
       "value": "700"
     },
+    /* No per-step `image`: the five step photos referenced files that were
+       never added to the repository. `image` is optional on HowToStep. */
     "step": howToSteps.map((step, i) => ({
       "@type": "HowToStep",
       "position": i + 1,
       "name": step.name,
-      "text": step.text,
-      "image": step.image
+      "text": step.text
     }))
   };
 

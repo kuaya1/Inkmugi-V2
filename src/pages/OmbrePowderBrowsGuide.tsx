@@ -187,7 +187,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
     datePublished: '2026-03-09',
     dateModified: '2026-03-09',
     mainEntityOfPage: 'https://inkmugi.com/ombre-powder-brows-guide',
-    image: 'https://inkmugi.com/images/ombre-powder-brows-guide-hero.jpg',
+    image: 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg',
     wordCount: 3200,
   };
 

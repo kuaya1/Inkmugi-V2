@@ -12,7 +12,7 @@ const DEFAULT_BLOG_IMAGE = '/images/blog-default.jpg';
 const getReadTime = (post: typeof allBlogPosts[0]): string => {
   if (post.readTime) return post.readTime;
   const words = (post.content || '')
-    .replace(/[#*|\-\[\]()]/g, ' ')
+    .replace(/[#*|\-[\]()]/g, ' ')
     .split(/\s+/)
     .filter(w => w.length > 0).length;
   return `${Math.ceil(words / 200)} min read`;

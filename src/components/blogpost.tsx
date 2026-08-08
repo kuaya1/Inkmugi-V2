@@ -48,7 +48,7 @@ const BlogPost: React.FC = () => {
   // Word count for schema
   const wordCount = useMemo(() => {
     if (!post) return 0;
-    return post.content.replace(/[#*|\-\[\]()]/g, ' ').split(/\s+/).filter(w => w.length > 0).length;
+    return post.content.replace(/[#*|\-[\]()]/g, ' ').split(/\s+/).filter(w => w.length > 0).length;
   }, [post]);
 
   // Share functions
