@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FileText, AlertCircle, Shield, Scale, Clock } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import SEO from '../components/SEO';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const TermsOfService: React.FC = () => {
   return (
@@ -335,7 +336,7 @@ const TermsOfService: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="https://www.vagaro.com/inkmugi" 
+                  href={BOOKING_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn bg-[#2D2D2B] hover:bg-[#2D2D2B]/80 text-white transition-all duration-300"

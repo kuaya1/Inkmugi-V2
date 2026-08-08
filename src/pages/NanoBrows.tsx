@@ -17,6 +17,7 @@ import {
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import CTASection from '../components/CTASection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const NanoBrows: React.FC = () => {
   useEffect(() => {
@@ -249,7 +250,7 @@ const NanoBrows: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://www.vagaro.com/inkmugi"
+                  href={BOOKING_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-[#2D2D2B] hover:bg-[#1a1a19] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
@@ -347,7 +348,7 @@ const NanoBrows: React.FC = () => {
                 </table>
               </div>
               <p className="text-center text-sm text-gray-500 mt-4">
-                Not sure which is right for you? <Link to="/booking" className="text-[#2D2D2B] font-medium underline">Book a free consultation</Link> and we'll recommend based on your skin type and goals.
+                Not sure which is right for you? <Link to={BOOKING_URL} className="text-[#2D2D2B] font-medium underline">Book a free consultation</Link> and we'll recommend based on your skin type and goals.
               </p>
             </AnimatedSection>
           </div>
@@ -468,7 +469,7 @@ const NanoBrows: React.FC = () => {
 
                   <div className="text-center">
                     <a
-                      href="https://www.vagaro.com/inkmugi"
+                      href={BOOKING_URL}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#2D2D2B] hover:bg-[#1a1a19] text-white font-semibold px-8 py-4 rounded-full transition-all"

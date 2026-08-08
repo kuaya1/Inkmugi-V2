@@ -16,6 +16,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const AftercareGuide: React.FC = () => {
   const aftercareSchema = {
@@ -534,7 +535,7 @@ const AftercareGuide: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const About: React.FC = () => {
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
@@ -522,7 +523,7 @@ const About: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
                 <span>Request a Consultation Review</span>

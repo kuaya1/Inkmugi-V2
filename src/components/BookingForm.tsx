@@ -29,7 +29,9 @@ const BookingForm: React.FC = () => {
 
   const selectedService = watch('service');
 
-  const onSubmit = async (data: FormData) => {
+  /* emailjs.sendForm reads the DOM form directly, so the parsed values are
+     unused here — react-hook-form still owns validation. */
+  const onSubmit = async (_data: FormData) => {
     try {
       setSubmitStatus(null);
       

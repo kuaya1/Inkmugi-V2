@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import { MapPin, Clock, Star, CheckCircle, Award, Shield, ArrowRight, Phone, Sparkles, Heart, Eye, Palette } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const MicroshadingArtistry: React.FC = () => {
   const faqs = [
@@ -71,8 +72,8 @@ const MicroshadingArtistry: React.FC = () => {
       "@id": "https://inkmugi.com/#business",
       "name": "Ink Mugi",
       "url": "https://inkmugi.com/",
-      "logo": "https://inkmugi.com/logo.png",
-      "image": "https://inkmugi.com/og-image.jpg",
+      "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+      "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
       "telephone": "+1-571-283-8228",
       "address": {
         "@type": "PostalAddress",
@@ -199,7 +200,7 @@ const MicroshadingArtistry: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all shadow-lg hover:shadow-xl"
               >
                 Book Consultation
@@ -528,7 +529,7 @@ const MicroshadingArtistry: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all shadow-lg"
                 >
                   Book Your Microshading Consultation
@@ -688,7 +689,7 @@ const MicroshadingArtistry: React.FC = () => {
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">About Mugi</p>
               <p className="text-sm text-[#2D2D2B]/50">Credentials & story</p>
             </Link>
-            <Link to="/booking" className="bg-[#F9F7F5] rounded-xl p-4 text-center hover:shadow-lg transition-shadow group border border-transparent hover:border-amber-700/20">
+            <Link to={BOOKING_URL} className="bg-[#F9F7F5] rounded-xl p-4 text-center hover:shadow-lg transition-shadow group border border-transparent hover:border-amber-700/20">
               <Clock className="w-6 h-6 text-amber-700 mx-auto mb-2" />
               <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Book Now</p>
               <p className="text-sm text-[#2D2D2B]/50">Free consultation</p>
@@ -745,7 +746,7 @@ const MicroshadingArtistry: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-600 transition-all shadow-lg hover:shadow-xl"
               >
                 Book Free Consultation

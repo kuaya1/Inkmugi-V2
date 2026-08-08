@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Mail, Phone, MapPin, Star } from 'lucide-react';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const Footer: React.FC = () => {
   return (
@@ -81,7 +82,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/booking" className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
+                <Link to={BOOKING_URL} className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
                   Book Now
                 </Link>
               </li>

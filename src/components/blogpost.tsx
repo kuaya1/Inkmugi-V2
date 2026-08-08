@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, Clock, User, Tag, ArrowLeft, ArrowRight, Phone, MapPin, Shield, Share2, ChevronRight, RefreshCw, List } from 'lucide-react';
+import { Calendar, Clock, User, ArrowLeft, ArrowRight, Phone, MapPin, Shield, Share2, ChevronRight, RefreshCw, List } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import SEO from './SEO';
 import { blogPosts } from '../data/blogData';
 import ReactMarkdown from 'react-markdown';
+import NotFound from '../pages/NotFound';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -73,22 +75,24 @@ const BlogPost: React.FC = () => {
     setShowShareMenu(false);
   };
 
+  /*
+   * An unknown /blog/<slug> used to render this branch with no <SEO> at all —
+   * no noindex, no canonical, no title — so every typo'd or scraped blog URL
+   * was a fully indexable page inheriting the shell's homepage title. Reusing
+   * NotFound gives the whole site one 404 surface, and because /blog/:slug is
+   * not prerendered, Netlify already answers unknown slugs with 404.html.
+   */
   if (!post) {
-    return (
-      <div className="pt-32 pb-20 container-custom text-center">
-        <h1 className="text-2xl font-medium mb-4">Article not found</h1>
-        <p className="mb-6">The article you're looking for doesn't exist or has been moved.</p>
-        <Link to="/blog" className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] px-6 py-2 rounded-md">
-          Back to Blog
-        </Link>
-      </div>
-    );
+    return <NotFound />;
   }
 
   return (
     <>
       <SEO
-        title={`${post.title} | Ink Mugi PMU Blog`}
+        /* Post titles are long on their own; the old " | Ink Mugi PMU Blog"
+           suffix pushed several past 100 characters, so Google truncated them
+           and the brand never showed anyway. Only brand titles that have room. */
+        title={post.title.length > 55 ? post.title : `${post.title} | Ink Mugi`}
         description={post.metaDescription}
         path={`/blog/${post.slug}`}
         keywords={post.tags.join(', ')}
@@ -323,6 +327,10 @@ const BlogPost: React.FC = () => {
                 <div className="prose prose-xl max-w-none">
                   <ReactMarkdown
                     components={{
+                      /* Several posts open with a `# Heading` that repeats the
+                         article title, which put two <h1>s on the page. Demote
+                         it: the page-level <h1> above is the only one. */
+                      h1: ({ children }) => <h2>{children}</h2>,
                       h2: ({ children }) => {
                         const text = typeof children === 'string' ? children : 
                           Array.isArray(children) ? children.map(c => typeof c === 'string' ? c : '').join('') : '';
@@ -352,7 +360,12 @@ const BlogPost: React.FC = () => {
                     {post.tags.map((tag, i) => (
                       <Link
                         key={i}
-                        to={`/blog?tag=${tag}`}
+                        /* Encoded: unencoded spaces produced malformed URLs
+                           like /blog?tag=powder brows, which Search Console
+                           picked up as separate crawlable URLs. The parameter
+                           is a client-side filter — /blog?tag=… resolves to the
+                           /blog document, which self-canonicalises to /blog. */
+                        to={`/blog?tag=${encodeURIComponent(tag)}`}
                         className="bg-[#E6DAD2]/50 text-[#2D2D2B]/80 hover:bg-[#E6DAD2] hover:text-[#2D2D2B] px-3 py-1 rounded-full text-sm transition-colors"
                       >
                         {tag}
@@ -407,7 +420,7 @@ const BlogPost: React.FC = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Link 
-                      to="/booking" 
+                      to={BOOKING_URL} 
                       className="flex-1 text-center bg-[#E6DAD2] text-[#2D2D2B] font-medium py-3 px-6 rounded-md hover:bg-[#F0E4D8] transition-colors"
                     >
                       Book Free Consultation
@@ -457,7 +470,7 @@ const BlogPost: React.FC = () => {
                     523+ procedures with a 0.19% complication rate. Virginia License #1231002471.
                   </p>
                   <Link 
-                    to="/booking" 
+                    to={BOOKING_URL} 
                     className="block w-full text-center bg-[#E6DAD2] text-[#2D2D2B] font-medium py-3 px-4 rounded-md hover:bg-[#F0E4D8] transition-colors mb-3"
                   >
                     Book Free Consultation

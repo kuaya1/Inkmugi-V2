@@ -5,6 +5,7 @@ import { CheckCircle, CheckCircle2, Shield, Award, ArrowRight } from 'lucide-rea
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const Services = () => {
   useEffect(() => {
@@ -17,8 +18,8 @@ const Services = () => {
     "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
     "url": "https://inkmugi.com/",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
+    "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -184,7 +185,7 @@ const Services = () => {
               {
                 "@type": "Question",
                 "name": "What is the difference between microblading and ombre powder brows?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Microblading creates hair-like strokes with a blade that can blur in humid climates like the DMV. Ombre powder brows use a machine stippling technique that deposits pigment more evenly, lasting 18-36 months vs 8-12 for microblading. Powder brows perform 340% better on oily skin." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Microblading creates hair-like strokes with a blade that can blur in humid climates like the DMV. Ombre powder brows use a machine stippling technique that deposits pigment more evenly, lasting 18-36 months vs 8-12 for microblading. Powder brows perform 3× better on oily skin." }
               },
               {
                 "@type": "Question",
@@ -272,7 +273,7 @@ const Services = () => {
                     </ul>
                   )}
                   
-                  <Link to="/booking" className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors inline-flex items-center mt-auto">
+                  <Link to={BOOKING_URL} className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors inline-flex items-center mt-auto">
                     Request Consultation →
                   </Link>
                 </div>
@@ -366,7 +367,7 @@ const Services = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/booking" className="btn bg-[#2D2D2B] hover:bg-[#1a1a19] text-white">
+                <Link to={BOOKING_URL} className="btn bg-[#2D2D2B] hover:bg-[#1a1a19] text-white">
                   Request Consultation
                 </Link>
                 <Link to="/gallery" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5">
@@ -426,7 +427,7 @@ const Services = () => {
                 <div className="mt-8 pt-6 border-t border-[#E6DAD2]/30">
                   <p className="text-sm text-[#2D2D2B]/60 mb-4">Or schedule a free consultation to ask in person:</p>
                   <Link 
-                    to="/booking" 
+                    to={BOOKING_URL} 
                     className="inline-flex items-center gap-2 bg-[#2D2D2B] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#2D2D2B]/90 transition-colors"
                   >
                     Request Consultation
@@ -466,7 +467,7 @@ const Services = () => {
                     ['Longevity', '8-12 months', '18-36 months', '12-24 months'],
                     ['Best Skin Type', 'Dry skin only', 'All skin types', 'Oily & sensitive skin'],
                     ['DMV Humidity Performance', 'Poor — strokes blur', 'Excellent — humidity resistant', 'Good — minimal fading'],
-                    ['Oily Skin Performance', '❌ Strokes spread', '✅ 340% better retention', '✅ Ideal for oily skin'],
+                    ['Oily Skin Performance', '❌ Strokes spread', '✅ 3× better retention', '✅ Ideal for oily skin'],
                     ['Healed Appearance', 'Hair-like strokes', 'Soft makeup gradient', 'Soft powder finish'],
                     ['Pain Level', '4-6/10', '2-3/10', '2-3/10'],
                     ['Healing Time', '6-8 weeks', '4-6 weeks', '4-6 weeks'],

@@ -6,10 +6,9 @@ import {
   ArrowRight,
   Star,
   DollarSign,
-  Clock,
   Shield,
   Droplets,
-  Eye,
+  Sun,
   Target,
   Phone,
   Award,
@@ -63,7 +62,6 @@ const NanoBrowsVsMicroblading: React.FC = () => {
       <SEO
         title="Nano Brows vs Microblading Cost & Comparison | Northern Virginia | Ink Mugi"
         description="Nano brows vs microblading — compare cost, longevity, pain, healing & results. Nano brows $650 all-inclusive vs microblading $400–$800. Data from 523+ procedures in Northern Virginia."
-        canonical="https://inkmugi.com/nano-brows-vs-microblading"
         path="/nano-brows-vs-microblading"
         keywords="nano brows vs microblading cost, nano brows vs microblading price, nano brows cost comparison, nano brows or microblading, nano brows vs microblading which is better, nano brows vs microblading oily skin, nano brows vs microblading longevity, nano brows vs microblading healing"
       >
@@ -88,7 +86,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2025-06-15",
             "dateModified": "2025-06-15",

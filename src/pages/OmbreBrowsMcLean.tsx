@@ -18,44 +18,9 @@ import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const OmbreBrowsMcLean: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://inkmugi.com/ombre-brows-mclean-va",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+15712838228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    }
-  };
 
   const neighborhoods = [
     { name: 'Tysons Corner', time: '8 min' },
@@ -127,24 +92,6 @@ const OmbreBrowsMcLean: React.FC = () => {
         keywords="ombre powder brows McLean VA, permanent makeup McLean Virginia, natural brows near Tysons Corner, licensed PMU artist Fairfax County, healed ombre brows Northern Virginia, powder brows near Great Falls VA"
       >
         {/* Business + Aggregate Rating Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            ...localSchema,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": mcleanTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
 
         {/* Service Schema */}
         <script type="application/ld+json">
@@ -202,8 +149,8 @@ const OmbreBrowsMcLean: React.FC = () => {
         secondaryText="Ink Mugi serves McLean, Tysons Corner, Great Falls, and surrounding Fairfax County communities from our Annandale studio — 15 minutes from McLean Village."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Natural ombré powder brows for McLean, Virginia clients at Ink Mugi"
-        primaryCTA={{ text: 'Schedule a Consultation', to: '/booking' }}
-        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+        primaryCTA={{ text: 'Schedule a Consultation', to: BOOKING_URL }}
+        secondaryCTA={{ text: 'View Healed Results', to: '/gallery' }}
       />
 
       {/* ═══════════════════════════════════════════
@@ -570,7 +517,7 @@ const OmbreBrowsMcLean: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
                   Schedule Your Consultation
@@ -712,7 +659,7 @@ const OmbreBrowsMcLean: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Schedule a Consultation

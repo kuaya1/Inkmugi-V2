@@ -1,39 +1,45 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-
-const SITE_URL = 'https://inkmugi.com';
-const DEFAULT_IMAGE = 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg';
+import { SITE_URL, DEFAULT_IMAGE, siteEntityGraph } from '../lib/siteMeta';
 
 interface SEOProps {
-  /** Page title — displayed in browser tab and search results */
+  /** Page title — displayed in the browser tab and search results */
   title: string;
   /** Meta description — shown in search result snippets */
   description: string;
-  /** Route path starting with / (e.g. "/services"). Canonical is auto-generated. */
-  path: string;
-  /** OG/Twitter image URL. Falls back to default studio image. */
+  /**
+   * Route path starting with `/` (e.g. "/services"). The canonical URL is
+   * derived from it.
+   *
+   * Typed as a `/`-prefixed template literal on purpose: this prop used to be
+   * loosely typed and three pages passed `canonical=` instead, which silently
+   * left `path` undefined. /ombre-powder-brows-guide shipped
+   * `<link rel="canonical" href="https://inkmugi.comundefined">` to production
+   * because of it, and Search Console recorded no user-declared canonical.
+   */
+  path: `/${string}`;
+  /** OG/Twitter image URL. Falls back to the studio image. */
   image?: string;
   /** Open Graph type. Defaults to "website". Use "article" for blog/content pages. */
   ogType?: string;
-  /** Comma-separated keywords for meta keywords tag */
+  /** Comma-separated keywords */
   keywords?: string;
-  /** Set true for pages that should not be indexed (404, redirects) */
+  /** Set true for pages that should not be indexed (404, gated tools) */
   noindex?: boolean;
-  /** Additional Helmet children (JSON-LD scripts, extra meta tags) */
+  /** Page-level JSON-LD. Objects should reference the site entity graph by @id. */
+  schema?: object | object[];
+  /** Additional Helmet children (extra meta/link tags) */
   children?: React.ReactNode;
 }
 
 /**
- * Centralized SEO component for Ink Mugi.
- * Generates a single canonical tag + complete OG/Twitter metadata via react-helmet-async.
- * 
- * Usage:
- *   <SEO title="Page Title" description="..." path="/page-path" />
- * 
- * With schema:
- *   <SEO title="..." description="..." path="/...">
- *     <script type="application/ld+json">{JSON.stringify(schema)}</script>
- *   </SEO>
+ * The single source of every page's head.
+ *
+ * Emits exactly one title, description, canonical, and robots directive, plus
+ * the site-wide entity graph. index.html deliberately declares none of these:
+ * a static tag in the shell is repeated on every route and cannot be overridden
+ * per page, which is how the old build asserted "index, follow" in the shell
+ * while React injected "noindex" on the same 404 page.
  */
 const SEO: React.FC<SEOProps> = ({
   title,
@@ -43,18 +49,23 @@ const SEO: React.FC<SEOProps> = ({
   ogType = 'website',
   keywords,
   noindex = false,
+  schema,
   children,
 }) => {
   const canonicalUrl = `${SITE_URL}${path}`;
   const ogImage = image || DEFAULT_IMAGE;
+  const pageSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 
   return (
     <Helmet defer={false}>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      <meta
+        name="robots"
+        content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'}
+      />
       {keywords && <meta name="keywords" content={keywords} />}
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />
@@ -70,6 +81,14 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+
+      {/* One business/person/website graph per page, defined once site-wide. */}
+      <script type="application/ld+json">{JSON.stringify(siteEntityGraph())}</script>
+      {pageSchemas.map((s, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(s)}
+        </script>
+      ))}
 
       {children}
     </Helmet>

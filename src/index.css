@@ -23,8 +23,15 @@
     @apply px-6 py-3 rounded-md font-medium transition duration-300 inline-block;
   }
   
+  /*
+   * White on the taupe #c7a790 measured about 2.24:1 — far below the 4.5:1
+   * WCAG AA minimum, on the most-clicked button on the site (the navbar CTA).
+   * #2D2D2B is the ink already used for the primary CTA on the location,
+   * service and guide templates, so this fixes the contrast and collapses the
+   * two competing button systems into one at the same time.
+   */
   .btn-primary {
-    @apply bg-primary hover:bg-primary-dark text-white;
+    @apply bg-[#2D2D2B] hover:bg-[#4A4A47] text-white;
   }
   
   .btn-outline {

@@ -3,6 +3,7 @@ import SEO from '../components/SEO';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import ContactForm from '../components/ContactForm';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const Contact: React.FC = () => {
   const contactSchema = {
@@ -11,8 +12,8 @@ const Contact: React.FC = () => {
     "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
     "url": "https://inkmugi.com/",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
+    "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "telephone": "+1-571-283-8228",
     "email": "inkmugi@gmail.com",
     "address": {
@@ -275,7 +276,7 @@ const Contact: React.FC = () => {
                 Book your consultation today and take the first step toward beautiful, effortless brows.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/booking" className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium">
+                <a href={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium">
                   Book Now
                 </a>
                 <a href="tel:+15712838228" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white">

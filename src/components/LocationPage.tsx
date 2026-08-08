@@ -16,6 +16,7 @@ import AnimatedSection from './AnimatedSection';
 import InlineFaqAccordion from './InlineFaqAccordion';
 import LocationHero from './LocationHero';
 import LocationMidCTA from './LocationMidCTA';
+import { BOOKING_URL, BUSINESS_ID, SERVICE_PRICES, breadcrumbSchema } from '../lib/siteMeta';
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -31,7 +32,8 @@ export interface LocationPageProps {
   /* ---- identity ---- */
   city: string;
   state?: string;       // default "VA"
-  slug: string;         // e.g. "/permanent-makeup-burke-va"
+  /** Route path, e.g. "/permanent-makeup-burke-va". Drives the canonical URL. */
+  slug: `/${string}`;
 
   /* ---- SEO meta ---- */
   seoTitle: string;
@@ -111,7 +113,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
     heroSecondaryText,
     heroImage,
     heroImageAlt,
-    heroPrimaryCTA = { text: 'Request a Consultation', to: '/booking' },
+    heroPrimaryCTA = { text: 'Request a Consultation', to: BOOKING_URL },
     heroSecondaryCTA,
     introTitle,
     introContent,
@@ -135,45 +137,31 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
 
   /* ---------- schemas ---------- */
 
-  const localSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'HealthAndBeautyBusiness',
-    '@id': 'https://inkmugi.com/#business',
-    name: 'Ink Mugi — Ombré Powder Brows',
-    url: `https://inkmugi.com${slug}`,
-    logo: 'https://inkmugi.com/logo.png',
-    image: 'https://inkmugi.com/og-image.jpg',
-    telephone: '+15712838228',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '7857 Heritage Dr #330',
-      addressLocality: 'Annandale',
-      addressRegion: 'VA',
-      postalCode: '22003',
-      addressCountry: 'US',
-    },
-    priceRange: '$$$',
-    areaServed: areaServed.map((a) => ({
-      '@type': a.type || 'City',
-      name: a.name,
-      containedInPlace: { '@type': 'State', name: a.state },
-    })),
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '38.8305',
-      longitude: '-77.1964',
-    },
-  };
 
+  /*
+   * The business itself is described once, site-wide, by SEO.tsx. This page
+   * only says which service is offered where, and points at that one entity by
+   * @id — it no longer redeclares the business with a different name, url,
+   * logo, telephone format and geo pair, as all 19 location pages used to.
+   */
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: serviceSchemaName,
     description: serviceSchemaDesc,
-    provider: { '@type': 'HealthAndBeautyBusiness', '@id': 'https://inkmugi.com/#business' },
-    areaServed: { '@type': 'City', name: city, containedInPlace: { '@type': 'State', name: state === 'DC' ? 'District of Columbia' : 'Virginia' } },
+    provider: { '@id': BUSINESS_ID },
+    areaServed: areaServed.map((a) => ({
+      '@type': a.type || 'City',
+      name: a.name,
+      containedInPlace: { '@type': 'State', name: a.state },
+    })),
     serviceType: 'Permanent Makeup',
-    offers: { '@type': 'Offer', price: '600', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
+    offers: {
+      '@type': 'Offer',
+      price: String(SERVICE_PRICES.ombrePowderBrows),
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+    },
   };
 
   /* ---------- Build cross-links with auto-added hub + service ---------- */
@@ -200,24 +188,6 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
     <>
       {/* ============ SEO + Schemas ============ */}
       <SEO title={seoTitle} description={seoDescription} path={slug} keywords={seoKeywords}>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            ...localSchema,
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '5.0',
-              reviewCount: '47',
-              bestRating: '5',
-              worstRating: '5',
-            },
-            review: testimonials.map((t) => ({
-              '@type': 'Review',
-              author: { '@type': 'Person', name: t.name },
-              reviewRating: { '@type': 'Rating', ratingValue: t.rating, bestRating: 5 },
-              reviewBody: t.text,
-            })),
-          })}
-        </script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -231,15 +201,12 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
           })}
         </script>
         <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://inkmugi.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://inkmugi.com/services' },
-              { '@type': 'ListItem', position: 3, name: breadcrumbName, item: `https://inkmugi.com${slug}` },
-            ],
-          })}
+          {JSON.stringify(
+            breadcrumbSchema([
+              { name: 'Services', path: '/services' },
+              { name: breadcrumbName, path: slug },
+            ])
+          )}
         </script>
       </SEO>
 
@@ -535,7 +502,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
                   Book Your Consultation
@@ -674,7 +641,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
             )}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

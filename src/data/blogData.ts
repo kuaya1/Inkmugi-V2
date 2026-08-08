@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
 
 **After 523+ procedures, here's what I've learned about how these techniques actually perform in the DC/Maryland/Virginia climate.**
 
-I'm Mugi, a licensed permanent cosmetic tattooer (Virginia License #1231002471) based in Annandale, VA. One of the most common questions I hear during [free consultations](/booking) is: *"Should I get nano brows or microblading?"*
+I'm Mugi, a licensed permanent cosmetic tattooer (Virginia License #1231002471) based in Annandale, VA. One of the most common questions I hear during [free consultations](https://www.vagaro.com/inkmugi) is: *"Should I get nano brows or microblading?"*
 
 The answer isn't one-size-fits-all — and the generic guides online rarely mention the one factor that matters most for DMV clients: **our climate.**
 
@@ -95,7 +95,7 @@ If you live in Northern Virginia, DC, Maryland, or anywhere in the mid-Atlantic,
 
 Every procedure at my studio in Annandale, VA includes:
 
-1. **Free consultation** to map your ideal brow shape ([book yours here](/booking))
+1. **Free consultation** to map your ideal brow shape ([book yours here](https://www.vagaro.com/inkmugi))
 2. **Custom color matching** using premium vegan pigments
 3. **Topical numbing** for a comfortable experience
 4. **6-week follow-up** included in your initial appointment price
@@ -118,7 +118,7 @@ For a deeper dive into healing stages, check out my [Powder Brows Healing Data g
 
 If you're in the DMV area and considering semi-permanent brows, nano brows (or ombre powder brows) will outperform microblading in our climate. That's not marketing — it's what I've documented across hundreds of procedures.
 
-**Ready to see what's possible?** [View my healed results gallery](/gallery) or [book a free consultation](/booking). I'm located in Annandale, VA and serve clients across Northern Virginia, DC, and Maryland.
+**Ready to see what's possible?** [View my healed results gallery](/gallery) or [book a free consultation](https://www.vagaro.com/inkmugi). I'm located in Annandale, VA and serve clients across Northern Virginia, DC, and Maryland.
 
 *Questions? Call or text (571) 283-8228. I answer every message personally.*
     `,
@@ -166,7 +166,7 @@ In my experience, ombre powder brows work beautifully on:
 - **Makeup lovers** — if you already fill in your brows daily, you'll love this
 - **Alopecia or hair loss** — creates a natural brow framework
 
-The only clients I advise to wait: those currently on Accutane, pregnant/nursing, or undergoing active chemotherapy. During your [free consultation](/booking), I'll review your full medical history to ensure safety.
+The only clients I advise to wait: those currently on Accutane, pregnant/nursing, or undergoing active chemotherapy. During your [free consultation](https://www.vagaro.com/inkmugi), I'll review your full medical history to ensure safety.
 
 ## My Preparation Protocol
 
@@ -244,7 +244,7 @@ Living in Northern Virginia means adapting your aftercare to our climate. Here's
 ### Weeks 3–6:
 - Resume normal skincare, but keep retinoids away from brows
 - Apply SPF 30+ on brows when outdoors (UV fades pigment)
-- Schedule your [touch-up appointment](/booking) around week 6
+- Schedule your [touch-up appointment](https://www.vagaro.com/inkmugi) around week 6
 
 ### Long-Term (Year 1+):
 - Annual SPF protection extends your results by 6–12 months
@@ -289,9 +289,9 @@ Yes. Ombre powder brows are designed to look like a soft powder fill, not a tatt
 
 If you've read this far, you're probably ready. Here's what to do next:
 
-1. **[Book a free consultation](/booking)** — I'll evaluate your skin type, face shape, and goals
+1. **[Book a free consultation](https://www.vagaro.com/inkmugi)** — I'll evaluate your skin type, face shape, and goals
 2. **[Browse my gallery](/gallery)** — see healed results on real clients
-3. **[Read client reviews](/reviews)** — hear from people who were in your exact position
+3. **[See healed results from clients like you](/gallery)** — real before-and-afters, photographed at six weeks
 
 Or just call/text me at **(571) 283-8228**. I answer every message personally.
 
@@ -404,7 +404,7 @@ Face shape is a starting point, but in real practice, I evaluate several additio
 
 ## The Consultation Process at Ink Mugi
 
-Here's exactly what happens during the mapping portion of your [free consultation](/booking):
+Here's exactly what happens during the mapping portion of your [free consultation](https://www.vagaro.com/inkmugi):
 
 1. **I photograph your face** from multiple angles (front, 3/4, profile)
 2. **Measure key ratios** using a mapping tool or caliper
@@ -437,7 +437,7 @@ What PMU cannot do is dramatically reduce existing brows. If your natural brows 
 
 If you're unsure what brow shape would suit you best, that's exactly what consultations are for. I'll map your face, show you options, and give you my professional recommendation — with zero pressure.
 
-- **[Book a free consultation](/booking)** — let's find your perfect shape
+- **[Book a free consultation](https://www.vagaro.com/inkmugi)** — let's find your perfect shape
 - **[See real results](/gallery)** — browse healed brows on different face shapes
 - **[Learn about the procedure](/blog/ombre-powder-brows-complete-guide)** — what to expect from start to finish
 
@@ -549,7 +549,7 @@ I don't use pigments straight from the bottle. Every client gets a custom color 
 4. **Desired intensity** (soft and natural vs. defined and bold)
 5. **Expected fading pattern** (I account for how the specific pigment blend will age in [our DMV climate](/blog/nano-brows-vs-microblading-comparison))
 
-This is why consultations matter. During your [free consultation](/booking), I'll show you pigment swatches on your actual skin — not just on paper. How pigment looks *on your skin* is very different from how it looks in the bottle.
+This is why consultations matter. During your [free consultation](https://www.vagaro.com/inkmugi), I'll show you pigment swatches on your actual skin — not just on paper. How pigment looks *on your skin* is very different from how it looks in the bottle.
 
 ## Red Flags: How to Spot Cheap Pigments
 
@@ -580,7 +580,7 @@ You wouldn't paint your house with the cheapest paint and expect it to look good
 - Fade gracefully instead of shifting to unwanted tones
 - Meet the world's strictest safety standards
 
-**Ready to see the difference quality makes?** [Browse my healed results gallery](/gallery) or [book a free consultation](/booking) to discuss your color options.
+**Ready to see the difference quality makes?** [Browse my healed results gallery](/gallery) or [book a free consultation](https://www.vagaro.com/inkmugi) to discuss your color options.
 
 *Ink Mugi · Annandale, VA · (571) 283-8228 · Virginia License #1231002471*
     `
@@ -707,7 +707,7 @@ The timeline below represents the **average** pattern. Your experience may shift
 
 **In my data**: About 75% of clients want at least minor touch-up refinements. This is normal and expected — it's part of the process, not a sign of failure.
 
-**[Book your touch-up here](/booking)** if you haven't already scheduled it.
+**[Book your touch-up here](https://www.vagaro.com/inkmugi)** if you haven't already scheduled it.
 
 ## Months 2–6: Settling Period
 
@@ -768,7 +768,7 @@ Healing is a process, not a single event. The key insights:
 
 For a deeper dive into the clinical data behind these patterns, visit my [Powder Brows Healing Data guide](/pmu-data-guide) or [PMU Research Hub](/authority).
 
-**Questions about your healing?** Text me at (571) 283-8228. [Book your consultation](/booking) if you haven't started your brow journey yet.
+**Questions about your healing?** Text me at (571) 283-8228. [Book your consultation](https://www.vagaro.com/inkmugi) if you haven't started your brow journey yet.
 
 *Ink Mugi · Annandale, VA · Virginia License #1231002471*
     `
@@ -878,7 +878,7 @@ Unlike a body tattoo, PMU gives you an exit:
 - **Saline removal**: A non-laser method that lifts pigment from the skin
 - **Laser removal**: Effective but should be done by a dermatologist experienced with cosmetic tattoo removal
 
-That said, my philosophy is to get the shape right BEFORE any pigment goes in. During your [consultation](/booking), we spend 30 minutes on [brow mapping](/blog/choosing-right-brow-shape) — you approve every detail before we start.
+That said, my philosophy is to get the shape right BEFORE any pigment goes in. During your [consultation](https://www.vagaro.com/inkmugi), we spend 30 minutes on [brow mapping](/blog/choosing-right-brow-shape) — you approve every detail before we start.
 
 ## Myth #8: "It's Just Like a Regular Tattoo"
 
@@ -960,7 +960,7 @@ When researching PMU, look for:
 
 ## Ready to Learn More?
 
-- **[Book a free consultation](/booking)** — ask me anything in person
+- **[Book a free consultation](https://www.vagaro.com/inkmugi)** — ask me anything in person
 - **[View healed results](/gallery)** — see what my work actually looks like
 - **[Read about safety](/permanent-makeup-safety-dmv)** — full complication data from my practice
 - **[Explore services & pricing](/services)** — starting at $600
@@ -997,7 +997,7 @@ I'm Mugi, a licensed permanent cosmetic tattooer (VA #1231002471) in Annandale, 
 - "Microblading won't hold on your skin"
 - "You'll need touch-ups every 3 months"
 
-I hear these horror stories in my [consultations](/booking) every single week. And here's the thing — **they're half-right.** Microblading genuinely struggles on oily skin. But that doesn't mean permanent makeup won't work for you. It means you need the **right technique.**
+I hear these horror stories in my [consultations](https://www.vagaro.com/inkmugi) every single week. And here's the thing — **they're half-right.** Microblading genuinely struggles on oily skin. But that doesn't mean permanent makeup won't work for you. It means you need the **right technique.**
 
 That technique is ombre powder brows.
 
@@ -1094,7 +1094,7 @@ About **35-40% of my clients** have oily or combination skin. It's extremely com
 
 ## What Your Consultation Should Include (The Oily Skin Checklist)
 
-When you come to [Ink Mugi for a consultation](/booking), here's what I assess for oily skin:
+When you come to [Ink Mugi for a consultation](https://www.vagaro.com/inkmugi), here's what I assess for oily skin:
 
 1. **Skin type mapping** — I check oil production across your entire brow area, not just a general "oily" label
 2. **Undertone analysis** — Oily skin often has warmer undertones that affect pigment color selection
@@ -1141,7 +1141,7 @@ A: After full healing (6+ weeks), yes — but keep active exfoliants (retinol, g
 A: In most cases, yes. Faded microblading is actually easier to work with than fresh work. During your consultation, I'll assess the remaining pigment and plan accordingly. See our [PMU correction service](/pmu-correction-restoration) for complex cases.
 
 **Q: What if I'm on the fence about my skin type?**
-A: Come in for a [free consultation](/booking). I'll assess your skin in person and show you healed results from clients with similar skin types. No commitment required.
+A: Come in for a [free consultation](https://www.vagaro.com/inkmugi). I'll assess your skin in person and show you healed results from clients with similar skin types. No commitment required.
 
 ## The Bottom Line
 
@@ -1156,7 +1156,7 @@ You're not a "*bad candidate*." You just need the right technique and an artist 
 
 ## Ready to Start?
 
-- **[Book a free consultation](/booking)** — I'll assess your skin type and show you oily-skin results
+- **[Book a free consultation](https://www.vagaro.com/inkmugi)** — I'll assess your skin type and show you oily-skin results
 - **[View healed results](/gallery)** — real clients, real oily skin, real results
 - **[Read the science](/pmu-data-guide)** — full data from 523+ procedures
 - **[Compare pricing](/services)** — $600 all-inclusive, no hidden fees

@@ -14,7 +14,6 @@ import {
   Star,
   Sun,
   Target,
-  Users,
   Zap,
   MapPin,
   CheckCircle,
@@ -23,6 +22,7 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const OmbrePowderBrowsGuide: React.FC = () => {
   useEffect(() => {
@@ -221,7 +221,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
       <SEO
         title="Ombré Powder Brows Guide – Healing, Results & Expert Advice | Ink Mugi"
         description="Your complete ombré powder brows knowledge hub. Explore healing timelines, skin-type suitability, pigment science, correction options, and expert aftercare advice from Ink Mugi in Northern Virginia."
-        canonical="https://inkmugi.com/ombre-powder-brows-guide"
+        path="/ombre-powder-brows-guide"
         schema={[articleSchema, breadcrumbSchema, faqSchema]}
       />
 
@@ -259,7 +259,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center gap-2 bg-[#2D2D2B] text-white px-8 py-3.5 rounded-full font-medium hover:bg-[#2D2D2B]/90 transition-colors"
               >
                 <Phone className="w-4 h-4" />
@@ -447,7 +447,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
               {
                 title: 'Powder Brows Turning Grey',
                 description: 'Why warm pigments cool-shift over time, and how color-correction restores natural warmth.',
-                link: '/powder-brows-turned-grey',
+                link: '/microblading-turning-grey',
                 icon: <Palette className="w-6 h-6" />,
               },
               {
@@ -599,7 +599,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
                 'Virginia Licensed PMU Artist',
                 'Bloodborne Pathogen Certified',
                 '600+ Successful Procedures',
-                '4.9★ Google Rating',
+                '5.0★ Google Rating',
                 'Medical-Grade Pigments Only',
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2">

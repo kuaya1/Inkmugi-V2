@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import {
-  MapPin,
   Star,
   CheckCircle,
   Award,
@@ -17,40 +16,9 @@ import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const OmbreBrowsCentreville: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://inkmugi.com/ombre-brows-centreville-va",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+15712838228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Centreville", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Chantilly", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Manassas", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "AdministrativeArea", "name": "Fairfax County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    }
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -141,24 +109,6 @@ const OmbreBrowsCentreville: React.FC = () => {
         keywords="ombre powder brows Centreville VA, permanent makeup Centreville Virginia, PMU near Centreville Square, powder brows Route 28, microshading Centreville, nano brows Centreville VA"
       >
         <script type="application/ld+json">
-          {JSON.stringify({
-            ...localSchema,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": centrevilleTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>
         <script type="application/ld+json">
@@ -196,8 +146,8 @@ const OmbreBrowsCentreville: React.FC = () => {
         secondaryText="25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model."
         heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows for Centreville, VA clients at Ink Mugi studio"
-        primaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
-        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
+        secondaryCTA={{ text: 'View Healed Results', to: '/gallery' }}
       />
 
       {/* Why Centreville Clients Choose Ink Mugi */}
@@ -470,7 +420,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
                   Book Your Consultation
@@ -602,7 +552,7 @@ const OmbreBrowsCentreville: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

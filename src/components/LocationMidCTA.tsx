@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 interface LocationMidCTAProps {
   /** Main headline. Defaults to "Ready to wake up with perfect brows?" */
@@ -18,7 +19,7 @@ const LocationMidCTA: React.FC<LocationMidCTAProps> = ({
   headline = 'Ready to wake up with perfect brows?',
   subtext = 'Book your free consultation today and see why hundreds of Northern Virginia clients trust Ink Mugi.',
   buttonText = 'Book Free Consultation',
-  buttonLink = '/booking',
+  buttonLink = BOOKING_URL,
 }) => {
   return (
     <section className="py-16 bg-gradient-to-r from-[#F7EDE6] to-[#F0E4D8]">

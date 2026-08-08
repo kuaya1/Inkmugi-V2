@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { Home, Search, ArrowRight, Phone, BookOpen, MapPin } from 'lucide-react';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const NotFound: React.FC = () => {
   return (
@@ -59,7 +60,7 @@ const NotFound: React.FC = () => {
               </Link>
 
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="flex items-center gap-3 p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group"
               >
                 <ArrowRight className="w-6 h-6 text-[#9A7B69]" />

@@ -2,57 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import {
-  MapPin,
   Star,
   CheckCircle, 
   Award, 
   Shield,
   Car,
   ArrowRight,
-  Phone
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL, NAP } from '../lib/siteMeta';
 
 const OmbreBrowsVienna: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi",
-    "url": "https://inkmugi.com/ombre-brows-vienna-va",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+15712838228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    }
-  };
 
   const neighborhoods = [
     { name: 'Vienna Town Center', time: '12 min' },
@@ -109,24 +72,6 @@ const OmbreBrowsVienna: React.FC = () => {
       >
         <script type="application/ld+json">
           {JSON.stringify({
-            ...localSchema,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": viennaTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": faqs.map(faq => ({
@@ -159,7 +104,7 @@ const OmbreBrowsVienna: React.FC = () => {
         subtext="Just 12 minutes from Vienna Town Center. Many clients from Vienna, Oakton, and Mantua come in wanting brows that look quietly polished rather than heavily made up, and that softer finish is exactly where ombré powder brows excel. Northern Virginia's most trusted PMU artist — 523+ successful procedures, natural results, and an honest $600 all-inclusive price. No hidden fees, ever."
         heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows client from Vienna, VA at Ink Mugi studio"
-        secondaryCTA={{ type: 'phone' }}
+        secondaryCTA={{ text: `Call ${NAP.telephoneDisplay}`, href: NAP.telephoneHref }}
       />
 
       {/* Drive Time Section */}
@@ -333,7 +278,7 @@ const OmbreBrowsVienna: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
                   Book Your Vienna Consultation
@@ -465,7 +410,7 @@ const OmbreBrowsVienna: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all"
               >
                 Book Free Consultation

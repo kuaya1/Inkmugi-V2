@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const WhyMicrobladingFades: React.FC = () => {
 
@@ -127,7 +128,7 @@ const WhyMicrobladingFades: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2026-05-01",
             "dateModified": "2026-05-01",
@@ -181,7 +182,7 @@ const WhyMicrobladingFades: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
                 Book Free Consultation
@@ -463,7 +464,7 @@ const WhyMicrobladingFades: React.FC = () => {
               <Link to="/microblading-for-oily-skin" className="block bg-[#F9F7F5] p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
                 <Droplets className="w-8 h-8 text-[#2D2D2B] mb-4" />
                 <h3 className="text-lg font-medium text-[#2D2D2B] mb-2">Microblading & Oily Skin</h3>
-                <p className="text-[#2D2D2B]/60 text-sm">Why oily skin is the #1 reason microblading fails and what technique works 340% better.</p>
+                <p className="text-[#2D2D2B]/60 text-sm">Why oily skin is the #1 reason microblading fails and what technique works 3× better.</p>
                 <span className="inline-flex items-center text-amber-700 text-sm font-medium mt-3">
                   Read guide <ArrowRight className="ml-1 w-4 h-4" />
                 </span>
@@ -507,7 +508,7 @@ const WhyMicrobladingFades: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { motion, type Variants } from 'framer-motion';
+import { motion, type Variant, type Variants } from 'framer-motion';
 
 /**
  * Animation variant presets.
@@ -23,7 +23,7 @@ export type AnimationVariant =
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const variantPresets: Record<AnimationVariant, { hidden: object; visible: object }> = {
+const variantPresets: Record<AnimationVariant, { hidden: Variant; visible: Variant }> = {
   'fade-up': {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
@@ -79,6 +79,27 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
     triggerOnce: true,
   });
 
+  /*
+   * Render visible until the client has hydrated.
+   *
+   * framer-motion resolves `initial` during render, so with initial="hidden"
+   * the server emitted style="opacity:0;transform:translateY(30px)" on all ~895
+   * instances of this component. The prerendered HTML was text-complete but
+   * painted blank until IntersectionObserver ran — which put hydration on the
+   * critical path for the LCP element of every location page, and meant any
+   * consumer honouring inline styles without running IntersectionObserver saw
+   * an empty page.
+   *
+   * Rendering 'visible' on the server and for the first client render keeps
+   * hydration byte-identical. The flip to 'hidden' happens in an effect, by
+   * which point anything already on screen has inView === true and stays put;
+   * only off-screen sections go hidden, and the user cannot see them do it.
+   */
+  const [hydrated, setHydrated] = React.useState(false);
+  React.useEffect(() => setHydrated(true), []);
+
+  const state = hydrated ? (inView ? 'visible' : 'hidden') : 'visible';
+
   const preset = variantPresets[variant];
 
   // Stagger container mode — animate children in sequence
@@ -104,8 +125,8 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
     return (
       <motion.div
         ref={ref}
-        initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
+        initial={false}
+        animate={state}
         variants={containerVariants}
         className={className}
       >
@@ -136,8 +157,8 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   return (
     <motion.div
       ref={ref}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
+      initial={false}
+      animate={state}
       variants={variants}
       className={className}
     >

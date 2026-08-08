@@ -2,6 +2,7 @@ import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { BarChart3, TrendingUp, Calendar, Droplets, ThermometerSun, Wind, ArrowRight, Award, Clock, Users } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 export default function PMUDataGuide() {
   const retentionFactors = [
@@ -135,8 +136,8 @@ export default function PMUDataGuide() {
             "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
             "url": "https://inkmugi.com/",
-            "logo": "https://inkmugi.com/logo.png",
-            "image": "https://inkmugi.com/og-image.jpg",
+            "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
@@ -478,7 +479,7 @@ export default function PMUDataGuide() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a
-                href="https://booksy.com/en-us/857522_ink-mugi-beauty_permanent-makeup_10184_annandale#ba_s=seo"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-[#E6DAD2] text-[#2D2D2B] px-10 py-5 rounded-full font-semibold text-lg hover:bg-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"

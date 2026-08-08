@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, DollarSign } from 'lucide-react';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 interface ServiceCardProps {
   title: string;
@@ -41,7 +42,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           </div>
         </div>
         
-        <Link to="/booking" className="btn btn-outline w-full text-sm">
+        <Link to={BOOKING_URL} className="btn btn-outline w-full text-sm">
           Book Now
         </Link>
       </div>

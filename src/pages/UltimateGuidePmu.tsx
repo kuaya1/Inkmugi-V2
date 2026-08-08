@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import {
   CheckCircle,
-  Award,
   Shield,
   Eye,
   Heart,
@@ -19,6 +18,7 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const UltimateGuidePmu: React.FC = () => {
   useEffect(() => {
@@ -170,7 +170,7 @@ const UltimateGuidePmu: React.FC = () => {
         description="Complete guide to permanent makeup covering techniques, safety, costs, healing, choosing an artist, and everything you need to know before getting PMU. 5,000+ word expert resource."
         path="/ultimate-guide-permanent-makeup"
         keywords="permanent makeup guide, PMU complete guide, what is permanent makeup, permanent makeup techniques, PMU safety, permanent makeup cost, how to choose PMU artist, permanent makeup healing, ombre brows guide, microblading guide"
-        image="https://inkmugi.com/og-image.jpg"
+        image="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
       >
         {/* Article Schema */}
         <script type="application/ld+json">
@@ -188,11 +188,11 @@ const UltimateGuidePmu: React.FC = () => {
             publisher: {
               '@type': 'Organization',
               name: 'Ink Mugi',
-              logo: { '@type': 'ImageObject', url: 'https://inkmugi.com/logo.png' },
+              logo: { '@type': 'ImageObject', url: 'https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png' },
             },
             datePublished: '2026-02-10',
             dateModified: '2026-02-10',
-            image: 'https://inkmugi.com/og-image.jpg',
+            image: 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg',
             url: 'https://inkmugi.com/ultimate-guide-permanent-makeup',
             wordCount: 5000,
             articleBody: 'Complete expert guide to permanent makeup...',
@@ -244,7 +244,7 @@ const UltimateGuidePmu: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
                   Schedule Free Consultation

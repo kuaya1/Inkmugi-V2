@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const MicrobladingForOilySkin: React.FC = () => {
 
@@ -25,7 +26,7 @@ const MicrobladingForOilySkin: React.FC = () => {
     },
     {
       question: "How long does microblading last on oily skin?",
-      answer: "Based on our data from 187 oily-skin clients in the DMV area, microblading typically lasts only 6–10 months on oily skin before significant fading and stroke degradation occurs. Many clients report noticeable blurring as early as 8 weeks post-procedure. Compare this to ombré powder brows, which average 28 months of retention on the same skin type in the same climate — a 340% improvement. The humid DMV climate compounds the problem by increasing sebum production beyond baseline levels."
+      answer: "Based on our data from 187 oily-skin clients in the DMV area, microblading typically lasts only 6–10 months on oily skin before significant fading and stroke degradation occurs. Many clients report noticeable blurring as early as 8 weeks post-procedure. Compare this to ombré powder brows, which average 28 months of retention on the same skin type in the same climate — a 3× improvement. The humid DMV climate compounds the problem by increasing sebum production beyond baseline levels."
     },
     {
       question: "What is the best permanent brow technique for oily skin?",
@@ -65,7 +66,7 @@ const MicrobladingForOilySkin: React.FC = () => {
     <>
       <SEO
         title="Microblading for Oily Skin: Why It Fails & What Works Better | Ink Mugi"
-        description="Why microblading doesn't last on oily skin — and what does. Data from 187 oily-skin clients: powder brows last 340% longer. Expert analysis for Northern Virginia, DC & Maryland. Ink Mugi, Annandale VA."
+        description="Why microblading doesn't last on oily skin — and what does. Data from 187 oily-skin clients: powder brows last 3× longer. Expert analysis for Northern Virginia, DC & Maryland. Ink Mugi, Annandale VA."
         path="/microblading-for-oily-skin"
         keywords="microblading oily skin, does microblading work on oily skin, microblading for oily skin problems, best brows for oily skin, powder brows oily skin, microblading fading oily skin, microblading alternative oily skin, ombre brows oily skin DMV, permanent makeup oily skin Northern Virginia, oily skin brow tattoo"
       >
@@ -74,8 +75,8 @@ const MicrobladingForOilySkin: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Why Microblading Fails on Oily Skin — and What Technique Works 340% Better",
-            "description": "Data-driven analysis of why microblading underperforms on oily skin types, with evidence from 187 oily-skin clients showing ombré powder brows retain 340% longer in the DMV's humid climate.",
+            "headline": "Why Microblading Fails on Oily Skin — and What Technique Works 3× Better",
+            "description": "Data-driven analysis of why microblading underperforms on oily skin types, with evidence from 187 oily-skin clients showing ombré powder brows retain 3× longer in the DMV's humid climate.",
             "author": {
               "@type": "Person",
               "name": "Mugi",
@@ -86,7 +87,7 @@ const MicrobladingForOilySkin: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2026-04-01",
             "dateModified": "2026-04-01",
@@ -133,14 +134,14 @@ const MicrobladingForOilySkin: React.FC = () => {
               <span className="text-amber-700">Why It Fails & What Works</span>
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              Data from 187 oily-skin clients shows powder brows last 340% longer than microblading. Here's the science behind the difference — and what it means for your results if your brow area gets shiny by midday or your makeup never stays put.
+              Data from 187 oily-skin clients shows powder brows last 3× longer than microblading. Here's the science behind the difference — and what it means for your results if your brow area gets shiny by midday or your makeup never stays put.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
               By a Virginia-licensed PMU artist with 523+ procedures in the humid DMV climate
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
                 Book Free Consultation
@@ -167,7 +168,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 The Bottom Line for Oily Skin
               </h2>
               <p className="text-[#2D2D2B]/80 text-lg mb-4">
-                <strong>Microblading on oily skin lasts an average of 8 months.</strong> Ombré powder brows on the same skin type last an average of <strong>28 months</strong> — a 340% improvement in retention. This data is from 187 oily-skin clients tracked since 2021 at our Annandale, Virginia studio.
+                <strong>Microblading on oily skin lasts an average of 8 months.</strong> Ombré powder brows on the same skin type last an average of <strong>28 months</strong> — a 3× improvement in retention. This data is from 187 oily-skin clients tracked since 2021 at our Annandale, Virginia studio.
               </p>
               <p className="text-[#2D2D2B]/70">
                 In the DMV's humid climate (65–85% summer humidity), the difference is even more pronounced. Working with clients across Northern Virginia, we see many people identify as "combination" skin overall but still behave like classic oily-skin brow candidates once humidity hits. If you have oily skin and are considering permanent brows, this is the most important factor in your decision.
@@ -314,7 +315,7 @@ const MicrobladingForOilySkin: React.FC = () => {
           <AnimatedSection className="text-center mt-8" delay={2}>
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-amber-700/20 border border-amber-700/30 rounded-full">
               <TrendingUp className="w-5 h-5 text-amber-400" />
-              <span className="text-amber-300 font-medium">340% longer retention on oily skin</span>
+              <span className="text-amber-300 font-medium">3× longer retention on oily skin</span>
             </div>
           </AnimatedSection>
         </div>
@@ -416,7 +417,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 <div>
                   <h4 className="font-medium text-[#2D2D2B] mb-2">Not Sure? Get a Professional Assessment</h4>
                   <p className="text-[#2D2D2B]/80 text-sm">
-                    During your free consultation at Ink Mugi, we assess oil production specifically in your brow area — not just your overall skin type. That brow-specific assessment matters because many clients have normal cheeks and oily foreheads, which changes the recommendation completely. We use this assessment alongside your lifestyle, climate exposure, and aesthetic goals to recommend the technique that will produce the best long-term result. <Link to="/booking" className="text-amber-700 font-medium hover:underline">Book your free consultation →</Link>
+                    During your free consultation at Ink Mugi, we assess oil production specifically in your brow area — not just your overall skin type. That brow-specific assessment matters because many clients have normal cheeks and oily foreheads, which changes the recommendation completely. We use this assessment alongside your lifestyle, climate exposure, and aesthetic goals to recommend the technique that will produce the best long-term result. <Link to={BOOKING_URL} className="text-amber-700 font-medium hover:underline">Book your free consultation →</Link>
                   </p>
                 </div>
               </div>
@@ -558,7 +559,7 @@ const MicrobladingForOilySkin: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

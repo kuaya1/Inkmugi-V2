@@ -12,6 +12,7 @@ import {
 import AnimatedSection from '../../components/AnimatedSection';
 import InlineFaqAccordion from '../../components/InlineFaqAccordion';
 import { AlertTriangle, Eye, Droplets, Sun } from 'lucide-react';
+import { BOOKING_URL } from '../../lib/siteMeta';
 
 const OmbreBrowsDarkSkinGuide: React.FC = () => {
   // Wire up reading progress bar
@@ -47,7 +48,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
     "datePublished": "2026-03-08",
     "dateModified": "2026-03-08",
     "mainEntityOfPage": "https://inkmugi.com/blog/ombre-brows-dark-skin-guide",
-    "image": "https://inkmugi.com/og-image.jpg",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "wordCount": 4200,
     "articleSection": "Permanent Makeup Education"
   };
@@ -98,8 +99,17 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows for Dark Skin: Techniques, Pigment Selection & Healing | Ink Mugi"
-        description="Expert guide on ombre powder brows for Fitzpatrick skin types IV–VI. Covers pigment selection for dark skin, healing differences, keloid considerations, and real healed results."
+        /*
+         * This page earns ~1,558 impressions per 90 days at average position
+         * 12.4 but only 0.4% CTR — it is seen and not clicked. The old title
+         * was 88 characters (truncated in SERPs) and led with the technique
+         * rather than the question people actually type: whether powder brows
+         * work on dark and Black skin. Front-loading the answer, and putting
+         * the practitioner's own experience in the description, is aimed at
+         * the click rather than at the ranking, which is already there.
+         */
+        title="Do Powder Brows Work on Dark Skin? An Honest Guide"
+        description="Yes — with the right pigment and a lighter hand. A licensed PMU artist on choosing pigments for Fitzpatrick IV–VI, how healing really differs, hyperpigmentation risk, and what to ask before you book."
         path="/blog/ombre-brows-dark-skin-guide"
         keywords="ombre brows dark skin, powder brows dark skin, permanent makeup dark skin tones, PMU Fitzpatrick IV V VI, ombre brows Black skin, powder brows African American, PMU melanin rich skin"
       >
@@ -505,7 +515,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all text-sm"
                 >
                   Book Free Consultation
@@ -768,7 +778,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

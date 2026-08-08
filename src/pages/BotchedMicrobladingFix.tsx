@@ -19,6 +19,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProblems';
 import AuthorBlock from '../components/AuthorBlock';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const BotchedMicrobladingFix: React.FC = () => {
 
@@ -119,7 +120,7 @@ const BotchedMicrobladingFix: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2026-03-06",
             "dateModified": "2026-03-06",
@@ -173,7 +174,7 @@ const BotchedMicrobladingFix: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
                 Book Correction Consultation
@@ -486,7 +487,7 @@ const BotchedMicrobladingFix: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Correction Consultation

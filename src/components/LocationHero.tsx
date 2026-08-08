@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight, Phone } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 interface LocationHeroProps {
   /** City name displayed in badge */
@@ -32,7 +33,7 @@ const LocationHero: React.FC<LocationHeroProps> = ({
   secondaryText,
   heroImage,
   heroImageAlt,
-  primaryCTA = { text: 'Book Free Consultation', to: '/booking' },
+  primaryCTA = { text: 'Book Free Consultation', to: BOOKING_URL },
   secondaryCTA,
 }) => {
   const badge = badgeText || `Serving ${city}, VA`;

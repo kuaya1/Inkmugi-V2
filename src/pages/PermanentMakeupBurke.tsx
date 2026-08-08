@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LocationPage from '../components/LocationPage';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PermanentMakeupBurke: React.FC = () => {
   return (
@@ -35,7 +36,7 @@ const PermanentMakeupBurke: React.FC = () => {
       heroSecondaryText="12 minutes from Burke Centre to our private Annandale studio. Free parking. Consultation-first approach."
       heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
       heroImageAlt="Healed ombre powder brows for Burke, VA clients at Ink Mugi studio"
-      heroPrimaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
+      heroPrimaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
       heroSecondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
 
       /* ---- intro section ---- */

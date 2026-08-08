@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import SEO from '../components/SEO';
-import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, ChevronUp, AlertCircle, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 interface FaqItem {
   question: string;
@@ -88,7 +89,7 @@ const Faq: React.FC = () => {
     },
     {
       question: 'How much does it cost?',
-      answer: 'Ombre powder brows start at $500 for the initial procedure (signature service $600). Microshading starts at $500. We offer free brow consultations. Touch-up pricing varies by time elapsed: 1-3 months ($100), 3-6 months ($150), 6-12 months ($200), and 1-2 years ($250). All initial procedures include one follow-up session within the first 8 weeks. We offer a detailed pricing breakdown during your consultation based on your specific needs.',
+      answer: 'Ombré powder brows are $600 all-inclusive and microshading is $700 all-inclusive. Both include the design consultation, the full procedure, premium pigments, your aftercare kit, and the perfecting session at 6–8 weeks. Brow consultations are complimentary. Maintenance pricing depends on how much time has passed and how your pigment has held, so we quote it at your refresh appointment rather than publishing a figure that may not match your brows.',
       category: 'booking',
     },
     {
@@ -137,8 +138,8 @@ const Faq: React.FC = () => {
             "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
             "url": "https://inkmugi.com/",
-            "logo": "https://inkmugi.com/logo.png",
-            "image": "https://inkmugi.com/og-image.jpg",
+            "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
               "@type": "PostalAddress",
@@ -266,7 +267,7 @@ const Faq: React.FC = () => {
                 Book your consultation today and take the first step towards effortlessly beautiful brows that enhance your natural features.
               </p>
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
-                <Link to="/booking" className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
+                <Link to={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
                   Book Now
                 </Link>
                 <Link to="/contact" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white transition-all duration-300">

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import {
-  MapPin,
   Star,
   CheckCircle,
   Award,
@@ -17,41 +16,9 @@ import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const OmbreBrowsWoodbridge: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi — Ombré Powder Brows",
-    "url": "https://inkmugi.com/ombre-brows-woodbridge-va",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+15712838228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Woodbridge", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Dale City", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Lake Ridge", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Dumfries", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Manassas", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "AdministrativeArea", "name": "Prince William County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    }
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -142,24 +109,6 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         keywords="ombre powder brows Woodbridge VA, permanent makeup Woodbridge Virginia, powder brows Prince William County, PMU near Woodbridge, microshading Woodbridge VA, nano brows Woodbridge"
       >
         <script type="application/ld+json">
-          {JSON.stringify({
-            ...localSchema,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": woodbridgeTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>
         <script type="application/ld+json">
@@ -197,8 +146,8 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         secondaryText="35 minutes from Woodbridge via I-95 to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Ombre powder brows for Woodbridge, VA clients at Ink Mugi studio"
-        primaryCTA={{ text: 'Request a Consultation', to: '/booking' }}
-        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
+        secondaryCTA={{ text: 'View Healed Results', to: '/gallery' }}
       />
 
       {/* Why Woodbridge Clients Choose Ink Mugi */}
@@ -471,7 +420,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
                   Book Your Consultation
@@ -591,7 +540,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

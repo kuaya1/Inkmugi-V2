@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Calendar, Clock, User, Tag } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import SEO from '../components/SEO';
 import { blogPosts as allBlogPosts } from '../data/blogData';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const DEFAULT_BLOG_IMAGE = '/images/blog-default.jpg';
 
@@ -20,146 +21,6 @@ const getReadTime = (post: typeof allBlogPosts[0]): string => {
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('');
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const _legacyPosts = [
-    {
-      id: 1,
-      title: "Nano Brows vs Microblading: Which Lasts Longer in DMV Humidity? (523+ procedures Analyzed)",
-      slug: "nano-brows-vs-microblading-comparison", 
-      excerpt: "After performing 523+ procedures in Northern Virginia's humid climate, here's what I've seen firsthand about how nano brows and microblading actually hold up.",
-      metaDescription: "Licensed VA artist compares nano brows vs microblading with data from 523+ procedures. See which technique lasts longer in DMV humidity, real complication rates, and healed results.",
-      image: "https://live.staticflickr.com/65535/54364179271_ab1319693c_o_d.jpg",
-      alt: "Nano brows vs microblading comparison showing healed results at Ink Mugi in Annandale VA",
-      category: "Techniques",
-      tags: ["nano brows", "microblading", "PMU comparison", "permanent makeup", "DMV permanent makeup", "Northern Virginia PMU"],
-      author: "Mugi",
-      authorTitle: "Licensed Permanent Cosmetic Tattooer",
-      date: "March 1, 2025",
-      readTime: "10 min read",
-      featured: true,
-      content: `## Why DMV Climate Changes the Equation
-
-After performing 523+ procedures in Northern Virginia, I've learned that our humid summers (70–80% humidity, 90°F+) change everything about how semi-permanent brow techniques perform. Humidity accelerates pigment migration, sweat production on the brow bone increases 2–3x, and UV exposure during our long summers fades pigment faster.
-
-## Nano Brows: What I've Seen in Practice
-
-Nano brows use a digital PMU machine with a single ultra-fine needle. In my practice, **92% of nano brow clients retain strong color at their 6-week check-in** — even through DMV summers. The deeper pigment placement in the mid-dermis makes all the difference.
-
-## Why I Don't Offer Microblading
-
-Microblading uses manual blades to scratch the epidermis (upper skin layer). After analyzing my outcomes data, I focus exclusively on machine-based techniques because:
-
-- **DMV humidity** causes microblading strokes to blur faster
-- My **0.19% complication rate** is 13x safer than the industry average of 2.5%
-- Machine precision eliminates the variability of hand pressure
-- Less skin trauma = faster healing, prettier results
-
-## Side-by-Side Comparison
-
-| Factor | Nano Brows | Microblading |
-|--------|------------|--------------|
-| **Tool** | Digital machine, single needle | Manual blade, multiple needles |
-| **Humidity Retention** | Excellent | Fair — strokes can blur |
-| **Skin Types** | All types including oily/mature | Best for dry/normal only |
-| **Longevity** | 2–3 years | 1–1.5 years in our climate |
-| **Complication Rate** | 0.19% (my practice) | Industry avg: 2.5% |
-| **Cost at Ink Mugi** | Starting at $600 | Not offered |
-
-## DMV-Specific Aftercare
-
-- **Days 1–7**: Keep brows completely dry. In summer, blot sweat immediately
-- **Days 7–14**: Light moisturizing. Avoid pools, saunas, direct sun
-- **Weeks 3–6**: True color settles. Apply SPF 30+ on brows when outdoors
-- **Long-term**: Annual SPF protection extends results by 6–12 months
-
-## The Bottom Line
-
-If you're in the DMV and considering semi-permanent brows, nano brows (or ombre powder brows) will outperform microblading in our climate. That's not marketing — it's what I've documented across 523+ procedures.
-
-**Ready to see what's possible?** View my healed results gallery or book a free consultation. Virginia License #1231002471 · (571) 283-8228 · Annandale, VA`
-    },
-    {
-      id: 2,
-      title: "Ombre Powder Brows: What 523+ procedures Taught Me About Healing, Cost & Results",
-      slug: "ombre-powder-brows-complete-guide",
-      excerpt: "I've performed 523+ ombre powder brow procedures in Annandale, VA. Here's my honest guide to preparation, pain, healing stages, and what results actually look like at 6 weeks.",
-      metaDescription: "Licensed VA artist shares firsthand ombre powder brows guide based on 523+ procedures. Real healing timeline, honest cost breakdown, DMV-specific aftercare, and healed photos.",
-      image: "https://live.staticflickr.com/65535/54364396583_48d38e3d93_o_d.jpg",
-      alt: "Healed ombre powder brows result showing soft gradient at Ink Mugi Annandale VA",
-      category: "Guides",
-      tags: ["ombre brows", "powder brows", "PMU aftercare", "brow transformation", "ombre brows cost", "ombre brows healing"],
-      author: "Mugi",
-      authorTitle: "Licensed Permanent Cosmetic Tattooer",
-      date: "February 15, 2025",
-      readTime: "12 min read",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "PMU Pigments: Why I Switched to Vegan & What It Means for Your Results",
-      slug: "pmu-pigment-science-quality-importance",
-      excerpt: "Not all PMU pigments are equal. After testing dozens of brands across 523+ procedures, here's why I exclusively use EU-compliant vegan pigments — and why you should care.",
-      metaDescription: "Licensed VA PMU artist explains the science behind pigment quality after 523+ procedures. Learn why vegan, EU-compliant pigments heal better, last longer, and never turn orange.",
-      image: "https://live.staticflickr.com/65535/54364392854_9d155b0510_o_d.png",
-      alt: "Premium vegan PMU pigments used at Ink Mugi studio in Annandale VA",
-      category: "Education",
-      tags: ["PMU pigments", "permanent makeup", "pigment quality", "vegan pigments", "PMU safety"],
-      author: "Mugi",
-      authorTitle: "Licensed Permanent Cosmetic Tattooer",
-      date: "January 28, 2025",
-      readTime: "8 min read",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "PMU Healing Timeline: What Actually Happens Week by Week (With Real Data)",
-      slug: "pmu-healing-timeline-week-by-week",
-      excerpt: "The healing process scares more people out of PMU than anything else. Here's an honest, data-backed week-by-week timeline from 523+ procedures.",
-      metaDescription: "Week-by-week PMU healing timeline based on 523+ real procedures. Licensed VA artist explains each healing phase honestly, including the scary ghost phase.",
-      image: "https://live.staticflickr.com/65535/54364170391_5f7424c0b6_o_d.jpg",
-      alt: "Week by week healing stages of ombre powder brows at Ink Mugi",
-      category: "Aftercare",
-      tags: ["PMU healing", "aftercare", "healing timeline", "permanent makeup recovery", "powder brows healing"],
-      author: "Mugi",
-      authorTitle: "Licensed Permanent Cosmetic Tattooer",
-      date: "January 10, 2025",
-      readTime: "9 min read",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "How to Choose the Perfect Brow Shape for Your Face (Pro Mapping Guide)",
-      slug: "perfect-brow-shape-face-mapping-guide",
-      excerpt: "As a licensed PMU artist with 523+ procedures, here's how I use facial mapping and the golden ratio to design brows that complement every face shape.",
-      metaDescription: "Licensed PMU artist reveals the brow mapping process used in 523+ procedures. Learn how face shape, golden ratio, and bone structure determine your perfect brow shape.",
-      image: "https://live.staticflickr.com/65535/54363151472_699bd8a642_o_d.jpg",
-      alt: "Face mapping demonstration for perfect brow shape at Ink Mugi",
-      category: "Design",
-      tags: ["brow mapping", "face shape", "brow design", "golden ratio", "brow shape guide"],
-      author: "Mugi",
-      authorTitle: "Licensed Permanent Cosmetic Tattooer",
-      date: "December 20, 2024",
-      readTime: "7 min read",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "12 PMU Myths I Hear Every Week (And the Data That Proves Them Wrong)",
-      slug: "pmu-myths-versus-facts-expert-guide",
-      excerpt: "From 'permanent makeup looks fake' to 'it's basically a tattoo' — I've heard every myth after 523+ procedures. Here are the facts, backed by actual data.",
-      metaDescription: "Licensed VA PMU artist debunks 12 common permanent makeup myths with real data from 523+ procedures. Facts about pain, fading, safety, and what PMU actually looks like healed.",
-      image: "https://live.staticflickr.com/65535/54363190627_a16b921317_o_d.jpg",
-      alt: "Before and after healed permanent makeup showing natural results at Ink Mugi",
-      category: "Education",
-      tags: ["PMU myths", "permanent makeup facts", "microblading truth", "PMU misconceptions", "permanent makeup safety"],
-      author: "Mugi",
-      authorTitle: "Licensed Permanent Cosmetic Tattooer",
-      date: "November 30, 2024",
-      readTime: "10 min read",
-      featured: false
-    }
-  ];
 
   // ── Data-driven blog system (single source of truth: blogData.ts) ──
 
@@ -541,7 +402,7 @@ If you're in the DMV and considering semi-permanent brows, nano brows (or ombre 
                     523+ procedures. 0.19% complication rate. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
                   </p>
                   <Link 
-                    to="/booking" 
+                    to={BOOKING_URL} 
                     className="block w-full text-center bg-[#E6DAD2] text-[#2D2D2B] font-medium py-3 px-4 rounded-md hover:bg-[#F0E4D8] transition-colors mb-3"
                   >
                     Book Free Consultation

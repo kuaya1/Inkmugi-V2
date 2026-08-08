@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { DollarSign, MapPin, CheckCircle, AlertTriangle, ArrowRight, Star, Shield, Award, TrendingUp, BarChart3 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const pricingData = [
   {
@@ -140,7 +141,6 @@ export default function PmuCostGuideDmv() {
         path="/pmu-cost-guide-dmv"
         ogType="article"
       >
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
@@ -229,7 +229,7 @@ export default function PmuCostGuideDmv() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-800 transition-colors"
               >
                 Book Free Consultation
@@ -581,7 +581,7 @@ export default function PmuCostGuideDmv() {
                 { label: 'Safety Data', to: '/permanent-makeup-safety-dmv', sub: '0.19% complication rate' },
                 { label: 'Authority Hub', to: '/authority', sub: '523+ procedure data' },
                 { label: 'View Gallery', to: '/gallery', sub: 'Healed results' },
-                { label: 'Book Now', to: '/booking', sub: 'Free consultation' },
+                { label: 'Book Now', to: BOOKING_URL, sub: 'Free consultation' },
               ].map((link) => (
                 <Link
                   key={link.to}
@@ -613,7 +613,7 @@ export default function PmuCostGuideDmv() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="bg-amber-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-500 transition-colors"
               >
                 Book Free Consultation

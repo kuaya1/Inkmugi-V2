@@ -1,56 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { MapPin, Star, CheckCircle, Award, Shield, Car, ArrowRight, Phone } from 'lucide-react';
+import { Star, CheckCircle, Award, Shield, Car, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PermanentMakeupSpringfield: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi",
-    "url": "https://inkmugi.com/permanent-makeup-springfield-va",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+15712838228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "47",
-      "bestRating": "5",
-      "worstRating": "5"
-    }
-  };
 
   const neighborhoods = [
     { name: 'Springfield Town Center', time: '12 min' },
@@ -107,17 +65,6 @@ const PermanentMakeupSpringfield: React.FC = () => {
       >
         <script type="application/ld+json">
           {JSON.stringify({
-            ...localSchema,
-            "review": springfieldTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": faqs.map(faq => ({
@@ -151,7 +98,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
         subtext="Just 12 minutes from Springfield Town Center via I-495. Northern Virginia's most trusted PMU artist — 523+ successful procedures, VA-licensed, and $600 all-inclusive ombre powder brows."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Springfield, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
+        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -328,7 +275,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
                   Book Your Springfield Consultation
@@ -462,7 +409,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

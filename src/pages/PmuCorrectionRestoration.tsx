@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import { Shield, ArrowRight, Phone, AlertTriangle, Eye, CheckCircle, Clock, Layers, Target, FileText, MapPin, ChevronRight, Camera } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PmuCorrectionRestoration: React.FC = () => {
 
@@ -69,7 +70,7 @@ const PmuCorrectionRestoration: React.FC = () => {
             "name": "PMU Correction & Pigment Recalibration",
             "description": "Advanced permanent makeup correction service specializing in undertone neutralization, structural redesign, and pigment recalibration for failed microblading, discolored brows, and substandard previous work.",
             "url": "https://inkmugi.com/pmu-correction-restoration",
-            "image": "https://inkmugi.com/og-image.jpg",
+            "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "provider": {
               "@type": "HealthAndBeautyBusiness",
               "@id": "https://inkmugi.com/#business",
@@ -191,7 +192,7 @@ const PmuCorrectionRestoration: React.FC = () => {
           <AnimatedSection>
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
                 <span>Schedule a Structured Correction Assessment</span>
@@ -919,7 +920,7 @@ const PmuCorrectionRestoration: React.FC = () => {
           <AnimatedSection>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
                 <span>Schedule a Structured Correction Assessment</span>

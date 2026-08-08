@@ -3,6 +3,7 @@ import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { Shield, Award, Droplets, TrendingUp, CheckCircle, Phone, Calendar, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PermanentMakeupSafetyDMV: React.FC = () => {
   const safetyPillars = [
@@ -76,7 +77,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
             "url": "https://inkmugi.com/",
-            "logo": "https://inkmugi.com/logo.png",
+            "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
             "image": "https://inkmugi.com/og-safety-trust.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
@@ -221,7 +222,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                   <div className="text-sm uppercase tracking-widest text-[#E6DAD2] mb-2 font-semibold">Satisfaction Rate</div>
                   <div className="text-xs text-white/60">Documented outcomes</div>
                   <div className="mt-4 pt-4 border-t border-white/10">
-                    <div className="text-xs text-white/70"><strong className="text-[#E6DAD2]">4.9/5</strong> average rating</div>
+                    <div className="text-xs text-white/70"><strong className="text-[#E6DAD2]">5.0/5</strong> average rating</div>
                   </div>
                 </div>
               </div>
@@ -556,7 +557,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
               {/* CTAs - Premium Style */}
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
                 <Link 
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="group relative overflow-hidden bg-gradient-to-r from-[#E6DAD2] to-[#F0E4D8] hover:from-[#F0E4D8] hover:to-[#E6DAD2] text-[#2D2D2B] font-semibold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3 text-lg"
                 >
                   <Calendar className="w-6 h-6" />

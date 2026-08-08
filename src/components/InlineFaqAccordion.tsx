@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export interface FaqItemData {
   question: string;
@@ -11,6 +11,7 @@ interface InlineFaqAccordionProps {
   faqs: FaqItemData[];
   title?: string;
   subtitle?: string;
+  /** @deprecated Accepted for compatibility; all questions are now rendered. */
   maxVisible?: number;
   className?: string;
 }
@@ -19,12 +20,19 @@ const InlineFaqAccordion: React.FC<InlineFaqAccordionProps> = ({
   faqs,
   title = 'Common Questions',
   subtitle,
-  maxVisible = 4,
   className = '',
 }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const headingId = useId();
 
-  const visibleFaqs = faqs.slice(0, maxVisible);
+  /*
+   * Every question is rendered. The component used to slice to `maxVisible`
+   * (default 4) while the calling pages emitted FAQPage schema for the full
+   * list — twelve pages marked up questions that were never on the page at all.
+   * Rows are collapsed, so showing all of them costs a little vertical space
+   * and buys structured data that matches the rendered content.
+   */
+  const visibleFaqs = faqs;
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -48,9 +56,12 @@ const InlineFaqAccordion: React.FC<InlineFaqAccordionProps> = ({
             className="border border-[#E6DAD2]/60 rounded-xl overflow-hidden bg-white hover:border-[#E6DAD2] transition-colors duration-300"
           >
             <button
+              type="button"
+              id={`${headingId}-question-${index}`}
               onClick={() => toggle(index)}
               className="w-full flex justify-between items-center p-5 text-left group"
               aria-expanded={openIndex === index}
+              aria-controls={`${headingId}-answer-${index}`}
             >
               <span className="font-medium text-[#2D2D2B] text-[15px] pr-4 leading-snug">
                 {faq.question}
@@ -69,23 +80,30 @@ const InlineFaqAccordion: React.FC<InlineFaqAccordionProps> = ({
               </motion.div>
             </button>
 
-            <AnimatePresence initial={false}>
-              {openIndex === index && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.25, ease: 'easeInOut' }}
-                  className="overflow-hidden"
-                >
-                  <div className="px-5 pb-5 pt-0 border-t border-[#E6DAD2]/30">
-                    <p className="text-[#2D2D2B]/70 text-sm leading-relaxed pt-4">
-                      {faq.answer}
-                    </p>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {/*
+              The answer is always mounted and collapsed with height, never
+              unmounted. It used to be conditionally rendered, so no answer
+              existed in the DOM until a click — while 37 pages simultaneously
+              emitted FAQPage structured data asserting those answers were on
+              the page. Google requires FAQ answer text to be present in the
+              rendered content, and on the dark-skin guide alone this kept ~700
+              words of the page's most query-matched copy out of the HTML.
+            */}
+            <motion.div
+              id={`${headingId}-answer-${index}`}
+              role="region"
+              aria-labelledby={`${headingId}-question-${index}`}
+              initial={false}
+              animate={{ height: openIndex === index ? 'auto' : 0 }}
+              transition={{ duration: 0.25, ease: 'easeInOut' }}
+              className="overflow-hidden"
+            >
+              <div className="px-5 pb-5 pt-0 border-t border-[#E6DAD2]/30">
+                <p className="text-[#2D2D2B]/70 text-sm leading-relaxed pt-4">
+                  {faq.answer}
+                </p>
+              </div>
+            </motion.div>
           </div>
         ))}
       </div>

@@ -1,11 +1,13 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!;
+
+const tree = (
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
@@ -14,3 +16,14 @@ createRoot(document.getElementById('root')!).render(
     </HelmetProvider>
   </StrictMode>
 );
+
+/*
+ * Every public route ships prerendered markup, so the normal path is hydration.
+ * createRoot remains the fallback for anything served from the bare shell
+ * (the dev server, chiefly), where #root really is empty.
+ */
+if (container.hasChildNodes()) {
+  hydrateRoot(container, tree);
+} else {
+  createRoot(container).render(tree);
+}

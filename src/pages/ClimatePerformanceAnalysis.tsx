@@ -2,6 +2,7 @@ import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Cloud, Droplets, ThermometerSun, TrendingUp, MapPin, BarChart3, Users, CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const ClimatePerformanceAnalysis = () => {
   const dmvClimateFactors = [
@@ -146,8 +147,8 @@ const ClimatePerformanceAnalysis = () => {
     "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi",
     "url": "https://inkmugi.com/",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
+    "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "telephone": "+1-571-283-8228",
     "address": {
       "@type": "PostalAddress",
@@ -193,7 +194,7 @@ const ClimatePerformanceAnalysis = () => {
     <>
       <SEO
         title="Powder Brows in Humid Climates | Ink Mugi"
-        description="Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+        description="Regional study: ombre powder brows outperform microblading by 3× in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
         path="/climate-performance-analysis"
         keywords="PMU climate performance, DMV humidity, powder brows oily skin, Arlington VA PMU, Alexandria VA, Annandale VA, regional PMU study, permanent makeup longevity, Virginia PMU research"
         ogType="article"
@@ -211,7 +212,7 @@ const ClimatePerformanceAnalysis = () => {
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://inkmugi.com/climate-performance-analysis",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-            "description": "Regional study: ombre powder brows outperform microblading by 340% in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+            "description": "Regional study: ombre powder brows outperform microblading by 3× in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
           })}
         </script>
         <script type="application/ld+json">
@@ -254,7 +255,7 @@ const ClimatePerformanceAnalysis = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-[#E6DAD2]/10 to-transparent p-8 rounded-xl border border-[#E6DAD2]/20">
-                <div className="text-5xl font-cormorant text-[#E6DAD2] mb-2">340%</div>
+                <div className="text-5xl font-cormorant text-[#E6DAD2] mb-2">3×</div>
                 <div className="text-gray-400">Powder brow advantage in oily skin</div>
               </div>
               <div className="bg-gradient-to-br from-[#E6DAD2]/10 to-transparent p-8 rounded-xl border border-[#E6DAD2]/20">
@@ -276,7 +277,7 @@ const ClimatePerformanceAnalysis = () => {
               <TrendingUp className="w-12 h-12 text-emerald-400 flex-shrink-0 mt-2" />
               <div>
                 <h2 className="font-cormorant text-3xl text-white mb-4 voice-answer quick-answer featured-info">
-                  Key Finding: Powder Brows Perform 340% Better in High-Humidity Conditions
+                  Key Finding: Powder Brows Perform 3× Better in High-Humidity Conditions
                 </h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4 ai-optimized-content">
                   Across 187 oily-skin clients in the DMV region, ombre powder brows averaged <strong className="text-[#E6DAD2]">26 months of retention</strong>, 
@@ -513,7 +514,7 @@ const ClimatePerformanceAnalysis = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full hover:bg-white transition-colors font-semibold"
               >
                 Book Your Consultation

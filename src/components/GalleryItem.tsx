@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Search } from 'lucide-react';
 
 interface GalleryItemProps {
@@ -14,13 +14,10 @@ const GalleryItem: React.FC<GalleryItemProps> = ({
   category,
   onClick,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
+  /* Hover state was tracked but never read — the overlay is CSS-driven. */
   return (
-    <div 
+    <div
       className="gallery-item cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
     >
       <div className="relative">

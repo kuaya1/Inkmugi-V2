@@ -9,51 +9,14 @@ import {
   Shield,
   Car,
   ArrowRight,
-  Phone,
-  Building
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL, NAP } from '../lib/siteMeta';
 
 const PermanentMakeupDC: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi",
-    "url": "https://inkmugi.com/",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+1-571-283-8228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    }
-  };
 
   const neighborhoods = [
     { name: 'Georgetown', time: '20 min' },
@@ -110,24 +73,6 @@ const PermanentMakeupDC: React.FC = () => {
       >
         <script type="application/ld+json">
           {JSON.stringify({
-            ...localSchema,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": dcTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": faqs.map(faq => ({
@@ -160,7 +105,7 @@ const PermanentMakeupDC: React.FC = () => {
         subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 523+ procedures, exceptional results."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Premium ombre brows for Washington DC clients at Ink Mugi studio"
-        secondaryCTA={{ type: 'phone' }}
+        secondaryCTA={{ text: `Call ${NAP.telephoneDisplay}`, href: NAP.telephoneHref }}
       />
 
       {/* Value Proposition */}
@@ -381,7 +326,7 @@ const PermanentMakeupDC: React.FC = () => {
 
                 <div className="p-6 bg-[#2D2D2B] text-center">
                   <Link
-                    to="/booking"
+                    to={BOOKING_URL}
                     className="inline-flex items-center justify-center px-8 py-3 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
                   >
                     Book Free Consultation
@@ -496,7 +441,7 @@ const PermanentMakeupDC: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Consultation

@@ -1,49 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { MapPin, Star, CheckCircle, Award, Shield, Car, ArrowRight, Phone } from 'lucide-react';
+import { MapPin, Star, CheckCircle, Award, Shield, Car, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PermanentMakeupFallsChurch: React.FC = () => {
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://inkmugi.com/#business",
-    "name": "Ink Mugi",
-    "url": "https://inkmugi.com/permanent-makeup-falls-church-va",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
-    "telephone": "+15712838228",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "7857 Heritage Dr #330",
-      "addressLocality": "Annandale",
-      "addressRegion": "VA",
-      "postalCode": "22003",
-      "addressCountry": "US"
-    },
-    "priceRange": "$$$",
-    "areaServed": [
-      { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Alexandria", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Falls Church", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "McLean", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Springfield", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Tysons", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Vienna", "containedInPlace": { "@type": "State", "name": "Virginia" } },
-      { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } }
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.8305",
-      "longitude": "-77.1964"
-    }
-  };
 
   const neighborhoods = [
     { name: 'Falls Church City', time: '8 min' },
@@ -100,24 +65,6 @@ const PermanentMakeupFallsChurch: React.FC = () => {
       >
         <script type="application/ld+json">
           {JSON.stringify({
-            ...localSchema,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": fallsChurchTestimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": faqs.map(faq => ({
@@ -151,7 +98,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
         subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 523+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Falls Church, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: '/booking' }}
+        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -328,7 +275,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all"
                 >
                   Book Your Falls Church Consultation
@@ -462,7 +409,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition-all"
               >
                 Book Free Consultation

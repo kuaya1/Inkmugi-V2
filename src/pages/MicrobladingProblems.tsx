@@ -4,7 +4,6 @@ import SEO from '../components/SEO';
 import {
   ArrowRight,
   Phone,
-  CheckCircle,
   Shield,
   Layers,
   AlertTriangle,
@@ -15,6 +14,7 @@ import {
   BookOpen
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const MicrobladingProblems: React.FC = () => {
   const problemPages = [
@@ -92,7 +92,7 @@ const MicrobladingProblems: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2026-03-06",
             "dateModified": "2026-03-06",
@@ -294,7 +294,7 @@ const MicrobladingProblems: React.FC = () => {
             {[
               { to: '/microblading-vs-powder-brows', title: 'Microblading vs Powder Brows', desc: 'Data-driven comparison of longevity, skin compatibility, and healed results across 523+ procedures.' },
               { to: '/why-microblading-fades', title: 'Why Microblading Fades', desc: 'The 6 biological and environmental factors that cause microblading to lose pigment over time.' },
-              { to: '/microblading-for-oily-skin', title: 'Microblading & Oily Skin', desc: 'Why oily skin is the #1 reason microblading fails — and why powder brows perform 340% better.' },
+              { to: '/microblading-for-oily-skin', title: 'Microblading & Oily Skin', desc: 'Why oily skin is the #1 reason microblading fails — and why powder brows perform 3× better.' },
             ].map((link, idx) => (
               <AnimatedSection key={link.to} delay={idx + 1}>
                 <Link to={link.to} className="block bg-[#F9F7F5] p-6 rounded-xl border border-[#E6DAD2] hover:shadow-lg transition-shadow h-full">
@@ -343,7 +343,7 @@ const MicrobladingProblems: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Correction Consultation

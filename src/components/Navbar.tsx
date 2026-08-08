@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Facebook, Sparkles, Phone } from 'lucide-react';
+import { Menu, X, Instagram, Facebook, Phone } from 'lucide-react';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -128,7 +129,7 @@ const Navbar: React.FC = () => {
           */}
           
           <Link
-            to="/booking"
+            to={BOOKING_URL}
             className="btn btn-primary text-sm py-2 px-4"
           >
             Request a Consultation
@@ -196,7 +197,7 @@ const Navbar: React.FC = () => {
           </a>
           
           <Link
-            to="/booking"
+            to={BOOKING_URL}
             className="btn btn-primary text-sm py-2 w-full"
           >
             Request a Consultation

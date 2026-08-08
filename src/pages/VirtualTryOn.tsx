@@ -8,6 +8,7 @@ import { ControlPanel } from '../components/ai-tryon/ControlPanel';
 import { Loader } from '../components/ai-tryon/Loader';
 import { fileToBase64 } from '../utils/fileUtils';
 import { editImage, analyzeFaceShape } from '../services/ai/geminiService';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const VirtualTryOn: React.FC = () => {
   const [originalImage, setOriginalImage] = useState<File | null>(null);
@@ -244,7 +245,7 @@ const VirtualTryOn: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.vagaro.com/inkmugi"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-white text-[#2D2D2B] font-semibold rounded-full hover:bg-[#E6DAD2] transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1 inline-flex items-center justify-center gap-2"

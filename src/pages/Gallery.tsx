@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Instagram, Star, Quote, Loader } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -6,6 +6,7 @@ import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/SEO';
 import { fetchInstagramMedia, getMediaUrl } from '../services/instagramService';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 // Enhanced Gallery Item component
 const EnhancedGalleryItem: React.FC<{
@@ -282,7 +283,6 @@ const Gallery: React.FC = () => {
 
   // Deep-link: auto-open modal when ?item=xxx is in URL
   const itemParam = searchParams.get('item');
-  const itemScrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (itemParam) {
@@ -343,7 +343,11 @@ const Gallery: React.FC = () => {
         setInstagramError(null);
         
         // Get Instagram token from environment variables
-        const token = process.env.REACT_APP_INSTAGRAM_TOKEN;
+        // Vite exposes env vars as import.meta.env.VITE_*; the old
+        // process.env.REACT_APP_* form is a Create React App convention and
+        // threw ReferenceError: process is not defined in the browser, so this
+        // block always fell through to the catch and the feed never loaded.
+        const token = import.meta.env.VITE_INSTAGRAM_TOKEN;
         
         if (!token) {
           setInstagramError('Instagram API token not found');
@@ -606,7 +610,7 @@ const Gallery: React.FC = () => {
                   </div>
                   
                   <div className="p-6 border-t border-[#E6DAD2] text-center">
-                    <Link to="/booking" className="btn bg-[#2D2D2B] hover:bg-[#2D2D2B]/80 text-white">
+                    <Link to={BOOKING_URL} className="btn bg-[#2D2D2B] hover:bg-[#2D2D2B]/80 text-white">
                       Book This Service
                     </Link>
                   </div>
@@ -698,7 +702,7 @@ const Gallery: React.FC = () => {
                 Book your consultation today and take the first step towards effortlessly beautiful brows that enhance your natural features.
               </p>
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
-                <Link to="/booking" className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
+                <Link to={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
                   Book Now
                 </Link>
                 <Link to="/contact" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white transition-all duration-300">

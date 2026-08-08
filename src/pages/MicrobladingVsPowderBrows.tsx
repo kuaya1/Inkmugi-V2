@@ -32,7 +32,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
     },
     {
       question: "Which lasts longer — microblading or powder brows?",
-      answer: "Powder brows consistently outlast microblading. In our practice tracking 523+ clients in the DMV area, ombré powder brows average 18–36 months of retention depending on skin type and lifestyle. Microblading typically lasts 8–12 months in the same humid climate conditions before significant fading or color shift occurs. For oily skin specifically, powder brows last an average of 28 months versus approximately 8 months for microblading — a 340% improvement in retention."
+      answer: "Powder brows consistently outlast microblading. In our practice tracking 523+ clients in the DMV area, ombré powder brows average 18–36 months of retention depending on skin type and lifestyle. Microblading typically lasts 8–12 months in the same humid climate conditions before significant fading or color shift occurs. For oily skin specifically, powder brows last an average of 28 months versus approximately 8 months for microblading — a 3× improvement in retention."
     },
     {
       question: "Is microblading or powder brows better for oily skin?",
@@ -73,7 +73,6 @@ const MicrobladingVsPowderBrows: React.FC = () => {
       <SEO
         title="Microblading vs Powder Brows | Northern Virginia Guide | Ink Mugi"
         description="Microblading vs powder brows — which is better in Northern Virginia? Compare longevity, cost, healing & skin type suitability. Data from 523+ procedures. Serving Arlington, Reston, Fairfax & DC."
-        canonical="https://inkmugi.com/microblading-vs-powder-brows"
         path="/microblading-vs-powder-brows"
         keywords="microblading vs powder brows, microblading vs ombre brows, powder brows vs microblading oily skin, microblading alternative DMV, permanent eyebrows comparison, microblading vs ombre brows cost, which is better microblading or powder brows, microblading or powder brows for oily skin"
       >
@@ -98,7 +97,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2026-03-06",
             "dateModified": "2026-03-06",
@@ -416,7 +415,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-medium text-[#2D2D2B] mb-3">Oily Skin Prevalence</h3>
                 <p className="text-[#2D2D2B]/70 leading-relaxed">
-                  Humidity drives elevated sebum production, making oily and combination skin even more common in the DMV region. Our data from 187 oily-skin clients shows powder brows last an average of 28 months — compared to just 8 months for microblading under identical conditions. That's a 340% improvement in retention for this skin type.
+                  Humidity drives elevated sebum production, making oily and combination skin even more common in the DMV region. Our data from 187 oily-skin clients shows powder brows last an average of 28 months — compared to just 8 months for microblading under identical conditions. That's a 3× improvement in retention for this skin type.
                 </p>
               </div>
             </AnimatedSection>

@@ -5,9 +5,7 @@ import {
   CheckCircle,
   AlertTriangle,
   XCircle,
-  Heart,
   Shield,
-  Pill,
   Activity,
   Baby,
   ArrowRight,
@@ -16,6 +14,7 @@ import {
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import CTASection from '../components/CTASection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PmuMedicalConditions: React.FC = () => {
   useEffect(() => {
@@ -238,7 +237,7 @@ const PmuMedicalConditions: React.FC = () => {
         description="Complete guide to permanent makeup and medical conditions. Learn about contraindications, medications that affect PMU, pregnancy, diabetes, autoimmune conditions, and when PMU is safe."
         path="/pmu-medical-conditions"
         keywords="permanent makeup medical conditions, PMU contraindications, microblading pregnancy, PMU diabetes, PMU autoimmune disease, permanent makeup safety, PMU medications, can I get PMU with, permanent makeup health conditions"
-        image="https://inkmugi.com/og-image.jpg"
+        image="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
       >
         {/* Article Schema */}
         <script type="application/ld+json">
@@ -257,11 +256,11 @@ const PmuMedicalConditions: React.FC = () => {
             publisher: {
               '@type': 'Organization',
               name: 'Ink Mugi',
-              logo: { '@type': 'ImageObject', url: 'https://inkmugi.com/logo.png' },
+              logo: { '@type': 'ImageObject', url: 'https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png' },
             },
             datePublished: '2026-02-10',
             dateModified: '2026-02-10',
-            image: 'https://inkmugi.com/og-image.jpg',
+            image: 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg',
             url: 'https://inkmugi.com/pmu-medical-conditions',
           })}
         </script>
@@ -336,7 +335,7 @@ const PmuMedicalConditions: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
                   Discuss Your Situation
@@ -583,7 +582,7 @@ const PmuMedicalConditions: React.FC = () => {
                 Schedule a free consultation to discuss your specific medical history. We'll provide an honest assessment and work with your doctor if needed.
               </p>
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center gap-2 bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all"
               >
                 Schedule Free Consultation

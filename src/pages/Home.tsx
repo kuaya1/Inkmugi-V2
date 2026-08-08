@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const Home: React.FC = () => {
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
@@ -162,7 +163,7 @@ const Home: React.FC = () => {
             "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
             "url": "https://inkmugi.com/",
-            "logo": "https://inkmugi.com/logo.png",
+            "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
             "image": "https://inkmugi.com/2315.png",
             "telephone": "+1-571-283-8228",
             "founder": { "@id": "https://inkmugi.com/#mugi" },
@@ -188,19 +189,6 @@ const Home: React.FC = () => {
               { "@type": "City", "name": "Washington", "containedInPlace": { "@type": "State", "name": "District of Columbia" } },
               { "@type": "AdministrativeArea", "name": "Fairfax County", "containedInPlace": { "@type": "State", "name": "Virginia" } }
             ],
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5",
-              "reviewCount": "47",
-              "bestRating": "5",
-              "worstRating": "5"
-            },
-            "review": testimonials.map(t => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.name },
-              "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 },
-              "reviewBody": t.text
-            }))
           })}
         </script>
 
@@ -345,7 +333,7 @@ const Home: React.FC = () => {
             >
               <div className="flex flex-col sm:flex-row gap-5 sm:gap-4 justify-center items-center">
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
                   <span>Request a Consultation Review</span>
@@ -966,7 +954,7 @@ const Home: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
                 <Link
-                  to="/booking"
+                  to={BOOKING_URL}
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
                   <span>Request a Consultation Review</span>

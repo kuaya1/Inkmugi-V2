@@ -15,6 +15,7 @@ import {
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
 import AuthorBlock from '../components/AuthorBlock';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 export default function Authority() {
   const authorityLines = [
@@ -198,7 +199,6 @@ export default function Authority() {
         <meta name="ICBM" content="38.8304, -77.1964" />
         <meta name="author" content="Mugi, Virginia Licensed Permanent Cosmetic Tattooer" />
         <meta name="service-area" content="Annandale VA, Fairfax County, Arlington, Alexandria, Northern Virginia" />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
 
         <script type="application/ld+json">
           {JSON.stringify({
@@ -288,7 +288,7 @@ export default function Authority() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               <a
-                href="https://booksy.com/en-us/857522_ink-mugi-beauty_permanent-makeup_10184_annandale#ba_s=seo"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 rounded-full bg-[#E6DAD2] px-8 py-4 text-[#2D2D2B] font-medium transition-all duration-500 hover:bg-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
@@ -493,7 +493,7 @@ export default function Authority() {
               </p>
             </div>
             <a
-              href="https://booksy.com/en-us/857522_ink-mugi-beauty_permanent-makeup_10184_annandale#ba_s=seo"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 rounded-full bg-[#E6DAD2] px-7 py-3.5 text-[#2D2D2B] text-sm font-medium transition-all duration-500 hover:bg-white hover:shadow-[0_12px_30px_rgba(0,0,0,0.2)] flex-shrink-0"
@@ -664,7 +664,7 @@ export default function Authority() {
 
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://booksy.com/en-us/857522_ink-mugi-beauty_permanent-makeup_10184_annandale#ba_s=seo"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#E6DAD2] px-8 py-4 text-[#2D2D2B] font-medium transition-all duration-500 hover:bg-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"

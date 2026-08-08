@@ -20,6 +20,7 @@ import RelatedMicrobladingProblems from '../components/RelatedMicrobladingProble
 import AuthorBlock from '../components/AuthorBlock';
 import BeforeAfterCase from '../components/BeforeAfterCase';
 import type { CasePhoto } from '../components/BeforeAfterCase';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const MicrobladingCorrectionCaseStudy: React.FC = () => {
 
@@ -112,7 +113,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
         'Step 4: Touch-up at 6 weeks — density perfection and slight deepening of the tail color for definition. Pigment saturation was calibrated to account for long-term fading on oily skin.'
       ],
       healingOutcome: 'At her 12-month check-in, the powder brows were still holding at approximately 70% density — her microblading had typically faded to under 25% at the same point. The client described it as "the first time my brow work actually lasted." The soft powder finish also provided a more polished look than the hairstroke pattern she previously had. No further touch-ups were needed until the standard annual refresh. Cases like this are a reminder that longevity problems are often technique-fit problems, not client-failure problems.',
-      keyTakeaway: 'Not every "correction" involves fixing a problem — sometimes the correction is switching from a technique that doesn\'t work for your skin type to one that does. Powder brows offer 340% better retention than microblading in oily-skin clients, and that difference is obvious in long-term follow-up.'
+      keyTakeaway: 'Not every "correction" involves fixing a problem — sometimes the correction is switching from a technique that doesn\'t work for your skin type to one that does. Powder brows offer 3× better retention than microblading in oily-skin clients, and that difference is obvious in long-term follow-up.'
     }
   ];
 
@@ -140,7 +141,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
               "@type": "Organization",
               "name": "Ink Mugi",
               "url": "https://inkmugi.com",
-              "logo": { "@type": "ImageObject", "url": "https://inkmugi.com/logo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png" }
             },
             "datePublished": "2026-03-06",
             "dateModified": "2026-03-06",
@@ -183,7 +184,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
                 Book Your Assessment
@@ -406,7 +407,7 @@ const MicrobladingCorrectionCaseStudy: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Book Free Assessment

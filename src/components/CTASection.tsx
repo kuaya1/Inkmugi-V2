@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from './AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const CTASection: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const CTASection: React.FC = () => {
               Your consultation is a sacred conversation—not a sales pitch. Let's explore whether this transformation is aligned for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link to="/booking" className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
+              <Link to={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
                 Begin Your Journey
               </Link>
               <Link to="/contact" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white transition-all duration-300">

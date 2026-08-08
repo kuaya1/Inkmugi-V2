@@ -17,6 +17,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import InlineFaqAccordion from '../components/InlineFaqAccordion';
 import LocationHero from '../components/LocationHero';
 import LocationMidCTA from '../components/LocationMidCTA';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const PermanentMakeupFairfaxCounty: React.FC = () => {
   const businessSchema = {
@@ -25,8 +26,8 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
     "@id": "https://inkmugi.com/#business",
     "name": "Ink Mugi — Permanent Makeup Studio",
     "url": "https://inkmugi.com/permanent-makeup-fairfax-county",
-    "logo": "https://inkmugi.com/logo.png",
-    "image": "https://inkmugi.com/og-image.jpg",
+    "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
+    "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "telephone": "+15712838228",
     "address": {
       "@type": "PostalAddress",
@@ -54,13 +55,6 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
       "latitude": "38.8305",
       "longitude": "-77.1964"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "47",
-      "bestRating": "5",
-      "worstRating": "5"
-    }
   };
 
   const faqs = [
@@ -174,8 +168,8 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
         secondaryText="Ink Mugi operates from Annandale, VA — serving McLean, Vienna, Reston, Great Falls, Arlington, Tysons, Falls Church, and communities throughout Fairfax County."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Permanent makeup services for Fairfax County, Virginia at Ink Mugi studio"
-        primaryCTA={{ text: 'Schedule an Assessment', to: '/booking' }}
-        secondaryCTA={{ type: 'link', text: 'View Healed Results', to: '/gallery' }}
+        primaryCTA={{ text: 'Schedule an Assessment', to: BOOKING_URL }}
+        secondaryCTA={{ text: 'View Healed Results', to: '/gallery' }}
       />
 
       {/* ═══════════════════════════════════════════
@@ -700,7 +694,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/booking"
+                to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
                 Schedule an Assessment

@@ -16,6 +16,7 @@ import {
   Star
 } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import { BOOKING_URL } from '../lib/siteMeta';
 
 const SignatureOmbreBrows: React.FC = () => {
   const beforeAfterImages = [
@@ -37,7 +38,7 @@ const SignatureOmbreBrows: React.FC = () => {
   ];
 
   const idealCandidates = [
-    { icon: Droplets, text: 'Oily or combination skin (performs 340% better than microblading)' },
+    { icon: Droplets, text: 'Oily or combination skin (performs 3× better than microblading)' },
     { icon: Sun, text: 'Active lifestyle in DMV humidity' },
     { icon: Users, text: 'Sparse, over-plucked, or uneven brows' },
     { icon: TrendingUp, text: 'Want a soft, makeup-like finish that looks natural' },
@@ -83,7 +84,7 @@ const SignatureOmbreBrows: React.FC = () => {
     },
     {
       question: 'Why is ombre powder better for oily skin and DMV climate?',
-      answer: 'Ombre powder brows perform 340% better than microblading for oily skin in our humid climate. In our experience with Northern Virginia clients, this is especially noticeable through summer, when humidity and skin oil tend to break down bladed strokes much faster. The stippling technique deposits pigment beneath the skin surface, creating superior retention. Our data from 187 oily-skin clients shows 28-month average longevity vs just 8 months for microblading in the same conditions.'
+      answer: 'Ombre powder brows perform 3× better than microblading for oily skin in our humid climate. In our experience with Northern Virginia clients, this is especially noticeable through summer, when humidity and skin oil tend to break down bladed strokes much faster. The stippling technique deposits pigment beneath the skin surface, creating superior retention. Our data from 187 oily-skin clients shows 28-month average longevity vs just 8 months for microblading in the same conditions.'
     },
     {
       question: 'What makes this worth $600? What exactly is included?',
@@ -121,7 +122,7 @@ const SignatureOmbreBrows: React.FC = () => {
             "@id": "https://inkmugi.com/#business",
             "name": "Ink Mugi",
             "url": "https://inkmugi.com/",
-            "logo": "https://inkmugi.com/logo.png",
+            "logo": "https://live.staticflickr.com/65535/54408080424_9b71cd2f74_o_d.png",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
             "telephone": "+1-571-283-8228",
             "address": {
@@ -303,7 +304,7 @@ const SignatureOmbreBrows: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://www.vagaro.com/inkmugi" 
+                  href={BOOKING_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
@@ -369,7 +370,7 @@ const SignatureOmbreBrows: React.FC = () => {
                     Northern Virginia's variable humidity (45-85% throughout the year) is notoriously challenging for microblading. We frequently see hair strokes blur and fade rapidly here, especially on oily skin and during the most humid stretch of the DMV summer.
                   </p>
                   <p className="text-gray-700 leading-relaxed font-semibold">
-                    <strong>Our Data:</strong> Ombre powder brows perform <span className="text-[#2D2D2B] text-xl">340% better</span> than microblading for oily skin in DMV climate. Average longevity: 28 months vs 8 months for microblading (based on 187 oily-skin clients tracked since 2021).
+                    <strong>Our Data:</strong> Ombre powder brows perform <span className="text-[#2D2D2B] text-xl">3× better</span> than microblading for oily skin in DMV climate. Average longevity: 28 months vs 8 months for microblading (based on 187 oily-skin clients tracked since 2021).
                   </p>
                 </div>
               </div>
@@ -497,7 +498,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Every face is unique. Book a complimentary consultation where we'll assess your skin type, discuss your goals, and determine if ombre powder brows are right for you—no pressure, no obligation.
                 </p>
                 <a 
-                  href="https://www.vagaro.com/inkmugi" 
+                  href={BOOKING_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-6 py-3 rounded-full transition-all"
@@ -829,7 +830,7 @@ const SignatureOmbreBrows: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a 
-                  href="https://www.vagaro.com/inkmugi" 
+                  href={BOOKING_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-bold text-lg px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3"
