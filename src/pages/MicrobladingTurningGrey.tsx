@@ -174,7 +174,7 @@ const MicrobladingTurningGrey: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a

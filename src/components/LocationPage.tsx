@@ -282,10 +282,11 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Data-Driven Artistry {city} Clients Rely On
+              How Mugi works
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Every claim is documented. Every result is photographed at 6+ weeks healed — not fresh.
+              Every result in the portfolio is photographed at six weeks healed, never on the day.
+              Fresh brows always look good; healed brows are the ones you live with.
             </p>
           </AnimatedSection>
 
@@ -295,11 +296,11 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">The shape is decided before any pigment</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Not a claim — a tracked dataset. Every procedure is documented from consultation
-                  through healed result. This depth of experience means fewer surprises and better
-                  outcomes for our {city} clients.
+                  Your brows are mapped to your own proportions and drawn on before the machine is
+                  switched on. You see the shape on your face, in the mirror, and it is adjusted
+                  until you actually like it. Nothing permanent happens before that.
                 </p>
               </div>
             </AnimatedSection>
@@ -309,11 +310,11 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Shield className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">0.19% Complication Rate</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">The first pass is deliberately light</h3>
                 <p className="text-[#2D2D2B]/70">
-                  That's 13x lower than the industry average of 2.5%. Virginia licensed, insured,
-                  bloodborne pathogen certified. Hospital-grade sterilization and premium
-                  EU-compliant vegan pigments on every procedure.
+                  Pigment is easy to add and difficult to take back, so Mugi builds density
+                  conservatively and finishes at the six-week session, once she can see how your
+                  skin actually held the colour. Softer than you expect on day one is usually right.
                 </p>
               </div>
             </AnimatedSection>
@@ -323,11 +324,11 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <CheckCircle className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Design Approved Before Pigment</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Licensed, insured, single-use</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Your brow shape is mapped to your facial proportions, drawn on your face, and
-                  adjusted until you say "perfect." Nothing permanent happens until you're 100%
-                  confident — that's our guarantee.
+                  Virginia-licensed permanent cosmetic tattooer, bloodborne-pathogen certified,
+                  needles and pigment caps opened in front of you and discarded after. This is the
+                  part of the work you should not have to think about.
                 </p>
               </div>
             </AnimatedSection>
@@ -427,14 +428,14 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              What {city} Area Clients Say
+              What {city} area clients say
             </h2>
-            <div className="flex items-center justify-center gap-1 mb-2">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
-              ))}
-            </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ verified reviews</p>
+            {/*
+              The self-asserted "5.0 rating from 47+ verified reviews" and its row of
+              filled stars are gone. The count is not verifiable from anything in this
+              repository, and a rating a business awards itself is the weakest proof on
+              a page that already carries real client words.
+            */}
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -505,7 +506,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
-                  Book Your Consultation
+                  Request a Consultation
                 </Link>
               </div>
             </AnimatedSection>
@@ -567,10 +568,10 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-cormorant font-medium text-[#2D2D2B] mb-3">
-              Also Serving Nearby Communities
+              Also serving nearby communities
             </h2>
             <p className="text-[#2D2D2B]/60">
-              Premium ombre powder brows across Fairfax County &amp; Northern Virginia
+              Ombré powder brows across Fairfax County and Northern Virginia
             </p>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
@@ -644,7 +645,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

@@ -341,7 +341,7 @@ const TermsOfService: React.FC = () => {
                   rel="noopener noreferrer"
                   className="btn bg-[#2D2D2B] hover:bg-[#2D2D2B]/80 text-white transition-all duration-300"
                 >
-                  Book Consultation
+                  Request a Consultation
                 </a>
                 <Link to="/contact" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5 transition-all duration-300">
                   Contact Us

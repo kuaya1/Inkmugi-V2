@@ -518,7 +518,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                   to={BOOKING_URL}
                   className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all text-sm"
                 >
-                  Book Free Consultation
+                  Request a Consultation
                 </Link>
               </div>
             </div>
@@ -781,7 +781,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

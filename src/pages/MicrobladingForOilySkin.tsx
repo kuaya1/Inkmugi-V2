@@ -144,7 +144,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a
@@ -417,7 +417,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 <div>
                   <h4 className="font-medium text-[#2D2D2B] mb-2">Not Sure? Get a Professional Assessment</h4>
                   <p className="text-[#2D2D2B]/80 text-sm">
-                    During your free consultation at Ink Mugi, we assess oil production specifically in your brow area — not just your overall skin type. That brow-specific assessment matters because many clients have normal cheeks and oily foreheads, which changes the recommendation completely. We use this assessment alongside your lifestyle, climate exposure, and aesthetic goals to recommend the technique that will produce the best long-term result. <Link to={BOOKING_URL} className="text-amber-700 font-medium hover:underline">Book your free consultation →</Link>
+                    During your free consultation at Ink Mugi, we assess oil production specifically in your brow area — not just your overall skin type. That brow-specific assessment matters because many clients have normal cheeks and oily foreheads, which changes the recommendation completely. We use this assessment alongside your lifestyle, climate exposure, and aesthetic goals to recommend the technique that will produce the best long-term result. <Link to={BOOKING_URL} className="text-amber-700 font-medium hover:underline">Request a Consultation</Link>
                   </p>
                 </div>
               </div>
@@ -562,7 +562,7 @@ const MicrobladingForOilySkin: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a

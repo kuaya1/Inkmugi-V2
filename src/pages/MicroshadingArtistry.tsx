@@ -199,7 +199,7 @@ const MicroshadingArtistry: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all shadow-lg hover:shadow-xl"
               >
-                Book Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
@@ -528,7 +528,7 @@ const MicroshadingArtistry: React.FC = () => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all shadow-lg"
                 >
-                  Book Your Microshading Consultation
+                  Request a Consultation
                   <ArrowRight className="inline-block ml-2 w-5 h-5" />
                 </Link>
                 <div className="mt-6 pt-6 border-t border-gray-100 text-center">
@@ -687,7 +687,7 @@ const MicroshadingArtistry: React.FC = () => {
             </Link>
             <Link to={BOOKING_URL} className="bg-[#F9F7F5] rounded-xl p-4 text-center hover:shadow-lg transition-shadow group border border-transparent hover:border-amber-700/20">
               <Clock className="w-6 h-6 text-amber-700 mx-auto mb-2" />
-              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Book Now</p>
+              <p className="font-medium text-[#2D2D2B] group-hover:text-amber-700 transition-colors">Request a Consultation</p>
               <p className="text-sm text-[#2D2D2B]/50">Free consultation</p>
             </Link>
             <Link to="/faq" className="bg-[#F9F7F5] rounded-xl p-4 text-center hover:shadow-lg transition-shadow group border border-transparent hover:border-amber-700/20">
@@ -745,7 +745,7 @@ const MicroshadingArtistry: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-600 transition-all shadow-lg hover:shadow-xl"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

@@ -176,7 +176,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#2D2D2B] text-[#2D2D2B] rounded-full font-medium hover:bg-[#2D2D2B] hover:text-white transition-all"
               >
                 <Phone className="mr-2 w-5 h-5" />
-                Book Consultation
+                Request a Consultation
               </Link>
             </div>
           </AnimatedSection>

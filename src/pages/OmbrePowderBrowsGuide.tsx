@@ -122,7 +122,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
     {
       icon: <Star className="w-6 h-6" />,
       title: 'Waterproof & Smudge-Proof',
-      description: 'Gym, pool, humid Virginia summers — your brows stay flawless.',
+      description: 'Gym, pool, humid Virginia summers — the shape stays put.',
     },
     {
       icon: <Zap className="w-6 h-6" />,
@@ -263,7 +263,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
                 className="inline-flex items-center justify-center gap-2 bg-[#2D2D2B] text-white px-8 py-3.5 rounded-full font-medium hover:bg-[#2D2D2B]/90 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                Schedule a Consultation
+                Request a Consultation
               </Link>
               <a
                 href="#guides"

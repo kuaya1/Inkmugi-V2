@@ -106,7 +106,7 @@ const OmbreBrowsFairfax: React.FC = () => {
         subtext="Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 523+ procedures and exceptional results."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Fairfax County, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -284,7 +284,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
-                  Book Your Fairfax Consultation
+                  Request a Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
                   Compare: Tysons & McLean studios charge $750-900
@@ -410,7 +410,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

@@ -105,7 +105,7 @@ const PermanentMakeupTysons: React.FC = () => {
         subtext="Save $200-400 vs Tysons studios — just a 10-minute drive to Ink Mugi's Annandale location. 523+ successful procedures, 5.0-star reviews, and premium results without the premium markup."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Tysons Corner, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -417,7 +417,7 @@ const PermanentMakeupTysons: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

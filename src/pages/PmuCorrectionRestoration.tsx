@@ -195,7 +195,7 @@ const PmuCorrectionRestoration: React.FC = () => {
                 to={BOOKING_URL}
                 className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Schedule a Structured Correction Assessment</span>
+                <span>Request a Correction Assessment</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <a
@@ -937,7 +937,7 @@ const PmuCorrectionRestoration: React.FC = () => {
                 to={BOOKING_URL}
                 className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Schedule a Structured Correction Assessment</span>
+                <span>Request a Correction Assessment</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <a

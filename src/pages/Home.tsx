@@ -145,7 +145,15 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ink Mugi | Ombré Powder Brows with a 0.19% Complication Rate — Annandale, VA"
+        /*
+         * The homepage title used to read "Ombré Powder Brows with a 0.19%
+         * Complication Rate". In a results list it was the only title mentioning
+         * complications at all — priming risk before desire, and spending scarce
+         * characters on a number that means nothing without context. The rate keeps
+         * its place on /permanent-makeup-safety-dmv, where the query is about safety
+         * and the number is the answer.
+         */
+        title="Ombré Powder Brows in Annandale, VA | Ink Mugi"
         description="Virginia-licensed ombré powder brow specialist in Annandale. 523 documented procedures, 0.19% complication rate, healed-first standards, and consultation-based treatment planning."
         path="/"
         image="https://inkmugi.com/2315.png"
@@ -303,12 +311,19 @@ const Home: React.FC = () => {
               </span>
             </motion.div>
 
+            {/*
+              The previous headline promised "predictable healed results" — an
+              engineering specification where the reader wanted an outcome. This one
+              keeps the service name first (it is what people search for) and pairs it
+              with what the work actually gives you back: the brows stop being something
+              you manage every morning.
+            */}
             <h1 className="mb-6 md:mb-8">
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
                 Ombré powder brows
               </span>
               <span className="block text-[2.5rem] md:text-5xl lg:text-6xl xl:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
-                <span className="text-[#E6DAD2]">designed for predictable healed results.</span>
+                <span className="text-[#E6DAD2]">you stop thinking about.</span>
               </span>
             </h1>
 
@@ -318,10 +333,16 @@ const Home: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
+              {/*
+                The old subhead opened "the difference is no longer aesthetic preference"
+                — denying, in the first sentence a visitor reads, the exact thing she is
+                hiring: an artist's eye. The count is kept but demoted to the last clause,
+                where it explains the restraint instead of leading with volume.
+              */}
               <p className="text-lg md:text-xl text-white/75 font-light leading-relaxed">
-                After 523 documented procedures, the difference is no longer aesthetic preference.
+                Mugi maps the shape to your face, keeps the first pass light, and judges the work at six weeks rather than on the day.
                 <br className="hidden sm:block" />
-                It is mapping, pigment selection, depth control, conservative technique, and judging the work only after it heals.
+                After 523 procedures, most of the skill is knowing what not to do.
               </p>
             </motion.div>
 
@@ -336,7 +357,7 @@ const Home: React.FC = () => {
                   to={BOOKING_URL}
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Request a Consultation Review</span>
+                  <span>Request a Consultation</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <a
@@ -349,8 +370,16 @@ const Home: React.FC = () => {
                   <span className="text-sm tracking-wide">(571) 283-8228</span>
                 </a>
               </div>
+              {/*
+                Replaces "Currently reviewing new consultation requests for {month}".
+                That line was manufactured scarcity, and it was computed with new Date()
+                during render: the month was baked into the prerendered HTML at build
+                time and recomputed at view time, so once a build aged past a month the
+                server and client disagreed — a hydration mismatch, and a stale month
+                for anyone reading the HTML without running JavaScript.
+              */}
               <p className="text-xs tracking-[0.15em] uppercase text-[#E6DAD2]/70 font-light">
-                Currently reviewing new consultation requests for {new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toLocaleString('en-US', { month: 'long', year: 'numeric' })}
+                Annandale, Virginia · By appointment
               </p>
             </motion.div>
           </motion.div>
@@ -373,16 +402,25 @@ const Home: React.FC = () => {
           SECTION 2 — TRUST METRICS BAR
           Emotional: Instant credibility. No scrolling required to feel safe.
           SEO: Data points that differentiate from every competitor.
-          Tone: 10% Artistic / 30% Safe / 60% Data
+          Tone: the numbers support the judgement rather than replacing it.
       ═══════════════════════════════════════════════════════════════════════ */}
       <section className="py-6 md:py-8 bg-white border-b border-[#E6DAD2]/30">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10">
+            {/*
+              Was four: procedure count, complication rate, healed verification, and
+              "5.0 Rating (47+ Reviews)". Three changes, all restraint:
+              the review count is unverifiable from anything in this repository;
+              the complication rate is a real and unusual credential but it belongs on
+              /authority and the safety pages, not as the second thing a visitor reads —
+              she should not be thinking about complications before she has pictured a
+              result; and a bar of four numbers reads as a scoreboard rather than a
+              practice. What is left says: experienced, patient, and nearby.
+            */}
             {[
-              { value: '523+', label: 'Documented Procedures' },
-              { value: '0.19%', label: 'Documented Complication Rate', accent: true },
-              { value: '6-Week', label: 'Healed-Result Verification' },
-              { value: '5.0', label: 'Rating (47+ Reviews)' },
+              { value: '523+', label: 'Procedures, consultation to healed result' },
+              { value: '6 weeks', label: 'Before any result is called finished', accent: true },
+              { value: 'Annandale', label: 'Private studio in Northern Virginia' },
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <p className={`text-2xl md:text-3xl font-cormorant font-semibold ${item.accent ? 'text-[#9A7B69]' : 'text-[#2D2D2B]'}`}>
@@ -411,8 +449,13 @@ const Home: React.FC = () => {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-5">
                 Documented at 6+ weeks healed
               </h2>
+              {/*
+                Four sentences making one point, ending on "This is the standard."
+                Now two, and the second one earns its place by saying something the
+                first does not.
+              */}
               <p className="text-base text-[#2D2D2B]/65 leading-relaxed">
-                Every result in this portfolio is evaluated and photographed after the full healing process — six weeks minimum. In our practice, healed documentation matters more than same-day beauty shots because healed brows are the outcome clients actually live with. Fresh-day images are excluded from our documentation. This is the standard.
+                Every result here was photographed at six weeks or later, never on the day. Fresh brows always look good — the pigment is still sitting on the surface, the shape is at its sharpest, and nothing has settled yet. What you see below is what these clients woke up to months afterwards.
               </p>
             </div>
           </AnimatedSection>
@@ -957,7 +1000,7 @@ const Home: React.FC = () => {
                   to={BOOKING_URL}
                   className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 >
-                  <span>Request a Consultation Review</span>
+                  <span>Request a Consultation</span>
                   <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <span className="text-white/30">or</span>

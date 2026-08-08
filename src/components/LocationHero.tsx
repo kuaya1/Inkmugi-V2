@@ -33,7 +33,7 @@ const LocationHero: React.FC<LocationHeroProps> = ({
   secondaryText,
   heroImage,
   heroImageAlt,
-  primaryCTA = { text: 'Book Free Consultation', to: BOOKING_URL },
+  primaryCTA = { text: 'Request a Consultation', to: BOOKING_URL },
   secondaryCTA,
 }) => {
   const badge = badgeText || `Serving ${city}, VA`;

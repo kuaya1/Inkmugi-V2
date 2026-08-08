@@ -65,7 +65,7 @@ const NotFound: React.FC = () => {
               >
                 <ArrowRight className="w-6 h-6 text-[#9A7B69]" />
                 <div className="text-left">
-                  <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Book Consultation</p>
+                  <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors">Request a Consultation</p>
                   <p className="text-sm text-[#2D2D2B]/50">Free, no obligation</p>
                 </div>
               </Link>

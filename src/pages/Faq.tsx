@@ -261,14 +261,14 @@ const Faq: React.FC = () => {
             <AnimatedSection>
               <span className="inline-block text-[#E6DAD2] font-light tracking-wider mb-4 uppercase text-sm">Get Started</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium mb-6 leading-tight">
-                Ready to Transform Your Brows?
+                Still have a question?
               </h2>
               <p className="text-lg text-[#F9F7F5]/90 mb-10 max-w-2xl mx-auto">
                 Book your consultation today and take the first step towards effortlessly beautiful brows that enhance your natural features.
               </p>
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
                 <Link to={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
-                  Book Now
+                  Request a Consultation
                 </Link>
                 <Link to="/contact" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white transition-all duration-300">
                   Contact Us

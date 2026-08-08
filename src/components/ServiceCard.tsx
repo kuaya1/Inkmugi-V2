@@ -43,7 +43,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
         
         <Link to={BOOKING_URL} className="btn btn-outline w-full text-sm">
-          Book Now
+          Request a Consultation
         </Link>
       </div>
     </div>

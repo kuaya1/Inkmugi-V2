@@ -423,7 +423,7 @@ const BlogPost: React.FC = () => {
                       to={BOOKING_URL} 
                       className="flex-1 text-center bg-[#E6DAD2] text-[#2D2D2B] font-medium py-3 px-6 rounded-md hover:bg-[#F0E4D8] transition-colors"
                     >
-                      Book Free Consultation
+                      Request a Consultation
                     </Link>
                     <Link 
                       to="/gallery" 
@@ -465,7 +465,7 @@ const BlogPost: React.FC = () => {
                     <Shield size={18} className="text-[#E6DAD2]" />
                     <span className="text-xs text-[#E6DAD2] font-medium uppercase tracking-wide">Licensed & Insured</span>
                   </div>
-                  <h3 className="text-xl font-medium mb-3 font-cormorant">Book Your Consultation</h3>
+                  <h3 className="text-xl font-medium mb-3 font-cormorant">Request a Consultation</h3>
                   <p className="text-white/80 text-sm mb-4">
                     523+ procedures with a 0.19% complication rate. Virginia License #1231002471.
                   </p>
@@ -473,7 +473,7 @@ const BlogPost: React.FC = () => {
                     to={BOOKING_URL} 
                     className="block w-full text-center bg-[#E6DAD2] text-[#2D2D2B] font-medium py-3 px-4 rounded-md hover:bg-[#F0E4D8] transition-colors mb-3"
                   >
-                    Book Free Consultation
+                    Request a Consultation
                   </Link>
                   <div className="flex items-center justify-center gap-1 text-white/50 text-xs mt-2">
                     <Phone size={12} />

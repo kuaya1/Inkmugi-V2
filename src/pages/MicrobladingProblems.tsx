@@ -346,7 +346,7 @@ const MicrobladingProblems: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Correction Consultation
+                Request a Correction Assessment
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a

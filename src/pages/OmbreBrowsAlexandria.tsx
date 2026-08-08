@@ -106,7 +106,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
         subtext="Just 15 minutes from Old Town & Del Ray. Northern Virginia's most trusted PMU artist with 523+ successful procedures and premium results."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Alexandria, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -284,7 +284,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
-                  Book Your Alexandria Consultation
+                  Request a Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
                   Compare: Old Town studios charge $800+ for similar quality
@@ -406,7 +406,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

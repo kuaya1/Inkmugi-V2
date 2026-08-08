@@ -561,7 +561,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                   className="group relative overflow-hidden bg-gradient-to-r from-[#E6DAD2] to-[#F0E4D8] hover:from-[#F0E4D8] hover:to-[#E6DAD2] text-[#2D2D2B] font-semibold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3 text-lg"
                 >
                   <Calendar className="w-6 h-6" />
-                  <span>Book Your Safety Consultation</span>
+                  <span>Request a Consultation</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
                 <a 

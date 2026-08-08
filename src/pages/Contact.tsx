@@ -277,7 +277,7 @@ const Contact: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium">
-                  Book Now
+                  Request a Consultation
                 </a>
                 <a href="tel:+15712838228" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white">
                   Call Us

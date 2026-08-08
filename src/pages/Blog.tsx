@@ -405,7 +405,7 @@ const Blog = () => {
                     to={BOOKING_URL} 
                     className="block w-full text-center bg-[#E6DAD2] text-[#2D2D2B] font-medium py-3 px-4 rounded-md hover:bg-[#F0E4D8] transition-colors mb-3"
                   >
-                    Book Free Consultation
+                    Request a Consultation
                   </Link>
                   <div className="flex items-center justify-center gap-4 mt-3">
                     <Link to="/gallery" className="text-white/70 hover:text-white text-xs underline transition-colors">View Results</Link>

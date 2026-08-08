@@ -484,7 +484,7 @@ export default function PMUDataGuide() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-[#E6DAD2] text-[#2D2D2B] px-10 py-5 rounded-full font-semibold text-lg hover:bg-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
               >
-                <span>Book Your Consultation</span>
+                <span>Request a Consultation</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </a>
               <Link

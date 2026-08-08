@@ -255,7 +255,7 @@ const NanoBrows: React.FC = () => {
                   rel="noopener noreferrer"
                   className="group bg-[#2D2D2B] hover:bg-[#1a1a19] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
-                  Book Free Consultation
+                  Request a Consultation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link
@@ -474,7 +474,7 @@ const NanoBrows: React.FC = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#2D2D2B] hover:bg-[#1a1a19] text-white font-semibold px-8 py-4 rounded-full transition-all"
                     >
-                      Request Consultation <ArrowRight className="w-5 h-5" />
+                      Request a Consultation <ArrowRight className="w-5 h-5" />
                     </a>
                   </div>
                 </div>

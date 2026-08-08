@@ -5,7 +5,7 @@ import AnimatedSection from './AnimatedSection';
 import { BOOKING_URL } from '../lib/siteMeta';
 
 interface LocationMidCTAProps {
-  /** Main headline. Defaults to "Ready to wake up with perfect brows?" */
+  /** Main headline */
   headline?: string;
   /** Supporting text below headline */
   subtext?: string;
@@ -15,10 +15,17 @@ interface LocationMidCTAProps {
   buttonLink?: string;
 }
 
+/*
+ * These defaults render on all 19 location pages, so they are among the
+ * highest-leverage strings on the site. The previous set — "Ready to wake up
+ * with perfect brows?" over "see why hundreds of Northern Virginia clients
+ * trust Ink Mugi" — was the one piece of copy here that could have appeared on
+ * any brow studio's website, and it leaned on an unverifiable client count.
+ */
 const LocationMidCTA: React.FC<LocationMidCTAProps> = ({
-  headline = 'Ready to wake up with perfect brows?',
-  subtext = 'Book your free consultation today and see why hundreds of Northern Virginia clients trust Ink Mugi.',
-  buttonText = 'Book Free Consultation',
+  headline = 'Not sure powder brows are right for you?',
+  subtext = 'That is what the consultation is for. Bring photos of brows you like and ones you do not — knowing what you want to avoid is often more useful than knowing what you want.',
+  buttonText = 'Request a consultation',
   buttonLink = BOOKING_URL,
 }) => {
   return (

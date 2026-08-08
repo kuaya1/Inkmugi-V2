@@ -132,7 +132,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
         subtext="Right here at Heritage Center — no commute needed. Experience 523+ procedures worth of expertise with your neighborhood PMU artist. Walk-in convenience, free parking, and results that speak for themselves."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi in Annandale, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -382,7 +382,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
-                  Book Your Annandale Consultation
+                  Request a Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
                   Compare: DC & Tysons studios charge $750-950 for similar quality
@@ -397,7 +397,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
       <LocationMidCTA
         headline="Ready to wake up with perfect brows?"
         subtext="Your neighborhood studio is right here in Annandale. Book a free consultation and see why hundreds of local clients trust Ink Mugi."
-        buttonText="Book Free Consultation"
+        buttonText="Request a Consultation"
       />
 
       {/* FAQs */}
@@ -521,7 +521,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full font-medium hover:bg-[#F0E4D8] transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

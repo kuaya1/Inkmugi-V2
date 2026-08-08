@@ -309,7 +309,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   rel="noopener noreferrer"
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
-                  Book Your Consultation
+                  Request a Consultation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 {/* DISABLED - Temporarily hidden
@@ -503,7 +503,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   rel="noopener noreferrer"
                   className="inline-block bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-6 py-3 rounded-full transition-all"
                 >
-                  Schedule Free Consultation
+                  Request a Consultation
                 </a>
               </div>
             </AnimatedSection>
@@ -597,7 +597,7 @@ const SignatureOmbreBrows: React.FC = () => {
             <AnimatedSection className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] mb-4">
-                  Your Journey to Perfect Brows
+                  What the appointment actually involves
                 </h2>
                 <p className="text-xl text-gray-600">
                   A clear, simple path with no surprises
@@ -835,7 +835,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   rel="noopener noreferrer"
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-bold text-lg px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3"
                 >
-                  Reserve Your Private Consultation
+                  Request a Consultation
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link 

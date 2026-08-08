@@ -13,8 +13,15 @@ const Footer: React.FC = () => {
             <Link to="/" className="text-2xl font-cormorant font-semibold">
               Ink Mugi
             </Link>
+            {/*
+              Was: "Where artistry meets precision in permanent beauty. Transforming
+              lives through bespoke ombre powder brows that enhance your natural
+              elegance and daily confidence." Six industry clichés in two sentences —
+              artistry-meets-precision, transforming lives, bespoke, natural elegance,
+              confidence — on every page of the site. It described no one in particular.
+            */}
             <p className="text-neutral-300 text-sm mt-4 max-w-xs">
-              Where artistry meets precision in permanent beauty. Transforming lives through bespoke ombre powder brows that enhance your natural elegance and daily confidence.
+              Ombré powder brows by Mugi, a Virginia-licensed permanent cosmetic tattooer in Annandale. One practitioner, one client at a time, results judged at six weeks.
             </p>
             <div className="flex space-x-4 pt-2">
               <a
@@ -83,7 +90,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to={BOOKING_URL} className="text-neutral-300 hover:text-primary transition-colors duration-300 text-sm">
-                  Book Now
+                  Request a Consultation
                 </Link>
               </li>
               <li>

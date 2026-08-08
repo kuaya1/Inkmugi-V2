@@ -281,7 +281,7 @@ const OmbreBrowsVienna: React.FC = () => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-[#2D2D2B] text-white rounded-full font-medium hover:bg-[#4A4A47] transition-all"
                 >
-                  Book Your Vienna Consultation
+                  Request a Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
                   Compare: DC & Tysons studios charge $800–$1,200 for similar quality
@@ -413,7 +413,7 @@ const OmbreBrowsVienna: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

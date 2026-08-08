@@ -517,7 +517,7 @@ const ClimatePerformanceAnalysis = () => {
                 to={BOOKING_URL}
                 className="px-8 py-4 bg-[#E6DAD2] text-[#2D2D2B] rounded-full hover:bg-white transition-colors font-semibold"
               >
-                Book Your Consultation
+                Request a Consultation
               </Link>
               <Link
                 to="/authority"

@@ -265,10 +265,10 @@ export default function Authority() {
 
             <h1 className="max-w-5xl">
               <span className="block text-[2.75rem] md:text-6xl lg:text-7xl font-cormorant font-light leading-[1.08] tracking-tight">
-                How risk is controlled
+                The decisions that happen
               </span>
               <span className="block text-[2.75rem] md:text-6xl lg:text-7xl font-cormorant font-medium leading-[1.08] tracking-tight mt-2">
-                <span className="text-[#E6DAD2]">before permanent makeup begins.</span>
+                <span className="text-[#E6DAD2]">before any pigment.</span>
               </span>
             </h1>
 
@@ -278,7 +278,7 @@ export default function Authority() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              This page explains how Ink Mugi approaches ombré powder brows in Northern Virginia: facial mapping, undertone-based pigment matching, layered shading, sterile setup, and healed-result review. It is not a service pitch. It is a risk-control explanation for clients considering permanent makeup in Annandale, VA.
+              Most of what decides a healed result is settled before the machine is switched on — the shape, the pigment, whether your skin is ready that day, and occasionally whether I should be doing the work at all. This is the long version of how those calls get made, for anyone who wants to read it before booking permanent makeup in Northern Virginia.
             </motion.p>
 
             <motion.div
@@ -293,7 +293,7 @@ export default function Authority() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 rounded-full bg-[#E6DAD2] px-8 py-4 text-[#2D2D2B] font-medium transition-all duration-500 hover:bg-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Request a Consultation Review</span>
+                <span>Request a Consultation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               <Link
@@ -467,11 +467,17 @@ export default function Authority() {
           {/* Method callout */}
           <AnimatedSection className="mt-12">
             <div className="rounded-2xl bg-[#2D2D2B] px-8 py-8 md:px-10 md:py-10">
+              {/*
+                This block previously repeated "Technique matters, but judgment matters
+                more." — already the first of the three aphorism cards at the top of this
+                same page — and then explained what "premium pricing is actually paying
+                for", which reads as defending the price rather than describing the work.
+              */}
               <p className="text-xl md:text-2xl font-cormorant font-medium text-[#E6DAD2] leading-snug">
-                Technique matters, but judgment matters more.
+                Almost none of this is visible in the finished brows.
               </p>
               <p className="mt-3 text-white/55 leading-relaxed max-w-3xl">
-                Premium permanent makeup is not defined by the moment pigment touches the skin. It is defined by planning time, restraint, sterile materials, conservative execution, and healed-result follow-up. That is what premium pricing is actually paying for.
+                The planning time, the screening, the restraint on the first pass, the follow-up at six weeks — none of it shows. What shows is a shape that suits your face and colour that stayed where it was put. The rest is just what it takes to get there reliably.
               </p>
             </div>
           </AnimatedSection>
@@ -669,7 +675,7 @@ export default function Authority() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#E6DAD2] px-8 py-4 text-[#2D2D2B] font-medium transition-all duration-500 hover:bg-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Request a Consultation Review</span>
+                <span>Request a Consultation</span>
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <Link

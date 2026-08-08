@@ -274,7 +274,7 @@ const Services = () => {
                   )}
                   
                   <Link to={BOOKING_URL} className="text-[#2D2D2B] font-medium hover:text-[#2D2D2B]/70 transition-colors inline-flex items-center mt-auto">
-                    Request Consultation →
+                    Request a Consultation
                   </Link>
                 </div>
               </AnimatedSection>
@@ -368,7 +368,7 @@ const Services = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to={BOOKING_URL} className="btn bg-[#2D2D2B] hover:bg-[#1a1a19] text-white">
-                  Request Consultation
+                  Request a Consultation
                 </Link>
                 <Link to="/gallery" className="btn btn-outline text-[#2D2D2B] border-[#2D2D2B] hover:bg-[#2D2D2B]/5">
                   View Healed Results
@@ -430,7 +430,7 @@ const Services = () => {
                     to={BOOKING_URL} 
                     className="inline-flex items-center gap-2 bg-[#2D2D2B] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#2D2D2B]/90 transition-colors"
                   >
-                    Request Consultation
+                    Request a Consultation
                     <ArrowRight size={14} />
                   </Link>
                 </div>

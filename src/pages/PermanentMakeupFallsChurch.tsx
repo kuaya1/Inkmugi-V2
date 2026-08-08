@@ -98,7 +98,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
         subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 523+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Falls Church, Virginia"
-        primaryCTA={{ text: 'Book Free Consultation', to: BOOKING_URL }}
+        primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
         secondaryCTA={{ text: '(571) 283-8228', href: 'tel:+15712838228' }}
       />
 
@@ -278,7 +278,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                   to={BOOKING_URL}
                   className="block w-full text-center px-8 py-4 bg-amber-700 text-white rounded-full font-medium hover:bg-amber-800 transition-all"
                 >
-                  Book Your Falls Church Consultation
+                  Request a Consultation
                 </Link>
                 <p className="text-center text-[#2D2D2B]/60 mt-4 text-sm">
                   Save $200–400 compared to DC and Tysons studios
@@ -412,7 +412,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                 to={BOOKING_URL}
                 className="inline-flex items-center justify-center px-8 py-4 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition-all"
               >
-                Book Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link

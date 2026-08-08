@@ -256,8 +256,13 @@ const About: React.FC = () => {
               </span>
             </motion.div>
 
+            {/*
+              Was "The practitioner behind Ink Mugi." — a page about a person that
+              never said her name. Across 959 words this page named her zero times;
+              "Mugi" reached the screen only through image alt text and JSON-LD.
+            */}
             <h1 className="mb-8 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-cormorant font-medium leading-[1.06] tracking-tight">
-              The practitioner behind Ink Mugi.
+              I'm Mugi. Ink Mugi is just me.
             </h1>
 
             <motion.p
@@ -266,7 +271,7 @@ const About: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              I am a Virginia-licensed permanent cosmetic tattooer in Annandale, VA. After 523+ documented procedures, the work is less about style and more about judgment: knowing when to proceed, when to stay conservative, and when to say no because the healed result will matter more than the booking.
+              No associates, no rotating staff — the person you consult with is the person who does the work. After 523+ procedures, I've come to think this job is less about style than about judgement: knowing when to proceed, when to stay conservative, and when to say no, because the healed result will matter far longer than the booking.
             </motion.p>
 
             <motion.div
@@ -526,7 +531,7 @@ const About: React.FC = () => {
                 to={BOOKING_URL}
                 className="group inline-flex items-center gap-3 bg-[#E6DAD2] hover:bg-white text-[#2D2D2B] px-10 py-5 rounded-full font-medium transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
               >
-                <span>Request a Consultation Review</span>
+                <span>Request a Consultation</span>
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link

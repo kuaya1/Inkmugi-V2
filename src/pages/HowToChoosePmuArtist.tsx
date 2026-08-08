@@ -323,7 +323,7 @@ const HowToChoosePmuArtist: React.FC = () => {
                   to={BOOKING_URL}
                   className="group bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
-                  Schedule Free Consultation
+                  Request a Consultation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -631,7 +631,7 @@ const HowToChoosePmuArtist: React.FC = () => {
                     to={BOOKING_URL}
                     className="inline-flex items-center gap-2 bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-semibold px-8 py-4 rounded-full transition-all"
                   >
-                    Schedule Your Free Consultation
+                    Request a Consultation
                     <ArrowRight className="w-5 h-5" />
                   </Link>
                 </div>

@@ -18,7 +18,7 @@ const CTASection: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <Link to={BOOKING_URL} className="btn bg-[#E6DAD2] hover:bg-[#F0E4D8] text-[#2D2D2B] font-medium transition-all duration-300 transform hover:translate-y-[-2px]">
-                Begin Your Journey
+                Request a Consultation
               </Link>
               <Link to="/contact" className="btn bg-transparent border border-[#F9F7F5] hover:bg-white/10 text-white transition-all duration-300">
                 Let's Connect
