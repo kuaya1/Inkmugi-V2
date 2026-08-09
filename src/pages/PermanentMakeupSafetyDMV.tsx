@@ -56,7 +56,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
       answer: 'Complications have been rare, which comes down to several unglamorous safeguards: thorough pre-procedure consultations to identify contraindications, strict adherence to sterilization protocols, use of premium materials, precise technique refined over hundreds of procedures, comprehensive aftercare instructions, and 24/7 post-procedure support. Every client receives detailed guidance on proper healing.'
     },
     {
-      question: 'What makes Ink Mugi safer than other studios?',
+      question: 'What should I look for in any PMU studio?',
       answer: 'Honestly, the things that matter most are unglamorous and every good studio should be doing them: current state licensing and annual bloodborne pathogens certification, single-use needles opened in front of you, outcomes tracked through healing rather than signed off on the day, and a willingness to postpone a procedure when someone\'s skin is not ready. What you should ask any artist is to show you healed work and tell you their licence number. If they hesitate on either, that tells you something.'
     }
   ];
@@ -301,54 +301,39 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                 <span className="text-sm uppercase tracking-widest text-[#E6DAD2] font-semibold">The Proof</span>
               </div>
               <h2 className="text-4xl md:text-6xl font-cormorant font-medium mb-6">
-                The Numbers Don't Lie
+                What actually gets recorded
               </h2>
               <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-                Our safety record speaks for itself. Data tracked from hundreds of procedures since 2021.
+                Every procedure since 2021 is logged and reviewed once it has healed, not signed off on the day. These are observations from our own clients — a useful record, but a practice log rather than a study, and we do not present it as one.
               </p>
             </AnimatedSection>
 
             <div className="max-w-5xl mx-auto">
               <AnimatedSection className="bg-white rounded-3xl p-12 md:p-16 shadow-2xl">
-                {/* Visual Comparison - Enhanced */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
-                  {/* Ink Mugi */}
-                  <div className="text-center">
-                    <div className="text-sm uppercase tracking-widest text-[#2D2D2B]/60 mb-6 font-semibold">
-                      Ink Mugi Complication Rate
-                    </div>
-                    <div className="relative mb-8">
-                      <div className="text-8xl md:text-9xl font-bold text-green-600 mb-6 font-cormorant">
-                        0.19%
-                      </div>
-                      <div className="relative h-6 bg-green-100 rounded-full overflow-hidden shadow-inner">
-                        <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-500 rounded-full shadow-lg" style={{ width: '7.6%' }}></div>
-                      </div>
-                    </div>
-                    <div className="bg-green-50 rounded-2xl p-6 border-2 border-green-200">
-                      <div className="text-2xl font-bold text-green-900 mb-2">1 in 526</div>
-                      <div className="text-sm text-green-700">procedures affected</div>
-                    </div>
-                  </div>
+                {/*
+                  This was a two-column green-versus-red chart: "Ink Mugi 0.19% / 1 in
+                  526" against "Industry Average 2.5% / 1 in 40", with proportional bars.
+                  It was the largest and most persuasive instance of the comparative
+                  claim on the site — and the 2.5% benchmark it measured against has no
+                  source anywhere in this repository. Because it was a chart rather than
+                  a sentence, no text sweep caught it.
 
-                  {/* Industry Average */}
-                  <div className="text-center">
-                    <div className="text-sm uppercase tracking-widest text-[#2D2D2B]/60 mb-6 font-semibold">
-                      Industry Average
-                    </div>
-                    <div className="relative mb-8">
-                      <div className="text-8xl md:text-9xl font-bold text-red-600 mb-6 font-cormorant">
-                        2.5%
-                      </div>
-                      <div className="relative h-6 bg-red-100 rounded-full overflow-hidden shadow-inner">
-                        <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-500 rounded-full shadow-lg" style={{ width: '100%' }}></div>
-                      </div>
-                    </div>
-                    <div className="bg-red-50 rounded-2xl p-6 border-2 border-red-200">
-                      <div className="text-2xl font-bold text-red-900 mb-2">1 in 40</div>
-                      <div className="text-sm text-red-700">procedures affected</div>
-                    </div>
+                  What survives is the honest half: the rate with its denominator, and
+                  the fact that it is one observed event.
+                */}
+                <div className="max-w-2xl mx-auto text-center mb-16">
+                  <div className="text-sm uppercase tracking-widest text-[#2D2D2B]/60 mb-6 font-semibold">
+                    Complications recorded since 2021
                   </div>
+                  <div className="text-7xl md:text-8xl font-bold text-[#2D2D2B] mb-6 font-cormorant">
+                    1 in 526
+                  </div>
+                  <p className="text-[#2D2D2B]/70 leading-relaxed">
+                    One event across every procedure logged to date — 0.19%. It is a small
+                    denominator, so treat it as what it is: a record of this practice, not a
+                    statistic that would mean much on its own. The reason to trust it is the
+                    habit behind it, which is that every case gets reviewed after it heals.
+                  </p>
                 </div>
 
                 {/* Comparison Stats - Enhanced */}
@@ -548,7 +533,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                 <div className="group bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                   <CheckCircle className="w-10 h-10 text-[#E6DAD2] mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
                   <div className="text-lg font-semibold mb-2">Tracked</div>
-                  <div className="text-sm text-white/70">Than Industry Average</div>
+                  <div className="text-sm text-white/70">Reviewed once healed</div>
                 </div>
                 <div className="group bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                   <CheckCircle className="w-10 h-10 text-[#E6DAD2] mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
