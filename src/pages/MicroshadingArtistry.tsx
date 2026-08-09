@@ -10,7 +10,7 @@ const MicroshadingArtistry: React.FC = () => {
   const faqs = [
     {
       question: "How long does microshading last?",
-      answer: "Microshading typically lasts 1-2 years with proper care. Results depend on your skin type, lifestyle, and aftercare routine. Clients with oily skin may need a refresh sooner, while those with drier skin can enjoy results closer to the 2-year mark. Annual touch-ups ($250) keep your brows looking fresh and defined."
+      answer: "Microshading typically lasts 1-2 years with proper care. Results depend on your skin type, lifestyle, and aftercare routine. Clients with oily skin may need a refresh sooner, while those with drier skin can enjoy results closer to the 2-year mark. An annual colour boost keeps the shape crisp and defined."
     },
     {
       question: "Is microshading painful?",
@@ -158,7 +158,7 @@ const MicroshadingArtistry: React.FC = () => {
     <>
       <SEO
         title="Microshading Eyebrows in Northern Virginia | Ink Mugi — $700 All-Inclusive"
-        description="Microshading eyebrows by Ink Mugi in Annandale, VA — pixelated powder finish for the most natural results. hundreds of procedures, VA-licensed. $700 includes consultation, procedure & touch-up. Serving all DMV."
+        description="Microshading eyebrows by Ink Mugi in Annandale, VA — pixelated powder finish for the most natural results. Hundreds of procedures, VA-licensed. $700 includes consultation, procedure & touch-up. Serving all DMV."
         path="/microshading-artistry"
         keywords="microshading near me, microshading eyebrows, microshading vs microblading, microshading brows, permanent makeup Annandale VA, PMU near me, microshading Northern Virginia, microshading DMV"
       >
@@ -254,7 +254,7 @@ const MicroshadingArtistry: React.FC = () => {
                   microshading the ideal choice for clients whose microblading has faded or blurred.
                 </p>
                 <p className="text-[#2D2D2B]/80 leading-relaxed">
-                  Many clients come in with decent natural brow hair but very uneven density, and microshading tends to blend especially well in those cases. At Ink Mugi, Mugi has performed <strong>523+ PMU procedures</strong> and offers both
+                  Many clients come in with decent natural brow hair but very uneven density, and microshading tends to blend especially well in those cases. At Ink Mugi, Mugi has performed <strong>hundreds of PMU procedures</strong> and offers both
                   microshading ($700) and machine ombre powder brows ($600). During your free consultation,
                   she'll analyze your skin type, lifestyle, and brow goals to recommend the best technique for you.
                 </p>
@@ -371,15 +371,15 @@ const MicroshadingArtistry: React.FC = () => {
                   {/* Price */}
                   <div className="bg-white p-4 font-medium text-[#2D2D2B]">Price at Ink Mugi</div>
                   <div className="bg-amber-50 p-4 text-center text-amber-700 font-bold text-lg">$700</div>
-                  <div className="bg-white p-4 text-center text-[#2D2D2B]/60 italic text-sm">Not offered*</div>
+                  <div className="bg-white p-4 text-center text-[#2D2D2B]/60 italic text-sm">Selective*</div>
                   <div className="bg-white p-4 text-center text-[#2D2D2B] font-bold text-lg">$600</div>
                 </div>
               </div>
             </div>
             <p className="text-center text-[#2D2D2B]/50 text-sm mt-4 max-w-3xl mx-auto">
-              *Ink Mugi specializes in ombre powder brows ($600) and microshading ($700). We do not offer microblading
-              because microshading and ombre powder brows deliver superior, longer-lasting results for all skin types in
-              the DMV's humid climate.
+              *Ink Mugi specialises in ombré powder brows ($600) and microshading ($700). Microblading is offered
+              selectively — in this humid climate machine work generally holds its shape longer, so Mugi will usually
+              suggest it unless your skin and the look you want genuinely point the other way.
             </p>
           </AnimatedSection>
         </div>
@@ -536,7 +536,7 @@ const MicroshadingArtistry: React.FC = () => {
                     Compare: Other DMV studios charge <span className="line-through">$900–$1,200</span> for microshading
                   </p>
                   <p className="text-sm text-[#2D2D2B]/50 mt-1">
-                    Annual touch-ups: $250
+                    Annual colour boost: quoted at the appointment
                   </p>
                 </div>
               </div>
@@ -579,8 +579,7 @@ const MicroshadingArtistry: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of documented procedures</h3>
                 <p className="text-[#2D2D2B]/70 leading-relaxed">
-                  Mugi has completed over 523+ PMU procedures with a documented 0.19% complication rate —
-                  Every procedure is tracked, every result
+                  Mugi has completed over hundreds of PMU procedures with a documented Every procedure is tracked, every result
                   is documented. You're in the hands of one of Northern Virginia's most experienced
                   PMU artists.
                 </p>
@@ -737,7 +736,7 @@ const MicroshadingArtistry: React.FC = () => {
             </h2>
             <p className="text-lg text-[#F9F7F5]/80 mb-8 leading-relaxed">
               Microshading artistry by Ink Mugi — pixelated precision for brows that look like they
-              were born with you. Book your free consultation today and discover why 523+ clients
+              were born with you. Book your free consultation today and discover why hundreds of clients
               trust Mugi with their brows.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

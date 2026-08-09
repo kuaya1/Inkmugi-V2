@@ -399,7 +399,7 @@ const Blog = () => {
                 <div className="bg-[#2D2D2B] p-6 rounded-lg shadow-soft mb-8 text-white">
                   <h3 className="text-xl font-medium mb-3 font-cormorant">Ready for Your Brow Transformation?</h3>
                   <p className="text-white/80 text-sm mb-4">
-                    hundreds of procedures. 0.19% complication rate. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
+                    hundreds of procedures. tracked outcomes. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
                   </p>
                   <Link 
                     to={BOOKING_URL} 
@@ -430,7 +430,7 @@ const Blog = () => {
                     </div>
                   </div>
                   <p className="text-[#2D2D2B]/80 text-sm mb-2">
-                    Virginia License #1231002471. Specializing in natural ombre powder brows with Korean precision techniques. hundreds of procedures documented with clinical data tracking.
+                    Virginia License #1231002471. Specializing in natural ombre powder brows with Korean precision techniques. Hundreds of procedures documented with clinical data tracking.
                   </p>
                   <p className="text-[#2D2D2B]/60 text-xs mb-4">
                     Bloodborne Pathogens Certified · OSHA Compliant · Premium Vegan Pigments

@@ -80,7 +80,7 @@ const OmbreBrowsManassas: React.FC = () => {
     },
     {
       question: "Why do Manassas residents choose Ink Mugi over closer studios?",
-      answer: "Manassas clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With hundreds of documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach gives the certainty and quality that Prince William County clients demand. Many of our Manassas clients were referred by friends or family who'd already experienced our work."
+      answer: "Manassas clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With hundreds of documented procedures, a low complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach gives the certainty and quality that Prince William County clients demand. Many of our Manassas clients were referred by friends or family who'd already experienced our work."
     },
     {
       question: "How long do ombre powder brows last for Manassas area clients?",
@@ -104,7 +104,7 @@ const OmbreBrowsManassas: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Manassas VA | Ink Mugi"
-        description="Ombre powder brows for Manassas VA residents. hundreds of procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Manassas. Free consultation — see healed results first."
+        description="Ombre powder brows for Manassas VA residents. Hundreds of procedures, tracked outcomes, VA licensed. 30 min from Downtown Manassas. Free consultation — see healed results first."
         path="/ombre-brows-manassas-va"
         keywords="ombre powder brows Manassas VA, permanent makeup Manassas Virginia, powder brows Prince William County, PMU near Manassas, microshading Manassas VA, nano brows Manassas"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsManassas: React.FC = () => {
         city="Manassas"
         badgeText="Serving Manassas, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Manassas, VA</span></>}
-        subtext="Ombré powder brows for Prince William County professionals. hundreds of documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Prince William County professionals. Hundreds of documented procedures — see the shape on your face and approve before any pigment."
         secondaryText="30 minutes from Historic Downtown Manassas to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Ombre powder brows for Manassas, VA clients at Ink Mugi studio"

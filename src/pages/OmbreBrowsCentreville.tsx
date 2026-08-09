@@ -24,7 +24,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Centreville VA Clients",
-    "description": "Professional ombre powder brows for Centreville, VA residents. hundreds of documented procedures, healed-first philosophy, VA licensed. Located in Annandale — 25 minutes from Centreville Square via Route 28 and I-66.",
+    "description": "Professional ombre powder brows for Centreville, VA residents. Hundreds of documented procedures, healed-first philosophy, VA licensed. Located in Annandale — 25 minutes from Centreville Square via Route 28 and I-66.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -68,7 +68,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     {
       name: "Stephanie C.",
       location: "Little Rocky Run",
-      text: "I'm particular about who I trust with something permanent. Mugi's documented results and 0.19% complication rate were what convinced me to make the drive. Six months later, I still get compliments from people who think I just have amazing natural brows.",
+      text: "I'm particular about who I trust with something permanent. Mugi's documented results and tracked outcomes were what convinced me to make the drive. Six months later, I still get compliments from people who think I just have amazing natural brows.",
       rating: 5
     }
   ];
@@ -84,7 +84,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     },
     {
       question: "How is Ink Mugi different from PMU artists closer to Centreville?",
-      answer: "Three measurable differences: 523+ tracked procedures (not an estimate), a 0.19% complication rate that's tracked through healing, and a portfolio that only shows results at 6+ weeks — not fresh, same-day photos. We also use premium EU-compliant vegan pigments and include a 6-week perfecting session in every price."
+      answer: "Three measurable differences: hundreds of tracked procedures (not an estimate), a low complication rate that's tracked through healing, and a portfolio that only shows results at 6+ weeks — not fresh, same-day photos. We also use premium EU-compliant vegan pigments and include a 6-week perfecting session in every price."
     },
     {
       question: "Do you serve clients from the Route 28 and Bull Run areas?",
@@ -104,7 +104,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Centreville VA | Ink Mugi — Healed-First Results"
-        description="Ombre powder brows for Centreville VA residents. hundreds of procedures, 0.19% complication rate. 25 min from Centreville Square. VA licensed, six-week review. Free consultation."
+        description="Ombre powder brows for Centreville VA residents. Hundreds of procedures, tracked outcomes. 25 min from Centreville Square. VA licensed, six-week review. Free consultation."
         path="/ombre-brows-centreville-va"
         keywords="ombre powder brows Centreville VA, permanent makeup Centreville Virginia, PMU near Centreville Square, powder brows Route 28, microshading Centreville, nano brows Centreville VA"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsCentreville: React.FC = () => {
         city="Centreville"
         badgeText="Serving Centreville, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Centreville, VA</span></>}
-        subtext="Permanent makeup grounded in evidence, not trends. hundreds of procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable."
+        subtext="Permanent makeup grounded in evidence, not trends. Hundreds of procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable."
         secondaryText="25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model."
         heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows for Centreville, VA clients at Ink Mugi studio"
@@ -237,7 +237,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Outcomes Documented</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of Outcomes Documented</h3>
                 <p className="text-[#2D2D2B]/70">
                   Each procedure is tracked end-to-end — consultation notes, procedure details, healed photographs at 6+ weeks. This accumulated experience means refined precision for every client, including those traveling from the Centreville area.
                 </p>
@@ -251,7 +251,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Verified Safety Standards</h3>
                 <p className="text-[#2D2D2B]/70">
-                  A 0.19% complication rate isn't an aspiration — it's our documented record across hundreds of procedures. Virginia licensed (VA #1231002471), insured, bloodborne pathogen certified. Premium EU-compliant vegan pigments with no heavy metals or undisclosed additives.
+                  a low complication rate isn't an aspiration — it's our documented record across hundreds of procedures. Virginia licensed (VA #1231002471), insured, bloodborne pathogen certified. Premium EU-compliant vegan pigments with no heavy metals or undisclosed additives.
                 </p>
               </div>
             </AnimatedSection>

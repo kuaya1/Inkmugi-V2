@@ -60,13 +60,45 @@ export const PRACTITIONER = {
   licenseNumber: '1231002471',
 } as const;
 
+/** Owner-confirmed authoritative source for public review proof. */
+export const GOOGLE_PROFILE_URL = 'https://maps.app.goo.gl/3GSCY6K3AyzSHmXL8';
+
 export const SOCIAL_PROFILES = [
   'https://www.instagram.com/browsby.mugi/',
   'https://www.facebook.com/inkmugi',
   'https://www.yelp.com/biz/ink-mugi-annandale',
   'https://booksy.com/en-us/dl/inkmugi',
+  GOOGLE_PROFILE_URL,
   BOOKING_URL,
 ];
+
+/**
+ * Owner-confirmed business facts, locked in the final fact review. The website
+ * must not restate any of this differently.
+ *
+ * This block exists because the site was simultaneously publishing four
+ * procedure counts, two correction assessment fees, three correction price
+ * bands and two sets of opening hours — each value copy-pasted into dozens of
+ * files with no single owner.
+ */
+export const BUSINESS_FACTS = {
+  /** Qualitative by owner decision: no exact lifetime count is published. */
+  procedureVolume: 'hundreds of procedures',
+  primarySpecialisation: 'ombré powder brows',
+  /** Offered — the site must not claim otherwise — but not billed equally. */
+  microblading: 'selective' as const,
+  /** Offered; deliberately not part of the primary brow positioning. */
+  fineLineTattoos: 'secondary' as const,
+  /**
+   * The complication figure is off commercial pages. It survives only where the
+   * denominator and limits are stated: /permanent-makeup-safety-dmv and
+   * /pmu-data-guide. Comparative "Nx safer than industry" framing is retired
+   * permanently and must not return.
+   */
+  complicationRateCommercialUse: false,
+  /** Review proof links to Google. No count is hardcoded anywhere. */
+  reviewProof: 'google-link-no-count' as const,
+} as const;
 
 const AREA_SERVED: { type: 'City' | 'AdministrativeArea'; name: string }[] = [
   { type: 'City', name: 'Annandale' },
@@ -171,14 +203,20 @@ export function siteEntityGraph() {
           latitude: NAP.latitude,
           longitude: NAP.longitude,
         },
+        /*
+         * Owner-confirmed to match the live booking system. This schema
+         * previously published Mon–Fri 10:00–18:00 and Sat 10:00–16:00 while
+         * Vagaro took bookings Mon–Sat 10:30–17:00 — and this is the block that
+         * feeds the Google listing, so clients were shown hours they could not
+         * actually book.
+         */
         openingHoursSpecification: [
           {
             '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-            opens: '10:00',
-            closes: '18:00',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            opens: '10:30',
+            closes: '17:00',
           },
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '10:00', closes: '16:00' },
         ],
         sameAs: SOCIAL_PROFILES,
         founder: { '@id': PERSON_ID },

@@ -124,7 +124,7 @@ const Services = () => {
     {
       id: 7,
       title: 'Color Refresh Sessions',
-      price: 'From $350',
+      price: 'Quoted at your refresh appointment',
       duration: '1.5-2 hours',
       description: 'Maintain vibrancy after initial healing. Recommended every 18-36 months depending on skin type and lifestyle. Keeps brows looking fresh.',
       icon: <CheckCircle size={24} className="text-[#2D2D2B]" />,
@@ -145,7 +145,7 @@ const Services = () => {
     <>
       <SEO
         title="Ombre Powder Brows & PMU Services | Pricing & Process | Ink Mugi VA"
-        description="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from 523+ clients. Licensed & insured."
+        description="Ombre powder brows starting at $600 in Annandale, VA. Includes consultation, custom color matching, procedure & 6-week touch-up. See healed results from hundreds of clients. Licensed & insured."
         path="/services"
         keywords="permanent makeup services Annandale VA, ombre powder brows pricing, powder brows cost Northern Virginia, PMU services near me, brow transformation Annandale"
       >
@@ -473,7 +473,7 @@ const Services = () => {
                     ['Healing Time', '6-8 weeks', '4-6 weeks', '4-6 weeks'],
                     ['Touch-up Frequency', 'Every 8-12 months', 'Every 18-24 months', 'Every 12-18 months'],
                     ['Cost (DMV Average)', '$400-$700', '$500-$900', '$600-$800'],
-                    ['Ink Mugi Price', 'Not offered', '$600 (all-inclusive)', '$700 (all-inclusive)'],
+                    ['Ink Mugi Price', 'Selective', '$600 (all-inclusive)', '$700 (all-inclusive)'],
                   ].map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? 'bg-[#F9F7F5]' : 'bg-white'}>
                       <td className="p-4 font-medium text-[#2D2D2B]">{row[0]}</td>
@@ -556,7 +556,7 @@ const Services = () => {
             </div>
             <div>
               <ArrowRight size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
-              <p className="font-semibold text-sm">0.19% Complications</p>
+              <p className="font-semibold text-sm">Six-week review</p>
               <p className="text-xs text-white/60">Tracked Through Healing</p>
             </div>
           </div>

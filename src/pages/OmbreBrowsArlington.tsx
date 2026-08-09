@@ -55,11 +55,11 @@ const OmbreBrowsArlington: React.FC = () => {
     },
     {
       question: "Why do Arlington residents choose Inkmugi over DC studios?",
-      answer: "Arlington clients appreciate our combination of quality and value. In our consultations with clients from Clarendon, Ballston, and Pentagon City, we often hear that they want a polished result without the hassle of downtown pricing, parking, and rushed appointments. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our 523+ documented procedure track record speaks for itself."
+      answer: "Arlington clients appreciate our combination of quality and value. In our consultations with clients from Clarendon, Ballston, and Pentagon City, we often hear that they want a polished result without the hassle of downtown pricing, parking, and rushed appointments. DC studios charge $800+ for similar services, while our ombre brows are $600 with the same premium technique and better parking. Plus, our hundreds of documented procedure track record speaks for itself."
     },
     {
       question: "Do you offer flexible hours for Arlington professionals?",
-      answer: "Absolutely! We understand Arlington's professional crowd. We offer appointments Monday-Friday 10am-6pm, with select Saturday availability. Many clients book their initial consultation during lunch and return for their procedure on a less busy day."
+      answer: "Absolutely! We understand Arlington's professional crowd. Appointments run Monday to Saturday, 10:30am to 5pm. Many clients book their initial consultation during lunch and return for their procedure on a less busy day."
     }
   ];
 
@@ -67,7 +67,7 @@ const OmbreBrowsArlington: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Arlington, VA | Ink Mugi"
-        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. 523+ healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
+        description="Arlington VA ombre powder brows by Ink Mugi — just 12 minutes from Clarendon, Ballston & Pentagon City. Hundreds of healed results, $600 all-inclusive. Free consultation with VA-licensed PMU artist. See before & afters."
         path="/ombre-brows-arlington-va"
         keywords="ombre brows Arlington VA, powder brows Clarendon, permanent makeup Arlington County, PMU near Ballston, microshading Arlington Virginia"
       >
@@ -103,7 +103,7 @@ const OmbreBrowsArlington: React.FC = () => {
         city="Arlington"
         badgeText="Serving Arlington County, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Arlington</span> Residents</>}
-        subtext="Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with hundreds of procedures and a 0.19% complication rate."
+        subtext="Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with hundreds of procedures."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Arlington, Virginia"
         primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}

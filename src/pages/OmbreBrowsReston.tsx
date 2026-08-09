@@ -80,7 +80,7 @@ const OmbreBrowsReston: React.FC = () => {
     },
     {
       question: "Why do Reston residents choose Ink Mugi over closer studios?",
-      answer: "Reston clients often tell us they chose Ink Mugi after comparing healed results. In our consultations with Reston professionals, one of the biggest concerns we hear is not wanting to gamble on a shape that only looks good fresh. With hundreds of documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment, our approach gives the certainty and quality that Reston professionals demand."
+      answer: "Reston clients often tell us they chose Ink Mugi after comparing healed results. In our consultations with Reston professionals, one of the biggest concerns we hear is not wanting to gamble on a shape that only looks good fresh. With hundreds of documented procedures, a low complication rate, and a design-approval process where you see the exact shape on your face before any pigment, our approach gives the certainty and quality that Reston professionals demand."
     },
     {
       question: "How long do ombre powder brows last for Reston area clients?",
@@ -104,7 +104,7 @@ const OmbreBrowsReston: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Reston VA | Ink Mugi"
-        description="Ombre powder brows for Reston VA residents. hundreds of procedures, 0.19% complication rate, VA licensed. 25 min from Reston Town Center. Free consultation — see healed results first."
+        description="Ombre powder brows for Reston VA residents. Hundreds of procedures, tracked outcomes, VA licensed. 25 min from Reston Town Center. Free consultation — see healed results first."
         path="/ombre-brows-reston-va"
         keywords="ombre powder brows Reston VA, permanent makeup Reston Virginia, PMU near Reston Town Center, powder brows Fairfax County, microshading Reston VA, nano brows Reston"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsReston: React.FC = () => {
         city="Reston"
         badgeText="Serving Reston, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Reston, VA</span></>}
-        subtext="Ombré powder brows for Reston professionals. hundreds of documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Reston professionals. Hundreds of documented procedures — see the shape on your face and approve before any pigment."
         secondaryText="25 minutes from Reston Town Center to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Ombre powder brows for Reston, VA clients at Ink Mugi studio"

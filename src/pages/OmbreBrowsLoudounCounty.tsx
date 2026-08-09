@@ -68,7 +68,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
     },
     {
       question: "Why do Loudoun County residents choose a Fairfax County studio?",
-      answer: "Clients from Ashburn, Leesburg, and surrounding Loudoun communities select Ink Mugi for the documented safety record (0.19% complication rate across hundreds of procedures), the healed-first portfolio standard, and the design approval protocol. For a procedure with permanent results, the caliber of the practitioner and the verifiability of outcomes carry more weight than proximity."
+      answer: "Clients from Ashburn, Leesburg, and surrounding Loudoun communities select Ink Mugi for the documented safety record (tracked outcomes across hundreds of procedures), the healed-first portfolio standard, and the design approval protocol. For a procedure with permanent results, the caliber of the practitioner and the verifiability of outcomes carry more weight than proximity."
     },
     {
       question: "Is ombré powder the right technique for this region's climate?",
@@ -96,7 +96,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
     <>
       <SEO
         title="Ombré Powder Brows in Loudoun County, VA | Licensed Studio — Ink Mugi"
-        description="Precision ombré powder brows for Loudoun County residents — Ashburn, Leesburg, Sterling, South Riding. hundreds of documented procedures. 0.19% complication rate. VA-licensed studio with healed-first verification. Schedule an assessment."
+        description="Precision ombré powder brows for Loudoun County residents — Ashburn, Leesburg, Sterling, South Riding. Hundreds of documented procedures. tracked outcomes. VA-licensed studio with healed-first verification. Schedule an assessment."
         path="/ombre-brows-loudoun-county-va"
         keywords="ombre powder brows Loudoun County VA, permanent makeup Ashburn Virginia, powder brows Leesburg VA, licensed PMU artist Northern Virginia, permanent makeup Sterling VA, healed brow results Loudoun County"
       >
@@ -172,12 +172,12 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">hundreds of</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#9A7B69]">0.19%</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Complication Rate</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Outcomes Tracked</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">6-Week</p>
@@ -185,7 +185,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">5.0</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Client Rating (47+ Reviews)</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Where clients leave reviews</p>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-[#2D2D2B]">Documented Safety Record</h3>
                 <p className="text-[#2D2D2B]/65 text-sm leading-relaxed">
-                  A 0.19% complication rate across hundreds of procedures. Virginia body art licensure, professional liability insurance, and hospital-grade sterilization protocols verified before every appointment.
+                  a low complication rate across hundreds of procedures. Virginia body art licensure, professional liability insurance, and hospital-grade sterilization protocols verified before every appointment.
                 </p>
               </div>
             </AnimatedSection>

@@ -126,7 +126,7 @@ const Home: React.FC = () => {
     },
     {
       question: 'Is this procedure safe? What safety standards does Ink Mugi follow?',
-      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across hundreds of procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
+      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Complications have been rare, which reflects rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
     },
     {
       question: 'How does ombré powder compare to microblading in Northern Virginia\'s climate?',
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
          * and the number is the answer.
          */
         title="Ombré Powder Brows in Annandale, VA | Ink Mugi"
-        description="Virginia-licensed ombré powder brow specialist in Annandale. 523 documented procedures, 0.19% complication rate, healed-first standards, and consultation-based treatment planning."
+        description="Virginia-licensed ombré powder brow specialist in Annandale. Hundreds of documented procedures, tracked outcomes, healed-first standards, and consultation-based treatment planning."
         path="/"
         image="https://inkmugi.com/2315.png"
         keywords="ombre powder brows Annandale VA, permanent makeup Fairfax County, powder brows near me, ombre brows near me, licensed PMU artist Virginia, healed brow results, permanent makeup Northern Virginia"
@@ -418,8 +418,8 @@ const Home: React.FC = () => {
               practice. What is left says: experienced, patient, and nearby.
             */}
             {/*
-              "523+" is gone from this bar. The site publishes four different procedure
-              counts (523+, 600+, 330, 500+), so the precision is false precision, and
+              "hundreds of" is gone from this bar. The site publishes four different procedure
+              counts (hundreds of, 600+, 330, 500+), so the precision is false precision, and
               on the second screen of the homepage it was doing decorative work rather
               than answering a question. "Hundreds" is both truer and, on a page selling
               judgement rather than volume, sufficient.
@@ -669,7 +669,7 @@ const Home: React.FC = () => {
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <Award size={18} className="text-[#9A7B69]" />
-                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
+                    <span className="text-2xl font-cormorant font-semibold text-[#2D2D2B]">hundreds of</span>
                   </div>
                   <p className="text-xs text-[#2D2D2B]/60">Documented procedures with healed-result tracking</p>
                 </motion.div>
@@ -736,7 +736,7 @@ const Home: React.FC = () => {
                 Client Perspectives
               </span>
               {/*
-                The self-awarded "5.0 average across 47+ reviews" and its star row are
+                The self-awarded "5.0 average across client reviews" and its star row are
                 gone, matching the removal already made on the 19 location pages. The
                 count is not verifiable from anything in this repository, and the
                 studio's Vagaro profile currently shows no reviews at all — so whatever

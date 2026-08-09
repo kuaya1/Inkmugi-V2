@@ -112,7 +112,7 @@ const MicrobladingCorrectionNorthernVirginia: React.FC = () => {
     <>
       <SEO
         title="Microblading Correction Northern Virginia | Fix Grey & Faded Brows | Ink Mugi"
-        description="Expert microblading correction in Northern Virginia. Fix grey microblading, blurred strokes & color shift with advanced powder brow techniques. hundreds of procedures, VA-licensed. Serving Fairfax County, Arlington, Reston, Tysons & DC."
+        description="Expert microblading correction in Northern Virginia. Fix grey microblading, blurred strokes & color shift with advanced powder brow techniques. Hundreds of procedures, VA-licensed. Serving Fairfax County, Arlington, Reston, Tysons & DC."
         path="/microblading-correction-northern-virginia"
         keywords="microblading correction Northern Virginia, fix grey microblading near me, microblading correction Fairfax County, botched microblading fix Virginia, microblading color correction Annandale, grey microblading correction DC, microblading fading fix, microblading to powder brows conversion, eyebrow correction Arlington VA, PMU correction McLean Vienna"
       >
@@ -228,7 +228,7 @@ const MicrobladingCorrectionNorthernVirginia: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-3xl font-cormorant font-bold text-[#2D2D2B]">523+</p>
+              <p className="text-3xl font-cormorant font-bold text-[#2D2D2B]">hundreds of</p>
               <p className="text-sm text-[#2D2D2B]/60">Documented Procedures</p>
             </div>
             <div>

@@ -80,7 +80,7 @@ const OmbreBrowsHerndon: React.FC = () => {
     },
     {
       question: "Why do Herndon residents choose Ink Mugi over closer studios?",
-      answer: "Herndon clients consistently tell us they chose Ink Mugi after researching healed results online. With hundreds of documented procedures and a 0.19% complication rate, our track record speaks for itself. Professional women along the Dulles Corridor especially appreciate our design-approval process — you see the exact shape mapped on your face and approve it before any pigment touches your skin."
+      answer: "Herndon clients consistently tell us they chose Ink Mugi after researching healed results online. With hundreds of documented procedures, our track record speaks for itself. Professional women along the Dulles Corridor especially appreciate our design-approval process — you see the exact shape mapped on your face and approve it before any pigment touches your skin."
     },
     {
       question: "How long do ombre powder brows last for Herndon area clients?",
@@ -104,7 +104,7 @@ const OmbreBrowsHerndon: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Herndon VA | Ink Mugi"
-        description="Ombre powder brows for Herndon VA residents. hundreds of procedures, 0.19% complication rate, VA licensed. 30 min from Downtown Herndon. Free consultation — see healed results first."
+        description="Ombre powder brows for Herndon VA residents. Hundreds of procedures, tracked outcomes, VA licensed. 30 min from Downtown Herndon. Free consultation — see healed results first."
         path="/ombre-brows-herndon-va"
         keywords="ombre powder brows Herndon VA, permanent makeup Herndon Virginia, PMU near Herndon, powder brows Fairfax County, microshading Herndon VA, nano brows Herndon"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsHerndon: React.FC = () => {
         city="Herndon"
         badgeText="Serving Herndon, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Herndon, VA</span></>}
-        subtext="Ombré powder brows for Herndon professionals. hundreds of documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Herndon professionals. Hundreds of documented procedures — see the shape on your face and approve before any pigment."
         secondaryText="30 minutes from Downtown Herndon to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Ombre powder brows for Herndon, VA clients at Ink Mugi studio"

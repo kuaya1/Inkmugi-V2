@@ -467,7 +467,7 @@ const BlogPost: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-medium mb-3 font-cormorant">Request a Consultation</h3>
                   <p className="text-white/80 text-sm mb-4">
-                    hundreds of procedures with a 0.19% complication rate. Virginia License #1231002471.
+                    hundreds of procedures. Virginia License #1231002471.
                   </p>
                   <Link 
                     to={BOOKING_URL} 

@@ -51,7 +51,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
     },
     {
       question: "How long do ombre powder brows last?",
-      answer: "With proper aftercare, ombre powder brows last 1-3 years depending on skin type, lifestyle, and sun exposure. Annual color boosts ($200) keep them looking fresh. I guide every Springfield client through the entire healing process."
+      answer: "With proper aftercare, ombre powder brows last 1-3 years depending on skin type, lifestyle, and sun exposure. An annual colour boost keeps them looking fresh. I guide every Springfield client through the entire healing process."
     }
   ];
 
@@ -59,7 +59,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Near Springfield, VA | Ink Mugi — 12 Min from Town Center"
-        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. hundreds of procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
+        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. Hundreds of procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
         path="/permanent-makeup-springfield-va"
         keywords="permanent makeup Springfield VA, ombre brows Springfield, powder brows Springfield Virginia, PMU near Springfield Town Center, microshading Springfield VA"
       >
@@ -95,7 +95,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
         city="Springfield"
         badgeText="Serving Springfield, VA — 12 Min from Town Center"
         headline={<>Permanent Makeup for<br /><span className="text-[#9A7B69]">Springfield, VA</span></>}
-        subtext="Just 12 minutes from Springfield Town Center via I-495. Northern Virginia's most trusted PMU artist — 523+ successful procedures, VA-licensed, and $600 all-inclusive ombre powder brows."
+        subtext="Just 12 minutes from Springfield Town Center via I-495. Northern Virginia's most trusted PMU artist — hundreds of successful procedures, VA-licensed, and $600 all-inclusive ombre powder brows."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Springfield, Virginia"
         primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}

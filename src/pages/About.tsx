@@ -29,7 +29,7 @@ const About: React.FC = () => {
     name: 'Mugi',
     jobTitle: 'Licensed Permanent Cosmetic Tattooer',
     description:
-      'Virginia-licensed permanent makeup artist in Annandale, VA specializing in ombre powder brows with hundreds of documented procedures, healed-first standards, and a 0.19% complication rate.',
+      'Virginia-licensed permanent makeup artist in Annandale, VA specializing in ombre powder brows with hundreds of documented procedures, healed-first standards.',
     image: 'https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg',
     url: 'https://inkmugi.com/about',
     worksFor: {
@@ -155,7 +155,7 @@ const About: React.FC = () => {
       icon: BarChart3,
     },
     {
-      title: '0.19% complication rate',
+      title: 'tracked outcomes',
       description:
         'Low risk does not mean no risk. It means outcomes are tracked, reviewed, and reduced through screening, sterile protocol, conservative technique, and follow-up.',
       icon: Shield,
@@ -199,7 +199,7 @@ const About: React.FC = () => {
     <>
       <SEO
         title="About Mugi | Licensed Permanent Makeup Artist in Annandale, VA"
-        description="Mugi is a Virginia-licensed permanent makeup artist in Annandale, VA with hundreds of documented procedures, a 0.19% complication rate, healed-first standards, and a disciplined ombre powder brow process."
+        description="Mugi is a Virginia-licensed permanent makeup artist in Annandale, VA with hundreds of documented procedures, a low complication rate, healed-first standards, and a disciplined ombre powder brow process."
         path="/about"
         ogType="profile"
         keywords="Mugi permanent makeup artist, ombre powder brows Annandale VA, licensed PMU artist Virginia, permanent makeup Northern Virginia, healed-first PMU artist, Ink Mugi about"
@@ -351,7 +351,7 @@ const About: React.FC = () => {
                     <div className="w-10 h-10 rounded-full bg-[#E6DAD2] flex items-center justify-center">
                       <Award size={20} className="text-[#2D2D2B]" />
                     </div>
-                    <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</span>
+                    <span className="text-3xl font-cormorant font-semibold text-[#2D2D2B]">hundreds of</span>
                   </div>
                   <p className="text-sm text-[#2D2D2B]/70">Documented procedures informing current standards</p>
                 </motion.div>
@@ -453,10 +453,10 @@ const About: React.FC = () => {
               </h2>
               <div className="space-y-5 text-[#2D2D2B]/75 leading-relaxed">
                 <p>
-                  Data on this page is not meant to decorate the brand. It exists because operational standards can be tracked. hundreds of procedures means enough real cases to see recurring patterns, not just enough appointments to claim experience.
+                  Data on this page is not meant to decorate the brand. It exists because operational standards can be tracked. Hundreds of procedures means enough real cases to see recurring patterns, not just enough appointments to claim experience.
                 </p>
                 <p>
-                  The 0.19% complication rate is useful only because it is tied to screening, sterile setup, conservative technique, and follow-up. It does not mean zero risk. It means risk is managed deliberately instead of being left to luck.
+                  The tracked outcomes is useful only because it is tied to screening, sterile setup, conservative technique, and follow-up. It does not mean zero risk. It means risk is managed deliberately instead of being left to luck.
                 </p>
                 <p>
                   Licensing, single-use components, bloodborne-pathogen compliance, and pigment standards should not be treated as optional trust add-ons. In permanent makeup, they are part of the work itself.

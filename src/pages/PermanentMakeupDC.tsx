@@ -51,7 +51,7 @@ const PermanentMakeupDC: React.FC = () => {
   const faqs = [
     {
       question: "Is it worth traveling from DC to Annandale for PMU?",
-      answer: "Many DC clients tell us the 20-minute drive (reverse commute!) is the best decision they made. You'll save $200-400 compared to Georgetown or downtown DC studios, enjoy free parking, and get the same premium quality with a more personalized experience. Plus, our 523+ procedure track record and 0.19% complication rate speak for themselves."
+      answer: "Many DC clients tell us the 20-minute drive (reverse commute!) is the best decision they made. You'll save $200-400 compared to Georgetown or downtown DC studios, enjoy free parking, and get the same premium quality with a more personalized experience. Plus, our hundreds of procedure track record and tracked outcomes speak for themselves."
     },
     {
       question: "How do you compare to DC permanent makeup studios?",
@@ -67,7 +67,7 @@ const PermanentMakeupDC: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Washington, DC | Ink Mugi"
-        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, hundreds of procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation."
+        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, hundreds of procedures, tracked outcomes. 20-min reverse commute + free parking. Book free consultation."
         path="/permanent-makeup-dc"
         keywords="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington"
       >
@@ -102,7 +102,7 @@ const PermanentMakeupDC: React.FC = () => {
         city="Washington DC"
         badgeText="Serving Washington, D.C."
         headline={<>Premium Ombre Brows for<br /><span className="text-[#9A7B69]">Washington DC</span></>}
-        subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. hundreds of procedures, exceptional results."
+        subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. Hundreds of procedures, exceptional results."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Premium ombre brows for Washington DC clients at Ink Mugi studio"
         secondaryCTA={{ text: `Call ${NAP.telephoneDisplay}`, href: NAP.telephoneHref }}
@@ -310,8 +310,8 @@ const PermanentMakeupDC: React.FC = () => {
                       {[
                         'Free parking included',
                         'Professional aftercare support',
-                        '523+ verified procedures',
-                        '0.19% complication rate',
+                        'hundreds of verified procedures',
+                        'tracked outcomes',
                         'Premium vegan pigments',
                         'Aftercare kit included',
                       ].map((item, i) => (

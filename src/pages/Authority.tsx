@@ -98,14 +98,14 @@ export default function Authority() {
 
   const dataPoints = [
     {
-      value: '523+',
+      value: 'hundreds of',
       title: 'Documented Procedures',
       detail:
         'This is not just volume. It means enough tracked work to recognize patterns in retention, undertone shift, oily skin behavior, prior microblading, and correction needs.',
     },
     {
       value: '0.19%',
-      title: 'Documented Complication Rate',
+      title: 'Outcomes Tracked',
       detail:
         'On this site, the number is tied to tracked healing outcomes and follow-up, not to how brows looked immediately after the appointment.',
     },
@@ -155,7 +155,7 @@ export default function Authority() {
       icon: BarChart3,
       title: 'PMU Data & Longevity Guide',
       description:
-        'For clients worried about fading too quickly or paying for a procedure that does not hold. This explains how retention is tracked across 523+ cases.',
+        'For clients worried about fading too quickly or paying for a procedure that does not hold. This explains how retention is tracked across hundreds of cases.',
       link: '/pmu-data-guide',
       tag: 'Longevity',
     },
@@ -189,7 +189,7 @@ export default function Authority() {
     <>
       <SEO
         title="Ink Mugi | Ombré Powder Brows Standards, Safety & Risk Control — Annandale, VA"
-        description="How Ink Mugi controls risk in permanent makeup: hundreds of documented procedures, 0.19% complication rate, healed-first review, sterile protocol, and the Ink Mugi Method for ombré powder brows in Northern Virginia."
+        description="How Ink Mugi controls risk in permanent makeup: hundreds of documented procedures, tracked outcomes, healed-first review, sterile protocol, and the Ink Mugi Method for ombré powder brows in Northern Virginia."
         path="/authority"
         keywords="ombré powder brows Annandale VA, permanent makeup Northern Virginia, ombre powder brows safety, permanent makeup standards, healed results ombre powder brows, Ink Mugi method, Virginia licensed cosmetic tattooer"
       >
@@ -326,7 +326,7 @@ export default function Authority() {
           <div className="container-custom max-w-6xl py-10 md:py-14">
             <div className="grid grid-cols-3 gap-6 md:gap-16">
               {[
-                { value: '523+', label: 'Tracked procedures informing judgment' },
+                { value: 'hundreds of', label: 'Tracked procedures informing judgment' },
                 { value: '0.19%', label: 'Documented complication rate tied to healing' },
                 { value: '6+ weeks', label: 'Minimum healed-result review standard' },
               ].map((item) => (
@@ -522,7 +522,7 @@ export default function Authority() {
               Data Authority
             </span>
             <h2 className="text-3xl md:text-[2.75rem] lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-[1.12] max-w-3xl">
-              What 523+ and 0.19% actually mean.
+              What the numbers on this page actually mean.
             </h2>
           </AnimatedSection>
 

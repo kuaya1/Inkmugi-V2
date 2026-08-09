@@ -118,7 +118,7 @@ export default function PMUDataGuide() {
     <>
       <SEO
         title="Powder Brows Healing Data: hundreds of procedures Analyzed | Ink Mugi"
-        description="See real healing data from 523+ ombre brow procedures. Retention rates by skin type, age & season. The only studio in VA sharing transparent clinical longevity data. Evidence-based PMU results."
+        description="See real healing data from hundreds of ombre brow procedures. Retention rates by skin type, age & season. The only studio in VA sharing transparent clinical longevity data. Evidence-based PMU results."
         path="/pmu-data-guide"
         keywords="permanent makeup longevity data, PMU retention rates by skin type, ombre brows last how long, microblading vs powder brows durability, seasonal PMU performance DMV, aftercare impact on longevity, permanent makeup fade timeline, Virginia licensed PMU data"
         ogType="article"
@@ -258,7 +258,7 @@ export default function PMUDataGuide() {
                 <div className="text-xs text-white/70">Seasons Tracked</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4">
-                <div className="text-3xl font-bold text-[#E6DAD2] mb-1">523+</div>
+                <div className="text-3xl font-bold text-[#E6DAD2] mb-1">hundreds of</div>
                 <div className="text-xs text-white/70">Procedures Analyzed</div>
               </div>
             </div>

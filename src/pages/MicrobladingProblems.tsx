@@ -317,8 +317,8 @@ const MicrobladingProblems: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { value: 'Hundreds', label: 'Documented Procedures' },
-                { value: '0.19%', label: 'Complication Rate' },
-                { value: '5.0', label: 'Google Rating' },
+                { value: 'Six weeks', label: 'Healed review' },
+                { value: 'Google', label: 'Where clients review' },
                 { value: 'VA Licensed', label: '#1231002471' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">

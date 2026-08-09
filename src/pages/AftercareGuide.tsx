@@ -96,7 +96,7 @@ const AftercareGuide: React.FC = () => {
         "name": "Why do my ombre brows look too dark after the procedure?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "This is completely normal! Fresh ombre brows appear 30-50% darker than the final healed result. The color will lighten significantly during the flaking phase (days 4-7) and may even appear too light during the 'ghosting' phase (days 7-14). The true color emerges by weeks 4-6. Trust the process — I've guided 523+ clients through this exact timeline."
+          "text": "This is completely normal! Fresh ombre brows appear 30-50% darker than the final healed result. The color will lighten significantly during the flaking phase (days 4-7) and may even appear too light during the 'ghosting' phase (days 7-14). The true color emerges by weeks 4-6. Trust the process — I've guided hundreds of clients through this exact timeline."
         }
       },
       {
@@ -267,7 +267,7 @@ const AftercareGuide: React.FC = () => {
               <span className="text-[#9A7B69]">Complete Healing Guide</span>
             </h1>
             <p className="text-lg text-[#2D2D2B]/70 max-w-2xl mx-auto mb-8">
-              Everything you need to know about healing, from day 1 through week 6. Written by Mugi — VA-licensed PMU artist with hundreds of documented procedures and a 0.19% complication rate.
+              Everything you need to know about healing, from day 1 through week 6. Written by Mugi — VA-licensed PMU artist with hundreds of documented procedures.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-[#2D2D2B]/60">
               <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 6-week healing timeline</span>
@@ -317,7 +317,7 @@ const AftercareGuide: React.FC = () => {
               Your Healing Timeline
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              What to expect at each phase — based on 523+ documented healing journeys in the DMV climate.
+              What to expect at each phase — based on hundreds of documented healing journeys in the DMV climate.
             </p>
           </AnimatedSection>
 
@@ -511,7 +511,7 @@ const AftercareGuide: React.FC = () => {
               <p className="text-xs text-[#2D2D2B]/50 mt-1">Research data</p>
             </Link>
             <Link to="/pmu-data-guide" className="bg-[#F9F7F5] rounded-xl p-5 hover:shadow-md transition-shadow group">
-              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm">523+ procedure Data</p>
+              <p className="font-medium text-[#2D2D2B] group-hover:text-[#9A7B69] transition-colors text-sm">hundreds of procedure Data</p>
               <p className="text-xs text-[#2D2D2B]/50 mt-1">Safety statistics</p>
             </Link>
             <Link to="/services" className="bg-[#F9F7F5] rounded-xl p-5 hover:shadow-md transition-shadow group">

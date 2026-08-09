@@ -24,7 +24,7 @@ const OmbreBrowsChantilly: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Chantilly VA Clients",
-    "description": "Professional ombre powder brows for Chantilly, VA residents. hundreds of documented procedures, 0.19% complication rate. Located in Annandale — 25 minutes from the Route 50 corridor via I-66.",
+    "description": "Professional ombre powder brows for Chantilly, VA residents. Hundreds of documented procedures, tracked outcomes. Located in Annandale — 25 minutes from the Route 50 corridor via I-66.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -104,7 +104,7 @@ const OmbreBrowsChantilly: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Chantilly VA | Ink Mugi — hundreds of procedures"
-        description="Ombre powder brows for Chantilly VA clients. hundreds of procedures, VA licensed, six-week review. 25 min from Route 50 corridor. Free consultation — $600 all-inclusive."
+        description="Ombre powder brows for Chantilly VA clients. Hundreds of procedures, VA licensed, six-week review. 25 min from Route 50 corridor. Free consultation — $600 all-inclusive."
         path="/ombre-brows-chantilly-va"
         keywords="ombre powder brows Chantilly VA, permanent makeup Chantilly Virginia, PMU near South Riding, powder brows Dulles corridor, microshading Chantilly, nano brows Chantilly VA"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsChantilly: React.FC = () => {
         city="Chantilly"
         badgeText="Serving Chantilly, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Chantilly, VA</span></>}
-        subtext="Precision permanent makeup built on a healed-first philosophy. hundreds of procedures with documented outcomes — your brow shape is mapped, approved by you, and designed to age gracefully."
+        subtext="Precision permanent makeup built on a healed-first philosophy. Hundreds of procedures with documented outcomes — your brow shape is mapped, approved by you, and designed to age gracefully."
         secondaryText="22 minutes from the Route 50 corridor to our private Annandale studio. Free parking. Consultation-first."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Ombre powder brows for Chantilly, VA clients at Ink Mugi studio"
@@ -335,7 +335,7 @@ const OmbreBrowsChantilly: React.FC = () => {
                 to="/blog/nano-brows-vs-microblading-comparison"
                 className="inline-flex items-center gap-2 text-[#E6DAD2] hover:text-white transition-colors font-medium"
               >
-                Read the full technique comparison with 523+ procedure data
+                Read the full technique comparison with hundreds of procedure data
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

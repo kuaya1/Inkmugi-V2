@@ -95,7 +95,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
         city="Falls Church"
         badgeText="Just 8 Minutes from Falls Church, VA"
         headline={<>Permanent Makeup for<br /><span className="text-[#9A7B69]">Falls Church, VA</span></>}
-        subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. hundreds of documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
+        subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. Hundreds of documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Falls Church, Virginia"
         primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}

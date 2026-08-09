@@ -757,7 +757,7 @@ const OmbreBrowsDarkSkinGuide: React.FC = () => {
                 <p className="font-semibold text-[#2D2D2B]">Written by Mugi</p>
                 <p className="text-sm text-[#9A7B69] mb-2">Licensed Permanent Cosmetic Tattooer • VA License #1231002471</p>
                 <p className="text-sm text-[#2D2D2B]/70">
-                  Mugi is the founder of Ink Mugi, a permanent makeup studio in Annandale, Virginia specializing in ombre powder brows. With hundreds of documented procedures and a 0.19% complication rate, she focuses on healed-first results and evidence-based technique for all skin types.
+                  Mugi is the founder of Ink Mugi, a permanent makeup studio in Annandale, Virginia specializing in ombre powder brows. With hundreds of documented procedures, she focuses on healed-first results and evidence-based technique for all skin types.
                 </p>
               </div>
             </div>

@@ -82,7 +82,7 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
             </h4>
             <p className="text-sm text-[#2D2D2B]/60 leading-relaxed">
               Virginia Licensed Permanent Makeup Artist · Specializing in
-              powder brows and microblading correction · 523+ brow procedures
+              powder brows and microblading correction · hundreds of brow procedures
               performed · Serving Northern Virginia and the Washington DC
               metro area
             </p>
@@ -121,7 +121,7 @@ const AuthorBlock: React.FC<AuthorBlockProps> = ({
               </h4>
               <p className="text-sm text-[#2D2D2B]/70 leading-relaxed mb-4">
                 Virginia Licensed Permanent Makeup Artist specializing in
-                powder brows and microblading correction. 523+ brow procedures
+                powder brows and microblading correction. Hundreds of brow procedures
                 performed. Serving Northern Virginia and the Washington DC
                 metro area.
               </p>

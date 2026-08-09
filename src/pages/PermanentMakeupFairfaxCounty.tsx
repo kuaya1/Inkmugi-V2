@@ -104,7 +104,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup in Fairfax County, Virginia | Licensed Studio — Ink Mugi"
-        description="Comprehensive guide to permanent makeup in Fairfax County, VA. Virginia-licensed studio with hundreds of documented procedures, 0.19% complication rate, and healed-first verification. Serving McLean, Vienna, Reston, Arlington, Great Falls, and all of Northern Virginia."
+        description="Comprehensive guide to permanent makeup in Fairfax County, VA. Virginia-licensed studio with hundreds of documented procedures, tracked outcomes, and healed-first verification. Serving McLean, Vienna, Reston, Arlington, Great Falls, and all of Northern Virginia."
         path="/permanent-makeup-fairfax-county"
         keywords="permanent makeup Fairfax County VA, ombre powder brows Fairfax County, licensed PMU artist Northern Virginia, permanent makeup near me Virginia, healed brow results Fairfax County, permanent makeup safety Virginia"
       >
@@ -179,12 +179,12 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">hundreds of</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#9A7B69]">0.19%</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Complication Rate</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Outcomes Tracked</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">6-Week</p>
@@ -192,7 +192,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">5.0</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Client Rating (47+ Reviews)</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Where clients leave reviews</p>
             </div>
           </div>
         </div>
@@ -368,7 +368,7 @@ const PermanentMakeupFairfaxCounty: React.FC = () => {
                 {[
                   { icon: FileCheck, title: 'Licensed, insured, single-use', desc: 'Brow shape is mapped to bone structure and reviewed on the face. Nothing permanent begins without explicit client approval.' },
                   { icon: Eye, title: 'Healed Portfolio Verification', desc: 'Every result in our gallery is photographed at 6+ weeks. The portfolio reflects healed outcomes exclusively.' },
-                  { icon: Shield, title: '0.19% Documented Complication Rate', desc: 'Across hundreds of procedures. Rigorous technique, candidacy screening, and comprehensive aftercare protocol.' },
+                  { icon: Shield, title: 'tracked outcomes', desc: 'Across hundreds of procedures. Rigorous technique, candidacy screening, and comprehensive aftercare protocol.' },
                   { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, and hospital-grade sterilization for every appointment.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-white/[0.06] border border-white/10 rounded-xl p-5">

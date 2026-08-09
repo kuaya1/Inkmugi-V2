@@ -431,7 +431,7 @@ const LocationPage: React.FC<LocationPageProps> = (props) => {
               What {city} area clients say
             </h2>
             {/*
-              The self-asserted "5.0 rating from 47+ verified reviews" and its row of
+              The self-asserted "In their own words" and its row of
               filled stars are gone. The count is not verifiable from anything in this
               repository, and a rating a business awards itself is the weakest proof on
               a page that already carries real client words.

@@ -172,7 +172,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Tysons Quality, Better Value</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Tysons and McLean studios charge $750-900. Get premium results at $600 with a Virginia-licensed artist who has completed 523+ successful procedures.
+                  Tysons and McLean studios charge $750-900. Get premium results at $600 with a Virginia-licensed artist who has completed hundreds of successful procedures.
                 </p>
               </div>
             </AnimatedSection>

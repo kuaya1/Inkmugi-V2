@@ -32,7 +32,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
     },
     {
       question: "Which lasts longer — microblading or powder brows?",
-      answer: "Powder brows consistently outlast microblading. In our practice tracking 523+ clients in the DMV area, ombré powder brows average 18–36 months of retention depending on skin type and lifestyle. Microblading typically lasts 8–12 months in the same humid climate conditions before significant fading or color shift occurs. For oily skin specifically, powder brows last an average of 28 months versus approximately 8 months for microblading — a 3× improvement in retention."
+      answer: "Powder brows consistently outlast microblading. In our practice tracking hundreds of clients in the DMV area, ombré powder brows average 18–36 months of retention depending on skin type and lifestyle. Microblading typically lasts 8–12 months in the same humid climate conditions before significant fading or color shift occurs. For oily skin specifically, powder brows last an average of 28 months versus approximately 8 months for microblading — a 3× improvement in retention."
     },
     {
       question: "Is microblading or powder brows better for oily skin?",

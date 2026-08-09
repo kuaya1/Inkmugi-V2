@@ -49,7 +49,7 @@ const PatchyMicroblading: React.FC = () => {
     },
     {
       question: "Are powder brows less likely to heal patchy than microblading?",
-      answer: "Yes, significantly. Powder brows have dramatically lower rates of patchy healing for three reasons: (1) the digital machine stipples pigment at a precisely controlled, consistent depth across the entire brow — eliminating the depth variation that causes microblading's uneven retention, (2) the dot-deposit technique creates sealed pigment pockets that resist sebum displacement, making it far more resistant to oily-skin patchiness, and (3) the overlapping stipple pattern means any single dot that doesn't retain perfectly is surrounded by dots that did, maintaining visual consistency. In our 523+ procedure experience, powder brows achieve consistent, even results on skin types that would produce patchy microblading."
+      answer: "Yes, significantly. Powder brows have dramatically lower rates of patchy healing for three reasons: (1) the digital machine stipples pigment at a precisely controlled, consistent depth across the entire brow — eliminating the depth variation that causes microblading's uneven retention, (2) the dot-deposit technique creates sealed pigment pockets that resist sebum displacement, making it far more resistant to oily-skin patchiness, and (3) the overlapping stipple pattern means any single dot that doesn't retain perfectly is surrounded by dots that did, maintaining visual consistency. In our hundreds of procedure experience, powder brows achieve consistent, even results on skin types that would produce patchy microblading."
     },
     {
       question: "How long after patchy microblading can I get powder brows?",

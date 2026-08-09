@@ -372,7 +372,7 @@ const UltimateGuidePmu: React.FC = () => {
                 </div>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Ink Mugi, we specialize exclusively in cosmetic tattooing for brows and lips. With <strong className="key-stat">hundreds of documented procedures</strong> and a <strong className="key-stat">0.19% complication rate</strong>, we've refined our techniques to deliver natural, long-lasting results tailored to Northern Virginia's unique climate and lifestyle.
+                  At Ink Mugi, we specialize exclusively in cosmetic tattooing for brows and lips. With <strong className="key-stat">hundreds of documented procedures</strong> and a <strong className="key-stat">tracked outcomes</strong>, we've refined our techniques to deliver natural, long-lasting results tailored to Northern Virginia's unique climate and lifestyle.
                 </p>
               </div>
             </AnimatedSection>

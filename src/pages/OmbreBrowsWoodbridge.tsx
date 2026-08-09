@@ -80,7 +80,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     },
     {
       question: "Why do Woodbridge residents choose Ink Mugi over closer studios?",
-      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With hundreds of documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
+      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With hundreds of documented procedures, a low complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
     },
     {
       question: "How long do ombre powder brows last for Woodbridge area clients?",
@@ -104,7 +104,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Woodbridge VA | Ink Mugi"
-        description="Ombre powder brows for Woodbridge VA residents. hundreds of procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
+        description="Ombre powder brows for Woodbridge VA residents. Hundreds of procedures, tracked outcomes, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
         path="/ombre-brows-woodbridge-va"
         keywords="ombre powder brows Woodbridge VA, permanent makeup Woodbridge Virginia, powder brows Prince William County, PMU near Woodbridge, microshading Woodbridge VA, nano brows Woodbridge"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         city="Woodbridge"
         badgeText="Serving Woodbridge, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Woodbridge, VA</span></>}
-        subtext="Ombré powder brows for Prince William County professionals. hundreds of documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Prince William County professionals. Hundreds of documented procedures — see the shape on your face and approve before any pigment."
         secondaryText="35 minutes from Woodbridge via I-95 to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Ombre powder brows for Woodbridge, VA clients at Ink Mugi studio"

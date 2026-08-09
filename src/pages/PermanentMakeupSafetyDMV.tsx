@@ -210,7 +210,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                   </div>
                 </div>
                 <div className="group bg-white/10 backdrop-blur-sm p-10 rounded-3xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                  <div className="text-6xl md:text-7xl font-bold text-white mb-3 font-cormorant">523+</div>
+                  <div className="text-6xl md:text-7xl font-bold text-white mb-3 font-cormorant">hundreds of</div>
                   <div className="text-sm uppercase tracking-widest text-[#E6DAD2] mb-2 font-semibold">Procedures Tracked</div>
                   <div className="text-xs text-white/60">Since 2021</div>
                   <div className="mt-4 pt-4 border-t border-white/10">
@@ -370,7 +370,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                   {/* Data points */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
                     <div className="text-center p-4 bg-neutral-50 rounded-xl">
-                      <div className="text-3xl font-bold text-[#2D2D2B] mb-1 font-cormorant">523+</div>
+                      <div className="text-3xl font-bold text-[#2D2D2B] mb-1 font-cormorant">hundreds of</div>
                       <div className="text-xs text-[#2D2D2B]/60 uppercase tracking-wider">Procedures</div>
                     </div>
                     <div className="text-center p-4 bg-neutral-50 rounded-xl">

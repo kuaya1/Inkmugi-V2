@@ -573,7 +573,7 @@ const HowToChoosePmuArtist: React.FC = () => {
                     <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-bold text-[#2D2D2B] mb-1">hundreds of documented procedures</h4>
-                      <p className="text-sm text-gray-600">With 0.19% complication rate tracked since 2021</p>
+                      <p className="text-sm text-gray-600">With tracked outcomes tracked since 2021</p>
                     </div>
                   </div>
 

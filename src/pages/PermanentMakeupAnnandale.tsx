@@ -81,7 +81,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Annandale VA | PMU Artist & Ombre Powder Brows — Ink Mugi"
-        description="Licensed PMU artist in Annandale, VA — ombre powder brows, eyebrow tattoo & microshading at Heritage Center. hundreds of procedures, 0.19% complication rate, $600 all-inclusive. Free parking & consultation."
+        description="Licensed PMU artist in Annandale, VA — ombre powder brows, eyebrow tattoo & microshading at Heritage Center. Hundreds of procedures, tracked outcomes, $600 all-inclusive. Free parking & consultation."
         path="/licensed-pmu-artist-annandale"
         keywords="permanent makeup Annandale VA, pmu artist Annandale, ombre powder brows Annandale, eyebrow tattoo Annandale VA, powder brows Annandale Virginia, PMU near Heritage Center, microshading Annandale VA, nano brows Annandale"
       >
@@ -90,7 +90,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Permanent Makeup in Annandale, VA",
-            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. hundreds of documented procedures, six-week review. Located at Heritage Center, 7857 Heritage Dr #330.",
+            "description": "Professional ombre powder brows, nano brows & microshading by VA-licensed PMU artist in Annandale. Hundreds of documented procedures, six-week review. Located at Heritage Center, 7857 Heritage Dr #330.",
             "provider": { "@type": "HealthAndBeautyBusiness", "@id": "https://inkmugi.com/#business" },
             "areaServed": { "@type": "City", "name": "Annandale", "containedInPlace": { "@type": "State", "name": "Virginia" } },
             "serviceType": "Permanent Makeup",
@@ -208,7 +208,7 @@ const PermanentMakeupAnnandale: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ Documented Results</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of Documented Results</h3>
                 <p className="text-[#2D2D2B]/70">
                   Every procedure is documented with 6+ week healed photos. See our track record right here in your community. Real results from real clients — verifiable and transparent.
                 </p>

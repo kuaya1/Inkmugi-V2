@@ -67,7 +67,7 @@ const OmbreBrowsMcLean: React.FC = () => {
     },
     {
       question: "What safety standards does Ink Mugi follow?",
-      answer: "Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization protocols, single-use disposable cartridges, and hypoallergenic vegan pigments tested for skin reactivity. Our documented complication rate across hundreds of procedures is 0.19% — which reflects rigorous technique, proper client screening, and thorough aftercare guidance."
+      answer: "Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization protocols, single-use disposable cartridges, and hypoallergenic vegan pigments tested for skin reactivity. Our documented outcomes across hundreds of procedures show complications have been rare — which reflects careful technique, proper client screening, and thorough aftercare guidance."
     },
     {
       question: "What if I have previous PMU work I'm unhappy with?",
@@ -87,7 +87,7 @@ const OmbreBrowsMcLean: React.FC = () => {
     <>
       <SEO
         title="Ombré Powder Brows Near McLean, VA | Licensed Studio — Ink Mugi"
-        description="Considering permanent makeup near McLean, VA? Ink Mugi offers precision ombré powder brows with a documented 0.19% complication rate. hundreds of procedures. VA-licensed. Healed results, not promises. Free consultation."
+        description="Considering permanent makeup near McLean, VA? Ink Mugi offers precision ombré powder brows with a documented tracked outcomes. Hundreds of procedures. VA-licensed. Healed results, not promises. Free consultation."
         path="/ombre-brows-mclean-va"
         keywords="ombre powder brows McLean VA, permanent makeup McLean Virginia, natural brows near Tysons Corner, licensed PMU artist Fairfax County, healed ombre brows Northern Virginia, powder brows near Great Falls VA"
       >
@@ -161,12 +161,12 @@ const OmbreBrowsMcLean: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">523+</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">hundreds of</p>
               <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Procedures</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#9A7B69]">0.19%</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Documented Complication Rate</p>
+              <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#9A7B69]">Six weeks</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Outcomes tracked to healed</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">6-Week</p>
@@ -174,7 +174,7 @@ const OmbreBrowsMcLean: React.FC = () => {
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-cormorant font-semibold text-[#2D2D2B]">5.0</p>
-              <p className="text-sm text-[#2D2D2B]/60 mt-1">Client Rating (47+ Reviews)</p>
+              <p className="text-sm text-[#2D2D2B]/60 mt-1">Where clients leave reviews</p>
             </div>
           </div>
         </div>

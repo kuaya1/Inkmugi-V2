@@ -26,7 +26,7 @@ const pricingData = [
   },
   {
     technique: 'Microblading',
-    inkMugi: 'Not offered',
+    inkMugi: 'Selective',
     dcAvg: '$600–1,000',
     tysonsAvg: '$600–900',
     arlingtonAvg: '$500–900',
@@ -108,7 +108,7 @@ const faqs = [
   },
   {
     question: 'Is expensive always better for PMU?',
-    answer: 'No. Price doesn\'t guarantee quality. A $1,200 Georgetown studio and a $600 Annandale studio can produce identical results — or the more expensive one could be worse. What matters: healed result photos (not fresh), procedure volume, complication rates, pigment quality, and licensing. My $600 price point reflects efficient overhead (free parking, reasonable rent) — not inferior quality. My 5.0-star rating across 47+ reviews and hundreds of procedures demonstrate the results.',
+    answer: 'No. Price doesn\'t guarantee quality. A $1,200 Georgetown studio and a $600 Annandale studio can produce identical results — or the more expensive one could be worse. What matters: healed result photos (not fresh), procedure volume, complication rates, pigment quality, and licensing. My $600 price point reflects efficient overhead (free parking, reasonable rent) — not inferior quality. My 5.0-star rating across client reviews and hundreds of procedures demonstrate the results.',
   },
   {
     question: 'What should be included in the PMU price?',
@@ -116,7 +116,7 @@ const faqs = [
   },
   {
     question: 'How much does a PMU touch-up cost?',
-    answer: 'The initial 6-8 week touch-up should be included in your procedure price (it is at Ink Mugi). After that, annual color refreshes typically cost $150–300 in the DMV area. At Ink Mugi, annual color boosts are $200. This maintenance keeps your brows looking fresh and extends total longevity to 3+ years. Think of it like hair color maintenance — a fraction of the original cost.',
+    answer: 'The initial 6-8 week touch-up should be included in your procedure price (it is at Ink Mugi). After that, annual color refreshes typically cost $150–300 in the DMV area. Annual colour boosts are quoted at your refresh appointment, once Mugi can see how the pigment has held. This maintenance keeps your brows looking fresh and extends total longevity to 3+ years. Think of it like hair color maintenance — a fraction of the original cost.',
   },
   {
     question: 'Is it worth driving to Annandale from DC or Tysons to save money?',
@@ -426,7 +426,7 @@ export default function PmuCostGuideDmv() {
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> $600 all-inclusive</li>
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Lasts 2-3 years</li>
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Touch-up included</li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> $200/year annual boost</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> annual colour boost</li>
                 </ul>
               </div>
 
@@ -534,7 +534,7 @@ export default function PmuCostGuideDmv() {
             </div>
             <div className="flex items-center gap-2 text-amber-900">
               <Star className="w-5 h-5 text-amber-700" />
-              <span className="text-sm font-medium">5.0★ · 47+ Reviews</span>
+              <span className="text-sm font-medium">Reviewed on Google</span>
             </div>
             <div className="flex items-center gap-2 text-amber-900">
               <Shield className="w-5 h-5 text-amber-700" />
@@ -578,8 +578,8 @@ export default function PmuCostGuideDmv() {
                 { label: 'PMU Corrections', to: '/pmu-correction-restoration', sub: '$400–900' },
                 { label: 'Microshading', to: '/microshading-artistry', sub: '$700 all-inclusive' },
                 { label: 'Aftercare Guide', to: '/aftercare-guide', sub: 'Healing timeline' },
-                { label: 'Safety Data', to: '/permanent-makeup-safety-dmv', sub: '0.19% complication rate' },
-                { label: 'Authority Hub', to: '/authority', sub: '523+ procedure data' },
+                { label: 'Safety Data', to: '/permanent-makeup-safety-dmv', sub: 'tracked outcomes' },
+                { label: 'Authority Hub', to: '/authority', sub: 'hundreds of procedure data' },
                 { label: 'View Gallery', to: '/gallery', sub: 'Healed results' },
                 { label: 'Request a Consultation', to: BOOKING_URL, sub: 'Free consultation' },
               ].map((link) => (
@@ -609,7 +609,7 @@ export default function PmuCostGuideDmv() {
             </h2>
             <p className="text-gray-300 mb-8 max-w-xl mx-auto">
               $600 all-inclusive ombre powder brows. Free consultation. Free parking. No hidden fees.
-              hundreds of procedures and a 5.0-star reputation backing every result.
+              Hundreds of procedures and a 5.0-star reputation backing every result.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

@@ -21,7 +21,7 @@ export default function PMUMythsVsFacts() {
     {
       myth: "PMU is unsafe and causes frequent infections",
       fact: "Hospital-grade protocols achieve near-zero infection rates",
-      evidence: "Ink Mugi's hundreds of procedures resulted in 0.19% complication rate tracked through healing. Zero infections reported with proper aftercare compliance. Bloodborne pathogens certification and single-use equipment eliminate contamination risk.",
+      evidence: "Ink Mugi's hundreds of procedures resulted in tracked outcomes tracked through healing. Zero infections reported with proper aftercare compliance. Bloodborne pathogens certification and single-use equipment eliminate contamination risk.",
       dataPoint: "0% infection rate"
     },
     {
@@ -230,7 +230,7 @@ export default function PMUMythsVsFacts() {
                 <div className="text-xs text-white/70">Myths Debunked</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4">
-                <div className="text-3xl font-bold text-[#E6DAD2] mb-1">523+</div>
+                <div className="text-3xl font-bold text-[#E6DAD2] mb-1">hundreds of</div>
                 <div className="text-xs text-white/70">Clinical Cases</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4">

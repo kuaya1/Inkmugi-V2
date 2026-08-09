@@ -235,7 +235,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
                       ['DMV Humidity Resistance', 'Good — retains well', 'Poor — fades faster'],
                       ['Healed Appearance', 'Ultra-fine, crisp hair strokes', 'Softer strokes, can blur'],
                       ['Scarring Risk', 'Very low', 'Moderate — blade cuts can scar'],
-                      ['Cost (Ink Mugi)', '$650 all-inclusive', 'Not offered — we recommend nano'],
+                      ['Cost (Ink Mugi)', '$650 all-inclusive', 'Offered selectively'],
                       ['Cost (DC/Arlington avg)', '$800–$1,500', '$400–$800'],
                       ['Touch-Up Frequency', 'Every 12–18 months', 'Every 8–12 months'],
                     ].map(([factor, nano, micro], i) => (
