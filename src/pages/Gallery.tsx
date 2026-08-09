@@ -382,7 +382,7 @@ const Gallery: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "ImageGallery",
             "name": "Ink Mugi Before & After Gallery",
-            "description": "Healed ombre powder brows results from 523+ procedures at Ink Mugi in Annandale, VA.",
+            "description": "Healed ombre powder brows results from hundreds of procedures at Ink Mugi in Annandale, VA.",
             "url": "https://inkmugi.com/gallery",
             "publisher": {
               "@type": "Organization",

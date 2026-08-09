@@ -598,7 +598,7 @@ const OmbrePowderBrowsGuide: React.FC = () => {
               {[
                 'Virginia Licensed PMU Artist',
                 'Bloodborne Pathogen Certified',
-                '600+ Successful Procedures',
+                'Hundreds of procedures',
                 '5.0★ Google Rating',
                 'Medical-Grade Pigments Only',
               ].map((item, idx) => (

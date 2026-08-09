@@ -194,7 +194,7 @@ const ClimatePerformanceAnalysis = () => {
     <>
       <SEO
         title="Powder Brows in Humid Climates | Ink Mugi"
-        description="Regional study: ombre powder brows outperform microblading by 3× in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+        description="Regional study: ombre powder brows outperform microblading by 3× in DMV's humid climate. Data from hundreds of procedures across Annandale, Arlington, Alexandria, and Fairfax."
         path="/climate-performance-analysis"
         keywords="PMU climate performance, DMV humidity, powder brows oily skin, Arlington VA PMU, Alexandria VA, Annandale VA, regional PMU study, permanent makeup longevity, Virginia PMU research"
         ogType="article"
@@ -212,7 +212,7 @@ const ClimatePerformanceAnalysis = () => {
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://inkmugi.com/climate-performance-analysis",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-            "description": "Regional study: ombre powder brows outperform microblading by 3× in DMV's humid climate. Data from 523+ procedures across Annandale, Arlington, Alexandria, and Fairfax."
+            "description": "Regional study: ombre powder brows outperform microblading by 3× in DMV's humid climate. Data from hundreds of procedures across Annandale, Arlington, Alexandria, and Fairfax."
           })}
         </script>
         <script type="application/ld+json">
@@ -250,7 +250,7 @@ const ClimatePerformanceAnalysis = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl">
-              How DMV's high-humidity environment impacts permanent makeup longevity across 523+ procedures
+              How DMV's high-humidity environment impacts permanent makeup longevity across hundreds of procedures
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -494,7 +494,7 @@ const ClimatePerformanceAnalysis = () => {
             <div className="mt-12 p-8 bg-gradient-to-r from-emerald-500/10 via-[#E6DAD2]/10 to-emerald-500/10 border border-[#E6DAD2]/20 rounded-xl">
               <h3 className="font-cormorant text-2xl text-white mb-4">Climate-Optimized Recommendation</h3>
               <p className="text-gray-300 leading-relaxed">
-                Based on 523+ procedures across all seasons, <strong className="text-emerald-400">winter months (December-February)</strong> provide 
+                Based on hundreds of procedures across all seasons, <strong className="text-emerald-400">winter months (December-February)</strong> provide 
                 the optimal window for PMU procedures in the DMV region. Lower humidity levels (55% avg) result in <strong className="text-[#E6DAD2]">96% 
                 retention rates</strong> and faster healing times (10-14 days). Clients scheduling winter procedures experienced the longest-lasting 
                 results across all skin types.

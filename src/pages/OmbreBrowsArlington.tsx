@@ -103,7 +103,7 @@ const OmbreBrowsArlington: React.FC = () => {
         city="Arlington"
         badgeText="Serving Arlington County, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Arlington</span> Residents</>}
-        subtext="Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with 523+ procedures and a 0.19% complication rate."
+        subtext="Just 12 minutes from Clarendon & Ballston. Experience Northern Virginia's most trusted PMU artist with hundreds of procedures and a 0.19% complication rate."
         heroImage="https://live.staticflickr.com/65535/54366410490_6e3bac2287_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Arlington, Virginia"
         primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
@@ -172,7 +172,7 @@ const OmbreBrowsArlington: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">DC Quality, Better Value</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Get the same premium technique as $800+ DC studios for $600. Virginia-licensed artist with 523+ procedures and verifiable results.
+                  Get the same premium technique as $800+ DC studios for $600. Virginia-licensed artist with hundreds of procedures and verifiable results.
                 </p>
               </div>
             </AnimatedSection>
@@ -184,7 +184,7 @@ const OmbreBrowsArlington: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Exceptional Safety Record</h3>
                 <p className="text-[#2D2D2B]/70">
-                  0.19% complication rate vs 2.5% industry average. Hospital-grade protocols and premium vegan pigments. Your safety is non-negotiable.
+                  Sterile single-use setup and premium vegan pigments, with outcomes tracked through healing. Your safety is non-negotiable.
                 </p>
               </div>
             </AnimatedSection>
@@ -216,7 +216,7 @@ const OmbreBrowsArlington: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -297,7 +297,7 @@ const OmbreBrowsArlington: React.FC = () => {
 
       {/* Mid-Page CTA */}
       <LocationMidCTA
-        headline="Ready to wake up with perfect brows?"
+        headline="Not sure powder brows are right for you?"
         subtext="Join Arlington professionals from Clarendon to Pentagon City who trust Ink Mugi. Book your free consultation today."
       />
 

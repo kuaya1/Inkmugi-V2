@@ -386,7 +386,7 @@ const Services = () => {
             <AnimatedSection>
               <InlineFaqAccordion
                 title="Questions Before Booking?"
-                subtitle="Answers from 500+ client experiences"
+                subtitle="The questions that come up most"
                 maxVisible={4}
                 faqs={[
                   {
@@ -449,7 +449,7 @@ const Services = () => {
           <AnimatedSection>
             <h2 className="section-title text-[#2D2D2B] text-center mb-4">Microblading vs Ombre Powder Brows vs Microshading</h2>
             <p className="text-center text-[#2D2D2B]/70 mb-10 max-w-2xl mx-auto">
-              Not sure which technique is right for you? Here's a data-driven comparison based on 523+ procedures in the DMV.
+              Not sure which technique is right for you? Here's a data-driven comparison based on hundreds of procedures in the DMV.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm md:text-base">
@@ -551,13 +551,13 @@ const Services = () => {
             </div>
             <div>
               <CheckCircle size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
-              <p className="font-semibold text-sm">523+ procedures</p>
+              <p className="font-semibold text-sm">hundreds of procedures</p>
               <p className="text-xs text-white/60">Documented Results</p>
             </div>
             <div>
               <ArrowRight size={28} className="mx-auto mb-2 text-[#E6DAD2]" />
               <p className="font-semibold text-sm">0.19% Complications</p>
-              <p className="text-xs text-white/60">12× Below Industry Avg</p>
+              <p className="text-xs text-white/60">Tracked Through Healing</p>
             </div>
           </div>
         </div>

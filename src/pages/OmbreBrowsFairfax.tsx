@@ -103,7 +103,7 @@ const OmbreBrowsFairfax: React.FC = () => {
         city="Fairfax"
         badgeText="Serving Fairfax County, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Fairfax County</span></>}
-        subtext="Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with 523+ procedures and exceptional results."
+        subtext="Serving Vienna, McLean, Tysons Corner, Burke & Springfield. Northern Virginia's most trusted PMU artist with hundreds of procedures and exceptional results."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Fairfax County, Virginia"
         primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
@@ -184,7 +184,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Verified Safety Excellence</h3>
                 <p className="text-[#2D2D2B]/70">
-                  0.19% complication rate—13x safer than the 2.5% industry average. Hospital-grade sterilization protocols and premium vegan pigments.
+                  Single-use needles, sterile setup, and tracked outcomes. Premium vegan pigments.
                 </p>
               </div>
             </AnimatedSection>
@@ -216,7 +216,7 @@ const OmbreBrowsFairfax: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -297,7 +297,7 @@ const OmbreBrowsFairfax: React.FC = () => {
 
       {/* Mid-Page CTA */}
       <LocationMidCTA
-        headline="Ready to wake up with perfect brows?"
+        headline="Not sure powder brows are right for you?"
         subtext="Join Fairfax County clients who trust Ink Mugi for natural, lasting results. Book your free consultation today."
       />
 

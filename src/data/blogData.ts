@@ -77,7 +77,7 @@ Microblading uses a manual handheld blade to create shallow cuts in the epidermi
 After years of experience and analyzing my outcomes data, I made the decision to focus exclusively on [machine-based techniques](/services) including [ombre powder brows](/signature-ombre-brows), [microshading](/microshading-artistry), and [nano brows](/nano-brows). Here's why:
 
 1. **Better retention in our climate** — DMV humidity is hard on manual blade work
-2. **Lower complication rate** — my 0.19% rate is 13x safer than the industry average of 2.5% ([see the full safety data](/permanent-makeup-safety-dmv))
+2. **Outcomes tracked through healing** — not just photographed on the day ([how I record results](/permanent-makeup-safety-dmv))
 3. **More consistent results** — machine precision eliminates the variability of hand pressure
 4. **Less skin trauma** — faster healing, less scabbing, prettier results
 
@@ -265,7 +265,7 @@ When you compare this to daily brow makeup costs ($15–30/month for quality pro
 
 I get this question a lot, and here's my honest answer:
 
-1. **Data-driven practice**: I track outcomes across every procedure. My [0.19% complication rate](/permanent-makeup-safety-dmv) is 13x lower than the industry average.
+1. **Data-driven practice**: I track outcomes across every procedure. Complications have been rare, and [every outcome is tracked](/permanent-makeup-safety-dmv).
 2. **Premium materials**: EU-compliant vegan pigments, single-use needles, hospital-grade sterilization
 3. **Virginia licensed & insured**: License #1231002471, bloodborne pathogens certified
 4. **Climate-adapted techniques**: My protocols are specifically refined for DMV humidity and seasonal conditions
@@ -838,7 +838,7 @@ Virginia requires a Permanent Cosmetic Tattooer license from the Department of H
 
 What separates an experienced artist:
 - **Procedure volume**: I've performed 523+ procedures. Some artists have done 20.
-- **Complication tracking**: I track every outcome. My [0.19% complication rate](/permanent-makeup-safety-dmv) is 13x lower than the industry average.
+- **Complication tracking**: I track every outcome. Complications have been rare, and [every outcome is tracked](/permanent-makeup-safety-dmv).
 - **Ongoing education**: Techniques evolve annually. I invest in continued training.
 - **Pigment quality**: I use [EU-compliant vegan pigments](/blog/pmu-pigment-science-quality-importance) — not everyone does.
 
@@ -913,7 +913,7 @@ Is it glamorous? No. Is it manageable with proper instructions? Absolutely. The 
 
 In my practice:
 - **Complication rate**: 0.19% across 523+ procedures
-- **Industry average**: 2.5% (my rate is 13x lower)
+- **Tracked across every procedure I perform**
 - **Serious complications**: Zero hospitalizations or systemic reactions
 
 What makes PMU safe:

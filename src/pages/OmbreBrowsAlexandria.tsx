@@ -67,7 +67,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Alexandria, VA | Ink Mugi"
-        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with 523+ procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
+        description="Natural ombre powder brows for Alexandria, VA residents — 6 minutes from Landmark, 15 from Old Town. Licensed PMU artist with hundreds of procedures & 0.19% complication rate. $600 all-inclusive, free parking. Book today."
         path="/ombre-brows-alexandria-va"
         keywords="ombre brows Alexandria VA, powder brows Old Town, permanent makeup Alexandria Virginia, PMU near Del Ray, microshading Alexandria City"
       >
@@ -182,9 +182,9 @@ const OmbreBrowsAlexandria: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Shield className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Data-Driven Safety</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">The unglamorous part</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Our 0.19% complication rate is 13x better than the 2.5% industry average. Hospital-grade sterilization and premium vegan pigments for your peace of mind.
+                  Sterile single-use setup and premium vegan pigments, with every outcome tracked through healing rather than signed off on the day.
                 </p>
               </div>
             </AnimatedSection>
@@ -216,7 +216,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -297,7 +297,7 @@ const OmbreBrowsAlexandria: React.FC = () => {
 
       {/* Mid-Page CTA */}
       <LocationMidCTA
-        headline="Ready to wake up with perfect brows?"
+        headline="Not sure powder brows are right for you?"
         subtext="Join Alexandria clients from Old Town to Kingstowne who trust Ink Mugi. Book your free consultation today."
       />
 

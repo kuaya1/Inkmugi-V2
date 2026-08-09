@@ -67,7 +67,7 @@ const PermanentMakeupDC: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Near Washington, DC | Ink Mugi"
-        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, 523+ procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation."
+        description="Washington DC permanent makeup without DC prices — save $200-400 vs Georgetown studios. Licensed PMU artist, hundreds of procedures, 0.19% complication rate. 20-min reverse commute + free parking. Book free consultation."
         path="/permanent-makeup-dc"
         keywords="permanent makeup Washington DC, ombre brows DC, powder brows Georgetown, microshading Capitol Hill, PMU Dupont Circle, brow artist Washington"
       >
@@ -102,7 +102,7 @@ const PermanentMakeupDC: React.FC = () => {
         city="Washington DC"
         badgeText="Serving Washington, D.C."
         headline={<>Premium Ombre Brows for<br /><span className="text-[#9A7B69]">Washington DC</span></>}
-        subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. 523+ procedures, exceptional results."
+        subtext="Save $200-400 vs. DC studios. Just 20 minutes from Georgetown & Capitol Hill with free parking. hundreds of procedures, exceptional results."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Premium ombre brows for Washington DC clients at Ink Mugi studio"
         secondaryCTA={{ text: `Call ${NAP.telephoneDisplay}`, href: NAP.telephoneHref }}
@@ -202,7 +202,7 @@ const PermanentMakeupDC: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Verifiable Track Record</h3>
                 <p className="text-[#2D2D2B]/70">
-                  523+ procedures documented. 0.19% complication rate (13x better than industry). Virginia-licensed with hospital-grade protocols you can trust.
+                  Hundreds of procedures, every outcome tracked. Virginia-licensed, with a sterile single-use setup.
                 </p>
               </div>
             </AnimatedSection>
@@ -234,7 +234,7 @@ const PermanentMakeupDC: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">

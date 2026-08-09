@@ -101,7 +101,7 @@ const Blog = () => {
     <>
       <SEO
         title={getPageTitle()}
-        description="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with 523+ procedures."
+        description="Expert guides on ombre brows vs microblading, PMU healing timelines, cost breakdowns, and aftercare tips. Evidence-based insights from a licensed VA artist with hundreds of procedures."
         path="/blog"
         keywords="permanent makeup blog, ombre brows vs microblading, nano brows cost, PMU healing timeline, powder brows aftercare, permanent makeup guide DMV"
       />
@@ -399,7 +399,7 @@ const Blog = () => {
                 <div className="bg-[#2D2D2B] p-6 rounded-lg shadow-soft mb-8 text-white">
                   <h3 className="text-xl font-medium mb-3 font-cormorant">Ready for Your Brow Transformation?</h3>
                   <p className="text-white/80 text-sm mb-4">
-                    523+ procedures. 0.19% complication rate. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
+                    hundreds of procedures. 0.19% complication rate. Virginia-licensed and insured. See why clients across the DMV trust Ink Mugi.
                   </p>
                   <Link 
                     to={BOOKING_URL} 
@@ -430,7 +430,7 @@ const Blog = () => {
                     </div>
                   </div>
                   <p className="text-[#2D2D2B]/80 text-sm mb-2">
-                    Virginia License #1231002471. Specializing in natural ombre powder brows with Korean precision techniques. 523+ procedures documented with clinical data tracking.
+                    Virginia License #1231002471. Specializing in natural ombre powder brows with Korean precision techniques. hundreds of procedures documented with clinical data tracking.
                   </p>
                   <p className="text-[#2D2D2B]/60 text-xs mb-4">
                     Bloodborne Pathogens Certified · OSHA Compliant · Premium Vegan Pigments

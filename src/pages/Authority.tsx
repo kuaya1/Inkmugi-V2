@@ -189,7 +189,7 @@ export default function Authority() {
     <>
       <SEO
         title="Ink Mugi | Ombré Powder Brows Standards, Safety & Risk Control — Annandale, VA"
-        description="How Ink Mugi controls risk in permanent makeup: 523+ documented procedures, 0.19% complication rate, healed-first review, sterile protocol, and the Ink Mugi Method for ombré powder brows in Northern Virginia."
+        description="How Ink Mugi controls risk in permanent makeup: hundreds of documented procedures, 0.19% complication rate, healed-first review, sterile protocol, and the Ink Mugi Method for ombré powder brows in Northern Virginia."
         path="/authority"
         keywords="ombré powder brows Annandale VA, permanent makeup Northern Virginia, ombre powder brows safety, permanent makeup standards, healed results ombre powder brows, Ink Mugi method, Virginia licensed cosmetic tattooer"
       >
@@ -551,7 +551,7 @@ export default function Authority() {
           <AnimatedSection className="mt-16">
             <div className="max-w-3xl space-y-5 text-[#2D2D2B]/55 leading-relaxed border-l-2 border-[#E6DAD2]/25 pl-6">
               <p>
-                523+ procedures does not mean every case is identical. It means enough tracked work has been seen to identify patterns in oily skin, undertone shift, previous microblading, healing speed, retention, and when a client should be redirected to a different plan.
+                hundreds of procedures does not mean every case is identical. It means enough tracked work has been seen to identify patterns in oily skin, undertone shift, previous microblading, healing speed, retention, and when a client should be redirected to a different plan.
               </p>
               <p>
                 The 0.19% figure is a documented complication rate across tracked procedures. On this page, that number is tied to healing and follow-up rather than to how brows looked immediately after the appointment. It is useful only because it is connected to process.

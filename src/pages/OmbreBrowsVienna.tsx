@@ -54,7 +54,7 @@ const OmbreBrowsVienna: React.FC = () => {
     },
     {
       question: "What style of brows does Mugi specialize in?",
-      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. In our consultations with Vienna clients, the most common request is a soft, polished look that still feels understated up close and in daylight. Perfect for Vienna clients who want a result that's undetectable as permanent makeup. 523+ procedures refined this technique to perfection."
+      answer: "Ombré powder brows — the most natural-looking, longest-lasting permanent makeup technique. In our consultations with Vienna clients, the most common request is a soft, polished look that still feels understated up close and in daylight. Perfect for Vienna clients who want a result that's undetectable as permanent makeup. hundreds of procedures refined this technique to perfection."
     },
     {
       question: "Is there a consultation before the procedure?",
@@ -66,7 +66,7 @@ const OmbreBrowsVienna: React.FC = () => {
     <>
       <SEO
         title="Ombré Brows for Vienna, VA Residents | Ink Mugi — 12 Min from Town Center"
-        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. 523+ procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
+        description="Vienna VA ombre powder brows by Ink Mugi — 12 minutes from Vienna Town Center, serving Oakton, Mantua & Dunn Loring. hundreds of procedures, VA-licensed, $600 all-inclusive. Free parking, free consultation."
         path="/ombre-brows-vienna-va"
         keywords="ombre brows vienna va, powder brows vienna virginia, permanent makeup vienna va, PMU near oakton, microshading vienna town center"
       >
@@ -213,7 +213,7 @@ const OmbreBrowsVienna: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-amber-700 text-amber-700" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">

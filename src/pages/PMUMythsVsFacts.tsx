@@ -9,7 +9,7 @@ export default function PMUMythsVsFacts() {
     {
       myth: "Permanent makeup fades completely after a year",
       fact: "Ombre powder brows last 24-36 months on average",
-      evidence: "Our data from 523+ procedures shows 95% of clients retain visible pigment for 24+ months. Only 3% require touch-ups before 18 months. Microblading fades faster (8-18 months), contributing to this misconception.",
+      evidence: "Our data from hundreds of procedures shows 95% of clients retain visible pigment for 24+ months. Only 3% require touch-ups before 18 months. Microblading fades faster (8-18 months), contributing to this misconception.",
       dataPoint: "95% retention at 24 months"
     },
     {
@@ -21,7 +21,7 @@ export default function PMUMythsVsFacts() {
     {
       myth: "PMU is unsafe and causes frequent infections",
       fact: "Hospital-grade protocols achieve near-zero infection rates",
-      evidence: "Ink Mugi's 523+ procedures resulted in 0.19% complication rate vs 2.5% industry average. Zero infections reported with proper aftercare compliance. Bloodborne pathogens certification and single-use equipment eliminate contamination risk.",
+      evidence: "Ink Mugi's hundreds of procedures resulted in 0.19% complication rate tracked through healing. Zero infections reported with proper aftercare compliance. Bloodborne pathogens certification and single-use equipment eliminate contamination risk.",
       dataPoint: "0% infection rate"
     },
     {
@@ -57,7 +57,7 @@ export default function PMUMythsVsFacts() {
     {
       myth: "Permanent makeup fades faster in summer",
       fact: "Seasonal variation is 6-8% with proper sun protection",
-      evidence: "DMV climate study tracking 523+ procedures across 4 seasons shows summer retention at 88% vs winter 96%. SPF protection eliminates this gap. UV exposure without protection reduces longevity by 6-8 months.",
+      evidence: "DMV climate study tracking hundreds of procedures across 4 seasons shows summer retention at 88% vs winter 96%. SPF protection eliminates this gap. UV exposure without protection reduces longevity by 6-8 months.",
       dataPoint: "88-96% seasonal range"
     },
     {
@@ -69,7 +69,7 @@ export default function PMUMythsVsFacts() {
     {
       myth: "PMU prevents eyebrow hair from growing",
       fact: "Superficial pigment placement doesn't affect follicles",
-      evidence: "Zero cases of permanent hair loss in 523+ procedures. Pigment placed in dermal-epidermal junction doesn't reach follicle depth (3-4mm vs 1mm placement). Temporary redness subsides in 7-10 days.",
+      evidence: "Zero cases of permanent hair loss in hundreds of procedures. Pigment placed in dermal-epidermal junction doesn't reach follicle depth (3-4mm vs 1mm placement). Temporary redness subsides in 7-10 days.",
       dataPoint: "0 follicle damage cases"
     },
     {
@@ -84,7 +84,7 @@ export default function PMUMythsVsFacts() {
     <>
       <SEO
         title="Powder Brows vs Microblading | Ink Mugi"
-        description="12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results from a Virginia-licensed artist."
+        description="12 common permanent makeup myths debunked with clinical data from hundreds of procedures. Evidence-based facts about PMU longevity, safety, pain, and results from a Virginia-licensed artist."
         path="/pmu-myths-facts"
         keywords="permanent makeup myths debunked, PMU facts vs fiction, microblading misconceptions, ombre brows truth, permanent makeup safety evidence, PMU longevity facts, clinical permanent makeup research, peer-reviewed PMU studies"
         ogType="article"
@@ -159,7 +159,7 @@ export default function PMUMythsVsFacts() {
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://inkmugi.com/pmu-myths-facts",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-            "description": "12 common permanent makeup myths debunked with clinical data from 523+ procedures. Evidence-based facts about PMU longevity, safety, pain, and results."
+            "description": "12 common permanent makeup myths debunked with clinical data from hundreds of procedures. Evidence-based facts about PMU longevity, safety, pain, and results."
           })}
         </script>
         <script type="application/ld+json">
@@ -220,7 +220,7 @@ export default function PMUMythsVsFacts() {
 
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-8 voice-answer">
               Debunking common misconceptions with peer-reviewed research and clinical data from 
-              <span className="text-[#E6DAD2] font-semibold"> 523+ procedures</span>. Separating marketing hype from medical reality in the permanent makeup industry.
+              <span className="text-[#E6DAD2] font-semibold"> hundreds of procedures</span>. Separating marketing hype from medical reality in the permanent makeup industry.
             </p>
 
             {/* Key Stats */}
@@ -255,7 +255,7 @@ export default function PMUMythsVsFacts() {
                   </h2>
                   <p className="text-[#2D2D2B]/70 leading-relaxed">
                     The permanent makeup industry is flooded with misinformation, outdated practices, and unsubstantiated claims. 
-                    This evidence-based analysis uses clinical data from our 523+ documented procedures to separate fact from fiction. 
+                    This evidence-based analysis uses clinical data from our hundreds of documented procedures to separate fact from fiction. 
                     Each myth is addressed with specific metrics, follow-up data, and peer-reviewed context.
                   </p>
                 </div>
@@ -348,7 +348,7 @@ export default function PMUMythsVsFacts() {
                 <ul className="space-y-3 text-[#2D2D2B]/70">
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#E6DAD2] flex-shrink-0 mt-0.5" />
-                    <span>523+ documented procedures with 12-month minimum follow-up</span>
+                    <span>hundreds of documented procedures with 12-month minimum follow-up</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#E6DAD2] flex-shrink-0 mt-0.5" />

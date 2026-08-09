@@ -29,7 +29,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
     {
       name: "Anh N.",
       location: "Seven Corners",
-      text: "I literally drive past 3 other beauty places to get to Mugi. None of them have 523+ procedures or her attention to detail. Seven Corners to Heritage Center in 4 minutes.",
+      text: "I literally drive past 3 other beauty places to get to Mugi. None of them have hundreds of procedures or her attention to detail. Seven Corners to Heritage Center in 4 minutes.",
       rating: 5
     },
     {
@@ -59,7 +59,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup in Falls Church, VA | Ink Mugi — 8 Minutes Away"
-        description="Falls Church VA permanent makeup by Ink Mugi — just 8 minutes from Falls Church City, 4 min from Seven Corners. VA-licensed, 523+ procedures, $600 all-inclusive ombre brows. Free consultation."
+        description="Falls Church VA permanent makeup by Ink Mugi — just 8 minutes from Falls Church City, 4 min from Seven Corners. VA-licensed, hundreds of procedures, $600 all-inclusive ombre brows. Free consultation."
         path="/permanent-makeup-falls-church-va"
         keywords="permanent makeup Falls Church VA, ombre brows Falls Church, powder brows Falls Church Virginia, PMU near Falls Church, microshading Falls Church VA"
       >
@@ -95,7 +95,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
         city="Falls Church"
         badgeText="Just 8 Minutes from Falls Church, VA"
         headline={<>Permanent Makeup for<br /><span className="text-[#9A7B69]">Falls Church, VA</span></>}
-        subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. 523+ documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
+        subtext="Just 8 minutes from Falls Church City — skip the DC traffic and Tysons prices. hundreds of documented procedures, VA-licensed artistry, and all-inclusive $600 pricing with free parking."
         heroImage="https://live.staticflickr.com/65535/54366410485_9d137ccfb4_c_d.jpg"
         heroImageAlt="Healed ombre powder brows by Ink Mugi, serving Falls Church, Virginia"
         primaryCTA={{ text: 'Request a Consultation', to: BOOKING_URL }}
@@ -174,7 +174,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ documented procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Every single procedure photographed at 6+ weeks healed. See exactly what your results will look like before you commit.
                 </p>
@@ -208,7 +208,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-amber-700 text-amber-700" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -291,7 +291,7 @@ const PermanentMakeupFallsChurch: React.FC = () => {
 
       {/* Mid-Page CTA */}
       <LocationMidCTA
-        headline="Ready to wake up with perfect brows?"
+        headline="Not sure powder brows are right for you?"
         subtext="Falls Church residents love the 8-minute drive to premium results. Book your free consultation today."
       />
 

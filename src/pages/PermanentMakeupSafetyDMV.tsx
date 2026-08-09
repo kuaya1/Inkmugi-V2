@@ -24,8 +24,8 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
     },
     {
       icon: TrendingUp,
-      title: 'Data-Driven Protocols',
-      description: 'Every procedure is documented and analyzed. Our protocols are continuously refined based on data from 523+ successful transformations since 2021. Evidence-based practices ensure superior outcomes.'
+      title: 'Outcomes Tracked Through Healing',
+      description: 'Every procedure is recorded and reviewed once it has healed, and the protocol gets adjusted when something does not hold up. These are practice observations from our own clients since 2021 — useful, but not clinical research, and we do not present them as such.'
     }
   ];
 
@@ -53,19 +53,19 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
     },
     {
       question: 'How do you minimize the risk of complications?',
-      answer: 'Our 0.19% complication rate (compared to the 2.5% industry average) is achieved through multiple safeguards: thorough pre-procedure consultations to identify contraindications, strict adherence to sterilization protocols, use of premium materials, precise technique refined over 523+ procedures, comprehensive aftercare instructions, and 24/7 post-procedure support. Every client receives detailed guidance on proper healing.'
+      answer: 'Complications have been rare, which comes down to several unglamorous safeguards: thorough pre-procedure consultations to identify contraindications, strict adherence to sterilization protocols, use of premium materials, precise technique refined over hundreds of procedures, comprehensive aftercare instructions, and 24/7 post-procedure support. Every client receives detailed guidance on proper healing.'
     },
     {
       question: 'What makes Ink Mugi safer than other studios?',
-      answer: 'Our safety advantage comes from three key factors: (1) State licensing and annual bloodborne pathogens certification, (2) Data-driven approach with documented outcomes from 523+ procedures, and (3) Investment in premium materials and hospital-grade equipment. We don\'t cut corners. Your safety is our highest priority, reflected in our complication rate being 13x lower than the industry average.'
+      answer: 'Honestly, the things that matter most are unglamorous and every good studio should be doing them: current state licensing and annual bloodborne pathogens certification, single-use needles opened in front of you, outcomes tracked through healing rather than signed off on the day, and a willingness to postpone a procedure when someone\'s skin is not ready. What you should ask any artist is to show you healed work and tell you their licence number. If they hesitate on either, that tells you something.'
     }
   ];
 
   return (
     <>
       <SEO
-        title="Is Permanent Makeup Safe? 0.19% Complication Rate | Ink Mugi DMV"
-        description="Hospital-grade safety protocols with a 0.19% complication rate (vs 2.5% industry average). Virginia-licensed, BBP certified, premium vegan pigments. See our transparent safety data from 523+ procedures."
+        title="Is Permanent Makeup Safe? What to Ask Before You Book | Ink Mugi"
+        description="Hospital-grade safety protocols with a 0.19% complication rate (tracked through healing). Virginia-licensed, BBP certified, premium vegan pigments. See our transparent safety data from hundreds of procedures."
         path="/permanent-makeup-safety-dmv"
         keywords="permanent makeup safety DMV, licensed PMU artist Virginia, hospital-grade PMU studio Northern Virginia, PMU complication rate statistics, sterile PMU procedure Annandale, bloodborne pathogens certified PMU, vegan pigments permanent makeup, hypoallergenic PMU Arlington Alexandria, PMU safety protocols Fairfax County, Virginia licensed cosmetic tattooer"
       >
@@ -117,7 +117,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://inkmugi.com/permanent-makeup-safety-dmv",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-            "description": "Hospital-grade PMU safety protocols at Ink Mugi. 0.19% complication rate vs 2.5% industry average. Virginia-licensed, bloodborne pathogens certified."
+            "description": "Hospital-grade PMU safety protocols at Ink Mugi. Sterile single-use setup, Virginia-licensed and bloodborne-pathogen certified."
           })}
         </script>
         <script type="application/ld+json">
@@ -195,7 +195,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
               </p>
               
               <p className="text-lg mb-12 text-white/80 leading-relaxed max-w-3xl mx-auto">
-                Hospital-grade protocols. State licensing. 13x safer than industry average. 
+                Sterile single-use setup. Virginia licensed and insured. 
                 Every decision we make prioritizes your well-being above all else.
               </p>
 
@@ -204,9 +204,9 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                 <div className="group bg-white/10 backdrop-blur-sm p-10 rounded-3xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                   <div className="text-6xl md:text-7xl font-bold text-white mb-3 font-cormorant">0.19%</div>
                   <div className="text-sm uppercase tracking-widest text-[#E6DAD2] mb-2 font-semibold">Complication Rate</div>
-                  <div className="text-xs text-white/60">vs 2.5% industry average</div>
+                  <div className="text-xs text-white/60">tracked through healing</div>
                   <div className="mt-4 pt-4 border-t border-white/10">
-                    <div className="text-xs text-white/70">That's <strong className="text-green-400">13x safer</strong></div>
+                    <div className="text-xs text-white/70">That's <strong className="text-green-400">tracked through healing</strong></div>
                   </div>
                 </div>
                 <div className="group bg-white/10 backdrop-blur-sm p-10 rounded-3xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
@@ -218,12 +218,15 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                   </div>
                 </div>
                 <div className="group bg-white/10 backdrop-blur-sm p-10 rounded-3xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                  <div className="text-6xl md:text-7xl font-bold text-white mb-3 font-cormorant">97%</div>
-                  <div className="text-sm uppercase tracking-widest text-[#E6DAD2] mb-2 font-semibold">Satisfaction Rate</div>
-                  <div className="text-xs text-white/60">Documented outcomes</div>
-                  <div className="mt-4 pt-4 border-t border-white/10">
-                    <div className="text-xs text-white/70"><strong className="text-[#E6DAD2]">5.0/5</strong> average rating</div>
-                  </div>
+                  {/*
+                    Was "97% Satisfaction Rate / Documented outcomes" over a "5.0/5
+                    average rating". Neither figure has a source in this repository, and
+                    a satisfaction percentage a business awards itself is not a safety
+                    fact — which is what this section is for.
+                  */}
+                  <div className="text-6xl md:text-7xl font-bold text-white mb-3 font-cormorant">Single-use</div>
+                  <div className="text-sm uppercase tracking-widest text-[#E6DAD2] mb-2 font-semibold">Needles and pigment caps</div>
+                  <div className="text-xs text-white/60">Opened in front of you, discarded after</div>
                 </div>
               </div>
 
@@ -301,7 +304,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                 The Numbers Don't Lie
               </h2>
               <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-                Our safety record speaks for itself. Data tracked from 523+ procedures since 2021.
+                Our safety record speaks for itself. Data tracked from hundreds of procedures since 2021.
               </p>
             </AnimatedSection>
 
@@ -354,7 +357,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                     <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50 to-green-100 px-8 py-4 rounded-full border-2 border-green-300 shadow-lg">
                       <CheckCircle className="w-6 h-6 text-green-600" />
                       <span className="text-xl font-semibold text-green-900">
-                        13x Safer Than Industry Average
+                        Outcomes Tracked Through Healing
                       </span>
                     </div>
                   </div>
@@ -375,8 +378,8 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                       <div className="text-xs text-[#2D2D2B]/60 uppercase tracking-wider">Years Tracked</div>
                     </div>
                     <div className="text-center p-4 bg-neutral-50 rounded-xl">
-                      <div className="text-3xl font-bold text-[#2D2D2B] mb-1 font-cormorant">97%</div>
-                      <div className="text-xs text-[#2D2D2B]/60 uppercase tracking-wider">Satisfaction</div>
+                      <div className="text-3xl font-bold text-[#2D2D2B] mb-1 font-cormorant">6 wks</div>
+                      <div className="text-xs text-[#2D2D2B]/60 uppercase tracking-wider">Follow-up</div>
                     </div>
                     <div className="text-center p-4 bg-neutral-50 rounded-xl">
                       <div className="text-3xl font-bold text-[#2D2D2B] mb-1 font-cormorant">0</div>
@@ -544,13 +547,13 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
                 </div>
                 <div className="group bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                   <CheckCircle className="w-10 h-10 text-[#E6DAD2] mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
-                  <div className="text-lg font-semibold mb-2">13x Safer</div>
+                  <div className="text-lg font-semibold mb-2">Tracked</div>
                   <div className="text-sm text-white/70">Than Industry Average</div>
                 </div>
                 <div className="group bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                   <CheckCircle className="w-10 h-10 text-[#E6DAD2] mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
                   <div className="text-lg font-semibold mb-2">Data-Driven</div>
-                  <div className="text-sm text-white/70">523+ procedures Tracked</div>
+                  <div className="text-sm text-white/70">hundreds of procedures Tracked</div>
                 </div>
               </div>
 

@@ -59,7 +59,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Near Springfield, VA | Ink Mugi — 12 Min from Town Center"
-        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. 523+ procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
+        description="Springfield VA permanent makeup — 12 minutes from Town Center to Ink Mugi's Annandale studio. hundreds of procedures, VA-licensed, $600 all-inclusive ombre powder brows. Burke, Kings Park & Franconia welcome."
         path="/permanent-makeup-springfield-va"
         keywords="permanent makeup Springfield VA, ombre brows Springfield, powder brows Springfield Virginia, PMU near Springfield Town Center, microshading Springfield VA"
       >
@@ -174,7 +174,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ procedures, Real Results</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of procedures, Real Results</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not stock photos — real before-and-after documentation of every client at 6+ weeks healed. See your future brows in our extensive portfolio.
                 </p>
@@ -208,7 +208,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-amber-700 text-amber-700" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -291,7 +291,7 @@ const PermanentMakeupSpringfield: React.FC = () => {
 
       {/* Mid-Page CTA */}
       <LocationMidCTA
-        headline="Ready to wake up with perfect brows?"
+        headline="Not sure powder brows are right for you?"
         subtext="Springfield residents love the 12-minute drive to premium results. Book your free consultation today."
       />
 

@@ -126,7 +126,7 @@ const Home: React.FC = () => {
     },
     {
       question: 'Is this procedure safe? What safety standards does Ink Mugi follow?',
-      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across 523+ procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
+      answer: 'Ink Mugi holds full Virginia body art licensure and maintains comprehensive liability insurance. We use hospital-grade sterilization, single-use disposable cartridges, and hypoallergenic vegan pigments. Our documented complication rate across hundreds of procedures is 0.19% — a reflection of rigorous technique, client screening, and aftercare guidance. In our practice, safety also means declining procedures when medical history, skin condition, or healing risk suggests a client should wait or avoid treatment.',
     },
     {
       question: 'How does ombré powder compare to microblading in Northern Virginia\'s climate?',
@@ -516,23 +516,32 @@ const Home: React.FC = () => {
         <div className="container-custom">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
             <AnimatedSection>
+              {/*
+                Was headed "Healed-first is not a marketing phrase. / It is a clinical
+                standard." — a section that defended a phrase, in the register of the
+                old site, three screens below a hero written in the new one. It closed
+                on a procedure count and a complication rate.
+
+                Same substance, told as what Mugi is doing and why, which is the only
+                reason a client cares about any of it.
+              */}
               <span className="inline-block text-[#2D2D2B]/40 tracking-[0.2em] text-xs uppercase mb-4">
-                Our Standard
+                Why the first weeks look wrong
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium text-[#2D2D2B] leading-tight mb-6">
-                Healed-first is not a marketing phrase.
+                Day one is not the result.
                 <br />
-                <span className="text-[#2D2D2B]/50">It is a clinical standard.</span>
+                <span className="text-[#2D2D2B]/50">Week six is.</span>
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  Pigment shifts, softens, and settles over six to eight weeks. The result you live with is the healed result. That is the only result this studio evaluates, documents, and measures success by. A common situation we see is that clients arrive expecting day-one intensity to last, when in reality good permanent makeup should soften into the skin more naturally as healing completes.
+                  Pigment shifts, softens and settles over six to eight weeks. Almost everyone finds day three darker than they expected — Mugi will have warned you, and it still comes as a surprise. Then it lightens, sometimes further than feels comfortable, before it comes back.
                 </p>
                 <p>
-                  This standard shapes every protocol: pigment depth, density selection, undertone calibration, and the design approval process. Working with clients across Northern Virginia, parameters are chosen for healed outcomes — not for how they photograph on day one.
+                  That is why she works to the healed result rather than the mirror at the end of your appointment. Depth, density and undertone are all chosen for where they will land in six weeks, which usually means the brows look softer on the day than a photograph would flatter.
                 </p>
                 <p>
-                  Across 523+ documented procedures, this approach has produced a 0.19% complication rate. That number reflects rigorous technique, honest client screening, and a willingness to decline procedures when safety warrants it. Many clients who visit us after previous microblading are surprised by how much emphasis we place on screening and healed expectations before booking.
+                  It also means nothing is finished until she has seen you heal. The session at six weeks is not a touch-up sold separately — it is the second half of the work, and it is where the shape gets its final density.
                 </p>
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -557,9 +566,9 @@ const Home: React.FC = () => {
             <AnimatedSection delay={1.5}>
               <div className="space-y-4">
                 {[
-                  { icon: FileCheck, title: 'Design Approved Before Pigment', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. In our consultations, that design stage is where trust is built.' },
+                  { icon: FileCheck, title: 'Licensed, insured, single-use', desc: 'The brow shape is mapped to your bone structure and drawn on your face. You see it, adjust it, and approve it. In our consultations, that design stage is where trust is built.' },
                   { icon: Eye, title: 'Healed Portfolio Standard', desc: 'Every result in our gallery is photographed at 6+ weeks — after the healing process reveals the true outcome. No fresh glamor shots. No filters.' },
-                  { icon: Shield, title: '0.19% Complication Rate', desc: 'Across 523+ procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
+                  { icon: Shield, title: 'The first pass is deliberately light', desc: 'Across hundreds of procedures. The result of precise technique, proper screening, comprehensive aftercare, and a practice that declines procedures when safety requires it.' },
                   { icon: Award, title: 'Virginia Licensed & Insured', desc: 'Full body art licensure, professional liability insurance, hospital-grade sterilization, and hypoallergenic vegan pigments selected for predictable healed performance.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start bg-[#F9F7F5] rounded-xl p-5">
@@ -678,7 +687,7 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-4 text-[#2D2D2B]/70 leading-relaxed">
                 <p>
-                  After 523+ documented procedures, certain patterns are no longer hypothetical. Retention changes with skin type. Undertone matters. Depth matters. Front density matters. Most unsatisfactory brows are not caused by one dramatic mistake; they come from a series of small technical decisions that were made too quickly or without enough restraint.
+                  After hundreds of documented procedures, certain patterns are no longer hypothetical. Retention changes with skin type. Undertone matters. Depth matters. Front density matters. Most unsatisfactory brows are not caused by one dramatic mistake; they come from a series of small technical decisions that were made too quickly or without enough restraint.
                 </p>
                 <p>
                   That is why every appointment follows the same sequence: facial mapping before any design decision, design approval before pigment, conservative first-pass saturation, and healed review before calling the result complete. The goal is not to make brows look freshly done on day one. The goal is to have them heal evenly, sit correctly on the face, and still make sense months later in natural light.
@@ -687,7 +696,7 @@ const Home: React.FC = () => {
 
               <div className="grid sm:grid-cols-3 gap-5 mt-8 mb-8">
                 {[
-                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across 523+ documented procedures.' },
+                  { icon: Eye, title: 'Precision Protocol', desc: 'A methodical standard refined across hundreds of documented procedures.' },
                   { icon: Clock, title: 'Private Sessions', desc: 'Unrushed appointments structured for comfort, clarity, and thoughtful design approval.' },
                   { icon: Shield, title: 'Documented Safety', desc: 'VA-licensed, insured, with verified healed outcomes and conservative screening.' },
                 ].map((item, index) => (

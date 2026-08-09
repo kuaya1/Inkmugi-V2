@@ -117,7 +117,7 @@ export default function PMUDataGuide() {
   return (
     <>
       <SEO
-        title="Powder Brows Healing Data: 523+ procedures Analyzed | Ink Mugi"
+        title="Powder Brows Healing Data: hundreds of procedures Analyzed | Ink Mugi"
         description="See real healing data from 523+ ombre brow procedures. Retention rates by skin type, age & season. The only studio in VA sharing transparent clinical longevity data. Evidence-based PMU results."
         path="/pmu-data-guide"
         keywords="permanent makeup longevity data, PMU retention rates by skin type, ombre brows last how long, microblading vs powder brows durability, seasonal PMU performance DMV, aftercare impact on longevity, permanent makeup fade timeline, Virginia licensed PMU data"
@@ -186,21 +186,21 @@ export default function PMUDataGuide() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "PMU Longevity Data: 523+ procedures Analysis",
+            "headline": "PMU Longevity Data: hundreds of procedures Analysis",
             "author": { "@type": "Person", "@id": "https://inkmugi.com/#mugi", "name": "Mugi", "jobTitle": "Licensed Permanent Cosmetic Tattooer" },
             "publisher": { "@type": "Organization", "@id": "https://inkmugi.com/#business", "name": "Ink Mugi", "url": "https://inkmugi.com/" },
             "datePublished": "2024-06-01",
             "dateModified": "2025-06-13",
             "mainEntityOfPage": "https://inkmugi.com/pmu-data-guide",
             "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
-            "description": "Comprehensive PMU longevity data from 523+ procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison."
+            "description": "Comprehensive PMU longevity data from hundreds of procedures. Retention rates by skin type, seasonal performance, aftercare impact, and technique comparison."
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "PMU Longevity Data: 523+ procedures Analysis",
+            "name": "PMU Longevity Data: hundreds of procedures Analysis",
             "speakable": {
               "@type": "SpeakableSpecification",
               "cssSelector": [".voice-answer", "h1", "h2"]
@@ -240,7 +240,7 @@ export default function PMUDataGuide() {
 
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-8 voice-answer">
               Comprehensive analysis of retention rates, longevity factors, and performance metrics from 
-              <span className="text-[#E6DAD2] font-semibold"> 523+ procedures</span>. Learn what makes permanent makeup last 18-36 months in the DMV's unique climate.
+              <span className="text-[#E6DAD2] font-semibold"> hundreds of procedures</span>. Learn what makes permanent makeup last 18-36 months in the DMV's unique climate.
             </p>
 
             {/* Key Stats */}

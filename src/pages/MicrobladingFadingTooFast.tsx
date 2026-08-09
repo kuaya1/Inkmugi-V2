@@ -176,7 +176,7 @@ const MicrobladingFadingTooFast: React.FC = () => {
               skin type, lifestyle, and the DMV's humid climate.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 523+ procedures • Includes DMV climate longevity data
+              By a Virginia-licensed PMU artist with hundreds of procedures • Includes DMV climate longevity data
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -4,6 +4,15 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react()],
+  /*
+   * Resolved once, at build time, and therefore identical in the prerendered
+   * HTML and in the hydrating client. Computing it with new Date() during
+   * render instead makes the server and client disagree whenever a build
+   * outlives the value — the bug the homepage availability line had.
+   */
+  define: {
+    __BUILD_YEAR__: JSON.stringify(String(new Date().getFullYear())),
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },

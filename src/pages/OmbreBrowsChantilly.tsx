@@ -24,7 +24,7 @@ const OmbreBrowsChantilly: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Chantilly VA Clients",
-    "description": "Professional ombre powder brows for Chantilly, VA residents. 523+ documented procedures, 0.19% complication rate. Located in Annandale — 25 minutes from the Route 50 corridor via I-66.",
+    "description": "Professional ombre powder brows for Chantilly, VA residents. hundreds of documented procedures, 0.19% complication rate. Located in Annandale — 25 minutes from the Route 50 corridor via I-66.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -84,7 +84,7 @@ const OmbreBrowsChantilly: React.FC = () => {
     },
     {
       question: "Why should I drive to Annandale instead of a closer Chantilly salon?",
-      answer: "Many Chantilly clients tell us they compared healed results — not fresh ones — before choosing. With 523+ documented procedures and a 0.19% complication rate (13x lower than the industry average), the 25-minute drive provides the certainty and clinical-grade quality that busy Chantilly professionals want for something permanent on their face."
+      answer: "Many Chantilly clients tell us they compared healed results — not fresh ones — before choosing. With hundreds of procedures behind her and every outcome tracked, the 25-minute drive provides the certainty and care-grade quality that busy Chantilly professionals want for something permanent on their face."
     },
     {
       question: "Do you offer other techniques besides ombre powder brows?",
@@ -103,8 +103,8 @@ const OmbreBrowsChantilly: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ombre Powder Brows Chantilly VA | Ink Mugi — 523+ procedures"
-        description="Ombre powder brows for Chantilly VA clients. 523+ procedures, VA licensed, six-week review. 25 min from Route 50 corridor. Free consultation — $600 all-inclusive."
+        title="Ombre Powder Brows Chantilly VA | Ink Mugi — hundreds of procedures"
+        description="Ombre powder brows for Chantilly VA clients. hundreds of procedures, VA licensed, six-week review. 25 min from Route 50 corridor. Free consultation — $600 all-inclusive."
         path="/ombre-brows-chantilly-va"
         keywords="ombre powder brows Chantilly VA, permanent makeup Chantilly Virginia, PMU near South Riding, powder brows Dulles corridor, microshading Chantilly, nano brows Chantilly VA"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsChantilly: React.FC = () => {
         city="Chantilly"
         badgeText="Serving Chantilly, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Chantilly, VA</span></>}
-        subtext="Precision permanent makeup built on a healed-first philosophy. 523+ procedures with documented outcomes — your brow shape is mapped, approved by you, and designed to age gracefully."
+        subtext="Precision permanent makeup built on a healed-first philosophy. hundreds of procedures with documented outcomes — your brow shape is mapped, approved by you, and designed to age gracefully."
         secondaryText="22 minutes from the Route 50 corridor to our private Annandale studio. Free parking. Consultation-first."
         heroImage="https://live.staticflickr.com/65535/54408668740_7465ce5ee8_c_d.jpg"
         heroImageAlt="Ombre powder brows for Chantilly, VA clients at Ink Mugi studio"
@@ -237,7 +237,7 @@ const OmbreBrowsChantilly: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ procedures Tracked</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of procedures Tracked</h3>
                 <p className="text-[#2D2D2B]/70">
                   Every procedure — from initial consultation to healed photograph — is part of our tracked dataset. This isn't an estimate. It's a commitment to transparency that Chantilly professionals appreciate when choosing permanent cosmetics.
                 </p>
@@ -251,7 +251,7 @@ const OmbreBrowsChantilly: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Safety That Exceeds Industry Norms</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Our 0.19% complication rate across 523+ procedures is 13x lower than the 2.5% industry average. Virginia licensed, fully insured, bloodborne pathogen certified. EU-compliant vegan pigments — no shortcuts, no substitutions.
+                  Virginia licensed, fully insured, bloodborne-pathogen certified. Outcomes are tracked, and complications have been rare. EU-compliant vegan pigments — no shortcuts, no substitutions.
                 </p>
               </div>
             </AnimatedSection>
@@ -355,7 +355,7 @@ const OmbreBrowsChantilly: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ verified reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">

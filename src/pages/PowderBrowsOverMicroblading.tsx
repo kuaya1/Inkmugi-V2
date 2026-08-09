@@ -169,7 +169,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               to soften what's there, even out the colour, or rebuild the shape entirely.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 523+ procedures • ~35% of our clients are microblading transitions
+              By a Virginia-licensed PMU artist with hundreds of procedures • ~35% of our clients are microblading transitions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -439,7 +439,7 @@ const PowderBrowsOverMicroblading: React.FC = () => {
               {
                 icon: Target,
                 title: 'Correction Expertise',
-                desc: 'With 523+ procedures, approximately 35% involving previously-treated skin, we have extensive experience managing the unique challenges of layered PMU work — pigment interaction, color theory, and texture adaptation.'
+                desc: 'With hundreds of procedures, approximately 35% involving previously-treated skin, we have extensive experience managing the unique challenges of layered PMU work — pigment interaction, color theory, and texture adaptation.'
               },
               {
                 icon: Palette,

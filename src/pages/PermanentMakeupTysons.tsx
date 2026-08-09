@@ -54,7 +54,7 @@ const PermanentMakeupTysons: React.FC = () => {
     },
     {
       question: "Why not go to a Tysons Corner PMU studio?",
-      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. In our consultations with Tysons clients, we often hear that they want a more private, one-on-one experience instead of a high-traffic commercial setting where appointments can feel transactional. Our $600 all-inclusive pricing, 523+ documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
+      answer: "Tysons studios charge $800-1,000+ for the same or lesser quality. In our consultations with Tysons clients, we often hear that they want a more private, one-on-one experience instead of a high-traffic commercial setting where appointments can feel transactional. Our $600 all-inclusive pricing, hundreds of documented procedures, and 5.0-star reviews make the short drive an easy decision. Plus free parking vs. $5-15 Tysons garage fees."
     },
     {
       question: "Can I book a lunchtime consultation from Tysons?",
@@ -66,7 +66,7 @@ const PermanentMakeupTysons: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup Near Tysons Corner, VA | Ink Mugi — 10 Min Drive, $200+ Savings"
-        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. 523+ procedures, 5.0★ reviews. Free consultation."
+        description="Tysons Corner permanent makeup without the Tysons markup — $600 vs $900+ at Tysons studios. 10-minute drive to Ink Mugi's Annandale location. hundreds of procedures, 5.0★ reviews. Free consultation."
         path="/permanent-makeup-tysons-va"
         keywords="permanent makeup Tysons Corner VA, ombre brows Tysons, powder brows Tysons Virginia, PMU near Tysons Galleria, microshading Tysons Corner"
       >
@@ -215,7 +215,7 @@ const PermanentMakeupTysons: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-amber-700 text-amber-700" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -296,7 +296,7 @@ const PermanentMakeupTysons: React.FC = () => {
 
       {/* Mid-Page CTA */}
       <LocationMidCTA
-        headline="Ready to wake up with perfect brows?"
+        headline="Not sure powder brows are right for you?"
         subtext="Tysons quality at Annandale pricing. Book your free consultation and see why Tysons Corner professionals make the short drive."
       />
 

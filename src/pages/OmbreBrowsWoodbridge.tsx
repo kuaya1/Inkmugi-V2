@@ -80,7 +80,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     },
     {
       question: "Why do Woodbridge residents choose Ink Mugi over closer studios?",
-      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With 523+ documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
+      answer: "Woodbridge clients consistently tell us they chose Ink Mugi after comparing healed results across multiple artists. With hundreds of documented procedures, a 0.19% complication rate, and a design-approval process where you see the exact shape on your face before any pigment touches your skin, our approach provides the quality and certainty that South Prince William County clients are looking for. Many of our Woodbridge clients were referred by friends, family, or coworkers who'd already experienced our work."
     },
     {
       question: "How long do ombre powder brows last for Woodbridge area clients?",
@@ -104,7 +104,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Woodbridge VA | Ink Mugi"
-        description="Ombre powder brows for Woodbridge VA residents. 523+ procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
+        description="Ombre powder brows for Woodbridge VA residents. hundreds of procedures, 0.19% complication rate, VA licensed. 35 min from Woodbridge via I-95. Free consultation — see healed results first."
         path="/ombre-brows-woodbridge-va"
         keywords="ombre powder brows Woodbridge VA, permanent makeup Woodbridge Virginia, powder brows Prince William County, PMU near Woodbridge, microshading Woodbridge VA, nano brows Woodbridge"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         city="Woodbridge"
         badgeText="Serving Woodbridge, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Woodbridge, VA</span></>}
-        subtext="Ombré powder brows for Prince William County professionals. 523+ documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
+        subtext="Ombré powder brows for Prince William County professionals. hundreds of documented procedures with a 0.19% complication rate — see the shape on your face and approve before any pigment."
         secondaryText="35 minutes from Woodbridge via I-95 to our private Annandale studio. Free parking. Consultation-first approach."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Ombre powder brows for Woodbridge, VA clients at Ink Mugi studio"
@@ -224,10 +224,10 @@ const OmbreBrowsWoodbridge: React.FC = () => {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-cormorant font-medium mb-4 text-[#2D2D2B]">
-              Data-Driven Artistry Woodbridge Clients Rely On
+              How Mugi works
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Every claim is documented. Every result is photographed at 6+ weeks healed — not fresh.
+              Every result in the portfolio is photographed at six weeks healed, never on the day. Fresh brows always look good; healed brows are the ones you live with.
             </p>
           </AnimatedSection>
 
@@ -237,7 +237,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ documented procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of documented procedures</h3>
                 <p className="text-[#2D2D2B]/70">
                   Not a claim — a tracked dataset. Every procedure is documented from consultation through healed result. This depth of experience means fewer surprises and better outcomes for our Woodbridge clients.
                 </p>
@@ -249,9 +249,9 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <Shield className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">0.19% Complication Rate</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">The first pass is deliberately light</h3>
                 <p className="text-[#2D2D2B]/70">
-                  That's 13x lower than the industry average of 2.5%. Virginia licensed, insured, bloodborne pathogen certified. Hospital-grade sterilization and premium EU-compliant vegan pigments on every procedure.
+                  Virginia licensed, insured, bloodborne pathogen certified. Hospital-grade sterilization and premium EU-compliant vegan pigments on every procedure.
                 </p>
               </div>
             </AnimatedSection>
@@ -261,9 +261,9 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                 <div className="w-14 h-14 bg-[#E6DAD2] rounded-xl flex items-center justify-center mb-6">
                   <CheckCircle className="w-7 h-7 text-[#2D2D2B]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Design Approved Before Pigment</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Licensed, insured, single-use</h3>
                 <p className="text-[#2D2D2B]/70">
-                  Your brow shape is mapped to your facial proportions, drawn on your face, and adjusted until you say "perfect." Nothing permanent happens until you're 100% confident — that's our guarantee.
+                  Your brow shape is mapped to your facial proportions, drawn on your face, and adjusted until it looks right to you. Nothing permanent happens before you have agreed to the shape.
                 </p>
               </div>
             </AnimatedSection>
@@ -355,7 +355,7 @@ const OmbreBrowsWoodbridge: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ verified reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">

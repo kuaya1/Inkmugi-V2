@@ -23,7 +23,7 @@ const AftercareGuide: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "HowTo",
     "name": "Ombre Powder Brows Aftercare: Complete Healing Guide",
-    "description": "Step-by-step ombre powder brows aftercare guide from a licensed PMU artist with 523+ procedures. Covers the full 6-week healing timeline, what to avoid, and how to protect your results in DMV humidity.",
+    "description": "Step-by-step ombre powder brows aftercare guide from a licensed PMU artist with hundreds of procedures. Covers the full 6-week healing timeline, what to avoid, and how to protect your results in DMV humidity.",
     "image": "https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg",
     "totalTime": "PT42D",
     "estimatedCost": {
@@ -227,7 +227,7 @@ const AftercareGuide: React.FC = () => {
     <>
       <SEO
         title="Ombre Brows Aftercare Guide: Complete Healing Timeline | Ink Mugi"
-        description="Complete ombre powder brows aftercare guide from a VA-licensed artist with 523+ procedures. Day-by-day healing timeline, what to avoid, DMV humidity tips, and when to schedule your touch-up."
+        description="Complete ombre powder brows aftercare guide from a VA-licensed artist with hundreds of procedures. Day-by-day healing timeline, what to avoid, DMV humidity tips, and when to schedule your touch-up."
         path="/aftercare-guide"
         keywords="ombre brows aftercare, powder brows healing, PMU aftercare guide, ombre brows healing timeline, permanent makeup aftercare, brow tattoo aftercare"
         ogType="article"
@@ -260,14 +260,14 @@ const AftercareGuide: React.FC = () => {
             </nav>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D2D2B] text-white rounded-full text-sm font-medium mb-6">
               <Shield className="w-4 h-4" />
-              From 523+ procedures
+              From hundreds of procedures
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-medium mb-6 text-[#2D2D2B] leading-tight">
               Ombre Brows Aftercare<br />
               <span className="text-[#9A7B69]">Complete Healing Guide</span>
             </h1>
             <p className="text-lg text-[#2D2D2B]/70 max-w-2xl mx-auto mb-8">
-              Everything you need to know about healing, from day 1 through week 6. Written by Mugi — VA-licensed PMU artist with 523+ documented procedures and a 0.19% complication rate.
+              Everything you need to know about healing, from day 1 through week 6. Written by Mugi — VA-licensed PMU artist with hundreds of documented procedures and a 0.19% complication rate.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-[#2D2D2B]/60">
               <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 6-week healing timeline</span>
@@ -379,7 +379,7 @@ const AftercareGuide: React.FC = () => {
                 DMV Climate & Your Healing
               </h2>
               <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-                Northern Virginia's unique climate affects PMU healing. Here's what I've learned from 523+ procedures in this region.
+                Northern Virginia's unique climate affects PMU healing. Here's what I've learned from hundreds of procedures in this region.
               </p>
             </AnimatedSection>
 

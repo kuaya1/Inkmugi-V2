@@ -68,7 +68,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
     },
     {
       question: "Why do Loudoun County residents choose a Fairfax County studio?",
-      answer: "Clients from Ashburn, Leesburg, and surrounding Loudoun communities select Ink Mugi for the documented safety record (0.19% complication rate across 523+ procedures), the healed-first portfolio standard, and the design approval protocol. For a procedure with permanent results, the caliber of the practitioner and the verifiability of outcomes carry more weight than proximity."
+      answer: "Clients from Ashburn, Leesburg, and surrounding Loudoun communities select Ink Mugi for the documented safety record (0.19% complication rate across hundreds of procedures), the healed-first portfolio standard, and the design approval protocol. For a procedure with permanent results, the caliber of the practitioner and the verifiability of outcomes carry more weight than proximity."
     },
     {
       question: "Is ombré powder the right technique for this region's climate?",
@@ -96,7 +96,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
     <>
       <SEO
         title="Ombré Powder Brows in Loudoun County, VA | Licensed Studio — Ink Mugi"
-        description="Precision ombré powder brows for Loudoun County residents — Ashburn, Leesburg, Sterling, South Riding. 523+ documented procedures. 0.19% complication rate. VA-licensed studio with healed-first verification. Schedule an assessment."
+        description="Precision ombré powder brows for Loudoun County residents — Ashburn, Leesburg, Sterling, South Riding. hundreds of documented procedures. 0.19% complication rate. VA-licensed studio with healed-first verification. Schedule an assessment."
         path="/ombre-brows-loudoun-county-va"
         keywords="ombre powder brows Loudoun County VA, permanent makeup Ashburn Virginia, powder brows Leesburg VA, licensed PMU artist Northern Virginia, permanent makeup Sterling VA, healed brow results Loudoun County"
       >
@@ -157,7 +157,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
         city="Loudoun County"
         badgeText="VA-Licensed · Serving Loudoun County"
         headline={<>Ombré Powder Brows in<br /><span className="text-[#9A7B69]">Loudoun County, Virginia</span></>}
-        subtext="Precision permanent makeup for Ashburn, Leesburg, Sterling, and South Riding residents — performed at our VA-licensed Annandale studio with 523+ documented procedures and healed-result verification at six weeks."
+        subtext="Precision permanent makeup for Ashburn, Leesburg, Sterling, and South Riding residents — performed at our VA-licensed Annandale studio with hundreds of documented procedures and healed-result verification at six weeks."
         secondaryText="22–40 minutes from most Loudoun communities. A measured distance for a measured outcome."
         heroImage="https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg"
         heroImageAlt="Ombré powder brows for Loudoun County, Virginia clients at Ink Mugi"
@@ -246,7 +246,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-[#2D2D2B]">Documented Safety Record</h3>
                 <p className="text-[#2D2D2B]/65 text-sm leading-relaxed">
-                  A 0.19% complication rate across 523+ procedures. Virginia body art licensure, professional liability insurance, and hospital-grade sterilization protocols verified before every appointment.
+                  A 0.19% complication rate across hundreds of procedures. Virginia body art licensure, professional liability insurance, and hospital-grade sterilization protocols verified before every appointment.
                 </p>
               </div>
             </AnimatedSection>
@@ -296,7 +296,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
                 Permanent makeup results shift and settle over six to eight weeks. The healed result — not the day-one appearance — is what a client lives with. At Ink Mugi, that is the only result we document, evaluate, and build our practice around.
               </p>
               <p>
-                Every procedure in our portfolio is photographed at the healed stage. Pigment depth, gradient density, and undertone calibration are all selected for healed-outcome predictability. Across 523+ documented procedures, this approach has produced a complication rate of 0.19% — a figure derived from verified healed outcomes, not procedural volume alone.
+                Every procedure in our portfolio is photographed at the healed stage. Pigment depth, gradient density, and undertone calibration are all selected for healed-outcome predictability. Across hundreds of documented procedures, this approach has produced a complication rate of 0.19% — a figure derived from verified healed outcomes, not procedural volume alone.
               </p>
             </div>
           </AnimatedSection>
@@ -305,7 +305,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
             {[
               { icon: FileCheck, title: 'Design Approval Before Pigment', desc: 'Shape mapped, reviewed on your face, and approved before any permanent step begins.' },
               { icon: Eye, title: 'Healed Portfolio Only', desc: 'Every result photographed at 6+ weeks. No fresh-day images in our documentation.' },
-              { icon: Shield, title: '0.19% Complication Rate', desc: '523+ documented procedures. Rigorous technique and candidacy screening.' },
+              { icon: Shield, title: 'The first pass is deliberately light', desc: 'hundreds of documented procedures. Rigorous technique and candidacy screening.' },
               { icon: Award, title: 'VA Licensed & Insured', desc: 'Body art licensure, liability insurance, hospital-grade sterilization.' },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
@@ -480,7 +480,7 @@ const OmbreBrowsLoudounCounty: React.FC = () => {
       </section>
 
       <LocationMidCTA
-        subtext="Ashburn, Leesburg, and Sterling residents trust Ink Mugi for precision ombré brows — VA-licensed with 523+ documented procedures."
+        subtext="Ashburn, Leesburg, and Sterling residents trust Ink Mugi for precision ombré brows — VA-licensed with hundreds of documented procedures."
       />
 
       {/* ═══════════════════════════════════════════

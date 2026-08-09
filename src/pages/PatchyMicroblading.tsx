@@ -164,7 +164,7 @@ const PatchyMicroblading: React.FC = () => {
               Understanding why it happened is the first step toward fixing it.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
-              By a Virginia-licensed PMU artist with 523+ procedures • Clinical data from the DMV climate
+              By a Virginia-licensed PMU artist with hundreds of procedures • Clinical data from the DMV climate
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

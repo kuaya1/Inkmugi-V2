@@ -61,7 +61,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
     <>
       <SEO
         title="Nano Brows vs Microblading Cost & Comparison | Northern Virginia | Ink Mugi"
-        description="Nano brows vs microblading — compare cost, longevity, pain, healing & results. Nano brows $650 all-inclusive vs microblading $400–$800. Data from 523+ procedures in Northern Virginia."
+        description="Nano brows vs microblading — compare cost, longevity, pain, healing & results. Nano brows $650 all-inclusive vs microblading $400–$800. Data from hundreds of procedures in Northern Virginia."
         path="/nano-brows-vs-microblading"
         keywords="nano brows vs microblading cost, nano brows vs microblading price, nano brows cost comparison, nano brows or microblading, nano brows vs microblading which is better, nano brows vs microblading oily skin, nano brows vs microblading longevity, nano brows vs microblading healing"
       >
@@ -71,7 +71,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Nano Brows vs Microblading: Cost, Longevity & Results Compared",
-            "description": "Compare nano brows and microblading cost, longevity, pain, healing, and results. Data from 523+ procedures in Northern Virginia.",
+            "description": "Compare nano brows and microblading cost, longevity, pain, healing, and results. Data from hundreds of procedures in Northern Virginia.",
             "author": {
               "@type": "Person",
               "name": "Mugi",
@@ -147,7 +147,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
                 Nano Brows vs Microblading
               </h1>
               <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-                An honest cost and quality comparison from a Virginia-licensed PMU artist with 523+ documented procedures.
+                An honest cost and quality comparison from a Virginia-licensed PMU artist with hundreds of documented procedures.
                 Side-by-side data on price, longevity, pain, healing, and healed results.
               </p>
               <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
@@ -213,7 +213,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
                 Nano Brows vs Microblading: Head-to-Head
               </h2>
               <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-                A factual comparison based on 523+ procedures performed in Northern Virginia's climate
+                A factual comparison based on hundreds of procedures performed in Northern Virginia's climate
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-[#E6DAD2]/30">
@@ -590,12 +590,12 @@ const NanoBrowsVsMicroblading: React.FC = () => {
               </div>
               <div>
                 <CheckCircle size={24} className="mx-auto mb-2 text-[#E6DAD2]" />
-                <p className="font-semibold text-sm">523+ Procedures</p>
+                <p className="font-semibold text-sm">Hundreds of Procedures</p>
                 <p className="text-xs text-white/60">Documented Results</p>
               </div>
               <div>
                 <Star size={24} className="mx-auto mb-2 text-[#E6DAD2]" />
-                <p className="font-semibold text-sm">97% Satisfaction</p>
+                <p className="font-semibold text-sm">Tracked to healed</p>
                 <p className="text-xs text-white/60">Client Reported</p>
               </div>
             </div>
@@ -636,7 +636,7 @@ const NanoBrowsVsMicroblading: React.FC = () => {
           <div className="container-custom max-w-5xl mx-auto">
             <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
               <p>
-                <strong className="text-[#2D2D2B]/50">Nano Brows vs Microblading — Cost & Quality Comparison</strong> — An evidence-based guide comparing nano brows and microblading techniques, costs, longevity, and results. Data from 523+ procedures at Ink Mugi, Annandale, Virginia. Virginia licensed (#1231002471) and fully insured.
+                <strong className="text-[#2D2D2B]/50">Nano Brows vs Microblading — Cost & Quality Comparison</strong> — An evidence-based guide comparing nano brows and microblading techniques, costs, longevity, and results. Data from hundreds of procedures at Ink Mugi, Annandale, Virginia. Virginia licensed (#1231002471) and fully insured.
               </p>
               <p>
                 Related searches: nano brows vs microblading cost, nano brows vs microblading price, nano brows cost comparison, nano brows or microblading which is better, nano brows vs microblading oily skin, nano brows vs microblading longevity, nano brows vs microblading healing, nano brows vs microblading pain, best nano brows Northern Virginia, nano brows near me, microblading alternative DMV.

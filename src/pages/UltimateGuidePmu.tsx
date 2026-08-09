@@ -78,8 +78,8 @@ const UltimateGuidePmu: React.FC = () => {
   const benefits = [
     {
       icon: <Clock className="w-8 h-8 text-green-600" />,
-      title: 'Save 200+ Hours Annually',
-      description: 'Average time saved on daily brow makeup application over 2-3 years.',
+      title: 'Fewer Minutes Every Morning',
+      description: 'No penciling, no stencil, no evening them up before you leave the house.',
     },
     {
       icon: <Eye className="w-8 h-8 text-green-600" />,
@@ -89,12 +89,12 @@ const UltimateGuidePmu: React.FC = () => {
     {
       icon: <Shield className="w-8 h-8 text-green-600" />,
       title: 'Waterproof & Smudge-Proof',
-      description: 'Swimming, gym, humid weather — your brows stay perfect.',
+      description: 'Swimming, gym, humid Virginia summers — the shape stays put.',
     },
     {
       icon: <Users className="w-8 h-8 text-green-600" />,
       title: 'Boost Confidence',
-      description: '97% of clients report increased self-confidence after PMU.',
+      description: 'Most clients say the real change is not looking different — it is not thinking about it.',
     },
     {
       icon: <Target className="w-8 h-8 text-green-600" />,
@@ -372,7 +372,7 @@ const UltimateGuidePmu: React.FC = () => {
                 </div>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Ink Mugi, we specialize exclusively in cosmetic tattooing for brows and lips. With <strong className="key-stat">523+ documented procedures</strong> and a <strong className="key-stat">0.19% complication rate</strong>, we've refined our techniques to deliver natural, long-lasting results tailored to Northern Virginia's unique climate and lifestyle.
+                  At Ink Mugi, we specialize exclusively in cosmetic tattooing for brows and lips. With <strong className="key-stat">hundreds of documented procedures</strong> and a <strong className="key-stat">0.19% complication rate</strong>, we've refined our techniques to deliver natural, long-lasting results tailored to Northern Virginia's unique climate and lifestyle.
                 </p>
               </div>
             </AnimatedSection>
@@ -508,7 +508,7 @@ const UltimateGuidePmu: React.FC = () => {
                 </ul>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Ink Mugi, our complication rate across 523+ procedures is <strong className="key-stat">0.19%</strong> — significantly below industry averages. This is achieved through rigorous safety protocols, proper client screening, and comprehensive aftercare support.
+                  At Ink Mugi every outcome is tracked through healing, and complications have been rare. That comes down to unglamorous things: screening properly, working conservatively, keeping the setup sterile, and staying reachable while a client heals.
                 </p>
 
                 <div className="mt-8">

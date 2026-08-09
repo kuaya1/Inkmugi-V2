@@ -158,7 +158,7 @@ const MicroshadingArtistry: React.FC = () => {
     <>
       <SEO
         title="Microshading Eyebrows in Northern Virginia | Ink Mugi — $700 All-Inclusive"
-        description="Microshading eyebrows by Ink Mugi in Annandale, VA — pixelated powder finish for the most natural results. 523+ procedures, VA-licensed. $700 includes consultation, procedure & touch-up. Serving all DMV."
+        description="Microshading eyebrows by Ink Mugi in Annandale, VA — pixelated powder finish for the most natural results. hundreds of procedures, VA-licensed. $700 includes consultation, procedure & touch-up. Serving all DMV."
         path="/microshading-artistry"
         keywords="microshading near me, microshading eyebrows, microshading vs microblading, microshading brows, permanent makeup Annandale VA, PMU near me, microshading Northern Virginia, microshading DMV"
       >
@@ -214,7 +214,7 @@ const MicroshadingArtistry: React.FC = () => {
                 <MapPin className="w-4 h-4" /> Annandale, VA
               </span>
               <span className="flex items-center gap-1">
-                <Star className="w-4 h-4 fill-amber-700 text-amber-700" /> 523+ procedures
+                <Star className="w-4 h-4 fill-amber-700 text-amber-700" /> hundreds of procedures
               </span>
               <span className="flex items-center gap-1">
                 <Shield className="w-4 h-4" /> VA Licensed
@@ -577,10 +577,10 @@ const MicroshadingArtistry: React.FC = () => {
                 <div className="w-14 h-14 bg-amber-700/10 rounded-xl flex items-center justify-center mb-6">
                   <Award className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">523+ documented procedures</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">hundreds of documented procedures</h3>
                 <p className="text-[#2D2D2B]/70 leading-relaxed">
                   Mugi has completed over 523+ PMU procedures with a documented 0.19% complication rate —
-                  13x better than the 2.5% industry average. Every procedure is tracked, every result
+                  Every procedure is tracked, every result
                   is documented. You're in the hands of one of Northern Virginia's most experienced
                   PMU artists.
                 </p>
@@ -729,7 +729,7 @@ const MicroshadingArtistry: React.FC = () => {
           <AnimatedSection className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-700/20 text-amber-300 rounded-full text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
-              523+ procedures & Counting
+              hundreds of procedures & Counting
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant font-medium mb-6">
               Ready for the Most Natural<br />

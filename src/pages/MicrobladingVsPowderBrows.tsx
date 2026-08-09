@@ -72,7 +72,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
     <>
       <SEO
         title="Microblading vs Powder Brows | Northern Virginia Guide | Ink Mugi"
-        description="Microblading vs powder brows — which is better in Northern Virginia? Compare longevity, cost, healing & skin type suitability. Data from 523+ procedures. Serving Arlington, Reston, Fairfax & DC."
+        description="Microblading vs powder brows — which is better in Northern Virginia? Compare longevity, cost, healing & skin type suitability. Data from hundreds of procedures. Serving Arlington, Reston, Fairfax & DC."
         path="/microblading-vs-powder-brows"
         keywords="microblading vs powder brows, microblading vs ombre brows, powder brows vs microblading oily skin, microblading alternative DMV, permanent eyebrows comparison, microblading vs ombre brows cost, which is better microblading or powder brows, microblading or powder brows for oily skin"
       >
@@ -82,7 +82,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Microblading vs Powder Brows: Which Is Better?",
-            "description": "Compare microblading and ombré powder brows including longevity, healing, skin types, and long-term results. Data from 523+ procedures in Northern Virginia.",
+            "description": "Compare microblading and ombré powder brows including longevity, healing, skin types, and long-term results. Data from hundreds of procedures in Northern Virginia.",
             "author": {
               "@type": "Person",
               "name": "Mugi",
@@ -157,7 +157,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
               Microblading vs Powder Brows
             </h1>
             <p className="text-lg md:text-xl text-[#2D2D2B]/80 max-w-3xl mx-auto mb-4">
-              An honest, evidence-based comparison from a Virginia-licensed PMU artist with 523+ documented procedures.
+              An honest, evidence-based comparison from a Virginia-licensed PMU artist with hundreds of documented procedures.
               Not a sales pitch — a factual breakdown so you can choose the right technique for your skin, lifestyle, and climate.
             </p>
             <p className="text-sm text-[#2D2D2B]/60 max-w-2xl mx-auto mb-8">
@@ -245,7 +245,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
             <p className="text-[#2D2D2B]/80 text-lg leading-relaxed">
               Unlike microblading, this stippled dot-work method causes less skin trauma, anchors pigment more securely, and works beautifully on all skin types — including oily and mature skin. At Ink Mugi, our{' '}
               <Link to="/signature-ombre-brows" className="text-[#9A7B69] font-medium hover:underline">signature ombré powder brows</Link>{' '}
-              are the foundation of our practice, refined through 523+ procedures in the DMV area.
+              are the foundation of our practice, refined through hundreds of procedures in the DMV area.
             </p>
           </AnimatedSection>
         </div>
@@ -279,7 +279,7 @@ const MicrobladingVsPowderBrows: React.FC = () => {
               Head-to-Head Comparison
             </h2>
             <p className="text-[#2D2D2B]/70 max-w-2xl mx-auto">
-              Based on data from 523+ procedures and client outcomes tracked across Northern Virginia, DC, and Maryland.
+              Based on data from hundreds of procedures and client outcomes tracked across Northern Virginia, DC, and Maryland.
             </p>
           </AnimatedSection>
 

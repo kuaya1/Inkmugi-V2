@@ -127,7 +127,7 @@ const Faq: React.FC = () => {
     <>
       <SEO
         title="Permanent Makeup FAQ: Cost, Pain, Healing & More | Ink Mugi"
-        description="Answers to your top questions about ombre powder brows: How much does it cost? Does it hurt? How long does healing take? What's the difference vs microblading? From a licensed VA artist with 523+ procedures."
+        description="Answers to your top questions about ombre powder brows: How much does it cost? Does it hurt? How long does healing take? What's the difference vs microblading? From a licensed VA artist with hundreds of procedures."
         path="/faq"
         keywords="permanent makeup FAQ, ombre brows cost, powder brows pain level, PMU healing process, microblading vs powder brows, permanent makeup questions Annandale VA"
       >

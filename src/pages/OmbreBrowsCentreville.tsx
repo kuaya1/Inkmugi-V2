@@ -24,7 +24,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ombre Powder Brows for Centreville VA Clients",
-    "description": "Professional ombre powder brows for Centreville, VA residents. 523+ documented procedures, healed-first philosophy, VA licensed. Located in Annandale — 25 minutes from Centreville Square via Route 28 and I-66.",
+    "description": "Professional ombre powder brows for Centreville, VA residents. hundreds of documented procedures, healed-first philosophy, VA licensed. Located in Annandale — 25 minutes from Centreville Square via Route 28 and I-66.",
     "provider": {
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://inkmugi.com/#business"
@@ -84,7 +84,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     },
     {
       question: "How is Ink Mugi different from PMU artists closer to Centreville?",
-      answer: "Three measurable differences: 523+ tracked procedures (not an estimate), a 0.19% complication rate that's 13x below industry average, and a portfolio that exclusively shows healed results at 6+ weeks — not fresh, same-day photos. We also use premium EU-compliant vegan pigments and include a 6-week perfecting session in every price."
+      answer: "Three measurable differences: 523+ tracked procedures (not an estimate), a 0.19% complication rate that's tracked through healing, and a portfolio that only shows results at 6+ weeks — not fresh, same-day photos. We also use premium EU-compliant vegan pigments and include a 6-week perfecting session in every price."
     },
     {
       question: "Do you serve clients from the Route 28 and Bull Run areas?",
@@ -104,7 +104,7 @@ const OmbreBrowsCentreville: React.FC = () => {
     <>
       <SEO
         title="Ombre Powder Brows Centreville VA | Ink Mugi — Healed-First Results"
-        description="Ombre powder brows for Centreville VA residents. 523+ procedures, 0.19% complication rate. 25 min from Centreville Square. VA licensed, six-week review. Free consultation."
+        description="Ombre powder brows for Centreville VA residents. hundreds of procedures, 0.19% complication rate. 25 min from Centreville Square. VA licensed, six-week review. Free consultation."
         path="/ombre-brows-centreville-va"
         keywords="ombre powder brows Centreville VA, permanent makeup Centreville Virginia, PMU near Centreville Square, powder brows Route 28, microshading Centreville, nano brows Centreville VA"
       >
@@ -142,7 +142,7 @@ const OmbreBrowsCentreville: React.FC = () => {
         city="Centreville"
         badgeText="Serving Centreville, VA"
         headline={<>Ombre Powder Brows for<br /><span className="text-[#9A7B69]">Centreville, VA</span></>}
-        subtext="Permanent makeup grounded in evidence, not trends. 523+ procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable."
+        subtext="Permanent makeup grounded in evidence, not trends. hundreds of procedures documented from consultation to healed result — your shape is mapped, you approve, and the outcome is predictable."
         secondaryText="25 minutes from Centreville Square to our private Annandale studio. Free parking. Consultation-first model."
         heroImage="https://live.staticflickr.com/65535/54408135519_738741e705_k_d.jpg"
         heroImageAlt="Ombre powder brows for Centreville, VA clients at Ink Mugi studio"
@@ -165,7 +165,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                 Our clients from the Centreville Square area, Virginia Run, and the neighborhoods around Bull Run Regional Park share a common thread: they researched thoroughly before booking. They compared healed portfolios, read about complication rates, and asked the right questions. What brings them to our Annandale studio — about 25 minutes east on I-66 — is the evidence behind our work.
               </p>
               <p>
-                Centreville is a community of discerning families, many with ties to government, defense, and technology sectors. These are people who evaluate credentials before making decisions. Our Virginia licensure, hospital-grade sterilization standards, and a complication rate 13x below the industry average resonate with that mindset.
+                Centreville is a community of discerning families, many with ties to government, defense, and technology sectors. These are people who evaluate credentials before making decisions. Virginia licensure, a sterile single-use setup, and outcomes tracked through healing tend to resonate with that mindset.
               </p>
               <p>
                 The drive from Centre Ridge or Little Rocky Run is straightforward — I-66 East to Route 236, then a quick turn into Heritage Center. Free parking, a private studio environment, and appointments that are never double-booked. Several Centreville clients tell us they appreciate the calm after navigating Route 28 traffic.
@@ -251,7 +251,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-[#2D2D2B]">Verified Safety Standards</h3>
                 <p className="text-[#2D2D2B]/70">
-                  A 0.19% complication rate isn't an aspiration — it's our documented record across 523+ procedures. Virginia licensed (VA #1231002471), insured, bloodborne pathogen certified. Premium EU-compliant vegan pigments with no heavy metals or undisclosed additives.
+                  A 0.19% complication rate isn't an aspiration — it's our documented record across hundreds of procedures. Virginia licensed (VA #1231002471), insured, bloodborne pathogen certified. Premium EU-compliant vegan pigments with no heavy metals or undisclosed additives.
                 </p>
               </div>
             </AnimatedSection>
@@ -355,7 +355,7 @@ const OmbreBrowsCentreville: React.FC = () => {
                 <Star key={i} className="w-6 h-6 fill-[#9A7B69] text-[#9A7B69]" />
               ))}
             </div>
-            <p className="text-[#2D2D2B]/70">5.0 rating from 47+ verified reviews</p>
+            <p className="text-[#2D2D2B]/70">In their own words</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">

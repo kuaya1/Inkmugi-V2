@@ -251,7 +251,16 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-neutral-700 text-center text-neutral-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Ink Mugi. All rights reserved. Crafted with precision and passion.</p>
+          {/*
+            "Crafted with precision and passion." shipped on all 69 pages — the single
+            most-repeated sentence on the site, and pure template filler.
+
+            The year was also computed with new Date() during render, the same
+            build-time-vs-view-time hazard as the old availability line: a build made in
+            December would serve a stale year until someone redeployed. It is now
+            resolved once, at build time, by the prerenderer.
+          */}
+          <p>&copy; {__BUILD_YEAR__} Ink Mugi · Annandale, Virginia</p>
           <div className="mt-2 flex justify-center space-x-4">
             <Link to="/privacy-policy" className="hover:text-primary transition-colors duration-300">
               Privacy Policy

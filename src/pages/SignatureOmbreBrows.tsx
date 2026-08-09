@@ -23,7 +23,7 @@ const SignatureOmbreBrows: React.FC = () => {
     {
       before: 'https://live.staticflickr.com/65535/54366236564_a0f3a59599_c_d.jpg',
       after: 'https://live.staticflickr.com/65535/54365160327_5c790ba60a_c_d.jpg',
-      description: 'Natural ombre transformation'
+      description: 'Natural ombré result'
     },
     {
       before: 'https://live.staticflickr.com/65535/54366013651_f914f378af_c_d.jpg',
@@ -63,7 +63,7 @@ const SignatureOmbreBrows: React.FC = () => {
     },
     {
       step: 3,
-      title: 'The Healing Journey',
+      title: 'How healing actually goes',
       duration: '6 weeks',
       description: 'Your brows will go through natural healing phases. We provide medical-grade aftercare kit and 24/7 text support.',
       details: ['Days 1-3: Bold appearance', 'Days 4-10: Scabbing phase', 'Days 11-42: Color settles & emerges']
@@ -72,7 +72,7 @@ const SignatureOmbreBrows: React.FC = () => {
       step: 4,
       title: 'The Perfected Result',
       duration: '6-week touch-up',
-      description: 'Your complimentary perfecting session ensures ideal color saturation and any minor adjustments for flawless results.',
+      description: 'Your complimentary perfecting session is where density gets finished and anything uneven is corrected.',
       details: ['Fine-tune shape if needed', 'Enhance color intensity', 'Ensure symmetry perfection']
     },
   ];
@@ -92,7 +92,7 @@ const SignatureOmbreBrows: React.FC = () => {
     },
     {
       question: 'How long will my results last in Northern Virginia?',
-      answer: 'Based on 523+ procedures tracked: ombre powder brows last 18-36 months in DMV climate, with an average of 24 months. Summer humidity (70-85%) gives 88% retention, winter (45-60% humidity) gives 94% retention. Factors affecting longevity: skin type, sun exposure, skincare routine, and immune system.'
+      answer: 'Based on hundreds of procedures tracked: ombre powder brows last 18-36 months in DMV climate, with an average of 24 months. Summer humidity (70-85%) gives 88% retention, winter (45-60% humidity) gives 94% retention. Factors affecting longevity: skin type, sun exposure, skincare routine, and immune system.'
     },
     {
       question: 'What if I have previous PMU work I\'m unhappy with?',
@@ -295,7 +295,7 @@ const SignatureOmbreBrows: React.FC = () => {
 
               <div className="grid grid-cols-3 gap-4 mb-8 p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
                 {/*
-                  Was 523+ procedures / 97% satisfaction / 0.19% complications, in the
+                  Was hundreds of procedures / 97% satisfaction / 0.19% complications, in the
                   hero of the page that is supposed to make someone want the brows. Three
                   numbers, none of which answer a question a first-time client is asking,
                   and one of them ("97% satisfaction") has no stated source anywhere in
@@ -350,7 +350,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Ombre Powder Brows at a Glance
                 </h2>
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on 523+ documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Many clients come in wanting something polished but not overly drawn on, and this is the technique we most often recommend for that balance.
+                  <strong>A semi-permanent cosmetic tattooing technique that creates a soft, graduated brow fill mimicking the look of makeup.</strong> Based on hundreds of documented procedures, ombre powder brows last 2-4 years with a 0.19% complication rate. Many clients come in wanting something polished but not overly drawn on, and this is the technique we most often recommend for that balance.
                 </p>
               </div>
             </AnimatedSection>
@@ -363,10 +363,10 @@ const SignatureOmbreBrows: React.FC = () => {
             <AnimatedSection className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-cormorant font-medium text-[#2D2D2B] mb-4">
-                  Why Ombre Powder Brows Are Superior for the DMV
+                  Why powder holds up better here than hair strokes
                 </h2>
                 <p className="text-xl text-gray-600">
-                  The science behind why this technique thrives in our unique climate
+                  Northern Virginia summers are humid, and humidity is hard on fine strokes
                 </p>
               </div>
 
@@ -427,7 +427,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   The Visual Evidence
                 </h2>
                 <p className="text-xl text-gray-600">
-                  Real clients, real transformations, documented results
+                  Real clients, photographed after healing
                 </p>
               </div>
 
@@ -593,10 +593,10 @@ const SignatureOmbreBrows: React.FC = () => {
 
                   <div className="bg-gradient-to-r from-[#2D2D2B] to-[#4A4A47] rounded-2xl p-6 text-white text-center">
                     <p className="text-lg mb-4">
-                      <strong>Cost Per Day:</strong> Just $0.82/day over 24 months
+                      <strong>What it actually buys you:</strong> about ten minutes back every morning
                     </p>
                     <p className="text-white/80 text-sm">
-                      Wake up beautiful. Save 15+ hours per year. Priceless confidence.
+                      No pencil, no stencil, no checking them in the car mirror before a meeting.
                     </p>
                   </div>
                 </div>
@@ -705,7 +705,7 @@ const SignatureOmbreBrows: React.FC = () => {
                   Your Questions, Answered with Data
                 </h2>
                 <p className="text-xl text-gray-600">
-                  Evidence-based answers from 523+ procedures
+                  Evidence-based answers from hundreds of procedures
                 </p>
               </div>
 
@@ -816,12 +816,12 @@ const SignatureOmbreBrows: React.FC = () => {
           <div className="container-custom relative z-10">
             <AnimatedSection className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-light leading-tight mb-6">
-                Ready for Your
-                <span className="block text-[#E6DAD2] font-medium mt-2">Transformation?</span>
+                Ready to talk it
+                <span className="block text-[#E6DAD2] font-medium mt-2">through?</span>
               </h2>
 
               <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                Join 523+ confident clients who wake up beautiful every single day
+                Bring photos of brows you like and brows you do not. Mugi will tell you honestly what she thinks will suit your face.
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -832,8 +832,8 @@ const SignatureOmbreBrows: React.FC = () => {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                   <Shield className="w-10 h-10 text-[#E6DAD2] mb-3 mx-auto" />
-                  <h3 className="font-semibold mb-2">0.19% Complication Rate</h3>
-                  <p className="text-sm text-white/80">12x safer than industry average</p>
+                  <h3 className="font-semibold mb-2">The first pass is deliberately light</h3>
+                  <p className="text-sm text-white/80">sterile, single-use, and tracked</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                   <Heart className="w-10 h-10 text-[#E6DAD2] mb-3 mx-auto" />
@@ -873,7 +873,7 @@ const SignatureOmbreBrows: React.FC = () => {
           <div className="container-custom max-w-5xl mx-auto">
             <div className="text-xs text-[#2D2D2B]/40 leading-relaxed space-y-3">
               <p>
-                <strong className="text-[#2D2D2B]/50">Signature Ombre Powder Brows at Ink Mugi — Annandale, VA</strong> — Professional ombre powder brows, microshading, and semi-permanent eyebrow tattooing in Annandale, Virginia. Data-driven results from 523+ tracked procedures with 97% client satisfaction and 0.19% complication rate. Virginia licensed (#1231002471) and fully insured PMU artist.
+                <strong className="text-[#2D2D2B]/50">Signature Ombré Powder Brows at Ink Mugi — Annandale, VA</strong> — Ombré powder brows, microshading and semi-permanent eyebrow tattooing in Annandale, Virginia, by Mugi — a Virginia-licensed permanent cosmetic tattooer (#1231002471), fully insured, working with one client at a time.
               </p>
               <p>
                 Related searches: ombre powder brows near me, ombre brows Annandale VA, powder brows Northern Virginia, ombre brows cost, ombre brows vs microblading, permanent eyebrows DMV, semi permanent brows Arlington, ombre brows oily skin, powder brows Fairfax Virginia, eyebrow tattoo Alexandria, ombre brows McLean, powder brows Tysons, ombre brows healing process, how long do powder brows last, ombre brows for oily skin, permanent makeup near me, brow tattoo Northern Virginia.
