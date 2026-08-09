@@ -1,6 +1,6 @@
 # INK MUGI — FINAL 95+ PRODUCTION SHIP REPORT
 
-`main` @ `084b554` · deployed to https://inkmugi.com · working tree clean
+`main` @ `610432c` · deployed to https://inkmugi.com · working tree clean
 
 ---
 
@@ -101,6 +101,19 @@ Hours corrected in the JSON-LD (which feeds your Google listing), on the contact
 
 typecheck **pass** · build **pass** · prerender **69 documents, 0 failures** · validator **0 errors, 66/66 unique titles** · lint **0 errors** (63 pre-existing warnings).
 
+## 12a. The Claim My Sweeps Could Not See
+
+Production verification found the retired comparative claim still live on `/permanent-makeup-safety-dmv` — not as a sentence, but as a **two-column chart**: "Ink Mugi 0.19% / 1 in 526" in green against "Industry Average **2.5%** / 1 in 40" in red, with proportional bars, under the heading *"The Numbers Don't Lie."*
+
+It survived every pass for two reasons, both mine:
+
+1. **It was markup, not prose.** Each value sat in its own `<div>`, so no sentence-level pattern matched it. Text sweeps cannot see a chart.
+2. **My greps were case-sensitive.** The page said "Industry Average"; I had been searching for "industry average". A case-insensitive sweep found it in seconds — and I only ran one because a PowerShell `-match` (case-insensitive) disagreed with `IndexOf` (case-sensitive) and I chased the discrepancy instead of dismissing it.
+
+This was the largest and most persuasive instance of the claim on the entire site. What replaced it keeps the honest half — one event in 526, with the denominator stated and an explicit caution that a sample that small is a practice record rather than a statistic.
+
+The lesson for any future audit of this repo: **grep case-insensitively, and check components as well as copy.**
+
 ## 13. Browser QA
 
 Verified on a Netlify-faithful server: hydration exact on the flagship (**732 server elements → 732 live**), no duplicate schema, one `<h1>` per page, no console errors, no broken images.
@@ -111,13 +124,13 @@ Verified on a Netlify-faithful server: hydration exact on the flagship (**732 se
 
 - Final branch commit: `46d610f` (fact lock) on `claude/phase31-consistency`
 - Merge: fast-forward, no merge commit
-- `main` HEAD: **`084b554`**
+- `main` HEAD: **`610432c`**
 - Working tree: **clean**
-- Push: `fbab9f0..46d610f`, then `ec0dc03`, then `084b554` — all successful, no force
+- Push: `fbab9f0..46d610f`, then `ec0dc03`, `084b554`, `610432c` — all successful, no force
 
 ## 15. Deployment
 
-Three deploys via the normal Netlify workflow. Production verified after each.
+Four deploys via the normal Netlify workflow. Production verified after each.
 
 **A verification error worth recording:** my first deploy-wait used *"still look like you"* as the sentinel — but that string had been live since the *previous* deploy, so the loop matched instantly and I verified a stale build, briefly reporting legacy phrases as still-live. Re-verified against a marker unique to the new build (the rewritten footer). The lesson is that a deploy sentinel must be unique to the deploy, not merely present in it.
 
