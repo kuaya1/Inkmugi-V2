@@ -45,7 +45,7 @@ const PermanentMakeupSafetyDMV: React.FC = () => {
   const safetyFaqs = [
     {
       question: 'What sterilization protocols do you follow?',
-      answer: 'We follow hospital-grade sterilization protocols that exceed industry standards. Every needle is single-use and individually packaged. All equipment is sterilized using medical-grade autoclaves. Surfaces are disinfected with EPA-registered CaviWipes before and after each procedure. We maintain a sterile field throughout the entire procedure, following CDC guidelines for infection control.'
+      answer: 'Every needle is single-use and individually packaged. All equipment is sterilized using medical-grade autoclaves. Surfaces are disinfected with EPA-registered CaviWipes before and after each procedure. We maintain a sterile field throughout the entire procedure, following CDC guidelines for infection control.'
     },
     {
       question: 'Are your pigments safe for all skin types?',
