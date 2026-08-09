@@ -138,7 +138,6 @@ const Contact: React.FC = () => {
                     <h3 className="font-medium mb-1 text-[#2D2D2B]">Hours</h3>
                     <p className="text-[#2D2D2B]/70">
                       Monday – Saturday: 10:30 AM – 5:00 PM<br />
-                      Sunday: closed<br />
                       Sunday: Closed
                     </p>
                   </div>
